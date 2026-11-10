@@ -120,6 +120,11 @@ class ObservationHistory:
         self.motion = LeakyMotionHistory(vehicle,aerodynamics,n,dt,motion_cfg) if motion_cfg and motion_cfg.get("enabled") else None
         self.cached = torch.zeros(n, OBSERVATION_DIM+(9 if self.motion else 0), device=vehicle.inertia.device)
 
+    def set_target_height(self, height_m):
+        if not math.isfinite(height_m):
+            raise ValueError('Finite takeoff-relative target height required')
+        self.target_height_m = float(height_m)
+
     def reset(self, mask):
         if self.motion: self.motion.reset(mask)
         self.previous_rate[mask] = 0

@@ -61,7 +61,7 @@ def run(args):
         # Register the client immediately instead of relying on default broadcast.
         link.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_ONBOARD_CONTROLLER,mavutil.mavlink.MAV_AUTOPILOT_INVALID,0,0,4)
         off=Offboard(link,cfg,np.load(assets/'weights.npz'),residual=not args.no_residual,
-                     reference_sample_height_m=target_height)
+                     reference_sample_height_m=target_height,hold_height_on_entry=False)
         rng=np.random.default_rng(args.seed+1000003)
         dt=.0025;preflight_steps=round(args.preflight/dt);flight_steps=round(args.duration/dt)
         force_bias=rng.normal(0,.003,3);gyro_bias=rng.normal(0,.0003,3)

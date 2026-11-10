@@ -682,8 +682,8 @@
     },
     {
       "path": "P2/hover_bptt/acceleration.py",
-      "bytes": 4817,
-      "sha256": "34cbd52071c50a82b8fa934b027e65c5212e285fce29413c7d4e2539b7fd656f",
+      "bytes": 8013,
+      "sha256": "b99b3a8074b4be1d67bd4adc326868ab80170665b629964da73ac328cea1e744",
       "kind": "source_or_configuration"
     },
     {
@@ -874,8 +874,8 @@
     },
     {
       "path": "P2/hover_bptt/onboard.py",
-      "bytes": 8189,
-      "sha256": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+      "bytes": 8399,
+      "sha256": "2d5ae317d85a15410b4f93aca66445d30e05bb3c4437e92842e828fb76caa317",
       "kind": "source_or_configuration"
     },
     {
@@ -1024,8 +1024,8 @@
     },
     {
       "path": "P2/README.md",
-      "bytes": 4002,
-      "sha256": "86a46a82a2d7c774bb1cc0e2c174173434cf3ea1cbb4d72f39ce60c1c2ba6c45",
+      "bytes": 4601,
+      "sha256": "8c28ee02fc31e138389bac7a1392ffbf7ddeb1458156191354682ec128cd7ad2",
       "kind": "source_or_configuration"
     },
     {
@@ -2710,8 +2710,8 @@
     },
     {
       "path": "P2/tests/test_acceleration.py",
-      "bytes": 1823,
-      "sha256": "2c5cae405c0a74e7e8844f750e32b7fb160faac89c4edc809b9e510c0b2f95ce",
+      "bytes": 3266,
+      "sha256": "c98e2f74deac900c99daa4218e5358bd71c71e2179861c4615bf23103fc78f81",
       "kind": "source_or_configuration"
     },
     {
@@ -4024,8 +4024,8 @@
     },
     {
       "path": "px4_offboard/control.py",
-      "bytes": 9931,
-      "sha256": "9e6d2351a86a45264635c079a660df7c89664732694bc5b4f0d4a587789682ae",
+      "bytes": 10171,
+      "sha256": "b5653f189bedcb5bd9f2bfc1154eb7391adb892c76254ff4b6310aac3db76f94",
       "kind": "source_or_configuration"
     },
     {
@@ -4066,8 +4066,8 @@
     },
     {
       "path": "px4_offboard/offboard.py",
-      "bytes": 7693,
-      "sha256": "4e91a8e3b3e2b8621d2499e0763d09b618ebc2fc315839e4b2e124a06a4cf5fa",
+      "bytes": 9510,
+      "sha256": "5191c2ed77750bf878db7d3d117f3f7fb09da46b16056c7084afe072993f1d99",
       "kind": "source_or_configuration"
     },
     {
@@ -4084,8 +4084,8 @@
     },
     {
       "path": "px4_offboard/README.md",
-      "bytes": 4095,
-      "sha256": "0ed2329a00feabce326f4ffc46ba98d91ef5961a614259cd39d6b6b03cfca52a",
+      "bytes": 4553,
+      "sha256": "bf71c9bf686447d760ae7c010f00d2c6adc379c2fdec3cbaccea0665946243a3",
       "kind": "source_or_configuration"
     },
     {
@@ -4096,8 +4096,8 @@
     },
     {
       "path": "px4_offboard/run.py",
-      "bytes": 15241,
-      "sha256": "b0fb228aabcdb4e9f90bba83f62c66ce05e45329dfcfa94b339ff21aa5badd65",
+      "bytes": 15268,
+      "sha256": "fa2ce019aa76a20f4e5aeded3b9e0989dc41b77d2feaa893de70602955ec1183",
       "kind": "source_or_configuration"
     },
     {
@@ -4276,8 +4276,8 @@
     },
     {
       "path": "px4_offboard/stock_transfer/stock_check_hold.py",
-      "bytes": 14796,
-      "sha256": "04d652cb934e951c0328d50c95e1ddf4ab527b12a71f04ca93eb939c4ae740fe",
+      "bytes": 14973,
+      "sha256": "e7e2655c194d0813897fd8cae2aa472f99db4ce0b204dc51dbc52d158231c982",
       "kind": "source_or_configuration"
     },
     {
@@ -4306,8 +4306,8 @@
     },
     {
       "path": "px4_offboard/tests/test_takeoff_height.py",
-      "bytes": 4223,
-      "sha256": "5081be58f5a2802702ab01ffd7f56add061ea9b1fd930348d4150f4fe57f056d",
+      "bytes": 6436,
+      "sha256": "b447879a6ee56d70889124ae3ea215d2ad8aa708d5ba3433c2ec88796f68c779",
       "kind": "source_or_configuration"
     },
     {

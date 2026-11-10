@@ -8,13 +8,16 @@ import collections
 import numpy as np
 from .control import Controller,Sensors
 
+ONBOARD_SAMPLE_MAX_AGE_S = .25
+HEARTBEAT_MAX_AGE_S = 1.5
+
 def relative_attitude(q,heading):
     c,s=np.cos(-heading/2),np.sin(-heading/2);w,x,y,z=q
     result=np.array([c*w-s*z,c*x-s*y,c*y+s*x,c*z+s*w],np.float32)
     return result if result[0]>=0 else -result
 
 class Offboard:
-    def __init__(self,link,cfg,weights,residual=True,*,reference_sample_height_m=0.):
+    def __init__(self,link,cfg,weights,residual=True,*,reference_sample_height_m=0.,hold_height_on_entry=True):
         self.link=link;self.controller=Controller(cfg,weights,residual=residual)
         self.messages={};self.received={};self.events=[];self.last_heartbeat=None;self.acks=[]
         self.heading=None;self.filtered_force=None;self.commands=0;self.latest=None
@@ -25,6 +28,9 @@ class Offboard:
         self.reference_sample_height_m = float(reference_sample_height_m)
         self.takeoff_baro_zero_m = None
         self.takeoff_baro_locked_s = None
+        self.hold_height_on_entry = hold_height_on_entry
+        self.hold_target_height_m = None
+        self.hold_height_locked_s = None
         self._preflight_altitudes = []
         self._altitude_timestamp = 0
     def record_motor_sample(self,rpm,clock):
@@ -51,6 +57,16 @@ class Offboard:
             self.received[kind]=clock
             if msg.base_mode & 128:
                 self._preflight_altitudes.clear()
+            if self.hold_height_on_entry:
+                if self.is_offboard_armed():
+                    self._latch_hold_height(clock)
+                elif self.hold_target_height_m is not None:
+                    self.hold_target_height_m = None
+                    self.hold_height_locked_s = None
+                    self.controller.reset()
+                    self.previous_gyro_time = None
+                    self.filtered_force = None
+                    self.latest = None
         if kind=='EXTENDED_SYS_STATE' and msg.landed_state != 1:
             self._preflight_altitudes.clear()
         if kind in ('ATTITUDE_QUATERNION','HIGHRES_IMU','EXTENDED_SYS_STATE'):
@@ -70,10 +86,11 @@ class Offboard:
         self.messages['ALTITUDE'] = msg
         self.received['ALTITUDE'] = clock
         if self.takeoff_baro_zero_m is not None:
+            self._latch_hold_height(clock)
             return
         ground = self.messages.get('EXTENDED_SYS_STATE')
         if (self.last_heartbeat is None or self.last_heartbeat.base_mode & 128
-                or clock-self.received['HEARTBEAT'] > 1.5 or ground is None
+                or clock-self.received['HEARTBEAT'] > HEARTBEAT_MAX_AGE_S or ground is None
                 or ground.landed_state != 1 or clock-self.received['EXTENDED_SYS_STATE'] > 1.):
             self._preflight_altitudes.clear()
             return
@@ -85,6 +102,19 @@ class Offboard:
             self.takeoff_baro_zero_m = float(np.median([value for _, value in samples])) - self.reference_sample_height_m
             self.takeoff_baro_locked_s = clock
             samples.clear()
+
+    def _latch_hold_height(self, clock):
+        if (not self.hold_height_on_entry or self.hold_target_height_m is not None
+                or self.takeoff_baro_zero_m is None or not self.is_offboard_armed()
+                or clock-self.received['HEARTBEAT'] > HEARTBEAT_MAX_AGE_S):
+            return
+        received = self.received.get('ALTITUDE')
+        if received is None or not 0 <= clock-received <= ONBOARD_SAMPLE_MAX_AGE_S:
+            return
+        height = self.messages['ALTITUDE'].altitude_monotonic - self.takeoff_baro_zero_m
+        self.hold_target_height_m = float(height)
+        self.hold_height_locked_s = clock
+        self.controller.observer.target_height_m = self.hold_target_height_m
     def pump(self,clock):
         while True:
             msg=self.link.recv_match(blocking=False)
@@ -111,9 +141,12 @@ class Offboard:
         h=self.last_heartbeat
         return h is not None and bool(h.base_mode&128) and ((h.custom_mode>>16)&255)==6
     def update(self,rpm,applied,clock):
+        if self.hold_height_on_entry and (self.hold_target_height_m is None or not self.is_offboard_armed()
+                or clock-self.received['HEARTBEAT'] > HEARTBEAT_MAX_AGE_S):
+            return None
         required = ('ATTITUDE_QUATERNION', 'HIGHRES_IMU', 'ALTITUDE')
         if self.takeoff_baro_zero_m is None or not all(k in self.messages for k in required):return None
-        if any(clock-self.received[k]>.25 for k in required):
+        if any(clock-self.received[k]>ONBOARD_SAMPLE_MAX_AGE_S for k in required):
             raise RuntimeError('Stale PX4 onboard telemetry: refuse frozen sensor reuse')
         a=self.messages['ATTITUDE_QUATERNION'];imu=self.messages['HIGHRES_IMU']
         height = self.messages['ALTITUDE'].altitude_monotonic - self.takeoff_baro_zero_m
@@ -131,5 +164,6 @@ class Offboard:
             np.array(rpm),float(height),moments)
         self.previous_gyro_time=gyro_time
         rates,thrust,info=self.controller(packet,np.array(applied))
+        info['target_height_m']=self.controller.observer.target_height_m
         self.setpoint(rates,thrust,clock);self.latest=(packet,rates,thrust,info)
         return self.latest

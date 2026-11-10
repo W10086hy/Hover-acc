@@ -25,6 +25,10 @@ class Observer:
         self.tau=u['motor_tau_s'];self.jm=self.pc['power']['rotor_inertia_kgm2'] if u['include_gyro'] else 0.
         dx,dy=a['rotor_dx_m'],a['rotor_dy_m'];ratio=self.km/self.kf
         self.allocation=np.array([[1,1,1,1],[-dy,-dy,dy,dy],[dx,-dx,dx,-dx],[ratio,-ratio,-ratio,ratio]])
+        self.target_height_m=float(cfg['stage']['controller']['target_height_m'])
+        self.reset()
+
+    def reset(self):
         self.valid=False;self.height=0.;self.vertical_speed=0.;self.rate=np.zeros(3);self.rpm=np.zeros(4)
         self.velocity=np.zeros(2);self.position=np.zeros(2)
     def throttle(self,rpm):
@@ -56,9 +60,8 @@ class Observer:
         spin=mean[0]-mean[1]-mean[2]+mean[3];torque+=self.jm*np.array([spin*self.rate[1],-spin*self.rate[0],0])
         prediction=self.rate+elapsed*(torque-np.cross(self.rate,self.rate*self.J))/self.J
         innovation=p.gyro-prediction if self.valid else np.zeros(3)
-        htarget=self.cfg['stage']['controller']['target_height_m']
         o=np.clip(np.r_[p.attitude,p.gyro/4,p.specific_force/20,p.motor_speed/self.vmax,2*applied-1,
-            (htarget-height)/2,self.vertical_speed/3,force/5,innovation/.1],-5,5)
+            (self.target_height_m-height)/2,self.vertical_speed/3,force/5,innovation/.1],-5,5)
         r=rotation(p.attitude);accel=r@p.specific_force+np.array([0.,0.,self.g])
         motion=self.cfg['stage']['sensors']['motion_features']
         self.velocity=math.exp(-self.dt/motion['velocity_leak_s'])*self.velocity+self.dt*accel[:2]
@@ -76,6 +79,11 @@ class Controller:
         self.settings=cfg['stage']['controller'];self.options=cfg['compensation'];v=self.observer
         self.hover=v.mass*v.g+self.settings['trim_excess_n'];self.fmax=v.kf*v.vmax**2;self.max_total=4*self.fmax
         self.minimum=self.settings['min_total_thrust_fraction']*self.max_total;self.maximum=self.settings['max_total_thrust_fraction']*self.max_total
+        self.reset()
+
+    def reset(self):
+        v=self.observer;v.reset();self.actor.hidden.fill(0.)
+        if self.net is not None:self.net.hidden.fill(0.)
         self.previous=v.throttle(np.ones(4)*math.sqrt(self.hover/(4*v.kf)));self.integral=np.zeros(3)
         self.heading_integral=0.;self.thrust_integral=0.;self.filtered=np.zeros(7);self.tick=0;self.saturated=False
         self.previous_stock_setpoint = None

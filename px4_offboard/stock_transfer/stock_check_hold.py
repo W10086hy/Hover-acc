@@ -88,13 +88,14 @@ def main():
         text=True, start_new_session=True)
     plant = Plant(args.assets, 0)
     cfg = plant.cfg
+    fixture_height = plant.target_height
     if args.motor_tau is not None:
         if not math.isfinite(args.motor_tau) or args.motor_tau <= 0:
             raise ValueError('Motor response time must be finite and positive')
         plant.u['motor_tau_s'] = args.motor_tau
     use_residual = args.residual or (not args.no_residual and cfg.get('residual_default_enabled', True))
     off = Offboard(link, cfg, np.load(args.assets/'weights.npz'), residual=use_residual,
-                   reference_sample_height_m=plant.target_height)
+                   reference_sample_height_m=fixture_height)
     poly = np.array(cfg['nominal']['actuators']['motor_speed_polynomial'])
     vmax = poly.sum()
     rng = np.random.default_rng(args.sensor_seed)
@@ -153,7 +154,7 @@ def main():
                         raise RuntimeError('Takeoff barometric reference unavailable before arming')
             if k%5==0 and h:
                 height = -plant.x[2]
-                target_error = 5.0 - height
+                target_error = fixture_height - height
                 if not armed:
                     manual_throttle = 0
                 elif released is None:
@@ -170,7 +171,7 @@ def main():
             if released is not None:
                 speed = np.linalg.norm(plant.x[3:6])
                 roll_pitch = math.acos(np.clip(rotation(plant.x[6:10])[2,2],-1,1))
-                steady = current==3 and armed and speed<.18 and abs(-plant.x[2]-5.)<.20 and roll_pitch<math.radians(8)
+                steady = current==3 and armed and speed<.18 and abs(-plant.x[2]-fixture_height)<.20 and roll_pitch<math.radians(8)
                 if requested is None:
                     position_stable_since = (position_stable_since or clock) if steady else None
                 if requested is None and position_stable_since is not None and clock-position_stable_since>=3.:
@@ -233,7 +234,7 @@ def main():
                 rope_nodes = plant.x[19:19 + 3*plant.free]
                 rows.append([clock,current,int(armed),*plant.x[:17],*physical,*applied,
                              *(wire or [float('nan')]*4),tilt,plant.peak,*rope_nodes])
-                if tilt>45. or not (3.<-plant.x[2]<7.) or plant.peak>30.:
+                if tilt>45. or abs(-plant.x[2]-fixture_height)>=2. or plant.peak>30.:
                     raise RuntimeError(f'Physical guard at t={clock:.3f}: tilt={tilt:.2f}, height={-plant.x[2]:.3f}, tension={plant.peak:.2f}')
                 if switch is not None and not args.keep_position and (current!=6 or not armed):
                     raise RuntimeError(f'Offboard or armed lost at t={clock:.3f}')
@@ -251,7 +252,8 @@ def main():
             error=error,policy_ticks=policy_ticks,observed_wire_messages=receive_counts,acks=off.acks,events=off.events,
             last_received_times=off.received, last_gyro_timestamp=off.previous_gyro_time,
             takeoff_baro_zero_m=off.takeoff_baro_zero_m, takeoff_baro_locked_s=off.takeoff_baro_locked_s,
-            policy_baro_heights_m=policy_heights)
+            policy_baro_heights_m=policy_heights, hold_target_height_m=off.hold_target_height_m,
+            hold_height_locked_s=off.hold_height_locked_s)
         if rows:
             np.save(root/'trace.npy',np.asarray(rows))
         (root/'summary.json').write_text(json.dumps(metadata,indent=2)+'\n')

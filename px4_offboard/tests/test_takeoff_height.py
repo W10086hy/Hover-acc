@@ -40,7 +40,9 @@ class TakeoffHeightTests(unittest.TestCase):
         endpoint.ingest(message('ATTITUDE_QUATERNION', q1=1., q2=0., q3=0., q4=0.), clock)
         endpoint.ingest(message('HIGHRES_IMU', xacc=0., yacc=0., zacc=-9.8, xgyro=0., ygyro=0.,
                                 zgyro=0., time_usec=round(clock*1e6)), clock)
-        return endpoint.update(np.full(4, 535.), np.full(4, .55), clock)
+        rpm = np.full(4, 535.)
+        endpoint.record_motor_sample(rpm, clock)
+        return endpoint.update(rpm, np.full(4, .55), clock)
 
     def test_height_subscription_and_takeoff_zero_survives_offboard_switch(self):
         endpoint, sent = self.make_endpoint()
@@ -65,6 +67,43 @@ class TakeoffHeightTests(unittest.TestCase):
             self.sample(endpoint, clock, float('nan'), armed=False, on_ground=True)
         self.assertIsNone(endpoint.takeoff_baro_zero_m)
         self.assertFalse(sent)
+
+    def test_handoff_latches_recent_baro_height_and_relatches_on_reentry(self):
+        endpoint, _ = self.make_endpoint()
+        for clock in np.linspace(1., 2.1, 23):
+            self.sample(endpoint, clock, -191.5, armed=False, on_ground=True)
+        self.sample(endpoint, 9.95, -184.75, armed=True, on_ground=False)
+        self.sample(endpoint, 10., -184.5, armed=True, on_ground=False, mode=6)
+        packet, _, _, info = self.control_tick(endpoint, 10.)
+        self.assertEqual(endpoint.hold_height_locked_s, 10.)
+        self.assertEqual(info['target_height_m'], 6.75)
+        self.assertEqual(packet.baro_height, 7.)
+        self.assertEqual(info['observation'][18], -.125)
+
+        self.sample(endpoint, 10.1, -184., armed=True, on_ground=False, mode=6)
+        _, _, _, info = self.control_tick(endpoint, 10.1)
+        self.assertEqual(info['target_height_m'], 6.75)
+        self.sample(endpoint, 10.2, -184., armed=True, on_ground=False)
+        self.assertIsNone(endpoint.hold_target_height_m)
+        self.assertIsNone(self.control_tick(endpoint, 10.2))
+
+        endpoint.ingest(message('HEARTBEAT', base_mode=128, custom_mode=6 << 16), 11.)
+        self.assertIsNone(self.control_tick(endpoint, 11.))  # Old altitude cannot set the new target.
+        self.sample(endpoint, 11.05, -183.25, armed=True, on_ground=False, mode=6)
+        _, _, _, info = self.control_tick(endpoint, 11.05)
+        self.assertEqual(endpoint.takeoff_baro_zero_m, -191.5)
+        self.assertEqual(info['target_height_m'], 8.25)
+        self.assertEqual(info['observation'][18], 0.)
+        self.assertEqual(info['observation'][19], 0.)
+
+    def test_fixed_height_fixture_uses_the_declared_reference(self):
+        endpoint, _ = self.make_endpoint(hold_height_on_entry=False)
+        for clock in np.linspace(1., 2.1, 23):
+            self.sample(endpoint, clock, -191.5, armed=False, on_ground=True)
+        self.sample(endpoint, 10., -184.75, armed=True, on_ground=False, mode=6)
+        _, _, _, info = self.control_tick(endpoint, 10.)
+        self.assertEqual(info['target_height_m'], 5.)
+        self.assertEqual(info['observation'][18], -.875)
 
     def test_bptt_handoff_observes_height_above_takeoff_not_above_episode_start(self):
         cfg = read(ASSETS / 'config.json')
