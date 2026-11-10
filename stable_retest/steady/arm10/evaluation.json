@@ -1,0 +1,349 @@
+{
+  "evidence_checks_passed": true,
+  "restored_commit": "cfa262b7278967b6d2d923117c99a8895a1452ae",
+  "actor_checkpoint": "track/models/actor29.pt",
+  "actor_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "actor_updates_this_task": 0,
+  "residual_checkpoint": "P3/retest8/residual/best.pt",
+  "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+  "residual_fit_steps": 1000,
+  "residual_fit_s": 4.746559299999717,
+  "collection_safe_completed": 36,
+  "collection_count": 36,
+  "prediction": {
+    "development": {
+      "zero_residual": {
+        "loss": 0.06502274153263946,
+        "normalized_wrench_mse": 0.09001828667364623,
+        "rpm_mse_scaled": 0.040027196391632686,
+        "windows": 3040
+      },
+      "learned_residual": {
+        "loss": 0.04705723367239299,
+        "normalized_wrench_mse": 0.05443616027110501,
+        "rpm_mse_scaled": 0.03967570807588728,
+        "windows": 3040
+      },
+      "loss_reduction_percent": 27.629576109503663
+    },
+    "test": {
+      "zero_residual": {
+        "loss": 0.0681656821777946,
+        "normalized_wrench_mse": 0.08240482109157662,
+        "rpm_mse_scaled": 0.053926546950089305,
+        "windows": 3040
+      },
+      "learned_residual": {
+        "loss": 0.09951976318108408,
+        "normalized_wrench_mse": 0.017702911696151683,
+        "rpm_mse_scaled": 0.18133445884052077,
+        "windows": 3040
+      },
+      "loss_reduction_percent": -45.99687115506232
+    },
+    "test_used_for_selection": false,
+    "policy_updates": 0,
+    "gradient_steps": 1000,
+    "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b"
+  },
+  "EA_n": 49,
+  "rest_length_m": 7.800000190734863,
+  "tether_slack_m": 0.05,
+  "heading_reference_fixed_deg": 0,
+  "wind_seed": 20272982,
+  "state_seed": 20272681,
+  "sensor_seed_native": 21272684,
+  "sensor_seed_PX4": 21272985,
+  "attachment_cm": 10,
+  "wind_profile": "steady",
+  "wind_definition": "Constant1/5mps toward engineering+y90deg;no amplitude/direction changes,no gust or turbulence",
+  "input_scope": "Onboard35+nominal14;no horizontal/cart/wind/rope truth",
+  "pipeline_order": "frozen Actor29/currentP3 ->shorter slack ->nativeMuJoCo ->realPX4",
+  "new_Actor_updates": 0,
+  "new_residual_updates": 0,
+  "dynamics_mismatch": {
+    "mass_scale": 1.03,
+    "inertia_scale": 1.02,
+    "motor_tau_scale": 0.85,
+    "drag_scale": 0.9
+  },
+  "cases": [
+    {
+      "backend": "mujoco",
+      "case": "hover_wind1",
+      "path": "stable_retest/steady/arm10/results/mujoco_hover_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 10,
+      "wind_profile": "steady",
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 1.0,
+      "rmse_3d_h_xy_m": [
+        0.6879163803789997,
+        0.07351410437803962,
+        0.6839770631031712
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": 1,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": [
+        0.6879163803789997,
+        0.07351410437803962,
+        0.6839770631031712
+      ],
+      "yaw_abs_max_deg": 0.1954168975353241,
+      "yaw_RMSE_deg": 0.14039793610572815,
+      "yaw_sample_hz": 10,
+      "maxima": {
+        "tension_n": 1.829290509223938,
+        "height_error_m": 0.1397247314453125,
+        "tilt_deg_saved10hz": 0.8556942343711853
+      },
+      "maximum_horizontal_error_m": 0.8371370434761047,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 0.1702888458967209,
+      "sampled_max_deflection_m": 0.4073424525348755,
+      "sampled_mean_max_deflection_m": 0.21519454139437744,
+      "sampled_p95_max_deflection_m": 0.32249279547731946,
+      "sampled_late60to120_mean_max_deflection_m": 0.22992598307465834,
+      "sampled_max_extension_m": 0.13687695819943713,
+      "source_sha256": {
+        "result.json": "47c8c6e42dc38b6718a91e2a6d8b8d37f69c59acf6ead9f767d323e73d4b4713",
+        "protocol.json": "80319bd6d0f1d953c3c08ddf2c4afc4edb00db7c99a91530b3cb9c05dba61fd7",
+        "trajectory.npz": "c2a17f80adcb1f32b25e12bf21e162615786d2ce3c2dda78bc15272aca0ac8da",
+        "frozen_source.zip": "d91b3a2f825f989caa7038fb3b552955b0bc3f4246591ed5adcdf09748e58eca"
+      }
+    },
+    {
+      "backend": "mujoco",
+      "case": "hover_wind5",
+      "path": "stable_retest/steady/arm10/results/mujoco_hover_wind5",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 10,
+      "wind_profile": "steady",
+      "requested_wind_peak_mps": 5.0,
+      "actual_wind_peak_mps": 5.0,
+      "rmse_3d_h_xy_m": [
+        1.7674172678265552,
+        0.1380406229898815,
+        1.7620183270942589
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": 1,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": [
+        1.7674172678265552,
+        0.1380406229898815,
+        1.7620183270942589
+      ],
+      "yaw_abs_max_deg": 0.2062075287103653,
+      "yaw_RMSE_deg": 0.14043135941028595,
+      "yaw_sample_hz": 10,
+      "maxima": {
+        "tension_n": 12.788633346557617,
+        "height_error_m": 0.1750326156616211,
+        "tilt_deg_saved10hz": 7.795583248138428
+      },
+      "maximum_horizontal_error_m": 2.4751086235046387,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 1.1575171947479248,
+      "sampled_max_deflection_m": 0.7560778450356179,
+      "sampled_mean_max_deflection_m": 0.3049218291076016,
+      "sampled_p95_max_deflection_m": 0.3305609335271503,
+      "sampled_late60to120_mean_max_deflection_m": 0.3028768074933622,
+      "sampled_max_extension_m": 0.4124195641984514,
+      "source_sha256": {
+        "result.json": "20eec09044d6ffbe974945b6e01c517fb02310c95c15506b05f99f98765e8aa5",
+        "protocol.json": "a47bc703420bd54e73dbcc8c14565edaf962395db608850c7303a4f3f7b47531",
+        "trajectory.npz": "1e4fd6ca6904267bdbf75308ab119edd190f27764201184e527504c0eaf4c172",
+        "frozen_source.zip": "d91b3a2f825f989caa7038fb3b552955b0bc3f4246591ed5adcdf09748e58eca"
+      }
+    },
+    {
+      "backend": "mujoco",
+      "case": "track4_wind1",
+      "path": "stable_retest/steady/arm10/results/mujoco_track4_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 4.0,
+      "attachment_cm": 10,
+      "wind_profile": "steady",
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 1.0,
+      "rmse_3d_h_xy_m": [
+        1.0347526699365377,
+        0.11542177949444382,
+        1.0282951428257985
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": 1,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": [
+        1.0347526699365377,
+        0.11542177949444382,
+        1.0282951428257985
+      ],
+      "yaw_abs_max_deg": 0.22295711934566498,
+      "yaw_RMSE_deg": 0.140553280711174,
+      "yaw_sample_hz": 10,
+      "maxima": {
+        "tension_n": 2.729217052459717,
+        "height_error_m": 0.2933177947998047,
+        "tilt_deg_saved10hz": 8.027222633361816
+      },
+      "maximum_horizontal_error_m": 2.2198410034179688,
+      "startup5to30_lead_m": 0.8630867004394531,
+      "startup5to30_lag_m": 2.1798815727233887,
+      "maximum_relative_speed_mps": 0.8315865397453308,
+      "sampled_max_deflection_m": 0.5536463949019481,
+      "sampled_mean_max_deflection_m": 0.36879120872864257,
+      "sampled_p95_max_deflection_m": 0.48854327387143043,
+      "sampled_late60to120_mean_max_deflection_m": 0.45323858960181973,
+      "sampled_max_extension_m": 0.36657862793701845,
+      "source_sha256": {
+        "result.json": "60e9e8cfa01ce0272f48d14111a73ed1e66507dc572941a6ec97314aae4d387c",
+        "protocol.json": "679db05b4095bce958d9f3a451cada8dfc9718e9f6b7a9992008bea31711ff01",
+        "trajectory.npz": "b9c41600e725b866b97c8fd2d6314538df45f91e5d8bf5120423a2b6973d84f7",
+        "frozen_source.zip": "d91b3a2f825f989caa7038fb3b552955b0bc3f4246591ed5adcdf09748e58eca"
+      }
+    },
+    {
+      "backend": "px4",
+      "case": "hover_wind1",
+      "path": "stable_retest/steady/arm10/results/px4_hover_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 10,
+      "wind_profile": "steady",
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 1.0,
+      "rmse_3d_h_xy_m": [
+        0.860072053838617,
+        0.03260868125891766,
+        0.8594536704795269
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": null,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": null,
+      "yaw_abs_max_deg": 0.3009764795655872,
+      "yaw_RMSE_deg": 0.14218500399605513,
+      "yaw_sample_hz": 100,
+      "maxima": {
+        "tilt_deg": 1.2985084661098216,
+        "body_rate_radps": 0.08275481127827732,
+        "height_error_m": 0.07526560928572401,
+        "tension_n": 2.0092249735401833
+      },
+      "maximum_horizontal_error_m": 1.3468678707572252,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 0.30317528915599595,
+      "sampled_max_deflection_m": 0.3993906484355613,
+      "sampled_mean_max_deflection_m": 0.27156244630946963,
+      "sampled_p95_max_deflection_m": 0.3542622294432959,
+      "sampled_late60to120_mean_max_deflection_m": 0.281151707698192,
+      "sampled_max_extension_m": 0.14219805040506195,
+      "source_sha256": {
+        "result.json": "1179331b37b874f08f46fbb21fbcf91d990bf3cdb2a92355fd75e6a0930968a9",
+        "protocol.json": "a122cd5699e4f2250e57609280ae74b5f5d5c36de4fc9fa2121b53250b45aded",
+        "trajectory.npz": "ac4ba0c6eaf28c2c888d9669ce085bd69dd621d9365ea2e2d8ba103762c6eab8",
+        "frozen_source.zip": "d2c8c58adcc76b393280575aa311cb306da80da63f7d8adedddafae048c7a6e4"
+      }
+    },
+    {
+      "backend": "px4",
+      "case": "hover_wind5",
+      "path": "stable_retest/steady/arm10/results/px4_hover_wind5",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 10,
+      "wind_profile": "steady",
+      "requested_wind_peak_mps": 5.0,
+      "actual_wind_peak_mps": 5.0,
+      "rmse_3d_h_xy_m": [
+        2.1126044993451405,
+        0.04855715193803586,
+        2.112046394767169
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": null,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": null,
+      "yaw_abs_max_deg": 0.4803834879525554,
+      "yaw_RMSE_deg": 0.239169015526425,
+      "yaw_sample_hz": 100,
+      "maxima": {
+        "tilt_deg": 8.351229151907697,
+        "body_rate_radps": 0.18092438176347606,
+        "height_error_m": 0.08061107036607851,
+        "tension_n": 13.54237347000569
+      },
+      "maximum_horizontal_error_m": 2.5103534748349254,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 1.1649490677778975,
+      "sampled_max_deflection_m": 0.7568334171459369,
+      "sampled_mean_max_deflection_m": 0.4012387047849596,
+      "sampled_p95_max_deflection_m": 0.43988167752739243,
+      "sampled_late60to120_mean_max_deflection_m": 0.4028720795182468,
+      "sampled_max_extension_m": 0.3883493831151785,
+      "source_sha256": {
+        "result.json": "4bfd92f8294193585ab551b262e869ead1cd50013029dd7ffcf8fd8094010f20",
+        "protocol.json": "ba3bd8d390e028b73ba0df6cc86dbfe4d50cd1934096c3cfc0fc86f231cf7c2b",
+        "trajectory.npz": "060d5a1352615b96132922a376f69d2eebb0c911b051c2617db14a67522efd80",
+        "frozen_source.zip": "d2c8c58adcc76b393280575aa311cb306da80da63f7d8adedddafae048c7a6e4"
+      }
+    },
+    {
+      "backend": "px4",
+      "case": "track4_wind1",
+      "path": "stable_retest/steady/arm10/results/px4_track4_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 4.0,
+      "attachment_cm": 10,
+      "wind_profile": "steady",
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 1.0,
+      "rmse_3d_h_xy_m": [
+        1.6606007972457393,
+        0.11968252285350443,
+        1.656282313356212
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": null,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": null,
+      "yaw_abs_max_deg": 0.4845198633371656,
+      "yaw_RMSE_deg": 0.11899619755524579,
+      "yaw_sample_hz": 100,
+      "maxima": {
+        "tilt_deg": 24.40698831487303,
+        "body_rate_radps": 0.8421351502072131,
+        "height_error_m": 0.4742711206036798,
+        "tension_n": 3.493668775156814
+      },
+      "maximum_horizontal_error_m": 3.28294977599827,
+      "startup5to30_lead_m": 2.890777672413307,
+      "startup5to30_lag_m": 2.4384839203172604,
+      "maximum_relative_speed_mps": 2.3613596076555874,
+      "sampled_max_deflection_m": 1.0444605149039552,
+      "sampled_mean_max_deflection_m": 0.4718988113462029,
+      "sampled_p95_max_deflection_m": 0.7223976760842733,
+      "sampled_late60to120_mean_max_deflection_m": 0.5537543972730951,
+      "sampled_max_extension_m": 0.42367684001401607,
+      "source_sha256": {
+        "result.json": "119797feb7f398b71babb654d0878f684b59b276ad6260365a29bbd35631abad",
+        "protocol.json": "26103fb9150624917ee7e5702631f475a0db9e68892c820495d20303f5ab97fc",
+        "trajectory.npz": "c4f103889d0677f7fa28ce8d649d595315c16c48d33d2a570071e8bbd9351c1b",
+        "frozen_source.zip": "d2c8c58adcc76b393280575aa311cb306da80da63f7d8adedddafae048c7a6e4"
+      }
+    }
+  ],
+  "count": 6,
+  "safe_completed": 6,
+  "formal_final_acceptance": false,
+  "source_sha256": "e57fa6b54b4738b504ba7596beb8214c5fd78d2a0741ed8561b1e75e956bd751"
+}

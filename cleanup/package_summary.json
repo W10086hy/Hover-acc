@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-10",
+  "this_cleanup_removed_files": 148,
+  "this_cleanup_removed_bytes": 572385034,
+  "prior_actor37_removed_files": 678,
+  "prior_actor37_removed_bytes": 460960185,
+  "moved_regression_files": 39,
+  "actor37_native_cases": 64,
+  "actor37_attitude_gifs": 6,
+  "latest_px4_removed_files": 21,
+  "latest_px4_removed_bytes": 50714484,
+  "latest_px4_archived_files": 16,
+  "actor31_detailed_cases": 9,
+  "actor31_gifs": 8,
+  "tracking_cases_in_statistics": 16,
+  "final_checkpoints_unchanged": true,
+  "new_training_during_cleanup": false,
+  "new_experiment_run_during_cleanup": false,
+  "current_files": 977,
+  "current_bytes": 642724236
+}

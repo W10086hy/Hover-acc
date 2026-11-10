@@ -1,0 +1,275 @@
+{
+  "protocol": {
+    "action_mode": "launch_acceleration",
+    "parent_checkpoint": "P2/results/stationarity/selected37/latest.pt",
+    "parent_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "objective_s": 30,
+    "credit_s": 10,
+    "recompute_s": 1,
+    "training_seed": 21686101,
+    "selection_seed": 21686201,
+    "validation_seed": 21686301,
+    "training_directions_deg": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "selection_directions_deg": [
+      45,
+      225
+    ],
+    "validation_directions_deg": [
+      135,
+      315
+    ],
+    "learning_rates": [
+      0.00015,
+      5e-05,
+      1.5e-05
+    ],
+    "maximum_updates": 2,
+    "validation_s": 120,
+    "controller": {
+      "limits_mps2": [
+        3,
+        3,
+        4
+      ],
+      "attitude_kp_per_s2": [
+        100,
+        100,
+        36
+      ],
+      "gyro_kd_per_s": [
+        18,
+        18,
+        10
+      ],
+      "attitude_ki_per_s3": [
+        240,
+        240,
+        30
+      ],
+      "attitude_integral_limit_rad_s": 0.3
+    },
+    "rope": {
+      "segments": 12,
+      "linear_density_kgpm": 0.01,
+      "axial_rigidity_n": 49.0,
+      "axial_viscosity_ns": 9.8,
+      "diameter_m": 0.003,
+      "air_drag_coefficient": 1.2
+    }
+  },
+  "checkpoint": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止_加速度环\\P2\\results\\stationarity\\selected37\\latest.pt",
+  "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "source_sha256": {
+    "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+    "P2/hover_bptt/acceleration.py": "34cbd52071c50a82b8fa934b027e65c5212e285fce29413c7d4e2539b7fd656f",
+    "P2/hover_bptt/actor.py": "1d9998116f56c779c8027cf554e9fcc0fa4480b9f5d7a6503f8b26591665a9fa",
+    "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+    "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+    "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+    "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+    "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+    "P2/hover_bptt/controller.py": "f2a641a8c13f26b28674e075fa6165ee92762c4af083a9cf7ea6da7ae6b39277",
+    "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+    "P2/hover_bptt/domain_randomization.py": "4130020f297b4aca7ec522def3a12744ca261a662682cc7cf3e0de4ade9e0eee",
+    "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+    "P2/hover_bptt/environment.py": "07ab54fbb930166ebad3cfc660cd6dd632809e57cb9c57f51e196da84f29f2df",
+    "P2/hover_bptt/evaluation.py": "406ab6ec5e3546804e454fbc621b798c811a74dfd2e2037757336c328ecd1b1c",
+    "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+    "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+    "P2/hover_bptt/flexible_training.py": "bba0f546600343dad69256aec98cf792fd8768c134573a4257b7693f7e252d78",
+    "P2/hover_bptt/functional.py": "d0801cdc81780ca735821782898845218f1b6b128e867c1adebb146319da90a9",
+    "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+    "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+    "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+    "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+    "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+    "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+    "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+    "P2/hover_bptt/motion_statistics.py": "d589f426a1e833c0200185d9e115694dd4da37f4b8a0e0819a758c74bbdf96b4",
+    "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+    "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+    "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+    "P2/hover_bptt/onboard.py": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+    "P2/hover_bptt/onboard_graph.py": "cf9341f641a5792e45e4c19c0a70c8330a7cd59c1af8f584720c1b94fb9cebce",
+    "P2/hover_bptt/optimizer.py": "11a3eccc7270356abaf34ebd8adcfc1cf2530f28fb033095e49a2a560d85cd06",
+    "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+    "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+    "P2/hover_bptt/sensors.py": "b0b839699f4da4a1da8b9dc9ced527238591d3169c23af8c9203400f0626415f",
+    "P2/hover_bptt/state.py": "a8d19c27b2e878a7bdc8afc2395a6dca4062f39ccddd6af4bbd4f80130a51d90",
+    "P2/hover_bptt/stationarity.py": "d12422d21ddc7eca4acacdedf4cf0c8b68e8588e4f5d482e2573dc5d3c20ac13",
+    "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+    "P2/hover_bptt/training.py": "99dbc8f558a5ae8aa87b825bd43ae8df174ebce3aed46ef6cd9faca2180d402c",
+    "P2/hover_bptt/vehicle_spec.py": "5ff388026e9f349c67d366d50e5df3afc50af2fee48955d10e44f9033d3cdd67",
+    "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+    "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+    "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+    "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+    "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+    "P2/flexible_rope_protocol.json": "26265afe482859f4a0787f9a1f0413e4b041beaa11b62c1e07a5e573e6ff2a8b",
+    "P2/qualify_flexible_rope.py": "2428e3adc72505322ac22d05f8ab9cb58260e405fb0d9086c089f1b5a109c30d",
+    "P2/train_flexible_rope.py": "c071156b993943c5d285c549f9093f233acc11718d1e2a99e140ad3433026e28",
+    "P2/evaluate_flexible_rope.py": "b800de8774c2a592f019e48dc8bcd834d789e99cd0c222fa5090336b1376ac83",
+    "P2/animate.py": "ef09265d73965ed6f38dabd5c4ec6c8fa6642900af23230808c641a1e1fb5688",
+    "P2/randomized_training.py": "2075a56e5a12bbd1fff5674135f083c129494edd3ba3112f511a2e62a4397f6c",
+    "P2/parallel_cohorts.py": "8cf4abd1aac2694f3f83becef673f6a77ecfcbb2a8c5af4fc1c7070a6f184d79",
+    "track/frozen_graph.py": "0d73ba1cf01aab8b5a94312a6ae3c581b8da8aaf03a06c1984a5e9e4a7b23f81",
+    "P2/acceleration_protocol.json": "2de5f31559646cd94c082b69551c0f2e44097e195ac749abb1930ba0e2f02949",
+    "P2/train_acceleration.py": "4bad39f9cc0f6cca899a7fcd3c6298538a6f835b802933dbea54442ef99932f6",
+    "P2/evaluate_acceleration.py": "db84b16d1aab3717f7cc57254c6280aab6a505c8d78cdc7b513c0ca4874ca9c4",
+    "P2/verify_stationarity.py": "192f2f4e62e67ecd4fe16b7f7e0a56950937ade3d850900e690b0a8cf55db035",
+    "mujoco_sim/flexible.py": "e9d52066a57b61c7644c513ebf60f386c6f5d0519c050d7afd138e71e5b5805b",
+    "mujoco_sim/physics.py": "933ca79237434d5c3d658f7116249a0db19c518c6f2dab9bd717c9ced599bcd5"
+  },
+  "variant": "actor37",
+  "seed_pair": [
+    21686301,
+    21686302
+  ],
+  "cases": [
+    {
+      "attachment": 2,
+      "wind_speed": 1.0,
+      "direction_rad": 2.356194490192345,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 2.356194490192345,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "combined",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 1.0,
+      "direction_rad": 5.497787143782138,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 5.497787143782138,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "combined",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 1.0,
+      "direction_rad": 2.356194490192345,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 2.356194490192345,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "combined",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 1.0,
+      "direction_rad": 5.497787143782138,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 5.497787143782138,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "combined",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    }
+  ],
+  "duration_s": 120,
+  "device": "cpu",
+  "formal_final_acceptance": false
+}

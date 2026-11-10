@@ -1,0 +1,50 @@
+{
+  "first_policy_height_m": 4.8967132568359375,
+  "policy_height_input_rmse_m": 0.009609325146083841,
+  "takeoff_baro_zero_m": -191.80043029785156,
+  "takeoff_baro_locked_s": 3.704,
+  "site_pressure_hpa": 1036.5,
+  "duration_s": 15.0,
+  "recorded_offboard_s": 15.0,
+  "safe_completed": 1,
+  "result_error": null,
+  "sample_count": 3750,
+  "expected_sample_count": 3750,
+  "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+  "residual_enabled": false,
+  "motor_tau_s": 0.045,
+  "wind_peak_mps": 1.0,
+  "requested_wind_mps": 1.0,
+  "wind_ramp_s": 0.0,
+  "wind_profile": "steady",
+  "wind_direction_sim_deg": 90,
+  "sensor_seed": 21685134,
+  "offboard_armed": true,
+  "mode_start_ulog_usec": 32020000,
+  "max_command_gap_s": 0.012000000000000455,
+  "rmse_3d_h_xy_m": [
+    0.6166895142713784,
+    0.06384573987556885,
+    0.613375642255225
+  ],
+  "rmse_recorded_3d_h_xy_m": [
+    0.6166895142713784,
+    0.06384573987556885,
+    0.613375642255225
+  ],
+  "failure_remainder_penalty_h_xy_m": [
+    4.0,
+    6.0
+  ],
+  "min_height_m": 4.842891309864733,
+  "max_horizontal_error_m": 0.8226295814841373,
+  "last5_horizontal_speed_rms_mps": 0.052141257539859306,
+  "last5_horizontal_offset_m": 0.6946983890194155,
+  "max_tilt_deg": 0.9556912423706049,
+  "max_yaw_abs_deg": 0.06248897531400792,
+  "peak_tension_n": 6.2191016306855875,
+  "cart_speed_mps": 0.0,
+  "target_height_m": 5.0,
+  "trace_sha256": "c2960918633a527200e4ee781ce1ac602d52fb408ab0e1f09b20ee40532a9468",
+  "ulog_sha256": "0587caaf2224f161c5ff01a67ce831411bbb94d3301b0dda4fe0b0596bbfdb97"
+}

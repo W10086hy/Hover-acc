@@ -1,0 +1,120 @@
+{
+  "duration_s": 120,
+  "controller_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+  "wind_seed": 20683131,
+  "sensor_seed": 21683134,
+  "profiles": [
+    {
+      "requested_peak_wind_mps": 1,
+      "runs": [
+        {
+          "mode": "p2",
+          "rmse_3d_h_xy_m": [
+            0.6247291676682775,
+            0.05620647296090619,
+            0.6221956005411752
+          ],
+          "safe_completed": true,
+          "offline_speed_radius_passed": true,
+          "audit_passed": true,
+          "physical_failure_code": null,
+          "max_horizontal_radius_m": 1.0358524534161304,
+          "max_speed_mps": 0.22181751379099043,
+          "tail_horizontal_rmse_m": 0.604213559357896,
+          "tail_horizontal_speed_rms_mps": 0.023635957973375227,
+          "max_abs_yaw_deg": 0.14930173502984878,
+          "measured_peak_wind_mps": 1.0000187718839824,
+          "applied_fz_and_torque_rms": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "mode": "p2_p3",
+          "rmse_3d_h_xy_m": [
+            0.5868347560080988,
+            0.05878721185688494,
+            0.5838827746912718
+          ],
+          "safe_completed": true,
+          "offline_speed_radius_passed": true,
+          "audit_passed": true,
+          "physical_failure_code": null,
+          "max_horizontal_radius_m": 0.9066069270225421,
+          "max_speed_mps": 0.23990763661196493,
+          "tail_horizontal_rmse_m": 0.5606019578998749,
+          "tail_horizontal_speed_rms_mps": 0.02341666221987761,
+          "max_abs_yaw_deg": 0.15915142411070118,
+          "measured_peak_wind_mps": 1.0000187718839824,
+          "applied_fz_and_torque_rms": [
+            0.4085921171986605,
+            0.0008526545968453069,
+            0.0009525511955317655,
+            9.692352817779806e-06
+          ]
+        }
+      ],
+      "initial_and_wind_equal": true,
+      "delta_horizontal_rmse_m": -0.038312825849903365
+    },
+    {
+      "requested_peak_wind_mps": 5,
+      "runs": [
+        {
+          "mode": "p2",
+          "rmse_3d_h_xy_m": [
+            0.7224425214270125,
+            0.05974938117514715,
+            0.719967504971583
+          ],
+          "safe_completed": true,
+          "offline_speed_radius_passed": true,
+          "audit_passed": true,
+          "physical_failure_code": null,
+          "max_horizontal_radius_m": 1.0749988018673133,
+          "max_speed_mps": 0.3101264791294948,
+          "tail_horizontal_rmse_m": 0.7371756372190835,
+          "tail_horizontal_speed_rms_mps": 0.12593232734794793,
+          "max_abs_yaw_deg": 0.12600406738135467,
+          "measured_peak_wind_mps": 5.000093859419911,
+          "applied_fz_and_torque_rms": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "mode": "p2_p3",
+          "rmse_3d_h_xy_m": [
+            0.6509471619774725,
+            0.06534099212529831,
+            0.6476594494289476
+          ],
+          "safe_completed": true,
+          "offline_speed_radius_passed": true,
+          "audit_passed": true,
+          "physical_failure_code": null,
+          "max_horizontal_radius_m": 0.9325748379147075,
+          "max_speed_mps": 0.2984474188472922,
+          "tail_horizontal_rmse_m": 0.6749828014373381,
+          "tail_horizontal_speed_rms_mps": 0.11361482938880248,
+          "max_abs_yaw_deg": 0.13492234729524957,
+          "measured_peak_wind_mps": 5.000093859419911,
+          "applied_fz_and_torque_rms": [
+            0.5594868720945737,
+            0.0029608655420583596,
+            0.0016620943243700428,
+            9.426555272945556e-06
+          ]
+        }
+      ],
+      "initial_and_wind_equal": true,
+      "delta_horizontal_rmse_m": -0.07230805554263542
+    }
+  ],
+  "formal_final_acceptance": false
+}

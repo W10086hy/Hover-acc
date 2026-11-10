@@ -1,0 +1,115 @@
+{
+  "completed": true,
+  "duration_s": 120,
+  "count_per_policy": 16,
+  "backends": {
+    "torch": {
+      "completed": true,
+      "backend": "torch",
+      "count_per_policy": 16,
+      "duration_s": 120,
+      "seed_pair": [
+        20271381,
+        20271382
+      ],
+      "policy_updates": 0,
+      "optimizer_created": false,
+      "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+      "policies": [
+        {
+          "policy": "without_compensation",
+          "count": 16,
+          "safe_completed": 16,
+          "rmse_3d_h_xy_m": [
+            0.8752712586719518,
+            0.07755678203749913,
+            0.871828378648671
+          ],
+          "weak_exceedances": 2,
+          "strong_exceedances": 0,
+          "maximum_true_yaw_error_deg": 0.7135191559791565
+        },
+        {
+          "policy": "with_compensation",
+          "count": 16,
+          "safe_completed": 16,
+          "rmse_3d_h_xy_m": [
+            0.6730284894147821,
+            0.06285885294086158,
+            0.6700866452712683
+          ],
+          "weak_exceedances": 0,
+          "strong_exceedances": 0,
+          "maximum_true_yaw_error_deg": 1.6866365671157837
+        }
+      ],
+      "relative_3d_improvement": 0.23106296162864115,
+      "improved_3d_cases": 15,
+      "initial_states_and_full_wind_equal": true,
+      "actual_parameters_identical": true,
+      "source_and_protected_files_unchanged": true,
+      "residual_force_added_to_actual_plant": false,
+      "wall_s": 1001.6517602999229,
+      "final_acceptance": false
+    },
+    "mujoco": {
+      "completed": true,
+      "backend": "mujoco",
+      "count_per_policy": 16,
+      "duration_s": 120,
+      "seed_pair": [
+        20271381,
+        20271382
+      ],
+      "policy_updates": 0,
+      "optimizer_created": false,
+      "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+      "policies": [
+        {
+          "policy": "without_compensation",
+          "count": 16,
+          "safe_completed": 16,
+          "rmse_3d_h_xy_m": [
+            0.8752272791741181,
+            0.0775671378066371,
+            0.8717833041203622
+          ],
+          "weak_exceedances": 2,
+          "strong_exceedances": 0,
+          "maximum_true_yaw_error_deg": 0.7144795656204224
+        },
+        {
+          "policy": "with_compensation",
+          "count": 16,
+          "safe_completed": 16,
+          "rmse_3d_h_xy_m": [
+            0.672770527609764,
+            0.06288428811194811,
+            0.6698251631052491
+          ],
+          "weak_exceedances": 0,
+          "strong_exceedances": 0,
+          "maximum_true_yaw_error_deg": 1.7490631341934204
+        }
+      ],
+      "relative_3d_improvement": 0.23131906006791336,
+      "improved_3d_cases": 15,
+      "initial_states_and_full_wind_equal": true,
+      "actual_parameters_identical": true,
+      "source_and_protected_files_unchanged": true,
+      "residual_force_added_to_actual_plant": false,
+      "wall_s": 1360.2942874999717,
+      "final_acceptance": false
+    }
+  },
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "optimizer_created": false,
+  "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+  "source_and_protected_files_unchanged": true,
+  "concurrent_wall_s": 1370.9463701999048,
+  "final_acceptance": false
+}

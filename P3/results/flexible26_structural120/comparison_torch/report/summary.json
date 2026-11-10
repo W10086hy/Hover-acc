@@ -1,0 +1,544 @@
+{
+  "completed": true,
+  "backend": "torch",
+  "duration_s": 120,
+  "seed_pair": [
+    20271381,
+    20271382
+  ],
+  "groups": {
+    "all": {
+      "without_compensation": {
+        "count": 16,
+        "safe_completed": 16,
+        "rmse_3d_h_xy_m": [
+          0.8752712586719518,
+          0.07755678203749912,
+          0.871828378648671
+        ],
+        "max_horizontal_rmse_m": 1.4406489762288937,
+        "max_3d_rmse_m": 1.4446887521651017,
+        "peak_wind_mps": 7.888301372528076
+      },
+      "with_compensation": {
+        "count": 16,
+        "safe_completed": 16,
+        "rmse_3d_h_xy_m": [
+          0.673028489414782,
+          0.06285885294086158,
+          0.6700866452712683
+        ],
+        "max_horizontal_rmse_m": 1.2687401685518047,
+        "max_3d_rmse_m": 1.269394239146246,
+        "peak_wind_mps": 7.888301372528076
+      }
+    },
+    "weak1": {
+      "without_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          0.38260939641637365,
+          0.014010037827843566,
+          0.38235280705934954
+        ],
+        "max_horizontal_rmse_m": 0.5786349673058194,
+        "max_3d_rmse_m": 0.5788977168977026,
+        "peak_wind_mps": 1.0
+      },
+      "with_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          0.281482140768718,
+          0.05001135918294003,
+          0.2770037175281504
+        ],
+        "max_horizontal_rmse_m": 0.4288618623104552,
+        "max_3d_rmse_m": 0.43082976591411826,
+        "peak_wind_mps": 1.0
+      }
+    },
+    "base5_combined": {
+      "without_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          1.1772041463944407,
+          0.10878339818229016,
+          1.1721671274046959
+        ],
+        "max_horizontal_rmse_m": 1.4406489762288937,
+        "max_3d_rmse_m": 1.4446887521651017,
+        "peak_wind_mps": 7.888301372528076
+      },
+      "with_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          0.9092318183808498,
+          0.07349377346929929,
+          0.9062566771160308
+        ],
+        "max_horizontal_rmse_m": 1.2687401685518047,
+        "max_3d_rmse_m": 1.269394239146246,
+        "peak_wind_mps": 7.888301372528076
+      }
+    },
+    "arm5cm": {
+      "without_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          0.956621914346684,
+          0.08177927024851858,
+          0.9531199494113708
+        ],
+        "max_horizontal_rmse_m": 1.4406489762288937,
+        "max_3d_rmse_m": 1.4446887521651017,
+        "peak_wind_mps": 7.78082275390625
+      },
+      "with_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          0.7239602220315026,
+          0.06651666134750087,
+          0.7208980072431083
+        ],
+        "max_horizontal_rmse_m": 1.2687401685518047,
+        "max_3d_rmse_m": 1.269394239146246,
+        "peak_wind_mps": 7.78082275390625
+      }
+    },
+    "arm10cm": {
+      "without_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          0.7855406198956558,
+          0.07309076437994105,
+          0.7821328567886706
+        ],
+        "max_horizontal_rmse_m": 1.2644362635567163,
+        "max_3d_rmse_m": 1.269864691948682,
+        "peak_wind_mps": 7.888301372528076
+      },
+      "with_compensation": {
+        "count": 8,
+        "safe_completed": 8,
+        "rmse_3d_h_xy_m": [
+          0.6179128514960537,
+          0.058974609360839404,
+          0.6150920967584614
+        ],
+        "max_horizontal_rmse_m": 1.0862445311346947,
+        "max_3d_rmse_m": 1.087433704722092,
+        "peak_wind_mps": 7.888301372528076
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_index": 0,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 22.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.27115019179240557,
+        0.014731186029306802,
+        0.270749734380716
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.20810024296984256,
+        0.06873980900527649,
+        0.19641932130527695
+      ],
+      "horizontal_change_m": -0.07433041307543903,
+      "both_safe": true
+    },
+    {
+      "case_index": 1,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 22.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.744131088256836,
+      "before_rmse_3d_h_xy_m": [
+        0.8867030899500422,
+        0.05373565661638856,
+        0.8850733579398706
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.6115334837805229,
+        0.10710307144324618,
+        0.6020815010213866
+      ],
+      "horizontal_change_m": -0.28299185691848405,
+      "both_safe": true
+    },
+    {
+      "case_index": 2,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 112.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.5788977168977026,
+        0.01743964564909486,
+        0.5786349673058194
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.43082976591411826,
+        0.04113137796405671,
+        0.4288618623104552
+      ],
+      "horizontal_change_m": -0.14977310499536423,
+      "both_safe": true
+    },
+    {
+      "case_index": 3,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 112.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.78082275390625,
+      "before_rmse_3d_h_xy_m": [
+        1.3506610988022971,
+        0.11301561293801357,
+        1.34592454285152
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.8939648569746986,
+        0.09650494076858725,
+        0.888740660661503
+      ],
+      "horizontal_change_m": -0.45718388219001704,
+      "both_safe": true
+    },
+    {
+      "case_index": 4,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 202.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.4931826208955804,
+        0.010495171660630222,
+        0.49307093701134697
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.3640404712050005,
+        0.059066526770029264,
+        0.3592166617662441
+      ],
+      "horizontal_change_m": -0.13385427524510285,
+      "both_safe": true
+    },
+    {
+      "case_index": 5,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 202.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.39056921005249,
+      "before_rmse_3d_h_xy_m": [
+        1.294043783651172,
+        0.15930919356357395,
+        1.2842000992261156
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.935778726657044,
+        0.02599065058888151,
+        0.9354177202436595
+      ],
+      "horizontal_change_m": -0.348782378982456,
+      "both_safe": true
+    },
+    {
+      "case_index": 6,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 292.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.5449102010343246,
+        0.013263031027444675,
+        0.5447487670470059
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.41389833865606307,
+        0.048682843080415525,
+        0.4110253222513872
+      ],
+      "horizontal_change_m": -0.1337234447956187,
+      "both_safe": true
+    },
+    {
+      "case_index": 7,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 292.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.008228778839111,
+      "before_rmse_3d_h_xy_m": [
+        1.4446887521651017,
+        0.10796350273587457,
+        1.4406489762288937
+      ],
+      "after_rmse_3d_h_xy_m": [
+        1.269394239146246,
+        0.04074455891054702,
+        1.2687401685518047
+      ],
+      "horizontal_change_m": -0.17190880767708894,
+      "both_safe": true
+    },
+    {
+      "case_index": 8,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 22.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.2183647528529563,
+        0.011524391202305561,
+        0.21806043587948026
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.1565028951366132,
+        0.05819081307174723,
+        0.14528243341915334
+      ],
+      "horizontal_change_m": -0.07277800246032692,
+      "both_safe": true
+    },
+    {
+      "case_index": 9,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 22.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.888301372528076,
+      "before_rmse_3d_h_xy_m": [
+        0.7041350392424919,
+        0.05107489775470549,
+        0.7022802206444176
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.7155688750378422,
+        0.1136919217398074,
+        0.7064792720625515
+      ],
+      "horizontal_change_m": 0.0041990514181338146,
+      "both_safe": true
+    },
+    {
+      "case_index": 10,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 112.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.1895365450764437,
+        0.012848786334726053,
+        0.1891005304308778
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.11292712715092702,
+        0.03237298440109711,
+        0.10818745734847438
+      ],
+      "horizontal_change_m": -0.08091307308240342,
+      "both_safe": true
+    },
+    {
+      "case_index": 11,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 112.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.237603664398193,
+      "before_rmse_3d_h_xy_m": [
+        1.269864691948682,
+        0.11729139465728583,
+        1.2644362635567163
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.8599511296514918,
+        0.057850286423625226,
+        0.8580030825991135
+      ],
+      "horizontal_change_m": -0.40643318095760284,
+      "both_safe": true
+    },
+    {
+      "case_index": 12,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 202.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.21788554443006874,
+        0.010419446655017418,
+        0.21763626904307723
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.164848131793875,
+        0.05071325233295011,
+        0.15685366617884744
+      ],
+      "horizontal_change_m": -0.06078260286422979,
+      "both_safe": true
+    },
+    {
+      "case_index": 13,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 202.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.168632984161377,
+      "before_rmse_3d_h_xy_m": [
+        1.0599035212191785,
+        0.12858995941370316,
+        1.0520741877979878
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.7206686111103114,
+        0.035119566513722375,
+        0.7198123804767139
+      ],
+      "horizontal_change_m": -0.33226180732127386,
+      "both_safe": true
+    },
+    {
+      "case_index": 14,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "direction_deg": 292.5,
+      "wind_profile": "steady",
+      "peak_wind_mps": 1.0,
+      "before_rmse_3d_h_xy_m": [
+        0.3020546411595859,
+        0.018883214917693274,
+        0.3014638128207404
+      ],
+      "after_rmse_3d_h_xy_m": [
+        0.1915193672873831,
+        0.026967539395710984,
+        0.18961123348868425
+      ],
+      "horizontal_change_m": -0.11185257933205617,
+      "both_safe": true
+    },
+    {
+      "case_index": 15,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "direction_deg": 292.5,
+      "wind_profile": "combined",
+      "peak_wind_mps": 7.672399044036865,
+      "before_rmse_3d_h_xy_m": [
+        1.2175862090558385,
+        0.095256186259718,
+        1.2138543716040329
+      ],
+      "after_rmse_3d_h_xy_m": [
+        1.087433704722092,
+        0.05084172248834335,
+        1.0862445311346947
+      ],
+      "horizontal_change_m": -0.1276098404693382,
+      "both_safe": true
+    }
+  ],
+  "representative_case_indices": [
+    2,
+    7
+  ],
+  "representative_selection": "maximum learned horizontal RMSE in each wind class",
+  "attitudes": [
+    {
+      "case_index": 2,
+      "values": [
+        {
+          "mode": "without_compensation",
+          "maximum_abs_rpy_deg": [
+            7.439450263977051,
+            8.426193237304688,
+            0.35724738240242004
+          ],
+          "mean_rpy_deg": [
+            -0.06014670431613922,
+            -0.16821733117103577,
+            0.1348145753145218
+          ]
+        },
+        {
+          "mode": "with_compensation",
+          "maximum_abs_rpy_deg": [
+            7.439450263977051,
+            8.426193237304688,
+            0.35724738240242004
+          ],
+          "mean_rpy_deg": [
+            -0.06916937232017517,
+            -0.18463820219039917,
+            0.13481563329696655
+          ]
+        }
+      ],
+      "heading_reference_deg": 0,
+      "wind_direction_means": "flow toward;upwind is180deg opposite",
+      "commanded_heading_is_upwind": false
+    },
+    {
+      "case_index": 7,
+      "values": [
+        {
+          "mode": "without_compensation",
+          "maximum_abs_rpy_deg": [
+            4.988617897033691,
+            7.719273567199707,
+            0.3977910280227661
+          ],
+          "mean_rpy_deg": [
+            1.2397313117980957,
+            0.6533571481704712,
+            0.08485598117113113
+          ]
+        },
+        {
+          "mode": "with_compensation",
+          "maximum_abs_rpy_deg": [
+            5.987240791320801,
+            7.719273567199707,
+            0.3977910280227661
+          ],
+          "mean_rpy_deg": [
+            1.2398037910461426,
+            0.6435135006904602,
+            0.0848454162478447
+          ]
+        }
+      ],
+      "heading_reference_deg": 0,
+      "wind_direction_means": "flow toward;upwind is180deg opposite",
+      "commanded_heading_is_upwind": false
+    }
+  ],
+  "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+  "source_summary_sha256": "98b7da7c27306dd31a7a96a6196b363d7ff877b06b08a94a51d5d3dec715abab",
+  "reporter_source_sha256": "52b721052d52f439e5f9aa68426eed19c00e137d9f5f49d8077ac0440160c56c",
+  "new_simulation": false,
+  "model_selection": false
+}

@@ -1,0 +1,71 @@
+{
+  "duration_s": 120.0,
+  "cart_speed_mps": 4.0,
+  "cart_direction_engineering_deg": 0.0,
+  "cart_anchor_height_m": 0.15,
+  "target_aircraft_height_m": 8.0,
+  "physics_dt_s": 0.0005,
+  "attachment_cm": [
+    5
+  ],
+  "initial_conditions": [
+    "hover_capture"
+  ],
+  "aircraft_initial_velocity_mps": [
+    0,
+    0,
+    0
+  ],
+  "state_seed": 20272681,
+  "wind_seed": 20272982,
+  "wind_peak_mps": 1.0,
+  "wind_mean_direction_deg": 90.0,
+  "controller_checkpoint": "track/models/actor29.pt",
+  "controller_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "residual_checkpoint": "P3/retest8/residual/best.pt",
+  "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+  "residual_protocol": "P3/retest8/protocol.json",
+  "modes": [
+    "with_compensation"
+  ],
+  "initialization": "8m stationary hover;hold5s and10s half-cosine cart ramp",
+  "controller_inputs": "Original onboard35 and external nominal14 only;no cart position/velocity,GNSS,wind or rope truth",
+  "cart_model": "Ideal prescribed rail drive with native qpos AND qvel;continuous half-cosine start;no wheel/traction dynamics",
+  "cart_inertial_regularization_kg": 1000000.0,
+  "failure_remainder": {
+    "horizontal_error_m": 6.0,
+    "height_error_m": 4.0
+  },
+  "cart_motion": {
+    "kind": "half_cosine_ramp",
+    "hold_s": 5.0,
+    "ramp_s": 10.0
+  },
+  "test_date": "2026-11-02",
+  "test_scope": "GitHub cfa262b restored29 Actor;fresh8m P3;EA49;no Actor update",
+  "case_specs": [
+    {
+      "attachment_cm": 5,
+      "cart_speed_mps": 4.0,
+      "cart_motion": {
+        "kind": "half_cosine_ramp",
+        "hold_s": 5.0,
+        "ramp_s": 10.0
+      }
+    }
+  ],
+  "height_speed_criteria": {
+    "hover_horizontal_rmse_m": 0.53,
+    "moving_horizontal_rmse_m": 1.5,
+    "height_rmse_m": 0.3,
+    "all_cases_safe": true,
+    "source": "provisional moderate criteria;user may override"
+  },
+  "offline_world_speed_limit_mps": 7.0,
+  "evaluation_horizontal_radius_m": 6.0,
+  "wind_normalization_horizon_s": 120.0,
+  "allow_actor_continuation_with_fixed_residual": true,
+  "residual_training_actor_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "continue_after_performance_boundary": true,
+  "tether_slack_m": 0.05
+}

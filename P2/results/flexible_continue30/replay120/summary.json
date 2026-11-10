@@ -1,0 +1,23 @@
+{
+  "completed": true,
+  "wall_s": 425.70604080008343,
+  "duration_s": 120.0,
+  "count": 64,
+  "safe_completed": 64,
+  "rmse_3d_h_xy_m": [
+    0.675121664657807,
+    0.051481901058798574,
+    0.6731559076125683
+  ],
+  "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "cumulative_physical_updates": 26,
+  "seed_pair": [
+    20269781,
+    20269782
+  ],
+  "source_and_protected_files_unchanged": true,
+  "initial_states_match_reference": true,
+  "optimizer_created": false,
+  "policy_updates": 0,
+  "final_acceptance": false
+}

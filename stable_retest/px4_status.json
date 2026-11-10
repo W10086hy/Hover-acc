@@ -1,0 +1,74 @@
+{
+  "completed": true,
+  "cases": [
+    {
+      "case": "hover_wind1",
+      "command": [
+        "/home/s/full_csdp_v2/.venv/bin/python",
+        "-u",
+        "-B",
+        "-m",
+        "px4_offboard.run",
+        "--assets",
+        "/home/s/hover_bptt_px4/stable_retest/assets",
+        "--output",
+        "/home/s/hover_bptt_px4/stable_retest/results/px4_hover_wind1",
+        "--duration",
+        "120",
+        "--cart-speed",
+        "0",
+        "--wind-peak",
+        "1",
+        "--seed",
+        "20272982"
+      ],
+      "returncode": 0
+    },
+    {
+      "case": "hover_wind5",
+      "command": [
+        "/home/s/full_csdp_v2/.venv/bin/python",
+        "-u",
+        "-B",
+        "-m",
+        "px4_offboard.run",
+        "--assets",
+        "/home/s/hover_bptt_px4/stable_retest/assets",
+        "--output",
+        "/home/s/hover_bptt_px4/stable_retest/results/px4_hover_wind5",
+        "--duration",
+        "120",
+        "--cart-speed",
+        "0",
+        "--wind-peak",
+        "5",
+        "--seed",
+        "20272982"
+      ],
+      "returncode": 0
+    },
+    {
+      "case": "track4_wind1",
+      "command": [
+        "/home/s/full_csdp_v2/.venv/bin/python",
+        "-u",
+        "-B",
+        "-m",
+        "px4_offboard.run",
+        "--assets",
+        "/home/s/hover_bptt_px4/stable_retest/assets",
+        "--output",
+        "/home/s/hover_bptt_px4/stable_retest/results/px4_track4_wind1",
+        "--duration",
+        "120",
+        "--cart-speed",
+        "4",
+        "--wind-peak",
+        "1",
+        "--seed",
+        "20272982"
+      ],
+      "returncode": 0
+    }
+  ]
+}

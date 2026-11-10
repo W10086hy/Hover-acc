@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "verified_files": 974,
+  "source_snapshot_matches": true,
+  "changed_sources": [],
+  "actor31_safe_120s_cases": 9,
+  "actor31_full_replays": 8,
+  "historical_10m_20m_cases": 16,
+  "protected_files_unchanged": true,
+  "latest_actor37": {
+    "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "optimizer_preserved": true,
+    "steady_count": 32,
+    "steady_safe": 32,
+    "steady_strong_stationary": 16,
+    "variable_count": 32,
+    "variable_safe": 32,
+    "latest_attitude_gifs": 6,
+    "steady_rmse_3d_h_xy_m": [
+      0.6566104875009838,
+      0.11261886998467935,
+      0.646880454504272
+    ],
+    "variable_rmse_3d_h_xy_m": [
+      0.6042512074713048,
+      0.1323594986304544,
+      0.5895765301068425
+    ],
+    "formal_final_acceptance": false
+  },
+  "latest_px4": {
+    "safe_120s_cases": 2,
+    "full_replays": 1,
+    "removed_count": 21,
+    "moved_count": 16
+  },
+  "stock_px4_transfer": {
+    "safe_15s_cases": 2,
+    "firmware": "1.14.4",
+    "sensor_seeds": [
+      21685134
+    ],
+    "selected_actor_updates": 38,
+    "newest_trained_actor_updates": 39,
+    "newest_selected": false,
+    "removed_files": 148,
+    "removed_bytes": 572385034
+  }
+}

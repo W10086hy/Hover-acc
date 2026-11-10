@@ -1,0 +1,22 @@
+{
+  "scope": "Current30s development goal; horizontalRMSE, not formal120s acceptance",
+  "duration_s": 30,
+  "metric": "Per-case full-horizon horizontalRMSE relative to origin",
+  "wind_grouping": "base_wind_speed; instantaneous peaks reported separately",
+  "weak_max_base_mps": 1.0,
+  "weak_horizontal_rmse_limit_m": 0.5,
+  "weak_absolute_tolerance_m": 0.03,
+  "tolerance_basis": "User explicitly accepted the0.527m example (about2.7cm above0.5m) as approximately not exceeding; report raw values and nominal exceedances separately",
+  "strong_max_base_mps": 5.0,
+  "strong_horizontal_rmse_limit_m": 1.5,
+  "strong_absolute_tolerance_m": 0.0,
+  "steady_base_speeds_mps": [0,0.5,1,2,3,4,5],
+  "additional_stress_profile": "5mps combined gust/turbulence/varying direction; peak may exceed5mps",
+  "directions_deg": [22.5,112.5,202.5,292.5],
+  "seed_pairs": [[20269681,20269682],[20269781,20269782]],
+  "all_cases_safe": true,
+  "failure_remainder_xy_m": 6,
+  "failure_remainder_height_m": 4,
+  "visualizations": ["3D actual trajectory plus dynamic cable","XY top-down full trajectory and origin"],
+  "final_acceptance": false
+}

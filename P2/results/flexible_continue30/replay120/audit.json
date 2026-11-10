@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "simulation_complete120s": true,
+  "count": 64,
+  "safe_completed": 64,
+  "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "policy_updates": 0,
+  "actor_and_adam_files_unchanged": true,
+  "original21_and_p3_unchanged": true,
+  "initial_states_match30s_reference": true,
+  "sources_and_archive_verified": 49,
+  "full_rate_metric_hz": 100,
+  "saved_state_count": 1201,
+  "views": [
+    {
+      "wind_group": "weak",
+      "case_index": 26,
+      "frames": 201,
+      "playback_duration_s": 20.1,
+      "gif_bytes": 3768577,
+      "gif_sha256": "1205ce1f3cf9ace9044810f6998682d316dbbae57d7ea11a6e3b1394138cc9cd"
+    },
+    {
+      "wind_group": "strong",
+      "case_index": 30,
+      "frames": 201,
+      "playback_duration_s": 20.1,
+      "gif_bytes": 2816359,
+      "gif_sha256": "571b3c47b33f977153c7c6064029a6e81c282e01777735bb9781042a4575dea1"
+    }
+  ],
+  "zero_based_height_and_distance_axes": true,
+  "formal_final_acceptance": false,
+  "metrics_sha256": "6604de001acd17d584dfac3365cb4a4c4d695417579d5dc4e5a70451fd5496b0",
+  "frozen_renderer_source_path": "P2\\results\\flexible_continue30\\replay120\\frozen_renderer.py",
+  "frozen_renderer_source_sha256": "074d1d9883d0b020384ac1fa5d41d969eb7798d5e2f5ba1f587f52105a3466ac"
+}

@@ -1,0 +1,1171 @@
+{
+  "checkpoint": "P2\\results\\flexible_continue30\\step4\\latest.pt",
+  "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "cumulative_physical_updates": 26,
+  "duration_s": 120.0,
+  "seed_pair": [
+    20269781,
+    20269782
+  ],
+  "case_count": 64,
+  "cases": [
+    {
+      "attachment": 2,
+      "wind_speed": 0.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 0.5,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 1.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 2.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 3.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 4.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 0.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 0.5,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 1.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 2.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 3.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 4.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 0.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 0.5,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 1.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 2.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 3.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 4.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 0.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 0.5,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 1.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 2.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 3.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 4.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.5,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 1.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 2.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 3.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 4.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 0.39269908169872414,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.5,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 1.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 2.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 3.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 4.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 1.9634954084936207,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.5,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 1.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 2.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 3.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 4.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 3.5342917352885173,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 0.5,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 1.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 2.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 3.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 4.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady_target",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 5.105088062083414,
+      "gust_fraction": 0.2,
+      "wind_profile": "combined",
+      "group": "base5_combined_stress",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0
+    }
+  ],
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "reference_evaluation": "P2\\results\\flexible_continue30\\horizontal_step4_check\\after\\20269781",
+  "reference_result_sha256": "7761a74353f165979fe9875e40b72d1a9af4683c50f55f8bba64c1c9a80cc3f0",
+  "source_sha256": {
+    "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+    "P2/hover_bptt/actor.py": "ae57e2bf9c4d2083ec05d8ea8a7cfe490b32aa16e230aafd48415d44424f9fb6",
+    "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+    "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+    "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+    "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+    "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+    "P2/hover_bptt/controller.py": "27e2f5c024d2d37fb5a61084f6ea04685f0db0c661ab41bd377043e5bee030f1",
+    "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+    "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+    "P2/hover_bptt/environment.py": "a8850f4e4a1c910dcbd8e7dc72950dbe10b953d3f5a352a5aa1f0af0952bfb66",
+    "P2/hover_bptt/evaluation.py": "d1db49fb64a591990e9e383f5c2e1ba4504695b29e4854cc8019f7837abc7718",
+    "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+    "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+    "P2/hover_bptt/flexible_training.py": "0e3d56cd57cc87603e90ba062b50f6f92cdf35d2a0d89921060a89db5887515a",
+    "P2/hover_bptt/functional.py": "00e0020afa3944e5582caab9d77b7ce1e633e23e5bec59f46c983d1bbbc8b4b0",
+    "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+    "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+    "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+    "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+    "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+    "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+    "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+    "P2/hover_bptt/motion_statistics.py": "e9e215e09defb6d6bfb0dd282d47d606bca0687a73d1ca2bb8dfa40586913e12",
+    "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+    "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+    "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+    "P2/hover_bptt/onboard.py": "0108c1ce8d8d41c683ad8fe494f54ccca8e7ca87aa8f0514165020add4a6f608",
+    "P2/hover_bptt/optimizer.py": "5e9c7e7df6116d0766092f02df1b73df56a7be46a2b50836dcbc70a6846bca26",
+    "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+    "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+    "P2/hover_bptt/sensors.py": "1814dd5c51446ccb4a8a6834a607ab06fcdcdf6b0c4289fbe3b8481c2581db8a",
+    "P2/hover_bptt/state.py": "cf7e0e169a7bdf70297e37185c8ea38e905f6a51b7bfe711bed8ea854f32b57c",
+    "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+    "P2/hover_bptt/training.py": "5384b4561498b32e3f3ad20598425341b4e53915eab324e426c1d0a9411b7761",
+    "P2/hover_bptt/vehicle_spec.py": "3c791f9e83fe7d00507164cb792928f64b3ad42ef0f591f55ef15ad7c2daa1a8",
+    "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+    "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+    "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+    "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+    "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+    "P2/flexible_rope_protocol.json": "83d9953835679f676388038acd5747081b9a0ae100946777614e115ef580cb43",
+    "P2/qualify_flexible_rope.py": "8abbe30ac65532d1cb200ec307ac319d9f060928a201be34a45d3716fc05b504",
+    "P2/train_flexible_rope.py": "4e3f1162fcd386e50dc9ed85f4e2f9cb22c81a4f620719caad5144355ab49b4c",
+    "P2/evaluate_flexible_rope.py": "fffbfeaf6f537a69b5fbe5313d308ee1d5bb631bd344a7834f4b446973161e42",
+    "P2/animate.py": "73732b4d2692e7194b5227b9a7b1d160e17879749afead8ba572640727db9047",
+    "P2/flexible_rope_30s_protocol.json": "e6d8eeccc0345efcc954a97a3dc95c25b97ae23acfa385394deabea80d13611d",
+    "P2/replay_flexible_policy.py": "e6ec9c8054e40f2243549892df5697450a617d78ad8021e2578361e0dca024b8"
+  },
+  "protected_files": {
+    "P2\\results\\flexible_continue30\\step4\\latest.pt": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+    "P2/results/training/conditioned/latest.pt": "78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a",
+    "P3/results/residual/best.pt": "766dae2be7b9ef9f4757e2365afb4fbc998a945da7a8cb483f0a602e4b873a6e"
+  },
+  "optimizer_created": false,
+  "policy_updates": 0,
+  "p3_enabled": false,
+  "final_acceptance": false
+}

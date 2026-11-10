@@ -1,0 +1,54 @@
+{
+  "current": {
+    "checkpoint": "P2/results/acceleration/training_transfer/latest.pt",
+    "sha256": "134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782",
+    "action_mode": "launch_acceleration",
+    "cumulative_physical_updates": 2,
+    "optimizer_embedded": true,
+    "height_m": 5,
+    "p3_enabled": false,
+    "report": "P2/results/acceleration/README.md",
+    "verification": "P2/results/acceleration/native120/step2/flight/audit.json"
+  },
+  "frozen_rate_thrust_baseline": {
+    "checkpoint": "P2/results/stationarity/selected37/latest.pt",
+    "sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "cumulative_physical_updates": 37,
+    "optimizer_embedded": true,
+    "height_m": 5,
+    "p3_enabled": false,
+    "report": "P2/results/stationarity/FINAL37.md",
+    "verification": "P2/results/stationarity/retained_verification.json"
+  },
+  "legacy_required_by_P3": {
+    "checkpoint": "P2/results/flexible_continue30/step4/latest.pt",
+    "sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+    "cumulative_physical_updates": 26,
+    "optimizer_embedded": true
+  },
+  "future_authorized_continuation_protocol": "P2/continue_actor37.json",
+  "test_models": "P2/tests/fixtures;test-only,not runtime policies",
+  "stock_px4_development": {
+    "checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+    "sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+    "parent_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "cumulative_physical_updates": 38,
+    "optimizer_embedded": true,
+    "target_height_m": 5,
+    "p3_enabled": false,
+    "assets": "px4_offboard/stock_transfer/selected_assets",
+    "report": "P2/results/px4_transfer/README.md",
+    "validation": "px4_offboard/stock_transfer/height_reference/comparison.json",
+    "historical_statistics": "px4_offboard/stock_transfer/history_statistics.json"
+  },
+  "stock_px4_latest_trained": {
+    "checkpoint": "P2/results/px4_transfer/update3/candidate.pt",
+    "sha256": "d759fb67e5e376916cd50d05d14efe5dc401ee8d17f71c60f162634402def910",
+    "parent_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+    "cumulative_physical_updates": 39,
+    "optimizer_embedded": true,
+    "selected_for_use": false,
+    "status": "rejected_development_candidate",
+    "report": "P2/results/px4_transfer/README.md"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "sensors": {
+    "group": "IMU + idealized onboard attitude + simulated motor-speed feedback + barometer (user authorized)",
+    "gyro_noise_radps": 0.003,
+    "gyro_bias_radps": 0.003,
+    "accel_noise_mps2": 0.04,
+    "accel_bias_mps2": 0.03,
+    "attitude_noise_deg": 0.15,
+    "yaw_drift_degps": 0.1,
+    "rpm_noise_radps": 1,
+    "specific_force_filter_alpha": 0.5,
+    "limitation": "Attitude estimate is truth plus modeled errors, not a validated inertial estimator. RPM feedback and barometric reference calibration require hardware verification.",
+    "baro_noise_m": 0.02,
+    "baro_bias_m": 0.03,
+    "baro_drift_mps": 0.002,
+    "baro_rate_hz": 20,
+    "baro_delay_samples": 2,
+    "motion_features": {
+      "enabled": true,
+      "velocity_leak_s": 5,
+      "position_leak_s": 20
+    },
+    "angular_prediction_mode": "interval_motor",
+    "preflight_baro_calibration": {
+      "enabled": true,
+      "stationary_s": 20.0,
+      "known_ground_relative_height_m": 0.0,
+      "method": "OLS biasandlinear drift from past barometer measurements",
+      "sensor_bias_drift_and_measurement_noise_unchanged": true,
+      "measurement_delay_and_held_sample_clock_preserved": true,
+      "future_measurements_or_simulator_latents_not_estimator_inputs": true
+    }
+  },
+  "environment": {
+    "training_episode_s": 120,
+    "evaluation_episode_s": 120,
+    "max_training_wind_mps": 5,
+    "wind_gust_fraction": 0.2,
+    "initial_xy_m": 0.2,
+    "initial_z_m": 0.02,
+    "initial_tilt_deg": 10,
+    "initial_speed_mps": 0.15,
+    "initial_rate_radps": 0.2
+  },
+  "offline_limits": {
+    "status": "Provisional simulation termination limits, not deployable safety guarantees or measured hardware limits",
+    "tilt_deg": 45,
+    "rate_radps": 4,
+    "speed_mps": 5,
+    "min_height_m": 1,
+    "max_height_m": 9,
+    "horizontal_radius_m": 6,
+    "tension_n": 30
+  },
+  "reward": {
+    "kind": "height_priority",
+    "alive": 0.5,
+    "position_gain": 10,
+    "xy_scale_m": 0.5,
+    "height_scale_m": 0.2,
+    "tilt_scale_rad": 0.35,
+    "rate_scale_radps": 1,
+    "speed_scale_mps": 1,
+    "tilt_bounded": 0,
+    "rate_bounded": 0.1,
+    "speed_bounded": 0.1,
+    "normalized_residual_squared": 0,
+    "command_change_squared": 0.02,
+    "failure": 20,
+    "height_gain": 8,
+    "xy_gain": 2
+  },
+  "controller": {
+    "action_mode": "body_rate_thrust",
+    "target_height_m": 5,
+    "trim_excess_n": 0.5,
+    "throttle_rate_per_s": 3,
+    "residual_throttle_limit": 0.04,
+    "fallback_tilt_deg": 40,
+    "fallback_rate_radps": 4,
+    "rate_limits_radps": [
+      2,
+      2,
+      1.5
+    ],
+    "rate_kp_per_s": [
+      18,
+      18,
+      10
+    ],
+    "rate_ki_per_s2": [
+      80,
+      80,
+      40.0
+    ],
+    "rate_integral_limit": 0.4,
+    "thrust_delta_fraction": 0.6,
+    "min_total_thrust_fraction": 0.05,
+    "max_total_thrust_fraction": 0.95,
+    "thrust_kp": 0.2,
+    "thrust_ki_per_s": 0.5,
+    "thrust_integral_fraction": 0.2,
+    "initial_sensor_feedback": {
+      "enabled": true,
+      "attitude_gain_per_s": [
+        5,
+        7
+      ],
+      "height_kp_per_s2": 2,
+      "vertical_kd_per_s": 3
+    },
+    "rate_gain_revision": "20261025_roll_pitch_constant_torque_rejection",
+    "heading_hold": {
+      "enabled": true,
+      "kp_per_s": 1.5,
+      "ki_per_s2": 0.5,
+      "integral_limit_rads": 2.0,
+      "reference": "preflight_launch_heading"
+    }
+  },
+  "bptt": {
+    "position_objective": "pseudo_huber",
+    "safety_barrier_gain": 10
+  },
+  "model": {
+    "observation_dim": 35,
+    "gru_hidden": 128,
+    "hidden_dims": [
+      128,
+      128
+    ],
+    "proxy_scale": 10.0,
+    "gravity_mps2": 9.8
+  },
+  "training": {
+    "method": "physical_BPTT_rate_thrust",
+    "flight_s": 120.0,
+    "credit_s": 10.0,
+    "recompute_s": 1.0,
+    "origin_equilibrium_phase": {
+      "horizontal_force_weight": 16.0,
+      "yaw_rate_weight": 0.2,
+      "yaw_rate_scale_radps": 0.02
+    },
+    "heading_error_BPTT": {
+      "active": true,
+      "weight": 0.1,
+      "scale_deg": 5.0,
+      "reference_rad": 0.0
+    },
+    "hover_convergence_BPTT": {
+      "active": true,
+      "late_position_multiplier": 2.0,
+      "late_ramp_start_s": 20.0,
+      "late_ramp_end_s": 120.0,
+      "speed_weight": 0.2,
+      "speed_scale_mps": 0.25,
+      "angular_acceleration_weight": 0.002,
+      "angular_acceleration_scale_radps2": 1.0,
+      "motor_slew_weight": 0.02,
+      "motor_step_scale": 0.01
+    }
+  }
+}

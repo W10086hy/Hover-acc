@@ -1,0 +1,578 @@
+{
+  "protocol": {
+    "parent_checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+    "parent_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+    "objective_s": 30,
+    "credit_s": 30,
+    "recompute_s": 1,
+    "seed": 20685131,
+    "development_seed": 20685141,
+    "training_winds_mps": [
+      0,
+      1
+    ],
+    "training_motor_tau_s": 0.045,
+    "development_motor_tau_s": 0.06,
+    "learning_rate": 0.0002,
+    "stock_px4": {
+      "rate_p": [
+        0.15,
+        0.15,
+        0.2
+      ],
+      "rate_i": [
+        0.2,
+        0.2,
+        0.1
+      ],
+      "rate_d": [
+        0.003,
+        0.003,
+        0
+      ],
+      "integral_limit": [
+        0.3,
+        0.3,
+        0.3
+      ],
+      "rate_derivative_filter_s": 0.02,
+      "prediction_substeps": 3,
+      "predictor_motor_tau_s": 0.045,
+      "command_filter_s": 0.065,
+      "rate_mix": [
+        [
+          -0.455,
+          0.93,
+          0.85
+        ],
+        [
+          -0.455,
+          -0.93,
+          -0.85
+        ],
+        [
+          0.455,
+          0.93,
+          -0.85
+        ],
+        [
+          0.455,
+          -0.93,
+          0.85
+        ]
+      ]
+    },
+    "handoff_initialization": {
+      "initial_xy_m": 0.04,
+      "initial_z_m": 0.16,
+      "initial_tilt_deg": 1.5,
+      "initial_speed_mps": 0.04,
+      "initial_rate_radps": 0.025
+    },
+    "rope": {
+      "segments": 12,
+      "linear_density_kgpm": 0.01,
+      "axial_rigidity_n": 49.0,
+      "axial_viscosity_ns": 9.8,
+      "diameter_m": 0.003,
+      "air_drag_coefficient": 1.2
+    }
+  },
+  "configuration": {
+    "sensors": {
+      "group": "IMU + idealized onboard attitude + simulated motor-speed feedback + barometer (user authorized)",
+      "gyro_noise_radps": 0.003,
+      "gyro_bias_radps": 0.003,
+      "accel_noise_mps2": 0.04,
+      "accel_bias_mps2": 0.03,
+      "attitude_noise_deg": 0.15,
+      "yaw_drift_degps": 0.1,
+      "rpm_noise_radps": 1,
+      "specific_force_filter_alpha": 0.5,
+      "limitation": "Attitude estimate is truth plus modeled errors, not a validated inertial estimator. RPM feedback and barometric reference calibration require hardware verification.",
+      "baro_noise_m": 0.02,
+      "baro_bias_m": 0.03,
+      "baro_drift_mps": 0.002,
+      "baro_rate_hz": 20,
+      "baro_delay_samples": 2,
+      "motion_features": {
+        "enabled": true,
+        "velocity_leak_s": 5,
+        "position_leak_s": 20
+      },
+      "angular_prediction_mode": "interval_motor",
+      "preflight_baro_calibration": {
+        "enabled": true,
+        "stationary_s": 20.0,
+        "known_ground_relative_height_m": 0.0,
+        "method": "OLS biasandlinear drift from past barometer measurements",
+        "sensor_bias_drift_and_measurement_noise_unchanged": true,
+        "measurement_delay_and_held_sample_clock_preserved": true,
+        "future_measurements_or_simulator_latents_not_estimator_inputs": true
+      }
+    },
+    "environment": {
+      "training_episode_s": 120,
+      "evaluation_episode_s": 120,
+      "max_training_wind_mps": 5,
+      "wind_gust_fraction": 0.2,
+      "initial_xy_m": 0.04,
+      "initial_z_m": 0.16,
+      "initial_tilt_deg": 1.5,
+      "initial_speed_mps": 0.04,
+      "initial_rate_radps": 0.025
+    },
+    "offline_limits": {
+      "status": "Provisional simulation termination limits, not deployable safety guarantees or measured hardware limits",
+      "tilt_deg": 45,
+      "rate_radps": 4,
+      "speed_mps": 5,
+      "min_height_m": 1,
+      "max_height_m": 9,
+      "horizontal_radius_m": 6,
+      "tension_n": 30
+    },
+    "reward": {
+      "kind": "height_priority",
+      "alive": 0.5,
+      "position_gain": 10,
+      "xy_scale_m": 0.5,
+      "height_scale_m": 0.2,
+      "tilt_scale_rad": 0.35,
+      "rate_scale_radps": 1,
+      "speed_scale_mps": 1,
+      "tilt_bounded": 0,
+      "rate_bounded": 0.3,
+      "speed_bounded": 0.1,
+      "normalized_residual_squared": 0,
+      "command_change_squared": 0.08,
+      "failure": 20,
+      "height_gain": 8,
+      "xy_gain": 2
+    },
+    "controller": {
+      "action_mode": "body_rate_thrust",
+      "target_height_m": 5,
+      "trim_excess_n": 0.5,
+      "throttle_rate_per_s": 3,
+      "residual_throttle_limit": 0.04,
+      "fallback_tilt_deg": 40,
+      "fallback_rate_radps": 4,
+      "rate_limits_radps": [
+        2,
+        2,
+        1.5
+      ],
+      "rate_kp_per_s": [
+        18,
+        18,
+        10
+      ],
+      "rate_ki_per_s2": [
+        80,
+        80,
+        40.0
+      ],
+      "rate_integral_limit": 0.4,
+      "thrust_delta_fraction": 0.6,
+      "min_total_thrust_fraction": 0.05,
+      "max_total_thrust_fraction": 0.95,
+      "thrust_kp": 0.2,
+      "thrust_ki_per_s": 0.5,
+      "thrust_integral_fraction": 0.2,
+      "initial_sensor_feedback": {
+        "enabled": true,
+        "attitude_gain_per_s": [
+          5,
+          7
+        ],
+        "height_kp_per_s2": 2,
+        "vertical_kd_per_s": 3
+      },
+      "rate_gain_revision": "20261025_roll_pitch_constant_torque_rejection",
+      "heading_hold": {
+        "enabled": true,
+        "kp_per_s": 1.5,
+        "ki_per_s2": 0.5,
+        "integral_limit_rads": 2.0,
+        "reference": "preflight_launch_heading"
+      },
+      "stock_px4": {
+        "rate_p": [
+          0.15,
+          0.15,
+          0.2
+        ],
+        "rate_i": [
+          0.2,
+          0.2,
+          0.1
+        ],
+        "rate_d": [
+          0.003,
+          0.003,
+          0
+        ],
+        "integral_limit": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "rate_derivative_filter_s": 0.02,
+        "prediction_substeps": 3,
+        "predictor_motor_tau_s": 0.045,
+        "command_filter_s": 0.065,
+        "rate_mix": [
+          [
+            -0.455,
+            0.93,
+            0.85
+          ],
+          [
+            -0.455,
+            -0.93,
+            -0.85
+          ],
+          [
+            0.455,
+            0.93,
+            -0.85
+          ],
+          [
+            0.455,
+            -0.93,
+            0.85
+          ]
+        ]
+      }
+    },
+    "bptt": {
+      "position_objective": "pseudo_huber",
+      "safety_barrier_gain": 10
+    },
+    "model": {
+      "observation_dim": 35,
+      "gru_hidden": 128,
+      "hidden_dims": [
+        128,
+        128
+      ],
+      "proxy_scale": 10.0,
+      "gravity_mps2": 9.8,
+      "conditioning": {
+        "enabled": true,
+        "width": 32,
+        "parameter_fields": [
+          "mass_kg",
+          "inertia_xx",
+          "inertia_yy",
+          "inertia_zz",
+          "rotor_dx_m",
+          "rotor_dy_m",
+          "kf",
+          "km",
+          "motor_tau_s",
+          "motor_poly_a",
+          "motor_poly_b",
+          "motor_poly_c",
+          "motor_deadzone",
+          "rotor_inertia_kgm2"
+        ],
+        "reference_vehicle": {
+          "mass_kg": 2.3,
+          "inertia_body_kgm2": [
+            0.0126,
+            0.0055,
+            0.0158
+          ],
+          "rotor_dx_m": 0.12,
+          "rotor_dy_m": 0.12,
+          "kf": 2.009e-05,
+          "km": 5.732e-07,
+          "motor_tau_s": 0.002,
+          "motor_speed_polynomial": [
+            -387.3,
+            1269,
+            -32.5
+          ],
+          "motor_deadzone": 0,
+          "rotor_inertia_kgm2": 8.8493e-06,
+          "include_gyro": true
+        },
+        "schema_version": 1,
+        "context_source": "calibrated airframe and actuator configuration only"
+      }
+    },
+    "training": {
+      "method": "physical_BPTT_rate_thrust",
+      "flight_s": 120.0,
+      "credit_s": 10.0,
+      "recompute_s": 1.0,
+      "origin_equilibrium_phase": {
+        "horizontal_force_weight": 16.0,
+        "yaw_rate_weight": 0.2,
+        "yaw_rate_scale_radps": 0.02
+      },
+      "heading_error_BPTT": {
+        "active": true,
+        "weight": 0.1,
+        "scale_deg": 5.0,
+        "reference_rad": 0.0
+      },
+      "hover_convergence_BPTT": {
+        "active": true,
+        "late_position_multiplier": 2.0,
+        "late_ramp_start_s": 20.0,
+        "late_ramp_end_s": 120.0,
+        "speed_weight": 0.2,
+        "speed_scale_mps": 0.25,
+        "angular_acceleration_weight": 0.002,
+        "angular_acceleration_scale_radps2": 1.0,
+        "motor_slew_weight": 0.02,
+        "motor_step_scale": 0.01
+      },
+      "report_credit_progress": true,
+      "dynamic_rope_objective": "actual path+heading+convergence; no stale-node target counterfactual",
+      "stationarity_metric_window_s": 30
+    }
+  },
+  "parent_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+  "source_sha256": {
+    "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+    "P2/hover_bptt/actor.py": "ae57e2bf9c4d2083ec05d8ea8a7cfe490b32aa16e230aafd48415d44424f9fb6",
+    "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+    "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+    "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+    "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+    "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+    "P2/hover_bptt/controller.py": "8460247845ed71c2401bcf9926a8b7c40a6ef20faec04d99fe8914397f690789",
+    "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+    "P2/hover_bptt/domain_randomization.py": "4130020f297b4aca7ec522def3a12744ca261a662682cc7cf3e0de4ade9e0eee",
+    "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+    "P2/hover_bptt/environment.py": "834de89659ab1298bc722e206cb1d2d510d5a448dbaff9febd098f6fa7892996",
+    "P2/hover_bptt/evaluation.py": "d1db49fb64a591990e9e383f5c2e1ba4504695b29e4854cc8019f7837abc7718",
+    "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+    "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+    "P2/hover_bptt/flexible_training.py": "bba0f546600343dad69256aec98cf792fd8768c134573a4257b7693f7e252d78",
+    "P2/hover_bptt/functional.py": "d0801cdc81780ca735821782898845218f1b6b128e867c1adebb146319da90a9",
+    "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+    "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+    "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+    "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+    "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+    "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+    "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+    "P2/hover_bptt/motion_statistics.py": "d589f426a1e833c0200185d9e115694dd4da37f4b8a0e0819a758c74bbdf96b4",
+    "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+    "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+    "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+    "P2/hover_bptt/onboard.py": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+    "P2/hover_bptt/onboard_graph.py": "04ab6c3c948f87fc6b5d351771bc70cc6ebeedb5be5de2ada547cc398c261415",
+    "P2/hover_bptt/optimizer.py": "11a3eccc7270356abaf34ebd8adcfc1cf2530f28fb033095e49a2a560d85cd06",
+    "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+    "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+    "P2/hover_bptt/sensors.py": "b0b839699f4da4a1da8b9dc9ced527238591d3169c23af8c9203400f0626415f",
+    "P2/hover_bptt/state.py": "a8d19c27b2e878a7bdc8afc2395a6dca4062f39ccddd6af4bbd4f80130a51d90",
+    "P2/hover_bptt/stationarity.py": "d12422d21ddc7eca4acacdedf4cf0c8b68e8588e4f5d482e2573dc5d3c20ac13",
+    "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+    "P2/hover_bptt/training.py": "40e89faa2f5c6916d8733c5cd3938e42270ea379274b3a134db8f50e7e2cdd60",
+    "P2/hover_bptt/vehicle_spec.py": "5ff388026e9f349c67d366d50e5df3afc50af2fee48955d10e44f9033d3cdd67",
+    "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+    "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+    "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+    "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+    "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+    "P2/flexible_rope_protocol.json": "26265afe482859f4a0787f9a1f0413e4b041beaa11b62c1e07a5e573e6ff2a8b",
+    "P2/qualify_flexible_rope.py": "2428e3adc72505322ac22d05f8ab9cb58260e405fb0d9086c089f1b5a109c30d",
+    "P2/train_flexible_rope.py": "c071156b993943c5d285c549f9093f233acc11718d1e2a99e140ad3433026e28",
+    "P2/evaluate_flexible_rope.py": "b800de8774c2a592f019e48dc8bcd834d789e99cd0c222fa5090336b1376ac83",
+    "P2/animate.py": "ef09265d73965ed6f38dabd5c4ec6c8fa6642900af23230808c641a1e1fb5688",
+    "P2/randomized_training.py": "2075a56e5a12bbd1fff5674135f083c129494edd3ba3112f511a2e62a4397f6c",
+    "P2/parallel_cohorts.py": "8cf4abd1aac2694f3f83becef673f6a77ecfcbb2a8c5af4fc1c7070a6f184d79",
+    "track/frozen_graph.py": "0d73ba1cf01aab8b5a94312a6ae3c581b8da8aaf03a06c1984a5e9e4a7b23f81",
+    "P2/px4_transfer30_refine.json": "9ce7073fb83c7f832e7f215bf998a2fde60837190e3301df8290d751f35af946",
+    "P2/train_px4_transfer.py": "48edfa660d2985265f68cbab5fd0e691aa27a48c1d13ed5b46c0b3bf916fc7fd"
+  },
+  "qualification": {
+    "passed": true,
+    "gradient_s": 1.0,
+    "gradient_wall_s": 9.182171199994627,
+    "loss": 5.200374603271484,
+    "gradient_norm": 82.60261535644531,
+    "baseline": {
+      "cost": 5.200374419689179,
+      "duration_s": 1.0,
+      "objective_start_s": 0.0,
+      "control_steps": 100,
+      "completed": [
+        true,
+        true
+      ],
+      "height_rmse_m": [
+        0.10747426538454212,
+        0.004037072912660366
+      ],
+      "horizontal_rmse_m": [
+        0.06306620475976678,
+        0.03601758255687221
+      ],
+      "position_rmse_m": [
+        0.12461165235541906,
+        0.036243126395818025
+      ],
+      "maximum_true_yaw_error_deg": [
+        0.35457855463027954,
+        0.23480749130249023
+      ],
+      "late_convergence": {
+        "sample_hz": 100.0,
+        "start_step": 0,
+        "end_step": 100,
+        "expected_samples": 100,
+        "samples": [
+          100.0,
+          100.0
+        ],
+        "late_origin_rmse_m": [
+          0.12461165234771003,
+          0.03624312636803548
+        ],
+        "late_horizontal_std_m": [
+          0.012285937288407435,
+          0.03252578667752283
+        ],
+        "late_horizontal_bias_m": [
+          0.06185791739457841,
+          0.015470599602853855
+        ],
+        "late_horizontal_drift_mps": [
+          0.04225791599282075,
+          0.10937327467880928
+        ],
+        "late_horizontal_speed_rms_mps": [
+          0.04123574647557196,
+          0.1222709028957626
+        ],
+        "late_detrended_position_std_m": [
+          0.007181747514941388,
+          0.00796869099639181
+        ],
+        "late_detrended_height_std_m": [
+          0.00703059859159783,
+          0.001532857057260441
+        ],
+        "late_speed_rms_mps": [
+          0.1575022985930114,
+          0.12281975515554411
+        ],
+        "late_angular_acceleration_rms_radps2": [
+          37.229770010723215,
+          36.42103807463646
+        ],
+        "late_motor_step_rms_normalized": [
+          0.07942266562409543,
+          0.07741178140166607
+        ]
+      },
+      "vehicle_identity": "3d11342b1f5714558db1d2a263d1667c5baa5e4caa11728bca53e7ad05c52bd9",
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.0,
+          "actual_rms_wind_mps": 0.0,
+          "actual_peak_wind_mps": 0.0
+        },
+        {
+          "actual_mean_wind_mps": 0.0,
+          "actual_rms_wind_mps": 0.0,
+          "actual_peak_wind_mps": 0.0
+        }
+      ],
+      "wind_seed": 20685132,
+      "wind_trace_dtype": "torch.float32",
+      "attachment": [
+        2,
+        2
+      ],
+      "wind_speed": [
+        0.0,
+        1.0
+      ],
+      "direction_rad": [
+        1.5707963267948966,
+        1.5707963267948966
+      ],
+      "wind_profile": [
+        "steady",
+        "steady"
+      ]
+    },
+    "diagnostics": {
+      "gradient_subwindows": 1,
+      "gradient_credit_steps": 100,
+      "optimizer_interval_steps": 100,
+      "recomputed_segments": 1,
+      "maximum_recomputed_steps": 100
+    },
+    "source_sha256": {
+      "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+      "P2/hover_bptt/actor.py": "ae57e2bf9c4d2083ec05d8ea8a7cfe490b32aa16e230aafd48415d44424f9fb6",
+      "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+      "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+      "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+      "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+      "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+      "P2/hover_bptt/controller.py": "8460247845ed71c2401bcf9926a8b7c40a6ef20faec04d99fe8914397f690789",
+      "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+      "P2/hover_bptt/domain_randomization.py": "4130020f297b4aca7ec522def3a12744ca261a662682cc7cf3e0de4ade9e0eee",
+      "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+      "P2/hover_bptt/environment.py": "834de89659ab1298bc722e206cb1d2d510d5a448dbaff9febd098f6fa7892996",
+      "P2/hover_bptt/evaluation.py": "d1db49fb64a591990e9e383f5c2e1ba4504695b29e4854cc8019f7837abc7718",
+      "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+      "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+      "P2/hover_bptt/flexible_training.py": "bba0f546600343dad69256aec98cf792fd8768c134573a4257b7693f7e252d78",
+      "P2/hover_bptt/functional.py": "d0801cdc81780ca735821782898845218f1b6b128e867c1adebb146319da90a9",
+      "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+      "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+      "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+      "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+      "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+      "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+      "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+      "P2/hover_bptt/motion_statistics.py": "d589f426a1e833c0200185d9e115694dd4da37f4b8a0e0819a758c74bbdf96b4",
+      "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+      "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+      "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+      "P2/hover_bptt/onboard.py": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+      "P2/hover_bptt/onboard_graph.py": "04ab6c3c948f87fc6b5d351771bc70cc6ebeedb5be5de2ada547cc398c261415",
+      "P2/hover_bptt/optimizer.py": "11a3eccc7270356abaf34ebd8adcfc1cf2530f28fb033095e49a2a560d85cd06",
+      "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+      "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+      "P2/hover_bptt/sensors.py": "b0b839699f4da4a1da8b9dc9ced527238591d3169c23af8c9203400f0626415f",
+      "P2/hover_bptt/state.py": "a8d19c27b2e878a7bdc8afc2395a6dca4062f39ccddd6af4bbd4f80130a51d90",
+      "P2/hover_bptt/stationarity.py": "d12422d21ddc7eca4acacdedf4cf0c8b68e8588e4f5d482e2573dc5d3c20ac13",
+      "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+      "P2/hover_bptt/training.py": "40e89faa2f5c6916d8733c5cd3938e42270ea379274b3a134db8f50e7e2cdd60",
+      "P2/hover_bptt/vehicle_spec.py": "5ff388026e9f349c67d366d50e5df3afc50af2fee48955d10e44f9033d3cdd67",
+      "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+      "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+      "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+      "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+      "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+      "P2/flexible_rope_protocol.json": "26265afe482859f4a0787f9a1f0413e4b041beaa11b62c1e07a5e573e6ff2a8b",
+      "P2/qualify_flexible_rope.py": "2428e3adc72505322ac22d05f8ab9cb58260e405fb0d9086c089f1b5a109c30d",
+      "P2/train_flexible_rope.py": "c071156b993943c5d285c549f9093f233acc11718d1e2a99e140ad3433026e28",
+      "P2/evaluate_flexible_rope.py": "b800de8774c2a592f019e48dc8bcd834d789e99cd0c222fa5090336b1376ac83",
+      "P2/animate.py": "ef09265d73965ed6f38dabd5c4ec6c8fa6642900af23230808c641a1e1fb5688",
+      "P2/randomized_training.py": "2075a56e5a12bbd1fff5674135f083c129494edd3ba3112f511a2e62a4397f6c",
+      "P2/parallel_cohorts.py": "8cf4abd1aac2694f3f83becef673f6a77ecfcbb2a8c5af4fc1c7070a6f184d79",
+      "track/frozen_graph.py": "0d73ba1cf01aab8b5a94312a6ae3c581b8da8aaf03a06c1984a5e9e4a7b23f81",
+      "P2/px4_transfer30_refine.json": "9ce7073fb83c7f832e7f215bf998a2fde60837190e3301df8290d751f35af946",
+      "P2/train_px4_transfer.py": "48edfa660d2985265f68cbab5fd0e691aa27a48c1d13ed5b46c0b3bf916fc7fd"
+    },
+    "parent_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+    "gpu": "NVIDIA GeForce RTX 3060"
+  },
+  "final_acceptance": false
+}

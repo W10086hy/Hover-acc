@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "tests_run": 177,
+  "tests_passed": 176,
+  "tests_skipped": 1,
+  "groups": {
+    "P2": {
+      "run": 105,
+      "passed": 105,
+      "session": 49435
+    },
+    "P3": {
+      "run": 25,
+      "passed": 25,
+      "session": 79792
+    },
+    "track": {
+      "run": 25,
+      "passed": 25,
+      "session": 37838
+    },
+    "mujoco_sim": {
+      "run": 18,
+      "passed": 18,
+      "session": 96420
+    },
+    "px4_offboard": {
+      "run": 4,
+      "passed": 3,
+      "skipped": 1,
+      "session": 66261
+    }
+  },
+  "commands": "python.cmd -X utf8 -B -m unittest discover -s <group>/tests -q",
+  "all_exit_codes": 0,
+  "skip_reason": "Linux-only symlink semantics on Windows",
+  "immutable_verification": {
+    "command": "python.cmd -X utf8 -B verify_project.py",
+    "session": 52241,
+    "exit_code": 0,
+    "verified_files": 555,
+    "protected_files_unchanged": true,
+    "strict_sources": false,
+    "source_snapshot_matches": false,
+    "reason": "Current maintenance sources legitimately differ from frozen historical snapshots"
+  }
+}

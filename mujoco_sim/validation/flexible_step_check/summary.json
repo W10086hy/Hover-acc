@@ -1,0 +1,31 @@
+{
+  "mode": "one-second fixed-RPM open-loop refinement from archived90s states;not120s closed-loop convergence",
+  "case_indices": [
+    26,
+    30,
+    31,
+    58,
+    62,
+    63
+  ],
+  "physics_steps_s": [
+    0.0005,
+    0.00025,
+    0.000125
+  ],
+  "differences": [
+    {
+      "maximum_body_position_difference_m": 0.00012415388849523979,
+      "maximum_node_position_difference_m": 9.360268330280568e-05
+    },
+    {
+      "maximum_body_position_difference_m": 6.207643963612536e-05,
+      "maximum_node_position_difference_m": 4.679275820320889e-05
+    }
+  ],
+  "all_finite": true,
+  "wall_s": 10.132921500015073,
+  "source_sha256": "482702f1ead4e68982a0fd584c53b2b13df17b69f02d45b179f31846d20696a2",
+  "reference_trajectory_sha256": "64036f1800ef6700ce761be139a82a9e7237a98922b35ed0d358ff0fa3c2b1b9",
+  "model_source_sha256": "e27bff82b029f82015c1885b9a05bee01afd7d3b6e4abc6d51044d29e45beef3"
+}

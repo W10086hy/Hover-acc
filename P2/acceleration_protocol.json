@@ -1,0 +1,32 @@
+{
+  "action_mode": "launch_acceleration",
+  "parent_checkpoint": "P2/results/stationarity/selected37/latest.pt",
+  "parent_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "objective_s": 30,
+  "credit_s": 10,
+  "recompute_s": 1,
+  "training_seed": 21686101,
+  "selection_seed": 21686201,
+  "validation_seed": 21686301,
+  "training_directions_deg": [0, 90, 180, 270],
+  "selection_directions_deg": [45, 225],
+  "validation_directions_deg": [135, 315],
+  "learning_rates": [0.00015, 0.00005, 0.000015],
+  "maximum_updates": 2,
+  "validation_s": 120,
+  "controller": {
+    "limits_mps2": [3, 3, 4],
+    "attitude_kp_per_s2": [100, 100, 36],
+    "gyro_kd_per_s": [18, 18, 10],
+    "attitude_ki_per_s3": [240, 240, 30],
+    "attitude_integral_limit_rad_s": 0.3
+  },
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  }
+}

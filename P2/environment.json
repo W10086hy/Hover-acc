@@ -1,0 +1,16 @@
+{
+  "python": "3.11.5",
+  "interpreter": "../training_env/.venv-win/Scripts/python.exe",
+  "wrapper": "../training_env/python.cmd",
+  "packages": {
+    "torch": "2.12.1+cu130",
+    "tensordict": "0.15.2",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0",
+    "Pillow": "12.2.0"
+  },
+  "cuda_device": "NVIDIA GeForce RTX 3060",
+  "new_dependencies_installed": [],
+  "global_configuration_modified": false,
+  "path_base": "repository_root"
+}

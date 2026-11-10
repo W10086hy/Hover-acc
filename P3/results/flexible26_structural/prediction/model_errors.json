@@ -1,0 +1,8 @@
+{
+  "source_sha256": "629ebdef5f3fd65a76252242ba921e50880d6e18c1b7f939d6a40ec767b82491",
+  "test_summary_sha256": "74f1e4cc6fd9a45587b01a2428d170fd092c2cebb73f557a03bcfc998e50bfde",
+  "training_summary_sha256": "e2014ee6d9510d2c1f23d8e4dad8141efa18cf669ee9b623f422c53418d25a72",
+  "new_training": false,
+  "test_used_for_selection": false,
+  "motor_generalization_improved": false
+}

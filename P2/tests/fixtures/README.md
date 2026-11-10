@@ -1,0 +1,7 @@
+# 精确回归测试夹具
+
+baseline19.pt与conditioned21.pt是原有位级轨迹、梯度、Adam恢复和传感器链测试的固定输入，字节及原SHA256保持；reference_trace.npz、reference_gradients.npz为其参考输出。它们不作为当前训练或正常评价的策略。
+
+flexible_reference.zip仅含独立审阅过的优化前绳动力学源码，用于验证当前实现的状态与梯度未因缓存优化改变，来源P2/validation/flexible_dynamic_reference_v2/frozen_source.zip；源码SHA256=b14e237aab47e0214078552f8a4f45351b971516401ca6c397577bd4316ecb98。
+
+当前有效策略始终为P2/results/flexible_continue30/step4/latest.pt。此处旧权重不是额外保留的中间训练结果目录。

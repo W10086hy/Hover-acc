@@ -1,0 +1,23 @@
+{
+  "remote": "https://github.com/W10086hy/Hover-BPTT.git",
+  "expected_commit": "cfa262b7278967b6d2d923117c99a8895a1452ae",
+  "restored_model_sha256": {
+    "P2/results/flexible_continue30/step4/latest.pt": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+    "P3/results/flexible26_structural/residual/best.pt": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+    "track/models/actor29.pt": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc"
+  },
+  "retained_validation_code_sha256": {
+    "px4_offboard/__init__.py": "ac476b1bde3daf0cf7bfe931aae3f05f42dfd9b5dffe85fdd47610d57c24f54d",
+    "px4_offboard/physics.py": "ab55c0710cec69278bdbe330daa3b5923c16c4fa2ff164434e5241cc6318d254",
+    "px4_offboard/network.py": "ec40385254353d9e7fe8a371aa5c5b5bce5b027258c8786741a99d504d85a5e6",
+    "px4_offboard/control.py": "425eb6ec3d025665cf909ca11e7c13d3b23cb4c0100e14e40ac645de96615619",
+    "px4_offboard/offboard.py": "ed75ffd2dbfc7349ef9ab001e9170e064d5173f2378de4de1e67844542ef0234",
+    "px4_offboard/run.py": "464adf7a9080744120e253efba8f5108489b6941b4627199270a969313609b20",
+    "px4_offboard/px4_startup.py": "7422489f32e4a8b859cc2a48a3601a306b73d18e0c589c569f5e326228a80169",
+    "px4_offboard/audit.py": "77625b2da72710d9c90ea88c3332eafd7011efa94951aef003a74b3fc62eb5d2",
+    "px4_offboard/replay.py": "0053cdd4b338f6f3de92e99f28e0f53be52ab533a02b1afe64e012018349d0d2",
+    "px4_offboard/training/local_mujoco.py": "56e37eaa302fc86a00b02381e201699702ebbcd14d2a7712efec3fc39581a340",
+    "px4_offboard/height8_validation/run_suite.py": "3ae85e11c85a216ede39d3df7cd8ede03d91f02ee822d2c189b07116e2ab6556"
+  },
+  "training_updates": 0
+}

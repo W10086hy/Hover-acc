@@ -1,0 +1,399 @@
+{
+  "passed": true,
+  "gradient_s": 30,
+  "gradient_wall_s": 343.5151165999705,
+  "loss": 4.943084716796875,
+  "gradient_norm": 404.25738525390625,
+  "baseline": {
+    "cost": 4.943084396451711,
+    "duration_s": 30.0,
+    "objective_start_s": 0.0,
+    "control_steps": 3000,
+    "completed": [
+      true,
+      true
+    ],
+    "height_rmse_m": [
+      0.06902111856211672,
+      0.04671557991700164
+    ],
+    "horizontal_rmse_m": [
+      0.9849328034735141,
+      0.7469167274799776
+    ],
+    "position_rmse_m": [
+      0.9873482375361602,
+      0.7483762043226528
+    ],
+    "maximum_true_yaw_error_deg": [
+      0.20830868184566498,
+      0.23927274346351624
+    ],
+    "late_convergence": {
+      "sample_hz": 100.0,
+      "start_step": 0,
+      "end_step": 3000,
+      "expected_samples": 3000,
+      "samples": [
+        3000.0,
+        3000.0
+      ],
+      "late_origin_rmse_m": [
+        0.9873482369665092,
+        0.7483762042226181
+      ],
+      "late_horizontal_std_m": [
+        0.7495968591507336,
+        0.2277810079607878
+      ],
+      "late_horizontal_bias_m": [
+        0.6389031029739409,
+        0.7113370579796007
+      ],
+      "late_horizontal_drift_mps": [
+        0.07014519160868597,
+        0.007149836003397287
+      ],
+      "late_horizontal_speed_rms_mps": [
+        0.12694226256326788,
+        0.09144472954102237
+      ],
+      "late_detrended_position_std_m": [
+        0.4400313995807748,
+        0.21958237358123542
+      ],
+      "late_detrended_height_std_m": [
+        0.02753603642349402,
+        0.012893501836047917
+      ],
+      "late_speed_rms_mps": [
+        0.1349815961995231,
+        0.09854149684014321
+      ],
+      "late_angular_acceleration_rms_radps2": [
+        11.021647583669562,
+        10.995179965471966
+      ],
+      "late_motor_step_rms_normalized": [
+        0.02302577250589462,
+        0.02295253771320322
+      ]
+    },
+    "vehicle_identity": "12f10c2bad562364bb919033bc5b0983d6e4b0f42ffb1de6c9578faa16130fc4",
+    "wind_statistics": [
+      {
+        "actual_mean_wind_mps": 0.0,
+        "actual_rms_wind_mps": 0.0,
+        "actual_peak_wind_mps": 0.0
+      },
+      {
+        "actual_mean_wind_mps": 0.8998667597770691,
+        "actual_rms_wind_mps": 0.9427404999732971,
+        "actual_peak_wind_mps": 1.0
+      }
+    ],
+    "wind_seed": 20685102,
+    "wind_trace_dtype": "torch.float32",
+    "attachment": [
+      2,
+      2
+    ],
+    "wind_speed": [
+      0.0,
+      1.0
+    ],
+    "direction_rad": [
+      1.5707963267948966,
+      1.5707963267948966
+    ],
+    "wind_profile": [
+      "steady",
+      "steady"
+    ]
+  },
+  "diagnostics": {
+    "gradient_subwindows": 1,
+    "gradient_credit_steps": 3000,
+    "optimizer_interval_steps": 3000,
+    "recomputed_segments": 30,
+    "maximum_recomputed_steps": 100
+  },
+  "source_sha256": {
+    "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+    "P2/hover_bptt/actor.py": "ae57e2bf9c4d2083ec05d8ea8a7cfe490b32aa16e230aafd48415d44424f9fb6",
+    "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+    "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+    "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+    "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+    "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+    "P2/hover_bptt/controller.py": "8460247845ed71c2401bcf9926a8b7c40a6ef20faec04d99fe8914397f690789",
+    "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+    "P2/hover_bptt/domain_randomization.py": "4130020f297b4aca7ec522def3a12744ca261a662682cc7cf3e0de4ade9e0eee",
+    "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+    "P2/hover_bptt/environment.py": "834de89659ab1298bc722e206cb1d2d510d5a448dbaff9febd098f6fa7892996",
+    "P2/hover_bptt/evaluation.py": "d1db49fb64a591990e9e383f5c2e1ba4504695b29e4854cc8019f7837abc7718",
+    "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+    "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+    "P2/hover_bptt/flexible_training.py": "bba0f546600343dad69256aec98cf792fd8768c134573a4257b7693f7e252d78",
+    "P2/hover_bptt/functional.py": "d0801cdc81780ca735821782898845218f1b6b128e867c1adebb146319da90a9",
+    "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+    "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+    "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+    "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+    "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+    "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+    "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+    "P2/hover_bptt/motion_statistics.py": "d589f426a1e833c0200185d9e115694dd4da37f4b8a0e0819a758c74bbdf96b4",
+    "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+    "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+    "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+    "P2/hover_bptt/onboard.py": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+    "P2/hover_bptt/onboard_graph.py": "04ab6c3c948f87fc6b5d351771bc70cc6ebeedb5be5de2ada547cc398c261415",
+    "P2/hover_bptt/optimizer.py": "11a3eccc7270356abaf34ebd8adcfc1cf2530f28fb033095e49a2a560d85cd06",
+    "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+    "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+    "P2/hover_bptt/sensors.py": "b0b839699f4da4a1da8b9dc9ced527238591d3169c23af8c9203400f0626415f",
+    "P2/hover_bptt/state.py": "a8d19c27b2e878a7bdc8afc2395a6dca4062f39ccddd6af4bbd4f80130a51d90",
+    "P2/hover_bptt/stationarity.py": "d12422d21ddc7eca4acacdedf4cf0c8b68e8588e4f5d482e2573dc5d3c20ac13",
+    "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+    "P2/hover_bptt/training.py": "40e89faa2f5c6916d8733c5cd3938e42270ea379274b3a134db8f50e7e2cdd60",
+    "P2/hover_bptt/vehicle_spec.py": "5ff388026e9f349c67d366d50e5df3afc50af2fee48955d10e44f9033d3cdd67",
+    "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+    "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+    "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+    "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+    "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+    "P2/flexible_rope_protocol.json": "26265afe482859f4a0787f9a1f0413e4b041beaa11b62c1e07a5e573e6ff2a8b",
+    "P2/qualify_flexible_rope.py": "2428e3adc72505322ac22d05f8ab9cb58260e405fb0d9086c089f1b5a109c30d",
+    "P2/train_flexible_rope.py": "c071156b993943c5d285c549f9093f233acc11718d1e2a99e140ad3433026e28",
+    "P2/evaluate_flexible_rope.py": "b800de8774c2a592f019e48dc8bcd834d789e99cd0c222fa5090336b1376ac83",
+    "P2/animate.py": "ef09265d73965ed6f38dabd5c4ec6c8fa6642900af23230808c641a1e1fb5688",
+    "P2/randomized_training.py": "2075a56e5a12bbd1fff5674135f083c129494edd3ba3112f511a2e62a4397f6c",
+    "P2/parallel_cohorts.py": "8cf4abd1aac2694f3f83becef673f6a77ecfcbb2a8c5af4fc1c7070a6f184d79",
+    "track/frozen_graph.py": "0d73ba1cf01aab8b5a94312a6ae3c581b8da8aaf03a06c1984a5e9e4a7b23f81",
+    "P2/px4_transfer30.json": "2af6a4765cf34a167946bf2c266337320023ef9dcc827e4e3d3160bdceba2e3a",
+    "P2/train_px4_transfer.py": "48aee261775ab012201dc0c93e53d51ab5615700e0c9ce481f2cd96565e0c145"
+  },
+  "parent_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "checkpoint_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+  "development": {
+    "candidate": {
+      "cost": 4.045741585234801,
+      "duration_s": 30.0,
+      "objective_start_s": 0.0,
+      "control_steps": 3000,
+      "completed": [
+        true,
+        true
+      ],
+      "height_rmse_m": [
+        0.031716750567912864,
+        0.033741298108371155
+      ],
+      "horizontal_rmse_m": [
+        0.8610917317419385,
+        0.6864332178674442
+      ],
+      "position_rmse_m": [
+        0.8616756482232266,
+        0.6872619862831728
+      ],
+      "maximum_true_yaw_error_deg": [
+        0.20410792529582977,
+        0.4098108410835266
+      ],
+      "late_convergence": {
+        "sample_hz": 100.0,
+        "start_step": 0,
+        "end_step": 3000,
+        "expected_samples": 3000,
+        "samples": [
+          3000.0,
+          3000.0
+        ],
+        "late_origin_rmse_m": [
+          0.8616756480758755,
+          0.6872619863787636
+        ],
+        "late_horizontal_std_m": [
+          0.3496836279935797,
+          0.4675512374083857
+        ],
+        "late_horizontal_bias_m": [
+          0.7868928329406857,
+          0.5025797480235477
+        ],
+        "late_horizontal_drift_mps": [
+          0.036505258913382195,
+          0.03035859439070012
+        ],
+        "late_horizontal_speed_rms_mps": [
+          0.07331979183577722,
+          0.10906201533966883
+        ],
+        "late_detrended_position_std_m": [
+          0.1502705310319748,
+          0.3870204915602387
+        ],
+        "late_detrended_height_std_m": [
+          0.01581538268828134,
+          0.017435957343256144
+        ],
+        "late_speed_rms_mps": [
+          0.0828394662855364,
+          0.11569806333994549
+        ],
+        "late_angular_acceleration_rms_radps2": [
+          14.750715719329333,
+          14.724008123454405
+        ],
+        "late_motor_step_rms_normalized": [
+          0.028875686418612018,
+          0.028826451148560583
+        ]
+      },
+      "vehicle_identity": "a20ac33e260d7f4987a5d0d61991946d043159d49bef6fd38665a2161cd89609",
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.0,
+          "actual_rms_wind_mps": 0.0,
+          "actual_peak_wind_mps": 0.0
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404403686523,
+          "actual_peak_wind_mps": 0.9999999403953552
+        }
+      ],
+      "wind_seed": 20685112,
+      "wind_trace_dtype": "torch.float32",
+      "attachment": [
+        2,
+        2
+      ],
+      "wind_speed": [
+        0.0,
+        1.0
+      ],
+      "direction_rad": [
+        0.7853981633974483,
+        0.7853981633974483
+      ],
+      "wind_profile": [
+        "steady",
+        "steady"
+      ]
+    },
+    "parent": {
+      "cost": 4.218366775631905,
+      "duration_s": 30.0,
+      "objective_start_s": 0.0,
+      "control_steps": 3000,
+      "completed": [
+        true,
+        true
+      ],
+      "height_rmse_m": [
+        0.036892815636291376,
+        0.030887935358947932
+      ],
+      "horizontal_rmse_m": [
+        0.8903459570150702,
+        0.7081070572446563
+      ],
+      "position_rmse_m": [
+        0.8911099836825165,
+        0.7087804096265821
+      ],
+      "maximum_true_yaw_error_deg": [
+        0.20506243407726288,
+        0.41039803624153137
+      ],
+      "late_convergence": {
+        "sample_hz": 100.0,
+        "start_step": 0,
+        "end_step": 3000,
+        "expected_samples": 3000,
+        "samples": [
+          3000.0,
+          3000.0
+        ],
+        "late_origin_rmse_m": [
+          0.8911099835213183,
+          0.7087804097279841
+        ],
+        "late_horizontal_std_m": [
+          0.357667894935858,
+          0.48827262681283307
+        ],
+        "late_horizontal_bias_m": [
+          0.8153463066809791,
+          0.5128405664235148
+        ],
+        "late_horizontal_drift_mps": [
+          0.03727451281363197,
+          0.03161725978552823
+        ],
+        "late_horizontal_speed_rms_mps": [
+          0.07418469859743484,
+          0.11411846414855918
+        ],
+        "late_detrended_position_std_m": [
+          0.15504584086908535,
+          0.40470155678231445
+        ],
+        "late_detrended_height_std_m": [
+          0.017806629010859807,
+          0.018628402046798387
+        ],
+        "late_speed_rms_mps": [
+          0.08393497002021082,
+          0.12015373996164756
+        ],
+        "late_angular_acceleration_rms_radps2": [
+          14.715495453660818,
+          14.68974818272889
+        ],
+        "late_motor_step_rms_normalized": [
+          0.028834595499606448,
+          0.0287854116578128
+        ]
+      },
+      "vehicle_identity": "a20ac33e260d7f4987a5d0d61991946d043159d49bef6fd38665a2161cd89609",
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.0,
+          "actual_rms_wind_mps": 0.0,
+          "actual_peak_wind_mps": 0.0
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404403686523,
+          "actual_peak_wind_mps": 0.9999999403953552
+        }
+      ],
+      "wind_seed": 20685112,
+      "wind_trace_dtype": "torch.float32",
+      "attachment": [
+        2,
+        2
+      ],
+      "wind_speed": [
+        0.0,
+        1.0
+      ],
+      "direction_rad": [
+        0.7853981633974483,
+        0.7853981633974483
+      ],
+      "wind_profile": [
+        "steady",
+        "steady"
+      ]
+    }
+  },
+  "actor_update_count": 1,
+  "selected_for_use": false
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "Prescribed endpoint cable test; not flight, not training, not measured calibration",
+  "count": 4,
+  "duration_s": 0.3,
+  "maximum_node_gap_2ms_m": 0.001486200076020664,
+  "maximum_instantaneous_endpoint_force_gap_2ms_n": 0.12923330467583924,
+  "maximum_actual_impulse_gap_2ms_ns": 2.162179046986632e-05,
+  "comparison_png_sha256": "0d391c3ae892a509f758ce6721606c1aa8c5a658f53bd8f437db598d61a02d4b"
+}

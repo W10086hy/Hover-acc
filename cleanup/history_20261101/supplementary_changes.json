@@ -1,0 +1,22 @@
+{
+  "modified": [
+    {
+      "path": "P2/animate.py",
+      "before_sha256": "73732b4d2692e7194b5227b9a7b1d160e17879749afead8ba572640727db9047",
+      "after_sha256": "ef09265d73965ed6f38dabd5c4ec6c8fa6642900af23230808c641a1e1fb5688"
+    },
+    {
+      "path": "P2/validate_p2.py",
+      "before_sha256": "f8dce82bf57192e529b734decb8104b1d7fa1304cc7c1ef14b5a8c930a9e7c26",
+      "after_sha256": "fdf9d85f66ea28e1b8a667acd3fba676bee53274ce4f7a54071da776dcd20022"
+    }
+  ],
+  "removed": [
+    {
+      "path": "P3/audit_flexible.py",
+      "sha256": "82d6af3f43c7115e13d1a4a81113c2b228be9411b4a736c53a0450185f65e656",
+      "bytes": 7074,
+      "reason": "superseded30s-only audit;archive checker moved into shared helper;original source remains in final run snapshots"
+    }
+  ]
+}

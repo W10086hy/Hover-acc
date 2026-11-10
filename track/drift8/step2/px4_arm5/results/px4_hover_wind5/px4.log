@@ -1,0 +1,123 @@
+INFO  [px4] instance: 0
+
+______  __   __    ___ 
+| ___ \ \ \ / /   /   |
+| |_/ /  \ V /   / /| |
+|  __/   /   \  / /_| |
+| |     / /^\ \ \___  |
+\_|     \/   \/     |_/
+
+px4 starting.
+
+INFO  [px4] startup script: /bin/sh /home/s/hover_bptt_px4/track/drift8/step2/px4_arm5/results/px4_hover_wind5/rcS 0
+INFO  [param] selected parameter default file parameters.bson
+  SYS_AUTOSTART: curr: 0 -> new: 10016
+  MAV_TYPE: curr: 0 -> new: 2
+  MAV_PROTO_VER: curr: 0 -> new: 2
+  CAL_ACC0_ID: curr: 0 -> new: 1310988
+  CAL_GYRO0_ID: curr: 0 -> new: 1310988
+  CAL_MAG0_ID: curr: 0 -> new: 197388
+  CAL_MAG0_PRIO: curr: -1 -> new: 50
+  SENS_BOARD_X_OFF: curr: 0.0000 -> new: 0.0000
+  SENS_DPRES_OFF: curr: 0.0000 -> new: 0.0010
+  IMU_INTEG_RATE: curr: 200 -> new: 400
+  IMU_GYRO_CUTOFF: curr: 40.0000 -> new: 60.0000
+  EKF2_GPS_CTRL: curr: 7 -> new: 0
+  EKF2_EV_CTRL: curr: 15 -> new: 0
+  EKF2_HGT_REF: curr: 1 -> new: 0
+  COM_RC_IN_MODE: curr: 3 -> new: 4
+  COM_DISARM_PRFLT: curr: 10.0000 -> new: 0.0000
+  COM_DISARM_LAND: curr: 2.0000 -> new: 0.0000
+  COM_RC_LOSS_T: curr: 0.5000 -> new: 1.0000
+  COM_CPU_MAX: curr: 95.0000 -> new: -1.0000
+  CBRK_SUPPLY_CHK: curr: 0 -> new: 894281
+  BAT1_N_CELLS: curr: 0 -> new: 4
+  CA_METHOD: curr: 2 -> new: 0
+  CA_ROTOR_COUNT: curr: 0 -> new: 4
+  THR_MDL_FAC: curr: 0.0000 -> new: 1.0000
+  MPC_THR_HOVER: curr: 0.5000 -> new: 0.3890
+  MC_ROLLRATE_P: curr: 0.1500 -> new: 0.0461
+  MC_ROLLRATE_I: curr: 0.2000 -> new: 0.2050
+  MC_ROLLRATE_D: curr: 0.0030 -> new: 0.0000
+  MC_PITCHRATE_P: curr: 0.1500 -> new: 0.0201
+  MC_PITCHRATE_I: curr: 0.2000 -> new: 0.0895
+  MC_PITCHRATE_D: curr: 0.0030 -> new: 0.0000
+  MC_YAWRATE_P: curr: 0.2000 -> new: 0.0956
+  MC_YAWRATE_I: curr: 0.1000 -> new: 0.3822
+  MC_RR_INT_LIM: curr: 0.3000 -> new: 0.0820
+  MC_PR_INT_LIM: curr: 0.3000 -> new: 0.0358
+  MC_YR_INT_LIM: curr: 0.3000 -> new: 0.1529
+  CA_ROTOR0_PX: curr: 0.0000 -> new: 0.1200
+  CA_ROTOR0_PY: curr: 0.0000 -> new: 0.1200
+  CA_ROTOR0_KM: curr: 0.0500 -> new: 0.0285
+  CA_ROTOR0_CT: curr: 6.5000 -> new: 4.0000
+  PWM_MAIN_FUNC1: curr: 0 -> new: 101
+  CA_ROTOR1_PX: curr: 0.0000 -> new: -0.1200
+  CA_ROTOR1_PY: curr: 0.0000 -> new: 0.1200
+  CA_ROTOR1_KM: curr: 0.0500 -> new: -0.0285
+  CA_ROTOR1_CT: curr: 6.5000 -> new: 4.0000
+  PWM_MAIN_FUNC2: curr: 0 -> new: 102
+  CA_ROTOR2_PX: curr: 0.0000 -> new: 0.1200
+  CA_ROTOR2_PY: curr: 0.0000 -> new: -0.1200
+  CA_ROTOR2_KM: curr: 0.0500 -> new: -0.0285
+  CA_ROTOR2_CT: curr: 6.5000 -> new: 4.0000
+  PWM_MAIN_FUNC3: curr: 0 -> new: 103
+  CA_ROTOR3_PX: curr: 0.0000 -> new: -0.1200
+  CA_ROTOR3_PY: curr: 0.0000 -> new: -0.1200
+  CA_ROTOR3_KM: curr: 0.0500 -> new: 0.0285
+  CA_ROTOR3_CT: curr: 6.5000 -> new: 4.0000
+  PWM_MAIN_FUNC4: curr: 0 -> new: 104
+INFO  [dataman] data manager file './dataman' size is 7866640 bytes
+INFO  [simulator_mavlink] Waiting for simulator to accept connection on TCP port 4560
+INFO  [simulator_mavlink] Simulator connected on TCP port 4560.
+INFO  [lockstep_scheduler] setting initial absolute time to 1030000 us
+INFO  [commander] LED: open /dev/led0 failed (22)
+INFO  [mavlink] mode: Custom, data rate: 4000000 B/s on udp port 14580 remote port 14540
+INFO  [mavlink] MAVLink only on localhost (set param MAV_{i}_BROADCAST = 1 to enable network)
+HW arch: PX4_SITL
+PX4 git-hash: 07a18b2d120e69e2434e81e631e02b5beda0144b
+PX4 version: Release 1.14.4 (17695999)
+PX4 git-branch: main_v1.14.4
+Vendor version: 0.0.1 255 (511)
+OS: Linux
+OS version: Release 5.15.0 (84869375)
+Build datetime: Jun 19 2026 15:15:27
+Build uri: localhost
+Build variant: default
+Toolchain: GNU GCC, 9.4.0
+PX4GUID: 1006554d49534954414c44494e4f30303030
+UNKNOWN MCU
+INFO  [control_allocator] Running
+INFO  [control_allocator] Method: Pseudo-inverse
+INFO  [control_allocator] Effectiveness Source: Multirotor
+INFO  [control_allocator]   Effectiveness.T =
+INFO  [control_allocator]   minimum =
+INFO  [control_allocator]   maximum =
+INFO  [control_allocator]   Configured actuators: 4
+control_allocator: cycle: 172 events, 0us elapsed, 0.00us avg, min 0us max 0us 0.000us rms
+	-0.47999999	0.47999999	0.11412643	       0	       0	      -4
+	-0.47999999	-0.47999999	-0.11412643	       0	       0	      -4
+	0.47999999	0.47999999	-0.11412643	       0	       0	      -4
+	0.47999999	-0.47999999	0.11412643	       0	       0	      -4
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+	       0	       0	       0	       0	       0	       0
+
+	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0
+
+	       1	       1	       1	       1	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0	       0
+
+INFO  [px4] Startup script returned successfully
+pxh> INFO  [commander] Armed by external command	
+INFO  [commander] Takeoff detected	
+[2Kpxh> s[2Kpxh> sh[2Kpxh> shu[2Kpxh> shut[2Kpxh> shutd[2Kpxh> shutdo[2Kpxh> shutdow[2Kpxh> shutdown
+Exiting NOW.

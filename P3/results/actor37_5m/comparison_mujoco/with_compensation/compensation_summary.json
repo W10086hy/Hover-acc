@@ -1,0 +1,27 @@
+{
+  "applied_output_rms": [
+    0.055118490010499954,
+    0.06011100485920906,
+    0.9749460220336914,
+    0.0051157535053789616,
+    0.0042301807552576065,
+    3.384461160749197e-05,
+    0.26429474353790283
+  ],
+  "fallback_count": 0,
+  "options": {
+    "warmup_s": 1,
+    "ramp_s": 1,
+    "filter_tau_s": 0.05,
+    "thrust_limit_n": 2,
+    "torque_limits_nm": [
+      0.03,
+      0.03,
+      0.02
+    ],
+    "log_motor_tau_limit": 0.7
+  },
+  "horizontal_force_directly_actuated": false,
+  "actual_plant_unchanged": true,
+  "frozen_residual_memory_unchanged": true
+}

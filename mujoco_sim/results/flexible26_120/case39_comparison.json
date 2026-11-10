@@ -1,0 +1,13 @@
+{
+  "case_index": 39,
+  "maximum_position_gap_m": 0.6401920318603516,
+  "peak_time_s": 81.3,
+  "position_sample_hz": 10,
+  "heading_sample_hz": 100,
+  "reference": "P2\\results\\flexible_continue30\\replay120",
+  "source_trajectory_sha256": "5f615b7483e82771f570bb1fff6e6ae6ea271b049ab19567834e7e6ad0847d95",
+  "reference_trajectory_sha256": "64036f1800ef6700ce761be139a82a9e7237a98922b35ed0d358ff0fa3c2b1b9",
+  "png_sha256": "6ede9e2cbe145e3220b6662ab12f84ee322f5f208273865d2ffbf64aeb59b661",
+  "renderer_source_sha256": "34dfb7d655ea4db894ce4f6051e860d15b9e0c4c93696b809729dc88d494e856",
+  "new_simulation": false
+}

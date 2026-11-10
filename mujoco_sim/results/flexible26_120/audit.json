@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "physical_horizon_s": 120,
+  "safe_completed": 64,
+  "count": 64,
+  "metric_sample_hz": 100,
+  "source_and_protected_files_unchanged": true,
+  "source_files_checked": 51,
+  "initial_states_and_full_wind_equal_to_torch": true,
+  "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "policy_updates": 0,
+  "native_mj_step_calls": 240000,
+  "tests_passed": 96,
+  "graphics": [
+    {
+      "folder": "weak",
+      "case_index": 26,
+      "frames": 201,
+      "gif_sha256": "693444b9d02c8586b762ea5a950c3cc6ffc56ce9f365315c4f603d23b37cdabf"
+    },
+    {
+      "folder": "strong",
+      "case_index": 30,
+      "frames": 201,
+      "gif_sha256": "64d769af6188ae9095b0c5df48491c5138232adf64dfb64a17384dc439edef92"
+    },
+    {
+      "folder": "gust",
+      "case_index": 31,
+      "frames": 201,
+      "gif_sha256": "1fd3c2b8d7ae34381840a3293aba85219c31379490f7002c2cf6ce83229dc3e6"
+    },
+    {
+      "folder": "native_view",
+      "case_index": 31,
+      "frames": 201,
+      "gif_sha256": "c56e1597991034f7bd1dd08ec62b1d945ccdb711c790d218d2b98967740e681f"
+    }
+  ],
+  "formal_final_acceptance": false
+}

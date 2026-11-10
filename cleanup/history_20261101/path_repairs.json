@@ -1,0 +1,147 @@
+[
+  {
+    "path": "P2/evaluate.py",
+    "before_sha256": "7c48c27f838af9651e5fe9ba6fd18f3eda99d945e8af42d335ac452724aaf960",
+    "after_sha256": "861492e7554a99db778a9f69fa61b7178e203b60e5bbbda0bd92a2271eebb228"
+  },
+  {
+    "path": "P2/evaluate_horizontal_targets.py",
+    "before_sha256": "471c237e8aab92868f9d910a8bbd6c8e7d03ffcca9200d049ef684fb47d306a8",
+    "after_sha256": "309eb9145c62a512fee35baed3c8340021087b06f55ddf5cb0a23e3c31b78976"
+  },
+  {
+    "path": "P2/qualify_native_rope.py",
+    "before_sha256": "6cddfa4bd2ce3bd140a21c43c0a0c2c03b156da2e384cc14a58f05297d78e410",
+    "after_sha256": "6affd16c7a9093d9e8d8054411f27891ac974835492019225ddf97d3b2dbdf9b"
+  },
+  {
+    "path": "P2/replay_flexible_policy.py",
+    "before_sha256": "e6ec9c8054e40f2243549892df5697450a617d78ad8021e2578361e0dca024b8",
+    "after_sha256": "9cfb5aa265e11de56d55b486bdfb7369b3c6917dd7792a7bbe22bb455c0394f0"
+  },
+  {
+    "path": "P2/train.py",
+    "before_sha256": "03bb97c737db4e8ccc58de64967eea80368f2a79dffcbb74a769df2f1045a80d",
+    "after_sha256": "67ca0f71f586895abe83be836d4fd12cdd03a08d9552a2e7f5e774643f319ba3"
+  },
+  {
+    "path": "P2/train_flexible_rope.py",
+    "before_sha256": "4e3f1162fcd386e50dc9ed85f4e2f9cb22c81a4f620719caad5144355ab49b4c",
+    "after_sha256": "8006750e3793fb9b84da74083e8f600c6a644ac43bfff3e682f27840c3ce2a93"
+  },
+  {
+    "path": "P2/train_generalization.py",
+    "before_sha256": "b2f29b5fe53d096c2c5f5dc1383f22818f9c60bc0b1c0f7ae054a870920ccc67",
+    "after_sha256": "54a0ac72b15d51673595f57160651d9e8618f89cfe4a3f96149d302e42deefac"
+  },
+  {
+    "path": "P2/train_native_rope.py",
+    "before_sha256": "b18b16d1e21d46a27d4f9e799cc6ce3dd1a48d5cb0f2d3bf3a1db1e7db0f1470",
+    "after_sha256": "c4924ab8e117b40bcdd0a8a03bd93b0ed1df1ad308224454d544c42e5fe32f7f"
+  },
+  {
+    "path": "P2/validate_p2.py",
+    "before_sha256": "c0bfda843472513d6eba45e3da36e700b65077461aebb85238c646e512572478",
+    "after_sha256": "f8dce82bf57192e529b734decb8104b1d7fa1304cc7c1ef14b5a8c930a9e7c26"
+  },
+  {
+    "path": "P2/hover_bptt/flexible_training.py",
+    "before_sha256": "0e3d56cd57cc87603e90ba062b50f6f92cdf35d2a0d89921060a89db5887515a",
+    "after_sha256": "fc3ed1955db232f9d0040ea4fbddd9324e0dbda44e7ddbfffe4c4253ef4617fa"
+  },
+  {
+    "path": "P2/tests/test_flexible_environment.py",
+    "before_sha256": "78dee8c1117a61d0ac20589a45407f6bcec01a882ff6b8d55af12b0651c9295c",
+    "after_sha256": "45d1c6aa9736c07376d616a3e2f1289633b4283050f878eebb44c0a7a60a1bc4"
+  },
+  {
+    "path": "P2/tests/test_flexible_optimization.py",
+    "before_sha256": "d66a2d8f821970f2a71bf7cdb7779de93a66c7855405f75406cffcc1adab3cbc",
+    "after_sha256": "d2bc8f4ad33b9deec0dacd6e80e5df26b511d0002237eddde7ab12712b526cf3"
+  },
+  {
+    "path": "P2/tests/test_flexible_training.py",
+    "before_sha256": "da8fc5da5b041e0c4130dbef2d257e69402cc22c9138631b9ce8edeeee3e55f0",
+    "after_sha256": "2861215a8d5ce7e882a2851b354612b4f333130e972c05cb0ff3270ae41d6df7"
+  },
+  {
+    "path": "P2/tests/test_generalization.py",
+    "before_sha256": "65d17c2c0a28a4d0ff73573bf6f0269ce08c0d6d4919a32a95b8934d6bf856a8",
+    "after_sha256": "2de91f76af46e78f698a1d763f7c43a41dc593265f5e176474844fdf246a7553"
+  },
+  {
+    "path": "P2/tests/test_native_environment.py",
+    "before_sha256": "67365bd76f4741475088cfade48676c3ca1165d89bfb3bdc93fe4908ede19acd",
+    "after_sha256": "fc080665601ec496bba270e11da3dbb38144034e4d952a477eabcf8392264e69"
+  },
+  {
+    "path": "P2/tests/test_recovery.py",
+    "before_sha256": "bb6b378bbc2933d916ae3c71036f86dd1ec0fa16eff40c4b85b1bd66073785c8",
+    "after_sha256": "6c7f31b009549af41958b17c9283c033a86e7b37a52cd55aba32b1b2f087d3a3"
+  },
+  {
+    "path": "P2/tests/test_runtime.py",
+    "before_sha256": "d1f068e5246763d6854fcfed0ed660fa66cae74ec6b5b89e59f5d2555d304d64",
+    "after_sha256": "37dd6e8fde7e82034d6f87eb0ebabe7a14ba44ee11005f6cf13421a042b83b4e"
+  },
+  {
+    "path": "P2/tests/test_short_comparison.py",
+    "before_sha256": "5477e49e30a639befaf14e121e76a88629caa57a229ab46c56dbe72e9a6aeb40",
+    "after_sha256": "4294909091ad3bae7dfc95d504cf0d99efe63cc32abb2e1ae75c3b3f45f50130"
+  },
+  {
+    "path": "P2/flexible_rope_protocol.json",
+    "before_sha256": "83d9953835679f676388038acd5747081b9a0ae100946777614e115ef580cb43",
+    "after_sha256": "d63e5819a6b16491468f12168a65b16ac50284e10c8291e579d7245ac4ed5384"
+  },
+  {
+    "path": "P2/native_rope_protocol.json",
+    "before_sha256": "2f004e5a8cc6c3e7b6b29ce17ac3dad84ed997821bae085660c033dba3a52773",
+    "after_sha256": "35fd47297bdebd0bbf452409dcde36a2e57d01e443417b5930110966fafc9cc5"
+  },
+  {
+    "path": "P3/flexible_domains.py",
+    "before_sha256": "2ee069788cdf43e116c592bc001142cc56339dc8eb71d1540e7a2502cb104eea",
+    "after_sha256": "267f3408536a3729fa5fe0d68fbaf796fa34e1eb544e659f230e28ff3f159a4d"
+  },
+  {
+    "path": "P3/tests/test_compensation.py",
+    "before_sha256": "b780bbe684346fd96530511790058c1d2b0d6fc23207f239a231234b2c1d1fd9",
+    "after_sha256": "f6bc2066c0efeac53c4e7547c630fc7a8bdbfe4506ff334d5ad65eb7c36b83bc"
+  },
+  {
+    "path": "P3/tests/test_flexible_residual.py",
+    "before_sha256": "1cba33060c006099ab6e6d439c5645858f555c49f76bbce1d6c25eb7fc1aca0f",
+    "after_sha256": "98fa3d0594a2a2176c12379e422e9dc8945595763b832182976daad24311e319"
+  },
+  {
+    "path": "P3/tests/test_mismatch_runtime.py",
+    "before_sha256": "5332822d18607e907572cdb394ebe38bc0a0efb23bdc8d43ae08259e62f80bbb",
+    "after_sha256": "f3c5db0c398ffb3cf0103516feac9b2c54c1ae82a5111e8dfa780ff6553476c3"
+  },
+  {
+    "path": "P3/p3_mismatch_protocol.json",
+    "before_sha256": "5988900151afc23bf990fa5d8b8365dbea45dfc6c7fca8a518e4e007432b9596",
+    "after_sha256": "4b88b24c866813cc1dc9a56add19d15e473c4ad861f8b58502299cdc4af203a4"
+  },
+  {
+    "path": "mujoco_sim/evaluate_flexible.py",
+    "before_sha256": "57d7c628743d0b0b518253b415be8c90da868e3b1b5656ec8aff7860083a6a5e",
+    "after_sha256": "02f7de018da39fd8c91cb0029e209c243d8dd9ac55aec8d119995fc2468eb8e7"
+  },
+  {
+    "path": "mujoco_sim/tests/test_bridge.py",
+    "before_sha256": "2cff1ae57c1781ccae216f90ca0b0a39faf1b3e5f343ff41248210b4ec16f197",
+    "after_sha256": "7e49ea07fbbb1cebce06715d0781892db31c2975ad75a9150efe357755f9b203"
+  },
+  {
+    "path": "mujoco_sim/native_tendon_protocol.json",
+    "before_sha256": "c78a1af3d87bd087b26a46e1cfb39f08320efdbbf4cf9aec751d306f83ad17c6",
+    "after_sha256": "75c97723e97fd57ccbe3e736cfa47f0aa2ed6b40feb9d2a322a5d621d4d133bc"
+  },
+  {
+    "path": "mujoco_sim/protocol.json",
+    "before_sha256": "484844ccd5c876e45b1ee37cbfd93217d85ce418341baa038faa7f7fda1990e7",
+    "after_sha256": "3af6f584118c6c409ae7145665e4c5f76cf33dc5ec932e23c936be204fa4bf92"
+  }
+]

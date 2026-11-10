@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "old_rest_length_m": 7.900000095367432,
+  "new_rest_length_m": 7.849999904632568,
+  "initial_end_to_end_m": 7.8,
+  "old_extra_length_m": 0.1,
+  "new_extra_length_m": 0.05,
+  "old_mass_kg": 0.07900000095367431,
+  "new_mass_kg": 0.07849999904632568,
+  "EA_n": 49,
+  "material_parameters_unchanged": true,
+  "weights_byte_identical": true,
+  "actor_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+  "asset_sha256": {
+    "config.json": "445c3df1885cf37369e9c9216388f2d5b3c4db75c587cda5c3ca5e0e300a6a83",
+    "initial.npz": "c7b6c2ee6e2260413cb280e444504e3af2626cd6dcd907eed6dfca503385d1af",
+    "model.xml": "c57ab66685d52fa79429177b0bfe42fd826653b31b6918adfcbe17407c82ec8d",
+    "weights.npz": "937617069bb65bb4078ef59cfb6dcb97423800ff7baa1babd58557932b71a6ca"
+  },
+  "old_weights_sha256": "937617069bb65bb4078ef59cfb6dcb97423800ff7baa1babd58557932b71a6ca",
+  "new_weights_sha256": "937617069bb65bb4078ef59cfb6dcb97423800ff7baa1babd58557932b71a6ca",
+  "policy_updates": 0,
+  "residual_updates": 0
+}

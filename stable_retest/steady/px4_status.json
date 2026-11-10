@@ -1,0 +1,29 @@
+{
+  "completed": true,
+  "arms": [
+    {
+      "attachment_cm": 5,
+      "returncode": 0,
+      "command": [
+        "/home/s/full_csdp_v2/.venv/bin/python",
+        "-u",
+        "-B",
+        "/home/s/hover_bptt_px4/px4_offboard/run_suite.py",
+        "--experiment",
+        "/home/s/hover_bptt_px4/stable_retest/steady/arm5"
+      ]
+    },
+    {
+      "attachment_cm": 10,
+      "returncode": 0,
+      "command": [
+        "/home/s/full_csdp_v2/.venv/bin/python",
+        "-u",
+        "-B",
+        "/home/s/hover_bptt_px4/px4_offboard/run_suite.py",
+        "--experiment",
+        "/home/s/hover_bptt_px4/stable_retest/steady/arm10"
+      ]
+    }
+  ]
+}

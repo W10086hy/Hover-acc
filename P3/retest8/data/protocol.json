@@ -1,0 +1,270 @@
+{
+  "protocol": {
+    "schema_version": 2,
+    "stage": "Fresh8m structural residual on restored GitHub Actor29",
+    "controller_checkpoint": "../track/models/actor29.pt",
+    "duration_s": 30,
+    "dt_s": 0.01,
+    "origin_start_steps": 100,
+    "origin_stride_steps": 5,
+    "forecast_horizons_steps": [
+      1
+    ],
+    "forecast_origin_stride": 20,
+    "splits": {
+      "train": [
+        {
+          "name": "matched",
+          "seed": 20674201,
+          "directions_deg": [
+            0
+          ],
+          "actual_scales": {},
+          "nominal_scales": {},
+          "actual_drag_scale": 1,
+          "nominal_arm_cm": "matched",
+          "duration_s": 10
+        },
+        {
+          "name": "heavy_slow",
+          "seed": 20674211,
+          "directions_deg": [
+            0,
+            90
+          ],
+          "actual_scales": {
+            "mass": 1.05,
+            "inertia": 0.95,
+            "motor_tau": 1.3
+          },
+          "nominal_scales": {},
+          "actual_drag_scale": 1.15,
+          "nominal_arm_cm": 5,
+          "duration_s": 20
+        },
+        {
+          "name": "light_fast",
+          "seed": 20674221,
+          "directions_deg": [
+            180,
+            270
+          ],
+          "actual_scales": {
+            "mass": 0.95,
+            "inertia": 1.05,
+            "motor_tau": 0.7
+          },
+          "nominal_scales": {},
+          "actual_drag_scale": 0.85,
+          "nominal_arm_cm": 5,
+          "duration_s": 20
+        }
+      ],
+      "development": [
+        {
+          "name": "intermediate",
+          "seed": 20674301,
+          "directions_deg": [
+            45,
+            225
+          ],
+          "actual_scales": {
+            "mass": 1.025,
+            "inertia": 0.975,
+            "motor_tau": 1.15
+          },
+          "nominal_scales": {},
+          "actual_drag_scale": 1.075,
+          "nominal_arm_cm": 5,
+          "duration_s": 20
+        }
+      ],
+      "test": [
+        {
+          "name": "new_combination",
+          "seed": 20674401,
+          "directions_deg": [
+            135,
+            315
+          ],
+          "actual_scales": {
+            "mass": 1.03,
+            "inertia": 1.02,
+            "motor_tau": 0.85
+          },
+          "nominal_scales": {},
+          "actual_drag_scale": 0.9,
+          "nominal_arm_cm": 5,
+          "duration_s": 20
+        }
+      ]
+    },
+    "model": {
+      "width": 64,
+      "scale": [
+        4,
+        4,
+        4,
+        0.15,
+        0.15,
+        0.1,
+        0.7
+      ]
+    },
+    "residual_training": {
+      "seed": 20274201,
+      "steps": 1000,
+      "batch_size": 256,
+      "learning_rate": 0.001,
+      "development_interval": 100,
+      "wrench_loss_scale": [
+        1,
+        1,
+        1,
+        0.03,
+        0.03,
+        0.02
+      ],
+      "rpm_loss_scale": 1,
+      "regularization": 0.0001,
+      "motor_prediction_dt_s": 0.002
+    },
+    "control_training_seed": 20674801,
+    "control_evaluation_seed": 20272981,
+    "control_training_directions_deg": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "control_evaluation_directions_deg": [
+      22.5,
+      112.5,
+      202.5,
+      292.5
+    ],
+    "control_actual_scales": {
+      "mass": 1.03,
+      "inertia": 1.02,
+      "motor_tau": 0.85
+    },
+    "control_actual_drag_scale": 0.9,
+    "nominal_arm_cm": 5,
+    "control_objective_credit_recompute_s": [
+      30,
+      10,
+      1
+    ],
+    "max_candidate_replays": 2,
+    "scope": "Offline same body state and common actual endpoint force;nominal attachment5cm,actual5/10cm. Neural inputs remain onboard only. This does not identify rope material or shape errors.",
+    "development_comparison_duration_s": 30,
+    "final_acceptance_duration_s": 120,
+    "user_amendment": "User explicitly authorized30s comparisons to save development time; residual/data unchanged and final120s acceptance untouched",
+    "control_policy_updates": 0,
+    "policy_comparison": "Restored29 Actor/Adam frozen;learn P3 first,then compensate;no P2 update",
+    "compensation": {
+      "warmup_s": 1,
+      "ramp_s": 1,
+      "filter_tau_s": 0.05,
+      "thrust_limit_n": 2,
+      "torque_limits_nm": [
+        0.03,
+        0.03,
+        0.02
+      ],
+      "log_motor_tau_limit": 0.7
+    },
+    "current_scope_supersedes": "This run only:GitHub Actor29,8m,EA49;original26 results remain immutable",
+    "plant_kind": "dynamic_flexible_rope",
+    "controller_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+    "policy_updates": 0,
+    "formal_objective_s": 120,
+    "rope": {
+      "segments": 12,
+      "linear_density_kgpm": 0.01,
+      "axial_rigidity_n": 49.0,
+      "axial_viscosity_ns": 9.8,
+      "diameter_m": 0.003,
+      "air_drag_coefficient": 1.2
+    },
+    "expected_backends": [
+      "torch",
+      "mujoco"
+    ],
+    "forecast_scope": "Same-state equation residual and2ms actuator response;legacy19-state RK4 forecasts are not used for86-state cable",
+    "label_definition": "Common external cable endpoint force;actual/nominal vehicle parameters and5/10cm lever-arm difference;no rope-material or shape-state identification",
+    "controller_cumulative_updates": 29,
+    "collection_height_m": 8.0
+  },
+  "source_sha256": {
+    "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+    "P2/hover_bptt/actor.py": "ae57e2bf9c4d2083ec05d8ea8a7cfe490b32aa16e230aafd48415d44424f9fb6",
+    "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+    "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+    "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+    "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+    "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+    "P2/hover_bptt/controller.py": "27e2f5c024d2d37fb5a61084f6ea04685f0db0c661ab41bd377043e5bee030f1",
+    "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+    "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+    "P2/hover_bptt/environment.py": "20c5599a124cffb8afdf1da34fdb7d1d90e3e7ff968c4e6ccb5119563b361f66",
+    "P2/hover_bptt/evaluation.py": "d1db49fb64a591990e9e383f5c2e1ba4504695b29e4854cc8019f7837abc7718",
+    "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+    "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+    "P2/hover_bptt/flexible_training.py": "e1df6156daee50a6c6c9f9b3f164a19e2514a6e00eaabcc29116998ba81f6178",
+    "P2/hover_bptt/functional.py": "d0801cdc81780ca735821782898845218f1b6b128e867c1adebb146319da90a9",
+    "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+    "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+    "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+    "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+    "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+    "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+    "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+    "P2/hover_bptt/motion_statistics.py": "e9e215e09defb6d6bfb0dd282d47d606bca0687a73d1ca2bb8dfa40586913e12",
+    "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+    "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+    "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+    "P2/hover_bptt/onboard.py": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+    "P2/hover_bptt/optimizer.py": "5e9c7e7df6116d0766092f02df1b73df56a7be46a2b50836dcbc70a6846bca26",
+    "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+    "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+    "P2/hover_bptt/sensors.py": "1814dd5c51446ccb4a8a6834a607ab06fcdcdf6b0c4289fbe3b8481c2581db8a",
+    "P2/hover_bptt/state.py": "cf7e0e169a7bdf70297e37185c8ea38e905f6a51b7bfe711bed8ea854f32b57c",
+    "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+    "P2/hover_bptt/training.py": "5384b4561498b32e3f3ad20598425341b4e53915eab324e426c1d0a9411b7761",
+    "P2/hover_bptt/vehicle_spec.py": "3c791f9e83fe7d00507164cb792928f64b3ad42ef0f591f55ef15ad7c2daa1a8",
+    "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+    "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+    "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+    "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+    "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+    "P2/acceptance.json": "361e5b170414d24c4a149b3b031d1a15f27ac8c5f22b7a706edff0e0c813237c",
+    "P2/p2_protocol.json": "be392460dd5bb8f6f69841450c06cbeff5da37217271531c312855e175cea2de",
+    "P3/flexible_domains.py": "fb7d30acfd2066d2891d87a297c00f0aa81d744a1fe8118e0b31b9deb688c792",
+    "P3/collect_flexible.py": "bb82d5f63b39b933c9ab50f48a2e662903264aff79763113a0d6bb6726b8262b",
+    "P3/flexible_compensation.py": "b9ffa14442837f134a25c870dd6a7130c4c6db5122b3c63faf886d9a3fd2244b",
+    "P3/evaluate_flexible.py": "3af511d7c17943d6d5678ad8ec1495cba02259394b1645879e50332bc53cc78a",
+    "P3/train_mismatch.py": "92fb130666e1c0772b1d6fe04de74419617f433e873bda127883567c0c9bcc95",
+    "P3/mismatch_data.py": "fc9cd77d05fab7fe1d74938d39690a4ce395a75c41aeec11d582ebf60ba7af0d",
+    "P3/mismatch_dynamics.py": "04840cd7845a772da6050ebf865d2595c7c09f161c0852052dbd1b62a371212e",
+    "P3/collect_mismatch.py": "5a46339bcc45ec40e9010577ac50b249275b12e8bc266cf29bf9f0821b0b507f",
+    "P3/compensation.py": "f8596ba43f2dc9d909556eaec0b2a8eaabfbdc000eb221986f1e7e942cf1168a",
+    "P3/flexible_labels.py": "660d7de6f0d9f7cab48a393f568d73b505eedae16a345f19dacd1a99b6f99bbb",
+    "P3/relabel_flexible.py": "b197a5fe28e384e70ea5f2ac9863414f0326258a7a712db2fef309c79f4ea790",
+    "mujoco_sim/flexible.py": "e9d52066a57b61c7644c513ebf60f386c6f5d0519c050d7afd138e71e5b5805b",
+    "mujoco_sim/physics.py": "933ca79237434d5c3d658f7116249a0db19c518c6f2dab9bd717c9ced599bcd5",
+    "project_files.py": "8044bcfa2d58b12ccf5b72f699758b19d3818e02059c20b12a858c4d75028e97",
+    "cleanup/path_map.json": "d8277e1954ca2c3d75e36557ce7cd0c6174abc7112deeef6d755620e5f9aa935",
+    "P3/retest8/protocol.json": "edf01c3ef9268daa2dc82f494035a5e9a7c95c20e498d630cb4666f31d5dfa90"
+  },
+  "protected_files": {
+    "track/models/actor29.pt": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+    "P3/results/flexible26_structural/residual/best.pt": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80"
+  },
+  "controller_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "torch_version": "2.12.1+cu130",
+  "cuda_version": "13.0",
+  "policy_updates": 0,
+  "old_data_reused": false
+}

@@ -1,0 +1,359 @@
+{
+  "duration_s": 120.0,
+  "backend": "native MuJoCo",
+  "test_scope": "paired development benchmark",
+  "formal_final_acceptance": false,
+  "wind": "steady +Y; no gust or turbulence",
+  "cases": [
+    {
+      "attachment_cm": 5,
+      "case": "hover_wind1",
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "controller_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+      "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "baseline": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          0.8983927061296554,
+          0.07698200843378536,
+          0.8950883893808844
+        ],
+        "late30_xy_rmse_m": 0.9651977793230913,
+        "late30_xy_mean_m": [
+          -0.9583100172479947,
+          -0.004090413700566084
+        ],
+        "max_yaw_10hz_deg": 0.19513684511184692,
+        "max_tension_n": 1.7833375930786133,
+        "peak_xy_m": 1.0745467975032839,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "baecfc8b1cc988b5de6a39107e8238b95eba4cf786d4c82a41afae858c633b20",
+        "trajectory_sha256": "7831941c190f7f2417854ca69f001e99de5829dc5c8ced70ea9432afefa9521a",
+        "fullrate_sha256": "69c124f5d442de3cd408d16e23d6265c0c92dc73c0c2a6e75ac0f1be21f02a2b"
+      },
+      "candidate": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          0.8182848007946529,
+          0.07816049418983557,
+          0.8145434011515565
+        ],
+        "late30_xy_rmse_m": 0.9166232893643573,
+        "late30_xy_mean_m": [
+          -0.585899228811264,
+          -0.6972980571985244
+        ],
+        "max_yaw_10hz_deg": 0.19501511752605438,
+        "max_tension_n": 2.464784860610962,
+        "peak_xy_m": 0.9868275857331653,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "2248809acba4ffeba004fa5b2a90070faeff17329412fedd55fbb75c66e9c44e",
+        "trajectory_sha256": "d32db20a7ed3d3394e4dd0d3212382cb5f7b20690083d32297db1abfe23544d4",
+        "fullrate_sha256": "a6925d2cca1990f9bd37097ca2edfb352fffa4084397ddffacfa81c1f6d4548e"
+      }
+    },
+    {
+      "attachment_cm": 5,
+      "case": "hover_wind5",
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "controller_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+      "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "baseline": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          2.1394346456014977,
+          0.11453435283339898,
+          2.136366655052695
+        ],
+        "late30_xy_rmse_m": 2.11634286193437,
+        "late30_xy_mean_m": [
+          -0.3383164172768593,
+          2.089036507685979
+        ],
+        "max_yaw_10hz_deg": 0.19569247961044312,
+        "max_tension_n": 12.777766227722168,
+        "peak_xy_m": 2.789923936512402,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "7e73f7978a84fb73324f11147f4e98a70b30a8fcd7ad72a75816b0dbecafc7f9",
+        "trajectory_sha256": "bbfe07570e0cace204477c949d91221327f581c5c1decd44f57a81668339c40f",
+        "fullrate_sha256": "6f2b48d27339857255d6347c54ab32516a0ba7139a974a1c8e1c019f91188904"
+      },
+      "candidate": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          2.031637117306968,
+          0.12128855381372383,
+          2.0280134277497135
+        ],
+        "late30_xy_rmse_m": 1.9879214159124483,
+        "late30_xy_mean_m": [
+          -0.2694581810285648,
+          1.9694781309366227
+        ],
+        "max_yaw_10hz_deg": 0.19557447731494904,
+        "max_tension_n": 12.783316612243652,
+        "peak_xy_m": 2.7902580839951847,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "ef97a6da7164e723c064f7b5395b9424d623fb31738c70570c50014a455f8e03",
+        "trajectory_sha256": "f555beb8f5de73614e3bd85fefb80eb96e007adc87edb345a19b948c93acea9e",
+        "fullrate_sha256": "0bbd1fc9ca31c1d063cdf817d6b6969c4fb3540864f33f6d67b40a1712c5eda0"
+      }
+    },
+    {
+      "attachment_cm": 5,
+      "case": "track4_wind1",
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "controller_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+      "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "baseline": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          1.2937598516035123,
+          0.10776203594597306,
+          1.28926409134433
+        ],
+        "late30_xy_rmse_m": 1.3247492852770284,
+        "late30_xy_mean_m": [
+          -1.3085347696940104,
+          0.20204594671726228
+        ],
+        "max_yaw_10hz_deg": 0.1984066665172577,
+        "max_tension_n": 4.259492874145508,
+        "peak_xy_m": 3.1544131939690576,
+        "startup_lead_m": 2.1578445434570312,
+        "startup_lag_m": 3.1313605308532715,
+        "result_sha256": "9a6e009b060c9892ba510f5d3a1acd673114434774a8c750c682d4a68ed415b4",
+        "trajectory_sha256": "bfd147ba650f8424b25a89ec281acf7b6ecccf7e984cd81cfabccde66d1257a7",
+        "fullrate_sha256": "d16bfa2d2a9a1aabb753eba31d2f8cba7da832a5c4ce099c4bc1c2b8950f69e2"
+      },
+      "candidate": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          1.2400033346491717,
+          0.07852583003016385,
+          1.2375144297983518
+        ],
+        "late30_xy_rmse_m": 1.2576639730455146,
+        "late30_xy_mean_m": [
+          -1.2514927978515624,
+          -0.11669476169596116
+        ],
+        "max_yaw_10hz_deg": 0.20143981277942657,
+        "max_tension_n": 4.0570878982543945,
+        "peak_xy_m": 3.1222175238052827,
+        "startup_lead_m": 2.070819854736328,
+        "startup_lag_m": 3.116319179534912,
+        "result_sha256": "acda3096f831ae915b08693bd16891093788545fe8d1a08b36fb9f9d38108e27",
+        "trajectory_sha256": "8c0e24111ce3f1ebd8f87f15d63259c8e005e0c41a7036dc303b55b4f0358760",
+        "fullrate_sha256": "1a9a35d8bd8c10cd52be0541a17cf3b1ebd51602e51e9d6fea48b671609cfc07"
+      }
+    },
+    {
+      "attachment_cm": 10,
+      "case": "hover_wind1",
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "controller_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+      "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "baseline": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          0.6879163803789997,
+          0.07351410437803962,
+          0.6839770631031712
+        ],
+        "late30_xy_rmse_m": 0.7307449850385467,
+        "late30_xy_mean_m": [
+          -0.7160804532368978,
+          0.12253662628804644
+        ],
+        "max_yaw_10hz_deg": 0.1954168975353241,
+        "max_tension_n": 1.829290509223938,
+        "peak_xy_m": 0.8371370229528499,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "47c8c6e42dc38b6718a91e2a6d8b8d37f69c59acf6ead9f767d323e73d4b4713",
+        "trajectory_sha256": "c2a17f80adcb1f32b25e12bf21e162615786d2ce3c2dda78bc15272aca0ac8da",
+        "fullrate_sha256": "edc8e884a707773228109c5316ffce5dcc44a93c6c0a3b59f2e60064cb3c4450"
+      },
+      "candidate": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          0.6063774467143385,
+          0.07314317530502505,
+          0.6019499013955387
+        ],
+        "late30_xy_rmse_m": 0.6829452171728104,
+        "late30_xy_mean_m": [
+          -0.4343364401360353,
+          -0.5188515696326892
+        ],
+        "max_yaw_10hz_deg": 0.19509699940681458,
+        "max_tension_n": 5.554625034332275,
+        "peak_xy_m": 0.7787913323522336,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "23b216f06bb49f29b7d7d4c8563bd1509a4aca507597d018b9b2f73bc9b30422",
+        "trajectory_sha256": "d5cc8757705d5b46d9c995a4eae61db6223c726194192d1cd5f2e7fb420c15ff",
+        "fullrate_sha256": "3b78c79ee20cd79f305404ec01bd816ff2c9761269e8267ebc07421f184b7c4d"
+      }
+    },
+    {
+      "attachment_cm": 10,
+      "case": "hover_wind5",
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "controller_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+      "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "baseline": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          1.7674172678265552,
+          0.1380406229898815,
+          1.7620183270942589
+        ],
+        "late30_xy_rmse_m": 1.7417534839477926,
+        "late30_xy_mean_m": [
+          -0.22957833205660183,
+          1.7264488354126613
+        ],
+        "max_yaw_10hz_deg": 0.2062075287103653,
+        "max_tension_n": 12.788633346557617,
+        "peak_xy_m": 2.4751086472038955,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "20eec09044d6ffbe974945b6e01c517fb02310c95c15506b05f99f98765e8aa5",
+        "trajectory_sha256": "1e4fd6ca6904267bdbf75308ab119edd190f27764201184e527504c0eaf4c172",
+        "fullrate_sha256": "5c2fd4cddbcf89238443ae89a77a96656e5de0859fa004d8b5621c77974305d8"
+      },
+      "candidate": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          1.6806661094266901,
+          0.14327264665212933,
+          1.674548154009535
+        ],
+        "late30_xy_rmse_m": 1.636117889917914,
+        "late30_xy_mean_m": [
+          -0.18386110321184,
+          1.6256363372802733
+        ],
+        "max_yaw_10hz_deg": 0.2046639621257782,
+        "max_tension_n": 12.854315757751465,
+        "peak_xy_m": 2.4863182198865097,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "4e0862beabc9833c8a180ba945415dca73c4f36216f8241e99f316936e9a52fd",
+        "trajectory_sha256": "73941b3ae5a5cc24ec83cb4bff521542a9f9af8cb75d0b9d17348f7f151c32f1",
+        "fullrate_sha256": "4a7337bd48fdebca311284cf49477d08c11201becc507dc9f28b041e067fa092"
+      }
+    },
+    {
+      "attachment_cm": 10,
+      "case": "track4_wind1",
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "controller_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+      "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "baseline": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          1.0347526699365377,
+          0.11542177949444382,
+          1.0282951428257985
+        ],
+        "late30_xy_rmse_m": 1.239130316149628,
+        "late30_xy_mean_m": [
+          -1.2099634399414063,
+          0.2646142305036386
+        ],
+        "max_yaw_10hz_deg": 0.22295711934566498,
+        "max_tension_n": 2.729217052459717,
+        "peak_xy_m": 2.2198411049967928,
+        "startup_lead_m": 0.8630867004394531,
+        "startup_lag_m": 2.1798815727233887,
+        "result_sha256": "60e9e8cfa01ce0272f48d14111a73ed1e66507dc572941a6ec97314aae4d387c",
+        "trajectory_sha256": "b9c41600e725b866b97c8fd2d6314538df45f91e5d8bf5120423a2b6973d84f7",
+        "fullrate_sha256": "131a94c221e82cd75833a9076912d389036722bdee7ab7b12fcd85b1770050f3"
+      },
+      "candidate": {
+        "safe": true,
+        "legacy_safe": true,
+        "rmse_3d_h_xy_m": [
+          1.0161838193947883,
+          0.08323909845409821,
+          1.0127688814770766
+        ],
+        "late30_xy_rmse_m": 1.1927248746344041,
+        "late30_xy_mean_m": [
+          -1.190531972249349,
+          0.06269056012667716
+        ],
+        "max_yaw_10hz_deg": 0.220565527677536,
+        "max_tension_n": 2.595081090927124,
+        "peak_xy_m": 2.224584061937699,
+        "startup_lead_m": 0.6926994323730469,
+        "startup_lag_m": 2.2023754119873047,
+        "result_sha256": "812156c82242d895e86b0e656c9abc8aa1a59d7333d27738e549933f41863839",
+        "trajectory_sha256": "57bec901f6d29cf5d8c61cf9ea6b0f459f33dd2e3d36f6152dca86349cca8331",
+        "fullrate_sha256": "04d96314514914feaf92c20843fb2cf79e3ba163826fb1dfdaddc8e59f405d28"
+      }
+    }
+  ],
+  "aggregates": {
+    "baseline": {
+      "safe": 6,
+      "legacy_safe": 6,
+      "rmse_3d_h_xy_m": [
+        1.3979634260710672,
+        0.10680100523269905,
+        1.393877787294726
+      ],
+      "late30_xy_rmse_m": 1.4299540729056721
+    },
+    "candidate": {
+      "safe": 6,
+      "legacy_safe": 6,
+      "rmse_3d_h_xy_m": [
+        1.3266316617428142,
+        0.09982652036074773,
+        1.3228704516207044
+      ],
+      "late30_xy_rmse_m": 1.3502862058026461
+    }
+  },
+  "baseline_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "residual_checkpoint_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+  "candidate_checkpoint_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+  "chart_sha256": "da50865a5a3648aa246b6c95e50c7458faf705b4f2ec1bf04a318e06eb396cd5"
+}

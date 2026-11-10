@@ -1,0 +1,197 @@
+{
+  "schema_version": 2,
+  "stage": "Fresh8m structural residual on restored GitHub Actor29",
+  "controller_checkpoint": "../track/models/actor29.pt",
+  "duration_s": 30,
+  "dt_s": 0.01,
+  "origin_start_steps": 100,
+  "origin_stride_steps": 5,
+  "forecast_horizons_steps": [
+    1
+  ],
+  "forecast_origin_stride": 20,
+  "splits": {
+    "train": [
+      {
+        "name": "matched",
+        "seed": 20674201,
+        "directions_deg": [
+          0
+        ],
+        "actual_scales": {},
+        "nominal_scales": {},
+        "actual_drag_scale": 1,
+        "nominal_arm_cm": "matched",
+        "duration_s": 10
+      },
+      {
+        "name": "heavy_slow",
+        "seed": 20674211,
+        "directions_deg": [
+          0,
+          90
+        ],
+        "actual_scales": {
+          "mass": 1.05,
+          "inertia": 0.95,
+          "motor_tau": 1.3
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 1.15,
+        "nominal_arm_cm": 5,
+        "duration_s": 20
+      },
+      {
+        "name": "light_fast",
+        "seed": 20674221,
+        "directions_deg": [
+          180,
+          270
+        ],
+        "actual_scales": {
+          "mass": 0.95,
+          "inertia": 1.05,
+          "motor_tau": 0.7
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 0.85,
+        "nominal_arm_cm": 5,
+        "duration_s": 20
+      }
+    ],
+    "development": [
+      {
+        "name": "intermediate",
+        "seed": 20674301,
+        "directions_deg": [
+          45,
+          225
+        ],
+        "actual_scales": {
+          "mass": 1.025,
+          "inertia": 0.975,
+          "motor_tau": 1.15
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 1.075,
+        "nominal_arm_cm": 5,
+        "duration_s": 20
+      }
+    ],
+    "test": [
+      {
+        "name": "new_combination",
+        "seed": 20674401,
+        "directions_deg": [
+          135,
+          315
+        ],
+        "actual_scales": {
+          "mass": 1.03,
+          "inertia": 1.02,
+          "motor_tau": 0.85
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 0.9,
+        "nominal_arm_cm": 5,
+        "duration_s": 20
+      }
+    ]
+  },
+  "model": {
+    "width": 64,
+    "scale": [
+      4,
+      4,
+      4,
+      0.15,
+      0.15,
+      0.1,
+      0.7
+    ]
+  },
+  "residual_training": {
+    "seed": 20274201,
+    "steps": 1000,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "development_interval": 100,
+    "wrench_loss_scale": [
+      1,
+      1,
+      1,
+      0.03,
+      0.03,
+      0.02
+    ],
+    "rpm_loss_scale": 1,
+    "regularization": 0.0001,
+    "motor_prediction_dt_s": 0.002
+  },
+  "control_training_seed": 20674801,
+  "control_evaluation_seed": 20272981,
+  "control_training_directions_deg": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "control_evaluation_directions_deg": [
+    22.5,
+    112.5,
+    202.5,
+    292.5
+  ],
+  "control_actual_scales": {
+    "mass": 1.03,
+    "inertia": 1.02,
+    "motor_tau": 0.85
+  },
+  "control_actual_drag_scale": 0.9,
+  "nominal_arm_cm": 5,
+  "control_objective_credit_recompute_s": [
+    30,
+    10,
+    1
+  ],
+  "max_candidate_replays": 2,
+  "scope": "Offline same body state and common actual endpoint force;nominal attachment5cm,actual5/10cm. Neural inputs remain onboard only. This does not identify rope material or shape errors.",
+  "development_comparison_duration_s": 30,
+  "final_acceptance_duration_s": 120,
+  "user_amendment": "User explicitly authorized30s comparisons to save development time; residual/data unchanged and final120s acceptance untouched",
+  "control_policy_updates": 0,
+  "policy_comparison": "Restored29 Actor/Adam frozen;learn P3 first,then compensate;no P2 update",
+  "compensation": {
+    "warmup_s": 1,
+    "ramp_s": 1,
+    "filter_tau_s": 0.05,
+    "thrust_limit_n": 2,
+    "torque_limits_nm": [
+      0.03,
+      0.03,
+      0.02
+    ],
+    "log_motor_tau_limit": 0.7
+  },
+  "current_scope_supersedes": "This run only:GitHub Actor29,8m,EA49;original26 results remain immutable",
+  "plant_kind": "dynamic_flexible_rope",
+  "controller_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "policy_updates": 0,
+  "formal_objective_s": 120,
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "expected_backends": [
+    "torch",
+    "mujoco"
+  ],
+  "forecast_scope": "Same-state equation residual and2ms actuator response;legacy19-state RK4 forecasts are not used for86-state cable",
+  "label_definition": "Common external cable endpoint force;actual/nominal vehicle parameters and5/10cm lever-arm difference;no rope-material or shape-state identification",
+  "controller_cumulative_updates": 29,
+  "collection_height_m": 8.0
+}

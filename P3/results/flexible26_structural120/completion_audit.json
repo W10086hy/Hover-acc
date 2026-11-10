@@ -1,0 +1,161 @@
+{
+  "completed": true,
+  "duration_s": 120,
+  "count_per_policy": 16,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "optimizer_created": false,
+  "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+  "source_archives_verified": true,
+  "all_protected_checkpoints_unchanged": true,
+  "paired_initial_states_and_full_wind_equal": true,
+  "cross_backend_initial_states_and_full_wind_equal": true,
+  "extension_prefix_checks": [
+    {
+      "backend": "torch",
+      "mode": "without_compensation",
+      "initial_state_equal": true,
+      "first30s_wind_equal": true,
+      "first30s_states_bitwise_equal": true,
+      "first30s_commands_bitwise_equal": true,
+      "maximum_first30s_saved_position_difference_m": 0.0
+    },
+    {
+      "backend": "torch",
+      "mode": "with_compensation",
+      "initial_state_equal": true,
+      "first30s_wind_equal": true,
+      "first30s_states_bitwise_equal": true,
+      "first30s_commands_bitwise_equal": true,
+      "maximum_first30s_saved_position_difference_m": 0.0
+    },
+    {
+      "backend": "mujoco",
+      "mode": "without_compensation",
+      "initial_state_equal": true,
+      "first30s_wind_equal": true,
+      "first30s_states_bitwise_equal": true,
+      "first30s_commands_bitwise_equal": true,
+      "maximum_first30s_saved_position_difference_m": 0.0
+    },
+    {
+      "backend": "mujoco",
+      "mode": "with_compensation",
+      "initial_state_equal": true,
+      "first30s_wind_equal": true,
+      "first30s_states_bitwise_equal": true,
+      "first30s_commands_bitwise_equal": true,
+      "maximum_first30s_saved_position_difference_m": 0.0
+    }
+  ],
+  "thresholds": {
+    "torch": {
+      "without_compensation": {
+        "weak_count": 8,
+        "strong_count": 8,
+        "weak_max_horizontal_rmse_m": 0.5786349673058194,
+        "strong_max_horizontal_rmse_m": 1.4406489762288937,
+        "weak_nominal_horizontal_pass": 6,
+        "weak_tolerance_horizontal_pass": 6,
+        "strong_horizontal_pass": 8,
+        "weak_nominal_3d_pass": 6,
+        "strong_3d_pass": 8,
+        "maximum_instantaneous_wind_mps": 7.888301372528076
+      },
+      "with_compensation": {
+        "weak_count": 8,
+        "strong_count": 8,
+        "weak_max_horizontal_rmse_m": 0.4288618623104552,
+        "strong_max_horizontal_rmse_m": 1.2687401685518047,
+        "weak_nominal_horizontal_pass": 8,
+        "weak_tolerance_horizontal_pass": 8,
+        "strong_horizontal_pass": 8,
+        "weak_nominal_3d_pass": 8,
+        "strong_3d_pass": 8,
+        "maximum_instantaneous_wind_mps": 7.888301372528076
+      }
+    },
+    "mujoco": {
+      "without_compensation": {
+        "weak_count": 8,
+        "strong_count": 8,
+        "weak_max_horizontal_rmse_m": 0.5785670810669774,
+        "strong_max_horizontal_rmse_m": 1.4406161927126173,
+        "weak_nominal_horizontal_pass": 6,
+        "weak_tolerance_horizontal_pass": 6,
+        "strong_horizontal_pass": 8,
+        "weak_nominal_3d_pass": 6,
+        "strong_3d_pass": 8,
+        "maximum_instantaneous_wind_mps": 7.888301372528076
+      },
+      "with_compensation": {
+        "weak_count": 8,
+        "strong_count": 8,
+        "weak_max_horizontal_rmse_m": 0.42883766455033645,
+        "strong_max_horizontal_rmse_m": 1.2687344041317683,
+        "weak_nominal_horizontal_pass": 8,
+        "weak_tolerance_horizontal_pass": 8,
+        "strong_horizontal_pass": 8,
+        "weak_nominal_3d_pass": 8,
+        "strong_3d_pass": 8,
+        "maximum_instantaneous_wind_mps": 7.888301372528076
+      }
+    }
+  },
+  "full_horizon_replays": [
+    {
+      "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural120\\comparison_torch\\visuals\\weak_with.gif",
+      "case_index": 2,
+      "frames": 201,
+      "verified": true
+    },
+    {
+      "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural120\\comparison_torch\\visuals\\strong_with.gif",
+      "case_index": 7,
+      "frames": 201,
+      "verified": true
+    },
+    {
+      "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural120\\comparison_mujoco\\visuals\\weak_with.gif",
+      "case_index": 2,
+      "frames": 201,
+      "verified": true
+    },
+    {
+      "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural120\\comparison_mujoco\\visuals\\strong_with.gif",
+      "case_index": 7,
+      "frames": 201,
+      "verified": true
+    },
+    {
+      "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural120\\comparison_mujoco\\visuals\\weak_without.gif",
+      "case_index": 2,
+      "frames": 201,
+      "verified": true
+    },
+    {
+      "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural120\\comparison_mujoco\\visuals\\strong_without.gif",
+      "case_index": 7,
+      "frames": 201,
+      "verified": true
+    }
+  ],
+  "maximum_saved_cross_backend_position_difference_m": {
+    "without_compensation": 0.007598141673952341,
+    "with_compensation": 0.19257290661334991
+  },
+  "maximum_fullrate_cross_backend_yaw_difference_deg": {
+    "without_compensation": 0.008687786757946014,
+    "with_compensation": 0.11488920450210571
+  },
+  "report_source_sha256": {
+    "P3/audit_flexible120.py": "f278c6b91e73b4bfa9cd07724626b70bd475dc605cb1c4ffc81c65f5c3cd8032",
+    "P3/audit_flexible.py": "82d6af3f43c7115e13d1a4a81113c2b228be9411b4a736c53a0450185f65e656",
+    "P3/report_flexible120.py": "ebeb444d6b4b9077ed9fa163bc5a0461d0ba077291e7b9e59a931b6cac83ad08",
+    "P3/report_flexible.py": "52b721052d52f439e5f9aa68426eed19c00e137d9f5f49d8077ac0440160c56c",
+    "P2/visualize_full_flight.py": "d2a8617e92f291c3a92e72b94ffbcc3a4e51932445c0a8a1c77781a7e087f042"
+  },
+  "reserved_final_seeds_used": false,
+  "formal_final_acceptance": false
+}

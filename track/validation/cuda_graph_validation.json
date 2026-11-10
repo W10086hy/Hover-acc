@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "component_checks": {
+    "controller": {
+      "forward_bitwise_equal": true,
+      "vjp_max_abs": 0.0,
+      "float_inputs": 19
+    },
+    "history": {
+      "forward_bitwise_equal": true,
+      "vjp_max_abs": 0.0,
+      "float_inputs": 14
+    },
+    "loads": {
+      "forward_bitwise_equal": true,
+      "vjp_max_abs": 0.0,
+      "float_inputs": 2
+    }
+  },
+  "source_sha256": {
+    "track/frozen_graph.py": "0d73ba1cf01aab8b5a94312a6ae3c581b8da8aaf03a06c1984a5e9e4a7b23f81",
+    "track/validate_frozen_graph.py": "28b288fb985a2cc80be08a1c3d6018b40efe9114c37721d27d0333b27583981c"
+  },
+  "scope": "Frozen-function CUDA component parity qualification;experiment arrays removed"
+}

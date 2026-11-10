@@ -1,0 +1,24 @@
+{
+  "completed": true,
+  "original_files": 1180,
+  "original_bytes": 1324910617,
+  "obsolete_files_removed": 855,
+  "obsolete_bytes_removed": 849692389,
+  "generated_cache_cleanup": "cache_cleanup.json",
+  "preserved_original_artifacts_checked": 160,
+  "current_files": 347,
+  "current_bytes": 475756720,
+  "manifest_files": 336,
+  "final_checkpoints_and_adam_unchanged": true,
+  "shared_environment_untouched": true,
+  "git_directory_untouched": true,
+  "new_training": false,
+  "new_simulation": false,
+  "regression_tests": {
+    "passed": 100,
+    "failed": 0,
+    "wall_s": 47.15,
+    "evidence": "final_tests.log"
+  },
+  "current_integrity_verification": "final_verification.json"
+}

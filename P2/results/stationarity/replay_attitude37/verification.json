@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "policy_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "policy_and_adam_unchanged": true,
+  "previous_results_and_media_unchanged": true,
+  "no_training": true,
+  "no_new_simulation": true,
+  "frames_and_metrics_verified": [
+    {
+      "name": "strong",
+      "frames": 201,
+      "horizon_s": 120,
+      "playback_speed": 6,
+      "gif_sha256": "544d92d40ff8c82f6d6be069b10dc50a73b9e1f7f5b9e9ea9233c9f5d21471f5",
+      "png_visually_inspected": true,
+      "attitude": {
+        "roll_mean_deg": -2.8879244327545166,
+        "pitch_mean_deg": 0.18287603557109833,
+        "yaw_mean_deg": -0.13616806268692017,
+        "tilt_mean_deg": 2.9023020267486572,
+        "into_wind_mean_deg": 2.8875490701870454,
+        "into_wind_fraction": 1.0
+      }
+    },
+    {
+      "name": "weak",
+      "frames": 201,
+      "horizon_s": 120,
+      "playback_speed": 6,
+      "gif_sha256": "05b6c3d5d55cc81f576f2380606d7fa8c5e80fa3c0641104828c9f3c44d36cd9",
+      "png_visually_inspected": true,
+      "attitude": {
+        "roll_mean_deg": 0.2037014663219452,
+        "pitch_mean_deg": -0.0013203086564317346,
+        "yaw_mean_deg": 0.10905198007822037,
+        "tilt_mean_deg": 0.3462296724319458,
+        "into_wind_mean_deg": -0.20369912134052912,
+        "into_wind_fraction": 0.1760797342192691
+      }
+    }
+  ],
+  "strong_count": 16,
+  "all_strong_tail_samples_into_wind": true,
+  "source_archive_sha256": "958f5df20b64262d04c682295b156c4e5043d695d8e24f7492d2933f8e121d43",
+  "statistics_sha256": "de6b961c9f94ec98ea1a1e8677db60bffc07f4f8b383c1858aef387a14492bc8",
+  "roll_sign_check": "Synthetic10deg rotation andwind reversal signs independently checked",
+  "curve_sample_hz": 10,
+  "existing_flight_metric_sample_hz": 100,
+  "formal_final_acceptance": false
+}

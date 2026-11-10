@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "stage": "P3 frozen current BPTT plus fast residual feedforward compensation; zero Actor updates",
+  "controller_checkpoint": "../P2/tests/fixtures/conditioned21.pt",
+  "duration_s": 120,
+  "dt_s": 0.01,
+  "origin_start_steps": 100,
+  "origin_stride_steps": 5,
+  "forecast_horizons_steps": [
+    1,
+    10,
+    25,
+    50
+  ],
+  "forecast_origin_stride": 20,
+  "splits": {
+    "train": [
+      {
+        "name": "matched",
+        "seed": 20651001,
+        "directions_deg": [
+          0
+        ],
+        "actual_scales": {},
+        "nominal_scales": {},
+        "actual_drag_scale": 1,
+        "nominal_arm_cm": "matched"
+      },
+      {
+        "name": "heavy_slow",
+        "seed": 20651101,
+        "directions_deg": [
+          0,
+          90
+        ],
+        "actual_scales": {
+          "mass": 1.05,
+          "inertia": 0.95,
+          "motor_tau": 1.3
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 1.15,
+        "nominal_arm_cm": 5
+      },
+      {
+        "name": "light_fast",
+        "seed": 20651201,
+        "directions_deg": [
+          180,
+          270
+        ],
+        "actual_scales": {
+          "mass": 0.95,
+          "inertia": 1.05,
+          "motor_tau": 0.7
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 0.85,
+        "nominal_arm_cm": 5
+      }
+    ],
+    "development": [
+      {
+        "name": "intermediate",
+        "seed": 20268381,
+        "directions_deg": [
+          22.5,
+          202.5
+        ],
+        "actual_scales": {
+          "mass": 1.025,
+          "inertia": 0.975,
+          "motor_tau": 1.15
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 1.075,
+        "nominal_arm_cm": 5
+      }
+    ],
+    "test": [
+      {
+        "name": "new_combination",
+        "seed": 20268581,
+        "directions_deg": [
+          67.5,
+          247.5
+        ],
+        "actual_scales": {
+          "mass": 1.03,
+          "inertia": 1.02,
+          "motor_tau": 0.85
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 0.9,
+        "nominal_arm_cm": 5
+      }
+    ]
+  },
+  "model": {
+    "width": 64,
+    "scale": [
+      4,
+      4,
+      4,
+      0.15,
+      0.15,
+      0.1,
+      0.7
+    ]
+  },
+  "residual_training": {
+    "seed": 20261101,
+    "steps": 1000,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "development_interval": 100,
+    "wrench_loss_scale": [
+      1,
+      1,
+      1,
+      0.03,
+      0.03,
+      0.02
+    ],
+    "rpm_loss_scale": 1,
+    "regularization": 0.0001
+  },
+  "control_training_seed": 20651401,
+  "control_evaluation_seed": 20268681,
+  "control_training_directions_deg": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "control_evaluation_directions_deg": [
+    22.5,
+    67.5,
+    112.5,
+    157.5,
+    202.5,
+    247.5,
+    292.5,
+    337.5
+  ],
+  "control_actual_scales": {
+    "mass": 1.03,
+    "inertia": 1.02,
+    "motor_tau": 0.85
+  },
+  "control_actual_drag_scale": 0.9,
+  "nominal_arm_cm": 5,
+  "control_objective_credit_recompute_s": [
+    30,
+    10,
+    1
+  ],
+  "max_candidate_replays": 2,
+  "scope": "Six body force/torque corrections plus bounded motor time-response correction. Actual parameters and actual5/10cm geometry are hidden from the neural model. Matched state/common simulated environmental input is for offline labels and controlled evaluation only; not deployable world-state or future-wind access.",
+  "development_comparison_duration_s": 30,
+  "final_acceptance_duration_s": 120,
+  "user_amendment": "User explicitly authorized30s comparisons to save development time; residual/data unchanged and final120s acceptance untouched",
+  "control_policy_updates": 0,
+  "policy_comparison": "sameP2conditioned21 checkpoint with compensation off/on; no policy BPTT iteration",
+  "compensation": {
+    "warmup_s": 1,
+    "ramp_s": 1,
+    "filter_tau_s": 0.05,
+    "thrust_limit_n": 2,
+    "torque_limits_nm": [
+      0.03,
+      0.03,
+      0.02
+    ],
+    "log_motor_tau_limit": 0.7
+  },
+  "current_scope_supersedes": "paired nominal/hybrid policy BPTT; generated22-step checkpoints are retired"
+}

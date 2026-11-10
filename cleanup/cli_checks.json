@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "scope": "Changed replay and training entrypoints after removal of old debugging outputs",
+  "checks": [
+    {
+      "module": "track.replay",
+      "args": [
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "module": "track.train_frame",
+      "args": [
+        "--help"
+      ],
+      "exit_code": 0,
+      "passed": true
+    }
+  ]
+}

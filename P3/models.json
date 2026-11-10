@@ -1,0 +1,26 @@
+{
+  "residual5m": {
+    "checkpoint": "P3/results/flexible26_structural/residual/best.pt",
+    "sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+    "optimizer_embedded": true,
+    "trained_with_actor": "P2/results/flexible_continue30/step4/latest.pt"
+  },
+  "residual8m": {
+    "checkpoint": "P3/retest8/residual/best.pt",
+    "sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+    "optimizer_embedded": true,
+    "trained_with_actor": "track/models/actor29.pt"
+  },
+  "actor37_residual_combination_validated": true,
+  "note": "Actor37 paired with its 5 m residual in native MuJoCo and PX4 SITL development comparisons. The accepted 8 m defaults use their own pair.",
+  "residual_actor37_5m": {
+    "checkpoint": "P3/results/actor37_5m/residual/best.pt",
+    "sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+    "optimizer_embedded": true,
+    "trained_with_actor": "P2/results/stationarity/selected37/latest.pt",
+    "actor_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "selected_step": 800,
+    "protocol": "P3/actor37_5m_protocol.json"
+  },
+  "latest_trained": "residual_actor37_5m"
+}

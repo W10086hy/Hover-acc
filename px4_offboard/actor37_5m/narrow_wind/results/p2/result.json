@@ -1,0 +1,77 @@
+{
+  "duration_s": 120.0,
+  "flight_samples_100hz": 12000,
+  "safe_completed": 1,
+  "count": 1,
+  "physical_failure_code": null,
+  "first_failure_s": null,
+  "rmse_3d_h_xy_m": [
+    1.0081681706770758,
+    0.055273479104859774,
+    1.0066518280289394
+  ],
+  "maximum_horizontal_error_m": 1.2569786943074832,
+  "maximum_tension_n": 3.062048518789998,
+  "maxima_checked_400hz": {
+    "tilt_deg": 2.7860465327045802,
+    "body_rate_radps": 0.12353691954357873,
+    "height_error_m": 0.10173086155420563,
+    "tension_n": 3.062048518789998
+  },
+  "armed_sample_fraction": 1.0,
+  "offboard_armed_heartbeat_fraction": 1.0,
+  "wire_messages": {
+    "HIL_SENSOR": 56000,
+    "COMMAND_LONG": 1,
+    "HEARTBEAT": 1,
+    "HIL_ACTUATOR_CONTROLS": 55982
+  },
+  "first_hil": {
+    "time_usec": 1045000,
+    "flags": 1,
+    "mode": 1
+  },
+  "commands_sent": 14000,
+  "command_acks": [
+    {
+      "command": 176,
+      "result": 0,
+      "time_s": 17.01
+    },
+    {
+      "command": 400,
+      "result": 0,
+      "time_s": 17.01
+    }
+  ],
+  "statustext": [],
+  "failure_bits": [
+    "nonfinite",
+    "tilt_over45deg",
+    "body_rate_over4radps",
+    "height_error_over4m",
+    "tension_over30N",
+    "PX4_disarmed",
+    "PX4_not_offboard"
+  ],
+  "failure_remainder_penalty_h_xy_m": [
+    4.0,
+    6.0
+  ],
+  "actuator_wait_mean_ms": 0.10072932163894036,
+  "actuator_wait_max_ms": 2.3403220002364833,
+  "wall_s": 113.47118655299982,
+  "physics_steps": 240000,
+  "physics_integrated_s": 120.0,
+  "wind_peak_mps": 4.9999302581341345,
+  "wind_seed": 20683131,
+  "wind_profile": "narrow_varying",
+  "target_height_m": 5.0,
+  "cart_speed_mps": 0.0,
+  "controller_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+  "residual_enabled": false,
+  "policy_updated": false,
+  "residual_updated": false,
+  "formal_final_acceptance": false
+}

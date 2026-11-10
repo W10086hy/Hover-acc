@@ -1,0 +1,47 @@
+{
+  "duration_s": 120.0,
+  "cart_speed_mps": 4.0,
+  "cart_direction_engineering_deg": 0.0,
+  "cart_anchor_height_m": 0.15,
+  "target_aircraft_height_m": 5.0,
+  "physics_dt_s": 0.0005,
+  "attachment_cm": [
+    5,
+    10
+  ],
+  "initial_conditions": [
+    "hover_capture"
+  ],
+  "aircraft_initial_velocity_mps": [
+    0,
+    0,
+    0
+  ],
+  "state_seed": 20272081,
+  "wind_seed": 20272082,
+  "wind_peak_mps": 1.0,
+  "wind_mean_direction_deg": 90.0,
+  "controller_checkpoint": "P2/results/flexible_continue30/step4/latest.pt",
+  "controller_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "residual_checkpoint": "P3/results/flexible26_structural/residual/best.pt",
+  "residual_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+  "residual_protocol": "P3/flexible26_structural120_protocol.json",
+  "modes": [
+    "with_compensation"
+  ],
+  "initialization": "Aircraft,free cable nodes and cart all start stationary;5s hover,8s half-cosine cart acceleration,then4m/s cruise until120s;no velocity feedforward",
+  "controller_inputs": "Original onboard35 and external nominal14 only;no cart position/velocity,GNSS,wind or rope truth",
+  "cart_model": "Ideal prescribed rail drive with native qpos AND qvel;continuous half-cosine start;no wheel/traction dynamics",
+  "cart_inertial_regularization_kg": 1000000.0,
+  "failure_remainder": {
+    "horizontal_error_m": 6.0,
+    "height_error_m": 4.0
+  },
+  "cart_motion": {
+    "kind": "half_cosine_ramp",
+    "hold_s": 5.0,
+    "ramp_s": 8.0
+  },
+  "test_date": "2026-11-02",
+  "test_scope": "Frozen P2/P3 from physical hover;single original seed pair;no policy tuning or learning"
+}

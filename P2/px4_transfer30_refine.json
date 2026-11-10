@@ -1,0 +1,79 @@
+{
+  "parent_checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+  "parent_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+  "objective_s": 30,
+  "credit_s": 30,
+  "recompute_s": 1,
+  "seed": 20685131,
+  "development_seed": 20685141,
+  "training_winds_mps": [
+    0,
+    1
+  ],
+  "training_motor_tau_s": 0.045,
+  "development_motor_tau_s": 0.06,
+  "learning_rate": 0.0002,
+  "stock_px4": {
+    "rate_p": [
+      0.15,
+      0.15,
+      0.2
+    ],
+    "rate_i": [
+      0.2,
+      0.2,
+      0.1
+    ],
+    "rate_d": [
+      0.003,
+      0.003,
+      0
+    ],
+    "integral_limit": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "rate_derivative_filter_s": 0.02,
+    "prediction_substeps": 3,
+    "predictor_motor_tau_s": 0.045,
+    "command_filter_s": 0.065,
+    "rate_mix": [
+      [
+        -0.455,
+        0.93,
+        0.85
+      ],
+      [
+        -0.455,
+        -0.93,
+        -0.85
+      ],
+      [
+        0.455,
+        0.93,
+        -0.85
+      ],
+      [
+        0.455,
+        -0.93,
+        0.85
+      ]
+    ]
+  },
+  "handoff_initialization": {
+    "initial_xy_m": 0.04,
+    "initial_z_m": 0.16,
+    "initial_tilt_deg": 1.5,
+    "initial_speed_mps": 0.04,
+    "initial_rate_radps": 0.025
+  },
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  }
+}

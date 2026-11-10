@@ -1,0 +1,15 @@
+{
+  "stage": "actor31_final_results_retained",
+  "training_running": false,
+  "validation_running": false,
+  "checkpoint": "track/models/actor29.pt",
+  "checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "cumulative_actor_updates": 29,
+  "residual_updates": 0,
+  "all_case_statistics": "track/reports/height_speed_statistics.json",
+  "retained_case": "track/drift8/step2",
+  "user_accepted": true,
+  "retained_case_count": 9,
+  "current_candidate": "track/drift8/step2/latest.pt",
+  "current_candidate_updates": 31
+}

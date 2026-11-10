@@ -1,0 +1,6 @@
+{
+  "source": "P2/validation/flexible_dynamic_reference_v2/frozen_source.zip",
+  "target": "P2/tests/fixtures/flexible_reference.zip",
+  "reference_source_sha256": "b14e237aab47e0214078552f8a4f45351b971516401ca6c397577bd4316ecb98",
+  "purpose": "Independent reviewed pre-optimization model for exact forward/gradient comparison"
+}

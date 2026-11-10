@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "removed_files": 854,
+  "removed_bytes": 849685315,
+  "moves": [
+    {
+      "path": "P2/flexible_continue30_step4.json",
+      "bytes": 1537,
+      "sha256": "646ed8edc36170d6ba53c6d6623ac3d12b8aabc2ad2293c4973d46ef449bc842",
+      "destination": "P2/results/flexible_continue30/step4/protocol.json",
+      "reason": "final training protocol snapshot"
+    },
+    {
+      "path": "P2/results/baseline19/checkpoint.pt",
+      "bytes": 1182739,
+      "sha256": "5dce91e9b4d27106a42af8c9250cd0e2f97de5a201c49e4025119ba18b0c0773",
+      "destination": "P2/tests/fixtures/baseline19.pt",
+      "reason": "regression fixture"
+    },
+    {
+      "path": "P2/results/training/conditioned/latest.pt",
+      "bytes": 1253943,
+      "sha256": "78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a",
+      "destination": "P2/tests/fixtures/conditioned21.pt",
+      "reason": "regression fixture"
+    },
+    {
+      "path": "P3/results/residual/best.pt",
+      "bytes": 466764,
+      "sha256": "766dae2be7b9ef9f4757e2365afb4fbc998a945da7a8cb483f0a602e4b873a6e",
+      "destination": "P3/tests/fixtures/residual21.pt",
+      "reason": "regression fixture"
+    }
+  ],
+  "final_checkpoints_unchanged": true,
+  "shared_environment_untouched": true,
+  "git_directory_untouched": true
+}

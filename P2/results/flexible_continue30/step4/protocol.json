@@ -1,0 +1,75 @@
+{
+  "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+  "goal": "User explicitly requested further30s targeted training for remaining0.650/0.663m weak-wind cases",
+  "step_index": 4,
+  "parent_checkpoint": "results/flexible_continue30/step3/latest.pt",
+  "device": "cuda",
+  "objective_s": 30,
+  "credit_s": 10,
+  "recompute_s": 1,
+  "development_pilot": true,
+  "formal_objective_s": 120,
+  "training_seed": 20673601,
+  "development_seed": 20269681,
+  "training_directions_deg": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "training_winds": [
+    [
+      0,
+      "steady"
+    ],
+    [
+      0.5,
+      "steady"
+    ],
+    [
+      0.5,
+      "steady"
+    ],
+    [
+      1,
+      "steady"
+    ],
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "combined"
+    ]
+  ],
+  "optimizer_learning_rates": [
+    0.000234375,
+    0.00234375,
+    0.0001
+  ],
+  "development_directions_deg": [
+    22.5,
+    112.5,
+    202.5,
+    292.5
+  ],
+  "development_s": 30,
+  "maximum_paired_trials": 3,
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "rope_parameters_measured": false,
+  "final_acceptance": false,
+  "p3_enabled": false,
+  "adaptation_reason": "Increase0.5/1mps initial-state coverage without training on evaluation seeds/directions;retain strong-wind samples"
+}

@@ -1,0 +1,613 @@
+{
+  "duration_s": 120.0,
+  "cases": [
+    {
+      "height_m": 10,
+      "case_index": 0,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.1200639360260192,
+        0.058431561746085846,
+        1.1185387670429718
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.1200639360260192,
+        0.058431561746085846,
+        1.1185387670429718
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.386754751339794,
+        0.059632635271951825,
+        1.385472009523836
+      ],
+      "maximum_speed_mps": 0.23932026326656342,
+      "maximum_radius_m": 1.5780807733535767,
+      "maximum_tension_n": 3.02559232711792,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        0.9885115178193521,
+        0.044226424760991326,
+        0.9875216677189315
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 10,
+      "case_index": 1,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        0.9920866126641222,
+        0.05082898220588936,
+        0.9907836603392718
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        0.9920866126641222,
+        0.05082898220588936,
+        0.9907836603392718
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.057200276534738,
+        0.04645711373286288,
+        1.0561790384630525
+      ],
+      "maximum_speed_mps": 0.25288254022598267,
+      "maximum_radius_m": 1.2660937309265137,
+      "maximum_tension_n": 5.30410099029541,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        0.7271885470012301,
+        0.03991561558192968,
+        0.7260922300386335
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 10,
+      "case_index": 2,
+      "cart_speed_mps": 4.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        2.0262574939208666,
+        0.05017945846062301,
+        2.0256360614925546
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        2.0262574939208666,
+        0.05017945846062301,
+        2.0256360614925546
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        2.142106789588092,
+        0.033581624330684255,
+        2.1418435452914655
+      ],
+      "maximum_speed_mps": 5.390787601470947,
+      "maximum_radius_m": 4.817229270935059,
+      "maximum_tension_n": 6.513432025909424,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        1.899799284069192,
+        0.04492145777568729,
+        1.8992681175603199
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 10,
+      "case_index": 3,
+      "cart_speed_mps": 4.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.4751918299484161,
+        0.06872101824906444,
+        1.473590294755421
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.4751918299484161,
+        0.06872101824906444,
+        1.473590294755421
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.663342503976073,
+        0.05252747024226392,
+        1.6625129023268783
+      ],
+      "maximum_speed_mps": 5.104393482208252,
+      "maximum_radius_m": 3.3963418006896973,
+      "maximum_tension_n": 3.09598445892334,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        1.5224817476891706,
+        0.046439342672547665,
+        1.5217733272399057
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 10,
+      "case_index": 4,
+      "cart_speed_mps": 5.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.7975370565988082,
+        0.08233259261430403,
+        1.7956505267003695
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.7975370565988082,
+        0.08233259261430403,
+        1.7956505267003695
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.6194933307256867,
+        0.05448708813299905,
+        1.618576475021111
+      ],
+      "maximum_speed_mps": 5.8462347984313965,
+      "maximum_radius_m": 4.413851261138916,
+      "maximum_tension_n": 4.747766494750977,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        1.8645434175187958,
+        0.039233194994850215,
+        1.8641306049263733
+      ],
+      "detailed_data_retained": true
+    },
+    {
+      "height_m": 10,
+      "case_index": 5,
+      "cart_speed_mps": 5.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.5036404596450468,
+        0.09425837315643187,
+        1.5006831747479115
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.5036404596450468,
+        0.09425837315643187,
+        1.5006831747479115
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.7134875870473407,
+        0.08511060072454993,
+        1.7113725183634405
+      ],
+      "maximum_speed_mps": 5.762330532073975,
+      "maximum_radius_m": 3.3713011741638184,
+      "maximum_tension_n": 2.923065185546875,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        1.5267003581676402,
+        0.062801779978877,
+        1.5254081159023265
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 10,
+      "case_index": 6,
+      "cart_speed_mps": 6.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.78656596821289,
+        0.09293858665826663,
+        1.7841469608433116
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.78656596821289,
+        0.09293858665826663,
+        1.7841469608433116
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.5109883755224418,
+        0.07103409372504514,
+        1.5093177360955543
+      ],
+      "maximum_speed_mps": 6.873027801513672,
+      "maximum_radius_m": 4.125067710876465,
+      "maximum_tension_n": 4.467499732971191,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        1.905408132605049,
+        0.03189873352086973,
+        1.9051411030674932
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 10,
+      "case_index": 7,
+      "cart_speed_mps": 6.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.6676308096106824,
+        0.04916727459624431,
+        1.6669058450529104
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.6676308096106824,
+        0.04916727459624431,
+        1.6669058450529104
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.9202464132561736,
+        0.018071195367077512,
+        1.920161378509943
+      ],
+      "maximum_speed_mps": 6.672242164611816,
+      "maximum_radius_m": 3.391035556793213,
+      "maximum_tension_n": 3.0296008586883545,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        1.7237211034037319,
+        0.04019464679814965,
+        1.7232523995886821
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 0,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.5621297820880682,
+        0.0768616058508802,
+        1.560237722154076
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.5621297820880682,
+        0.0768616058508802,
+        1.560237722154076
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.6383568608717007,
+        0.07704322340219531,
+        1.6365443914826057
+      ],
+      "maximum_speed_mps": 0.18726320564746857,
+      "maximum_radius_m": 2.087615728378296,
+      "maximum_tension_n": 2.161465883255005,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        2.064637828128978,
+        0.054072124307670416,
+        2.0639296419001303
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 1,
+      "cart_speed_mps": 0.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": true,
+      "physical_envelope_completed": true,
+      "first_failure_s": null,
+      "failure_code": 0,
+      "strict_rmse_3d_h_xy_m": [
+        1.6797235957968364,
+        0.07929543779712887,
+        1.6778508848587277
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        1.6797235957968364,
+        0.07929543779712887,
+        1.6778508848587277
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        1.6597870722146337,
+        0.07525656020698325,
+        1.658080087099727
+      ],
+      "maximum_speed_mps": 0.30922558903694153,
+      "maximum_radius_m": 2.61067533493042,
+      "maximum_tension_n": 2.19413423538208,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        1.4637952198521065,
+        0.06141648143963313,
+        1.4625062261301494
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 2,
+      "cart_speed_mps": 4.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": false,
+      "physical_envelope_completed": true,
+      "first_failure_s": 11.600000381469727,
+      "failure_code": 64,
+      "strict_rmse_3d_h_xy_m": [
+        6.873798491737105,
+        3.8018152982827464,
+        5.72671861913527
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        4.316345599144939,
+        0.04748010001646503,
+        4.316084449053367
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        4.637943881081458,
+        0.012090362244384865,
+        4.637928122254779
+      ],
+      "maximum_speed_mps": 5.312819957733154,
+      "maximum_radius_m": 8.746912002563477,
+      "maximum_tension_n": 6.613278865814209,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        6.860433368793837,
+        3.790901717884892,
+        5.717920091519059
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 3,
+      "cart_speed_mps": 4.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": false,
+      "physical_envelope_completed": true,
+      "first_failure_s": 9.960000038146973,
+      "failure_code": 64,
+      "strict_rmse_3d_h_xy_m": [
+        6.927296728277346,
+        3.830475465357201,
+        5.771905895880368
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        3.5009623901872953,
+        0.09982170032116777,
+        3.499539010448509
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        3.867415436329337,
+        0.08206416950467649,
+        3.866544662776048
+      ],
+      "maximum_speed_mps": 6.709167003631592,
+      "maximum_radius_m": 7.058520793914795,
+      "maximum_tension_n": 3.944915294647217,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        6.909022989905905,
+        3.821909267801433,
+        5.755658800149801
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 4,
+      "cart_speed_mps": 5.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": false,
+      "physical_envelope_completed": true,
+      "first_failure_s": 10.260000228881836,
+      "failure_code": 64,
+      "strict_rmse_3d_h_xy_m": [
+        6.916261139802156,
+        3.8252731997314084,
+        5.762113596706859
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        4.061971029004674,
+        0.07558666343232133,
+        4.061267695779787
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        4.173969693695666,
+        0.02187842191936839,
+        4.173912353960515
+      ],
+      "maximum_speed_mps": 6.086416721343994,
+      "maximum_radius_m": 9.53537654876709,
+      "maximum_tension_n": 6.071844577789307,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        6.896430669023808,
+        3.8154627078163976,
+        5.74482378301672
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 5,
+      "cart_speed_mps": 5.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": false,
+      "physical_envelope_completed": true,
+      "first_failure_s": 10.65999984741211,
+      "failure_code": 64,
+      "strict_rmse_3d_h_xy_m": [
+        6.903394191386848,
+        3.8183145935082945,
+        5.7512889882769125
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        3.8826172949920776,
+        0.11941969398312854,
+        3.880780333394377
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        4.33406337791866,
+        0.0927314596389421,
+        4.333071224917604
+      ],
+      "maximum_speed_mps": 9.381240844726562,
+      "maximum_radius_m": 7.670693874359131,
+      "maximum_tension_n": 4.499982833862305,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        6.884181871269558,
+        3.80865800156086,
+        5.7346389828709246
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 6,
+      "cart_speed_mps": 6.0,
+      "attachment_cm": 5.0,
+      "acceptance_completed": false,
+      "physical_envelope_completed": true,
+      "first_failure_s": 10.119999885559082,
+      "failure_code": 64,
+      "strict_rmse_3d_h_xy_m": [
+        6.924557166298061,
+        3.827699794275518,
+        5.770459794005412
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        4.1102634551664945,
+        0.08044468012074367,
+        4.109476161789661
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        4.315261566724705,
+        0.027078614679122384,
+        4.315176605641815
+      ],
+      "maximum_speed_mps": 7.070867538452148,
+      "maximum_radius_m": 9.398573875427246,
+      "maximum_tension_n": 6.002973556518555,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        6.904215147677078,
+        3.818424579122007,
+        5.752201364605602
+      ],
+      "detailed_data_retained": false
+    },
+    {
+      "height_m": 20,
+      "case_index": 7,
+      "cart_speed_mps": 6.0,
+      "attachment_cm": 10.0,
+      "acceptance_completed": false,
+      "physical_envelope_completed": true,
+      "first_failure_s": 10.789999961853027,
+      "failure_code": 64,
+      "strict_rmse_3d_h_xy_m": [
+        6.901602402657502,
+        3.815988462989057,
+        5.750682374701476
+      ],
+      "physical_full_horizon_rmse_3d_h_xy_m": [
+        4.2537069967125065,
+        0.1084458573543335,
+        4.25232438907283
+      ],
+      "physical_terminal30_rmse_3d_h_xy_m": [
+        4.7104554293946865,
+        0.022603812760509524,
+        4.710401195223456
+      ],
+      "maximum_speed_mps": 10.458935737609863,
+      "maximum_radius_m": 8.107510566711426,
+      "maximum_tension_n": 4.670287132263184,
+      "baseline_strict_rmse_3d_h_xy_m": [
+        6.881617779484624,
+        3.8065188288398026,
+        5.732981568835447
+      ],
+      "detailed_data_retained": false
+    }
+  ],
+  "paired_conditions": [
+    {
+      "height_m": 10,
+      "initial_states_equal": true,
+      "entire_wind_trace_equal": true,
+      "result_sha256": "3e1a1ce623b70c851d3b38cb6338032b3ca476dfc40442e3ef0e59774fdb440e",
+      "fullrate_sha256": "e02dff6791e0ab96b596a2536ed6d349d6925d76cd24df4ae97df55fc66bb724",
+      "frozen_sources_verified": true
+    },
+    {
+      "height_m": 20,
+      "initial_states_equal": true,
+      "entire_wind_trace_equal": true,
+      "result_sha256": "316269306e5aa7750b9b152e8fbf440b97883f7ffe1f5733511222bb78a0dff6",
+      "fullrate_sha256": "fde06f3efe5c30a9caef0fb5cdd23665348ec7dc3f25408514213cc5d161d8eb",
+      "frozen_sources_verified": true
+    }
+  ],
+  "acceptance_safe": 10,
+  "physical_envelope_completed": 16,
+  "summary_sha256": "54d3eec2916c4cc9304cc81690c5dd04d9c0f7cac81a39e9de7cd7c1a76d8d33",
+  "source_sha256": "5aafdb2293eaa6de2a2e9348b686b4fa783594cd2322c75cee127329d4ac5505",
+  "user_accepted": true,
+  "acceptance_basis": "User accepted current development results on2026-11-02;historical7m/s and6m grading retained separately",
+  "detailed_retention": {
+    "height_m": 10,
+    "cart_speed_mps": 5,
+    "attachment_cm": 5,
+    "path": "track/results/height10_speed5_5cm"
+  },
+  "actor_checkpoint": "track/models/actor29.pt",
+  "actor_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "residual_checkpoint": "P3/results/flexible26_structural/residual/best.pt",
+  "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+  "original_data_audit_passed": true,
+  "all_other_detailed_data_removed_by_user_request": true,
+  "protocol_summary": {
+    "duration_s": 120,
+    "state_seed": 20272681,
+    "wind_seed": 20272682,
+    "environment_wind_peak_mps": 1.0,
+    "wind_direction_mean_deg": 90.0,
+    "wind_direction_swing_deg": 25.0,
+    "wind_amplitude_periods_s": [
+      7.0,
+      1.7
+    ],
+    "wind_direction_period_s": 17.0,
+    "startup_hover_s": 5.0,
+    "cart_ramp_s_by_speed": {
+      "4": 8.0,
+      "5": 10.0,
+      "6": 12.0
+    },
+    "world_speed_grading_limit_mps": 7.0,
+    "relative_radius_grading_limit_m": 6.0,
+    "tether_rest_lengths_m": {
+      "10m_5cm": 9.9,
+      "10m_10cm": 9.85,
+      "20m_5cm": 19.9,
+      "20m_10cm": 19.85
+    },
+    "tether_lengths_measured": false
+  }
+}

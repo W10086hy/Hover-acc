@@ -1,0 +1,23 @@
+[
+  {
+    "removed": "track/results/cart4_120/replay/co_moving5cm.mp4",
+    "sha256": "48382f81d29d7f0e3635cb18ba80c6986e1672e7b4c6b6113cb4bbc361927294",
+    "replacement": "track/results/cart4_120/replay/co_moving5cm.gif",
+    "replacement_sha256": "4fc419cfeeac2b89976e20fa18fe5d768e29c8816ed9b5bdc7fcfc4f75050e4f",
+    "reason": "Older co-moving reference:complete numerical data kept;representative5cm GIF and10cm still retained;latest hover-start media complete"
+  },
+  {
+    "removed": "track/results/cart4_120/replay/co_moving10cm.mp4",
+    "sha256": "0af84659926af2a0367635dced4478201da84c686e6a96c3553c282c54e6d436",
+    "replacement": "track/results/cart4_120/replay/co_moving10cm.png",
+    "replacement_sha256": "3cc20f89c5e86ce5b193743063745b04b8e03eb1093beb116b09d0863e36bd48",
+    "reason": "Older co-moving reference:complete numerical data kept;representative5cm GIF and10cm still retained;latest hover-start media complete"
+  },
+  {
+    "removed": "track/results/cart4_120/replay/co_moving10cm.gif",
+    "sha256": "bf4088e08d0026fe84349154770a533ff8f408d69ebbe2a018de75c618808eea",
+    "replacement": "track/results/cart4_120/replay/co_moving10cm.png",
+    "replacement_sha256": "3cc20f89c5e86ce5b193743063745b04b8e03eb1093beb116b09d0863e36bd48",
+    "reason": "Older co-moving reference:complete numerical data kept;representative5cm GIF and10cm still retained;latest hover-start media complete"
+  }
+]

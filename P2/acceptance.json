@@ -1,0 +1,133 @@
+{
+  "version": 2,
+  "date_local": "2026-10-31",
+  "scope": "Only body-rate/total-thrust BPTT",
+  "target_position_xyh_m": [
+    0,
+    0,
+    5
+  ],
+  "metric": "sqrt(mean(x^2+y^2+(h-5)^2)) over the full flight",
+  "height_priority": {
+    "height": 8,
+    "horizontal": 2
+  },
+  "duration_s": 120,
+  "all_cases_safe_required": true,
+  "failure_remainder": {
+    "horizontal_error_m": 6,
+    "height_error_m": 4
+  },
+  "report_metrics": [
+    "3d_rmse",
+    "height_rmse",
+    "horizontal_rmse",
+    "terminal30_drift",
+    "origin_dwell_fraction",
+    "completed_cases",
+    "wind_mean_rms_peak"
+  ],
+  "weak": {
+    "base_wind_speeds_mps": [
+      0,
+      0.5,
+      1
+    ],
+    "rmse_3d_max_m": 0.5
+  },
+  "strong": {
+    "base_wind_mps": 5,
+    "rmse_3d_max_m": 1.5,
+    "profiles": [
+      "steady",
+      "gust",
+      "turbulence",
+      "time_varying",
+      "combined"
+    ],
+    "wind_definition": "5 m/s background; disturbance peaks may exceed5 and must be reported"
+  },
+  "directions_deg": [
+    0,
+    45,
+    90,
+    135,
+    180,
+    225,
+    270,
+    315
+  ],
+  "attachments": [
+    2,
+    1
+  ],
+  "final_seed_pairs": [
+    {
+      "state_seed": 20267081,
+      "wind_seed": 20267082
+    },
+    {
+      "state_seed": 20267181,
+      "wind_seed": 20267182
+    },
+    {
+      "state_seed": 20267281,
+      "wind_seed": 20267282
+    }
+  ],
+  "final_seed_policy": "Freeze checkpoint/config/source before final evaluation. Never train or select on these seeds. Every case and seed must pass.",
+  "development_seed_pairs": [
+    {
+      "state_seed": 20266081,
+      "wind_seed": 20266082
+    },
+    {
+      "state_seed": 20266181,
+      "wind_seed": 20266182
+    }
+  ],
+  "actor_allowed": [
+    "IMU history",
+    "onboard attitude estimate",
+    "motor RPM feedback",
+    "barometric height and causal vertical-speed estimate",
+    "previous applied commands",
+    "causal motion/model residual proxies"
+  ],
+  "actor_forbidden": [
+    "horizontal position truth",
+    "horizontal velocity truth",
+    "wind truth",
+    "tether parameters or tension truth"
+  ],
+  "evaluation_control": "Student policy plus the declared PI inner loops; no GNSS teacher takeover,position PD,attitude PID or altitude PID",
+  "curriculum": [
+    "qualify inner rate/thrust tracking",
+    "0–1 m/s",
+    "fixed-direction steady2–5 m/s",
+    "multiple directions/attachments",
+    "gust/turbulence/time-varying/combined",
+    "frozen independent acceptance"
+  ],
+  "attachment_definitions": {
+    "1": {
+      "label": "Body-fixed10cm belowCG",
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85
+    },
+    "2": {
+      "label": "Body-fixed5cm belowCG",
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9
+    }
+  },
+  "geometry_scope_revision": "User2026-10-29:only5cm and10cm;old CG results historical only"
+}

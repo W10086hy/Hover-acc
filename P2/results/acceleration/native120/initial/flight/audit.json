@@ -1,0 +1,78 @@
+{
+  "numerical_integrity_passed": true,
+  "duration_s": 120.0,
+  "count": 8,
+  "safe_completed": 8,
+  "strong_stationary": 1,
+  "strong_count": 4,
+  "fullrate_scoring_recomputed": true,
+  "tail_motion_recomputed": true,
+  "checkpoint_sha256": "24136334fa3e5864a80645dd3a5edcfa90614451612c1739cb72338dd2c09e40",
+  "rows": [
+    {
+      "case_index": 0,
+      "std_m": 0.042874735631803516,
+      "speed_rms_mps": 0.014747553818510823,
+      "drift_mps": 0.000257305105912959,
+      "bias_m": 0.3436114084382013,
+      "stationary": true
+    },
+    {
+      "case_index": 1,
+      "std_m": 0.37575037543672707,
+      "speed_rms_mps": 0.1201178925373286,
+      "drift_mps": 0.006072225073967122,
+      "bias_m": 1.302862775136543,
+      "stationary": false
+    },
+    {
+      "case_index": 2,
+      "std_m": 0.019572372516788977,
+      "speed_rms_mps": 0.012130253588293257,
+      "drift_mps": 0.0006287276176319509,
+      "bias_m": 0.7544500349304539,
+      "stationary": true
+    },
+    {
+      "case_index": 3,
+      "std_m": 0.3807573663525377,
+      "speed_rms_mps": 0.09446177089898423,
+      "drift_mps": 0.0109039287138899,
+      "bias_m": 0.6613716829239945,
+      "stationary": false
+    },
+    {
+      "case_index": 4,
+      "std_m": 0.01871564753717513,
+      "speed_rms_mps": 0.013458519391131445,
+      "drift_mps": 0.0011500223057608417,
+      "bias_m": 0.21015061962293188,
+      "stationary": true
+    },
+    {
+      "case_index": 5,
+      "std_m": 0.2244310519869906,
+      "speed_rms_mps": 0.17313910731805426,
+      "drift_mps": 0.004429622742902867,
+      "bias_m": 0.5139607052204399,
+      "stationary": true
+    },
+    {
+      "case_index": 6,
+      "std_m": 0.022793983588326096,
+      "speed_rms_mps": 0.015132307337310467,
+      "drift_mps": 0.00140166862608538,
+      "bias_m": 0.6337638823684828,
+      "stationary": true
+    },
+    {
+      "case_index": 7,
+      "std_m": 0.21840396414233992,
+      "speed_rms_mps": 0.0765162599704229,
+      "drift_mps": 0.01104040846413623,
+      "bias_m": 0.6025854107251896,
+      "stationary": false
+    }
+  ],
+  "formal_final_acceptance": false
+}

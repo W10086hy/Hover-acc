@@ -1,0 +1,32 @@
+{
+  "schema_version": 4,
+  "date": "2026-11-01",
+  "training_running": false,
+  "validation_running": false,
+  "formal_final_acceptance": false,
+  "stage": "frozen26_and_structural_residual120s_development_complete",
+  "physics_dt_s": 0.0005,
+  "current_model": "12 native spatial spring/dampers and11 massive point nodes",
+  "p2_checkpoint": "P2/results/flexible_continue30/step4/latest.pt",
+  "p2_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "p2_evaluation": "mujoco_sim/results/flexible26_120/summary.json",
+  "p2_metrics": "mujoco_sim/results/flexible26_120/metrics.json",
+  "p2_audit": "mujoco_sim/results/flexible26_120/audit.json",
+  "p2_safe_completed": 64,
+  "p2_count": 64,
+  "p2_state_wind_seeds": [
+    20269781,
+    20269782
+  ],
+  "p3_residual_checkpoint": "P3/results/flexible26_structural/residual/best.pt",
+  "p3_comparison": "P3/results/flexible26_structural120/comparison_mujoco/summary.json",
+  "p3_state_wind_seeds": [
+    20271381,
+    20271382
+  ],
+  "duration_s": 120,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "latest_report": "P3/FLEXIBLE26_120_RESULTS.md",
+  "latest_visualization": "track/drift8/README.md"
+}

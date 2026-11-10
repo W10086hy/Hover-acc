@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "purpose": "User-requested native MuJoCo straight, tension-only tendon trial",
+  "policy_checkpoint": "P2/tests/fixtures/conditioned21.pt",
+  "residual_checkpoint": "P3/tests/fixtures/residual21.pt",
+  "duration_s": 30,
+  "physics_dt_s": 0.0005,
+  "convergence_physics_dt_s": 0.00025,
+  "convergence_max_case_rmse_change_m": 0.02,
+  "convergence_max_pointwise_yaw_change_deg": 0.1,
+  "seed_pairs": [[20268681,20268682]],
+  "directions_deg": [22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5],
+  "tendon": {
+    "type": "native_spatial_tendon_upper_limit",
+    "solreflimit": [0.1,1],
+    "solimplimit": [0.95,0.95,0.001,0.5,2],
+    "margin_m": 0,
+    "length_upper_limits_5cm_10cm_m": [4.90,4.85],
+    "python_tether_force": false,
+    "passive_stiffness": 0,
+    "passive_damping": 0,
+    "interpretation": "Unilateral native soft maximum-length constraint, not the old10N/m and2Ns/m elastic law; constraint may have small solver compliance. Straight and massless, no sag."
+  },
+  "cohorts": [
+    {"name":"p2_nominal","actual_scales":{},"nominal_scales":{},"drag_scale":1,"residual":false},
+    {"name":"p2_mismatch","actual_scales":{"mass":1.03,"inertia":1.02,"motor_tau":0.85},"nominal_scales":{},"drag_scale":0.9,"residual":false},
+    {"name":"p3_compensated","actual_scales":{"mass":1.03,"inertia":1.02,"motor_tau":0.85},"nominal_scales":{},"drag_scale":0.9,"residual":true}
+  ],
+  "initialization": "Keep original randomized initial states; no projection or hidden height/rope-length adjustment. Initial stretch can excite the native soft constraint and is included.",
+  "safety": "Original offline limits; native tension also checked at all physics substeps, not only the100Hz endpoints",
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "final_acceptance": false
+}

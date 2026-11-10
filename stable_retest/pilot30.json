@@ -1,0 +1,1535 @@
+{
+  "completed": true,
+  "cases": [
+    {
+      "case": "pilot30_without",
+      "phase": "track frozen P2/P3 native MuJoCo",
+      "duration_s": 30.0,
+      "count": 1,
+      "safe_completed": 1,
+      "cases": [
+        {
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 7.9,
+          "cart_speed_mps": 4.0,
+          "completed": true,
+          "failure_code": 0,
+          "physical_envelope_completed": true,
+          "physical_failure_code": 0,
+          "first_physical_failure_s": null,
+          "physical_integration_samples": 3000,
+          "physical_envelope_rmse_3d_h_xy_m": [
+            2.0990229068003243,
+            0.08176241895689086,
+            2.097429872515122
+          ],
+          "maximum_physical_speed_mps": 4.741825580596924,
+          "maximum_physical_radius_m": 3.8191111087799072,
+          "maximum_physical_interval_tension_n": 4.036153793334961,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            2.0990229068003243,
+            0.08176241895689086,
+            2.097429872515122
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            2.0990229068003243,
+            0.08176241895689086,
+            2.097429872515122
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.5221968822119163,
+          "maximum_interval_tension_n": 4.036153793334961,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.09140083136145871,
+                0.030730189973893176,
+                0.08608000579538926
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                2.5749173844825166,
+                0.12616178250030594,
+                2.571824788267395
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                30.0
+              ],
+              "samples": 1500,
+              "rmse_3d_h_xy_m": [
+                2.0949645815495113,
+                0.04943893074272646,
+                2.094381147278101
+              ]
+            }
+          }
+        }
+      ],
+      "physical_envelope_completed": 1,
+      "continue_after_performance_boundary": true,
+      "physical_envelope_definition": "No nonfinite state/action,tilt>45deg,rate>4rad/s,height outside target+/-4m or tension>30N;speed/radius boundary still fails acceptance",
+      "controller_cumulative_physical_updates": 29,
+      "actor_continuation": {
+        "original_actor_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+        "residual_history_actor_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "height_m": 20.0,
+        "accepted_updates": 1,
+        "protocol": {
+          "duration_s": 30.0,
+          "cart_speed_mps": 6.0,
+          "cart_direction_engineering_deg": 0.0,
+          "cart_anchor_height_m": 0.15,
+          "target_aircraft_height_m": 20.0,
+          "physics_dt_s": 0.0005,
+          "attachment_cm": [
+            5,
+            10
+          ],
+          "initial_conditions": [
+            "hover_capture"
+          ],
+          "aircraft_initial_velocity_mps": [
+            0,
+            0,
+            0
+          ],
+          "state_seed": 20272811,
+          "wind_seed": 20272812,
+          "wind_peak_mps": 1.0,
+          "wind_mean_direction_deg": 90.0,
+          "controller_checkpoint": "P2/results/flexible_continue30/step4/latest.pt",
+          "controller_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+          "residual_checkpoint": "P3/results/flexible26_structural/residual/best.pt",
+          "residual_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+          "residual_protocol": "P3/flexible26_structural120_protocol.json",
+          "modes": [
+            "with_compensation"
+          ],
+          "initialization": "Aircraft,free cable nodes and cart all start stationary;5s hover,8s half-cosine cart acceleration,then4m/s cruise until120s;no velocity feedforward",
+          "controller_inputs": "Original onboard35 and external nominal14 only;no cart position/velocity,GNSS,wind or rope truth",
+          "cart_model": "Ideal prescribed rail drive with native qpos AND qvel;continuous half-cosine start;no wheel/traction dynamics",
+          "cart_inertial_regularization_kg": 1000000.0,
+          "failure_remainder": {
+            "horizontal_error_m": 6.0,
+            "height_error_m": 4.0
+          },
+          "cart_motion": {
+            "kind": "half_cosine_ramp",
+            "hold_s": 5.0,
+            "ramp_s": 12.0
+          },
+          "test_date": "2026-11-02",
+          "test_scope": "single height;independent hover/4/5/6 carts,all zero initial aircraft/node velocity",
+          "case_specs": [
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            }
+          ],
+          "height_speed_criteria": {
+            "hover_horizontal_rmse_m": 0.53,
+            "moving_horizontal_rmse_m": 1.5,
+            "height_rmse_m": 0.3,
+            "all_cases_safe": true,
+            "source": "provisional moderate criteria;user may override"
+          },
+          "offline_world_speed_limit_mps": 7.0,
+          "evaluation_horizontal_radius_m": 6.0,
+          "wind_normalization_horizon_s": 120.0,
+          "training_wind_seeds_per_case": [
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818
+          ],
+          "training_recovery_radius_m": 12.0
+        },
+        "objective_s": 30.0,
+        "credit_s": 30.0,
+        "recompute_s": 1.0,
+        "seed_pair": [
+          20272811,
+          20272812
+        ],
+        "reset_adam": true,
+        "stage": "development;requires120s MuJoCo validation"
+      },
+      "rmse_3d_h_xy_m": [
+        2.0990229068003243,
+        0.08176241895689086,
+        2.097429872515122
+      ],
+      "controller_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+      "residual_checkpoint_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "residual_enabled": false,
+      "policy_updates": 0,
+      "residual_updates": 0,
+      "optimizer_created": false,
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "cart_speed_mps": 4.0,
+      "cart_distance_m": 80.0,
+      "cart_anchor_height_m": 0.15,
+      "per_case_cart_distance_m": [
+        80.0
+      ],
+      "cart_motion": {
+        "kind": "half_cosine_ramp",
+        "hold_s": 5.0,
+        "ramp_s": 10.0
+      },
+      "target_height_m": 8.0,
+      "wind_peak_mps": 0.9974920153617859,
+      "wind_rms_mps": 0.6423443555831909,
+      "wind_definition": "bounded varying amplitude7s/1.7s and direction17s;mean flow+Y,peak1m/s",
+      "maximum_cart_projection_error_m": 7.85401628178306e-08,
+      "physics_dt_s": 0.0005,
+      "physical_integration_duration_s": 30.0,
+      "mj_step_calls": 60000,
+      "physics_engine_version": "3.10.0",
+      "wall_s": 55.278166000000056,
+      "actual_vehicle_spec": {
+        "mass_kg": 2.3689999999999998,
+        "inertia_body_kgm2": [
+          0.012852,
+          0.0056099999999999995,
+          0.016116000000000002
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0017,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "actual_body_drag_n_per_mps2": [
+        [
+          0.0495,
+          0.0495,
+          0.0495
+        ]
+      ],
+      "runtime_configuration": {
+        "sensors": {
+          "group": "IMU + idealized onboard attitude + simulated motor-speed feedback + barometer (user authorized)",
+          "gyro_noise_radps": 0.003,
+          "gyro_bias_radps": 0.003,
+          "accel_noise_mps2": 0.04,
+          "accel_bias_mps2": 0.03,
+          "attitude_noise_deg": 0.15,
+          "yaw_drift_degps": 0.1,
+          "rpm_noise_radps": 1,
+          "specific_force_filter_alpha": 0.5,
+          "limitation": "Attitude estimate is truth plus modeled errors, not a validated inertial estimator. RPM feedback and barometric reference calibration require hardware verification.",
+          "baro_noise_m": 0.02,
+          "baro_bias_m": 0.03,
+          "baro_drift_mps": 0.002,
+          "baro_rate_hz": 20,
+          "baro_delay_samples": 2,
+          "motion_features": {
+            "enabled": true,
+            "velocity_leak_s": 5,
+            "position_leak_s": 20
+          },
+          "angular_prediction_mode": "interval_motor",
+          "preflight_baro_calibration": {
+            "enabled": true,
+            "stationary_s": 20.0,
+            "known_ground_relative_height_m": 0.0,
+            "method": "OLS biasandlinear drift from past barometer measurements",
+            "sensor_bias_drift_and_measurement_noise_unchanged": true,
+            "measurement_delay_and_held_sample_clock_preserved": true,
+            "future_measurements_or_simulator_latents_not_estimator_inputs": true
+          }
+        },
+        "environment": {
+          "training_episode_s": 120,
+          "evaluation_episode_s": 120,
+          "max_training_wind_mps": 5,
+          "wind_gust_fraction": 0.2,
+          "initial_xy_m": 0.0,
+          "initial_z_m": 0.0,
+          "initial_tilt_deg": 0.0,
+          "initial_speed_mps": 0.0,
+          "initial_rate_radps": 0.0
+        },
+        "offline_limits": {
+          "status": "Provisional simulation termination limits, not deployable safety guarantees or measured hardware limits",
+          "tilt_deg": 45,
+          "rate_radps": 4,
+          "speed_mps": 7.0,
+          "min_height_m": 4.0,
+          "max_height_m": 12.0,
+          "horizontal_radius_m": 6.0,
+          "tension_n": 30
+        },
+        "reward": {
+          "kind": "height_priority",
+          "alive": 0.5,
+          "position_gain": 10,
+          "xy_scale_m": 0.5,
+          "height_scale_m": 0.2,
+          "tilt_scale_rad": 0.35,
+          "rate_scale_radps": 1,
+          "speed_scale_mps": 1,
+          "tilt_bounded": 0,
+          "rate_bounded": 0.1,
+          "speed_bounded": 0.1,
+          "normalized_residual_squared": 0,
+          "command_change_squared": 0.02,
+          "failure": 20,
+          "height_gain": 8,
+          "xy_gain": 2
+        },
+        "controller": {
+          "action_mode": "body_rate_thrust",
+          "target_height_m": 8.0,
+          "trim_excess_n": 0.5,
+          "throttle_rate_per_s": 3,
+          "residual_throttle_limit": 0.04,
+          "fallback_tilt_deg": 40,
+          "fallback_rate_radps": 4,
+          "rate_limits_radps": [
+            2,
+            2,
+            1.5
+          ],
+          "rate_kp_per_s": [
+            18,
+            18,
+            10
+          ],
+          "rate_ki_per_s2": [
+            80,
+            80,
+            40.0
+          ],
+          "rate_integral_limit": 0.4,
+          "thrust_delta_fraction": 0.6,
+          "min_total_thrust_fraction": 0.05,
+          "max_total_thrust_fraction": 0.95,
+          "thrust_kp": 0.2,
+          "thrust_ki_per_s": 0.5,
+          "thrust_integral_fraction": 0.2,
+          "initial_sensor_feedback": {
+            "enabled": true,
+            "attitude_gain_per_s": [
+              5,
+              7
+            ],
+            "height_kp_per_s2": 2,
+            "vertical_kd_per_s": 3
+          },
+          "rate_gain_revision": "20261025_roll_pitch_constant_torque_rejection",
+          "heading_hold": {
+            "enabled": true,
+            "kp_per_s": 1.5,
+            "ki_per_s2": 0.5,
+            "integral_limit_rads": 2.0,
+            "reference": "preflight_launch_heading"
+          }
+        },
+        "bptt": {
+          "position_objective": "pseudo_huber",
+          "safety_barrier_gain": 10
+        },
+        "model": {
+          "observation_dim": 35,
+          "gru_hidden": 128,
+          "hidden_dims": [
+            128,
+            128
+          ],
+          "proxy_scale": 10.0,
+          "gravity_mps2": 9.8,
+          "conditioning": {
+            "enabled": true,
+            "width": 32,
+            "parameter_fields": [
+              "mass_kg",
+              "inertia_xx",
+              "inertia_yy",
+              "inertia_zz",
+              "rotor_dx_m",
+              "rotor_dy_m",
+              "kf",
+              "km",
+              "motor_tau_s",
+              "motor_poly_a",
+              "motor_poly_b",
+              "motor_poly_c",
+              "motor_deadzone",
+              "rotor_inertia_kgm2"
+            ],
+            "reference_vehicle": {
+              "mass_kg": 2.3,
+              "inertia_body_kgm2": [
+                0.0126,
+                0.0055,
+                0.0158
+              ],
+              "rotor_dx_m": 0.12,
+              "rotor_dy_m": 0.12,
+              "kf": 2.009e-05,
+              "km": 5.732e-07,
+              "motor_tau_s": 0.002,
+              "motor_speed_polynomial": [
+                -387.3,
+                1269,
+                -32.5
+              ],
+              "motor_deadzone": 0,
+              "rotor_inertia_kgm2": 8.8493e-06,
+              "include_gyro": true
+            },
+            "schema_version": 1,
+            "context_source": "calibrated airframe and actuator configuration only"
+          }
+        },
+        "training": {
+          "method": "physical_BPTT_rate_thrust",
+          "flight_s": 30.0,
+          "credit_s": 30.0,
+          "recompute_s": 1.0,
+          "origin_equilibrium_phase": {
+            "horizontal_force_weight": 16.0,
+            "yaw_rate_weight": 0.2,
+            "yaw_rate_scale_radps": 0.02
+          },
+          "heading_error_BPTT": {
+            "active": true,
+            "weight": 0.1,
+            "scale_deg": 5.0,
+            "reference_rad": 0.0
+          },
+          "hover_convergence_BPTT": {
+            "active": true,
+            "late_position_multiplier": 2.0,
+            "late_ramp_start_s": 20.0,
+            "late_ramp_end_s": 120.0,
+            "speed_weight": 0.2,
+            "speed_scale_mps": 0.25,
+            "angular_acceleration_weight": 0.002,
+            "angular_acceleration_scale_radps2": 1.0,
+            "motor_slew_weight": 0.02,
+            "motor_step_scale": 0.01
+          },
+          "report_credit_progress": true,
+          "dynamic_rope_objective": "actual path+heading+convergence; no stale-node target counterfactual"
+        }
+      },
+      "failure_aggregation": "First failure actual;remaining horizon horizontal6m/height4m;physics continues after speed/radius boundary only;physical hard failures held and invalid",
+      "control_inputs": "Original onboard35 and external nominal14;no cart/position/velocity/wind/rope truth",
+      "safety_radius_reference": "moving cart horizontal position;other original limits retained",
+      "formal_final_acceptance": false
+    },
+    {
+      "case": "pilot30_with",
+      "phase": "track frozen P2/P3 native MuJoCo",
+      "duration_s": 30.0,
+      "count": 1,
+      "safe_completed": 1,
+      "cases": [
+        {
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 7.9,
+          "cart_speed_mps": 4.0,
+          "completed": true,
+          "failure_code": 0,
+          "physical_envelope_completed": true,
+          "physical_failure_code": 0,
+          "first_physical_failure_s": null,
+          "physical_integration_samples": 3000,
+          "physical_envelope_rmse_3d_h_xy_m": [
+            1.7406807041765848,
+            0.17837266895480608,
+            1.7315173995263895
+          ],
+          "maximum_physical_speed_mps": 4.632504940032959,
+          "maximum_physical_radius_m": 3.3296749591827393,
+          "maximum_physical_interval_tension_n": 4.298375606536865,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            1.7406807041765848,
+            0.17837266895480608,
+            1.7315173995263895
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.7406807041765848,
+            0.17837266895480608,
+            1.7315173995263895
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.45479103545575006,
+          "maximum_interval_tension_n": 4.298375606536865,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.11479297972652677,
+                0.07410564970978663,
+                0.08766858545445562
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                2.1956796563686485,
+                0.1356593153310887,
+                2.191484817094348
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                30.0
+              ],
+              "samples": 1500,
+              "rmse_3d_h_xy_m": [
+                1.6856868183205875,
+                0.22256258085405697,
+                1.6709296655046155
+              ]
+            }
+          }
+        }
+      ],
+      "physical_envelope_completed": 1,
+      "continue_after_performance_boundary": true,
+      "physical_envelope_definition": "No nonfinite state/action,tilt>45deg,rate>4rad/s,height outside target+/-4m or tension>30N;speed/radius boundary still fails acceptance",
+      "controller_cumulative_physical_updates": 29,
+      "actor_continuation": {
+        "original_actor_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+        "residual_history_actor_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "height_m": 20.0,
+        "accepted_updates": 1,
+        "protocol": {
+          "duration_s": 30.0,
+          "cart_speed_mps": 6.0,
+          "cart_direction_engineering_deg": 0.0,
+          "cart_anchor_height_m": 0.15,
+          "target_aircraft_height_m": 20.0,
+          "physics_dt_s": 0.0005,
+          "attachment_cm": [
+            5,
+            10
+          ],
+          "initial_conditions": [
+            "hover_capture"
+          ],
+          "aircraft_initial_velocity_mps": [
+            0,
+            0,
+            0
+          ],
+          "state_seed": 20272811,
+          "wind_seed": 20272812,
+          "wind_peak_mps": 1.0,
+          "wind_mean_direction_deg": 90.0,
+          "controller_checkpoint": "P2/results/flexible_continue30/step4/latest.pt",
+          "controller_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+          "residual_checkpoint": "P3/results/flexible26_structural/residual/best.pt",
+          "residual_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+          "residual_protocol": "P3/flexible26_structural120_protocol.json",
+          "modes": [
+            "with_compensation"
+          ],
+          "initialization": "Aircraft,free cable nodes and cart all start stationary;5s hover,8s half-cosine cart acceleration,then4m/s cruise until120s;no velocity feedforward",
+          "controller_inputs": "Original onboard35 and external nominal14 only;no cart position/velocity,GNSS,wind or rope truth",
+          "cart_model": "Ideal prescribed rail drive with native qpos AND qvel;continuous half-cosine start;no wheel/traction dynamics",
+          "cart_inertial_regularization_kg": 1000000.0,
+          "failure_remainder": {
+            "horizontal_error_m": 6.0,
+            "height_error_m": 4.0
+          },
+          "cart_motion": {
+            "kind": "half_cosine_ramp",
+            "hold_s": 5.0,
+            "ramp_s": 12.0
+          },
+          "test_date": "2026-11-02",
+          "test_scope": "single height;independent hover/4/5/6 carts,all zero initial aircraft/node velocity",
+          "case_specs": [
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 0.0,
+              "cart_motion": {
+                "kind": "constant"
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 4.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 8.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 5.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 10.0
+              }
+            },
+            {
+              "attachment_cm": 5,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            },
+            {
+              "attachment_cm": 10,
+              "cart_speed_mps": 6.0,
+              "cart_motion": {
+                "kind": "half_cosine_ramp",
+                "hold_s": 5.0,
+                "ramp_s": 12.0
+              }
+            }
+          ],
+          "height_speed_criteria": {
+            "hover_horizontal_rmse_m": 0.53,
+            "moving_horizontal_rmse_m": 1.5,
+            "height_rmse_m": 0.3,
+            "all_cases_safe": true,
+            "source": "provisional moderate criteria;user may override"
+          },
+          "offline_world_speed_limit_mps": 7.0,
+          "evaluation_horizontal_radius_m": 6.0,
+          "wind_normalization_horizon_s": 120.0,
+          "training_wind_seeds_per_case": [
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272812,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272814,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272816,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818,
+            20272818
+          ],
+          "training_recovery_radius_m": 12.0
+        },
+        "objective_s": 30.0,
+        "credit_s": 30.0,
+        "recompute_s": 1.0,
+        "seed_pair": [
+          20272811,
+          20272812
+        ],
+        "reset_adam": true,
+        "stage": "development;requires120s MuJoCo validation"
+      },
+      "rmse_3d_h_xy_m": [
+        1.7406807041765848,
+        0.17837266895480608,
+        1.7315173995263895
+      ],
+      "controller_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+      "residual_checkpoint_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+      "residual_enabled": true,
+      "policy_updates": 0,
+      "residual_updates": 0,
+      "optimizer_created": false,
+      "seed_pair": [
+        20272681,
+        20272982
+      ],
+      "cart_speed_mps": 4.0,
+      "cart_distance_m": 80.0,
+      "cart_anchor_height_m": 0.15,
+      "per_case_cart_distance_m": [
+        80.0
+      ],
+      "cart_motion": {
+        "kind": "half_cosine_ramp",
+        "hold_s": 5.0,
+        "ramp_s": 10.0
+      },
+      "target_height_m": 8.0,
+      "wind_peak_mps": 0.9974920153617859,
+      "wind_rms_mps": 0.6423443555831909,
+      "wind_definition": "bounded varying amplitude7s/1.7s and direction17s;mean flow+Y,peak1m/s",
+      "maximum_cart_projection_error_m": 7.854020411812712e-08,
+      "physics_dt_s": 0.0005,
+      "physical_integration_duration_s": 30.0,
+      "mj_step_calls": 60000,
+      "physics_engine_version": "3.10.0",
+      "wall_s": 59.450724600000285,
+      "actual_vehicle_spec": {
+        "mass_kg": 2.3689999999999998,
+        "inertia_body_kgm2": [
+          0.012852,
+          0.0056099999999999995,
+          0.016116000000000002
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0017,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "actual_body_drag_n_per_mps2": [
+        [
+          0.0495,
+          0.0495,
+          0.0495
+        ]
+      ],
+      "runtime_configuration": {
+        "sensors": {
+          "group": "IMU + idealized onboard attitude + simulated motor-speed feedback + barometer (user authorized)",
+          "gyro_noise_radps": 0.003,
+          "gyro_bias_radps": 0.003,
+          "accel_noise_mps2": 0.04,
+          "accel_bias_mps2": 0.03,
+          "attitude_noise_deg": 0.15,
+          "yaw_drift_degps": 0.1,
+          "rpm_noise_radps": 1,
+          "specific_force_filter_alpha": 0.5,
+          "limitation": "Attitude estimate is truth plus modeled errors, not a validated inertial estimator. RPM feedback and barometric reference calibration require hardware verification.",
+          "baro_noise_m": 0.02,
+          "baro_bias_m": 0.03,
+          "baro_drift_mps": 0.002,
+          "baro_rate_hz": 20,
+          "baro_delay_samples": 2,
+          "motion_features": {
+            "enabled": true,
+            "velocity_leak_s": 5,
+            "position_leak_s": 20
+          },
+          "angular_prediction_mode": "interval_motor",
+          "preflight_baro_calibration": {
+            "enabled": true,
+            "stationary_s": 20.0,
+            "known_ground_relative_height_m": 0.0,
+            "method": "OLS biasandlinear drift from past barometer measurements",
+            "sensor_bias_drift_and_measurement_noise_unchanged": true,
+            "measurement_delay_and_held_sample_clock_preserved": true,
+            "future_measurements_or_simulator_latents_not_estimator_inputs": true
+          }
+        },
+        "environment": {
+          "training_episode_s": 120,
+          "evaluation_episode_s": 120,
+          "max_training_wind_mps": 5,
+          "wind_gust_fraction": 0.2,
+          "initial_xy_m": 0.0,
+          "initial_z_m": 0.0,
+          "initial_tilt_deg": 0.0,
+          "initial_speed_mps": 0.0,
+          "initial_rate_radps": 0.0
+        },
+        "offline_limits": {
+          "status": "Provisional simulation termination limits, not deployable safety guarantees or measured hardware limits",
+          "tilt_deg": 45,
+          "rate_radps": 4,
+          "speed_mps": 7.0,
+          "min_height_m": 4.0,
+          "max_height_m": 12.0,
+          "horizontal_radius_m": 6.0,
+          "tension_n": 30
+        },
+        "reward": {
+          "kind": "height_priority",
+          "alive": 0.5,
+          "position_gain": 10,
+          "xy_scale_m": 0.5,
+          "height_scale_m": 0.2,
+          "tilt_scale_rad": 0.35,
+          "rate_scale_radps": 1,
+          "speed_scale_mps": 1,
+          "tilt_bounded": 0,
+          "rate_bounded": 0.1,
+          "speed_bounded": 0.1,
+          "normalized_residual_squared": 0,
+          "command_change_squared": 0.02,
+          "failure": 20,
+          "height_gain": 8,
+          "xy_gain": 2
+        },
+        "controller": {
+          "action_mode": "body_rate_thrust",
+          "target_height_m": 8.0,
+          "trim_excess_n": 0.5,
+          "throttle_rate_per_s": 3,
+          "residual_throttle_limit": 0.04,
+          "fallback_tilt_deg": 40,
+          "fallback_rate_radps": 4,
+          "rate_limits_radps": [
+            2,
+            2,
+            1.5
+          ],
+          "rate_kp_per_s": [
+            18,
+            18,
+            10
+          ],
+          "rate_ki_per_s2": [
+            80,
+            80,
+            40.0
+          ],
+          "rate_integral_limit": 0.4,
+          "thrust_delta_fraction": 0.6,
+          "min_total_thrust_fraction": 0.05,
+          "max_total_thrust_fraction": 0.95,
+          "thrust_kp": 0.2,
+          "thrust_ki_per_s": 0.5,
+          "thrust_integral_fraction": 0.2,
+          "initial_sensor_feedback": {
+            "enabled": true,
+            "attitude_gain_per_s": [
+              5,
+              7
+            ],
+            "height_kp_per_s2": 2,
+            "vertical_kd_per_s": 3
+          },
+          "rate_gain_revision": "20261025_roll_pitch_constant_torque_rejection",
+          "heading_hold": {
+            "enabled": true,
+            "kp_per_s": 1.5,
+            "ki_per_s2": 0.5,
+            "integral_limit_rads": 2.0,
+            "reference": "preflight_launch_heading"
+          }
+        },
+        "bptt": {
+          "position_objective": "pseudo_huber",
+          "safety_barrier_gain": 10
+        },
+        "model": {
+          "observation_dim": 35,
+          "gru_hidden": 128,
+          "hidden_dims": [
+            128,
+            128
+          ],
+          "proxy_scale": 10.0,
+          "gravity_mps2": 9.8,
+          "conditioning": {
+            "enabled": true,
+            "width": 32,
+            "parameter_fields": [
+              "mass_kg",
+              "inertia_xx",
+              "inertia_yy",
+              "inertia_zz",
+              "rotor_dx_m",
+              "rotor_dy_m",
+              "kf",
+              "km",
+              "motor_tau_s",
+              "motor_poly_a",
+              "motor_poly_b",
+              "motor_poly_c",
+              "motor_deadzone",
+              "rotor_inertia_kgm2"
+            ],
+            "reference_vehicle": {
+              "mass_kg": 2.3,
+              "inertia_body_kgm2": [
+                0.0126,
+                0.0055,
+                0.0158
+              ],
+              "rotor_dx_m": 0.12,
+              "rotor_dy_m": 0.12,
+              "kf": 2.009e-05,
+              "km": 5.732e-07,
+              "motor_tau_s": 0.002,
+              "motor_speed_polynomial": [
+                -387.3,
+                1269,
+                -32.5
+              ],
+              "motor_deadzone": 0,
+              "rotor_inertia_kgm2": 8.8493e-06,
+              "include_gyro": true
+            },
+            "schema_version": 1,
+            "context_source": "calibrated airframe and actuator configuration only"
+          }
+        },
+        "training": {
+          "method": "physical_BPTT_rate_thrust",
+          "flight_s": 30.0,
+          "credit_s": 30.0,
+          "recompute_s": 1.0,
+          "origin_equilibrium_phase": {
+            "horizontal_force_weight": 16.0,
+            "yaw_rate_weight": 0.2,
+            "yaw_rate_scale_radps": 0.02
+          },
+          "heading_error_BPTT": {
+            "active": true,
+            "weight": 0.1,
+            "scale_deg": 5.0,
+            "reference_rad": 0.0
+          },
+          "hover_convergence_BPTT": {
+            "active": true,
+            "late_position_multiplier": 2.0,
+            "late_ramp_start_s": 20.0,
+            "late_ramp_end_s": 120.0,
+            "speed_weight": 0.2,
+            "speed_scale_mps": 0.25,
+            "angular_acceleration_weight": 0.002,
+            "angular_acceleration_scale_radps2": 1.0,
+            "motor_slew_weight": 0.02,
+            "motor_step_scale": 0.01
+          },
+          "report_credit_progress": true,
+          "dynamic_rope_objective": "actual path+heading+convergence; no stale-node target counterfactual"
+        }
+      },
+      "failure_aggregation": "First failure actual;remaining horizon horizontal6m/height4m;physics continues after speed/radius boundary only;physical hard failures held and invalid",
+      "control_inputs": "Original onboard35 and external nominal14;no cart/position/velocity/wind/rope truth",
+      "safety_radius_reference": "moving cart horizontal position;other original limits retained",
+      "formal_final_acceptance": false
+    }
+  ]
+}

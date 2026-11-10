@@ -1,0 +1,83 @@
+{
+  "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+  "parent_checkpoint": "results/domain_randomized/continuation/latest.pt",
+  "device": "cuda",
+  "objective_s": 30,
+  "credit_s": 30,
+  "recompute_s": 1,
+  "development_pilot": true,
+  "formal_objective_s": 120,
+  "training_seed": 20681101,
+  "development_seed": 20681201,
+  "training_directions_deg": [
+    0,
+    90
+  ],
+  "training_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ]
+  ],
+  "optimizer_learning_rates": [
+    5.859375e-05,
+    0.0005859375,
+    2.5e-05
+  ],
+  "development_directions_deg": [
+    45,
+    225
+  ],
+  "development_s": 30,
+  "maximum_paired_trials": 3,
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "rope_parameters_measured": false,
+  "final_acceptance": false,
+  "p3_enabled": false,
+  "adaptation_reason": "Credit the complete30s state and rope history, retaining the same parameter domains, seeds and loss weights",
+  "purpose": "Continue Actor27 with full30s BPTT credit to reduce transient drift and growing strong-wind oscillations",
+  "domain_randomization": {
+    "enabled": true,
+    "sample_count": 3,
+    "seed": 20681302,
+    "include_nominal": true,
+    "mass_scale": [
+      0.9,
+      1.1
+    ],
+    "inertia_scale": [
+      0.85,
+      1.15
+    ],
+    "motor_tau_scale": [
+      0.75,
+      1.5
+    ],
+    "motor_gain_scale": [
+      0.95,
+      1.05
+    ]
+  },
+  "development_parameter_seed": 20681401,
+  "development_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ]
+  ]
+}

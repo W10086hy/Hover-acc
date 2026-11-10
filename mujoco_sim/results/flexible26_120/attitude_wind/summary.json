@@ -1,0 +1,2145 @@
+{
+  "engine": "MuJoCo",
+  "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "cumulative_physical_updates": 26,
+  "duration_s": 120,
+  "seed_pair": [
+    20269781,
+    20269782
+  ],
+  "attitude_sample_hz": 10,
+  "heading_and_environment_wind_sample_hz": 100,
+  "relative_wind_alignment_sample_hz": 10,
+  "alignment_window_s": [
+    4,
+    120
+  ],
+  "minimum_horizontal_wind_mps": 0.1,
+  "angle_definition": "acos(nose_horizontal dot(-world_wind_horizontal));0=upwind;180=downwind;world direction_rad denotes flowTO",
+  "selected_case_indices": [
+    26,
+    58,
+    31,
+    39
+  ],
+  "selected_cases": [
+    {
+      "case_index": 26,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.7153438544654183,
+      "maximum_saved_roll_deg": 5.823157787322998,
+      "maximum_saved_pitch_deg": 8.672791481018066,
+      "last30_mean_roll_deg": 0.04403030127286911,
+      "last30_mean_pitch_deg": 0.17348770797252655,
+      "last30_mean_yaw_deg": -0.05649072676897049,
+      "angle_to_wind_from": {
+        "mean_deg": 112.53571449632774,
+        "min_deg": 112.43852559094046,
+        "max_deg": 112.60574222883986
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.46428550367226,
+        "min_deg": 67.39425777116014,
+        "max_deg": 67.56147440905954
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 113.09368842176197,
+        "min_deg": 103.95392414934884,
+        "max_deg": 118.48542009468595
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 58,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2982972261799205,
+      "maximum_saved_roll_deg": 8.962906837463379,
+      "maximum_saved_pitch_deg": 5.505446910858154,
+      "last30_mean_roll_deg": 0.06664308160543442,
+      "last30_mean_pitch_deg": 0.020574461668729782,
+      "last30_mean_yaw_deg": 0.16336342692375183,
+      "angle_to_wind_from": {
+        "mean_deg": 112.34133196064441,
+        "min_deg": 112.26681599590809,
+        "max_deg": 112.41711868418415
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.65866803935556,
+        "min_deg": 67.58288131581585,
+        "max_deg": 67.73318400409191
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.3739696947744,
+        "min_deg": 110.33188961908539,
+        "max_deg": 114.54626925238387
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 31,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.23488636357533038,
+      "maximum_saved_roll_deg": 4.601856708526611,
+      "maximum_saved_pitch_deg": 8.436824798583984,
+      "last30_mean_roll_deg": 1.248214602470398,
+      "last30_mean_pitch_deg": 1.267263650894165,
+      "last30_mean_yaw_deg": -0.037181831896305084,
+      "angle_to_wind_from": {
+        "mean_deg": 114.48137600527974,
+        "min_deg": 67.50257755193066,
+        "max_deg": 152.46247627144166
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 65.51862399472027,
+        "min_deg": 27.537523728558334,
+        "max_deg": 112.49742244806934
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 114.48099687797631,
+        "min_deg": 69.24563731329303,
+        "max_deg": 149.47945467500108
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 39,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 10.54606223417804,
+      "maximum_saved_roll_deg": 14.43507194519043,
+      "maximum_saved_pitch_deg": 25.73726463317871,
+      "last30_mean_roll_deg": -1.1569921970367432,
+      "last30_mean_pitch_deg": 2.3472073078155518,
+      "last30_mean_yaw_deg": 0.007498623337596655,
+      "angle_to_wind_from": {
+        "mean_deg": 151.8031848965768,
+        "min_deg": 110.05488486746955,
+        "max_deg": 179.99738117971813
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 28.196815103423198,
+        "min_deg": 0.0026188202818967035,
+        "max_deg": 69.94511513253045
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 150.80111081522048,
+        "min_deg": 111.26764471626423,
+        "max_deg": 179.95923729607836
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    }
+  ],
+  "cases": [
+    {
+      "case_index": 0,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.6860576041299903,
+      "maximum_saved_roll_deg": 8.765942573547363,
+      "maximum_saved_pitch_deg": 6.764934539794922,
+      "last30_mean_roll_deg": 0.057815950363874435,
+      "last30_mean_pitch_deg": -0.05795812979340553,
+      "last30_mean_yaw_deg": -0.16487617790699005,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": {
+        "mean_deg": 5.564041702500906,
+        "min_deg": 1.0320917899097022,
+        "max_deg": 9.463338310985332
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 1,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.3376278032983811,
+      "maximum_saved_roll_deg": 5.391798973083496,
+      "maximum_saved_pitch_deg": 2.243028163909912,
+      "last30_mean_roll_deg": -0.012700498104095459,
+      "last30_mean_pitch_deg": 0.09456076472997665,
+      "last30_mean_yaw_deg": -0.20577408373355865,
+      "angle_to_wind_from": {
+        "mean_deg": 157.3121735592484,
+        "min_deg": 157.25064489290048,
+        "max_deg": 157.38248591335534
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.68782644075157,
+        "min_deg": 22.61751408664467,
+        "max_deg": 22.74935510709952
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.16984210542734,
+        "min_deg": 149.07213286956588,
+        "max_deg": 160.06585265107898
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 2,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.17222351340656242,
+      "maximum_saved_roll_deg": 3.3097469806671143,
+      "maximum_saved_pitch_deg": 1.4162514209747314,
+      "last30_mean_roll_deg": 0.026302987709641457,
+      "last30_mean_pitch_deg": 0.04802411422133446,
+      "last30_mean_yaw_deg": 0.1302495151758194,
+      "angle_to_wind_from": {
+        "mean_deg": 157.61912330222341,
+        "min_deg": 157.52345709580172,
+        "max_deg": 157.6722229514939
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.380876697776586,
+        "min_deg": 22.327777048506118,
+        "max_deg": 22.476542904198293
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.657269453644,
+        "min_deg": 156.40522986202777,
+        "max_deg": 159.08540482064714
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 3,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.39358170015490407,
+      "maximum_saved_roll_deg": 7.3050079345703125,
+      "maximum_saved_pitch_deg": 6.568262577056885,
+      "last30_mean_roll_deg": -0.03193004056811333,
+      "last30_mean_pitch_deg": 0.4296666979789734,
+      "last30_mean_yaw_deg": -0.23158349096775055,
+      "angle_to_wind_from": {
+        "mean_deg": 157.29372689881404,
+        "min_deg": 157.20905776535457,
+        "max_deg": 157.3654430305712
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.70627310118594,
+        "min_deg": 22.6345569694288,
+        "max_deg": 22.790942234645453
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.40563777819156,
+        "min_deg": 156.39336756145926,
+        "max_deg": 161.2911901624695
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 4,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2206198326268927,
+      "maximum_saved_roll_deg": 6.508878231048584,
+      "maximum_saved_pitch_deg": 3.1029727458953857,
+      "last30_mean_roll_deg": -0.19180342555046082,
+      "last30_mean_pitch_deg": 1.2303122282028198,
+      "last30_mean_yaw_deg": -0.06307510286569595,
+      "angle_to_wind_from": {
+        "mean_deg": 157.45287037508822,
+        "min_deg": 157.38448279896124,
+        "max_deg": 157.51939282384689
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.547129624911815,
+        "min_deg": 22.48060717615314,
+        "max_deg": 22.61551720103878
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.5123162383547,
+        "min_deg": 156.97302511483807,
+        "max_deg": 159.30842753245344
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 5,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2938006405089514,
+      "maximum_saved_roll_deg": 4.941086769104004,
+      "maximum_saved_pitch_deg": 8.477311134338379,
+      "last30_mean_roll_deg": -0.25369173288345337,
+      "last30_mean_pitch_deg": 1.9212229251861572,
+      "last30_mean_yaw_deg": 0.23318825662136078,
+      "angle_to_wind_from": {
+        "mean_deg": 157.6931472423327,
+        "min_deg": 157.6081376610696,
+        "max_deg": 157.7938000785963
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.306852757667276,
+        "min_deg": 22.206199921403726,
+        "max_deg": 22.391862338930395
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.75564194212194,
+        "min_deg": 156.93293096827685,
+        "max_deg": 161.66583317658342
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 6,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.4936607801642514,
+      "maximum_saved_roll_deg": 1.9078410863876343,
+      "maximum_saved_pitch_deg": 3.544776201248169,
+      "last30_mean_roll_deg": -0.398955374956131,
+      "last30_mean_pitch_deg": 3.129746198654175,
+      "last30_mean_yaw_deg": 0.21095970273017883,
+      "angle_to_wind_from": {
+        "mean_deg": 157.70787303251876,
+        "min_deg": 157.65314276358194,
+        "max_deg": 157.75972719856932
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.292126967481266,
+        "min_deg": 22.24027280143068,
+        "max_deg": 22.346857236418067
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.76681282188176,
+        "min_deg": 157.2646454313149,
+        "max_deg": 160.48237464318933
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 7,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.4333297192255288,
+      "maximum_saved_roll_deg": 9.59645938873291,
+      "maximum_saved_pitch_deg": 9.683706283569336,
+      "last30_mean_roll_deg": -0.9178875684738159,
+      "last30_mean_pitch_deg": 2.880858898162842,
+      "last30_mean_yaw_deg": 0.31032758951187134,
+      "angle_to_wind_from": {
+        "mean_deg": 153.48275799157184,
+        "min_deg": 117.3667227619211,
+        "max_deg": 179.9989773431594
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 26.517242008428152,
+        "min_deg": 0.0010226568406353238,
+        "max_deg": 62.63327723807891
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 153.43886151314942,
+        "min_deg": 119.18594906880003,
+        "max_deg": 179.9657908558233
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 8,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.6333876142016419,
+      "maximum_saved_roll_deg": 4.75822639465332,
+      "maximum_saved_pitch_deg": 8.05623722076416,
+      "last30_mean_roll_deg": 0.017196549102663994,
+      "last30_mean_pitch_deg": -0.1538037210702896,
+      "last30_mean_yaw_deg": -0.1633012592792511,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": {
+        "mean_deg": 156.67518907719295,
+        "min_deg": 131.22889774932403,
+        "max_deg": 174.53290163274733
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 9,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.27247548257927573,
+      "maximum_saved_roll_deg": 6.1353373527526855,
+      "maximum_saved_pitch_deg": 6.711062908172607,
+      "last30_mean_roll_deg": 0.0018885631579905748,
+      "last30_mean_pitch_deg": -0.19522225856781006,
+      "last30_mean_yaw_deg": -0.12124013155698776,
+      "angle_to_wind_from": {
+        "mean_deg": 67.37020852348542,
+        "min_deg": 67.29062092974111,
+        "max_deg": 67.42975297703175
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.62979147651455,
+        "min_deg": 112.57024702296825,
+        "max_deg": 112.70937907025889
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.37486388671515,
+        "min_deg": 58.27329186765535,
+        "max_deg": 91.55392068511334
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 10,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.5001860120599937,
+      "maximum_saved_roll_deg": 1.1723483800888062,
+      "maximum_saved_pitch_deg": 1.8015159368515015,
+      "last30_mean_roll_deg": -0.014826326631009579,
+      "last30_mean_pitch_deg": -0.007364255376160145,
+      "last30_mean_yaw_deg": 0.3139345049858093,
+      "angle_to_wind_from": {
+        "mean_deg": 67.8230372472792,
+        "min_deg": 67.76480056964947,
+        "max_deg": 67.88113920846271
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.17696275272077,
+        "min_deg": 112.11886079153729,
+        "max_deg": 112.23519943035053
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.89334682875732,
+        "min_deg": 65.06851408424663,
+        "max_deg": 69.91248654043318
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 11,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.5035207452005467,
+      "maximum_saved_roll_deg": 9.210275650024414,
+      "maximum_saved_pitch_deg": 0.6842954754829407,
+      "last30_mean_roll_deg": -0.26639965176582336,
+      "last30_mean_pitch_deg": -0.18735194206237793,
+      "last30_mean_yaw_deg": 0.2791213095188141,
+      "angle_to_wind_from": {
+        "mean_deg": 67.79426545583867,
+        "min_deg": 67.71212671105928,
+        "max_deg": 67.8852567719956
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.20573454416132,
+        "min_deg": 112.1147432280044,
+        "max_deg": 112.28787328894072
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.62774166010433,
+        "min_deg": 66.71073946094603,
+        "max_deg": 68.488023380978
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 12,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.5249443805842321,
+      "maximum_saved_roll_deg": 1.5552785396575928,
+      "maximum_saved_pitch_deg": 0.6933486461639404,
+      "last30_mean_roll_deg": -0.5202957391738892,
+      "last30_mean_pitch_deg": -0.43720513582229614,
+      "last30_mean_yaw_deg": 0.1174393966794014,
+      "angle_to_wind_from": {
+        "mean_deg": 67.5867406858199,
+        "min_deg": 67.5005651497102,
+        "max_deg": 67.66865904492948
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.41325931418008,
+        "min_deg": 112.33134095507053,
+        "max_deg": 112.4994348502898
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.46278642634128,
+        "min_deg": 66.44307810444116,
+        "max_deg": 70.91087889298977
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 13,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.4458357689153957,
+      "maximum_saved_roll_deg": 7.018473148345947,
+      "maximum_saved_pitch_deg": 8.443134307861328,
+      "last30_mean_roll_deg": -1.1801751852035522,
+      "last30_mean_pitch_deg": -0.09573528915643692,
+      "last30_mean_yaw_deg": 0.2801717519760132,
+      "angle_to_wind_from": {
+        "mean_deg": 67.74030866785617,
+        "min_deg": 67.64862746954209,
+        "max_deg": 67.83174573498441
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.25969133214379,
+        "min_deg": 112.16825426501558,
+        "max_deg": 112.35137253045791
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.70733157700069,
+        "min_deg": 60.64603805944242,
+        "max_deg": 70.18270424011682
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 14,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2947164728271149,
+      "maximum_saved_roll_deg": 4.237453460693359,
+      "maximum_saved_pitch_deg": 6.362175464630127,
+      "last30_mean_roll_deg": -1.670702338218689,
+      "last30_mean_pitch_deg": -0.5491271615028381,
+      "last30_mean_yaw_deg": -0.05757259950041771,
+      "angle_to_wind_from": {
+        "mean_deg": 67.46365998777128,
+        "min_deg": 67.39814490553815,
+        "max_deg": 67.531562869263
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.53634001222879,
+        "min_deg": 112.46843713073702,
+        "max_deg": 112.60185509446187
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.35005420493816,
+        "min_deg": 62.950128859645126,
+        "max_deg": 68.66820015209125
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 15,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.1952076602526107,
+      "maximum_saved_roll_deg": 4.908170700073242,
+      "maximum_saved_pitch_deg": 8.18554973602295,
+      "last30_mean_roll_deg": -1.4218028783798218,
+      "last30_mean_pitch_deg": -1.556311011314392,
+      "last30_mean_yaw_deg": 0.09350311011075974,
+      "angle_to_wind_from": {
+        "mean_deg": 64.536222527391,
+        "min_deg": 26.215334427817034,
+        "max_deg": 108.0830063520961
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 115.463777472609,
+        "min_deg": 71.9169936479039,
+        "max_deg": 153.78466557218297
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 64.4136402816621,
+        "min_deg": 28.601859751652892,
+        "max_deg": 107.11320590192962
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 16,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.6447307441440348,
+      "maximum_saved_roll_deg": 6.6847734451293945,
+      "maximum_saved_pitch_deg": 5.2287468910217285,
+      "last30_mean_roll_deg": -0.053618595004081726,
+      "last30_mean_pitch_deg": 0.13985291123390198,
+      "last30_mean_yaw_deg": 0.010700454004108906,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": {
+        "mean_deg": 108.30634871078217,
+        "min_deg": 44.454014178379694,
+        "max_deg": 151.4178580182342
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 17,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.17957474462462664,
+      "maximum_saved_roll_deg": 4.046920299530029,
+      "maximum_saved_pitch_deg": 3.6794686317443848,
+      "last30_mean_roll_deg": 0.010735642164945602,
+      "last30_mean_pitch_deg": -0.08267824351787567,
+      "last30_mean_yaw_deg": -0.11320223659276962,
+      "angle_to_wind_from": {
+        "mean_deg": 22.53027858900323,
+        "min_deg": 22.359293182182782,
+        "max_deg": 22.679575306537306
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.46972141099678,
+        "min_deg": 157.3204246934627,
+        "max_deg": 157.64070681781723
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 23.018244161670303,
+        "min_deg": 20.529839886055427,
+        "max_deg": 31.306304585070382
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 18,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.4512979192194225,
+      "maximum_saved_roll_deg": 6.925419807434082,
+      "maximum_saved_pitch_deg": 8.781245231628418,
+      "last30_mean_roll_deg": 0.01650829054415226,
+      "last30_mean_pitch_deg": -0.12669311463832855,
+      "last30_mean_yaw_deg": 0.0331205278635025,
+      "angle_to_wind_from": {
+        "mean_deg": 22.46873637156708,
+        "min_deg": 22.41800045235772,
+        "max_deg": 22.52267532253367
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.53126362843295,
+        "min_deg": 157.47732467746636,
+        "max_deg": 157.58199954764228
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.37891489927344,
+        "min_deg": 12.639596302974386,
+        "max_deg": 26.1333942662455
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 19,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.15123630309845695,
+      "maximum_saved_roll_deg": 1.558807611465454,
+      "maximum_saved_pitch_deg": 8.45409107208252,
+      "last30_mean_roll_deg": 0.04400365427136421,
+      "last30_mean_pitch_deg": -0.6266271471977234,
+      "last30_mean_yaw_deg": 0.10345993936061859,
+      "angle_to_wind_from": {
+        "mean_deg": 22.409022532307702,
+        "min_deg": 22.34876425881422,
+        "max_deg": 22.461342558324265
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.5909774676923,
+        "min_deg": 157.53865744167575,
+        "max_deg": 157.6512357411858
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.444370745826067,
+        "min_deg": 21.51402281767576,
+        "max_deg": 26.755534897722185
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 20,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.3726267064617314,
+      "maximum_saved_roll_deg": 4.941409111022949,
+      "maximum_saved_pitch_deg": 7.959829807281494,
+      "last30_mean_roll_deg": 0.13195492327213287,
+      "last30_mean_pitch_deg": -0.9667153358459473,
+      "last30_mean_yaw_deg": 0.3196178674697876,
+      "angle_to_wind_from": {
+        "mean_deg": 22.191078289652573,
+        "min_deg": 22.127373239372343,
+        "max_deg": 22.25031928579479
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.80892171034748,
+        "min_deg": 157.74968071420523,
+        "max_deg": 157.87262676062767
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.195349058887007,
+        "min_deg": 17.9773258086828,
+        "max_deg": 24.18576308771711
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 21,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.32687332360465227,
+      "maximum_saved_roll_deg": 2.2689003944396973,
+      "maximum_saved_pitch_deg": 9.460693359375,
+      "last30_mean_roll_deg": 0.23500806093215942,
+      "last30_mean_pitch_deg": -2.0437450408935547,
+      "last30_mean_yaw_deg": -0.2809958755970001,
+      "angle_to_wind_from": {
+        "mean_deg": 22.75648542997523,
+        "min_deg": 22.675657952924464,
+        "max_deg": 22.826873885517333
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.2435145700248,
+        "min_deg": 157.17312611448267,
+        "max_deg": 157.32434204707553
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.73411376778111,
+        "min_deg": 21.654424955401556,
+        "max_deg": 23.137724670509368
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 22,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.3224043254946276,
+      "maximum_saved_roll_deg": 5.876290798187256,
+      "maximum_saved_pitch_deg": 3.4552958011627197,
+      "last30_mean_roll_deg": 0.2090493142604828,
+      "last30_mean_pitch_deg": -2.988905429840088,
+      "last30_mean_yaw_deg": -0.08442372828722,
+      "angle_to_wind_from": {
+        "mean_deg": 22.600043693459945,
+        "min_deg": 22.542980258746326,
+        "max_deg": 22.667029770920966
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.39995630654008,
+        "min_deg": 157.33297022907905,
+        "max_deg": 157.45701974125367
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.480751234074578,
+        "min_deg": 20.443095428211024,
+        "max_deg": 22.879931453110487
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 23,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2447285861280394,
+      "maximum_saved_roll_deg": 4.616993427276611,
+      "maximum_saved_pitch_deg": 7.627907752990723,
+      "last30_mean_roll_deg": 0.8768537640571594,
+      "last30_mean_pitch_deg": -2.517056941986084,
+      "last30_mean_yaw_deg": -0.05312763527035713,
+      "angle_to_wind_from": {
+        "mean_deg": 27.143608242291897,
+        "min_deg": 0.0037981363528830285,
+        "max_deg": 61.48882176443228
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 152.8563917577081,
+        "min_deg": 118.51117823556771,
+        "max_deg": 179.99620186364714
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 26.969181170665994,
+        "min_deg": 0.010363156140787592,
+        "max_deg": 60.676018731404916
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 24,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.23362008385580704,
+      "maximum_saved_roll_deg": 7.398934841156006,
+      "maximum_saved_pitch_deg": 1.6867982149124146,
+      "last30_mean_roll_deg": -0.04114745557308197,
+      "last30_mean_pitch_deg": 0.03324113413691521,
+      "last30_mean_yaw_deg": 0.006019798573106527,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": null,
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 25,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.20265902311112435,
+      "maximum_saved_roll_deg": 3.4438581466674805,
+      "maximum_saved_pitch_deg": 9.958964347839355,
+      "last30_mean_roll_deg": -0.020947188138961792,
+      "last30_mean_pitch_deg": 0.15876230597496033,
+      "last30_mean_yaw_deg": -0.06122953072190285,
+      "angle_to_wind_from": {
+        "mean_deg": 112.51642134912402,
+        "min_deg": 112.39887041308376,
+        "max_deg": 112.61237226145067
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.48357865087598,
+        "min_deg": 67.38762773854933,
+        "max_deg": 67.60112958691624
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 113.78297192340585,
+        "min_deg": 107.95920044114392,
+        "max_deg": 118.72498591315458
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 26,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.7153438544654183,
+      "maximum_saved_roll_deg": 5.823157787322998,
+      "maximum_saved_pitch_deg": 8.672791481018066,
+      "last30_mean_roll_deg": 0.04403030127286911,
+      "last30_mean_pitch_deg": 0.17348770797252655,
+      "last30_mean_yaw_deg": -0.05649072676897049,
+      "angle_to_wind_from": {
+        "mean_deg": 112.53571449632774,
+        "min_deg": 112.43852559094046,
+        "max_deg": 112.60574222883986
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.46428550367226,
+        "min_deg": 67.39425777116014,
+        "max_deg": 67.56147440905954
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 113.09368842176197,
+        "min_deg": 103.95392414934884,
+        "max_deg": 118.48542009468595
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 27,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2946432083760959,
+      "maximum_saved_roll_deg": 3.6970458030700684,
+      "maximum_saved_pitch_deg": 7.282088279724121,
+      "last30_mean_roll_deg": 0.29889780282974243,
+      "last30_mean_pitch_deg": -0.02581838145852089,
+      "last30_mean_yaw_deg": 0.21980063617229462,
+      "angle_to_wind_from": {
+        "mean_deg": 112.32424712885032,
+        "min_deg": 112.22766148292374,
+        "max_deg": 112.40820037811882
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.67575287114967,
+        "min_deg": 67.59179962188118,
+        "max_deg": 67.77233851707626
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.360074924547,
+        "min_deg": 111.26055018850113,
+        "max_deg": 115.95260753970521
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 28,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.6189117753077403,
+      "maximum_saved_roll_deg": 1.2651492357254028,
+      "maximum_saved_pitch_deg": 3.594848155975342,
+      "last30_mean_roll_deg": 0.5497726202011108,
+      "last30_mean_pitch_deg": 0.12818953394889832,
+      "last30_mean_yaw_deg": 0.08139541000127792,
+      "angle_to_wind_from": {
+        "mean_deg": 112.40716982882567,
+        "min_deg": 112.3153081665487,
+        "max_deg": 112.45895231417829
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.5928301711743,
+        "min_deg": 67.54104768582171,
+        "max_deg": 67.6846918334513
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.39775824964545,
+        "min_deg": 110.1390967818757,
+        "max_deg": 113.78613172048904
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 29,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.40739346323458053,
+      "maximum_saved_roll_deg": 4.908271789550781,
+      "maximum_saved_pitch_deg": 6.613081455230713,
+      "last30_mean_roll_deg": 1.030908226966858,
+      "last30_mean_pitch_deg": 0.25526148080825806,
+      "last30_mean_yaw_deg": -0.1075354814529419,
+      "angle_to_wind_from": {
+        "mean_deg": 112.5895979579897,
+        "min_deg": 112.51926271414104,
+        "max_deg": 112.65880207315942
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.4104020420103,
+        "min_deg": 67.34119792684058,
+        "max_deg": 67.48073728585896
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.60366663477267,
+        "min_deg": 110.57284189228527,
+        "max_deg": 113.16266729366939
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 30,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.14136350477704154,
+      "maximum_saved_roll_deg": 4.422135353088379,
+      "maximum_saved_pitch_deg": 2.268400192260742,
+      "last30_mean_roll_deg": 1.6760280132293701,
+      "last30_mean_pitch_deg": 0.41291317343711853,
+      "last30_mean_yaw_deg": -0.08448437601327896,
+      "angle_to_wind_from": {
+        "mean_deg": 112.56124856674188,
+        "min_deg": 112.4455010251581,
+        "max_deg": 112.64137053007427
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.43875143325808,
+        "min_deg": 67.35862946992575,
+        "max_deg": 67.55449897484192
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.64163653874775,
+        "min_deg": 111.80583633322367,
+        "max_deg": 115.44484813982673
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 31,
+      "attachment_cm": 5.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.23488636357533038,
+      "maximum_saved_roll_deg": 4.601856708526611,
+      "maximum_saved_pitch_deg": 8.436824798583984,
+      "last30_mean_roll_deg": 1.248214602470398,
+      "last30_mean_pitch_deg": 1.267263650894165,
+      "last30_mean_yaw_deg": -0.037181831896305084,
+      "angle_to_wind_from": {
+        "mean_deg": 114.48137600527974,
+        "min_deg": 67.50257755193066,
+        "max_deg": 152.46247627144166
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 65.51862399472027,
+        "min_deg": 27.537523728558334,
+        "max_deg": 112.49742244806934
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 114.48099687797631,
+        "min_deg": 69.24563731329303,
+        "max_deg": 149.47945467500108
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 32,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.22933427355375627,
+      "maximum_saved_roll_deg": 3.3718535900115967,
+      "maximum_saved_pitch_deg": 8.965312004089355,
+      "last30_mean_roll_deg": 0.01719817891716957,
+      "last30_mean_pitch_deg": -0.0167087335139513,
+      "last30_mean_yaw_deg": 0.12780991196632385,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": {
+        "mean_deg": 171.43097655255477,
+        "min_deg": 163.53818445002491,
+        "max_deg": 179.7450110447935
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 33,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.15938317131354834,
+      "maximum_saved_roll_deg": 8.428168296813965,
+      "maximum_saved_pitch_deg": 5.623000621795654,
+      "last30_mean_roll_deg": -0.0008492685738019645,
+      "last30_mean_pitch_deg": -0.04320046678185463,
+      "last30_mean_yaw_deg": -0.10900655388832092,
+      "angle_to_wind_from": {
+        "mean_deg": 157.39659342837973,
+        "min_deg": 157.3406162667738,
+        "max_deg": 157.49393862320332
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.603406571620244,
+        "min_deg": 22.506061376796684,
+        "max_deg": 22.65938373322623
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.42163832423591,
+        "min_deg": 151.78200577157574,
+        "max_deg": 173.26067893559772
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 34,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.4463643348437048,
+      "maximum_saved_roll_deg": 1.1384201049804688,
+      "maximum_saved_pitch_deg": 1.499726414680481,
+      "last30_mean_roll_deg": -0.015560588799417019,
+      "last30_mean_pitch_deg": 0.1391885131597519,
+      "last30_mean_yaw_deg": 0.045072849839925766,
+      "angle_to_wind_from": {
+        "mean_deg": 157.54923089928437,
+        "min_deg": 157.4961477012314,
+        "max_deg": 157.62144177567532
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.450769100715647,
+        "min_deg": 22.378558224324692,
+        "max_deg": 22.503852298768614
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.5095141932046,
+        "min_deg": 156.29109024127112,
+        "max_deg": 158.59021191167764
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 35,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.668509674213464,
+      "maximum_saved_roll_deg": 2.1870832443237305,
+      "maximum_saved_pitch_deg": 0.8035606741905212,
+      "last30_mean_roll_deg": -0.1210077553987503,
+      "last30_mean_pitch_deg": 0.4798387289047241,
+      "last30_mean_yaw_deg": -0.05334332212805748,
+      "angle_to_wind_from": {
+        "mean_deg": 157.4414062303143,
+        "min_deg": 157.38218638554787,
+        "max_deg": 157.4974973176798
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.558593769685697,
+        "min_deg": 22.502502682320205,
+        "max_deg": 22.617813614452157
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.35406446675375,
+        "min_deg": 156.35535425772883,
+        "max_deg": 157.84155933285467
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 36,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.49967481508930056,
+      "maximum_saved_roll_deg": 8.110426902770996,
+      "maximum_saved_pitch_deg": 1.6186190843582153,
+      "last30_mean_roll_deg": -0.12906305491924286,
+      "last30_mean_pitch_deg": 1.0367273092269897,
+      "last30_mean_yaw_deg": 0.1989743560552597,
+      "angle_to_wind_from": {
+        "mean_deg": 157.72604560880265,
+        "min_deg": 157.6538646327333,
+        "max_deg": 157.91430903057432
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.27395439119739,
+        "min_deg": 22.085690969425706,
+        "max_deg": 22.346135367266697
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.7316502276605,
+        "min_deg": 155.0568622975027,
+        "max_deg": 159.06946872904766
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 37,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.5002030341720658,
+      "maximum_saved_roll_deg": 3.6982431411743164,
+      "maximum_saved_pitch_deg": 5.936319828033447,
+      "last30_mean_roll_deg": -0.27854615449905396,
+      "last30_mean_pitch_deg": 1.9403079748153687,
+      "last30_mean_yaw_deg": 0.05338967964053154,
+      "angle_to_wind_from": {
+        "mean_deg": 157.56164844973284,
+        "min_deg": 157.5051316069615,
+        "max_deg": 157.6084774363004
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.438351550267136,
+        "min_deg": 22.39152256369961,
+        "max_deg": 22.49486839303852
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.57335236538162,
+        "min_deg": 156.95650653265537,
+        "max_deg": 159.02506067905136
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 38,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.12151059945904745,
+      "maximum_saved_roll_deg": 1.9179257154464722,
+      "maximum_saved_pitch_deg": 6.352004051208496,
+      "last30_mean_roll_deg": -0.3601463735103607,
+      "last30_mean_pitch_deg": 2.9358372688293457,
+      "last30_mean_yaw_deg": -0.009302064776420593,
+      "angle_to_wind_from": {
+        "mean_deg": 157.51324279804524,
+        "min_deg": 157.43322724752247,
+        "max_deg": 157.57424023819706
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 22.486757201954763,
+        "min_deg": 22.425759761802933,
+        "max_deg": 22.566772752477547
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 157.51122951816728,
+        "min_deg": 156.72461273700003,
+        "max_deg": 158.2401335341756
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 39,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 22.5,
+      "nominal_coming_bearing_deg": 202.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 10.54606223417804,
+      "maximum_saved_roll_deg": 14.43507194519043,
+      "maximum_saved_pitch_deg": 25.73726463317871,
+      "last30_mean_roll_deg": -1.1569921970367432,
+      "last30_mean_pitch_deg": 2.3472073078155518,
+      "last30_mean_yaw_deg": 0.007498623337596655,
+      "angle_to_wind_from": {
+        "mean_deg": 151.8031848965768,
+        "min_deg": 110.05488486746955,
+        "max_deg": 179.99738117971813
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 28.196815103423198,
+        "min_deg": 0.0026188202818967035,
+        "max_deg": 69.94511513253045
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 150.80111081522048,
+        "min_deg": 111.26764471626423,
+        "max_deg": 179.95923729607836
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 40,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.12642111860610317,
+      "maximum_saved_roll_deg": 4.157442092895508,
+      "maximum_saved_pitch_deg": 5.978609561920166,
+      "last30_mean_roll_deg": 0.050233568996191025,
+      "last30_mean_pitch_deg": -0.07121158391237259,
+      "last30_mean_yaw_deg": -0.014447037130594254,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": {
+        "mean_deg": 74.8073677007466,
+        "min_deg": 70.75708130706981,
+        "max_deg": 79.74405033928237
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 41,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.4193005640311755,
+      "maximum_saved_roll_deg": 9.622895240783691,
+      "maximum_saved_pitch_deg": 5.6093854904174805,
+      "last30_mean_roll_deg": -0.08596443384885788,
+      "last30_mean_pitch_deg": 0.08194632828235626,
+      "last30_mean_yaw_deg": -0.22705145180225372,
+      "angle_to_wind_from": {
+        "mean_deg": 67.29151095903042,
+        "min_deg": 67.23205107043248,
+        "max_deg": 67.35078747917038
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.70848904096954,
+        "min_deg": 112.64921252082962,
+        "max_deg": 112.76794892956752
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.4303809128585,
+        "min_deg": 41.49269063872895,
+        "max_deg": 74.98825722242658
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 42,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.8240733690585867,
+      "maximum_saved_roll_deg": 4.530766010284424,
+      "maximum_saved_pitch_deg": 8.61487102508545,
+      "last30_mean_roll_deg": -0.1020980253815651,
+      "last30_mean_pitch_deg": -0.046101320534944534,
+      "last30_mean_yaw_deg": -0.052098069339990616,
+      "angle_to_wind_from": {
+        "mean_deg": 67.46927838982961,
+        "min_deg": 67.38917981241246,
+        "max_deg": 67.54739789952893
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.53072161017036,
+        "min_deg": 112.45260210047107,
+        "max_deg": 112.61082018758754
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.39984153359134,
+        "min_deg": 64.80457443940314,
+        "max_deg": 77.86140129133898
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 43,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.42384167933388195,
+      "maximum_saved_roll_deg": 5.836424350738525,
+      "maximum_saved_pitch_deg": 1.3656415939331055,
+      "last30_mean_roll_deg": -0.3224785625934601,
+      "last30_mean_pitch_deg": -0.1360427737236023,
+      "last30_mean_yaw_deg": 0.12216157466173172,
+      "angle_to_wind_from": {
+        "mean_deg": 67.65953852614203,
+        "min_deg": 67.57218240486593,
+        "max_deg": 67.77476789672177
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.34046147385793,
+        "min_deg": 112.22523210327823,
+        "max_deg": 112.42781759513407
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.5383091946785,
+        "min_deg": 65.6579661995091,
+        "max_deg": 69.11688587532022
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 44,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2082903006383883,
+      "maximum_saved_roll_deg": 7.280303955078125,
+      "maximum_saved_pitch_deg": 1.370100736618042,
+      "last30_mean_roll_deg": -0.8007609248161316,
+      "last30_mean_pitch_deg": -0.16529740393161774,
+      "last30_mean_yaw_deg": 0.1541852205991745,
+      "angle_to_wind_from": {
+        "mean_deg": 67.64839883108758,
+        "min_deg": 67.5943348340319,
+        "max_deg": 67.70829245822831
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.35160116891241,
+        "min_deg": 112.2917075417717,
+        "max_deg": 112.40566516596812
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.63684866455793,
+        "min_deg": 66.2538207843144,
+        "max_deg": 68.82627313106433
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 45,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.5588294826651943,
+      "maximum_saved_roll_deg": 5.611303806304932,
+      "maximum_saved_pitch_deg": 9.715018272399902,
+      "last30_mean_roll_deg": -1.3613781929016113,
+      "last30_mean_pitch_deg": -0.37389981746673584,
+      "last30_mean_yaw_deg": -0.1275549978017807,
+      "angle_to_wind_from": {
+        "mean_deg": 67.37159749218173,
+        "min_deg": 67.32355762270322,
+        "max_deg": 67.42223986899634
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.62840250781822,
+        "min_deg": 112.57776013100366,
+        "max_deg": 112.67644237729678
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.29432832545626,
+        "min_deg": 64.0171506589054,
+        "max_deg": 69.24733428226769
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 46,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.15179393735137825,
+      "maximum_saved_roll_deg": 5.72330379486084,
+      "maximum_saved_pitch_deg": 5.481879711151123,
+      "last30_mean_roll_deg": -2.191173553466797,
+      "last30_mean_pitch_deg": -0.4411200284957886,
+      "last30_mean_yaw_deg": 0.05355338752269745,
+      "angle_to_wind_from": {
+        "mean_deg": 67.54602412761803,
+        "min_deg": 67.47672662047286,
+        "max_deg": 67.65179574643463
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 112.45397587238203,
+        "min_deg": 112.34820425356537,
+        "max_deg": 112.52327337952715
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 67.50332345409973,
+        "min_deg": 63.559522312420384,
+        "max_deg": 70.40351458224909
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 47,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 112.5,
+      "nominal_coming_bearing_deg": 292.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.35182501849891373,
+      "maximum_saved_roll_deg": 7.122437953948975,
+      "maximum_saved_pitch_deg": 4.9788336753845215,
+      "last30_mean_roll_deg": -1.6465622186660767,
+      "last30_mean_pitch_deg": -1.3005794286727905,
+      "last30_mean_yaw_deg": 0.08004666864871979,
+      "angle_to_wind_from": {
+        "mean_deg": 64.93230591804263,
+        "min_deg": 22.085032500205916,
+        "max_deg": 108.12977746837748
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 115.06769408195738,
+        "min_deg": 71.87022253162252,
+        "max_deg": 157.9149674997941
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 64.94929689112578,
+        "min_deg": 23.887121660556495,
+        "max_deg": 106.69839835365998
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 48,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.6024875715922398,
+      "maximum_saved_roll_deg": 3.4697341918945312,
+      "maximum_saved_pitch_deg": 5.1684136390686035,
+      "last30_mean_roll_deg": 0.03544927015900612,
+      "last30_mean_pitch_deg": -0.011350341141223907,
+      "last30_mean_yaw_deg": 0.04420023784041405,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": {
+        "mean_deg": 35.266314772037944,
+        "min_deg": 0.1252523673001819,
+        "max_deg": 75.81388473115167
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 49,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.5298208154865038,
+      "maximum_saved_roll_deg": 1.872862696647644,
+      "maximum_saved_pitch_deg": 2.067917585372925,
+      "last30_mean_roll_deg": -0.022072946652770042,
+      "last30_mean_pitch_deg": -0.06202208623290062,
+      "last30_mean_yaw_deg": 0.13767805695533752,
+      "angle_to_wind_from": {
+        "mean_deg": 22.398975607469684,
+        "min_deg": 22.320566329753927,
+        "max_deg": 22.50721903383004
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.60102439253032,
+        "min_deg": 157.49278096616996,
+        "max_deg": 157.67943367024608
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.590835415293988,
+        "min_deg": 20.151104683881602,
+        "max_deg": 37.97547810744456
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 50,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.32634998703992646,
+      "maximum_saved_roll_deg": 1.619136929512024,
+      "maximum_saved_pitch_deg": 3.0774896144866943,
+      "last30_mean_roll_deg": 0.01510707475244999,
+      "last30_mean_pitch_deg": -0.1289122998714447,
+      "last30_mean_yaw_deg": -0.06061272695660591,
+      "angle_to_wind_from": {
+        "mean_deg": 22.55906008717197,
+        "min_deg": 22.501918804949703,
+        "max_deg": 22.619095555582003
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.44093991282804,
+        "min_deg": 157.380904444418,
+        "max_deg": 157.4980811950503
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.581431449454808,
+        "min_deg": 15.782578502539799,
+        "max_deg": 24.656383675779832
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 51,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.40822565241583786,
+      "maximum_saved_roll_deg": 1.9288634061813354,
+      "maximum_saved_pitch_deg": 8.68891429901123,
+      "last30_mean_roll_deg": 0.0871339812874794,
+      "last30_mean_pitch_deg": -0.49333256483078003,
+      "last30_mean_yaw_deg": 0.06175310164690018,
+      "angle_to_wind_from": {
+        "mean_deg": 22.416710190520845,
+        "min_deg": 22.338912191184153,
+        "max_deg": 22.482795073602052
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.58328980947914,
+        "min_deg": 157.51720492639797,
+        "max_deg": 157.66108780881586
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.457389502920968,
+        "min_deg": 21.06693203823837,
+        "max_deg": 27.284803492432065
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 52,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.34482316746515157,
+      "maximum_saved_roll_deg": 6.373240947723389,
+      "maximum_saved_pitch_deg": 3.3810253143310547,
+      "last30_mean_roll_deg": 0.12358833849430084,
+      "last30_mean_pitch_deg": -1.0697381496429443,
+      "last30_mean_yaw_deg": -0.13047073781490326,
+      "angle_to_wind_from": {
+        "mean_deg": 22.60061019567799,
+        "min_deg": 22.503961397606133,
+        "max_deg": 22.680847386820787
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.39938980432208,
+        "min_deg": 157.31915261317923,
+        "max_deg": 157.4960386023939
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.56544621702844,
+        "min_deg": 20.234883061952107,
+        "max_deg": 23.37180048659165
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 53,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.7224624590453054,
+      "maximum_saved_roll_deg": 4.637218952178955,
+      "maximum_saved_pitch_deg": 9.716362953186035,
+      "last30_mean_roll_deg": 0.275952011346817,
+      "last30_mean_pitch_deg": -1.9617024660110474,
+      "last30_mean_yaw_deg": -0.29724088311195374,
+      "angle_to_wind_from": {
+        "mean_deg": 22.816916750089643,
+        "min_deg": 22.74459862739455,
+        "max_deg": 22.912329503833256
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.18308324991034,
+        "min_deg": 157.08767049616677,
+        "max_deg": 157.25540137260546
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.791610881720885,
+        "min_deg": 20.758283319181206,
+        "max_deg": 23.918896574822156
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 54,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.5656448908789563,
+      "maximum_saved_roll_deg": 4.361236095428467,
+      "maximum_saved_pitch_deg": 4.190535068511963,
+      "last30_mean_roll_deg": 0.3634946644306183,
+      "last30_mean_pitch_deg": -3.054015636444092,
+      "last30_mean_yaw_deg": 0.1151961162686348,
+      "angle_to_wind_from": {
+        "mean_deg": 22.420458199397125,
+        "min_deg": 22.335051774706017,
+        "max_deg": 22.515239775602595
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 157.57954180060287,
+        "min_deg": 157.4847602243974,
+        "max_deg": 157.66494822529398
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 22.3630653127733,
+        "min_deg": 20.620213343388958,
+        "max_deg": 23.11126690392263
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 55,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 202.5,
+      "nominal_coming_bearing_deg": 22.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.26226442981138604,
+      "maximum_saved_roll_deg": 5.0951151847839355,
+      "maximum_saved_pitch_deg": 5.944311618804932,
+      "last30_mean_roll_deg": 0.9822748899459839,
+      "last30_mean_pitch_deg": -2.565814256668091,
+      "last30_mean_yaw_deg": -0.05758822709321976,
+      "angle_to_wind_from": {
+        "mean_deg": 26.390288716266035,
+        "min_deg": 0.007407213319286525,
+        "max_deg": 69.60808304866185
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 153.609711283734,
+        "min_deg": 110.39191695133816,
+        "max_deg": 179.99259278668072
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 26.311553978907554,
+        "min_deg": 0.024512307088181712,
+        "max_deg": 70.21539772521348
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 56,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.6885067071951159,
+      "maximum_saved_roll_deg": 8.725125312805176,
+      "maximum_saved_pitch_deg": 4.1300950050354,
+      "last30_mean_roll_deg": -0.07433479279279709,
+      "last30_mean_pitch_deg": 0.08075034618377686,
+      "last30_mean_yaw_deg": -0.19654156267642975,
+      "angle_to_wind_from": null,
+      "angle_to_wind_to": null,
+      "angle_to_relative_wind_from": {
+        "mean_deg": 91.72224984383305,
+        "min_deg": 37.019517066956034,
+        "max_deg": 171.95526553523212
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 57,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 0.5,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.13019419781294017,
+      "maximum_saved_roll_deg": 1.4791620969772339,
+      "maximum_saved_pitch_deg": 7.3415141105651855,
+      "last30_mean_roll_deg": 0.0016446096124127507,
+      "last30_mean_pitch_deg": -0.000351829658029601,
+      "last30_mean_yaw_deg": -0.0494164377450943,
+      "angle_to_wind_from": {
+        "mean_deg": 112.56884738350684,
+        "min_deg": 112.50367751478822,
+        "max_deg": 112.6302023768975
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.43115261649315,
+        "min_deg": 67.3697976231025,
+        "max_deg": 67.49632248521178
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.66982066602577,
+        "min_deg": 109.01036070564662,
+        "max_deg": 116.01380882000295
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 58,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 1.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.2982972261799205,
+      "maximum_saved_roll_deg": 8.962906837463379,
+      "maximum_saved_pitch_deg": 5.505446910858154,
+      "last30_mean_roll_deg": 0.06664308160543442,
+      "last30_mean_pitch_deg": 0.020574461668729782,
+      "last30_mean_yaw_deg": 0.16336342692375183,
+      "angle_to_wind_from": {
+        "mean_deg": 112.34133196064441,
+        "min_deg": 112.26681599590809,
+        "max_deg": 112.41711868418415
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.65866803935556,
+        "min_deg": 67.58288131581585,
+        "max_deg": 67.73318400409191
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.3739696947744,
+        "min_deg": 110.33188961908539,
+        "max_deg": 114.54626925238387
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 59,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 2.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.36008277056631205,
+      "maximum_saved_roll_deg": 4.6132049560546875,
+      "maximum_saved_pitch_deg": 1.9059083461761475,
+      "last30_mean_roll_deg": 0.3218029737472534,
+      "last30_mean_pitch_deg": 0.07677830755710602,
+      "last30_mean_yaw_deg": 0.3085860311985016,
+      "angle_to_wind_from": {
+        "mean_deg": 112.23196000511966,
+        "min_deg": 112.13992540851825,
+        "max_deg": 112.3762797158164
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.76803999488033,
+        "min_deg": 67.6237202841836,
+        "max_deg": 67.86007459148175
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.31027965544504,
+        "min_deg": 109.94608420409729,
+        "max_deg": 115.66065285544398
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 60,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 3.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.3177930673507963,
+      "maximum_saved_roll_deg": 4.535541534423828,
+      "maximum_saved_pitch_deg": 1.0807706117630005,
+      "last30_mean_roll_deg": 0.7250059247016907,
+      "last30_mean_pitch_deg": 0.08084157109260559,
+      "last30_mean_yaw_deg": -0.1953103393316269,
+      "angle_to_wind_from": {
+        "mean_deg": 112.68131884369362,
+        "min_deg": 112.60619753230543,
+        "max_deg": 112.74571439138668
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.31868115630635,
+        "min_deg": 67.25428560861332,
+        "max_deg": 67.39380246769457
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.62568277785351,
+        "min_deg": 111.1241256978597,
+        "max_deg": 113.41640901474001
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 61,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 4.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.25327027129366925,
+      "maximum_saved_roll_deg": 3.8033294677734375,
+      "maximum_saved_pitch_deg": 9.914627075195312,
+      "last30_mean_roll_deg": 1.3235877752304077,
+      "last30_mean_pitch_deg": 0.2887975871562958,
+      "last30_mean_yaw_deg": 0.18369992077350616,
+      "angle_to_wind_from": {
+        "mean_deg": 112.31338175110392,
+        "min_deg": 112.24673790779089,
+        "max_deg": 112.40176185760902
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.68661824889607,
+        "min_deg": 67.59823814239098,
+        "max_deg": 67.75326209220911
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.32028636209847,
+        "min_deg": 111.47650766755152,
+        "max_deg": 112.95752438916053
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 62,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "steady",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.34199368156019444,
+      "maximum_saved_roll_deg": 8.09985065460205,
+      "maximum_saved_pitch_deg": 8.399361610412598,
+      "last30_mean_roll_deg": 2.135807514190674,
+      "last30_mean_pitch_deg": 0.34303054213523865,
+      "last30_mean_yaw_deg": 0.013973096385598183,
+      "angle_to_wind_from": {
+        "mean_deg": 112.48989455328305,
+        "min_deg": 112.42223836467544,
+        "max_deg": 112.6106469784858
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 67.51010544671693,
+        "min_deg": 67.38935302151421,
+        "max_deg": 67.57776163532458
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 112.48203021657291,
+        "min_deg": 109.38277678406907,
+        "max_deg": 115.19589413983417
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    },
+    {
+      "case_index": 63,
+      "attachment_cm": 10.0,
+      "base_wind_mps": 5.0,
+      "profile": "combined",
+      "nominal_flow_bearing_deg": 292.5,
+      "nominal_coming_bearing_deg": 112.5,
+      "command_heading_deg": 0,
+      "maximum_absolute_yaw_deg": 0.3921949583099799,
+      "maximum_saved_roll_deg": 9.312601089477539,
+      "maximum_saved_pitch_deg": 7.51475715637207,
+      "last30_mean_roll_deg": 1.409490704536438,
+      "last30_mean_pitch_deg": 1.148531198501587,
+      "last30_mean_yaw_deg": 0.07644917070865631,
+      "angle_to_wind_from": {
+        "mean_deg": 113.43091443495754,
+        "min_deg": 72.09871727405846,
+        "max_deg": 154.93686861758664
+      },
+      "angle_to_wind_to": {
+        "mean_deg": 66.56908556504244,
+        "min_deg": 25.06313138241336,
+        "max_deg": 107.90128272594154
+      },
+      "angle_to_relative_wind_from": {
+        "mean_deg": 113.40695098188364,
+        "min_deg": 73.45749646830582,
+        "max_deg": 149.5671962727265
+      },
+      "safe_completed": true,
+      "duration_s": 120.0
+    }
+  ],
+  "quaternion_yaw_vs100hz_witness_max_difference_deg": 8.537736462515939e-07,
+  "source_result_sha256": "80f39f26a0b06338e71582f3b89785689dec216c4e25569e9561409d48edbae0",
+  "source_trajectory_sha256": "5f615b7483e82771f570bb1fff6e6ae6ea271b049ab19567834e7e6ad0847d95",
+  "source_heading_sha256": "348b890029a7becdeee3bdd80279bec73bc325bdcfe0f0501b68543b6a376de3",
+  "source_wind_sha256": "89b1ae4a9d7b5bdb93b838e546082a9c4896c276f8750aa07f7281781e15f71a",
+  "analyzer_source_sha256": "786f6b709196e990e85935e1fc3a410c48e357f7d2f0a03789574cb6e3aab212",
+  "new_simulation": false,
+  "policy_updates": 0
+}

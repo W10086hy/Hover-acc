@@ -1,0 +1,83 @@
+{
+  "all_passed": true,
+  "entrypoints": [
+    {
+      "module": "P2.replay_flexible_policy",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P2.qualify_flexible_rope",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P2.train_flexible_rope",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P2.visualize_full_flight",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P2.animate",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P2.validate_p2",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "mujoco_sim.evaluate_flexible",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P3.train_mismatch",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P3.evaluate_flexible",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P3.run_flexible120",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P3.replay_attitude_wind",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P3.audit_flexible120",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    },
+    {
+      "module": "P3.report_flexible120",
+      "passed": true,
+      "returncode": 0,
+      "error": null
+    }
+  ]
+}

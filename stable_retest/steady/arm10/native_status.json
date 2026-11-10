@@ -1,0 +1,38 @@
+{
+  "completed": true,
+  "cases": [
+    {
+      "case": "hover_wind1",
+      "returncode": 0,
+      "command": [
+        "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower\u7a33\u5b9a\u63a7\u5236\\training_env\\.venv-win\\Scripts\\python.exe",
+        "-u",
+        "-B",
+        "-c",
+        "import torch;torch.set_num_threads(1);from stable_retest.run_native import run_case;run_case('hover_wind1',0.0,1.0,experiment='E:\\\\Rfly\\\\01_Relateive_Works\\\\B9_RflyTower\u7a33\u5b9a\u63a7\u5236\\\\\u62d2\u6b62\\\\stable_retest\\\\steady\\\\arm10')"
+      ]
+    },
+    {
+      "case": "hover_wind5",
+      "returncode": 0,
+      "command": [
+        "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower\u7a33\u5b9a\u63a7\u5236\\training_env\\.venv-win\\Scripts\\python.exe",
+        "-u",
+        "-B",
+        "-c",
+        "import torch;torch.set_num_threads(1);from stable_retest.run_native import run_case;run_case('hover_wind5',0.0,5.0,experiment='E:\\\\Rfly\\\\01_Relateive_Works\\\\B9_RflyTower\u7a33\u5b9a\u63a7\u5236\\\\\u62d2\u6b62\\\\stable_retest\\\\steady\\\\arm10')"
+      ]
+    },
+    {
+      "case": "track4_wind1",
+      "returncode": 0,
+      "command": [
+        "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower\u7a33\u5b9a\u63a7\u5236\\training_env\\.venv-win\\Scripts\\python.exe",
+        "-u",
+        "-B",
+        "-c",
+        "import torch;torch.set_num_threads(1);from stable_retest.run_native import run_case;run_case('track4_wind1',4.0,1.0,experiment='E:\\\\Rfly\\\\01_Relateive_Works\\\\B9_RflyTower\u7a33\u5b9a\u63a7\u5236\\\\\u62d2\u6b62\\\\stable_retest\\\\steady\\\\arm10')"
+      ]
+    }
+  ]
+}

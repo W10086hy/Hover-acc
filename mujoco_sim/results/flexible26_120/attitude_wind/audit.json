@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "offline_only": true,
+  "policy_updates": 0,
+  "checkpoint_and_original21_and_p3_unchanged": true,
+  "full120s_replays": [
+    {
+      "folder": "weak5cm",
+      "case_index": 26,
+      "gif_sha256": "76ac515f170cfab4b6dd5acb3a3c482e8afc9a6315c5bb7a19aaeaffcb2ce2ba"
+    },
+    {
+      "folder": "weak10cm",
+      "case_index": 58,
+      "gif_sha256": "e8e78036de119d7398395c2827c2f15b17ce52f71d87be889534a12a8cdecb5d"
+    }
+  ],
+  "yaw_from_quaternion_verified_against100hz_archive": true,
+  "maximum_yaw_conversion_difference_deg": 8.537736462515939e-07,
+  "flow_and_coming_conventions_verified": true,
+  "all_heading_commands_deg": 0,
+  "source_archive_sha256": "ab6938419472b0095c83ec9c8621979b9bc96065d592391775eea0669c870abb",
+  "figure_sha256": {
+    "weak_attitude.png": "e0eda40fe55343f16ed552f2532fe45b47b259e6ae52bc1623e6bb2b7fcfd3bb",
+    "gust_attitude.png": "cd687cdeae22932fa397e9e920b6e8b7f238c2becaae1a56717c204c121c8db6",
+    "heading_wind_diagram.png": "0271bca4147d4999c7adf70d4ad1961938dd859742f99d2379c124b831143e06"
+  },
+  "one_mps_count": 8,
+  "one_mps_safe_completed": 8
+}

@@ -1,0 +1,10 @@
+{
+  "first_checkpoint_sha256": "37fd9e51fc7a5f11c53b46518589f9809274dcd256fdad35b503026e2b528973",
+  "second_checkpoint_sha256": "2d152c80df224ec2432980c90a860501971386127b6b53a0d4a40838c0a3f3ac",
+  "actor_bitwise_equal": true,
+  "configuration_equal": true,
+  "adam_bitwise_equal": true,
+  "physical_source_identity_equal": true,
+  "cumulative_physical_updates": 37,
+  "checker_source_sha256": "e841e0c4c5be65b9a0c94572a87ebf13f405ecf5f495e2679b8fa8740e90723f"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 4,
+  "date": "2026-11-01",
+  "training_running": false,
+  "validation_running": false,
+  "formal_final_acceptance": false,
+  "stage": "frozen26_torch_and_mujoco120s_development_complete",
+  "route": "body_rate_total_thrust_BPTT",
+  "checkpoint": "P2/results/flexible_continue30/step4/latest.pt",
+  "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "cumulative_physical_updates": 26,
+  "optimizer_preserved": true,
+  "iterations_stopped_by_user": true,
+  "last_training_objective_s": 30,
+  "credit_s": 10,
+  "recompute_s": 1,
+  "training_snapshot": "P2/results/flexible_continue30/step4/protocol.json",
+  "future_continuation_config": "P2/flexible_rope_protocol.json",
+  "evaluation_duration_s": 120,
+  "torch_metrics": "P2/results/flexible_continue30/replay120/metrics.json",
+  "mujoco_metrics": "mujoco_sim/results/flexible26_120/metrics.json",
+  "count_per_backend": 64,
+  "safe_completed_per_backend": 64,
+  "state_wind_seeds": [
+    20269781,
+    20269782
+  ],
+  "final_acceptance_completed": false,
+  "progress": "P2/PROGRESS.md",
+  "historical_parameters": "regression fixtures only;not active controllers",
+  "status_alias_of": "P2/status.json"
+}

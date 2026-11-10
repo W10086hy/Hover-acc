@@ -1,0 +1,713 @@
+{
+  "stock_px4": true,
+  "real_PX4_process": true,
+  "config": {
+    "schema_version": 1,
+    "route": "thrust_body_rate_BPTT_PX4_Offboard",
+    "protocol": {
+      "duration_s": 120.0,
+      "cart_speed_mps": 0.0,
+      "cart_direction_engineering_deg": 0.0,
+      "cart_anchor_height_m": 0.0,
+      "target_aircraft_height_m": 5.0,
+      "physics_dt_s": 0.0005,
+      "attachment_cm": [
+        5
+      ],
+      "initial_conditions": [
+        "hover_capture"
+      ],
+      "cart_motion": {
+        "kind": "half_cosine_ramp",
+        "hold_s": 5.0,
+        "ramp_s": 10.0
+      },
+      "case_specs": [
+        {
+          "attachment_cm": 5,
+          "cart_speed_mps": 0.0,
+          "cart_motion": {
+            "kind": "half_cosine_ramp",
+            "hold_s": 5.0,
+            "ramp_s": 10.0
+          }
+        }
+      ],
+      "cart_inertial_regularization_kg": 1000000.0,
+      "state_seed": 20683121,
+      "wind_seed": 20683131,
+      "wind_peak_mps": 1.0,
+      "wind_mean_direction_deg": 90.0,
+      "wind_profile": "steady",
+      "wind_normalization_horizon_s": 120.0,
+      "controller_checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_checkpoint": "P3/results/actor37_5m/residual/best.pt",
+      "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+      "residual_protocol": "P3/actor37_5m_protocol.json"
+    },
+    "stage": {
+      "sensors": {
+        "group": "IMU + idealized onboard attitude + simulated motor-speed feedback + barometer (user authorized)",
+        "gyro_noise_radps": 0.003,
+        "gyro_bias_radps": 0.003,
+        "accel_noise_mps2": 0.04,
+        "accel_bias_mps2": 0.03,
+        "attitude_noise_deg": 0.15,
+        "yaw_drift_degps": 0.1,
+        "rpm_noise_radps": 1,
+        "specific_force_filter_alpha": 0.5,
+        "limitation": "Attitude estimate is truth plus modeled errors, not a validated inertial estimator. RPM feedback and barometric reference calibration require hardware verification.",
+        "baro_noise_m": 0.02,
+        "baro_bias_m": 0.03,
+        "baro_drift_mps": 0.002,
+        "baro_rate_hz": 20,
+        "baro_delay_samples": 2,
+        "motion_features": {
+          "enabled": true,
+          "velocity_leak_s": 5,
+          "position_leak_s": 20
+        },
+        "angular_prediction_mode": "interval_motor",
+        "preflight_baro_calibration": {
+          "enabled": true,
+          "stationary_s": 20.0,
+          "known_ground_relative_height_m": 0.0,
+          "method": "OLS biasandlinear drift from past barometer measurements",
+          "sensor_bias_drift_and_measurement_noise_unchanged": true,
+          "measurement_delay_and_held_sample_clock_preserved": true,
+          "future_measurements_or_simulator_latents_not_estimator_inputs": true
+        }
+      },
+      "environment": {
+        "training_episode_s": 120,
+        "evaluation_episode_s": 120,
+        "max_training_wind_mps": 5,
+        "wind_gust_fraction": 0.2,
+        "initial_xy_m": 0.04,
+        "initial_z_m": 0.16,
+        "initial_tilt_deg": 1.5,
+        "initial_speed_mps": 0.04,
+        "initial_rate_radps": 0.025
+      },
+      "offline_limits": {
+        "status": "Provisional simulation termination limits, not deployable safety guarantees or measured hardware limits",
+        "tilt_deg": 45,
+        "rate_radps": 4,
+        "speed_mps": 5,
+        "min_height_m": 1,
+        "max_height_m": 9,
+        "horizontal_radius_m": 6,
+        "tension_n": 30
+      },
+      "reward": {
+        "kind": "height_priority",
+        "alive": 0.5,
+        "position_gain": 10,
+        "xy_scale_m": 0.5,
+        "height_scale_m": 0.2,
+        "tilt_scale_rad": 0.35,
+        "rate_scale_radps": 1,
+        "speed_scale_mps": 1,
+        "tilt_bounded": 0,
+        "rate_bounded": 0.3,
+        "speed_bounded": 0.1,
+        "normalized_residual_squared": 0,
+        "command_change_squared": 0.08,
+        "failure": 20,
+        "height_gain": 8,
+        "xy_gain": 2
+      },
+      "controller": {
+        "action_mode": "body_rate_thrust",
+        "target_height_m": 5,
+        "trim_excess_n": 0.5,
+        "throttle_rate_per_s": 3,
+        "residual_throttle_limit": 0.04,
+        "fallback_tilt_deg": 40,
+        "fallback_rate_radps": 4,
+        "rate_limits_radps": [
+          2,
+          2,
+          1.5
+        ],
+        "rate_kp_per_s": [
+          18,
+          18,
+          10
+        ],
+        "rate_ki_per_s2": [
+          80,
+          80,
+          40.0
+        ],
+        "rate_integral_limit": 0.4,
+        "thrust_delta_fraction": 0.6,
+        "min_total_thrust_fraction": 0.05,
+        "max_total_thrust_fraction": 0.95,
+        "thrust_kp": 0.2,
+        "thrust_ki_per_s": 0.5,
+        "thrust_integral_fraction": 0.2,
+        "initial_sensor_feedback": {
+          "enabled": true,
+          "attitude_gain_per_s": [
+            5,
+            7
+          ],
+          "height_kp_per_s2": 2,
+          "vertical_kd_per_s": 3
+        },
+        "rate_gain_revision": "20261025_roll_pitch_constant_torque_rejection",
+        "heading_hold": {
+          "enabled": true,
+          "kp_per_s": 1.5,
+          "ki_per_s2": 0.5,
+          "integral_limit_rads": 2.0,
+          "reference": "preflight_launch_heading"
+        },
+        "stock_px4": {
+          "rate_p": [
+            0.15,
+            0.15,
+            0.2
+          ],
+          "rate_i": [
+            0.2,
+            0.2,
+            0.1
+          ],
+          "rate_d": [
+            0.003,
+            0.003,
+            0
+          ],
+          "integral_limit": [
+            0.3,
+            0.3,
+            0.3
+          ],
+          "rate_derivative_filter_s": 0.02,
+          "prediction_substeps": 3,
+          "predictor_motor_tau_s": 0.03,
+          "command_filter_s": 0.065,
+          "rate_mix": [
+            [
+              -0.455,
+              0.93,
+              0.85
+            ],
+            [
+              -0.455,
+              -0.93,
+              -0.85
+            ],
+            [
+              0.455,
+              0.93,
+              -0.85
+            ],
+            [
+              0.455,
+              -0.93,
+              0.85
+            ]
+          ]
+        }
+      },
+      "bptt": {
+        "position_objective": "pseudo_huber",
+        "safety_barrier_gain": 10
+      },
+      "model": {
+        "observation_dim": 35,
+        "gru_hidden": 128,
+        "hidden_dims": [
+          128,
+          128
+        ],
+        "proxy_scale": 10.0,
+        "gravity_mps2": 9.8,
+        "conditioning": {
+          "enabled": true,
+          "width": 32,
+          "parameter_fields": [
+            "mass_kg",
+            "inertia_xx",
+            "inertia_yy",
+            "inertia_zz",
+            "rotor_dx_m",
+            "rotor_dy_m",
+            "kf",
+            "km",
+            "motor_tau_s",
+            "motor_poly_a",
+            "motor_poly_b",
+            "motor_poly_c",
+            "motor_deadzone",
+            "rotor_inertia_kgm2"
+          ],
+          "reference_vehicle": {
+            "mass_kg": 2.3,
+            "inertia_body_kgm2": [
+              0.0126,
+              0.0055,
+              0.0158
+            ],
+            "rotor_dx_m": 0.12,
+            "rotor_dy_m": 0.12,
+            "kf": 2.009e-05,
+            "km": 5.732e-07,
+            "motor_tau_s": 0.002,
+            "motor_speed_polynomial": [
+              -387.3,
+              1269,
+              -32.5
+            ],
+            "motor_deadzone": 0,
+            "rotor_inertia_kgm2": 8.8493e-06,
+            "include_gyro": true
+          },
+          "schema_version": 1,
+          "context_source": "calibrated airframe and actuator configuration only"
+        }
+      },
+      "training": {
+        "method": "physical_BPTT_rate_thrust",
+        "flight_s": 120.0,
+        "credit_s": 10.0,
+        "recompute_s": 1.0,
+        "origin_equilibrium_phase": {
+          "horizontal_force_weight": 16.0,
+          "yaw_rate_weight": 0.2,
+          "yaw_rate_scale_radps": 0.02
+        },
+        "heading_error_BPTT": {
+          "active": true,
+          "weight": 0.1,
+          "scale_deg": 5.0,
+          "reference_rad": 0.0
+        },
+        "hover_convergence_BPTT": {
+          "active": true,
+          "late_position_multiplier": 2.0,
+          "late_ramp_start_s": 20.0,
+          "late_ramp_end_s": 120.0,
+          "speed_weight": 0.2,
+          "speed_scale_mps": 0.25,
+          "angular_acceleration_weight": 0.002,
+          "angular_acceleration_scale_radps2": 1.0,
+          "motor_slew_weight": 0.02,
+          "motor_step_scale": 0.01
+        },
+        "report_credit_progress": true,
+        "dynamic_rope_objective": "actual path+heading+convergence; no stale-node target counterfactual",
+        "stationarity_metric_window_s": 30
+      }
+    },
+    "nominal": {
+      "schema_version": 1,
+      "model_status": "legacy_active_plant_with_unilateral_tether_extension",
+      "airframe": {
+        "mass_kg": 2.3,
+        "gravity_mps2": 9.8,
+        "wing_install_deg": 34,
+        "rotor_tilt_deg": 0,
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "span_m": 0.902,
+        "chord_m": 0.15,
+        "area_m2": 0.09,
+        "air_density_kgm3": 1.22,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ]
+      },
+      "actuators": {
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "motor_tau_s": 0.002,
+        "servo_tau_s": 0.02,
+        "servo_limit_deg": 20,
+        "servo_rate_radps": 8.7266,
+        "throttle_rate_per_s": 3,
+        "include_gyro": true
+      },
+      "aero": {
+        "enabled": false,
+        "c0": 0.5,
+        "c1": 2.4,
+        "c2": 13,
+        "c3": 3.3,
+        "alpha0_deg": 3,
+        "k_l": 38,
+        "k_d": 48,
+        "cm_alpha": -1.5853052918734383,
+        "cm_zero": -0.002360902255639088,
+        "cl_delta_e": 0,
+        "cd_delta_e": 0,
+        "cm_delta_e": 0,
+        "cl_delta_a": 0,
+        "cn_delta_a": 0,
+        "cy_beta": -0.224,
+        "cl_beta": -0.0849,
+        "cn_beta": 0.0283,
+        "cl_p": -0.404,
+        "cm_q": -1.3,
+        "cn_r": -0.12,
+        "body_drag_n_per_mps2": [
+          0.055,
+          0.055,
+          0.055
+        ],
+        "body_rate_drag": [
+          0.0035,
+          0.0039,
+          0.0034
+        ],
+        "cm_fit_range_deg": [
+          -8,
+          8
+        ],
+        "mode": "legacy_post_stall",
+        "angle_regularization_mps": 0.3,
+        "test_override": {
+          "wing_force_and_moment_enabled": false,
+          "body_force": "-D*v_rel_body*abs(v_rel_body), applied atCG",
+          "body_moment": "-D_rate*omega_body",
+          "coefficients_are_unmeasured_config_assumptions": true
+        }
+      },
+      "tether": {
+        "enabled": true,
+        "anchor_w_m": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "attachment_b_m": [
+          0,
+          0,
+          0
+        ],
+        "rest_length_m": 4.95,
+        "stiffness_npm": 10,
+        "damping_nspm": 2
+      },
+      "power": {
+        "status": "uncalibrated_electrical_proxy",
+        "efficiency": 0.75,
+        "motor_idle_w": 0.5,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "servo_hold_w": 0.2,
+        "servo_rate_w_per_radps": 0.05
+      },
+      "simulation": {
+        "physics_dt_s": 0.002,
+        "control_dt_s": 0.01,
+        "log_dt_s": 0.02,
+        "duration_s": 20,
+        "target_w_m": [
+          0,
+          0,
+          -5
+        ]
+      },
+      "controller": {
+        "position_kp": [
+          3,
+          3,
+          4
+        ],
+        "velocity_kd": [
+          3.2,
+          3.2,
+          3.5
+        ],
+        "position_ki": [
+          0.8,
+          0.8,
+          1.2
+        ],
+        "position_integral_limit": 4,
+        "attitude_kp": [
+          80,
+          80,
+          65
+        ],
+        "rate_kd": [
+          18,
+          18,
+          16
+        ],
+        "attitude_ki": [
+          30,
+          30,
+          25
+        ],
+        "attitude_integral_limit": 1.5,
+        "max_tilt_deg": 40,
+        "max_horizontal_accel": 6,
+        "max_vertical_accel": 4
+      },
+      "evaluation": {
+        "threshold_status": "provisional_numerical_acceptance_not_hardware_limits",
+        "max_position_error_m": 0.8,
+        "max_velocity_mps": 3,
+        "max_tilt_deg": 45,
+        "max_body_rate_radps": 4,
+        "max_tension_n": 40,
+        "max_saturation_fraction": 0.05,
+        "max_settled_position_rmse_m": 0.3
+      },
+      "provenance": {
+        "vehicle_parameters": "Constants imported earlier from the RflyTower LW_noaileron MATLAB/Simulink model;measured hardware validation is pending.",
+        "cm_table": "Retained numerical interpolation table in configs/cm_table.json;physical wing loads are disabled by model.py.",
+        "body_drag": "Quadratic body drag coefficients [0.055,0.055,0.055] N/(m/s)^2;nominal simulated values,not measured.",
+        "tether": "Pull-only elastic massless straight tether;stiffness10N/m,damping2;body-fixed5/10cm points and rest lengths4.90/4.85m configured by environment.py;no sag model.",
+        "controller": "GRU rate/thrust references followed by heading hold,body-rate PI,RPM-derived thrust PI,and allocation;no horizontal truth controller.",
+        "numerics": "Rigid-body RK4,first-order motor dynamics;CUDA forward/VJP graph used for BPTT.",
+        "scope": "Local numerical simulation only;no hardware I/O."
+      },
+      "model_family": "c1_hover_noaileron"
+    },
+    "actual": {
+      "schema_version": 1,
+      "model_status": "legacy_active_plant_with_unilateral_tether_extension",
+      "airframe": {
+        "mass_kg": 2.3689999999999998,
+        "gravity_mps2": 9.8,
+        "wing_install_deg": 34,
+        "rotor_tilt_deg": 0,
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "span_m": 0.902,
+        "chord_m": 0.15,
+        "area_m2": 0.09,
+        "air_density_kgm3": 1.22,
+        "inertia_body_kgm2": [
+          0.012852,
+          0.0056099999999999995,
+          0.016116000000000002
+        ]
+      },
+      "actuators": {
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "motor_tau_s": 0.03,
+        "servo_tau_s": 0.02,
+        "servo_limit_deg": 20,
+        "servo_rate_radps": 8.7266,
+        "throttle_rate_per_s": 3,
+        "include_gyro": true
+      },
+      "aero": {
+        "enabled": false,
+        "c0": 0.5,
+        "c1": 2.4,
+        "c2": 13,
+        "c3": 3.3,
+        "alpha0_deg": 3,
+        "k_l": 38,
+        "k_d": 48,
+        "cm_alpha": -1.5853052918734383,
+        "cm_zero": -0.002360902255639088,
+        "cl_delta_e": 0,
+        "cd_delta_e": 0,
+        "cm_delta_e": 0,
+        "cl_delta_a": 0,
+        "cn_delta_a": 0,
+        "cy_beta": -0.224,
+        "cl_beta": -0.0849,
+        "cn_beta": 0.0283,
+        "cl_p": -0.404,
+        "cm_q": -1.3,
+        "cn_r": -0.12,
+        "body_drag_n_per_mps2": [
+          0.055,
+          0.055,
+          0.055
+        ],
+        "body_rate_drag": [
+          0.0035,
+          0.0039,
+          0.0034
+        ],
+        "cm_fit_range_deg": [
+          -8,
+          8
+        ],
+        "mode": "legacy_post_stall",
+        "angle_regularization_mps": 0.3,
+        "test_override": {
+          "wing_force_and_moment_enabled": false,
+          "body_force": "-D*v_rel_body*abs(v_rel_body), applied atCG",
+          "body_moment": "-D_rate*omega_body",
+          "coefficients_are_unmeasured_config_assumptions": true
+        }
+      },
+      "tether": {
+        "enabled": true,
+        "anchor_w_m": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "attachment_b_m": [
+          0,
+          0,
+          0
+        ],
+        "rest_length_m": 4.95,
+        "stiffness_npm": 10,
+        "damping_nspm": 2
+      },
+      "power": {
+        "status": "uncalibrated_electrical_proxy",
+        "efficiency": 0.75,
+        "motor_idle_w": 0.5,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "servo_hold_w": 0.2,
+        "servo_rate_w_per_radps": 0.05
+      },
+      "simulation": {
+        "physics_dt_s": 0.002,
+        "control_dt_s": 0.01,
+        "log_dt_s": 0.02,
+        "duration_s": 20,
+        "target_w_m": [
+          0,
+          0,
+          -5
+        ]
+      },
+      "controller": {
+        "position_kp": [
+          3,
+          3,
+          4
+        ],
+        "velocity_kd": [
+          3.2,
+          3.2,
+          3.5
+        ],
+        "position_ki": [
+          0.8,
+          0.8,
+          1.2
+        ],
+        "position_integral_limit": 4,
+        "attitude_kp": [
+          80,
+          80,
+          65
+        ],
+        "rate_kd": [
+          18,
+          18,
+          16
+        ],
+        "attitude_ki": [
+          30,
+          30,
+          25
+        ],
+        "attitude_integral_limit": 1.5,
+        "max_tilt_deg": 40,
+        "max_horizontal_accel": 6,
+        "max_vertical_accel": 4
+      },
+      "evaluation": {
+        "threshold_status": "provisional_numerical_acceptance_not_hardware_limits",
+        "max_position_error_m": 0.8,
+        "max_velocity_mps": 3,
+        "max_tilt_deg": 45,
+        "max_body_rate_radps": 4,
+        "max_tension_n": 40,
+        "max_saturation_fraction": 0.05,
+        "max_settled_position_rmse_m": 0.3
+      },
+      "provenance": {
+        "vehicle_parameters": "Constants imported earlier from the RflyTower LW_noaileron MATLAB/Simulink model;measured hardware validation is pending.",
+        "cm_table": "Retained numerical interpolation table in configs/cm_table.json;physical wing loads are disabled by model.py.",
+        "body_drag": "Quadratic body drag coefficients [0.055,0.055,0.055] N/(m/s)^2;nominal simulated values,not measured.",
+        "tether": "Pull-only elastic massless straight tether;stiffness10N/m,damping2;body-fixed5/10cm points and rest lengths4.90/4.85m configured by environment.py;no sag model.",
+        "controller": "GRU rate/thrust references followed by heading hold,body-rate PI,RPM-derived thrust PI,and allocation;no horizontal truth controller.",
+        "numerics": "Rigid-body RK4,first-order motor dynamics;CUDA forward/VJP graph used for BPTT.",
+        "scope": "Local numerical simulation only;no hardware I/O."
+      },
+      "model_family": "c1_hover_noaileron"
+    },
+    "rope": {
+      "segments": 12,
+      "linear_density_kgpm": 0.01,
+      "axial_rigidity_n": 49.0,
+      "axial_viscosity_ns": 9.8,
+      "diameter_m": 0.003,
+      "air_drag_coefficient": 1.2
+    },
+    "compensation": {
+      "warmup_s": 1,
+      "ramp_s": 1,
+      "filter_tau_s": 0.05,
+      "thrust_limit_n": 2,
+      "torque_limits_nm": [
+        0.03,
+        0.03,
+        0.02
+      ],
+      "log_motor_tau_limit": 0.7
+    },
+    "controller_checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+    "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+    "residual_checkpoint": "P3/results/actor37_5m/residual/best.pt",
+    "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+    "external_nominal_context": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "actual_drag_scale": 0.9,
+    "cumulative_physical_updates": 38,
+    "validation_height_override": {
+      "height_new_m": 5.0,
+      "rest_length_m": 4.900000095367432
+    },
+    "motor_order": "P2 front-right,rear-right,front-left,rear-left;FRD",
+    "inference_parity": {
+      "samples": 100,
+      "actor_max_absolute_error": 1.1920928955078125e-07,
+      "residual_max_absolute_error": 4.76837158203125e-07
+    },
+    "stock_px4_inference_parity_max_error": 1.1920928955078125e-07,
+    "stock_px4_training_command_filter_s": 0.16,
+    "residual_default_enabled": false,
+    "residual_is_frozen_actor37_fit": true
+  },
+  "formal_final_acceptance": false
+}

@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "actor_and_adam_unchanged": true,
+  "protected_old_weights_unchanged": true,
+  "complete_native_count": 32,
+  "safe_completed": 32,
+  "fullrate_numeric_audits": 4,
+  "wind_field_bitwise_recomputed": true,
+  "initial_states_paired_to_prior_steady": true,
+  "media": [
+    {
+      "name": "varying_weak120",
+      "case_index": 6,
+      "gif_sha256": "1d0a8f7e547ea9dfcd30d584ac5aacecb178680a311e4d111439618aa678ea0e",
+      "metadata_sha256": "f9a4cb565aa477850d0ba5b38d4ccd126ef615e63c97b0ebe35276e0b4128b5c",
+      "frames": 201,
+      "full_horizon_s": 120,
+      "png_visually_inspected": true,
+      "views": [
+        "3d",
+        "xy",
+        "altitude_time",
+        "horizontal_distance_time",
+        "roll_pitch_into_wind_time",
+        "yaw_time"
+      ]
+    },
+    {
+      "name": "varying_strong120",
+      "case_index": 7,
+      "gif_sha256": "2f3099c4f7cc49629246b739673d7b7f7a214f870fbbb189b5445c571a9d66cb",
+      "metadata_sha256": "5fa045da282eef05cf8fcae8320940cc363186773873d8e67dce50b23b9e8eb7",
+      "frames": 201,
+      "full_horizon_s": 120,
+      "png_visually_inspected": true,
+      "views": [
+        "3d",
+        "xy",
+        "altitude_time",
+        "horizontal_distance_time",
+        "roll_pitch_into_wind_time",
+        "yaw_time"
+      ]
+    },
+    {
+      "name": "combined_weak120",
+      "case_index": 6,
+      "gif_sha256": "5cb5530bd132b5d0ea17e18508fe1caa66f0a91b62194e76d47a3e2e8a8cd7d3",
+      "metadata_sha256": "0266856df2f698ba1992231a2b0d3481dc70f16a39eca2a9a0dc3fe5c14d98b4",
+      "frames": 201,
+      "full_horizon_s": 120,
+      "png_visually_inspected": true,
+      "views": [
+        "3d",
+        "xy",
+        "altitude_time",
+        "horizontal_distance_time",
+        "roll_pitch_into_wind_time",
+        "yaw_time"
+      ]
+    },
+    {
+      "name": "combined_strong120",
+      "case_index": 7,
+      "gif_sha256": "ad441c62962a8fba5a8171b279e09da6929778e5bea30c666cf1c720b25d6222",
+      "metadata_sha256": "2400b8db8e64b60207307a642e88804c09a1a28a44a7370d5bc32458db52f36f",
+      "frames": 201,
+      "full_horizon_s": 120,
+      "png_visually_inspected": true,
+      "views": [
+        "3d",
+        "xy",
+        "altitude_time",
+        "horizontal_distance_time",
+        "roll_pitch_into_wind_time",
+        "yaw_time"
+      ]
+    }
+  ],
+  "summary_sha256": "7052ca64c1e957d42d1386f4789ffac29f3c4d5e302b0690265134a501ba3f77",
+  "report_sha256": "626d46e6c9c3afacf4e743eea235fb58f81581f57173bf2d9469517140a4939b",
+  "frozen_report_sources_sha256": "0a884ed80089b30d8c83e82e45c4ebcb6732b38eda321d0059ebe24bee01d546",
+  "tests": {
+    "command": "python.cmd -X utf8 -B -m unittest P2.tests.test_stationarity P2.tests.test_stationarity_evidence P2.tests.test_stationarity_window -q",
+    "session_id": 5579,
+    "run": 10,
+    "passed": 10
+  },
+  "all_sessions_terminal": true,
+  "no_training": true,
+  "formal_final_acceptance": false,
+  "stationarity_thresholds_are_reference_for_variable_wind": true
+}

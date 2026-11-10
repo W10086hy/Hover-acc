@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "stage": "P2 conditioned BPTT native-rope first round; P3 disabled",
+  "parent_checkpoint": "tests/fixtures/conditioned21.pt",
+  "objective_s": 120,
+  "credit_s": 10,
+  "recompute_s": 1,
+  "physics_dt_s": 0.002,
+  "evaluation_native_physics_dt_s": 0.0005,
+  "numerical_rope_epsilon": 0.00001,
+  "device": "cpu",
+  "training_seed": 20672201,
+  "training_directions_deg": [0,90,180,270],
+  "training_cohorts": [
+    {"name":"light_fast","actual_scales":{"mass":0.975,"inertia":0.975,"motor_tau":0.975},"nominal_scales":{"mass":0.975,"inertia":0.975,"motor_tau":0.975}},
+    {"name":"heavy_slow","actual_scales":{"mass":1.025,"inertia":1.025,"motor_tau":1.025},"nominal_scales":{"mass":1.025,"inertia":1.025,"motor_tau":1.025}}
+  ],
+  "development_seed_pairs": [[20269381,20269382],[20269481,20269482]],
+  "development_directions_deg": [22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5],
+  "development_cohorts": [
+    {"name":"nominal","actual_scales":{},"nominal_scales":{}},
+    {"name":"interpolation_low","actual_scales":{"mass":0.9875,"inertia":0.9875,"motor_tau":0.9875},"nominal_scales":{"mass":0.9875,"inertia":0.9875,"motor_tau":0.9875}},
+    {"name":"interpolation_high","actual_scales":{"mass":1.0125,"inertia":1.0125,"motor_tau":1.0125},"nominal_scales":{"mass":1.0125,"inertia":1.0125,"motor_tau":1.0125}}
+  ],
+  "tendon": {"solreflimit":[0.1,1],"solimplimit":[0.95,0.95,0.001,0.5,2]},
+  "development_guard": {
+    "maximum_paired_trials": 3,
+    "maximum_gradient_norm": 1,
+    "aggregate_3d_relative_tolerance": 0.02,
+    "aggregate_3d_absolute_tolerance_m": 0.01,
+    "safe_lane_height_relative_tolerance": 0.1,
+    "safe_lane_height_absolute_tolerance_m": 0.03,
+    "maximum_initial_rate_change_radps": 0.05,
+    "maximum_initial_thrust_change_n": 0.5,
+    "safety_rule": "No previously safe case may newly fail; total safe count cannot decrease. Existing failures may remain while full-horizon cost improves; this is not final acceptance.",
+    "command_rule": "Initial command comparison uses identical initial onboard observation/history. Full-trajectory command differences are reported, not bounded, because different failure/trajectory paths are not identical-input policy changes."
+  },
+  "development_duration_s": 30,
+  "full_validation_duration_s": 120,
+  "final_acceptance": false,
+  "policy_route": "Only thrust+body-rate BPTT; no P3 compensation, PPO, imitation or truth observation",
+  "gradient_kind": "MuJoCo native constraint force forward, central-difference first-order VJP, PyTorch RK4 mechanics and original controller/observer BPTT",
+  "rope_scope": "5/10cm, native soft maximum lengths4.90/4.85m, no mass/sag, target5m unchanged; limits are not the old elastic rest-length law"
+}

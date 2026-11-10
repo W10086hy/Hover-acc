@@ -1,0 +1,121 @@
+#!/bin/sh
+. px4-alias.sh
+param select parameters.bson
+param set SYS_AUTOSTART 10016
+param set SYS_MC_EST_GROUP 2
+param set MAV_SYS_ID 1
+param set MAV_COMP_ID 1
+param set MAV_TYPE 2
+param set MAV_PROTO_VER 2
+param set CAL_ACC0_ID 1310988
+param set CAL_GYRO0_ID 1310988
+param set CAL_MAG0_ID 197388
+param set CAL_MAG0_PRIO 50
+param set SENS_BOARD_X_OFF 1e-06
+param set SENS_DPRES_OFF 0.001
+param set SENS_IMU_MODE 1
+param set EKF2_MULTI_IMU 0
+param set IMU_INTEG_RATE 400
+param set IMU_GYRO_RATEMAX 400
+param set IMU_GYRO_CUTOFF 60
+param set IMU_DGYRO_CUTOFF 30
+param set EKF2_GPS_CTRL 0
+param set EKF2_EV_CTRL 0
+param set EKF2_MAG_TYPE 0
+param set EKF2_HGT_REF 0
+param set COM_ARM_WO_GPS 1
+param set COM_RC_IN_MODE 4
+param set COM_DISARM_PRFLT 0
+param set COM_DISARM_LAND 0
+param set COM_OF_LOSS_T 1
+param set COM_RC_LOSS_T 1
+param set COM_DL_LOSS_T 10
+param set COM_CPU_MAX -1
+param set CBRK_SUPPLY_CHK 894281
+param set CBRK_AIRSPD_CHK 0
+param set BAT1_N_CELLS 4
+param set CA_AIRFRAME 0
+param set CA_METHOD 0
+param set CA_ROTOR_COUNT 4
+param set THR_MDL_FAC 1
+param set MC_AIRMODE 0
+param set MC_BAT_SCALE_EN 0
+param set MOT_SLEW_MAX 0
+param set MPC_THR_HOVER 0.388950212095
+param set MC_ROLLRATE_K 1
+param set MC_ROLLRATE_P 0.04612293154
+param set MC_ROLLRATE_I 0.204990806844
+param set MC_ROLLRATE_D 0
+param set MC_ROLLRATE_FF 0
+param set MC_PITCHRATE_K 1
+param set MC_PITCHRATE_P 0.0201330256722
+param set MC_PITCHRATE_I 0.0894801140987
+param set MC_PITCHRATE_D 0
+param set MC_PITCHRATE_FF 0
+param set MC_YAWRATE_K 1
+param set MC_YAWRATE_P 0.0955588562285
+param set MC_YAWRATE_I 0.382235424914
+param set MC_YAWRATE_D 0
+param set MC_YAWRATE_FF 0
+param set MC_RR_INT_LIM 0.0819963227377
+param set MC_PR_INT_LIM 0.0357920456395
+param set MC_YR_INT_LIM 0.152894169966
+param set CA_ROTOR0_PX 0.12
+param set CA_ROTOR0_PY 0.12
+param set CA_ROTOR0_PZ 0
+param set CA_ROTOR0_KM 0.0285316077651
+param set CA_ROTOR0_CT 4
+param set CA_ROTOR0_AX 0
+param set CA_ROTOR0_AY 0
+param set CA_ROTOR0_AZ -1
+param set PWM_MAIN_FUNC1 101
+param set CA_ROTOR1_PX -0.12
+param set CA_ROTOR1_PY 0.12
+param set CA_ROTOR1_PZ 0
+param set CA_ROTOR1_KM -0.0285316077651
+param set CA_ROTOR1_CT 4
+param set CA_ROTOR1_AX 0
+param set CA_ROTOR1_AY 0
+param set CA_ROTOR1_AZ -1
+param set PWM_MAIN_FUNC2 102
+param set CA_ROTOR2_PX 0.12
+param set CA_ROTOR2_PY -0.12
+param set CA_ROTOR2_PZ 0
+param set CA_ROTOR2_KM -0.0285316077651
+param set CA_ROTOR2_CT 4
+param set CA_ROTOR2_AX 0
+param set CA_ROTOR2_AY 0
+param set CA_ROTOR2_AZ -1
+param set PWM_MAIN_FUNC3 103
+param set CA_ROTOR3_PX -0.12
+param set CA_ROTOR3_PY -0.12
+param set CA_ROTOR3_PZ 0
+param set CA_ROTOR3_KM 0.0285316077651
+param set CA_ROTOR3_CT 4
+param set CA_ROTOR3_AX 0
+param set CA_ROTOR3_AY 0
+param set CA_ROTOR3_AZ -1
+param set PWM_MAIN_FUNC4 104
+dataman start
+simulator_mavlink start -c 4560
+battery_simulator start
+sensors start
+commander start
+pwm_out_sim start -m sim
+ekf2 start
+control_allocator start
+mc_rate_control start
+mc_att_control start
+land_detector start multicopter
+mavlink start -x -u 14580 -o 14540 -t 127.0.0.1 -r 4000000 -m custom
+mavlink stream -u 14580 -s HEARTBEAT -r 10
+mavlink stream -u 14580 -s ATTITUDE_QUATERNION -r 100
+mavlink stream -u 14580 -s HIGHRES_IMU -r 100
+mavlink stream -u 14580 -s SCALED_PRESSURE -r 20
+mavlink stream -u 14580 -s SYS_STATUS -r 1
+mavlink stream -u 14580 -s ATTITUDE_TARGET -r 100
+mavlink stream -u 14580 -s EXTENDED_SYS_STATE -r 5
+mavlink boot_complete
+param save
+ver all
+control_allocator status

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "tests_run": 182,
+  "tests_passed": 181,
+  "tests_skipped": 1,
+  "groups": {
+    "P2_full_suite": {
+      "run": 109,
+      "passed": 109,
+      "session": 66010
+    },
+    "P2_final_horizon_guard": {
+      "run": 1,
+      "passed": 1,
+      "red_then_green": true
+    },
+    "P3": {
+      "run": 25,
+      "passed": 25,
+      "session": 8606
+    },
+    "track": {
+      "run": 25,
+      "passed": 25,
+      "session": 79768
+    },
+    "mujoco_sim": {
+      "run": 18,
+      "passed": 18
+    },
+    "px4_offboard": {
+      "run": 4,
+      "passed": 3,
+      "skipped": 1
+    }
+  },
+  "skip_reason": "Linux symlink semantics on Windows",
+  "current_selection_fixture_tests_skipped": false,
+  "live_parameters_updated": false
+}

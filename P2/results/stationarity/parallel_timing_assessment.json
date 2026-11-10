@@ -1,0 +1,108 @@
+{
+  "benchmark_sha256": "77a5790cd0d80c9437e9429734e109fa13370c6567857efabc0fceaf0bb44c0a",
+  "gradient_seconds_saved_fraction": 0.03576150217148599,
+  "forward_seconds_saved_fraction": 0.09318556095009645,
+  "projected_one_candidate_iteration_s": {
+    "1": 1555.5018244510575,
+    "2": 1438.428682199592
+  },
+  "projected_iteration_saved_fraction": 0.07526390545557926,
+  "actual_complete_parallel_iteration_measured": true,
+  "projection_assumptions": "Linear short-window extrapolation:90s causal prefix+30s BPTT+120s candidate;equal setup allowance",
+  "decision": "Use two cohorts:both phases faster and forward dominates runtime",
+  "preliminary_under_concurrent_training": {
+    "parent_checkpoint_sha256": "5e436f799022f3b6191f7ac9cf806ae4e1ae81c1ae66f9bd1c19697fb56596b0",
+    "seconds": 1.0,
+    "cohorts": 2,
+    "cases_per_cohort": 8,
+    "setup_s": 6.381035700003849,
+    "measurements": [
+      {
+        "repeat": 0,
+        "threads": 1,
+        "wall_s": 25.57396169999265,
+        "gradient_max_abs_diff": 0.0,
+        "gradient_relative_l2_diff": 0.0,
+        "command_max_abs_diff": 0.0,
+        "state_max_abs_diff": 0.0,
+        "gradient_norm": 17.016300201416016,
+        "parity": true,
+        "frozen_gradient_mask_preserved": true,
+        "peak_memory_bytes": 199445504,
+        "safe": [
+          8,
+          8
+        ]
+      },
+      {
+        "repeat": 0,
+        "threads": 2,
+        "wall_s": 23.33746120001888,
+        "gradient_max_abs_diff": 0.0,
+        "gradient_relative_l2_diff": 0.0,
+        "command_max_abs_diff": 0.0,
+        "state_max_abs_diff": 0.0,
+        "gradient_norm": 17.016300201416016,
+        "parity": true,
+        "frozen_gradient_mask_preserved": true,
+        "peak_memory_bytes": 216918016,
+        "safe": [
+          8,
+          8
+        ]
+      },
+      {
+        "repeat": 1,
+        "threads": 2,
+        "wall_s": 23.37643780000508,
+        "gradient_max_abs_diff": 0.0,
+        "gradient_relative_l2_diff": 0.0,
+        "command_max_abs_diff": 0.0,
+        "state_max_abs_diff": 0.0,
+        "gradient_norm": 17.016300201416016,
+        "parity": true,
+        "frozen_gradient_mask_preserved": true,
+        "peak_memory_bytes": 216918016,
+        "safe": [
+          8,
+          8
+        ]
+      },
+      {
+        "repeat": 1,
+        "threads": 1,
+        "wall_s": 25.42670830001589,
+        "gradient_max_abs_diff": 0.0,
+        "gradient_relative_l2_diff": 0.0,
+        "command_max_abs_diff": 0.0,
+        "state_max_abs_diff": 0.0,
+        "gradient_norm": 17.016300201416016,
+        "parity": true,
+        "frozen_gradient_mask_preserved": true,
+        "peak_memory_bytes": 216918016,
+        "safe": [
+          8,
+          8
+        ]
+      }
+    ],
+    "speedup": 1.0917664997302492,
+    "faster": true,
+    "parity_passed": true,
+    "optimizer_updates": 0,
+    "weights_unchanged": true,
+    "torch_version": "2.12.1+cu130",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "torch_cpu_threads": 2,
+    "includes_90s_warmup": false,
+    "timing_environment": "Record concurrent GPU jobs separately"
+  },
+  "actual_iterations": {
+    "serial_step6_s": 2034.3549692000088,
+    "parallel_step7_s": 1852.4436966999783,
+    "same_cohort_count": 2,
+    "same_candidate_count": 2,
+    "controlled_fixed_policy_benchmark": false,
+    "qualification": "Two complete iterations,different policies and background activity;not isolated proof of causal speedup"
+  }
+}

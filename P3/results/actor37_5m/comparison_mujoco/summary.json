@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "backend": "mujoco",
+  "count_per_policy": 4,
+  "duration_s": 120,
+  "seed_pair": [
+    20683111,
+    20683112
+  ],
+  "policy_updates": 0,
+  "optimizer_created": false,
+  "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "residual_checkpoint_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+  "policies": [
+    {
+      "policy": "without_compensation",
+      "count": 4,
+      "safe_completed": 4,
+      "rmse_3d_h_xy_m": [
+        0.7582182711877992,
+        0.08094743089337537,
+        0.75388491177021
+      ],
+      "weak_exceedances": 0,
+      "strong_exceedances": 0,
+      "maximum_true_yaw_error_deg": 0.7713937759399414
+    },
+    {
+      "policy": "with_compensation",
+      "count": 4,
+      "safe_completed": 4,
+      "rmse_3d_h_xy_m": [
+        0.5474720518718922,
+        0.18692397911402073,
+        0.514572709743726
+      ],
+      "weak_exceedances": 0,
+      "strong_exceedances": 0,
+      "maximum_true_yaw_error_deg": 0.8302196264266968
+    }
+  ],
+  "relative_3d_improvement": 0.27794927572209394,
+  "improved_3d_cases": 4,
+  "initial_states_and_full_wind_equal": true,
+  "actual_parameters_identical": true,
+  "source_and_protected_files_unchanged": true,
+  "residual_force_added_to_actual_plant": false,
+  "wall_s": 523.6404812999535,
+  "final_acceptance": false
+}

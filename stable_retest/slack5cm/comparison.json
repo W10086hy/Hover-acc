@@ -1,0 +1,318 @@
+{
+  "passed": true,
+  "comparison": "Same8m Actor29/P3/EA49/wind;extra tether length10cm to5cm",
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "same_backend_wind_arrays_exactly_equal": true,
+  "duration_s": 120,
+  "baseline_count": 6,
+  "new_count": 6,
+  "geometry_sampling_hz": 10,
+  "definition": "Max perpendicular distance from saved cable nodes to the line connecting moving anchor and rotated body attachment",
+  "material_note": "Same EA49,linear density0.01kg/m,axial viscosity9.8Ns;length-derived segment mass/k/c regenerate,79g to78.5g",
+  "baseline_evaluation_sha256": "bc2a4e774588afdc5d79ce3483a4fe0d805fbe1f05565b847341c88e19ebd600",
+  "new_evaluation_sha256": "ff87f69e58daed840ee29cfc81d02868796fae4b13bede29e01a8a7d4a336fec",
+  "source_sha256": "46a997580f8e0e0a0d032d5d929fb9ab022925ac4d41b53965560c2c05730840",
+  "cases": [
+    {
+      "backend": "mujoco",
+      "case": "hover_wind1",
+      "before10cm": {
+        "rmse_3d_h_xy_m": [
+          1.0783294457034591,
+          0.0717996726131926,
+          1.0759364295736842
+        ],
+        "yaw_abs_max_deg": 0.19497525691986084,
+        "safe_completed": 1,
+        "rest_length_m": 7.900000095367432,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.2628760987310862,
+        "p95_max_deflection_m": 0.37740910466388344,
+        "peak_deflection_m": 0.4449989871552484,
+        "late60to120_mean_max_deflection_m": 0.26984165765286916,
+        "peak_extension_m": 0.12438714214054514,
+        "peak_tension_n": 2.3290438652038574,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "d0995e90b35ab7bcd6dfc777ada97e59ed245c8d31149bc8611ab288266d5042",
+        "trajectory_sha256": "1274d4e443b43bf31566707468145523d1313c27c9716771df494463533b866b"
+      },
+      "after5cm": {
+        "rmse_3d_h_xy_m": [
+          0.8968916027763997,
+          0.0729767261903682,
+          0.8939177504476321
+        ],
+        "yaw_abs_max_deg": 0.19496391713619232,
+        "safe_completed": 1,
+        "rest_length_m": 7.849999904632568,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.18486149092409587,
+        "p95_max_deflection_m": 0.30262698510309594,
+        "peak_deflection_m": 0.36318470957135285,
+        "late60to120_mean_max_deflection_m": 0.19263047771897457,
+        "peak_extension_m": 0.12866730150343741,
+        "peak_tension_n": 2.0347447395324707,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "74eb3db433ff6343fa6e877442320fb5aa1ced421201cb08acd6fd3bc7da25b9",
+        "trajectory_sha256": "c31126131d2545c889228df3e27ab3fae3ede182f46dc2647f683b57a4b327ad"
+      },
+      "horizontal_RMSE_reduction_percent": 16.917233595127257,
+      "mean_deflection_reduction_percent": 29.677330188469043,
+      "late_mean_deflection_reduction_percent": 28.613513793789735,
+      "peak_deflection_reduction_percent": 18.385272763632766
+    },
+    {
+      "backend": "mujoco",
+      "case": "hover_wind5",
+      "before10cm": {
+        "rmse_3d_h_xy_m": [
+          1.5641282934075853,
+          0.11743742981080567,
+          1.559713360947311
+        ],
+        "yaw_abs_max_deg": 0.19791336357593536,
+        "safe_completed": 1,
+        "rest_length_m": 7.900000095367432,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.27238156172377154,
+        "p95_max_deflection_m": 0.45050730444476966,
+        "peak_deflection_m": 0.7865811732719362,
+        "late60to120_mean_max_deflection_m": 0.27826988929227875,
+        "peak_extension_m": 0.337352034497183,
+        "peak_tension_n": 12.514388084411621,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "955d6e4d400466324318969ab397d4f66664580ca78a8a1e9f8a8e9b763806f4",
+        "trajectory_sha256": "abcd187154dc4b69cd71bfc1ba07ea3450231cd8059c11dfcd4dac6abece4563"
+      },
+      "after5cm": {
+        "rmse_3d_h_xy_m": [
+          1.421485243722105,
+          0.11719606697513298,
+          1.4166458202406318
+        ],
+        "yaw_abs_max_deg": 0.19834719598293304,
+        "safe_completed": 1,
+        "rest_length_m": 7.849999904632568,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.23492102506058365,
+        "p95_max_deflection_m": 0.39945942246170935,
+        "peak_deflection_m": 0.6990154948705467,
+        "late60to120_mean_max_deflection_m": 0.23865190482569437,
+        "peak_extension_m": 0.34164484203978773,
+        "peak_tension_n": 9.735050201416016,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "107f079c2db3289dde6a8c438e34c5082f387feb37cb99d2ea17df8ff8a7a71f",
+        "trajectory_sha256": "4ddf62b9a74ae8409d50e27d76075c718f14f138eef5c4047820d34933e87cb5"
+      },
+      "horizontal_RMSE_reduction_percent": 9.172681615023503,
+      "mean_deflection_reduction_percent": 13.752963462768264,
+      "late_mean_deflection_reduction_percent": 14.237251672232464,
+      "peak_deflection_reduction_percent": 11.132440157084256
+    },
+    {
+      "backend": "mujoco",
+      "case": "track4_wind1",
+      "before10cm": {
+        "rmse_3d_h_xy_m": [
+          1.403834506427349,
+          0.10770152023039298,
+          1.3996970043463624
+        ],
+        "yaw_abs_max_deg": 0.19933129847049713,
+        "safe_completed": 1,
+        "rest_length_m": 7.900000095367432,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.37944440316365835,
+        "p95_max_deflection_m": 0.5434771811368523,
+        "peak_deflection_m": 0.5907552154950729,
+        "late60to120_mean_max_deflection_m": 0.4995951235567069,
+        "peak_extension_m": 0.6279567195562485,
+        "peak_tension_n": 4.298375606536865,
+        "startup_lead_m": 2.296314239501953,
+        "startup_lag_m": 3.3127601146698,
+        "result_sha256": "0c73bb627968fd0652a836d4af243086a386bde62a02f6302a330b573dbb1250",
+        "trajectory_sha256": "7d3dd96ed41d02f1098313c8d7f6f1b62aa278852511c15ae189b3bbf8c4163d"
+      },
+      "after5cm": {
+        "rmse_3d_h_xy_m": [
+          1.2845678404252832,
+          0.10634607650156612,
+          1.2801582123579875
+        ],
+        "yaw_abs_max_deg": 0.19700919091701508,
+        "safe_completed": 1,
+        "rest_length_m": 7.849999904632568,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.33448578525349043,
+        "p95_max_deflection_m": 0.48703751470298184,
+        "peak_deflection_m": 0.5414743712620114,
+        "late60to120_mean_max_deflection_m": 0.44429452422361226,
+        "peak_extension_m": 0.6276333007055239,
+        "peak_tension_n": 4.314805030822754,
+        "startup_lead_m": 2.1436767578125,
+        "startup_lag_m": 3.169184684753418,
+        "result_sha256": "8bfbea8839248784da433ed0eedf74020f398437be1df3d0efcae7f62031b510",
+        "trajectory_sha256": "d3e1b65dc6060a3d7a98578f312ad3d5b1b49155fa5cb3ff0bbbff7fce14cd66"
+      },
+      "horizontal_RMSE_reduction_percent": 8.540333487689189,
+      "mean_deflection_reduction_percent": 11.848538952036359,
+      "late_mean_deflection_reduction_percent": 11.069083088601783,
+      "peak_deflection_reduction_percent": 8.342007474578539
+    },
+    {
+      "backend": "px4",
+      "case": "hover_wind1",
+      "before10cm": {
+        "rmse_3d_h_xy_m": [
+          1.6820593164332565,
+          0.02974102144339209,
+          1.6817963656886101
+        ],
+        "yaw_abs_max_deg": 0.3903440378996714,
+        "safe_completed": 1,
+        "rest_length_m": 7.900000095367432,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.25907168573322065,
+        "p95_max_deflection_m": 0.39606250140043164,
+        "peak_deflection_m": 0.5178853629399954,
+        "late60to120_mean_max_deflection_m": 0.2352515980755083,
+        "peak_extension_m": 0.23644272090358065,
+        "peak_tension_n": 3.245053243772508,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "955d80ab22f841745ef673b6c773872fad478dfce44395eecb90a56f76275def",
+        "trajectory_sha256": "1aa5d0ca64452ec78931871c421b205f8beca29bd3bba02ba3ca611326f50313"
+      },
+      "after5cm": {
+        "rmse_3d_h_xy_m": [
+          1.468622666211675,
+          0.02734468065627482,
+          1.4683680751604806
+        ],
+        "yaw_abs_max_deg": 0.351613925672538,
+        "safe_completed": 1,
+        "rest_length_m": 7.849999904632568,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.224939470657531,
+        "p95_max_deflection_m": 0.3380911337071778,
+        "peak_deflection_m": 0.4435470445775756,
+        "late60to120_mean_max_deflection_m": 0.21208137865069643,
+        "peak_extension_m": 0.22116505337777248,
+        "peak_tension_n": 2.9775423188218197,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "35a3abfdbe08b2dc260754fed3226bc218e120ed1b0b38e9cae5d45247d7e970",
+        "trajectory_sha256": "4efbe8dc09971d478f971b367857164d933b9d9a629ff8133d64dadabd404d7d"
+      },
+      "horizontal_RMSE_reduction_percent": 12.690495406127333,
+      "mean_deflection_reduction_percent": 13.174814908502707,
+      "late_mean_deflection_reduction_percent": 9.849123072641131,
+      "peak_deflection_reduction_percent": 14.354203397525445
+    },
+    {
+      "backend": "px4",
+      "case": "hover_wind5",
+      "before10cm": {
+        "rmse_3d_h_xy_m": [
+          1.8485523353411508,
+          0.02421462122820136,
+          1.8483937320316786
+        ],
+        "yaw_abs_max_deg": 0.37889103782218697,
+        "safe_completed": 1,
+        "rest_length_m": 7.900000095367432,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.37139389514437454,
+        "p95_max_deflection_m": 0.5617426614898487,
+        "peak_deflection_m": 0.7865212686278873,
+        "late60to120_mean_max_deflection_m": 0.3769750591922458,
+        "peak_extension_m": 0.29608332647137914,
+        "peak_tension_n": 13.171482943628513,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "c5eab8b5a4c8a3051772d971d78faedd7e5a5dde2b60f900a2bc22566bb1b8c9",
+        "trajectory_sha256": "02f3e4325e19e9464244ed26362f5a6e760bf754e55f8b2c64a11c1a6b45da3c"
+      },
+      "after5cm": {
+        "rmse_3d_h_xy_m": [
+          1.733136775372942,
+          0.027620798086834847,
+          1.7329166666816862
+        ],
+        "yaw_abs_max_deg": 0.3391614850740139,
+        "safe_completed": 1,
+        "rest_length_m": 7.849999904632568,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.33416276731517097,
+        "p95_max_deflection_m": 0.5188524295974816,
+        "peak_deflection_m": 0.6978432715913286,
+        "late60to120_mean_max_deflection_m": 0.3402595035670254,
+        "peak_extension_m": 0.29930164141135407,
+        "peak_tension_n": 10.328463085337571,
+        "startup_lead_m": null,
+        "startup_lag_m": null,
+        "result_sha256": "38ad474dff8eb1833c02cc3f057c836813eccdf5ff7edaccfa5bc75ccbebb400",
+        "trajectory_sha256": "5835d8a794a09da4dc34d7b9aa7dac943bbf07f39ea6410d7b5068d5c43eb6d0"
+      },
+      "horizontal_RMSE_reduction_percent": 6.247427880155421,
+      "mean_deflection_reduction_percent": 10.02470108312643,
+      "late_mean_deflection_reduction_percent": 9.739518498622102,
+      "peak_deflection_reduction_percent": 11.274710624324303
+    },
+    {
+      "backend": "px4",
+      "case": "track4_wind1",
+      "before10cm": {
+        "rmse_3d_h_xy_m": [
+          2.184253523140828,
+          0.139212236366275,
+          2.179812699889378
+        ],
+        "yaw_abs_max_deg": 0.6920240368582957,
+        "safe_completed": 1,
+        "rest_length_m": 7.900000095367432,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.4237396101669723,
+        "p95_max_deflection_m": 0.687764216126876,
+        "peak_deflection_m": 0.7389737766628615,
+        "late60to120_mean_max_deflection_m": 0.5752317707416458,
+        "peak_extension_m": 0.7199357160034658,
+        "peak_tension_n": 4.879885618138859,
+        "startup_lead_m": 4.120938370915013,
+        "startup_lag_m": 3.202250365430822,
+        "result_sha256": "d89b3e8b4215916b8079cdb8b9fceca4e54b13115c06ddf64e6f09f169873ada",
+        "trajectory_sha256": "67ee794a1ea1c02fdf49a23066ce956b6f8aa26dc9ec149028a3792516943512"
+      },
+      "after5cm": {
+        "rmse_3d_h_xy_m": [
+          2.0738709558185193,
+          0.14083229993901705,
+          2.0690836147148586
+        ],
+        "yaw_abs_max_deg": 0.626224491521182,
+        "safe_completed": 1,
+        "rest_length_m": 7.849999904632568,
+        "initial_deflection_m": 4.440892098500626e-16,
+        "mean_max_deflection_m": 0.39520206020029014,
+        "p95_max_deflection_m": 0.6415745020132058,
+        "peak_deflection_m": 0.6919669788874611,
+        "late60to120_mean_max_deflection_m": 0.541206710489236,
+        "peak_extension_m": 0.6991949845681553,
+        "peak_tension_n": 4.7658014691711355,
+        "startup_lead_m": 4.01562339444952,
+        "startup_lag_m": 3.0569471399324204,
+        "result_sha256": "ee168dc02dc6f36aab268931945596db086848d2f55aa6e361ed803d57facd3b",
+        "trajectory_sha256": "142f5c0de75eaa4f067287661a5a126c85a2034d028d24472bf6ae9ac02f4578"
+      },
+      "horizontal_RMSE_reduction_percent": 5.07975227321773,
+      "mean_deflection_reduction_percent": 6.734690192270931,
+      "late_mean_deflection_reduction_percent": 5.915017560407232,
+      "peak_deflection_reduction_percent": 6.361091456814449
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "duration_s": 120,
+  "target_height_m": 5,
+  "wind_seed": 20683131,
+  "sensor_seed": 21683134,
+  "wind": {
+    "speed_min_mean_max_mps": [
+      4.500033413228275,
+      4.748961274349904,
+      4.9999302581341345
+    ],
+    "direction_min_max_deg": [
+      85.0000007271134,
+      94.9999992728866
+    ]
+  },
+  "identical_wind_and_initial_state": true,
+  "controller_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+  "safe_completed": 2,
+  "case_count": 2,
+  "runs": {
+    "p2": {
+      "safe_completed": true,
+      "audit_passed": true,
+      "rmse_3d_h_xy_m": [
+        1.0081681706770758,
+        0.055273479104859774,
+        1.0066518280289396
+      ],
+      "max_horizontal_error_m": 1.2569786943074832,
+      "tail30_horizontal_rmse_m": 1.02480212246881,
+      "tail30_horizontal_speed_rms_mps": 0.039971342659450355,
+      "tail30_xy_mean_m": [
+        -0.5757084356998544,
+        0.8433644674076762
+      ],
+      "max_abs_yaw_deg": 0.11496833257881657,
+      "max_tilt_deg": 2.7860465327045802,
+      "max_tether_tension_n": 3.062048518789998
+    },
+    "p2_p3": {
+      "safe_completed": true,
+      "audit_passed": true,
+      "rmse_3d_h_xy_m": [
+        0.9341416154371257,
+        0.061571154299283413,
+        0.932110267430703
+      ],
+      "max_horizontal_error_m": 1.0610200834747014,
+      "tail30_horizontal_rmse_m": 0.9565657202593267,
+      "tail30_horizontal_speed_rms_mps": 0.05793902336758728,
+      "tail30_xy_mean_m": [
+        -0.5188007699635175,
+        0.8011691123752457
+      ],
+      "max_abs_yaw_deg": 0.12172863152268422,
+      "max_tilt_deg": 3.794780865153779,
+      "max_tether_tension_n": 3.266233313337797
+    }
+  },
+  "transfer_archive_sha256": "45ec37df0c7934c6b4a9161f8c4a8a56b0790a5e0b26d038f23cadf7ee8b3249",
+  "vm_workspace": "/home/s/hover_bptt_px4/actor37_5m_narrow_20261109",
+  "formal_final_acceptance": false
+}

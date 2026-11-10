@@ -1,0 +1,37 @@
+{
+  "reference_wind_trace_sha256": "89b1ae4a9d7b5bdb93b838e546082a9c4896c276f8750aa07f7281781e15f71a",
+  "selected_case_indices": [
+    26,
+    30,
+    31
+  ],
+  "sample_hz": 100,
+  "duration_s": 120,
+  "gust_pulse_windows_s": [
+    [
+      10,
+      14
+    ],
+    [
+      30,
+      34
+    ],
+    [
+      50,
+      54
+    ],
+    [
+      70,
+      74
+    ],
+    [
+      90,
+      94
+    ],
+    [
+      110,
+      114
+    ]
+  ],
+  "maximum_selected_combined_wind_mps": 7.2687764167785645
+}

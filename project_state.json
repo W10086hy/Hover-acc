@@ -1,0 +1,387 @@
+{
+  "schema_version": 4,
+  "date": "2026-11-10",
+  "training_running": false,
+  "validation_running": false,
+  "formal_final_acceptance": false,
+  "active_route": "launch_acceleration_BPTT",
+  "cleanup_complete": true,
+  "active_execution_sessions": [],
+  "shared_environment": "../training_env",
+  "repository": "https://github.com/W10086hy/Hover-acc",
+  "rate_thrust_baseline_repository": "https://github.com/W10086hy/Hover-BPTT",
+  "targets": {
+    "weak_0_to_1mps_rmse_3d_m": 0.5,
+    "strong_base_5mps_rmse_3d_m": 1.5,
+    "duration_s": 120,
+    "every_case_required": true
+  },
+  "horizontal_targets": {
+    "base0_to1mps_rmse_xy_m": 0.5,
+    "base1_to5mps_rmse_xy_m": 1.5,
+    "duration_s": 30,
+    "per_case": true
+  },
+  "goal_achieved": true,
+  "final_acceptance_completed": false,
+  "iterations_stopped_by_user": false,
+  "latest_checkpoint": "P2/results/acceleration/training_transfer/latest.pt",
+  "latest_checkpoint_sha256": "134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782",
+  "launch_acceleration": {
+    "stage": "native_mujoco_development_complete",
+    "report": "P2/results/acceleration/README.md",
+    "comparison": "P2/results/acceleration/comparison.json",
+    "target_height_m": 5,
+    "physical_updates": 2,
+    "native_safe_completed": 8,
+    "native_count": 8,
+    "evaluation_duration_s": 120,
+    "p3_enabled": false,
+    "formal_final_acceptance": false
+  },
+  "p3_residual_checkpoint": "P3/results/actor37_5m/residual/best.pt",
+  "p3_residual_checkpoint_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+  "layout": {
+    "P2": "parameterized BPTT and shared code",
+    "P3": "structural model-error residual",
+    "mujoco_sim": "independent native-cable validation",
+    "cleanup": "cleanup records and integrity manifest",
+    "track": "Frozen P2/P3 moving-cart tether tracking in MuJoCo"
+  },
+  "status_files": [
+    "P2/status.json",
+    "P3/status.json",
+    "mujoco_sim/status.json",
+    "track/status.json"
+  ],
+  "progress_files": [
+    "P2/PROGRESS.md",
+    "P3/PROGRESS.md"
+  ],
+  "p2_final_metrics": {
+    "torch": "P2/results/flexible_continue30/replay120/metrics.json",
+    "mujoco": "mujoco_sim/results/flexible26_120/metrics.json"
+  },
+  "p3_results_report": "P3/results/actor37_5m/README.md",
+  "cleanup_report": "cleanup/README.md",
+  "cleanup_manifest": "cleanup/manifest.json",
+  "cleanup_verification": "cleanup/verification.json",
+  "historical_summary": "cleanup/history_20261101/history_summary.json",
+  "new_training_during_cleanup": false,
+  "new_simulation_during_cleanup": false,
+  "independent_final_acceptance": "not performed;reserved seeds not used",
+  "track_stage": "user_accepted_retained_single_case",
+  "track_protocol": "track/drift8/training_protocol_refine.json",
+  "track_report": "track/reports/height_speed_statistics.md",
+  "track_results": "track/drift8/step2/evaluation.json",
+  "track_visualization": "track/drift8/README.md",
+  "track_policy_updates": 3,
+  "track_residual_updates": 0,
+  "active_development_goal": null,
+  "height_speed_stage": "user_accepted_statistics_and_one_detailed_case",
+  "height_speed_protocol": "track/configs/height_speed_suite.json",
+  "height_speed_report": "track/reports/height_speed_statistics.md",
+  "uploaded_base_commit": "560e111d273952bf34176a4129c0ad86bb6709e5",
+  "gradient_running": false,
+  "height_speed_selected_checkpoint": "track/models/actor29.pt",
+  "height_speed_selected_checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "height_speed_selected_actor_updates": 29,
+  "height_speed_acceptance_thresholds": "User accepted the current development results;historical grading remains recorded",
+  "height_speed_user_accepted": true,
+  "height_speed_statistics": "track/reports/height_speed_statistics.json",
+  "height_speed_training_provenance": "track/models/actor29_provenance/training_manifest.json",
+  "track_previous_statistics": "track/reports/development_statistics.json",
+  "latest_cleanup": "cleanup/retention_px4_narrow_20261109.json",
+  "latest_cleanup_removed_files": 21,
+  "latest_cleanup_removed_bytes": 50714484,
+  "retained_tracking_detail_groups": 1,
+  "tracking_statistic_cases": 16,
+  "new_experiment_run_during_latest_cleanup": false,
+  "p3_flexible_stage": "actor37_5m_residual_fit_and_native_px4_development_complete",
+  "stable_retest": {
+    "base_commit": "cfa262b7278967b6d2d923117c99a8895a1452ae",
+    "stage": "P3_then_native_and_PX4_120s_complete",
+    "actor": "track/models/actor29.pt",
+    "actor_updates": 0,
+    "residual": "P3/retest8/residual/best.pt",
+    "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+    "residual_fit_s": 4.7465593,
+    "EA_n": 49,
+    "height_m": 8,
+    "native_safe_completed": 3,
+    "native_count": 3,
+    "report": "stable_retest/README.md",
+    "offboard_code": "px4_offboard",
+    "new_P2_training": false,
+    "safe_completed": 6,
+    "count": 6,
+    "formal_final_acceptance": false,
+    "evaluation": "stable_retest/evaluation.json",
+    "statistics": "stable_retest/statistics.csv",
+    "verification": "stable_retest/verification.json"
+  },
+  "tether_slack_test": {
+    "stage": "complete",
+    "height_m": 8,
+    "old_slack_m": 0.1,
+    "new_slack_m": 0.05,
+    "rest_length_m": 7.85,
+    "EA_n": 49,
+    "actor_updates": 0,
+    "residual_updates": 0,
+    "count": 6,
+    "safe_completed": 6,
+    "assets": "stable_retest/slack5cm/assets",
+    "report": "stable_retest/slack5cm/README.md",
+    "evaluation": "stable_retest/slack5cm/evaluation.json",
+    "comparison": "stable_retest/slack5cm/comparison.json",
+    "controller_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+    "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+    "formal_final_acceptance": false
+  },
+  "steady_wind_validation": {
+    "stage": "complete",
+    "height_m": 8,
+    "attachments_cm": [
+      5,
+      10
+    ],
+    "slack_m": 0.05,
+    "wind_profile": "steady",
+    "wind_toward_deg": 90,
+    "wind_speeds_mps": [
+      1,
+      5
+    ],
+    "cart_speeds_mps": [
+      0,
+      4
+    ],
+    "duration_s": 120,
+    "count": 12,
+    "policy_updates": 0,
+    "residual_updates": 0,
+    "folder": "stable_retest/steady",
+    "native_count": 6,
+    "native_safe_completed": 6,
+    "date": "2026-11-03",
+    "safe_completed": 12,
+    "report": "stable_retest/steady/README.md",
+    "evaluation": "stable_retest/steady/evaluation.json",
+    "statistics": "stable_retest/steady/statistics.csv",
+    "verification": "stable_retest/steady/verification.json",
+    "formal_final_acceptance": false,
+    "actor_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+    "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+    "PX4_yaw_max_deg": 0.5129451734033614
+  },
+  "drift8_stage": "two_local_BPTT_updates_native_and_PX4_development_complete",
+  "drift8_training": "track/drift8/step2",
+  "gradient_verification_running": false,
+  "drift8": {
+    "report": "track/drift8/README.md",
+    "base_actor": "track/models/actor29.pt",
+    "best_local_candidate": "track/drift8/step2/latest.pt",
+    "best_local_candidate_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+    "residual_checkpoint": "P3/retest8/residual/best.pt",
+    "actor_updates": 2,
+    "residual_updates": 0,
+    "objective_s": 30,
+    "credit_s": 30,
+    "recompute_s": 1,
+    "device": "RTX 3060 CUDA",
+    "evaluation_duration_s": 120,
+    "steady_wind_toward_deg": 90,
+    "native_attachments_cm": [
+      5,
+      10
+    ],
+    "px4_attachment_cm": 5,
+    "native_safe_completed": 12,
+    "native_count": 12,
+    "px4_safe_completed": 4,
+    "px4_count": 4,
+    "original_native_late30_xy_rmse_m": 1.4299540729056721,
+    "candidate_native_late30_xy_rmse_m": 1.3502862058026461,
+    "formal_final_acceptance": false,
+    "default_actor": "track/models/actor29.pt",
+    "hover_replays": {
+      "count": 6,
+      "actor": "Actor31",
+      "duration_s": 120.0,
+      "playback_speed": 6,
+      "px4_weak_wind_supplement": "track/drift8/step2/px4_arm5/hover_wind1_summary.json",
+      "additional_px4_safe_completed": 1,
+      "policy_updates": 0,
+      "residual_updates": 0
+    },
+    "actor30_historical_statistics": "track/drift8/history.json"
+  },
+  "latest_retention": {
+    "status": "complete",
+    "actor": "Actor37",
+    "native_cases": 64,
+    "attitude_gifs": 6,
+    "manifest": "cleanup/retention_20261109.json",
+    "historical_actor31_report": "track/drift8/README.md"
+  },
+  "domain_randomization_stage": "P2_update_finished",
+  "domain_randomization_output": "P2/results/stationarity/step10_position",
+  "domain_randomization": {
+    "stage": "historical_statistics_only",
+    "record": "P2/results/history/development_statistics_20261109.json"
+  },
+  "domain_recovery": {
+    "stage": "historical_statistics_only",
+    "record": "P2/results/history/development_statistics_20261109.json"
+  },
+  "stationarity_goal": {
+    "stage": "actor37_representative_development_complete",
+    "goal_achieved": true,
+    "selected_checkpoint": "P2/results/stationarity/selected37/latest.pt",
+    "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "cumulative_physical_updates": 37,
+    "report": "P2/results/stationarity/FINAL37.md",
+    "metrics": "P2/results/stationarity/latest_metrics.json",
+    "completion_audit": "P2/results/stationarity/retained_verification.json",
+    "native_count": 32,
+    "native_safe": 32,
+    "strong_stationary": 16,
+    "strong_count": 16,
+    "future_continuation_protocol": "P2/continue_actor37.json",
+    "next_protocol": null,
+    "credit_s": 30,
+    "causal_prefix_s": 90,
+    "recompute_s": 1,
+    "cohort_threads": 2,
+    "training_running": false,
+    "validation_running": false,
+    "formal_final_acceptance": false,
+    "attitude_replays": {
+      "report": "P2/results/stationarity/replay_attitude37/README.md",
+      "strong": "P2/results/stationarity/replay_attitude37/strong120.gif",
+      "weak": "P2/results/stationarity/replay_attitude37/weak120.gif"
+    },
+    "historical_statistics": "P2/results/history/development_statistics_20261109.json"
+  },
+  "stationarity_parallel_threads": 2,
+  "stationarity_parallel_protocol": "P2/stationarity_parallel_protocol.json",
+  "regression_checks_running": false,
+  "media_export_running": false,
+  "time_varying37": {
+    "stage": "complete",
+    "report": "P2/results/time_varying37/README.md",
+    "verification": "P2/results/time_varying37/verification.json",
+    "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "duration_s": 120,
+    "count": 32,
+    "safe_completed": 32,
+    "summary": {
+      "count": 32,
+      "safe_completed": 32,
+      "rmse_3d_h_xy_m": [
+        0.6042512074713048,
+        0.1323594986304544,
+        0.5895765301068425
+      ],
+      "peak_wind_mps": 8.163397789001465
+    },
+    "profiles": {
+      "time_varying": {
+        "count": 16,
+        "safe_completed": 16,
+        "rmse_3d_h_xy_m": [
+          0.6000841416827709,
+          0.13204284818615072,
+          0.5853765141701852
+        ],
+        "peak_wind_mps": 6.000000476837158
+      },
+      "combined": {
+        "count": 16,
+        "safe_completed": 16,
+        "rmse_3d_h_xy_m": [
+          0.6083897322949426,
+          0.13267539334141681,
+          0.5937468369293536
+        ],
+        "peak_wind_mps": 8.163397789001465
+      }
+    },
+    "seed_pairs": [
+      [
+        20681101,
+        20681102
+      ],
+      [
+        20681121,
+        20681122
+      ]
+    ],
+    "training_running": false,
+    "validation_running": false,
+    "media_export_running": false,
+    "new_training": false,
+    "evaluation_sessions": {},
+    "media_sessions": {},
+    "formal_final_acceptance": false
+  },
+  "goal_achieved_scope": "Launch-frame acceleration implementation, BPTT and paired native MuJoCo development validation",
+  "actor37_p3_pair": {
+    "stage": "actor37_5m_residual_fit_and_native_px4_development_complete",
+    "target_height_m": 5,
+    "policy_updates": 0,
+    "duration_s": 120,
+    "residual_checkpoint": "P3/results/actor37_5m/residual/best.pt",
+    "native_comparison": "P3/results/actor37_5m/comparison_mujoco/summary.json",
+    "px4_comparison": "px4_offboard/actor37_5m/history/wide_wind/comparison.json",
+    "deployment": "px4_offboard/actor37_5m/deployment.json",
+    "native_safe": 8,
+    "native_count": 8,
+    "px4_safe": 4,
+    "px4_count": 4,
+    "formal_final_acceptance": false
+  },
+  "latest_px4_validation": {
+    "report": "px4_offboard/stock_transfer/height_reference/README.md",
+    "comparison": "px4_offboard/stock_transfer/height_reference/comparison.json",
+    "duration_s": 15,
+    "safe_completed": 2,
+    "count": 2,
+    "policy_updates": 0,
+    "residual_updates": 0
+  },
+  "stock_px4_transfer": {
+    "stage": "stock_px4_takeoff_reference_validated",
+    "checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+    "checkpoint_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+    "parent_actor37_unchanged": true,
+    "p3_checkpoint_unchanged": true,
+    "p3_default_enabled": false,
+    "comparison": "px4_offboard/stock_transfer/height_reference/comparison.json",
+    "report": "P2/results/px4_transfer/README.md",
+    "replay": "px4_offboard/stock_transfer/height_reference/site1036/replay/flight.gif",
+    "duration_s": 15,
+    "simulated_motor_tau_s": 0.045,
+    "command_filter_s": 0.065,
+    "case_safe_counts": {
+      "stock_p2": 2
+    },
+    "formal_final_acceptance": false,
+    "hardware_validation": false,
+    "training_running": false,
+    "validation_running": false,
+    "latest_trained_checkpoint": "P2/results/px4_transfer/update3/candidate.pt",
+    "latest_trained_selected_for_use": false,
+    "historical_statistics": "px4_offboard/stock_transfer/history_statistics.json"
+  },
+  "actor37_px4_narrow_wind_baseline": {
+    "report": "px4_offboard/actor37_5m/narrow_wind/README.md",
+    "comparison": "px4_offboard/actor37_5m/narrow_wind/comparison.json",
+    "duration_s": 120,
+    "safe_completed": 2,
+    "count": 2,
+    "policy_updates": 0,
+    "residual_updates": 0
+  }
+}

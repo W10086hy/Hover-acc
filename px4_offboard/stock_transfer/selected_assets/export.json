@@ -1,0 +1,10 @@
+{
+  "actor_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+  "actor_parity_max_error": 1.1920928955078125e-07,
+  "assets": {
+    "initial.npz": "9b4aaf76a40fb6e555aab22ba859a0de8f0b76a422d5e6c10795e26380640107",
+    "model.xml": "829983b2e1657e2bf185469ef965f5fde879ca4ac7310d34e982d70d96896642",
+    "config.json": "f970e76b8c7584cfc6725e463ab5242f02b6f73bec54cbd556254c902c008416",
+    "weights.npz": "b6ca3584430e5af7ef33866f7663cd83fe8d68954252eefb179d4a5a0bc69ae4"
+  }
+}

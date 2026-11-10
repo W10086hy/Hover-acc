@@ -1,0 +1,126 @@
+{
+  "schema_version": 6,
+  "date": "2026-11-10",
+  "stage": "launch_acceleration_development_complete",
+  "route": "launch_acceleration_BPTT",
+  "checkpoint": "P2/results/acceleration/training_transfer/latest.pt",
+  "checkpoint_sha256": "134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782",
+  "cumulative_physical_updates": 2,
+  "optimizer_preserved": true,
+  "training_running": false,
+  "validation_running": false,
+  "formal_final_acceptance": false,
+  "launch_acceleration": {
+    "protocol": "P2/acceleration_protocol.json",
+    "report": "P2/results/acceleration/README.md",
+    "comparison": "P2/results/acceleration/comparison.json",
+    "target_height_m": 5,
+    "evaluation_duration_s": 120,
+    "native_safe_completed": 8,
+    "native_count": 8,
+    "weak_3d_rmse_exceedances": 2,
+    "strong_3d_rmse_exceedances": 0,
+    "px4_validated": false
+  },
+  "stationarity": {
+    "stage": "actor37_representative_development_complete",
+    "goal_achieved": true,
+    "selected_checkpoint": "P2/results/stationarity/selected37/latest.pt",
+    "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "cumulative_physical_updates": 37,
+    "report": "P2/results/stationarity/FINAL37.md",
+    "metrics": "P2/results/stationarity/latest_metrics.json",
+    "completion_audit": "P2/results/stationarity/retained_verification.json",
+    "native_count": 32,
+    "native_safe": 32,
+    "strong_stationary": 16,
+    "strong_count": 16,
+    "future_continuation_protocol": "P2/continue_actor37.json",
+    "next_protocol": null,
+    "credit_s": 30,
+    "causal_prefix_s": 90,
+    "recompute_s": 1,
+    "cohort_threads": 2,
+    "training_running": false,
+    "validation_running": false,
+    "formal_final_acceptance": false,
+    "attitude_replays": {
+      "report": "P2/results/stationarity/replay_attitude37/README.md",
+      "strong": "P2/results/stationarity/replay_attitude37/strong120.gif",
+      "weak": "P2/results/stationarity/replay_attitude37/weak120.gif"
+    },
+    "historical_statistics": "P2/results/history/development_statistics_20261109.json"
+  },
+  "time_varying37": {
+    "stage": "complete",
+    "report": "P2/results/time_varying37/README.md",
+    "verification": "P2/results/time_varying37/verification.json",
+    "checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "duration_s": 120,
+    "count": 32,
+    "safe_completed": 32,
+    "summary": {
+      "count": 32,
+      "safe_completed": 32,
+      "rmse_3d_h_xy_m": [
+        0.6042512074713048,
+        0.1323594986304544,
+        0.5895765301068425
+      ],
+      "peak_wind_mps": 8.163397789001465
+    },
+    "profiles": {
+      "time_varying": {
+        "count": 16,
+        "safe_completed": 16,
+        "rmse_3d_h_xy_m": [
+          0.6000841416827709,
+          0.13204284818615072,
+          0.5853765141701852
+        ],
+        "peak_wind_mps": 6.000000476837158
+      },
+      "combined": {
+        "count": 16,
+        "safe_completed": 16,
+        "rmse_3d_h_xy_m": [
+          0.6083897322949426,
+          0.13267539334141681,
+          0.5937468369293536
+        ],
+        "peak_wind_mps": 8.163397789001465
+      }
+    },
+    "seed_pairs": [
+      [
+        20681101,
+        20681102
+      ],
+      [
+        20681121,
+        20681122
+      ]
+    ],
+    "training_running": false,
+    "validation_running": false,
+    "media_export_running": false,
+    "new_training": false,
+    "evaluation_sessions": {},
+    "media_sessions": {},
+    "formal_final_acceptance": false
+  },
+  "historical_frozen26": {
+    "checkpoint": "P2/results/flexible_continue30/step4/latest.pt",
+    "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+    "cumulative_physical_updates": 26,
+    "torch_metrics": "P2/results/flexible_continue30/replay120/metrics.json",
+    "mujoco_metrics": "mujoco_sim/results/flexible26_120/metrics.json",
+    "state_wind_seeds": [
+      20269781,
+      20269782
+    ]
+  },
+  "historical_randomization_statistics": "P2/results/history/development_statistics_20261109.json",
+  "model_registry": "P2/models.json",
+  "evaluation_duration_s": 120
+}

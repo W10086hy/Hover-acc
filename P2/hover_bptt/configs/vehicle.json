@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "model_status": "legacy_active_plant_with_unilateral_tether_extension",
+  "airframe": {
+    "mass_kg": 2.3,
+    "gravity_mps2": 9.8,
+    "wing_install_deg": 34,
+    "rotor_tilt_deg": 0,
+    "rotor_dx_m": 0.12,
+    "rotor_dy_m": 0.12,
+    "span_m": 0.902,
+    "chord_m": 0.15,
+    "area_m2": 0.09,
+    "air_density_kgm3": 1.22,
+    "inertia_body_kgm2": [
+      0.0126,
+      0.0055,
+      0.0158
+    ]
+  },
+  "actuators": {
+    "kf": 0.00002009,
+    "km": 5.732e-7,
+    "motor_speed_polynomial": [
+      -387.3,
+      1269,
+      -32.5
+    ],
+    "motor_deadzone": 0,
+    "motor_tau_s": 0.002,
+    "servo_tau_s": 0.02,
+    "servo_limit_deg": 20,
+    "servo_rate_radps": 8.7266,
+    "throttle_rate_per_s": 3,
+    "include_gyro": true
+  },
+  "aero": {
+    "enabled": false,
+    "c0": 0.5,
+    "c1": 2.4,
+    "c2": 13,
+    "c3": 3.3,
+    "alpha0_deg": 3,
+    "k_l": 38,
+    "k_d": 48,
+    "cm_alpha": -1.5853052918734383,
+    "cm_zero": -0.002360902255639088,
+    "cl_delta_e": 0,
+    "cd_delta_e": 0,
+    "cm_delta_e": 0,
+    "cl_delta_a": 0,
+    "cn_delta_a": 0,
+    "cy_beta": -0.224,
+    "cl_beta": -0.0849,
+    "cn_beta": 0.0283,
+    "cl_p": -0.404,
+    "cm_q": -1.3,
+    "cn_r": -0.12,
+    "body_drag_n_per_mps2": [
+      0.055,
+      0.055,
+      0.055
+    ],
+    "body_rate_drag": [
+      0.0035,
+      0.0039,
+      0.0034
+    ],
+    "cm_fit_range_deg": [
+      -8,
+      8
+    ],
+    "mode": "legacy_post_stall",
+    "angle_regularization_mps": 0.3,
+    "test_override": {
+      "wing_force_and_moment_enabled": false,
+      "body_force": "-D*v_rel_body*abs(v_rel_body), applied atCG",
+      "body_moment": "-D_rate*omega_body",
+      "coefficients_are_unmeasured_config_assumptions": true
+    }
+  },
+  "tether": {
+    "enabled": true,
+    "anchor_w_m": [
+      0,
+      0,
+      0
+    ],
+    "attachment_b_m": [
+      0,
+      0,
+      0
+    ],
+    "rest_length_m": 4.95,
+    "stiffness_npm": 10,
+    "damping_nspm": 2
+  },
+  "power": {
+    "status": "uncalibrated_electrical_proxy",
+    "efficiency": 0.75,
+    "motor_idle_w": 0.5,
+    "rotor_inertia_kgm2": 0.0000088493,
+    "servo_hold_w": 0.2,
+    "servo_rate_w_per_radps": 0.05
+  },
+  "simulation": {
+    "physics_dt_s": 0.002,
+    "control_dt_s": 0.01,
+    "log_dt_s": 0.02,
+    "duration_s": 20,
+    "target_w_m": [
+      0,
+      0,
+      -5
+    ]
+  },
+  "controller": {
+    "position_kp": [
+      3,
+      3,
+      4
+    ],
+    "velocity_kd": [
+      3.2,
+      3.2,
+      3.5
+    ],
+    "position_ki": [
+      0.8,
+      0.8,
+      1.2
+    ],
+    "position_integral_limit": 4,
+    "attitude_kp": [
+      80,
+      80,
+      65
+    ],
+    "rate_kd": [
+      18,
+      18,
+      16
+    ],
+    "attitude_ki": [
+      30,
+      30,
+      25
+    ],
+    "attitude_integral_limit": 1.5,
+    "max_tilt_deg": 40,
+    "max_horizontal_accel": 6,
+    "max_vertical_accel": 4
+  },
+  "evaluation": {
+    "threshold_status": "provisional_numerical_acceptance_not_hardware_limits",
+    "max_position_error_m": 0.8,
+    "max_velocity_mps": 3,
+    "max_tilt_deg": 45,
+    "max_body_rate_radps": 4,
+    "max_tension_n": 40,
+    "max_saturation_fraction": 0.05,
+    "max_settled_position_rmse_m": 0.3
+  },
+  "provenance": {
+    "vehicle_parameters": "Constants imported earlier from the RflyTower LW_noaileron MATLAB/Simulink model;measured hardware validation is pending.",
+    "cm_table": "Retained numerical interpolation table in configs/cm_table.json;physical wing loads are disabled by model.py.",
+    "body_drag": "Quadratic body drag coefficients [0.055,0.055,0.055] N/(m/s)^2;nominal simulated values,not measured.",
+    "tether": "Pull-only elastic massless straight tether;stiffness10N/m,damping2;body-fixed5/10cm points and rest lengths4.90/4.85m configured by environment.py;no sag model.",
+    "controller": "GRU rate/thrust references followed by heading hold,body-rate PI,RPM-derived thrust PI,and allocation;no horizontal truth controller.",
+    "numerics": "Rigid-body RK4,first-order motor dynamics;CUDA forward/VJP graph used for BPTT.",
+    "scope": "Local numerical simulation only;no hardware I/O."
+  },
+  "model_family": "c1_hover_noaileron"
+}

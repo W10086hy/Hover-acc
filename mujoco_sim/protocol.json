@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "purpose": "Frozen P2/P3 cross-engine development validation; no training",
+  "policy_checkpoint": "P2/tests/fixtures/conditioned21.pt",
+  "residual_checkpoint": "P3/tests/fixtures/residual21.pt",
+  "duration_s": 30,
+  "control_dt_s": 0.01,
+  "physics_dt_s": 0.0005,
+  "convergence_physics_dt_s": 0.00025,
+  "seed_pairs": [[20268681,20268682],[20268781,20268782]],
+  "directions_deg": [22.5,67.5,112.5,157.5,202.5,247.5,292.5,337.5],
+  "cohorts": [
+    {"name":"p2_nominal","actual_scales":{},"nominal_scales":{},"drag_scale":1,"residual":false},
+    {"name":"p2_calibrated","actual_scales":{"mass":1.025,"inertia":1.025,"motor_tau":1.025},"nominal_scales":{"mass":1.025,"inertia":1.025,"motor_tau":1.025},"drag_scale":1,"residual":false},
+    {"name":"p2_mismatch","actual_scales":{"mass":1.03,"inertia":1.02,"motor_tau":0.85},"nominal_scales":{},"drag_scale":0.9,"residual":false},
+    {"name":"p3_compensated","actual_scales":{"mass":1.03,"inertia":1.02,"motor_tau":0.85},"nominal_scales":{},"drag_scale":0.9,"residual":true}
+  ],
+  "convergence_max_3d_rmse_change_m": 0.02,
+  "convergence_max_yaw_change_deg": 0.1,
+  "final_acceptance": false,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "wind": "P2 WindField; 1m/s steady or base5m/s combined,2s calm then2s ramp; combined amplitude20%/30s,direction±30deg/45s,4s gust every20s from10s,OU tau1.5s scales[0.1,0.1,0.04]*base",
+  "failure_penalty": "first failed sample actual; remaining horizon horizontal6m/height4m",
+  "scope": "Same force laws and idealized sensors; independent rigid-body integration. No wing, sag, ground-contact test, online learning or hardware validation."
+}

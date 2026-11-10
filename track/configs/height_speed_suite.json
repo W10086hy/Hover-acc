@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-02",
+  "base_commit": "560e111d273952bf34176a4129c0ad86bb6709e5",
+  "heights_m": [
+    10,
+    20
+  ],
+  "cart_speeds_mps": [
+    0,
+    4,
+    5,
+    6
+  ],
+  "attachment_cm": [
+    5,
+    10
+  ],
+  "duration_s": 120,
+  "wind_peak_mps": 1.0,
+  "wind_mean_direction_deg": 90.0,
+  "evaluation_world_speed_limit_mps": 7.0,
+  "evaluation_horizontal_radius_m": 6.0,
+  "wind_normalization_horizon_s": 120.0,
+  "startup": {
+    "aircraft_and_cable_initial_velocity_zero": true,
+    "hold_s": 5.0,
+    "cart_half_cosine_ramp_s_per_mps": 2.0
+  },
+  "development_seed_pair": [
+    20272681,
+    20272682
+  ],
+  "independent_check_seed_pair": [
+    20272781,
+    20272782
+  ],
+  "training_seed_pair": [
+    20272801,
+    20272802
+  ],
+  "criteria": {
+    "hover_horizontal_rmse_m": 0.53,
+    "moving_horizontal_rmse_m": 1.5,
+    "height_rmse_m": 0.3,
+    "all_cases_safe": true,
+    "source": "provisional moderate criteria;user may override"
+  },
+  "stage_order": [
+    "height10_hover",
+    "height10_speed4",
+    "height10_speed5",
+    "height10_speed6",
+    "height20_hover",
+    "height20_speed4",
+    "height20_speed5",
+    "height20_speed6"
+  ],
+  "training": {
+    "enabled_if_needed": true,
+    "route": "thrust_body_rate_BPTT",
+    "objective_s": 30,
+    "credit_s": 10,
+    "recompute_s": 1,
+    "device_preference": "cuda",
+    "timing_must_be_measured_and_reported_before_updates": true
+  },
+  "baseline_actor": "P2/results/flexible_continue30/step4/latest.pt",
+  "baseline_residual": "P3/results/flexible26_structural/residual/best.pt",
+  "original5m_results_must_not_be_overwritten": true,
+  "final_engine": "MuJoCo"
+}

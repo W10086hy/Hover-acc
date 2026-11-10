@@ -1,0 +1,27 @@
+{
+  "vm_workspace": "/home/s/hover_bptt_px4/actor37_5m_20261109",
+  "deployment_archive_sha256": "c631b0f71beb34adf781860403c635628749c38ca6f27a754f836bc03caddea3",
+  "retrieved_archive_sha256": "878eec41240db3cec7756e7ee569470d5cdc1ca7ab62b2723ff1387786ce875d",
+  "verified_member_sha256": {
+    "px4_offboard/actor37_5m/assets/config.json": "c8e3b966031d6b94952984440b1145a395dfc15f6e8366aa64327d08fe5b557d",
+    "px4_offboard/actor37_5m/assets/initial.npz": "9b4aaf76a40fb6e555aab22ba859a0de8f0b76a422d5e6c10795e26380640107",
+    "px4_offboard/actor37_5m/assets/model.xml": "829983b2e1657e2bf185469ef965f5fde879ca4ac7310d34e982d70d96896642",
+    "px4_offboard/actor37_5m/assets/weights.npz": "4d6ae8c82fd62c2da13aff0b7908693466e96068fbd424f8f21aa2514e929563",
+    "px4_offboard/__init__.py": "f5da387f43885a4688b9e6b4c8c94854e1b1273f2a0720b1e09bf879b3b2fcda",
+    "px4_offboard/audit.py": "bae13a25be627d3f189068bdb23b9b03a52a6f7ed4c0f5d87c1bc8b198f5fce0",
+    "px4_offboard/control.py": "cfe5b1de384996ce11f024e1dc6ca3ce41e8ddb1f7a316a98fa1d32a02d41c0b",
+    "px4_offboard/network.py": "3f42f20377fd8906b72e42af11a2294c632828616091e6785cc4c161f1c0f077",
+    "px4_offboard/offboard.py": "1c5f1b7f992f6e75708dbae6dcaccd4e21bcd416839370d7fad0e1fbabe79220",
+    "px4_offboard/physics.py": "96003f44922014d951129fb4c6628a953f6db252b4f3424c9e7cb04cf15d7ae9",
+    "px4_offboard/px4_startup.py": "779fb1b402227f8928a7626166807b24dd415deabb17f4677c64a168cca87a08",
+    "px4_offboard/run.py": "e9431302ee9be4930575a7f4c5f1838eba86b3f9fec97a770b2d2f3f98488d3e",
+    "px4_offboard/wind.py": "86adb07ccfb24a4d672bbed0b0f2af5b1fcfc06987a26d4dae3a3ec4de221b5f",
+    "px4_offboard/run_pair_suite.sh": "4e486411fd25df90248c9ff0f5689ab87e0ada4f45cb0cee8033aa0ee26ccc80",
+    "P2/results/stationarity/selected37/latest.pt": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "P3/actor37_5m_protocol.json": "55f844eea0037c76ce78b0aeaadc1e596f114c193970a22835cee9c358ec85e6",
+    "P3/results/actor37_5m/residual/best.pt": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+    "P3/results/actor37_5m/residual/training_summary.json": "dba198dd6678136a3ac940d266b61ded9fbc0153eacaedea0aabdf700577c33a",
+    "P3/results/actor37_5m/prediction/summary.json": "040ab9618ab42ee388b648282d515faec93a5578d61cf833b48ba1bf0018c762"
+  },
+  "validation": "px4_offboard/actor37_5m/history/wide_wind/comparison.json"
+}

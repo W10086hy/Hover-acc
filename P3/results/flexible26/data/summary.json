@@ -1,0 +1,671 @@
+{
+  "completed": true,
+  "groups": [
+    {
+      "group": {
+        "name": "matched",
+        "seed": 20681001,
+        "directions_deg": [
+          0
+        ],
+        "actual_scales": {},
+        "nominal_scales": {},
+        "actual_drag_scale": 1,
+        "nominal_arm_cm": "matched",
+        "duration_s": 15
+      },
+      "count": 4,
+      "safe_completed": 4,
+      "duration_s": 15,
+      "seed_pair": [
+        20681001,
+        20681002
+      ],
+      "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "policy_updates": 0,
+      "rmse_3d_h_xy_m": [
+        0.5200520735168694,
+        0.06723970637865574,
+        0.5156869021560538
+      ],
+      "safe_duration_s": [
+        15.0,
+        15.0,
+        15.0,
+        15.0
+      ],
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.7998001575469971,
+          "actual_rms_wind_mps": 0.8818124532699585,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.752774715423584,
+          "actual_rms_wind_mps": 5.26043701171875,
+          "actual_peak_wind_mps": 6.904669761657715
+        },
+        {
+          "actual_mean_wind_mps": 0.7998001575469971,
+          "actual_rms_wind_mps": 0.8818124532699585,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.758049964904785,
+          "actual_rms_wind_mps": 5.276426315307617,
+          "actual_peak_wind_mps": 6.980865478515625
+        }
+      ],
+      "maximum_absolute_wrench_target": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "wall_s": 52.70599729998503,
+      "split": "train",
+      "data_sha256": "5a799c81372b176fd0bb1bd16f881e94a5b841f5854f6fe8e565715d3bf266b9"
+    },
+    {
+      "group": {
+        "name": "heavy_slow",
+        "seed": 20681101,
+        "directions_deg": [
+          0,
+          90
+        ],
+        "actual_scales": {
+          "mass": 1.05,
+          "inertia": 0.95,
+          "motor_tau": 1.3
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 1.15,
+        "nominal_arm_cm": 5,
+        "duration_s": 30
+      },
+      "count": 8,
+      "safe_completed": 8,
+      "duration_s": 30,
+      "seed_pair": [
+        20681101,
+        20681102
+      ],
+      "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "policy_updates": 0,
+      "rmse_3d_h_xy_m": [
+        0.8944100543789905,
+        0.08325782144307098,
+        0.890526518719562
+      ],
+      "safe_duration_s": [
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0
+      ],
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.400644779205322,
+          "actual_rms_wind_mps": 4.702657699584961,
+          "actual_peak_wind_mps": 6.937673091888428
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.320701599121094,
+          "actual_rms_wind_mps": 4.608604431152344,
+          "actual_peak_wind_mps": 7.058798313140869
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.558534145355225,
+          "actual_rms_wind_mps": 4.843216896057129,
+          "actual_peak_wind_mps": 6.89268684387207
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.495278835296631,
+          "actual_rms_wind_mps": 4.786113739013672,
+          "actual_peak_wind_mps": 7.036942481994629
+        }
+      ],
+      "maximum_absolute_wrench_target": [
+        0.986026406288147,
+        2.2658193111419678,
+        4.4725542068481445,
+        0.05117952078580856,
+        0.02859862893819809,
+        0.00021432092762552202
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.415,
+        "inertia_body_kgm2": [
+          0.01197,
+          0.005225,
+          0.01501
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0026000000000000003,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "wall_s": 104.50998690002598,
+      "split": "train",
+      "data_sha256": "3249e4778d219155a285281ef621b6674b6b1c3bb95cf246ba6a28028678f41c"
+    },
+    {
+      "group": {
+        "name": "light_fast",
+        "seed": 20681201,
+        "directions_deg": [
+          180,
+          270
+        ],
+        "actual_scales": {
+          "mass": 0.95,
+          "inertia": 1.05,
+          "motor_tau": 0.7
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 0.85,
+        "nominal_arm_cm": 5,
+        "duration_s": 30
+      },
+      "count": 8,
+      "safe_completed": 8,
+      "duration_s": 30,
+      "seed_pair": [
+        20681201,
+        20681202
+      ],
+      "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "policy_updates": 0,
+      "rmse_3d_h_xy_m": [
+        0.5881025411653978,
+        0.07659722587815726,
+        0.5830930148037867
+      ],
+      "safe_duration_s": [
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0
+      ],
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.424570560455322,
+          "actual_rms_wind_mps": 4.738819122314453,
+          "actual_peak_wind_mps": 7.153083324432373
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.350734233856201,
+          "actual_rms_wind_mps": 4.659438133239746,
+          "actual_peak_wind_mps": 7.390623092651367
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.374545574188232,
+          "actual_rms_wind_mps": 4.646604537963867,
+          "actual_peak_wind_mps": 6.753183841705322
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.299458026885986,
+          "actual_rms_wind_mps": 4.628571510314941,
+          "actual_peak_wind_mps": 7.226215839385986
+        }
+      ],
+      "maximum_absolute_wrench_target": [
+        1.2033047676086426,
+        1.3620753288269043,
+        6.725228786468506,
+        0.030101710930466652,
+        0.04413565620779991,
+        0.0004772504616994411
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.1849999999999996,
+        "inertia_body_kgm2": [
+          0.01323,
+          0.005775,
+          0.016590000000000004
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0014,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "wall_s": 109.1147115000058,
+      "split": "train",
+      "data_sha256": "9e193f77a3a60bdf613c914e5949bfda472297a66e7dbaa59696f6519168c91f"
+    },
+    {
+      "group": {
+        "name": "intermediate",
+        "seed": 20271081,
+        "directions_deg": [
+          45,
+          225
+        ],
+        "actual_scales": {
+          "mass": 1.025,
+          "inertia": 0.975,
+          "motor_tau": 1.15
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 1.075,
+        "nominal_arm_cm": 5,
+        "duration_s": 30
+      },
+      "count": 8,
+      "safe_completed": 8,
+      "duration_s": 30,
+      "seed_pair": [
+        20271081,
+        20271082
+      ],
+      "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "policy_updates": 0,
+      "rmse_3d_h_xy_m": [
+        0.9629643968004203,
+        0.08187500593068338,
+        0.9594774165706289
+      ],
+      "safe_duration_s": [
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0
+      ],
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.375219345092773,
+          "actual_rms_wind_mps": 4.6819167137146,
+          "actual_peak_wind_mps": 6.870265960693359
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.255930423736572,
+          "actual_rms_wind_mps": 4.50314998626709,
+          "actual_peak_wind_mps": 6.4707722663879395
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.816357135772705,
+          "actual_rms_wind_mps": 5.1323981285095215,
+          "actual_peak_wind_mps": 7.744477272033691
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.738821029663086,
+          "actual_rms_wind_mps": 5.053123474121094,
+          "actual_peak_wind_mps": 7.584573268890381
+        }
+      ],
+      "maximum_absolute_wrench_target": [
+        1.6117768287658691,
+        2.081404685974121,
+        4.983306884765625,
+        0.038654301315546036,
+        0.04650227725505829,
+        0.00014980658306740224
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.3574999999999995,
+        "inertia_body_kgm2": [
+          0.012284999999999999,
+          0.005362499999999999,
+          0.015405
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0023,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "wall_s": 107.65977599995676,
+      "split": "development",
+      "data_sha256": "58b479df8a02b636efdf92de80f14e2bd5d1e513c272aa36d997c8b709545002"
+    },
+    {
+      "group": {
+        "name": "new_combination",
+        "seed": 20271181,
+        "directions_deg": [
+          135,
+          315
+        ],
+        "actual_scales": {
+          "mass": 1.03,
+          "inertia": 1.02,
+          "motor_tau": 0.85
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 0.9,
+        "nominal_arm_cm": 5,
+        "duration_s": 30
+      },
+      "count": 8,
+      "safe_completed": 8,
+      "duration_s": 30,
+      "seed_pair": [
+        20271181,
+        20271182
+      ],
+      "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "policy_updates": 0,
+      "rmse_3d_h_xy_m": [
+        0.7093253090825926,
+        0.06284141604132647,
+        0.7065361636427654
+      ],
+      "safe_duration_s": [
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0,
+        30.0
+      ],
+      "wind_statistics": [
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.786261558532715,
+          "actual_rms_wind_mps": 5.0908284187316895,
+          "actual_peak_wind_mps": 7.767398834228516
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.501633644104004,
+          "actual_rms_wind_mps": 4.804572105407715,
+          "actual_peak_wind_mps": 7.439365386962891
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.270907402038574,
+          "actual_rms_wind_mps": 4.569878101348877,
+          "actual_peak_wind_mps": 6.834039688110352
+        },
+        {
+          "actual_mean_wind_mps": 0.8998667597770691,
+          "actual_rms_wind_mps": 0.9427404999732971,
+          "actual_peak_wind_mps": 1.0
+        },
+        {
+          "actual_mean_wind_mps": 4.690591335296631,
+          "actual_rms_wind_mps": 4.986931324005127,
+          "actual_peak_wind_mps": 7.116821765899658
+        }
+      ],
+      "maximum_absolute_wrench_target": [
+        0.8450853824615479,
+        0.9195675253868103,
+        4.887396335601807,
+        0.03212321922183037,
+        0.028356267139315605,
+        6.462923920480534e-05
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.3689999999999998,
+        "inertia_body_kgm2": [
+          0.012852,
+          0.0056099999999999995,
+          0.016116000000000002
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0017,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "wall_s": 107.17456319998018,
+      "split": "test",
+      "data_sha256": "de1223695dc720dbd27e8f0755fdfcda0b1f40bdfe68593b3635471595d64b6f"
+    }
+  ],
+  "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+  "controller_and_protected_files_unchanged": true,
+  "source_unchanged": true,
+  "policy_updates": 0,
+  "final_acceptance": false
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "actor37_5m_residual_fit_and_native_px4_development_complete",
+  "policy_updates": 0,
+  "training_running": false,
+  "validation_running": false,
+  "output": "P3/results/actor37_5m"
+}

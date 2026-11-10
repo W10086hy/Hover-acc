@@ -1,0 +1,4725 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 72
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 55
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 6494
+    },
+    {
+      "path": "mujoco_sim/attitude_wind.py",
+      "bytes": 7561
+    },
+    {
+      "path": "mujoco_sim/check_flexible_step.py",
+      "bytes": 2916
+    },
+    {
+      "path": "mujoco_sim/environment.py",
+      "bytes": 2260
+    },
+    {
+      "path": "mujoco_sim/evaluate.py",
+      "bytes": 10385
+    },
+    {
+      "path": "mujoco_sim/evaluate_flexible.py",
+      "bytes": 6704
+    },
+    {
+      "path": "mujoco_sim/evaluate_native_tendon.py",
+      "bytes": 10745
+    },
+    {
+      "path": "mujoco_sim/flexible.py",
+      "bytes": 10633
+    },
+    {
+      "path": "mujoco_sim/FLEXIBLE26.md",
+      "bytes": 10394
+    },
+    {
+      "path": "mujoco_sim/NATIVE_TENDON.md",
+      "bytes": 8180
+    },
+    {
+      "path": "mujoco_sim/native_tendon.py",
+      "bytes": 6647
+    },
+    {
+      "path": "mujoco_sim/native_tendon_protocol.json",
+      "bytes": 1803
+    },
+    {
+      "path": "mujoco_sim/physics.py",
+      "bytes": 10733
+    },
+    {
+      "path": "mujoco_sim/PLAN.md",
+      "bytes": 4944
+    },
+    {
+      "path": "mujoco_sim/plot_flexible_comparison.py",
+      "bytes": 3217
+    },
+    {
+      "path": "mujoco_sim/protocol.json",
+      "bytes": 1673
+    },
+    {
+      "path": "mujoco_sim/README.md",
+      "bytes": 9100
+    },
+    {
+      "path": "mujoco_sim/replay.py",
+      "bytes": 6866
+    },
+    {
+      "path": "mujoco_sim/replay_flexible.py",
+      "bytes": 8578
+    },
+    {
+      "path": "mujoco_sim/report_flexible.py",
+      "bytes": 7241
+    },
+    {
+      "path": "mujoco_sim/requirements.txt",
+      "bytes": 185
+    },
+    {
+      "path": "mujoco_sim/results/development/convergence/compensation_trace.pt",
+      "bytes": 8546962
+    },
+    {
+      "path": "mujoco_sim/results/development/convergence/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/convergence/result.json",
+      "bytes": 48350
+    },
+    {
+      "path": "mujoco_sim/results/development/convergence/scene.xml",
+      "bytes": 40094
+    },
+    {
+      "path": "mujoco_sim/results/development/convergence/trajectory.npz",
+      "bytes": 767061
+    },
+    {
+      "path": "mujoco_sim/results/development/convergence/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/frozen_source.zip",
+      "bytes": 171199
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268681/result.json",
+      "bytes": 48270
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268681/scene.xml",
+      "bytes": 40094
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268681/trajectory.npz",
+      "bytes": 766927
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268781/result.json",
+      "bytes": 48219
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268781/scene.xml",
+      "bytes": 40094
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268781/trajectory.npz",
+      "bytes": 766826
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_calibrated/summary.json",
+      "bytes": 91324
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268681/result.json",
+      "bytes": 48222
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268681/scene.xml",
+      "bytes": 40094
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268681/trajectory.npz",
+      "bytes": 766765
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268781/result.json",
+      "bytes": 48216
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268781/scene.xml",
+      "bytes": 40094
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268781/trajectory.npz",
+      "bytes": 766856
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_mismatch/summary.json",
+      "bytes": 91382
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268681/result.json",
+      "bytes": 48136
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268681/scene.xml",
+      "bytes": 39646
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268681/trajectory.npz",
+      "bytes": 766641
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268781/result.json",
+      "bytes": 48068
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268781/scene.xml",
+      "bytes": 39646
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268781/trajectory.npz",
+      "bytes": 766671
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p2_nominal/summary.json",
+      "bytes": 91242
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268681/compensation_trace.pt",
+      "bytes": 8546962
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268681/result.json",
+      "bytes": 48350
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268681/scene.xml",
+      "bytes": 40094
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268681/trajectory.npz",
+      "bytes": 767052
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268781/compensation_trace.pt",
+      "bytes": 8546962
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268781/result.json",
+      "bytes": 48282
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268781/scene.xml",
+      "bytes": 40094
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268781/trajectory.npz",
+      "bytes": 767444
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/mujoco/p3_compensated/summary.json",
+      "bytes": 91490
+    },
+    {
+      "path": "mujoco_sim/results/development/p2_current.gif",
+      "bytes": 4572369
+    },
+    {
+      "path": "mujoco_sim/results/development/p2_current.json",
+      "bytes": 1983
+    },
+    {
+      "path": "mujoco_sim/results/development/p2_current.png",
+      "bytes": 116145
+    },
+    {
+      "path": "mujoco_sim/results/development/p2_mismatch.gif",
+      "bytes": 4571280
+    },
+    {
+      "path": "mujoco_sim/results/development/p2_mismatch.json",
+      "bytes": 1964
+    },
+    {
+      "path": "mujoco_sim/results/development/p2_mismatch.png",
+      "bytes": 117163
+    },
+    {
+      "path": "mujoco_sim/results/development/p3_current.gif",
+      "bytes": 4593912
+    },
+    {
+      "path": "mujoco_sim/results/development/p3_current.json",
+      "bytes": 1991
+    },
+    {
+      "path": "mujoco_sim/results/development/p3_current.png",
+      "bytes": 117643
+    },
+    {
+      "path": "mujoco_sim/results/development/run_manifest.json",
+      "bytes": 10725
+    },
+    {
+      "path": "mujoco_sim/results/development/source_archive.json",
+      "bytes": 148
+    },
+    {
+      "path": "mujoco_sim/results/development/summary.json",
+      "bytes": 6666
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268681/result.json",
+      "bytes": 48297
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268681/trajectory.npz",
+      "bytes": 766855
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268781/result.json",
+      "bytes": 48188
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268781/trajectory.npz",
+      "bytes": 766982
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_calibrated/summary.json",
+      "bytes": 91352
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268681/result.json",
+      "bytes": 48259
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268681/trajectory.npz",
+      "bytes": 766629
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268781/result.json",
+      "bytes": 48100
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268781/trajectory.npz",
+      "bytes": 766829
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_mismatch/summary.json",
+      "bytes": 91338
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268681/result.json",
+      "bytes": 48105
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268681/trajectory.npz",
+      "bytes": 766658
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268781/result.json",
+      "bytes": 48089
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268781/trajectory.npz",
+      "bytes": 766754
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p2_nominal/summary.json",
+      "bytes": 91267
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268681/compensation_trace.pt",
+      "bytes": 8546962
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268681/result.json",
+      "bytes": 48332
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268681/trajectory.npz",
+      "bytes": 766956
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268781/compensation_trace.pt",
+      "bytes": 8546962
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268781/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268781/result.json",
+      "bytes": 48250
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268781/trajectory.npz",
+      "bytes": 767336
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/20268781/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/development/torch/p3_compensated/summary.json",
+      "bytes": 91476
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/attitude_curves.csv",
+      "bytes": 653991
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/audit.json",
+      "bytes": 1150
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/gust_attitude.png",
+      "bytes": 235503
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/heading_wind_diagram.png",
+      "bytes": 33970
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/one_mps_metrics.json",
+      "bytes": 3279
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/sources.zip",
+      "bytes": 17768
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/summary.json",
+      "bytes": 74420
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak10cm/native.gif",
+      "bytes": 9513450
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak10cm/native.json",
+      "bytes": 2531
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak10cm/native.png",
+      "bytes": 86856
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak10cm_render.log",
+      "bytes": 65
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak5cm/native.gif",
+      "bytes": 9572483
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak5cm/native.json",
+      "bytes": 2536
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak5cm/native.png",
+      "bytes": 88190
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak5cm_render.log",
+      "bytes": 64
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/attitude_wind/weak_attitude.png",
+      "bytes": 175235
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/audit.json",
+      "bytes": 1199
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/case39_comparison.json",
+      "bytes": 629
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/case39_comparison.png",
+      "bytes": 192088
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/critical_case39.json",
+      "bytes": 1962
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/evaluation/heading_witness.pt",
+      "bytes": 3073910
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/evaluation/result.json",
+      "bytes": 91083
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/evaluation/scene.xml",
+      "bytes": 522862
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/evaluation/trajectory.npz",
+      "bytes": 25824278
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/evaluation/wind_trace.pt",
+      "bytes": 9218451
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/frozen_source.zip",
+      "bytes": 141730
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust/flight.gif",
+      "bytes": 6612716
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust/flight.json",
+      "bytes": 2377
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust/flight.png",
+      "bytes": 135249
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust10cm/flight.gif",
+      "bytes": 5743194
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust10cm/flight.json",
+      "bytes": 2377
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust10cm/flight.png",
+      "bytes": 152010
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust10cm_render.log",
+      "bytes": 110
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/gust_render.log",
+      "bytes": 106
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/manifest.json",
+      "bytes": 32842
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/metrics.csv",
+      "bytes": 17554
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/metrics.json",
+      "bytes": 112752
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/native_view/flight.gif",
+      "bytes": 8898410
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/native_view/flight.json",
+      "bytes": 2352
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/native_view/flight.png",
+      "bytes": 81615
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/native_view_render.log",
+      "bytes": 54
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/render_sources.zip",
+      "bytes": 13885
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/strong/flight.gif",
+      "bytes": 3989927
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/strong/flight.json",
+      "bytes": 2354
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/strong/flight.png",
+      "bytes": 132932
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/strong_render.log",
+      "bytes": 108
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/summary.json",
+      "bytes": 5534
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/weak/flight.gif",
+      "bytes": 4180203
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/weak/flight.json",
+      "bytes": 2357
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/weak/flight.png",
+      "bytes": 128013
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/weak_render.log",
+      "bytes": 106
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/wind_profiles.json",
+      "bytes": 525
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120/wind_profiles.png",
+      "bytes": 92600
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/convergence/compensation_trace.pt",
+      "bytes": 8546962
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/convergence/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/convergence/native_tendon_trace.pt",
+      "bytes": 3843213
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/convergence/result.json",
+      "bytes": 60631
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/convergence/scene.xml",
+      "bytes": 45578
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/convergence/trajectory.npz",
+      "bytes": 473392
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/convergence/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/frozen_source.zip",
+      "bytes": 180378
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_current.gif",
+      "bytes": 4594142
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_current.json",
+      "bytes": 2440
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_current.png",
+      "bytes": 117292
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_mismatch/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_mismatch/20268681/native_tendon_trace.pt",
+      "bytes": 3843213
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_mismatch/20268681/result.json",
+      "bytes": 60526
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_mismatch/20268681/scene.xml",
+      "bytes": 45578
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_mismatch/20268681/trajectory.npz",
+      "bytes": 746444
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_mismatch/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_mismatch/summary.json",
+      "bytes": 55352
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_nominal/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_nominal/20268681/native_tendon_trace.pt",
+      "bytes": 3843213
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_nominal/20268681/result.json",
+      "bytes": 60384
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_nominal/20268681/scene.xml",
+      "bytes": 45130
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_nominal/20268681/trajectory.npz",
+      "bytes": 687381
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_nominal/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p2_nominal/summary.json",
+      "bytes": 55259
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_10cm_failure.gif",
+      "bytes": 4796492
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_10cm_failure.json",
+      "bytes": 2462
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_10cm_failure.png",
+      "bytes": 128807
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/20268681/compensation_trace.pt",
+      "bytes": 8546962
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/20268681/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/20268681/native_tendon_trace.pt",
+      "bytes": 3843213
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/20268681/result.json",
+      "bytes": 60559
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/20268681/scene.xml",
+      "bytes": 45578
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/20268681/trajectory.npz",
+      "bytes": 473290
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/20268681/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_compensated/summary.json",
+      "bytes": 55345
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_current.gif",
+      "bytes": 4614176
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_current.json",
+      "bytes": 2464
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/p3_current.png",
+      "bytes": 117182
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/run_manifest.json",
+      "bytes": 11242
+    },
+    {
+      "path": "mujoco_sim/results/native_tendon/summary.json",
+      "bytes": 5171
+    },
+    {
+      "path": "mujoco_sim/status.json",
+      "bytes": 1966
+    },
+    {
+      "path": "mujoco_sim/tests/test_bridge.py",
+      "bytes": 4241
+    },
+    {
+      "path": "mujoco_sim/tests/test_flexible.py",
+      "bytes": 3273
+    },
+    {
+      "path": "mujoco_sim/tests/test_native_tendon.py",
+      "bytes": 4808
+    },
+    {
+      "path": "mujoco_sim/tests/test_physics.py",
+      "bytes": 4147
+    },
+    {
+      "path": "mujoco_sim/tests/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "mujoco_sim/tests/__pycache__/test_bridge.cpython-311.pyc",
+      "bytes": 10394
+    },
+    {
+      "path": "mujoco_sim/tests/__pycache__/test_flexible.cpython-311.pyc",
+      "bytes": 8901
+    },
+    {
+      "path": "mujoco_sim/tests/__pycache__/test_native_tendon.cpython-311.pyc",
+      "bytes": 12715
+    },
+    {
+      "path": "mujoco_sim/tests/__pycache__/test_physics.cpython-311.pyc",
+      "bytes": 10988
+    },
+    {
+      "path": "mujoco_sim/tests/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 199
+    },
+    {
+      "path": "mujoco_sim/validation/attitude_wind.log",
+      "bytes": 3450
+    },
+    {
+      "path": "mujoco_sim/validation/code_review.md",
+      "bytes": 1163
+    },
+    {
+      "path": "mujoco_sim/validation/evaluation.log",
+      "bytes": 34479
+    },
+    {
+      "path": "mujoco_sim/validation/final_audit.json",
+      "bytes": 5705
+    },
+    {
+      "path": "mujoco_sim/validation/flexible26_120.log",
+      "bytes": 3045
+    },
+    {
+      "path": "mujoco_sim/validation/flexible26_report.log",
+      "bytes": 991
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_full_tests.log",
+      "bytes": 23903
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_step_check/summary.json",
+      "bytes": 932
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_step_check/trace_0.000125.npz",
+      "bytes": 374357
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_step_check/trace_0.00025.npz",
+      "bytes": 374297
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_step_check/trace_0.0005.npz",
+      "bytes": 374257
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_step_check.log",
+      "bytes": 792
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_tests.log",
+      "bytes": 610
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_timing.log",
+      "bytes": 138
+    },
+    {
+      "path": "mujoco_sim/validation/native_code_review.md",
+      "bytes": 1179
+    },
+    {
+      "path": "mujoco_sim/validation/native_evaluation.log",
+      "bytes": 10652
+    },
+    {
+      "path": "mujoco_sim/validation/native_final_audit.json",
+      "bytes": 11126
+    },
+    {
+      "path": "mujoco_sim/validation/native_tests.log",
+      "bytes": 16235
+    },
+    {
+      "path": "mujoco_sim/validation/reference_reproduction.json",
+      "bytes": 582
+    },
+    {
+      "path": "mujoco_sim/validation/tests.log",
+      "bytes": 15223
+    },
+    {
+      "path": "mujoco_sim/__init__.py",
+      "bytes": 76
+    },
+    {
+      "path": "mujoco_sim/__pycache__/attitude_wind.cpython-311.pyc",
+      "bytes": 18245
+    },
+    {
+      "path": "mujoco_sim/__pycache__/check_flexible_step.cpython-311.pyc",
+      "bytes": 7789
+    },
+    {
+      "path": "mujoco_sim/__pycache__/environment.cpython-311.pyc",
+      "bytes": 4561
+    },
+    {
+      "path": "mujoco_sim/__pycache__/evaluate.cpython-311.pyc",
+      "bytes": 19006
+    },
+    {
+      "path": "mujoco_sim/__pycache__/evaluate_flexible.cpython-311.pyc",
+      "bytes": 14495
+    },
+    {
+      "path": "mujoco_sim/__pycache__/evaluate_native_tendon.cpython-311.pyc",
+      "bytes": 19919
+    },
+    {
+      "path": "mujoco_sim/__pycache__/flexible.cpython-311.pyc",
+      "bytes": 26486
+    },
+    {
+      "path": "mujoco_sim/__pycache__/native_tendon.cpython-311.pyc",
+      "bytes": 15747
+    },
+    {
+      "path": "mujoco_sim/__pycache__/physics.cpython-311.pyc",
+      "bytes": 23512
+    },
+    {
+      "path": "mujoco_sim/__pycache__/plot_flexible_comparison.cpython-311.pyc",
+      "bytes": 8457
+    },
+    {
+      "path": "mujoco_sim/__pycache__/replay.cpython-311.pyc",
+      "bytes": 14917
+    },
+    {
+      "path": "mujoco_sim/__pycache__/replay_flexible.cpython-311.pyc",
+      "bytes": 18889
+    },
+    {
+      "path": "mujoco_sim/__pycache__/report_flexible.cpython-311.pyc",
+      "bytes": 15579
+    },
+    {
+      "path": "mujoco_sim/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 276
+    },
+    {
+      "path": "organization_audit.json",
+      "bytes": 129662
+    },
+    {
+      "path": "P2/acceptance.json",
+      "bytes": 2915
+    },
+    {
+      "path": "P2/animate.py",
+      "bytes": 5966
+    },
+    {
+      "path": "P2/audit_flexible_continuation.py",
+      "bytes": 11347
+    },
+    {
+      "path": "P2/audit_flexible_update.py",
+      "bytes": 5694
+    },
+    {
+      "path": "P2/benchmark_flexible_cache.py",
+      "bytes": 4830
+    },
+    {
+      "path": "P2/compare_flexible_qualification.py",
+      "bytes": 4029
+    },
+    {
+      "path": "P2/configuration.json",
+      "bytes": 4596
+    },
+    {
+      "path": "P2/continue30_acceptance.json",
+      "bytes": 1128
+    },
+    {
+      "path": "P2/CONTINUE30_PLAN.md",
+      "bytes": 5656
+    },
+    {
+      "path": "P2/derive_continuation_development.py",
+      "bytes": 3605
+    },
+    {
+      "path": "P2/environment.json",
+      "bytes": 440
+    },
+    {
+      "path": "P2/evaluate.py",
+      "bytes": 2240
+    },
+    {
+      "path": "P2/evaluate_flexible_rope.py",
+      "bytes": 3153
+    },
+    {
+      "path": "P2/evaluate_generalization.py",
+      "bytes": 2645
+    },
+    {
+      "path": "P2/evaluate_horizontal_targets.py",
+      "bytes": 6805
+    },
+    {
+      "path": "P2/evaluate_native_rope.py",
+      "bytes": 4937
+    },
+    {
+      "path": "P2/flexible_continue30_step1.json",
+      "bytes": 867
+    },
+    {
+      "path": "P2/flexible_continue30_step2.json",
+      "bytes": 1190
+    },
+    {
+      "path": "P2/flexible_continue30_step3.json",
+      "bytes": 1032
+    },
+    {
+      "path": "P2/flexible_continue30_step4.json",
+      "bytes": 1537
+    },
+    {
+      "path": "P2/flexible_continue30_step5.json",
+      "bytes": 1728
+    },
+    {
+      "path": "P2/flexible_rope_30s_protocol.json",
+      "bytes": 855
+    },
+    {
+      "path": "P2/FLEXIBLE_ROPE_PLAN.md",
+      "bytes": 7313
+    },
+    {
+      "path": "P2/flexible_rope_protocol.json",
+      "bytes": 722
+    },
+    {
+      "path": "P2/flexible_status.json",
+      "bytes": 1602
+    },
+    {
+      "path": "P2/hover_bptt/actor.py",
+      "bytes": 4368
+    },
+    {
+      "path": "P2/hover_bptt/adjoint.py",
+      "bytes": 4724
+    },
+    {
+      "path": "P2/hover_bptt/aerodynamics.py",
+      "bytes": 1345
+    },
+    {
+      "path": "P2/hover_bptt/bptt_safety.py",
+      "bytes": 1155
+    },
+    {
+      "path": "P2/hover_bptt/cases.py",
+      "bytes": 371
+    },
+    {
+      "path": "P2/hover_bptt/conditioning.py",
+      "bytes": 1214
+    },
+    {
+      "path": "P2/hover_bptt/configs/cases.json",
+      "bytes": 59598
+    },
+    {
+      "path": "P2/hover_bptt/configs/cm_table.json",
+      "bytes": 106706
+    },
+    {
+      "path": "P2/hover_bptt/configs/vehicle.json",
+      "bytes": 4141
+    },
+    {
+      "path": "P2/hover_bptt/controller.py",
+      "bytes": 9039
+    },
+    {
+      "path": "P2/hover_bptt/cuda_bptt_kernel.py",
+      "bytes": 4948
+    },
+    {
+      "path": "P2/hover_bptt/dynamics/torch_model.py",
+      "bytes": 10990
+    },
+    {
+      "path": "P2/hover_bptt/dynamics/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "P2/hover_bptt/dynamics/__pycache__/torch_model.cpython-311.pyc",
+      "bytes": 28787
+    },
+    {
+      "path": "P2/hover_bptt/dynamics/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 205
+    },
+    {
+      "path": "P2/hover_bptt/environment.py",
+      "bytes": 16370
+    },
+    {
+      "path": "P2/hover_bptt/evaluation.py",
+      "bytes": 8004
+    },
+    {
+      "path": "P2/hover_bptt/flexible_environment.py",
+      "bytes": 3201
+    },
+    {
+      "path": "P2/hover_bptt/flexible_rope.py",
+      "bytes": 12468
+    },
+    {
+      "path": "P2/hover_bptt/flexible_training.py",
+      "bytes": 9195
+    },
+    {
+      "path": "P2/hover_bptt/functional.py",
+      "bytes": 6193
+    },
+    {
+      "path": "P2/hover_bptt/generalization.py",
+      "bytes": 5114
+    },
+    {
+      "path": "P2/hover_bptt/gradient.py",
+      "bytes": 2617
+    },
+    {
+      "path": "P2/hover_bptt/guards.py",
+      "bytes": 3215
+    },
+    {
+      "path": "P2/hover_bptt/io.py",
+      "bytes": 991
+    },
+    {
+      "path": "P2/hover_bptt/math3d.py",
+      "bytes": 480
+    },
+    {
+      "path": "P2/hover_bptt/model.py",
+      "bytes": 3567
+    },
+    {
+      "path": "P2/hover_bptt/motion.py",
+      "bytes": 2227
+    },
+    {
+      "path": "P2/hover_bptt/motion_statistics.py",
+      "bytes": 3456
+    },
+    {
+      "path": "P2/hover_bptt/native_environment.py",
+      "bytes": 3289
+    },
+    {
+      "path": "P2/hover_bptt/native_rope.py",
+      "bytes": 8618
+    },
+    {
+      "path": "P2/hover_bptt/native_training.py",
+      "bytes": 8268
+    },
+    {
+      "path": "P2/hover_bptt/onboard.py",
+      "bytes": 7896
+    },
+    {
+      "path": "P2/hover_bptt/optimizer.py",
+      "bytes": 1552
+    },
+    {
+      "path": "P2/hover_bptt/plant.py",
+      "bytes": 1141
+    },
+    {
+      "path": "P2/hover_bptt/rewards.py",
+      "bytes": 2103
+    },
+    {
+      "path": "P2/hover_bptt/sensors.py",
+      "bytes": 13662
+    },
+    {
+      "path": "P2/hover_bptt/state.py",
+      "bytes": 4579
+    },
+    {
+      "path": "P2/hover_bptt/stream.py",
+      "bytes": 9569
+    },
+    {
+      "path": "P2/hover_bptt/training.py",
+      "bytes": 5927
+    },
+    {
+      "path": "P2/hover_bptt/vehicle_spec.py",
+      "bytes": 4783
+    },
+    {
+      "path": "P2/hover_bptt/wind.py",
+      "bytes": 3594
+    },
+    {
+      "path": "P2/hover_bptt/__init__.py",
+      "bytes": 58
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/actor.cpython-311.pyc",
+      "bytes": 8973
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/adjoint.cpython-311.pyc",
+      "bytes": 12358
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/aerodynamics.cpython-311.pyc",
+      "bytes": 3656
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/bptt_safety.cpython-311.pyc",
+      "bytes": 3040
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/cases.cpython-311.pyc",
+      "bytes": 1434
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/conditioning.cpython-311.pyc",
+      "bytes": 2843
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/controller.cpython-311.pyc",
+      "bytes": 16843
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/cuda_bptt_kernel.cpython-311.pyc",
+      "bytes": 11899
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/environment.cpython-311.pyc",
+      "bytes": 32422
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/evaluation.cpython-311.pyc",
+      "bytes": 18408
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/flexible_environment.cpython-311.pyc",
+      "bytes": 6052
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/flexible_rope.cpython-311.pyc",
+      "bytes": 29475
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/flexible_training.cpython-311.pyc",
+      "bytes": 21152
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/functional.cpython-311.pyc",
+      "bytes": 12736
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/generalization.cpython-311.pyc",
+      "bytes": 10564
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/gradient.cpython-311.pyc",
+      "bytes": 5210
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/guards.cpython-311.pyc",
+      "bytes": 8322
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/io.cpython-311.pyc",
+      "bytes": 2829
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/math3d.cpython-311.pyc",
+      "bytes": 1803
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/model.cpython-311.pyc",
+      "bytes": 7718
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/motion.cpython-311.pyc",
+      "bytes": 4557
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/motion_statistics.cpython-311.pyc",
+      "bytes": 9599
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/native_environment.cpython-311.pyc",
+      "bytes": 6479
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/native_rope.cpython-311.pyc",
+      "bytes": 19846
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/native_training.cpython-311.pyc",
+      "bytes": 17886
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/onboard.cpython-311.pyc",
+      "bytes": 14586
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/optimizer.cpython-311.pyc",
+      "bytes": 4851
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/plant.cpython-311.pyc",
+      "bytes": 2353
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/rewards.cpython-311.pyc",
+      "bytes": 3666
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/sensors.cpython-311.pyc",
+      "bytes": 28345
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/state.cpython-311.pyc",
+      "bytes": 10319
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/stream.cpython-311.pyc",
+      "bytes": 22185
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/training.cpython-311.pyc",
+      "bytes": 13761
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/vehicle_spec.cpython-311.pyc",
+      "bytes": 8928
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/wind.cpython-311.pyc",
+      "bytes": 8489
+    },
+    {
+      "path": "P2/hover_bptt/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 261
+    },
+    {
+      "path": "P2/NATIVE_BPTT_PLAN.md",
+      "bytes": 4005
+    },
+    {
+      "path": "P2/native_profile.log",
+      "bytes": 8584
+    },
+    {
+      "path": "P2/native_profile.pstats",
+      "bytes": 1579814
+    },
+    {
+      "path": "P2/native_qualification.log",
+      "bytes": 8564
+    },
+    {
+      "path": "P2/native_rope_protocol.json",
+      "bytes": 2748
+    },
+    {
+      "path": "P2/native_status.json",
+      "bytes": 452
+    },
+    {
+      "path": "P2/native_tests.log",
+      "bytes": 18539
+    },
+    {
+      "path": "P2/p2_protocol.json",
+      "bytes": 2698
+    },
+    {
+      "path": "P2/profile_flexible_rope.py",
+      "bytes": 4694
+    },
+    {
+      "path": "P2/PROGRESS.md",
+      "bytes": 30440
+    },
+    {
+      "path": "P2/qualify_flexible_rope.py",
+      "bytes": 7485
+    },
+    {
+      "path": "P2/qualify_native_rope.py",
+      "bytes": 4514
+    },
+    {
+      "path": "P2/README.md",
+      "bytes": 3820
+    },
+    {
+      "path": "P2/replay_flexible_policy.py",
+      "bytes": 4944
+    },
+    {
+      "path": "P2/results/baseline19/checkpoint.pt",
+      "bytes": 1182739
+    },
+    {
+      "path": "P2/results/baseline19/convergence.json",
+      "bytes": 1791
+    },
+    {
+      "path": "P2/results/baseline19/cuda_smoke.json",
+      "bytes": 264
+    },
+    {
+      "path": "P2/results/baseline19/current.gif",
+      "bytes": 1571337
+    },
+    {
+      "path": "P2/results/baseline19/current.json",
+      "bytes": 1480
+    },
+    {
+      "path": "P2/results/baseline19/current.png",
+      "bytes": 103442
+    },
+    {
+      "path": "P2/results/baseline19/current_metrics.json",
+      "bytes": 3462
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20601201/heading_witness.pt",
+      "bytes": 8450281
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20601201/result.json",
+      "bytes": 161707
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20601201/trajectory.npz",
+      "bytes": 16841311
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20601201/wind_trace.pt",
+      "bytes": 25347753
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20602201/heading_witness.pt",
+      "bytes": 8450281
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20602201/result.json",
+      "bytes": 161782
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20602201/trajectory.npz",
+      "bytes": 16837919
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/seed20602201/wind_trace.pt",
+      "bytes": 25347753
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/summary.json",
+      "bytes": 332306
+    },
+    {
+      "path": "P2/results/baseline19/evaluation/terminal.json",
+      "bytes": 187
+    },
+    {
+      "path": "P2/results/baseline19/migration_verification.json",
+      "bytes": 833
+    },
+    {
+      "path": "P2/results/baseline19/steady_realtime.gif",
+      "bytes": 869039
+    },
+    {
+      "path": "P2/results/baseline19/steady_realtime.json",
+      "bytes": 1474
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/calibration_error/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/calibration_error/seed20266081/result.json",
+      "bytes": 46299
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/calibration_error/seed20266081/trajectory.npz",
+      "bytes": 3061738
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/calibration_error/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/current.gif",
+      "bytes": 1748959
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/current.json",
+      "bytes": 1984
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/current.png",
+      "bytes": 103880
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_high/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_high/seed20266081/result.json",
+      "bytes": 46399
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_high/seed20266081/trajectory.npz",
+      "bytes": 3060412
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_high/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_low/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_low/seed20266081/result.json",
+      "bytes": 46390
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_low/seed20266081/trajectory.npz",
+      "bytes": 3060481
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/interpolation_low/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/nominal_original_course/seed20266081/heading_witness.pt",
+      "bytes": 8450358
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/nominal_original_course/seed20266081/result.json",
+      "bytes": 244475
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/nominal_original_course/seed20266081/trajectory.npz",
+      "bytes": 16836909
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/nominal_original_course/seed20266081/wind_trace.pt",
+      "bytes": 25347795
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/protocol.json",
+      "bytes": 8574
+    },
+    {
+      "path": "P2/results/evaluation/conditioned/summary.json",
+      "bytes": 413255
+    },
+    {
+      "path": "P2/results/evaluation/reference/calibration_error/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/reference/calibration_error/seed20266081/result.json",
+      "bytes": 46327
+    },
+    {
+      "path": "P2/results/evaluation/reference/calibration_error/seed20266081/trajectory.npz",
+      "bytes": 3062087
+    },
+    {
+      "path": "P2/results/evaluation/reference/calibration_error/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_high/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_high/seed20266081/result.json",
+      "bytes": 46320
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_high/seed20266081/trajectory.npz",
+      "bytes": 3060596
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_high/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_low/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_low/seed20266081/result.json",
+      "bytes": 46338
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_low/seed20266081/trajectory.npz",
+      "bytes": 3060561
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_low/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_low_5cm.gif",
+      "bytes": 1669927
+    },
+    {
+      "path": "P2/results/evaluation/reference/interpolation_low_5cm.json",
+      "bytes": 1964
+    },
+    {
+      "path": "P2/results/evaluation/reference/nominal_original_course/seed20266081/heading_witness.pt",
+      "bytes": 8450358
+    },
+    {
+      "path": "P2/results/evaluation/reference/nominal_original_course/seed20266081/result.json",
+      "bytes": 244453
+    },
+    {
+      "path": "P2/results/evaluation/reference/nominal_original_course/seed20266081/trajectory.npz",
+      "bytes": 16837606
+    },
+    {
+      "path": "P2/results/evaluation/reference/nominal_original_course/seed20266081/wind_trace.pt",
+      "bytes": 25347795
+    },
+    {
+      "path": "P2/results/evaluation/reference/protocol.json",
+      "bytes": 8555
+    },
+    {
+      "path": "P2/results/evaluation/reference/summary.json",
+      "bytes": 413129
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/calibration_error/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/calibration_error/seed20266081/result.json",
+      "bytes": 46303
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/calibration_error/seed20266081/trajectory.npz",
+      "bytes": 3061663
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/calibration_error/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/comparison_to_parent.json",
+      "bytes": 1950
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/current.gif",
+      "bytes": 1641394
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/current.json",
+      "bytes": 2003
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_high/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_high/seed20266081/result.json",
+      "bytes": 46407
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_high/seed20266081/trajectory.npz",
+      "bytes": 3060313
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_high/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_low/seed20266081/heading_witness.pt",
+      "bytes": 1537782
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_low/seed20266081/result.json",
+      "bytes": 46381
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_low/seed20266081/trajectory.npz",
+      "bytes": 3060473
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/interpolation_low/seed20266081/wind_trace.pt",
+      "bytes": 4610067
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/nominal_original_course/seed20266081/heading_witness.pt",
+      "bytes": 8450358
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/nominal_original_course/seed20266081/result.json",
+      "bytes": 244387
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/nominal_original_course/seed20266081/trajectory.npz",
+      "bytes": 16837056
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/nominal_original_course/seed20266081/wind_trace.pt",
+      "bytes": 25347795
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/protocol.json",
+      "bytes": 8576
+    },
+    {
+      "path": "P2/results/evaluation/unconditional/summary.json",
+      "bytes": 413168
+    },
+    {
+      "path": "P2/results/flexible_bptt30/completion_audit.json",
+      "bytes": 1322
+    },
+    {
+      "path": "P2/results/flexible_bptt30/current.gif",
+      "bytes": 991338
+    },
+    {
+      "path": "P2/results/flexible_bptt30/current.json",
+      "bytes": 2265
+    },
+    {
+      "path": "P2/results/flexible_bptt30/current.png",
+      "bytes": 125403
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/after/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/after/result.json",
+      "bytes": 24437
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/after/trajectory.npz",
+      "bytes": 1614893
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/after/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/before/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/before/result.json",
+      "bytes": 24445
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/before/trajectory.npz",
+      "bytes": 1614895
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/before/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development/comparison.json",
+      "bytes": 916
+    },
+    {
+      "path": "P2/results/flexible_bptt30/development.log",
+      "bytes": 4065
+    },
+    {
+      "path": "P2/results/flexible_bptt30/frozen_source.zip",
+      "bytes": 130922
+    },
+    {
+      "path": "P2/results/flexible_bptt30/latest.pt",
+      "bytes": 1255287
+    },
+    {
+      "path": "P2/results/flexible_bptt30/optimizer_audit.json",
+      "bytes": 1632
+    },
+    {
+      "path": "P2/results/flexible_bptt30/run_manifest.json",
+      "bytes": 41150
+    },
+    {
+      "path": "P2/results/flexible_bptt30/training_summary.json",
+      "bytes": 38401
+    },
+    {
+      "path": "P2/results/flexible_bptt30/training_wind.pt",
+      "bytes": 579624
+    },
+    {
+      "path": "P2/results/flexible_bptt30.log",
+      "bytes": 2525
+    },
+    {
+      "path": "P2/results/flexible_continue30/current.gif",
+      "bytes": 1087057
+    },
+    {
+      "path": "P2/results/flexible_continue30/current.json",
+      "bytes": 2284
+    },
+    {
+      "path": "P2/results/flexible_continue30/current.png",
+      "bytes": 128326
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/after/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/after/result.json",
+      "bytes": 24961
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/after/trajectory.npz",
+      "bytes": 1614479
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/after/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/before/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/before/result.json",
+      "bytes": 25009
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/before/trajectory.npz",
+      "bytes": 1615480
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/before/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P2/results/flexible_continue30/development/comparison.json",
+      "bytes": 938
+    },
+    {
+      "path": "P2/results/flexible_continue30/goal_manifest.json",
+      "bytes": 14006
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/after/20269681/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/after/20269681/result.json",
+      "bytes": 91304
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/after/20269681/trajectory.npz",
+      "bytes": 6458705
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/after/20269681/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/before/20269681/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/before/20269681/result.json",
+      "bytes": 91966
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/before/20269681/trajectory.npz",
+      "bytes": 6459152
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/before/20269681/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/manifest.json",
+      "bytes": 1480
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1/summary.json",
+      "bytes": 2248
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_check1.log",
+      "bytes": 4959
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269681/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269681/result.json",
+      "bytes": 91186
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269681/trajectory.npz",
+      "bytes": 6457348
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269681/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269781/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269781/result.json",
+      "bytes": 92351
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269781/trajectory.npz",
+      "bytes": 6457549
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/after/20269781/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269681/baseline_reuse.json",
+      "bytes": 518
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269681/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269681/result.json",
+      "bytes": 93177
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269681/trajectory.npz",
+      "bytes": 6459152
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269681/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269781/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269781/result.json",
+      "bytes": 95690
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269781/trajectory.npz",
+      "bytes": 6459010
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/before/20269781/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/manifest.json",
+      "bytes": 1787
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final/summary.json",
+      "bytes": 9103
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_final.log",
+      "bytes": 11421
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/after/20269781/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/after/20269781/result.json",
+      "bytes": 92474
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/after/20269781/trajectory.npz",
+      "bytes": 6456910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/after/20269781/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/before/20269781/baseline_reuse.json",
+      "bytes": 517
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/before/20269781/heading_witness.pt",
+      "bytes": 769910
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/before/20269781/result.json",
+      "bytes": 95726
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/before/20269781/trajectory.npz",
+      "bytes": 6459010
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/before/20269781/wind_trace.pt",
+      "bytes": 2306451
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/manifest.json",
+      "bytes": 1739
+    },
+    {
+      "path": "P2/results/flexible_continue30/horizontal_step4_check/summary.json",
+      "bytes": 7109
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths/trajectory_3d.gif",
+      "bytes": 390221
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths/trajectory_3d.json",
+      "bytes": 1939
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths/trajectory_3d.png",
+      "bytes": 96463
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths/trajectory_xy.gif",
+      "bytes": 304789
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths/trajectory_xy.json",
+      "bytes": 1939
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths/trajectory_xy.png",
+      "bytes": 60447
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_step4/trajectory_3d.gif",
+      "bytes": 307642
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_step4/trajectory_3d.json",
+      "bytes": 1935
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_step4/trajectory_3d.png",
+      "bytes": 83337
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_step4/trajectory_xy.gif",
+      "bytes": 249967
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_step4/trajectory_xy.json",
+      "bytes": 1935
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_step4/trajectory_xy.png",
+      "bytes": 53939
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_strong26/trajectory_3d.gif",
+      "bytes": 286333
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_strong26/trajectory_3d.json",
+      "bytes": 1929
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_strong26/trajectory_3d.png",
+      "bytes": 92182
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_strong26/trajectory_xy.gif",
+      "bytes": 271962
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_strong26/trajectory_xy.json",
+      "bytes": 1929
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_strong26/trajectory_xy.png",
+      "bytes": 62548
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_worst_weak/trajectory_3d.gif",
+      "bytes": 338102
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_worst_weak/trajectory_3d.json",
+      "bytes": 1922
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_worst_weak/trajectory_3d.png",
+      "bytes": 82929
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_worst_weak/trajectory_xy.gif",
+      "bytes": 304906
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_worst_weak/trajectory_xy.json",
+      "bytes": 1922
+    },
+    {
+      "path": "P2/results/flexible_continue30/paths_worst_weak/trajectory_xy.png",
+      "bytes": 53472
+    },
+    {
+      "path": "P2/results/flexible_continue30/paused_replay_audit.json",
+      "bytes": 1751
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/audit.json",
+      "bytes": 1334
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/evaluation/heading_witness.pt",
+      "bytes": 3073910
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/evaluation/result.json",
+      "bytes": 90852
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/evaluation/trajectory.npz",
+      "bytes": 25811809
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/evaluation/wind_trace.pt",
+      "bytes": 9218451
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/frozen_renderer.py",
+      "bytes": 6866
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/frozen_source.zip",
+      "bytes": 133607
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/gust/flight.gif",
+      "bytes": 4942149
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/gust/flight.json",
+      "bytes": 2375
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/gust/flight.png",
+      "bytes": 135142
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/gust_render.log",
+      "bytes": 114
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/manifest.json",
+      "bytes": 31973
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/metrics.csv",
+      "bytes": 19244
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/metrics.json",
+      "bytes": 121730
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/strong/flight.gif",
+      "bytes": 2816359
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/strong/flight.json",
+      "bytes": 2331
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/strong/flight.png",
+      "bytes": 132494
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/strong_render.log",
+      "bytes": 116
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/summary.json",
+      "bytes": 587
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/weak/flight.gif",
+      "bytes": 3768577
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/weak/flight.json",
+      "bytes": 2331
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/weak/flight.png",
+      "bytes": 127424
+    },
+    {
+      "path": "P2/results/flexible_continue30/replay120/weak_render.log",
+      "bytes": 114
+    },
+    {
+      "path": "P2/results/flexible_continue30/step1/frozen_source.zip",
+      "bytes": 131645
+    },
+    {
+      "path": "P2/results/flexible_continue30/step1/latest.pt",
+      "bytes": 1255415
+    },
+    {
+      "path": "P2/results/flexible_continue30/step1/run_manifest.json",
+      "bytes": 41282
+    },
+    {
+      "path": "P2/results/flexible_continue30/step1/training_summary.json",
+      "bytes": 38383
+    },
+    {
+      "path": "P2/results/flexible_continue30/step1/training_wind.pt",
+      "bytes": 579624
+    },
+    {
+      "path": "P2/results/flexible_continue30/step2/frozen_source.zip",
+      "bytes": 132228
+    },
+    {
+      "path": "P2/results/flexible_continue30/step2/latest.pt",
+      "bytes": 1255863
+    },
+    {
+      "path": "P2/results/flexible_continue30/step2/run_manifest.json",
+      "bytes": 60007
+    },
+    {
+      "path": "P2/results/flexible_continue30/step2/training_summary.json",
+      "bytes": 93510
+    },
+    {
+      "path": "P2/results/flexible_continue30/step2/training_wind.pt",
+      "bytes": 1157288
+    },
+    {
+      "path": "P2/results/flexible_continue30/step3/frozen_source.zip",
+      "bytes": 132147
+    },
+    {
+      "path": "P2/results/flexible_continue30/step3/latest.pt",
+      "bytes": 1255671
+    },
+    {
+      "path": "P2/results/flexible_continue30/step3/run_manifest.json",
+      "bytes": 95407
+    },
+    {
+      "path": "P2/results/flexible_continue30/step3/training_summary.json",
+      "bytes": 180403
+    },
+    {
+      "path": "P2/results/flexible_continue30/step3/training_wind.pt",
+      "bytes": 2312488
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/frozen_source.zip",
+      "bytes": 132266
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/latest.pt",
+      "bytes": 1255927
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/run_manifest.json",
+      "bytes": 131464
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/training_summary.json",
+      "bytes": 329757
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/training_wind.pt",
+      "bytes": 3467624
+    },
+    {
+      "path": "P2/results/flexible_continue30/step5/frozen_source.zip",
+      "bytes": 132493
+    },
+    {
+      "path": "P2/results/flexible_continue30/step5/interruption.json",
+      "bytes": 501
+    },
+    {
+      "path": "P2/results/flexible_continue30/step5/run_manifest.json",
+      "bytes": 131603
+    },
+    {
+      "path": "P2/results/flexible_continue30/step5/training_wind.pt",
+      "bytes": 3467624
+    },
+    {
+      "path": "P2/results/flexible_continue30_replay120.log",
+      "bytes": 1945
+    },
+    {
+      "path": "P2/results/flexible_continue30_step1.log",
+      "bytes": 2610
+    },
+    {
+      "path": "P2/results/flexible_continue30_step2.log",
+      "bytes": 3304
+    },
+    {
+      "path": "P2/results/flexible_continue30_step3.log",
+      "bytes": 3387
+    },
+    {
+      "path": "P2/results/flexible_continue30_step4.log",
+      "bytes": 4166
+    },
+    {
+      "path": "P2/results/flexible_continue30_step4_check.log",
+      "bytes": 6730
+    },
+    {
+      "path": "P2/results/flexible_continue30_step4_paths.log",
+      "bytes": 44
+    },
+    {
+      "path": "P2/results/flexible_continue30_step5.log",
+      "bytes": 248
+    },
+    {
+      "path": "P2/results/flexible_continue30_strong26_paths.log",
+      "bytes": 47
+    },
+    {
+      "path": "P2/results/training/comparison.json",
+      "bytes": 9327
+    },
+    {
+      "path": "P2/results/training/completion_audit.json",
+      "bytes": 4520
+    },
+    {
+      "path": "P2/results/training/conditioned/completion_audit.json",
+      "bytes": 1871
+    },
+    {
+      "path": "P2/results/training/conditioned/first_update_audit.json",
+      "bytes": 1162
+    },
+    {
+      "path": "P2/results/training/conditioned/latest.pt",
+      "bytes": 1253943
+    },
+    {
+      "path": "P2/results/training/conditioned/terminal.json",
+      "bytes": 214
+    },
+    {
+      "path": "P2/results/training/conditioned/training_summary.json",
+      "bytes": 89075
+    },
+    {
+      "path": "P2/results/training/evaluation_driver.json",
+      "bytes": 1267
+    },
+    {
+      "path": "P2/results/training/frozen_source.zip",
+      "bytes": 126481
+    },
+    {
+      "path": "P2/results/training/frozen_source_archive.json",
+      "bytes": 273
+    },
+    {
+      "path": "P2/results/training/protocol.json",
+      "bytes": 13559
+    },
+    {
+      "path": "P2/results/training/terminal.json",
+      "bytes": 188
+    },
+    {
+      "path": "P2/results/training/training_wind/heavy_slow_seed20631302.pt",
+      "bytes": 2307758
+    },
+    {
+      "path": "P2/results/training/training_wind/light_fast_seed20631202.pt",
+      "bytes": 2307758
+    },
+    {
+      "path": "P2/results/training/unconditional/completion_audit.json",
+      "bytes": 1983
+    },
+    {
+      "path": "P2/results/training/unconditional/first_update_audit.json",
+      "bytes": 1051
+    },
+    {
+      "path": "P2/results/training/unconditional/latest.pt",
+      "bytes": 1196735
+    },
+    {
+      "path": "P2/results/training/unconditional/terminal.json",
+      "bytes": 214
+    },
+    {
+      "path": "P2/results/training/unconditional/training_summary.json",
+      "bytes": 89124
+    },
+    {
+      "path": "P2/status.json",
+      "bytes": 3252
+    },
+    {
+      "path": "P2/tests/fixtures/reference_gradients.npz",
+      "bytes": 365829
+    },
+    {
+      "path": "P2/tests/fixtures/reference_trace.npz",
+      "bytes": 42207
+    },
+    {
+      "path": "P2/tests/test_flexible_environment.py",
+      "bytes": 4666
+    },
+    {
+      "path": "P2/tests/test_flexible_optimization.py",
+      "bytes": 4621
+    },
+    {
+      "path": "P2/tests/test_flexible_reference.py",
+      "bytes": 1727
+    },
+    {
+      "path": "P2/tests/test_flexible_rope.py",
+      "bytes": 5659
+    },
+    {
+      "path": "P2/tests/test_flexible_training.py",
+      "bytes": 4956
+    },
+    {
+      "path": "P2/tests/test_generalization.py",
+      "bytes": 10496
+    },
+    {
+      "path": "P2/tests/test_horizontal_targets.py",
+      "bytes": 1642
+    },
+    {
+      "path": "P2/tests/test_native_environment.py",
+      "bytes": 4164
+    },
+    {
+      "path": "P2/tests/test_native_rope.py",
+      "bytes": 6240
+    },
+    {
+      "path": "P2/tests/test_native_training.py",
+      "bytes": 2101
+    },
+    {
+      "path": "P2/tests/test_recovery.py",
+      "bytes": 5124
+    },
+    {
+      "path": "P2/tests/test_runtime.py",
+      "bytes": 4800
+    },
+    {
+      "path": "P2/tests/test_short_comparison.py",
+      "bytes": 4342
+    },
+    {
+      "path": "P2/tests/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "P2/tests/__pycache__/test_flexible_environment.cpython-311.pyc",
+      "bytes": 13870
+    },
+    {
+      "path": "P2/tests/__pycache__/test_flexible_optimization.cpython-311.pyc",
+      "bytes": 10983
+    },
+    {
+      "path": "P2/tests/__pycache__/test_flexible_reference.cpython-311.pyc",
+      "bytes": 4367
+    },
+    {
+      "path": "P2/tests/__pycache__/test_flexible_rope.cpython-311.pyc",
+      "bytes": 16387
+    },
+    {
+      "path": "P2/tests/__pycache__/test_flexible_training.cpython-311.pyc",
+      "bytes": 12991
+    },
+    {
+      "path": "P2/tests/__pycache__/test_generalization.cpython-311.pyc",
+      "bytes": 22545
+    },
+    {
+      "path": "P2/tests/__pycache__/test_horizontal_targets.cpython-311.pyc",
+      "bytes": 4331
+    },
+    {
+      "path": "P2/tests/__pycache__/test_native_environment.cpython-311.pyc",
+      "bytes": 11858
+    },
+    {
+      "path": "P2/tests/__pycache__/test_native_rope.cpython-311.pyc",
+      "bytes": 17099
+    },
+    {
+      "path": "P2/tests/__pycache__/test_native_training.cpython-311.pyc",
+      "bytes": 5334
+    },
+    {
+      "path": "P2/tests/__pycache__/test_recovery.cpython-311.pyc",
+      "bytes": 12299
+    },
+    {
+      "path": "P2/tests/__pycache__/test_runtime.cpython-311.pyc",
+      "bytes": 13001
+    },
+    {
+      "path": "P2/tests/__pycache__/test_short_comparison.cpython-311.pyc",
+      "bytes": 10895
+    },
+    {
+      "path": "P2/tests/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 191
+    },
+    {
+      "path": "P2/train.py",
+      "bytes": 3071
+    },
+    {
+      "path": "P2/train_flexible_rope.py",
+      "bytes": 6811
+    },
+    {
+      "path": "P2/train_generalization.py",
+      "bytes": 7150
+    },
+    {
+      "path": "P2/train_native_rope.py",
+      "bytes": 7059
+    },
+    {
+      "path": "P2/validate_flexible_dynamics.py",
+      "bytes": 8954
+    },
+    {
+      "path": "P2/validate_p2.py",
+      "bytes": 5542
+    },
+    {
+      "path": "P2/validation/code_review.md",
+      "bytes": 3301
+    },
+    {
+      "path": "P2/validation/continue30_final_tests.log",
+      "bytes": 23166
+    },
+    {
+      "path": "P2/validation/continue30_step5_full_tests.log",
+      "bytes": 23396
+    },
+    {
+      "path": "P2/validation/continue30_step5_tests.log",
+      "bytes": 3427
+    },
+    {
+      "path": "P2/validation/continue30_targets_review.md",
+      "bytes": 1441
+    },
+    {
+      "path": "P2/validation/continue30_targets_tests.log",
+      "bytes": 23003
+    },
+    {
+      "path": "P2/validation/continue30_tests.log",
+      "bytes": 22317
+    },
+    {
+      "path": "P2/validation/flexible_cache_benchmark/audit.json",
+      "bytes": 419
+    },
+    {
+      "path": "P2/validation/flexible_cache_benchmark/frozen_source.zip",
+      "bytes": 131118
+    },
+    {
+      "path": "P2/validation/flexible_cache_benchmark/result.json",
+      "bytes": 6668
+    },
+    {
+      "path": "P2/validation/flexible_cache_benchmark.log",
+      "bytes": 773
+    },
+    {
+      "path": "P2/validation/flexible_cache_tests.log",
+      "bytes": 21309
+    },
+    {
+      "path": "P2/validation/flexible_cleanup.json",
+      "bytes": 1515
+    },
+    {
+      "path": "P2/validation/flexible_code_review.md",
+      "bytes": 1976
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step1_preflight/frozen_source.zip",
+      "bytes": 131645
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step1_preflight/qualification.json",
+      "bytes": 22003
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step1_preflight/result.json",
+      "bytes": 12267
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step1_preflight/run_manifest.json",
+      "bytes": 6474
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step1_preflight/trajectory.npz",
+      "bytes": 54406
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step1_preflight/wind_trace.pt",
+      "bytes": 21054
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step1_preflight.log",
+      "bytes": 1391
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step2_preflight/frozen_source.zip",
+      "bytes": 132228
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step2_preflight/qualification.json",
+      "bytes": 38686
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step2_preflight/result.json",
+      "bytes": 23885
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step2_preflight/run_manifest.json",
+      "bytes": 6986
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step2_preflight/trajectory.npz",
+      "bytes": 108459
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step2_preflight/wind_trace.pt",
+      "bytes": 40446
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step2_preflight.log",
+      "bytes": 1390
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step3_preflight/frozen_source.zip",
+      "bytes": 132147
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step3_preflight/qualification.json",
+      "bytes": 71550
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step3_preflight/result.json",
+      "bytes": 46918
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step3_preflight/run_manifest.json",
+      "bytes": 6857
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step3_preflight/trajectory.npz",
+      "bytes": 216307
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step3_preflight/wind_trace.pt",
+      "bytes": 79230
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step3_preflight.log",
+      "bytes": 1392
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step4_preflight/frozen_source.zip",
+      "bytes": 132266
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step4_preflight/qualification.json",
+      "bytes": 104643
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step4_preflight/result.json",
+      "bytes": 69991
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step4_preflight/run_manifest.json",
+      "bytes": 7133
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step4_preflight/trajectory.npz",
+      "bytes": 324141
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step4_preflight/wind_trace.pt",
+      "bytes": 118014
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step4_preflight.log",
+      "bytes": 1392
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step5_preflight/frozen_source.zip",
+      "bytes": 132493
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step5_preflight/qualification.json",
+      "bytes": 104591
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step5_preflight/result.json",
+      "bytes": 69969
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step5_preflight/run_manifest.json",
+      "bytes": 7324
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step5_preflight/trajectory.npz",
+      "bytes": 324144
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step5_preflight/wind_trace.pt",
+      "bytes": 118014
+    },
+    {
+      "path": "P2/validation/flexible_continue30_step5_preflight.log",
+      "bytes": 1391
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2/audit.json",
+      "bytes": 5901
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2/comparison.png",
+      "bytes": 102718
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2/frozen_source.zip",
+      "bytes": 138084
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2/README.md",
+      "bytes": 1796
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2/result.json",
+      "bytes": 9603
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2/summary.json",
+      "bytes": 422
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2/traces.npz",
+      "bytes": 445157
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2.log",
+      "bytes": 6524
+    },
+    {
+      "path": "P2/validation/flexible_forward_timing.json",
+      "bytes": 6067
+    },
+    {
+      "path": "P2/validation/FLEXIBLE_GOAL_AUDIT.md",
+      "bytes": 3382
+    },
+    {
+      "path": "P2/validation/flexible_optimization_tests.log",
+      "bytes": 2401
+    },
+    {
+      "path": "P2/validation/FLEXIBLE_PERFORMANCE.md",
+      "bytes": 4506
+    },
+    {
+      "path": "P2/validation/flexible_performance_profile/frozen_30s_completion_audit.json",
+      "bytes": 596
+    },
+    {
+      "path": "P2/validation/flexible_performance_profile/profile.json",
+      "bytes": 117707
+    },
+    {
+      "path": "P2/validation/flexible_performance_profile.log",
+      "bytes": 3430
+    },
+    {
+      "path": "P2/validation/flexible_reference_cleanup.json",
+      "bytes": 1136
+    },
+    {
+      "path": "P2/validation/flexible_reference_tests.log",
+      "bytes": 21089
+    },
+    {
+      "path": "P2/validation/flexible_resolution.json",
+      "bytes": 1223
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/completion_audit.json",
+      "bytes": 769
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/current.gif",
+      "bytes": 680545
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/current.json",
+      "bytes": 1351
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/frozen_source.zip",
+      "bytes": 129095
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/MODEL_COMPARISON.md",
+      "bytes": 3489
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/preview.png",
+      "bytes": 89256
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/qualification.json",
+      "bytes": 13208
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/result.json",
+      "bytes": 12834
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/rope_detail.gif",
+      "bytes": 1255630
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/rope_detail.json",
+      "bytes": 1469
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/rope_detail.png",
+      "bytes": 133208
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/run_manifest.json",
+      "bytes": 6090
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/shape_diagnostics.json",
+      "bytes": 385
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/trajectory.npz",
+      "bytes": 1543198
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s/wind_trace.pt",
+      "bytes": 577854
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s.log",
+      "bytes": 3277
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/animation_reference.json",
+      "bytes": 592
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/comparison.json",
+      "bytes": 1681
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/completion_audit.json",
+      "bytes": 616
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/frozen_source.zip",
+      "bytes": 129547
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/qualification.json",
+      "bytes": 13208
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/result.json",
+      "bytes": 12834
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/run_manifest.json",
+      "bytes": 6090
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/trajectory.npz",
+      "bytes": 1543198
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized/wind_trace.pt",
+      "bytes": 577854
+    },
+    {
+      "path": "P2/validation/flexible_rope_30s_optimized.log",
+      "bytes": 3029
+    },
+    {
+      "path": "P2/validation/flexible_rope_cpu/qualification.json",
+      "bytes": 21922
+    },
+    {
+      "path": "P2/validation/flexible_rope_gpu_v3/qualification.json",
+      "bytes": 21964
+    },
+    {
+      "path": "P2/validation/flexible_step_cache_benchmark/frozen_source.zip",
+      "bytes": 131687
+    },
+    {
+      "path": "P2/validation/flexible_step_cache_benchmark/result.json",
+      "bytes": 6666
+    },
+    {
+      "path": "P2/validation/flexible_step_cache_benchmark.log",
+      "bytes": 771
+    },
+    {
+      "path": "P2/validation/flexible_step_cache_followup_tests.log",
+      "bytes": 717
+    },
+    {
+      "path": "P2/validation/flexible_step_cache_review.md",
+      "bytes": 1835
+    },
+    {
+      "path": "P2/validation/flexible_step_cache_tests.log",
+      "bytes": 21703
+    },
+    {
+      "path": "P2/validation/flexible_tests.log",
+      "bytes": 20701
+    },
+    {
+      "path": "P2/validation/flexible_update30_preflight/frozen_source.zip",
+      "bytes": 130922
+    },
+    {
+      "path": "P2/validation/flexible_update30_preflight/qualification.json",
+      "bytes": 21996
+    },
+    {
+      "path": "P2/validation/flexible_update30_preflight/result.json",
+      "bytes": 12270
+    },
+    {
+      "path": "P2/validation/flexible_update30_preflight/run_manifest.json",
+      "bytes": 6201
+    },
+    {
+      "path": "P2/validation/flexible_update30_preflight/trajectory.npz",
+      "bytes": 54380
+    },
+    {
+      "path": "P2/validation/flexible_update30_preflight/wind_trace.pt",
+      "bytes": 21054
+    },
+    {
+      "path": "P2/validation/flexible_update30_preflight.log",
+      "bytes": 1389
+    },
+    {
+      "path": "P2/validation/flexible_update30_review.md",
+      "bytes": 2197
+    },
+    {
+      "path": "P2/validation/flexible_update30_tests.log",
+      "bytes": 22127
+    },
+    {
+      "path": "P2/validation/gradient_smoke.json",
+      "bytes": 681
+    },
+    {
+      "path": "P2/validation/legacy_seed20601201/result.json",
+      "bytes": 244447
+    },
+    {
+      "path": "P2/validation/legacy_seed20602201/result.json",
+      "bytes": 244524
+    },
+    {
+      "path": "P2/validation/native_rope_profile/qualification.json",
+      "bytes": 12032
+    },
+    {
+      "path": "P2/validation/native_rope_qualification/qualification.json",
+      "bytes": 12013
+    },
+    {
+      "path": "P2/validation/original_tests.log",
+      "bytes": 2562
+    },
+    {
+      "path": "P2/validation/post_review_verification.json",
+      "bytes": 6207
+    },
+    {
+      "path": "P2/validation/retired_attempts.json",
+      "bytes": 234
+    },
+    {
+      "path": "P2/validation/summary.json",
+      "bytes": 5838
+    },
+    {
+      "path": "P2/visualize_flexible_rope.py",
+      "bytes": 5878
+    },
+    {
+      "path": "P2/visualize_flight_paths.py",
+      "bytes": 5910
+    },
+    {
+      "path": "P2/visualize_full_flight.py",
+      "bytes": 7036
+    },
+    {
+      "path": "P2/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "P2/__pycache__/animate.cpython-311.pyc",
+      "bytes": 15541
+    },
+    {
+      "path": "P2/__pycache__/audit_flexible_update.cpython-311.pyc",
+      "bytes": 13671
+    },
+    {
+      "path": "P2/__pycache__/benchmark_flexible_cache.cpython-311.pyc",
+      "bytes": 10489
+    },
+    {
+      "path": "P2/__pycache__/compare_flexible_qualification.cpython-311.pyc",
+      "bytes": 8400
+    },
+    {
+      "path": "P2/__pycache__/derive_continuation_development.cpython-311.pyc",
+      "bytes": 7502
+    },
+    {
+      "path": "P2/__pycache__/evaluate_flexible_rope.cpython-311.pyc",
+      "bytes": 6394
+    },
+    {
+      "path": "P2/__pycache__/evaluate_generalization.cpython-311.pyc",
+      "bytes": 5090
+    },
+    {
+      "path": "P2/__pycache__/evaluate_horizontal_targets.cpython-311.pyc",
+      "bytes": 13349
+    },
+    {
+      "path": "P2/__pycache__/profile_flexible_rope.cpython-311.pyc",
+      "bytes": 10310
+    },
+    {
+      "path": "P2/__pycache__/qualify_flexible_rope.cpython-311.pyc",
+      "bytes": 17070
+    },
+    {
+      "path": "P2/__pycache__/replay_flexible_policy.cpython-311.pyc",
+      "bytes": 10145
+    },
+    {
+      "path": "P2/__pycache__/train_flexible_rope.cpython-311.pyc",
+      "bytes": 12300
+    },
+    {
+      "path": "P2/__pycache__/validate_flexible_dynamics.cpython-311.pyc",
+      "bytes": 18019
+    },
+    {
+      "path": "P2/__pycache__/visualize_flexible_rope.cpython-311.pyc",
+      "bytes": 14202
+    },
+    {
+      "path": "P2/__pycache__/visualize_flight_paths.cpython-311.pyc",
+      "bytes": 14048
+    },
+    {
+      "path": "P2/__pycache__/visualize_full_flight.cpython-311.pyc",
+      "bytes": 17258
+    },
+    {
+      "path": "P2/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 185
+    },
+    {
+      "path": "P3/audit_clear_replay.py",
+      "bytes": 4964
+    },
+    {
+      "path": "P3/audit_flexible.py",
+      "bytes": 7074
+    },
+    {
+      "path": "P3/audit_flexible120.py",
+      "bytes": 8885
+    },
+    {
+      "path": "P3/benchmark_forward.py",
+      "bytes": 3159
+    },
+    {
+      "path": "P3/collect_flexible.py",
+      "bytes": 7386
+    },
+    {
+      "path": "P3/collect_mismatch.py",
+      "bytes": 6286
+    },
+    {
+      "path": "P3/compensation.py",
+      "bytes": 6912
+    },
+    {
+      "path": "P3/evaluate_compensation.py",
+      "bytes": 5302
+    },
+    {
+      "path": "P3/evaluate_flexible.py",
+      "bytes": 7838
+    },
+    {
+      "path": "P3/evaluate_mismatch.py",
+      "bytes": 5686
+    },
+    {
+      "path": "P3/FLEXIBLE26_120_RESULTS.md",
+      "bytes": 6625
+    },
+    {
+      "path": "P3/FLEXIBLE26_PLAN.md",
+      "bytes": 3955
+    },
+    {
+      "path": "P3/flexible26_protocol.json",
+      "bytes": 5004
+    },
+    {
+      "path": "P3/FLEXIBLE26_RESULTS.md",
+      "bytes": 8366
+    },
+    {
+      "path": "P3/flexible26_structural120_protocol.json",
+      "bytes": 5248
+    },
+    {
+      "path": "P3/flexible26_structural_protocol.json",
+      "bytes": 5051
+    },
+    {
+      "path": "P3/flexible_compensation.py",
+      "bytes": 1551
+    },
+    {
+      "path": "P3/flexible_domains.py",
+      "bytes": 4441
+    },
+    {
+      "path": "P3/flexible_labels.py",
+      "bytes": 1353
+    },
+    {
+      "path": "P3/flexible_status.json",
+      "bytes": 204
+    },
+    {
+      "path": "P3/mismatch_data.py",
+      "bytes": 5919
+    },
+    {
+      "path": "P3/mismatch_dynamics.py",
+      "bytes": 4817
+    },
+    {
+      "path": "P3/mismatch_forecast.py",
+      "bytes": 3840
+    },
+    {
+      "path": "P3/mismatch_runtime.py",
+      "bytes": 6962
+    },
+    {
+      "path": "P3/p3_mismatch_protocol.json",
+      "bytes": 4129
+    },
+    {
+      "path": "P3/PROGRESS.md",
+      "bytes": 13404
+    },
+    {
+      "path": "P3/README.md",
+      "bytes": 5935
+    },
+    {
+      "path": "P3/relabel_flexible.py",
+      "bytes": 4459
+    },
+    {
+      "path": "P3/replay_attitude_wind.py",
+      "bytes": 17431
+    },
+    {
+      "path": "P3/replay_to_video.py",
+      "bytes": 2483
+    },
+    {
+      "path": "P3/report_flexible.py",
+      "bytes": 7599
+    },
+    {
+      "path": "P3/report_flexible120.py",
+      "bytes": 8739
+    },
+    {
+      "path": "P3/report_flexible_model.py",
+      "bytes": 2666
+    },
+    {
+      "path": "P3/results/compensation/protocol.json",
+      "bytes": 11387
+    },
+    {
+      "path": "P3/results/compensation/runtime_manifest.json",
+      "bytes": 1016
+    },
+    {
+      "path": "P3/results/compensation/summary.json",
+      "bytes": 2008
+    },
+    {
+      "path": "P3/results/compensation/without_compensation/current.gif",
+      "bytes": 647398
+    },
+    {
+      "path": "P3/results/compensation/without_compensation/current.json",
+      "bytes": 1982
+    },
+    {
+      "path": "P3/results/compensation/without_compensation/current_preview.png",
+      "bytes": 86041
+    },
+    {
+      "path": "P3/results/compensation/without_compensation/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "P3/results/compensation/without_compensation/result.json",
+      "bytes": 47499
+    },
+    {
+      "path": "P3/results/compensation/without_compensation/trajectory.npz",
+      "bytes": 766629
+    },
+    {
+      "path": "P3/results/compensation/without_compensation/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/compensation_summary.json",
+      "bytes": 843
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/compensation_trace.pt",
+      "bytes": 8546995
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/current.gif",
+      "bytes": 744380
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/current.json",
+      "bytes": 1976
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/current_preview.png",
+      "bytes": 87045
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/heading_witness.pt",
+      "bytes": 385782
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/result.json",
+      "bytes": 47535
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/trajectory.npz",
+      "bytes": 766956
+    },
+    {
+      "path": "P3/results/compensation/with_compensation/wind_trace.pt",
+      "bytes": 1154067
+    },
+    {
+      "path": "P3/results/data/development/intermediate.pt",
+      "bytes": 28742735
+    },
+    {
+      "path": "P3/results/data/protocol.json",
+      "bytes": 9480
+    },
+    {
+      "path": "P3/results/data/summary.json",
+      "bytes": 13122
+    },
+    {
+      "path": "P3/results/data/test/new_combination.pt",
+      "bytes": 28742789
+    },
+    {
+      "path": "P3/results/data/train/heavy_slow.pt",
+      "bytes": 28742699
+    },
+    {
+      "path": "P3/results/data/train/light_fast.pt",
+      "bytes": 28742699
+    },
+    {
+      "path": "P3/results/data/train/matched.pt",
+      "bytes": 14385589
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/frozen_source.zip",
+      "bytes": 152074
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/protocol.json",
+      "bytes": 12915
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/summary.json",
+      "bytes": 1436
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/without_compensation/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/without_compensation/result.json",
+      "bytes": 25213
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/without_compensation/trajectory.npz",
+      "bytes": 1615259
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/without_compensation/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/with_compensation/compensation_summary.json",
+      "bytes": 589
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/with_compensation/compensation_trace.pt",
+      "bytes": 4274995
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/with_compensation/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/with_compensation/result.json",
+      "bytes": 25177
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/with_compensation/trajectory.npz",
+      "bytes": 1612398
+    },
+    {
+      "path": "P3/results/flexible26/comparison_torch/with_compensation/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P3/results/flexible26/data/development/intermediate.pt",
+      "bytes": 13622996
+    },
+    {
+      "path": "P3/results/flexible26/data/frozen_source.zip",
+      "bytes": 151880
+    },
+    {
+      "path": "P3/results/flexible26/data/protocol.json",
+      "bytes": 11793
+    },
+    {
+      "path": "P3/results/flexible26/data/summary.json",
+      "bytes": 18649
+    },
+    {
+      "path": "P3/results/flexible26/data/test/new_combination.pt",
+      "bytes": 13623053
+    },
+    {
+      "path": "P3/results/flexible26/data/train/heavy_slow.pt",
+      "bytes": 13622958
+    },
+    {
+      "path": "P3/results/flexible26/data/train/light_fast.pt",
+      "bytes": 13622958
+    },
+    {
+      "path": "P3/results/flexible26/data/train/matched.pt",
+      "bytes": 3388021
+    },
+    {
+      "path": "P3/results/flexible26/prediction/summary.json",
+      "bytes": 2611
+    },
+    {
+      "path": "P3/results/flexible26/residual/best.pt",
+      "bytes": 467724
+    },
+    {
+      "path": "P3/results/flexible26/residual/frozen_source.zip",
+      "bytes": 152074
+    },
+    {
+      "path": "P3/results/flexible26/residual/protocol.json",
+      "bytes": 12002
+    },
+    {
+      "path": "P3/results/flexible26/residual/training_summary.json",
+      "bytes": 2960
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/frozen_source.zip",
+      "bytes": 154836
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/protocol.json",
+      "bytes": 13186
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/report/paired_trajectory_attitude.png",
+      "bytes": 294777
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/report/REPORT.md",
+      "bytes": 1234
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/report/summary.json",
+      "bytes": 15007
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/summary.json",
+      "bytes": 1438
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/strong_with.gif",
+      "bytes": 1393698
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/strong_with.json",
+      "bytes": 2453
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/strong_with.png",
+      "bytes": 133737
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/strong_without.gif",
+      "bytes": 1425347
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/strong_without.json",
+      "bytes": 2444
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/strong_without.png",
+      "bytes": 126868
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/weak_with.gif",
+      "bytes": 2034898
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/weak_with.json",
+      "bytes": 2448
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/weak_with.png",
+      "bytes": 139421
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/weak_without.gif",
+      "bytes": 1289885
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/weak_without.json",
+      "bytes": 2429
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/visuals/weak_without.png",
+      "bytes": 129926
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/without_compensation/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/without_compensation/result.json",
+      "bytes": 25235
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/without_compensation/scene.xml",
+      "bytes": 131142
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/without_compensation/trajectory.npz",
+      "bytes": 1614808
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/without_compensation/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/with_compensation/compensation_summary.json",
+      "bytes": 592
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/with_compensation/compensation_trace.pt",
+      "bytes": 4274995
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/with_compensation/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/with_compensation/result.json",
+      "bytes": 25216
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/with_compensation/scene.xml",
+      "bytes": 131142
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/with_compensation/trajectory.npz",
+      "bytes": 1614696
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_mujoco/with_compensation/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/frozen_source.zip",
+      "bytes": 154836
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/protocol.json",
+      "bytes": 13185
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/report/paired_trajectory_attitude.png",
+      "bytes": 296766
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/report/REPORT.md",
+      "bytes": 1233
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/report/summary.json",
+      "bytes": 15015
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/summary.json",
+      "bytes": 1436
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/strong_with.gif",
+      "bytes": 1088522
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/strong_with.json",
+      "bytes": 2456
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/strong_with.png",
+      "bytes": 134175
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/strong_without.gif",
+      "bytes": 880918
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/strong_without.json",
+      "bytes": 2445
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/strong_without.png",
+      "bytes": 127290
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/weak_with.gif",
+      "bytes": 787674
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/weak_with.json",
+      "bytes": 2436
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/weak_with.png",
+      "bytes": 139548
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/weak_without.gif",
+      "bytes": 1294360
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/weak_without.json",
+      "bytes": 2432
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/visuals/weak_without.png",
+      "bytes": 130197
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/without_compensation/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/without_compensation/result.json",
+      "bytes": 25232
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/without_compensation/trajectory.npz",
+      "bytes": 1614383
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/without_compensation/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/with_compensation/compensation_summary.json",
+      "bytes": 592
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/with_compensation/compensation_trace.pt",
+      "bytes": 4274995
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/with_compensation/heading_witness.pt",
+      "bytes": 193718
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/with_compensation/result.json",
+      "bytes": 25207
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/with_compensation/trajectory.npz",
+      "bytes": 1614032
+    },
+    {
+      "path": "P3/results/flexible26_structural/comparison_torch/with_compensation/wind_trace.pt",
+      "bytes": 577875
+    },
+    {
+      "path": "P3/results/flexible26_structural/completion_audit.json",
+      "bytes": 6081
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/development/intermediate.pt",
+      "bytes": 113321
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/frozen_source.zip",
+      "bytes": 154789
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/protocol.json",
+      "bytes": 11721
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/summary.json",
+      "bytes": 21743
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/test/new_combination.pt",
+      "bytes": 113321
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/train/heavy_slow.pt",
+      "bytes": 113321
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/train/light_fast.pt",
+      "bytes": 113321
+    },
+    {
+      "path": "P3/results/flexible26_structural/data/train/matched.pt",
+      "bytes": 28841
+    },
+    {
+      "path": "P3/results/flexible26_structural/prediction/model_errors.json",
+      "bytes": 389
+    },
+    {
+      "path": "P3/results/flexible26_structural/prediction/model_errors.png",
+      "bytes": 104993
+    },
+    {
+      "path": "P3/results/flexible26_structural/prediction/summary.json",
+      "bytes": 2635
+    },
+    {
+      "path": "P3/results/flexible26_structural/report_sources.zip",
+      "bytes": 12752
+    },
+    {
+      "path": "P3/results/flexible26_structural/residual/best.pt",
+      "bytes": 467980
+    },
+    {
+      "path": "P3/results/flexible26_structural/residual/frozen_source.zip",
+      "bytes": 154789
+    },
+    {
+      "path": "P3/results/flexible26_structural/residual/protocol.json",
+      "bytes": 12261
+    },
+    {
+      "path": "P3/results/flexible26_structural/residual/training_summary.json",
+      "bytes": 2984
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/audit.json",
+      "bytes": 2508
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/README.md",
+      "bytes": 2359
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/render_sources.zip",
+      "bytes": 21477
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/strong.gif",
+      "bytes": 31215507
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/strong.json",
+      "bytes": 3485
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/strong.mp4",
+      "bytes": 63629883
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/strong.png",
+      "bytes": 190598
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/strong.video.json",
+      "bytes": 706
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/weak.gif",
+      "bytes": 31182654
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/weak.json",
+      "bytes": 3469
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/weak.mp4",
+      "bytes": 63629882
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/weak.png",
+      "bytes": 185630
+    },
+    {
+      "path": "P3/results/flexible26_structural120/attitude_wind_clear/weak.video.json",
+      "bytes": 705
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/frozen_source.zip",
+      "bytes": 155269
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/protocol.json",
+      "bytes": 13392
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/report/paired_trajectory_attitude.png",
+      "bytes": 334116
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/report/REPORT.md",
+      "bytes": 1249
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/report/summary.json",
+      "bytes": 15012
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/summary.json",
+      "bytes": 1438
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/strong_with.gif",
+      "bytes": 7169506
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/strong_with.json",
+      "bytes": 2469
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/strong_with.png",
+      "bytes": 144882
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/strong_without.gif",
+      "bytes": 8316804
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/strong_without.json",
+      "bytes": 2463
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/strong_without.png",
+      "bytes": 134624
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/weak_with.gif",
+      "bytes": 4118088
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/weak_with.json",
+      "bytes": 2454
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/weak_with.png",
+      "bytes": 146303
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/weak_without.gif",
+      "bytes": 2689193
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/weak_without.json",
+      "bytes": 2451
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/visuals/weak_without.png",
+      "bytes": 136814
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/without_compensation/heading_witness.pt",
+      "bytes": 769641
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/without_compensation/result.json",
+      "bytes": 25243
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/without_compensation/scene.xml",
+      "bytes": 131142
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/without_compensation/trajectory.npz",
+      "bytes": 6456014
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/without_compensation/wind_trace.pt",
+      "bytes": 2305833
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/with_compensation/compensation_summary.json",
+      "bytes": 591
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/with_compensation/compensation_trace.pt",
+      "bytes": 17090585
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/with_compensation/heading_witness.pt",
+      "bytes": 769641
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/with_compensation/result.json",
+      "bytes": 25262
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/with_compensation/scene.xml",
+      "bytes": 131142
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/with_compensation/trajectory.npz",
+      "bytes": 6457803
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_mujoco/with_compensation/wind_trace.pt",
+      "bytes": 2305833
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/frozen_source.zip",
+      "bytes": 155269
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/protocol.json",
+      "bytes": 13391
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/report/paired_trajectory_attitude.png",
+      "bytes": 333314
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/report/REPORT.md",
+      "bytes": 1248
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/report/summary.json",
+      "bytes": 15012
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/summary.json",
+      "bytes": 1438
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/visuals/strong_with.gif",
+      "bytes": 7465313
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/visuals/strong_with.json",
+      "bytes": 2473
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/visuals/strong_with.png",
+      "bytes": 145448
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/visuals/weak_with.gif",
+      "bytes": 5160130
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/visuals/weak_with.json",
+      "bytes": 2444
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/visuals/weak_with.png",
+      "bytes": 146787
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/without_compensation/heading_witness.pt",
+      "bytes": 769641
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/without_compensation/result.json",
+      "bytes": 25240
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/without_compensation/trajectory.npz",
+      "bytes": 6453496
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/without_compensation/wind_trace.pt",
+      "bytes": 2305833
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/with_compensation/compensation_summary.json",
+      "bytes": 592
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/with_compensation/compensation_trace.pt",
+      "bytes": 17090585
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/with_compensation/heading_witness.pt",
+      "bytes": 769641
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/with_compensation/result.json",
+      "bytes": 25261
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/with_compensation/trajectory.npz",
+      "bytes": 6455389
+    },
+    {
+      "path": "P3/results/flexible26_structural120/comparison_torch/with_compensation/wind_trace.pt",
+      "bytes": 2305833
+    },
+    {
+      "path": "P3/results/flexible26_structural120/completion_audit.json",
+      "bytes": 6234
+    },
+    {
+      "path": "P3/results/flexible26_structural120/execution.json",
+      "bytes": 155
+    },
+    {
+      "path": "P3/results/flexible26_structural120/frozen_source.zip",
+      "bytes": 156978
+    },
+    {
+      "path": "P3/results/flexible26_structural120/mujoco.log",
+      "bytes": 7993
+    },
+    {
+      "path": "P3/results/flexible26_structural120/processes.json",
+      "bytes": 337
+    },
+    {
+      "path": "P3/results/flexible26_structural120/protocol.json",
+      "bytes": 12548
+    },
+    {
+      "path": "P3/results/flexible26_structural120/report_sources.zip",
+      "bytes": 16477
+    },
+    {
+      "path": "P3/results/flexible26_structural120/settling_metrics.json",
+      "bytes": 52813
+    },
+    {
+      "path": "P3/results/flexible26_structural120/summary.json",
+      "bytes": 3805
+    },
+    {
+      "path": "P3/results/flexible26_structural120/torch.log",
+      "bytes": 7970
+    },
+    {
+      "path": "P3/results/prediction/metric_units.json",
+      "bytes": 747
+    },
+    {
+      "path": "P3/results/prediction/prediction_rmse.png",
+      "bytes": 174012
+    },
+    {
+      "path": "P3/results/prediction/summary.json",
+      "bytes": 13965
+    },
+    {
+      "path": "P3/results/residual/best.pt",
+      "bytes": 466764
+    },
+    {
+      "path": "P3/results/residual/protocol.json",
+      "bytes": 10930
+    },
+    {
+      "path": "P3/results/residual/training_summary.json",
+      "bytes": 3021
+    },
+    {
+      "path": "P3/run_flexible120.py",
+      "bytes": 4250
+    },
+    {
+      "path": "P3/score_flexible.py",
+      "bytes": 4760
+    },
+    {
+      "path": "P3/status.json",
+      "bytes": 2275
+    },
+    {
+      "path": "P3/status_legacy21.json",
+      "bytes": 2289
+    },
+    {
+      "path": "P3/tests/test_compensation.py",
+      "bytes": 7138
+    },
+    {
+      "path": "P3/tests/test_flexible_residual.py",
+      "bytes": 4676
+    },
+    {
+      "path": "P3/tests/test_mismatch.py",
+      "bytes": 6441
+    },
+    {
+      "path": "P3/tests/test_mismatch_prediction.py",
+      "bytes": 1894
+    },
+    {
+      "path": "P3/tests/test_mismatch_runtime.py",
+      "bytes": 4331
+    },
+    {
+      "path": "P3/tests/__init__.py",
+      "bytes": 0
+    },
+    {
+      "path": "P3/tests/__pycache__/test_compensation.cpython-311.pyc",
+      "bytes": 19144
+    },
+    {
+      "path": "P3/tests/__pycache__/test_flexible_residual.cpython-311.pyc",
+      "bytes": 11043
+    },
+    {
+      "path": "P3/tests/__pycache__/test_mismatch.cpython-311.pyc",
+      "bytes": 19452
+    },
+    {
+      "path": "P3/tests/__pycache__/test_mismatch_prediction.cpython-311.pyc",
+      "bytes": 4819
+    },
+    {
+      "path": "P3/tests/__pycache__/test_mismatch_runtime.cpython-311.pyc",
+      "bytes": 10949
+    },
+    {
+      "path": "P3/tests/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 191
+    },
+    {
+      "path": "P3/train_mismatch.py",
+      "bytes": 7125
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_audit.log",
+      "bytes": 130
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_final_preview.log",
+      "bytes": 0
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_preview.log",
+      "bytes": 0
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_strong.log",
+      "bytes": 380
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_strong_video.log",
+      "bytes": 120
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_weak.log",
+      "bytes": 378
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_weak_preview.log",
+      "bytes": 0
+    },
+    {
+      "path": "P3/validation/attitude_wind_clear_weak_video.log",
+      "bytes": 118
+    },
+    {
+      "path": "P3/validation/code_review.md",
+      "bytes": 3494
+    },
+    {
+      "path": "P3/validation/flexible26_120_forward_timing.json",
+      "bytes": 1360
+    },
+    {
+      "path": "P3/validation/flexible26_120_forward_timing.log",
+      "bytes": 689
+    },
+    {
+      "path": "P3/validation/flexible26_collection.log",
+      "bytes": 2701
+    },
+    {
+      "path": "P3/validation/flexible26_comparison_torch.log",
+      "bytes": 4596
+    },
+    {
+      "path": "P3/validation/flexible26_fit_gate_tests.log",
+      "bytes": 522
+    },
+    {
+      "path": "P3/validation/flexible26_full_tests.log",
+      "bytes": 24891
+    },
+    {
+      "path": "P3/validation/flexible26_prediction.log",
+      "bytes": 1901
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_completion_audit.log",
+      "bytes": 1538
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_mujoco_report.log",
+      "bytes": 2723
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_mujoco_strong_with.log",
+      "bytes": 135
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_mujoco_strong_without.log",
+      "bytes": 138
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_mujoco_weak_with.log",
+      "bytes": 133
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_mujoco_weak_without.log",
+      "bytes": 136
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_results_report.log",
+      "bytes": 197
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_run.log",
+      "bytes": 176
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_torch_report.log",
+      "bytes": 2730
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_torch_strong_with.log",
+      "bytes": 134
+    },
+    {
+      "path": "P3/validation/flexible26_structural120_torch_weak_with.log",
+      "bytes": 132
+    },
+    {
+      "path": "P3/validation/flexible26_structural_comparison_mujoco.log",
+      "bytes": 4598
+    },
+    {
+      "path": "P3/validation/flexible26_structural_comparison_torch.log",
+      "bytes": 4596
+    },
+    {
+      "path": "P3/validation/flexible26_structural_completion_audit.log",
+      "bytes": 801
+    },
+    {
+      "path": "P3/validation/flexible26_structural_full_tests.log",
+      "bytes": 8869
+    },
+    {
+      "path": "P3/validation/flexible26_structural_labels.log",
+      "bytes": 1364
+    },
+    {
+      "path": "P3/validation/flexible26_structural_model_report.log",
+      "bytes": 0
+    },
+    {
+      "path": "P3/validation/flexible26_structural_mujoco_report.log",
+      "bytes": 2724
+    },
+    {
+      "path": "P3/validation/flexible26_structural_mujoco_strong_with.log",
+      "bytes": 130
+    },
+    {
+      "path": "P3/validation/flexible26_structural_mujoco_strong_without.log",
+      "bytes": 133
+    },
+    {
+      "path": "P3/validation/flexible26_structural_mujoco_weak_with.log",
+      "bytes": 128
+    },
+    {
+      "path": "P3/validation/flexible26_structural_mujoco_weak_without.log",
+      "bytes": 131
+    },
+    {
+      "path": "P3/validation/flexible26_structural_prediction.log",
+      "bytes": 1925
+    },
+    {
+      "path": "P3/validation/flexible26_structural_review.md",
+      "bytes": 2374
+    },
+    {
+      "path": "P3/validation/flexible26_structural_tests.log",
+      "bytes": 523
+    },
+    {
+      "path": "P3/validation/flexible26_structural_torch_report.log",
+      "bytes": 2724
+    },
+    {
+      "path": "P3/validation/flexible26_structural_torch_strong_with.log",
+      "bytes": 129
+    },
+    {
+      "path": "P3/validation/flexible26_structural_torch_strong_without.log",
+      "bytes": 132
+    },
+    {
+      "path": "P3/validation/flexible26_structural_torch_weak_with.log",
+      "bytes": 127
+    },
+    {
+      "path": "P3/validation/flexible26_structural_torch_weak_without.log",
+      "bytes": 130
+    },
+    {
+      "path": "P3/validation/flexible26_structural_training.log",
+      "bytes": 2616
+    },
+    {
+      "path": "P3/validation/flexible26_tests.log",
+      "bytes": 1091
+    },
+    {
+      "path": "P3/validation/flexible26_timing.log",
+      "bytes": 202
+    },
+    {
+      "path": "P3/validation/flexible26_training.log",
+      "bytes": 2597
+    },
+    {
+      "path": "P3/validation/forecast_cuda.json",
+      "bytes": 166
+    },
+    {
+      "path": "P3/validation/learned_state_dependence.json",
+      "bytes": 1017
+    },
+    {
+      "path": "P3/validation/matched_diagnostic.json",
+      "bytes": 539
+    },
+    {
+      "path": "P3/validation/organization_dependencies.json",
+      "bytes": 1188
+    },
+    {
+      "path": "P3/validation/organization_entrypoints.log",
+      "bytes": 574
+    },
+    {
+      "path": "P3/validation/organization_replay.json",
+      "bytes": 814
+    },
+    {
+      "path": "P3/validation/organization_review.md",
+      "bytes": 760
+    },
+    {
+      "path": "P3/validation/organization_tests.log",
+      "bytes": 12476
+    },
+    {
+      "path": "P3/validation/original_completion_audit.json",
+      "bytes": 14725
+    },
+    {
+      "path": "P3/validation/original_tests.log",
+      "bytes": 12994
+    },
+    {
+      "path": "P3/validation/residual_training_source.json",
+      "bytes": 6352
+    },
+    {
+      "path": "P3/validation/residual_training_source.zip",
+      "bytes": 153108
+    },
+    {
+      "path": "P3/validation/retired_attempts.json",
+      "bytes": 380
+    },
+    {
+      "path": "P3/validation/source_after_organization.zip",
+      "bytes": 157153
+    },
+    {
+      "path": "P3/validation/source_before_organization.json",
+      "bytes": 6581
+    },
+    {
+      "path": "P3/validation/source_before_organization.zip",
+      "bytes": 155113
+    },
+    {
+      "path": "P3/__init__.py",
+      "bytes": 73
+    },
+    {
+      "path": "P3/__pycache__/audit_clear_replay.cpython-311.pyc",
+      "bytes": 10865
+    },
+    {
+      "path": "P3/__pycache__/audit_flexible.cpython-311.pyc",
+      "bytes": 14695
+    },
+    {
+      "path": "P3/__pycache__/audit_flexible120.cpython-311.pyc",
+      "bytes": 19528
+    },
+    {
+      "path": "P3/__pycache__/benchmark_forward.cpython-311.pyc",
+      "bytes": 6310
+    },
+    {
+      "path": "P3/__pycache__/collect_flexible.cpython-311.pyc",
+      "bytes": 16155
+    },
+    {
+      "path": "P3/__pycache__/collect_mismatch.cpython-311.pyc",
+      "bytes": 14999
+    },
+    {
+      "path": "P3/__pycache__/compensation.cpython-311.pyc",
+      "bytes": 15039
+    },
+    {
+      "path": "P3/__pycache__/evaluate_compensation.cpython-311.pyc",
+      "bytes": 10499
+    },
+    {
+      "path": "P3/__pycache__/evaluate_flexible.cpython-311.pyc",
+      "bytes": 15613
+    },
+    {
+      "path": "P3/__pycache__/flexible_compensation.cpython-311.pyc",
+      "bytes": 3234
+    },
+    {
+      "path": "P3/__pycache__/flexible_domains.cpython-311.pyc",
+      "bytes": 10175
+    },
+    {
+      "path": "P3/__pycache__/flexible_labels.cpython-311.pyc",
+      "bytes": 2492
+    },
+    {
+      "path": "P3/__pycache__/mismatch_data.cpython-311.pyc",
+      "bytes": 14118
+    },
+    {
+      "path": "P3/__pycache__/mismatch_dynamics.cpython-311.pyc",
+      "bytes": 11899
+    },
+    {
+      "path": "P3/__pycache__/mismatch_forecast.cpython-311.pyc",
+      "bytes": 8609
+    },
+    {
+      "path": "P3/__pycache__/mismatch_runtime.cpython-311.pyc",
+      "bytes": 16960
+    },
+    {
+      "path": "P3/__pycache__/relabel_flexible.cpython-311.pyc",
+      "bytes": 9820
+    },
+    {
+      "path": "P3/__pycache__/replay_attitude_wind.cpython-311.pyc",
+      "bytes": 42756
+    },
+    {
+      "path": "P3/__pycache__/replay_to_video.cpython-311.pyc",
+      "bytes": 6115
+    },
+    {
+      "path": "P3/__pycache__/report_flexible.cpython-311.pyc",
+      "bytes": 18610
+    },
+    {
+      "path": "P3/__pycache__/report_flexible120.cpython-311.pyc",
+      "bytes": 14091
+    },
+    {
+      "path": "P3/__pycache__/report_flexible_model.cpython-311.pyc",
+      "bytes": 5942
+    },
+    {
+      "path": "P3/__pycache__/run_flexible120.cpython-311.pyc",
+      "bytes": 10138
+    },
+    {
+      "path": "P3/__pycache__/score_flexible.cpython-311.pyc",
+      "bytes": 10237
+    },
+    {
+      "path": "P3/__pycache__/train_mismatch.cpython-311.pyc",
+      "bytes": 15643
+    },
+    {
+      "path": "P3/__pycache__/__init__.cpython-311.pyc",
+      "bytes": 265
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 845
+    },
+    {
+      "path": "project_state.json",
+      "bytes": 4553
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 39
+    },
+    {
+      "path": "python.cmd",
+      "bytes": 366
+    },
+    {
+      "path": "README.md",
+      "bytes": 5354
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 247
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 7915
+    },
+    {
+      "path": "verify_project.py",
+      "bytes": 1865
+    }
+  ],
+  "links": []
+}

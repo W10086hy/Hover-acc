@@ -1,0 +1,1272 @@
+{
+  "date": "2026-11-02",
+  "user_request": "Keep all statistical tables;retain detailed tracking data/media only for10m,5m/s,one representative5cm case",
+  "targets": [
+    "track/results/cart4_120",
+    "track/results/frame_qualification_cuda",
+    "track/results/frame_qualification_short",
+    "track/results/height_speed_baseline",
+    "track/results/height_speed_baseline_common7",
+    "track/results/height_speed_continuous_qualification",
+    "track/results/height_speed_full30_eps_update",
+    "track/results/height_speed_full30_qualification",
+    "track/results/height_speed_full30_update",
+    "track/results/height_speed_native28_30",
+    "track/results/height_speed_native29_120",
+    "track/results/height_speed_qualification",
+    "track/results/height_speed_train10",
+    "track/results/height_speed_train10_guarded",
+    "track/results/height_speed_train20",
+    "track/results/hover_start120",
+    "track/reports/height_speed_baseline",
+    "track/reports/height_speed_baseline_common7",
+    "track/reports/height_speed_native29",
+    "track/reports/height_speed_plan.md",
+    "track/validation/height_speed",
+    "track/hover_results.py",
+    "track/height_speed_report.py",
+    "track/validate_frozen_graph.py",
+    "track/validation/audit_constant.py",
+    "track/validation/audit_hover_start.py",
+    "track/validation/verify_capture.py",
+    "track/validation/audit_height_speed.py"
+  ],
+  "removed_files": [
+    {
+      "path": "track/results/cart4_120/additional_metrics.json",
+      "bytes": 4535,
+      "sha256": "dbe76ed26566da136a4dfcfe0b33329bf26d01ca004d710f43a379aed4455cb6"
+    },
+    {
+      "path": "track/results/cart4_120/audit.json",
+      "bytes": 1338,
+      "sha256": "29b41086d8b16179e84928a5b3be3c942a65fca57675bc57ad2ca841b64ad78e"
+    },
+    {
+      "path": "track/results/cart4_120/capture_prefix_audit.json",
+      "bytes": 2125,
+      "sha256": "7f18c37a018456f8bd0c1d9d638dece71042bed195ef5386fe8a220e9b82e143"
+    },
+    {
+      "path": "track/results/cart4_120/frozen_source.zip",
+      "bytes": 247743,
+      "sha256": "a958725d332c3a01fbae1b94eccffe4b7d8aae6e9f0e5d299f6ca5bb735e1d15"
+    },
+    {
+      "path": "track/results/cart4_120/manifest.json",
+      "bytes": 12466,
+      "sha256": "752d1bb4f9df28592896149f58a0d7152eca579b6c201a3874e696a275943b9e"
+    },
+    {
+      "path": "track/results/cart4_120/replay/co_moving10cm.json",
+      "bytes": 1661,
+      "sha256": "d0d3ccd59387dd3dbca63038f19964b33d5c42443e5f2830c046ad0e6869b267"
+    },
+    {
+      "path": "track/results/cart4_120/replay/co_moving10cm.png",
+      "bytes": 168907,
+      "sha256": "3cc20f89c5e86ce5b193743063745b04b8e03eb1093beb116b09d0863e36bd48"
+    },
+    {
+      "path": "track/results/cart4_120/replay/co_moving10cm.video.json",
+      "bytes": 704,
+      "sha256": "2abe7a036ec2ae40f475a96a62414b49a3a470684411cedd03ac2177cb8f3f13"
+    },
+    {
+      "path": "track/results/cart4_120/replay/co_moving5cm.gif",
+      "bytes": 34474351,
+      "sha256": "4fc419cfeeac2b89976e20fa18fe5d768e29c8816ed9b5bdc7fcfc4f75050e4f"
+    },
+    {
+      "path": "track/results/cart4_120/replay/co_moving5cm.json",
+      "bytes": 1659,
+      "sha256": "6c116576ee7268ae2755bafdce9eb7a24787378d08e60935ed533decc8d011cd"
+    },
+    {
+      "path": "track/results/cart4_120/replay/co_moving5cm.png",
+      "bytes": 168899,
+      "sha256": "e9360a029b9b4a2b5e9c4f42b465cd294f8755fd47034faef7d15726a93658a4"
+    },
+    {
+      "path": "track/results/cart4_120/replay/co_moving5cm.video.json",
+      "bytes": 706,
+      "sha256": "0aa338e91743f1e71352367b1ffbb78ff27484f617f5606152c36d1b803d9e43"
+    },
+    {
+      "path": "track/results/cart4_120/replay/render_sources.zip",
+      "bytes": 17805,
+      "sha256": "e3eb77a88781f436b2793f991eee9eca5400a7861fa013560ba5aebba603ffeb"
+    },
+    {
+      "path": "track/results/cart4_120/replay/tracking_curves.png",
+      "bytes": 325271,
+      "sha256": "b76f05b79e5a74da48fd5e1fdab0735bc38c01c891f8e96593fb4a1d21f1a705"
+    },
+    {
+      "path": "track/results/cart4_120/replay/trajectories_attitude.png",
+      "bytes": 584885,
+      "sha256": "faa449cb56c7e5ee462ee274a1332a99d6c268cf52aef6c7b8534428fd565c5a"
+    },
+    {
+      "path": "track/results/cart4_120/summary.json",
+      "bytes": 6293,
+      "sha256": "2052a62d8afca9e240816965c2bc2e5dba3546f72d754c5c7d1f0608aa580e9a"
+    },
+    {
+      "path": "track/results/cart4_120/without_compensation/fullrate.npz",
+      "bytes": 706038,
+      "sha256": "3aca846881ad2e12592939deea6388decfcc645e27417da35db2fac186223e06"
+    },
+    {
+      "path": "track/results/cart4_120/without_compensation/result.json",
+      "bytes": 11314,
+      "sha256": "df0da359e81d1c114dfcc5f00d244484664233890d593e348ece557acb0d3541"
+    },
+    {
+      "path": "track/results/cart4_120/without_compensation/scene.xml",
+      "bytes": 37751,
+      "sha256": "c405d602984030ec6dd6c00cfb814f18f8e0855d874d305eab9e19bc373b58a0"
+    },
+    {
+      "path": "track/results/cart4_120/without_compensation/trajectory.npz",
+      "bytes": 825370,
+      "sha256": "ca27821e15ef2f899f077c3bec67899bde245f0f2dffb7ca589e2b8d0e7642b4"
+    },
+    {
+      "path": "track/results/cart4_120/without_compensation/wind_trace.pt",
+      "bytes": 577683,
+      "sha256": "f62e2a5074ec93382ca8497817f59ecfa9c53ce4658a341d571aa7fbd5e1ac30"
+    },
+    {
+      "path": "track/results/cart4_120/with_compensation/compensation_trace.pt",
+      "bytes": 4274995,
+      "sha256": "bbd7a84b7983ca7e29c525539fc527603de854c2ed7ddd8ea2ca6e01ea1b480c"
+    },
+    {
+      "path": "track/results/cart4_120/with_compensation/fullrate.npz",
+      "bytes": 712583,
+      "sha256": "d66ca169cdad9dc02bc76f6395d8fa0ce327a7000a33cc6c5e3b910eeeeb951c"
+    },
+    {
+      "path": "track/results/cart4_120/with_compensation/result.json",
+      "bytes": 11311,
+      "sha256": "09cb5cb424af3d9f9e2d2683350da027bba93fc934bbacc3a3b83bc8588f56a1"
+    },
+    {
+      "path": "track/results/cart4_120/with_compensation/scene.xml",
+      "bytes": 37751,
+      "sha256": "c405d602984030ec6dd6c00cfb814f18f8e0855d874d305eab9e19bc373b58a0"
+    },
+    {
+      "path": "track/results/cart4_120/with_compensation/trajectory.npz",
+      "bytes": 825356,
+      "sha256": "83a4cbdf36a27f42cf0d93f2587dae3b17f78e0ffbac9db64c2b405fcb39a4da"
+    },
+    {
+      "path": "track/results/cart4_120/with_compensation/wind_trace.pt",
+      "bytes": 577683,
+      "sha256": "f62e2a5074ec93382ca8497817f59ecfa9c53ce4658a341d571aa7fbd5e1ac30"
+    },
+    {
+      "path": "track/results/frame_qualification_cuda/frozen_source.zip",
+      "bytes": 82129,
+      "sha256": "e8ee2348c497e8b1b0e979417e804dc6b8e94a14d3d419106fed60e7ccb9c6f5"
+    },
+    {
+      "path": "track/results/frame_qualification_cuda/manifest.json",
+      "bytes": 8551,
+      "sha256": "79747c6389ee83cf73f80b3b331cd2312450e49a17eca791badbdd052088ae4f"
+    },
+    {
+      "path": "track/results/frame_qualification_cuda/qualification.json",
+      "bytes": 11769,
+      "sha256": "cabc17a5cf4d9f1cb3631cee9376c51fd0e54a370dfa66cdee55b20425611ada"
+    },
+    {
+      "path": "track/results/frame_qualification_short/frozen_source.zip",
+      "bytes": 82030,
+      "sha256": "2253e156de95f91b9490109530e9f54ff2283ed39baccddc9f88b67e07d56cf1"
+    },
+    {
+      "path": "track/results/frame_qualification_short/manifest.json",
+      "bytes": 8551,
+      "sha256": "a181b0ec12fc1beb71f54441861352f0df83d2686746d7ab65585823619e4893"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/frozen_source.zip",
+      "bytes": 250174,
+      "sha256": "c643a199a3d6cabc33aa3b1151474ee5f6e9ce5651c01f102ac03780024ab654"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/manifest.json",
+      "bytes": 14387,
+      "sha256": "54d45dc445793ece48987d19097bc9a4b4ac5051b502a6c733493938b3cbf9e4"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/summary.json",
+      "bytes": 13637,
+      "sha256": "fbab1645c8d3c76aaf2cdbe672d99d8f37ef4704a1bd8709bdfae85a1add2976"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/with_compensation/compensation_trace.pt",
+      "bytes": 8546585,
+      "sha256": "898ad4a0a63052fd7fdf20880a016084b7dab2f7648a3d22927ca878394e829a"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/with_compensation/fullrate.npz",
+      "bytes": 2881696,
+      "sha256": "3680c650651dcc48d9bad16ecfbb067cbaf7110292b8052ac4304ed78a68c996"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/with_compensation/result.json",
+      "bytes": 20589,
+      "sha256": "f9f0e83f95390ffbfcfa13314c75e750ab32e8ada90978a60ff802e57e34284f"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/with_compensation/scene.xml",
+      "bytes": 74689,
+      "sha256": "f20bed0bccdccc1b82ae26f32a6746a5c557c42ffeb7869ab2977d6a8f8612dd"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/with_compensation/trajectory.npz",
+      "bytes": 2940631,
+      "sha256": "56813c6641515b458d1f3b7065716b0a6a0856fb93939db10d4381ded48b64ee"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10/with_compensation/wind_trace.pt",
+      "bytes": 1153705,
+      "sha256": "06f3136304aa6e0989d1232ca0cf285f3a8376f693dd3c94d017efdd4c6759f4"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10.log",
+      "bytes": 2427,
+      "sha256": "dd7474d3261653a09f730f25892264ce78d5cf562c950b1cd1418f1b8ae47daa"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height10_protocol.json",
+      "bytes": 3386,
+      "sha256": "0fdc8b36d8e558987c461fb746c3aa0036a64b437e32f37610a8dcb1fdfa4376"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/frozen_source.zip",
+      "bytes": 250173,
+      "sha256": "61e2df64e4bd083364896a47178daebe9b5205e4a55c16bcce40c96a769a9dd8"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/manifest.json",
+      "bytes": 14387,
+      "sha256": "6d318c6509541e2132492201e9eb6513aae609e5e76e93e8ae8beb66159cf9b6"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/summary.json",
+      "bytes": 13352,
+      "sha256": "b0c3192f1fc5a8568e7b4011ebae10d1df4b8070e235b17ff5571df2ec27c3a7"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/with_compensation/compensation_trace.pt",
+      "bytes": 8546585,
+      "sha256": "f74ed939477cc4e5b3d6ea8789304680fe7fc85e1e4c9bfc50077bfb97908e40"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/with_compensation/fullrate.npz",
+      "bytes": 1284143,
+      "sha256": "69b8589553a6911198382a85d4917ee195668a32198d4cc9ce71e5e481099d07"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/with_compensation/result.json",
+      "bytes": 20305,
+      "sha256": "1a7cdd22068f967b80b0256fdcb68b12a6d074bc61430b8f87c947194f9416e7"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/with_compensation/scene.xml",
+      "bytes": 74545,
+      "sha256": "75d5d5e4b036beada92d6c625fca118392da8137bd07411c9eccd74b42ea1deb"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/with_compensation/trajectory.npz",
+      "bytes": 1110381,
+      "sha256": "fa7694ed281a453ce5b871a06f216c5cbfa7b2971803f91da5bc2b9951c6b2a5"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20/with_compensation/wind_trace.pt",
+      "bytes": 1153705,
+      "sha256": "06f3136304aa6e0989d1232ca0cf285f3a8376f693dd3c94d017efdd4c6759f4"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20.log",
+      "bytes": 2419,
+      "sha256": "1039d36cb638e142508bdef5504206135c36b8c15dc3fa5a705a7c2ab7e18de3"
+    },
+    {
+      "path": "track/results/height_speed_baseline/height20_protocol.json",
+      "bytes": 3386,
+      "sha256": "d1dd750361292f59ce38fe6483a81f1df3214f7219c7543dd527869338eb4f8e"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height10_case0.gif",
+      "bytes": 21974128,
+      "sha256": "4da9c5e96ad6467ea991646b4de8e0d78755aa7dcb919722f48f6d6c27443320"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height10_case0.png",
+      "bytes": 181265,
+      "sha256": "1ac85bcc6a240c673412e3c2a100fbe63762050106a2f9d0c819c3a562e64f30"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height10_case3.gif",
+      "bytes": 17622772,
+      "sha256": "ffbb42adad525b968164fb841838a320686a5e358255b285fc2f25f990b6bc6c"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height10_case3.png",
+      "bytes": 191093,
+      "sha256": "eb28996638aa5a2a33af1938ca3a020401b7386f07349a8ecf654bc15b01892d"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height20_case0.gif",
+      "bytes": 19535035,
+      "sha256": "62d681af5300a5bd626811018a1e600e1ee38b720f2d6cdbd054f2ba1f77652d"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height20_case0.png",
+      "bytes": 167647,
+      "sha256": "8726c7f8b66a20b282b3aac7ba7c962ea0bc9e022ba39ec5f48fe83df8152cc8"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height20_case2.gif",
+      "bytes": 18541797,
+      "sha256": "ebb48decdf3d532dfc8ef7b3b238dd37196073a9cf1accf149c2f1dc671cd49d"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/height20_case2.png",
+      "bytes": 170453,
+      "sha256": "9d98106b9dc7065c2dd122cf5fdf288bdd3b00b089a9cb2a9ec91ec8a0697159"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/manifest.json",
+      "bytes": 7869,
+      "sha256": "cc3df37ad8cb0edd4e4789936a01fa12d0d517951cf69de0896b1a43d8fd22c6"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/README.md",
+      "bytes": 1693,
+      "sha256": "f99367fa5b682c4d82121f420bdf806a021470ab92299a4d8cc4c8db0153071a"
+    },
+    {
+      "path": "track/results/height_speed_baseline/replay/render_sources.zip",
+      "bytes": 9816,
+      "sha256": "ffb0611de687a4c916c0bc07398bc2695ca9f5e07a2083dda7e96f6cc09a7918"
+    },
+    {
+      "path": "track/results/height_speed_baseline/suite.json",
+      "bytes": 1586,
+      "sha256": "1343d1dfe1b52dcc4656bed69b8fd53a9cf4ae45bb29187a1a05e0f65e592067"
+    },
+    {
+      "path": "track/results/height_speed_baseline/summary.json",
+      "bytes": 25690,
+      "sha256": "63ec8984804bd0165962e1ec6c3665360e5e95787f1b9b4fb439774b1c32c5d0"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/frozen_source.zip",
+      "bytes": 250713,
+      "sha256": "713f810b83dbf75ead1991cb1a3a0cff7851f26f604fe3f411c73b383164cf24"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/manifest.json",
+      "bytes": 14526,
+      "sha256": "0ec4481051a9140d515c6164aa356e7899fca117f7274233c66bc35602ce0e84"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/summary.json",
+      "bytes": 13692,
+      "sha256": "4691ffd050be3449c770b7cc7d72925958fc0ff66ef0a4a61b67dcbd3c345624"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/with_compensation/compensation_trace.pt",
+      "bytes": 8546585,
+      "sha256": "dea29bf046394d6ccdfa92ab62f7c1b6e9d05c9e434cf76eb882627932e513a8"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/with_compensation/fullrate.npz",
+      "bytes": 3141488,
+      "sha256": "b0d3d8e14120b890d946e6137da209e7a70c32b9ba103501f462f05956c6aad2"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/with_compensation/result.json",
+      "bytes": 20726,
+      "sha256": "f411d8a1926c65b0d0733f014742ea5c2223d8abee6bc35d2fea2d939e8ec91c"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/with_compensation/scene.xml",
+      "bytes": 74689,
+      "sha256": "f20bed0bccdccc1b82ae26f32a6746a5c557c42ffeb7869ab2977d6a8f8612dd"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/with_compensation/trajectory.npz",
+      "bytes": 3293717,
+      "sha256": "ac17f21dae4827d545582fbfa3c2822201709809a3535e061a4476ea61c7f9b6"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10/with_compensation/wind_trace.pt",
+      "bytes": 1153705,
+      "sha256": "06f3136304aa6e0989d1232ca0cf285f3a8376f693dd3c94d017efdd4c6759f4"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10.log",
+      "bytes": 2466,
+      "sha256": "cf6dc202c68b59836bd7840037e0571d2a5d37b5765e54a38974a42eb17b84c3"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height10_protocol.json",
+      "bytes": 3511,
+      "sha256": "12477b2e77abf9d9ce9f33063ec7661cd6df4dc7abf673e6e056e871aaa38bd2"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/frozen_source.zip",
+      "bytes": 250712,
+      "sha256": "b03e9fb8929a1012e589b49884346ae7fac68d360bef5c3b6000d9977d3135a3"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/manifest.json",
+      "bytes": 14526,
+      "sha256": "21991e6c3b848f2f34e634604edfcc88efa7e600802205ef45c6177ca979ee13"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/summary.json",
+      "bytes": 13352,
+      "sha256": "23771e6cb27bba7e2e9da5a2dd798b834600c6bac4909d97069b27c3c6b99ce1"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/with_compensation/compensation_trace.pt",
+      "bytes": 8546585,
+      "sha256": "f74ed939477cc4e5b3d6ea8789304680fe7fc85e1e4c9bfc50077bfb97908e40"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/with_compensation/fullrate.npz",
+      "bytes": 1284143,
+      "sha256": "69b8589553a6911198382a85d4917ee195668a32198d4cc9ce71e5e481099d07"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/with_compensation/result.json",
+      "bytes": 20387,
+      "sha256": "e319885762bf5a419933f6d219b10588b97a7d0cadd227245a1366eb7d04d17e"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/with_compensation/scene.xml",
+      "bytes": 74545,
+      "sha256": "75d5d5e4b036beada92d6c625fca118392da8137bd07411c9eccd74b42ea1deb"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/with_compensation/trajectory.npz",
+      "bytes": 1110381,
+      "sha256": "fa7694ed281a453ce5b871a06f216c5cbfa7b2971803f91da5bc2b9951c6b2a5"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20/with_compensation/wind_trace.pt",
+      "bytes": 1153705,
+      "sha256": "06f3136304aa6e0989d1232ca0cf285f3a8376f693dd3c94d017efdd4c6759f4"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20.log",
+      "bytes": 2430,
+      "sha256": "48a97965d211dbfc824729a8e544cbf8634180caa5759917d2afe180fa9cffcf"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/height20_protocol.json",
+      "bytes": 3511,
+      "sha256": "7783b980a9c81a61a09e8421280dd1b051a2c925b493e6776cc14411b15a9004"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/suite.json",
+      "bytes": 1714,
+      "sha256": "19ac384d4f02763ebaac58d28dbfba129499bd8c337bfcc4282304514460e875"
+    },
+    {
+      "path": "track/results/height_speed_baseline_common7/summary.json",
+      "bytes": 25691,
+      "sha256": "815b96ecae5a57df659369cb4869023367f9598a936931244cfea0ff230195ee"
+    },
+    {
+      "path": "track/results/height_speed_continuous_qualification/frozen_source.zip",
+      "bytes": 144229,
+      "sha256": "96592cd882a06db6f5bb3ea4134a25df35832fa7ed350760faaac3bf5b3d3720"
+    },
+    {
+      "path": "track/results/height_speed_continuous_qualification/gradient.pt",
+      "bytes": 3301741,
+      "sha256": "1266c887154246f6329a6b637dc9fb8a0156edbc43100a5b6427ce1dfde2e007"
+    },
+    {
+      "path": "track/results/height_speed_continuous_qualification/manifest.json",
+      "bytes": 15233,
+      "sha256": "58099f8c076b303da82ba05d844846ddd5842e7b54f9555dd7a4213854c00c40"
+    },
+    {
+      "path": "track/results/height_speed_continuous_qualification/qualification.json",
+      "bytes": 41953,
+      "sha256": "42304075a1fd7bdee2f24ae246416e56b9c03c6cbe364638a09c214a5028e0fb"
+    },
+    {
+      "path": "track/results/height_speed_full30_eps_update/frozen_source.zip",
+      "bytes": 145481,
+      "sha256": "1eb4de3cbbc6606a26ba1bb9ddedeb3a501254be3d4a83e1ec20c9f10ae693c2"
+    },
+    {
+      "path": "track/results/height_speed_full30_eps_update/latest.pt",
+      "bytes": 1261435,
+      "sha256": "7df02e31329c8a82706b4ba0eddbd6f76a2ec8da2f3ba79a20d08d32db851142"
+    },
+    {
+      "path": "track/results/height_speed_full30_eps_update/manifest.json",
+      "bytes": 15754,
+      "sha256": "9f7902370457147ff35a87e609c7adadb66c0e6465867f3d790f55e265f297ea"
+    },
+    {
+      "path": "track/results/height_speed_full30_eps_update/progress.json",
+      "bytes": 102706,
+      "sha256": "bf0aab390e9f1a7213bedee66d650a0a988e1f158f3f8b3bb5ef2762262536f0"
+    },
+    {
+      "path": "track/results/height_speed_full30_eps_update/summary.json",
+      "bytes": 102942,
+      "sha256": "8050aabaab73ee08ddc8152f83a27487cfc5e8a67cda5e6b39a73cc1d5e271db"
+    },
+    {
+      "path": "track/results/height_speed_full30_eps_update/training_wind.pt",
+      "bytes": 1154217,
+      "sha256": "7b0defc46457d9bd9ea23c9b650634caa5bd2c29bcf67543432a70432b707a87"
+    },
+    {
+      "path": "track/results/height_speed_full30_qualification/frozen_source.zip",
+      "bytes": 143552,
+      "sha256": "60d22b7b878d9a74d2219bcec257ffa7e4954c4e11929e7d8f21d422f7c25126"
+    },
+    {
+      "path": "track/results/height_speed_full30_qualification/gradient.pt",
+      "bytes": 3300073,
+      "sha256": "16cf58f64318cb710b55021a73fadc798bb7cde4a2d39e9dfd49b724a09bfbf7"
+    },
+    {
+      "path": "track/results/height_speed_full30_qualification/manifest.json",
+      "bytes": 15091,
+      "sha256": "dd2d56c8e070b73f2dbcf32b64a471f9f7631aa41be0031043c51621addb0551"
+    },
+    {
+      "path": "track/results/height_speed_full30_qualification/qualification.json",
+      "bytes": 38492,
+      "sha256": "d7b0728681fd8c8a9ec0a86b7e278d7a848f8bb5bd8ccee6abd9e35fc78df454"
+    },
+    {
+      "path": "track/results/height_speed_full30_update/frozen_source.zip",
+      "bytes": 145372,
+      "sha256": "311a372c54423145df123b6ac0a87479e98440f807dc91cb18846560da98543f"
+    },
+    {
+      "path": "track/results/height_speed_full30_update/latest.pt",
+      "bytes": 1261435,
+      "sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc"
+    },
+    {
+      "path": "track/results/height_speed_full30_update/manifest.json",
+      "bytes": 15697,
+      "sha256": "1bf18577cf4b54393b802f3c6e68274b39be7d0a1ca0462d4c45013ccf257106"
+    },
+    {
+      "path": "track/results/height_speed_full30_update/progress.json",
+      "bytes": 129125,
+      "sha256": "76f306ec86d086417799c030fdbd0a13ec181bff8c13b82f7bd67de619ed3582"
+    },
+    {
+      "path": "track/results/height_speed_full30_update/summary.json",
+      "bytes": 129362,
+      "sha256": "22a9d5fd5cdbf565e7bcb53decb5318c156c99a82131c53e302cbfca69d219e8"
+    },
+    {
+      "path": "track/results/height_speed_full30_update/training_wind.pt",
+      "bytes": 1154217,
+      "sha256": "7b0defc46457d9bd9ea23c9b650634caa5bd2c29bcf67543432a70432b707a87"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/frozen_source.zip",
+      "bytes": 250497,
+      "sha256": "ec02896dbae4f88109e468bc7297848d1b67014a9bac9c4b5c5076f58e53d140"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/manifest.json",
+      "bytes": 14563,
+      "sha256": "0efc816f3b8ddd792d538e9a68a07edfb46917cc33b0a39d92d9cb051cf47f41"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/summary.json",
+      "bytes": 13617,
+      "sha256": "3d4f37aa32abe8b3f69c47f1aff6743b7d2eb7321ca9b3a64826f60f6202cf61"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/with_compensation/compensation_trace.pt",
+      "bytes": 2138585,
+      "sha256": "b2b3853a8b24da2844be7e7b4bb336ce1ad1c6291b633737423593551e5b55eb"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/with_compensation/fullrate.npz",
+      "bytes": 712713,
+      "sha256": "bcc07153c869310839d981299346c1a68d05b0bb7808e35c7e960aeaad60ade2"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/with_compensation/result.json",
+      "bytes": 25098,
+      "sha256": "158497e6e687ded0b84fd81c664b1b7e616c9144406d3dced612852dd705cad5"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/with_compensation/scene.xml",
+      "bytes": 74689,
+      "sha256": "f20bed0bccdccc1b82ae26f32a6746a5c557c42ffeb7869ab2977d6a8f8612dd"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/with_compensation/trajectory.npz",
+      "bytes": 713806,
+      "sha256": "9f86ea934bfd6b7531570855c1390e8c4d2ad5036814993b862a94c08549cc32"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10/with_compensation/wind_trace.pt",
+      "bytes": 289705,
+      "sha256": "93cec460fc2151b9d85bffd515a0e6a5e42fd7b355babe50e1cf64c2e9980d2f"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10.log",
+      "bytes": 722,
+      "sha256": "9e9f8ead0749c3cdbe8cb188a4d305e8b3b8befff946723dc165922ebf303a65"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/height10_protocol.json",
+      "bytes": 3555,
+      "sha256": "d11a76a9af999a65969e559cea760a58278995d4feffcbe0bc980c6d516f5252"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/suite.json",
+      "bytes": 1787,
+      "sha256": "08b8e9e052f8dac6ebcf9d456e492934d71c76d904681aff5baffaa556f310af"
+    },
+    {
+      "path": "track/results/height_speed_native28_30/summary.json",
+      "bytes": 13342,
+      "sha256": "15923d786d40c9947ad3ba8fcd41cd4294922e96f3d98a3a850b5851f060623f"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/frozen_source.zip",
+      "bytes": 251496,
+      "sha256": "abeb8481f87b4cb62fb01bb44072f14984a7ce300e55b2e3dc57ab9041c2b38c"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/manifest.json",
+      "bytes": 14744,
+      "sha256": "ed14c2c7dfdecdc6c13de8878255a8fca4163688958dffff72a3f5c4f13687b8"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay/case0.gif",
+      "bytes": 22609214,
+      "sha256": "0eb62cd40f0f5f3f30d4c38900a7fd044e33fbcf30bc5092c7800daa492f062b"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay/case0.png",
+      "bytes": 193944,
+      "sha256": "63a9df7c4f4bc1132f485547f33ecd407fa406b1a6b8ef89138634fdad9bf391"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay/case6.gif",
+      "bytes": 18264562,
+      "sha256": "57e297863f4c76afad2366e22591c71bb05fe18065b0875fc4121cf6c635105a"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay/case6.png",
+      "bytes": 172935,
+      "sha256": "44d28fe3133093e1a96905f74319a0584c5d5db84f3792e9438141ef18d78f2a"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay/manifest.json",
+      "bytes": 5359,
+      "sha256": "4822417128df54d6c368dcfb44b42b081a24891738696b10f748f590056c7261"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay/render_sources.zip",
+      "bytes": 18938,
+      "sha256": "7a592ee70191d88fb34eed498e6a29a9afdfeaba1750516e618d7f8daccb8394"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay_4_5/case2.gif",
+      "bytes": 18365886,
+      "sha256": "9df5ffc3f1f12c45637df9f3463c1b89b6806580b5fc60eb201d4cc47c72b634"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay_4_5/case2.png",
+      "bytes": 171986,
+      "sha256": "ca6397cd4eaf76092a0b6e07af9d61dacbbd48dd9be120bbc2d21d0c745b43c6"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay_4_5/case4.gif",
+      "bytes": 18246386,
+      "sha256": "5f0552369dd3e825f12fea3327f331801f26fe648ea346d8c804ffdfa712ae94"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay_4_5/case4.png",
+      "bytes": 171008,
+      "sha256": "2c48662cb593311fbef1b25d7816fbaab03874e172ed7d542523dee69bdae412"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay_4_5/manifest.json",
+      "bytes": 5969,
+      "sha256": "bba50cfd421bc13992759dec30891e5aa463f087df2a53fa718eae0fe928e666"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/replay_4_5/render_sources.zip",
+      "bytes": 18938,
+      "sha256": "7a592ee70191d88fb34eed498e6a29a9afdfeaba1750516e618d7f8daccb8394"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/summary.json",
+      "bytes": 18036,
+      "sha256": "10760a0e93eba02b27e168d2960feba577e448c7d2b5b7e388100ba6c909c46e"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/with_compensation/compensation_trace.pt",
+      "bytes": 8546585,
+      "sha256": "ede6a0e598d0817c6dec4f82c9ea5112bec434d487eb3b2f346955c41fc1c2ac"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/with_compensation/fullrate.npz",
+      "bytes": 3930174,
+      "sha256": "e02dff6791e0ab96b596a2536ed6d349d6925d76cd24df4ae97df55fc66bb724"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/with_compensation/result.json",
+      "bytes": 35368,
+      "sha256": "3e1a1ce623b70c851d3b38cb6338032b3ca476dfc40442e3ef0e59774fdb440e"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/with_compensation/scene.xml",
+      "bytes": 74689,
+      "sha256": "f20bed0bccdccc1b82ae26f32a6746a5c557c42ffeb7869ab2977d6a8f8612dd"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/with_compensation/trajectory.npz",
+      "bytes": 3296674,
+      "sha256": "5f2ff1ee7197af09d9adda6a9e07b1c1d8baaa8ef8707e0be90d4ab01f00b504"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10/with_compensation/wind_trace.pt",
+      "bytes": 1153705,
+      "sha256": "06f3136304aa6e0989d1232ca0cf285f3a8376f693dd3c94d017efdd4c6759f4"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10.log",
+      "bytes": 2840,
+      "sha256": "bbcfa5ba059dd5ad5adad6940ce7921afc59ced8695e583211c4fdc0db29bb47"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height10_protocol.json",
+      "bytes": 3727,
+      "sha256": "eff23a33a3ae4bfbdda2b28bbca6bd1c25ba810324207078f54238fb5b8e6d86"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/frozen_source.zip",
+      "bytes": 251495,
+      "sha256": "788765904a866d5986309350d270c6a31401a64457a96a3d9c5781e29b902251"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/manifest.json",
+      "bytes": 14744,
+      "sha256": "b81e529bc09149a5c1237cd4b19af4990d8bf0bd43cff38562f09b0e428849e1"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay/case0.gif",
+      "bytes": 20111470,
+      "sha256": "6ae673c5af6c4a3cf57c474303b9fb4e92b0f4bc5eff1c8bbf1cd6d027fd4a44"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay/case0.png",
+      "bytes": 178404,
+      "sha256": "7664d51261fea8d98eef639df7e12ccd0ddc9d226da123368f2e8908a3d9cc43"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay/case6.gif",
+      "bytes": 18768953,
+      "sha256": "47fe07cbc7e4cd00cc79f695c175706d157810f8942f643fd59684bb3351531b"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay/case6.png",
+      "bytes": 185001,
+      "sha256": "166de35bb623f6473b44890bc1653db5014bf7beb4c34a4231e9cb71a81d0c5f"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay/manifest.json",
+      "bytes": 5361,
+      "sha256": "1e188bce7a0ef1edcff47de138ab5eb3cc84e2f08bc1bd8c4418e8751f1a2709"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay/render_sources.zip",
+      "bytes": 18938,
+      "sha256": "7a592ee70191d88fb34eed498e6a29a9afdfeaba1750516e618d7f8daccb8394"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay_4_5/case2.gif",
+      "bytes": 18840144,
+      "sha256": "cffbf3ebc232a1db172e43597306c3669c5f2bfc2e9bc8419aefe00d4ccc2718"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay_4_5/case2.png",
+      "bytes": 183929,
+      "sha256": "7ea5cc20b3a49b89ae7d88eb142f1058f6a989e2971e03ef8427cd6a8692e5d7"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay_4_5/case4.gif",
+      "bytes": 18778608,
+      "sha256": "75d0a6a64ff56aa59e1d55907226ae65309337c815e6e6ad865a2110c7d3a6c4"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay_4_5/case4.png",
+      "bytes": 184278,
+      "sha256": "6e6a83bd0b38b438a66d2428374328066650545906f0f638298bde957fb92436"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay_4_5/manifest.json",
+      "bytes": 6007,
+      "sha256": "8c15a67a2008d94f33191a0aaa8922f4b2682556668c4ffcd5b04b416bd93d7c"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/replay_4_5/render_sources.zip",
+      "bytes": 18938,
+      "sha256": "7a592ee70191d88fb34eed498e6a29a9afdfeaba1750516e618d7f8daccb8394"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/summary.json",
+      "bytes": 17687,
+      "sha256": "4cce40de093f668a569d22a0fadc57f35c7b2522d83c0015494aa47fd20955e7"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/with_compensation/compensation_trace.pt",
+      "bytes": 8546585,
+      "sha256": "b643c82f5e569d8d4e6b3f6c613803485955ba4d4d34f64ff7e60d5ca3249c18"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/with_compensation/fullrate.npz",
+      "bytes": 3178666,
+      "sha256": "fde06f3efe5c30a9caef0fb5cdd23665348ec7dc3f25408514213cc5d161d8eb"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/with_compensation/result.json",
+      "bytes": 35020,
+      "sha256": "316269306e5aa7750b9b152e8fbf440b97883f7ffe1f5733511222bb78a0dff6"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/with_compensation/scene.xml",
+      "bytes": 74545,
+      "sha256": "75d5d5e4b036beada92d6c625fca118392da8137bd07411c9eccd74b42ea1deb"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/with_compensation/trajectory.npz",
+      "bytes": 3294716,
+      "sha256": "e80e19542bcc6bc8416a9425463d82fd56fd3412db551dbb5586099c0e73ccfc"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20/with_compensation/wind_trace.pt",
+      "bytes": 1153705,
+      "sha256": "06f3136304aa6e0989d1232ca0cf285f3a8376f693dd3c94d017efdd4c6759f4"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20.log",
+      "bytes": 2811,
+      "sha256": "6fe6e608af118d71655dc122fe0f3e5ef65155ed38bf54bd9e10c91cd3e5d5d9"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/height20_protocol.json",
+      "bytes": 3727,
+      "sha256": "9d1a2ce8f19e9ea7047cf7e86cc3b2fc25a098994e4d518d020a0527e99fbc79"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/suite.json",
+      "bytes": 1923,
+      "sha256": "26eafb9d8e4fc2ac8b7e4bcb8af5504e45882d423d169f5d34f1b74cb16cb064"
+    },
+    {
+      "path": "track/results/height_speed_native29_120/summary.json",
+      "bytes": 33744,
+      "sha256": "54d3eec2916c4cc9304cc81690c5dd04d9c0f7cac81a39e9de7cd7c1a76d8d33"
+    },
+    {
+      "path": "track/results/height_speed_qualification/height10/frozen_source.zip",
+      "bytes": 82178,
+      "sha256": "1cea5cd35e47450f4f74defe1d3787570fc0bbf54278a9c94940a8b14e91e13c"
+    },
+    {
+      "path": "track/results/height_speed_qualification/height10/manifest.json",
+      "bytes": 8552,
+      "sha256": "dea992e341115980a98147af4b29e5530a4ca10d28ac5e9736a5e3b3e873fc73"
+    },
+    {
+      "path": "track/results/height_speed_qualification/height10/qualification.json",
+      "bytes": 11618,
+      "sha256": "52c4e95aee333191e92c340fe3b5bb4b14f7e4d88daa5f6ed6fc805ccd54953b"
+    },
+    {
+      "path": "track/results/height_speed_train10/frozen_source.zip",
+      "bytes": 142408,
+      "sha256": "e1e10c1df913b03e1d2c303ada234d167c7dcc402196737c1abcfcdfa6cbbdae"
+    },
+    {
+      "path": "track/results/height_speed_train10/interrupted.json",
+      "bytes": 294,
+      "sha256": "3da29b2e33c48273ddc13752e21db98f7ec5912c72405a265b7677581f787d5e"
+    },
+    {
+      "path": "track/results/height_speed_train10/manifest.json",
+      "bytes": 9988,
+      "sha256": "3005d9310db1e5680c33902d9a5250cd5703a0a733740c4dbe9eca1904b2d2b6"
+    },
+    {
+      "path": "track/results/height_speed_train10/progress.json",
+      "bytes": 29066,
+      "sha256": "c784def243e7f965aeb73825cd111af9aaa594f4bcc44c9b5220b86b4029cb4c"
+    },
+    {
+      "path": "track/results/height_speed_train10_guarded/frozen_source.zip",
+      "bytes": 142472,
+      "sha256": "2b27ae69f73de338c0125ad5da0453725a69e254b28c180a291531a8bebe6e47"
+    },
+    {
+      "path": "track/results/height_speed_train10_guarded/latest.pt",
+      "bytes": 1259067,
+      "sha256": "8bcdd2b6a83459fce367ab8928554e7815e1d55ae14e609f2fa569b2f1a88aa5"
+    },
+    {
+      "path": "track/results/height_speed_train10_guarded/manifest.json",
+      "bytes": 9988,
+      "sha256": "32cf906b5f28ec1f5e53e061a0eff965e8fc9629956ee7a109a424a00cc7270d"
+    },
+    {
+      "path": "track/results/height_speed_train10_guarded/progress.json",
+      "bytes": 43208,
+      "sha256": "a52ba77a6031adc61043423e05db20920d79847845a2c20c2174dbc12cfb7405"
+    },
+    {
+      "path": "track/results/height_speed_train10_guarded/summary.json",
+      "bytes": 43446,
+      "sha256": "51f02d8216052fefb879011662b5ebde2480d0152cf20b9c80b89cf35c726531"
+    },
+    {
+      "path": "track/results/height_speed_train20/frozen_source.zip",
+      "bytes": 144804,
+      "sha256": "1c601a7b984fde33f6bc33bcf941b4b0c25c6ceaa080a8fb2d01f11f2be41534"
+    },
+    {
+      "path": "track/results/height_speed_train20/interrupted.json",
+      "bytes": 266,
+      "sha256": "9f17a6a33dfc41d8034fbdd7cf832ec97a10da119ccf0a3dbd669f529d9f6438"
+    },
+    {
+      "path": "track/results/height_speed_train20/manifest.json",
+      "bytes": 15579,
+      "sha256": "9be28fbd4bff71bea3168fc54aa0ee202b26e4ca12bb63b1a5cc6b6539c92574"
+    },
+    {
+      "path": "track/results/height_speed_train20/progress.json",
+      "bytes": 102703,
+      "sha256": "ef9087af6951feb0ede5b3c9f177df9865583515407ef981d584a4e89e067fb8"
+    },
+    {
+      "path": "track/results/height_speed_train20/training_wind.pt",
+      "bytes": 1154217,
+      "sha256": "7b0defc46457d9bd9ea23c9b650634caa5bd2c29bcf67543432a70432b707a87"
+    },
+    {
+      "path": "track/results/hover_start120/audit.json",
+      "bytes": 2573,
+      "sha256": "8c4241bad2f340804c8bf034ce280228d390bcbceebf3aabdadf14ea5601b347"
+    },
+    {
+      "path": "track/results/hover_start120/frozen_source.zip",
+      "bytes": 260860,
+      "sha256": "71ca98c0b123ebc7f16d010b9c1ebeca9f40739fce6e168415e5bcddbb5c8f7e"
+    },
+    {
+      "path": "track/results/hover_start120/manifest.json",
+      "bytes": 13137,
+      "sha256": "0c00d8cf15b099e96ab5fef4356ba4b8012670930b2f5dc222b474ce55852bea"
+    },
+    {
+      "path": "track/results/hover_start120/p2_p3_integrity.json",
+      "bytes": 1715,
+      "sha256": "aa8ae7394b44c725f505b05c150af6906c00355531a456f1809e59c9d7f3ee7f"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover10cm.gif",
+      "bytes": 37360108,
+      "sha256": "04882aa3e06da65a4deac03028055bc06448bb53f37cd37860b5b65ed3d30d96"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover10cm.json",
+      "bytes": 2679,
+      "sha256": "e2002b7a1297e8dbaef239e638d025ae8ecdab7f1d6778ee7171ef095ab1407a"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover10cm.mp4",
+      "bytes": 65687475,
+      "sha256": "07bac0dfc225fc42d2d53344e445fc6f5d59b933cb0fbda680601fcce7aed4f1"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover10cm.png",
+      "bytes": 180486,
+      "sha256": "3d98713d31bcf1b8bb6ac663a45317beecf63eac98c706f550aebe0ea6d25115"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover10cm.video.json",
+      "bytes": 705,
+      "sha256": "953f539e0620ed04192c3fd26622d933f52cf4ef2e705d8f065d56479be61230"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover5cm.gif",
+      "bytes": 37320890,
+      "sha256": "170a062fc22cb46ead72c83e2e2c74cfc172a8f227558a49bf5d3bb61277b7d1"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover5cm.json",
+      "bytes": 2682,
+      "sha256": "9559ba313f082c6dd7bee22875b22589763e9972eedbbffbf469946ccdd2ec79"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover5cm.mp4",
+      "bytes": 65687466,
+      "sha256": "fa002b2973332da27871575c4e3a6e01e0a4cc937b35d13c85e642ac26dc2a90"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover5cm.png",
+      "bytes": 180947,
+      "sha256": "874029983f868cded367cbc0872fd690d8226140bc7c26cd9f1599183f36e0c7"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover5cm.video.json",
+      "bytes": 706,
+      "sha256": "ce259a6bdbd9481b83b86545c7f59ac61c41fc3633d9558f2e992bb43c519ea6"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover_curves.png",
+      "bytes": 279953,
+      "sha256": "aad288c8dda928e0f9c77e34b873ae5d50f144e05f9261f7264a7b360e01cf43"
+    },
+    {
+      "path": "track/results/hover_start120/replay/hover_trajectories_attitude.png",
+      "bytes": 418294,
+      "sha256": "90b43d209be731664f79a71887dbba94588a76c30a1380c291c0091ec89ad5e9"
+    },
+    {
+      "path": "track/results/hover_start120/replay/render_sources.zip",
+      "bytes": 21986,
+      "sha256": "ecfd79155ee741f2dc5835faf6ff976fc396dbe4c285e0e8af4764e21c278c0b"
+    },
+    {
+      "path": "track/results/hover_start120/summary.json",
+      "bytes": 4035,
+      "sha256": "5efd7a34783f5de795236d8498c01080bf72fd405fff5b79b45930ed185eefc3"
+    },
+    {
+      "path": "track/results/hover_start120/with_compensation/compensation_trace.pt",
+      "bytes": 2138995,
+      "sha256": "41c11f6cc51272d3d2bd16c1c108f81ad557ce7bbfdb6ecc7e20e0b70e3278ce"
+    },
+    {
+      "path": "track/results/hover_start120/with_compensation/fullrate.npz",
+      "bytes": 794350,
+      "sha256": "2279a28082db94ddb84b09ef53effa42c867bfc2c8b6c29e4e0a68037fcebc6c"
+    },
+    {
+      "path": "track/results/hover_start120/with_compensation/result.json",
+      "bytes": 11884,
+      "sha256": "12c9d5df61012d4469d6e7b42f665a7f7975ac6f4d217b3f81f1e998d9772abe"
+    },
+    {
+      "path": "track/results/hover_start120/with_compensation/scene.xml",
+      "bytes": 19272,
+      "sha256": "5b41bb1ec4229d1a828c17025a0e4204702fe4e3875a3ce086d0d9704157d615"
+    },
+    {
+      "path": "track/results/hover_start120/with_compensation/trajectory.npz",
+      "bytes": 816254,
+      "sha256": "f68fd7d1f8ebbce6526ad74c62ea3a154e238a0c4bd0501b30ed0537609c49aa"
+    },
+    {
+      "path": "track/results/hover_start120/with_compensation/wind_trace.pt",
+      "bytes": 289683,
+      "sha256": "23139ff5195bc619e2400b881cf4f6cb6dca2343fb6aeba35fc949bf5b4690d8"
+    },
+    {
+      "path": "track/reports/height_speed_baseline/manifest.json",
+      "bytes": 421,
+      "sha256": "3fadabaf31c96f53323b23e2626c89585d7664586c1f3c4ef39285ff83ae2b8d"
+    },
+    {
+      "path": "track/reports/height_speed_baseline/README.md",
+      "bytes": 1693,
+      "sha256": "f99367fa5b682c4d82121f420bdf806a021470ab92299a4d8cc4c8db0153071a"
+    },
+    {
+      "path": "track/reports/height_speed_baseline/render_sources.zip",
+      "bytes": 9773,
+      "sha256": "24f0c8a64304fbd499c090ff78a002e0b12b233b75f7b3b1184b348987b33c7b"
+    },
+    {
+      "path": "track/reports/height_speed_baseline_common7/manifest.json",
+      "bytes": 421,
+      "sha256": "89f71d8b2094bcafd1ff484e10fea0c6112f7f83fe6a9301dbee405beeb82ed8"
+    },
+    {
+      "path": "track/reports/height_speed_baseline_common7/README.md",
+      "bytes": 1729,
+      "sha256": "09a7b019e78792b08a8cc2d0e6057b05c14dd342e871408b5819d16b23f998f8"
+    },
+    {
+      "path": "track/reports/height_speed_baseline_common7/render_sources.zip",
+      "bytes": 9930,
+      "sha256": "212c02b0eef000e9c7f039a1e68630ac90881ee17ee3bde272c6a67de1b972ec"
+    },
+    {
+      "path": "track/reports/height_speed_native29/analysis.json",
+      "bytes": 16410,
+      "sha256": "dbb874490342c7b6cca1e301d59a2a25ac6345efed0dddcc31ecab6eaa74f6af"
+    },
+    {
+      "path": "track/reports/height_speed_native29/analysis_source.zip",
+      "bytes": 3549,
+      "sha256": "d70653b3441d614c9bcaa6947881ee51c9dafc7490a9dd8976735132d86d727f"
+    },
+    {
+      "path": "track/reports/height_speed_native29/README.md",
+      "bytes": 3972,
+      "sha256": "ecf957774ffa19d0aca09c5a941101acacf9af4bae27ab8a42d3f1a730a13bae"
+    },
+    {
+      "path": "track/reports/height_speed_plan.md",
+      "bytes": 8303,
+      "sha256": "dd0988f75e3a83e189f41b4d9974791e0a24aa57cf6b1985167cceb3c1637e9b"
+    },
+    {
+      "path": "track/validation/height_speed/baseline_audit.json",
+      "bytes": 5822,
+      "sha256": "dadb2e8d578a239227d47495ac560c17ef19a18dd91e857c4cd4b89a4975eab4"
+    },
+    {
+      "path": "track/validation/height_speed/common7_audit.json",
+      "bytes": 5772,
+      "sha256": "2939d54ef802520a63dff8ca0749bbf4afccdea464e7b4eed8cc51e6fd64a8e3"
+    },
+    {
+      "path": "track/validation/height_speed/final_tests.log",
+      "bytes": 28095,
+      "sha256": "d98b487f758e6166f84b3e1900c3e08604eb3ca6b94625a575dc96735a3e935c"
+    },
+    {
+      "path": "track/validation/height_speed/native29_media.json",
+      "bytes": 3972,
+      "sha256": "67baaeb21e1192df7e7ea54f10a1407e54ca32d657dd0b79fe450bc5e7dffb06"
+    },
+    {
+      "path": "track/validation/height_speed/onboard_cuda.json",
+      "bytes": 6766,
+      "sha256": "0f6193fbd13da0cc49f0307bc89956be21dc7b53bf79cc96166ee32bb7344795"
+    },
+    {
+      "path": "track/validation/height_speed/onboard_cuda.sources.zip",
+      "bytes": 4309,
+      "sha256": "d224bab30662683e29878189a9715ae9daae4359be4e1b913c85895049a94cdf"
+    },
+    {
+      "path": "track/validation/height_speed/project_integrity.json",
+      "bytes": 2956,
+      "sha256": "b1e809bd266dfbef338b3b968219e818389bf24fc11702aa651c6e5a025ddded"
+    },
+    {
+      "path": "track/validation/height_speed/tests.log",
+      "bytes": 8783,
+      "sha256": "aa4aacb1713d875914de77af29e5a61874fd6beefcbe5aec5ea255f3a55a57f4"
+    },
+    {
+      "path": "track/hover_results.py",
+      "bytes": 6585,
+      "sha256": "e4b08c463a1246b5682b02c8eaf6acc835ffcd85584fe5f5b66b773a798fa0d1"
+    },
+    {
+      "path": "track/height_speed_report.py",
+      "bytes": 4338,
+      "sha256": "c946d2832eada0b7128d8f7b5490f5aa4fc522aad6c22f45b380009ea094231c"
+    },
+    {
+      "path": "track/validate_frozen_graph.py",
+      "bytes": 5414,
+      "sha256": "4b5e84e047b5b77eb590b6dc4b947fdd99822ae321ef7fbd870e310be0696b0c"
+    },
+    {
+      "path": "track/validation/audit_constant.py",
+      "bytes": 5902,
+      "sha256": "ef53bb8472a72890a540e4e13aeb6b532b35c1fd99c6c68696ad02eecd8c42d9"
+    },
+    {
+      "path": "track/validation/audit_hover_start.py",
+      "bytes": 6165,
+      "sha256": "ff96f96759f46e9eeac31a98645f9d21600c57c7129c503191388dc519c8b9ce"
+    },
+    {
+      "path": "track/validation/verify_capture.py",
+      "bytes": 2139,
+      "sha256": "c677148f33fbf9a6af48d1026878e0e0e940ce4bdad4cf605388055becb318f4"
+    },
+    {
+      "path": "track/validation/audit_height_speed.py",
+      "bytes": 3563,
+      "sha256": "43d08d0e8d84bb6f329b8d965631a4fc90a4bd671e6b75ea207168b8eaf92434"
+    }
+  ],
+  "removed_bytes": 601820963,
+  "retained_case": "track/results/height10_speed5_5cm",
+  "retained_model": "track/models/actor29.pt",
+  "retained_model_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "original5m_checkpoints": {
+    "P2/results/flexible_continue30/step4/latest.pt": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+    "P3/results/flexible26_structural/residual/best.pt": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80"
+  },
+  "selected_original_case_index": 4,
+  "selected_original_batch_size": 8,
+  "selections": [
+    {
+      "file": "trajectory.npz",
+      "source_sha256": "5f2ff1ee7197af09d9adda6a9e07b1c1d8baaa8ef8707e0be90d4ab01f00b504",
+      "retained_sha256": "6bbeadf6bca5aebaa9be1cd5deb93da7d7dbf25f315d372cb9b631aab0bbad51",
+      "original_batch_size": 8,
+      "original_case_index": 4,
+      "retained_case_index": 0
+    },
+    {
+      "file": "fullrate.npz",
+      "source_sha256": "e02dff6791e0ab96b596a2536ed6d349d6925d76cd24df4ae97df55fc66bb724",
+      "retained_sha256": "17a82c4b2dc9dc2cc5504ed6bd829c3e9b254a2f2cafe9671c66cd0f80400b2c",
+      "original_batch_size": 8,
+      "original_case_index": 4,
+      "retained_case_index": 0
+    },
+    {
+      "file": "wind_trace.pt",
+      "source_sha256": "06f3136304aa6e0989d1232ca0cf285f3a8376f693dd3c94d017efdd4c6759f4",
+      "retained_sha256": "686c96ecf1e6c4d6b62c2aee9af2e871956a12043dd31e71f30b7858bb379b9f",
+      "original_batch_size": 8,
+      "original_case_index": 4,
+      "retained_case_index": 0
+    },
+    {
+      "file": "compensation_trace.pt",
+      "source_sha256": "ede6a0e598d0817c6dec4f82c9ea5112bec434d487eb3b2f346955c41fc1c2ac",
+      "retained_sha256": "cc47c959fab231331145b40a9ae553b3b324badd5708bac5717d95eebf904548",
+      "original_batch_size": 8,
+      "original_case_index": 4,
+      "retained_case_index": 0
+    }
+  ],
+  "old_manifest_sha256": "5820fc4db9ec2bbd029039d9ecca2ac74599c971cfab59a5df25bb9f50f8291f",
+  "deletion_applied": true
+}

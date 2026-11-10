@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_cleanup_unlinks_task_entries_without_following_outside_target (px4_offboard.tests.test_deploy_helpers.DeploymentTests.test_cleanup_unlinks_task_entries_without_following_outside_target) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nOK\n"
+}

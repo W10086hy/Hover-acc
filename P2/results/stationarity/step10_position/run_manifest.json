@@ -1,0 +1,1129 @@
+{
+  "protocol": {
+    "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+    "parent_checkpoint": "results/stationarity/resume36/latest.pt",
+    "device": "cuda",
+    "objective_s": 30,
+    "credit_s": 30,
+    "recompute_s": 1,
+    "development_pilot": true,
+    "formal_objective_s": 120,
+    "training_seed": 20681101,
+    "development_seed": 20681201,
+    "training_directions_deg": [
+      0,
+      90
+    ],
+    "training_winds": [
+      [
+        1,
+        "steady"
+      ],
+      [
+        5,
+        "steady"
+      ]
+    ],
+    "optimizer_learning_rates": [
+      1e-05,
+      0.000146484375,
+      1e-05
+    ],
+    "development_directions_deg": [
+      45,
+      225
+    ],
+    "development_s": 30,
+    "maximum_paired_trials": 2,
+    "rope": {
+      "segments": 12,
+      "linear_density_kgpm": 0.01,
+      "axial_rigidity_n": 49.0,
+      "axial_viscosity_ns": 9.8,
+      "diameter_m": 0.003,
+      "air_drag_coefficient": 1.2
+    },
+    "rope_parameters_measured": false,
+    "final_acceptance": false,
+    "p3_enabled": false,
+    "adaptation_reason": "CUDA-only8case fit failed native CPU initial/sensor samples;train both nominal and light cohorts with matching exogenous random streams,while physics/gradients remain CUDA",
+    "purpose": "Secondary originRMSE after all representative strongwind cases settle;preserve stationarity in paired decision;fresh30s BPTT gradient at converged36;explicit cold restart projectedhead Adam;otherAdamstate andActor unchanged",
+    "domain_randomization": {
+      "enabled": true,
+      "sample_count": 3,
+      "seed": 20681302,
+      "include_nominal": true,
+      "mass_scale": [
+        0.9,
+        1.1
+      ],
+      "inertia_scale": [
+        0.85,
+        1.15
+      ],
+      "motor_tau_scale": [
+        0.75,
+        1.5
+      ],
+      "motor_gain_scale": [
+        0.95,
+        1.05
+      ]
+    },
+    "development_parameter_seed": 20681401,
+    "development_winds": [
+      [
+        1,
+        "steady"
+      ],
+      [
+        5,
+        "steady"
+      ]
+    ],
+    "warmup_s_by_domain": [
+      90,
+      0,
+      90
+    ],
+    "training_domain_indices": [
+      0,
+      2
+    ],
+    "stationarity_BPTT": {
+      "enabled": true,
+      "speed_scale_mps": 0.3,
+      "speed_weight": 8.0,
+      "acceleration_scale_mps2": 0.5,
+      "acceleration_weight": 0.1,
+      "ramp_start_s": 10.0,
+      "ramp_end_s": 20.0,
+      "horizontal_std_limit_m": 0.25,
+      "horizontal_speed_limit_mps": 0.3,
+      "drift_limit_mps": 0.01
+    },
+    "late_stationarity_window": true,
+    "height_absolute_tolerance_m": 0.03,
+    "stationarity_height_rmse_cap_m": 0.25,
+    "training_random_device": "cpu",
+    "cohort_threads": 2,
+    "stationarity_metric_window_s": 30
+  },
+  "source_sha256": {
+    "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+    "P2/hover_bptt/actor.py": "ae57e2bf9c4d2083ec05d8ea8a7cfe490b32aa16e230aafd48415d44424f9fb6",
+    "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+    "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+    "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+    "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+    "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+    "P2/hover_bptt/controller.py": "27e2f5c024d2d37fb5a61084f6ea04685f0db0c661ab41bd377043e5bee030f1",
+    "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+    "P2/hover_bptt/domain_randomization.py": "4130020f297b4aca7ec522def3a12744ca261a662682cc7cf3e0de4ade9e0eee",
+    "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+    "P2/hover_bptt/environment.py": "834de89659ab1298bc722e206cb1d2d510d5a448dbaff9febd098f6fa7892996",
+    "P2/hover_bptt/evaluation.py": "d1db49fb64a591990e9e383f5c2e1ba4504695b29e4854cc8019f7837abc7718",
+    "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+    "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+    "P2/hover_bptt/flexible_training.py": "bba0f546600343dad69256aec98cf792fd8768c134573a4257b7693f7e252d78",
+    "P2/hover_bptt/functional.py": "d0801cdc81780ca735821782898845218f1b6b128e867c1adebb146319da90a9",
+    "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+    "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+    "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+    "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+    "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+    "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+    "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+    "P2/hover_bptt/motion_statistics.py": "d589f426a1e833c0200185d9e115694dd4da37f4b8a0e0819a758c74bbdf96b4",
+    "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+    "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+    "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+    "P2/hover_bptt/onboard.py": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+    "P2/hover_bptt/onboard_graph.py": "04ab6c3c948f87fc6b5d351771bc70cc6ebeedb5be5de2ada547cc398c261415",
+    "P2/hover_bptt/optimizer.py": "11a3eccc7270356abaf34ebd8adcfc1cf2530f28fb033095e49a2a560d85cd06",
+    "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+    "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+    "P2/hover_bptt/sensors.py": "b0b839699f4da4a1da8b9dc9ced527238591d3169c23af8c9203400f0626415f",
+    "P2/hover_bptt/state.py": "a8d19c27b2e878a7bdc8afc2395a6dca4062f39ccddd6af4bbd4f80130a51d90",
+    "P2/hover_bptt/stationarity.py": "d12422d21ddc7eca4acacdedf4cf0c8b68e8588e4f5d482e2573dc5d3c20ac13",
+    "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+    "P2/hover_bptt/training.py": "40e89faa2f5c6916d8733c5cd3938e42270ea379274b3a134db8f50e7e2cdd60",
+    "P2/hover_bptt/vehicle_spec.py": "5ff388026e9f349c67d366d50e5df3afc50af2fee48955d10e44f9033d3cdd67",
+    "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+    "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+    "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+    "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+    "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+    "P2/flexible_rope_protocol.json": "26265afe482859f4a0787f9a1f0413e4b041beaa11b62c1e07a5e573e6ff2a8b",
+    "P2/qualify_flexible_rope.py": "2428e3adc72505322ac22d05f8ab9cb58260e405fb0d9086c089f1b5a109c30d",
+    "P2/train_flexible_rope.py": "c071156b993943c5d285c549f9093f233acc11718d1e2a99e140ad3433026e28",
+    "P2/evaluate_flexible_rope.py": "b800de8774c2a592f019e48dc8bcd834d789e99cd0c222fa5090336b1376ac83",
+    "P2/animate.py": "ef09265d73965ed6f38dabd5c4ec6c8fa6642900af23230808c641a1e1fb5688",
+    "P2/randomized_training.py": "2075a56e5a12bbd1fff5674135f083c129494edd3ba3112f511a2e62a4397f6c",
+    "P2/parallel_cohorts.py": "8cf4abd1aac2694f3f83becef673f6a77ecfcbb2a8c5af4fc1c7070a6f184d79",
+    "track/frozen_graph.py": "0d73ba1cf01aab8b5a94312a6ae3c581b8da8aaf03a06c1984a5e9e4a7b23f81",
+    "P2/stationarity_position_refine_protocol.json": "d25a1348a61e16189e86f28d5af49a680a6e2fd8525ee9aec1b3c36947ec3727"
+  },
+  "domains": [
+    {
+      "name": "nominal",
+      "scales": {
+        "mass": 1.0,
+        "inertia": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "motor_tau": 1.0,
+        "motor_gain": 1.0
+      },
+      "actual": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      }
+    },
+    {
+      "name": "random_1",
+      "scales": {
+        "mass": 1.0944039198895141,
+        "inertia": [
+          0.9481199279709269,
+          1.0003318323999206,
+          0.9349793547659117
+        ],
+        "motor_tau": 0.9760821450290881,
+        "motor_gain": 1.0482942265746988
+      },
+      "actual": {
+        "mass_kg": 2.517129015745882,
+        "inertia_body_kgm2": [
+          0.01194631109243368,
+          0.005501825078199563,
+          0.014772673805301405
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0019521642900581762,
+        "motor_speed_polynomial": [
+          -406.0043539523809,
+          1330.2853735232927,
+          -34.06956236367771
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      }
+    },
+    {
+      "name": "random_2",
+      "scales": {
+        "mass": 0.9526896385428233,
+        "inertia": [
+          1.1495280532419985,
+          0.9335463541977318,
+          1.131019415014079
+        ],
+        "motor_tau": 1.1972205642291518,
+        "motor_gain": 0.9644517900719272
+      },
+      "actual": {
+        "mass_kg": 2.1911861686484935,
+        "inertia_body_kgm2": [
+          0.014484053470849181,
+          0.005134504948087525,
+          0.01787010675722245
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0023944411284583036,
+        "motor_speed_polynomial": [
+          -373.5321782948574,
+          1223.8893216012755,
+          -31.344683177337632
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      }
+    }
+  ],
+  "parent_checkpoint_sha256": "fff0bf726f72208c0ede32ec9c7343c84c1f226cbef44749da4f2f8c8da39bc6",
+  "original_adam_restored": true,
+  "optimizer_lrs_before": [
+    1e-05,
+    0.000146484375,
+    1e-05
+  ],
+  "optimizer_lrs_after": [
+    1e-05,
+    0.000146484375,
+    1e-05
+  ],
+  "protected_files": {
+    "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P2\\results\\stationarity\\resume36\\latest.pt": "fff0bf726f72208c0ede32ec9c7343c84c1f226cbef44749da4f2f8c8da39bc6",
+    "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\retest8\\residual\\best.pt": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b"
+  },
+  "qualification": {
+    "passed": true,
+    "seconds": 1.0,
+    "optimizer_created": false,
+    "optimizer_updates": 0,
+    "parent_checkpoint_sha256": "fff0bf726f72208c0ede32ec9c7343c84c1f226cbef44749da4f2f8c8da39bc6",
+    "protocol_identity": "dd92ba09dabcfad744b34f10fa60780be13bc61ee768de2144492011a0858132",
+    "rope": {
+      "segments": 12,
+      "linear_density_kgpm": 0.01,
+      "axial_rigidity_n": 49.0,
+      "axial_viscosity_ns": 9.8,
+      "diameter_m": 0.003,
+      "air_drag_coefficient": 1.2
+    },
+    "source_sha256": {
+      "P2/hover_bptt/__init__.py": "4989a9224f1d2b5941a561057c1ef2fd9a4f5b0ed327e741082c0cb078acab67",
+      "P2/hover_bptt/actor.py": "ae57e2bf9c4d2083ec05d8ea8a7cfe490b32aa16e230aafd48415d44424f9fb6",
+      "P2/hover_bptt/adjoint.py": "f859a1069c57ab4906bc7b64c502d122e8564e1b1e3d6b65b8fb1ca610b78bc8",
+      "P2/hover_bptt/aerodynamics.py": "d3d69ae61a9624e5434a6d6f4113042465341534a330162bf06a3b9094782856",
+      "P2/hover_bptt/bptt_safety.py": "1ceabf7d395d90178c6541588fe1b351047057b2e70e5f9f309151009e7c5dda",
+      "P2/hover_bptt/cases.py": "6a9a5faf398ade77708e419ce1c25e13088e961ca9b145c334e0e7da9788f9b2",
+      "P2/hover_bptt/conditioning.py": "f8950c3df4524f793ace4a6574f968ca2a8f99e4cee809c3756f0d68a2f40477",
+      "P2/hover_bptt/controller.py": "27e2f5c024d2d37fb5a61084f6ea04685f0db0c661ab41bd377043e5bee030f1",
+      "P2/hover_bptt/cuda_bptt_kernel.py": "4478c2560df996fb520f11cd9fa5726517e245020aa82b65e8042615862d914b",
+      "P2/hover_bptt/domain_randomization.py": "4130020f297b4aca7ec522def3a12744ca261a662682cc7cf3e0de4ade9e0eee",
+      "P2/hover_bptt/dynamics/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "P2/hover_bptt/dynamics/torch_model.py": "eeff0facb7c73c03f5475177d8f2aa0129ce19e930e57c8c5907886b90219656",
+      "P2/hover_bptt/environment.py": "834de89659ab1298bc722e206cb1d2d510d5a448dbaff9febd098f6fa7892996",
+      "P2/hover_bptt/evaluation.py": "d1db49fb64a591990e9e383f5c2e1ba4504695b29e4854cc8019f7837abc7718",
+      "P2/hover_bptt/flexible_environment.py": "b5e94aec5e1323cb9d4f5073d99b9e9a2c693f27ffc3058dd79ee51a0dea5aa3",
+      "P2/hover_bptt/flexible_rope.py": "b40ec5983191bd4d7159a199a2297ff4812c134cc93b0123f8661c20fd5b0450",
+      "P2/hover_bptt/flexible_training.py": "bba0f546600343dad69256aec98cf792fd8768c134573a4257b7693f7e252d78",
+      "P2/hover_bptt/functional.py": "d0801cdc81780ca735821782898845218f1b6b128e867c1adebb146319da90a9",
+      "P2/hover_bptt/generalization.py": "1dd27796a52e3983956809b3c9c0abf4be6e4c0c92794fa54b3a733eba37e796",
+      "P2/hover_bptt/gradient.py": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+      "P2/hover_bptt/guards.py": "b9fda4d4133886d2d77caf4e48e709dc097cd14341622813cf280a853e92193b",
+      "P2/hover_bptt/io.py": "4e2b8a7b91cc4ab531ce81f091abd64e25a87025e39d4fcced817faed79e5ce7",
+      "P2/hover_bptt/math3d.py": "228b0cf4631725720d47ab5be9294ebffc565555c9475ce7d264d2e77d6cf058",
+      "P2/hover_bptt/model.py": "cc3a4c971b4f1e64f801ab8ae2acc2372d8068bb0dfb59cc72d6a483712cb11a",
+      "P2/hover_bptt/motion.py": "5b4a35c46aaf85ef25762d1a5ea8c91b0543187582edaadee56310ac88bd0e5c",
+      "P2/hover_bptt/motion_statistics.py": "d589f426a1e833c0200185d9e115694dd4da37f4b8a0e0819a758c74bbdf96b4",
+      "P2/hover_bptt/native_environment.py": "a7d7803618ec5df736845b81bc9f99d21740006c4e14da348ed5b13a97b3800d",
+      "P2/hover_bptt/native_rope.py": "6f4f68ccbb98eda5d50df24e08be771fbc9cc1b6a8158cb919a1d33efadaba29",
+      "P2/hover_bptt/native_training.py": "cc97e3a5a1381406d78f347e6e2467e5fe03f9b761f3afc2d56865950b0776d5",
+      "P2/hover_bptt/onboard.py": "3751d6e93fd1ed8f831824e846f8c9729c99e70afe76630664edfb8e9cec0f26",
+      "P2/hover_bptt/onboard_graph.py": "04ab6c3c948f87fc6b5d351771bc70cc6ebeedb5be5de2ada547cc398c261415",
+      "P2/hover_bptt/optimizer.py": "11a3eccc7270356abaf34ebd8adcfc1cf2530f28fb033095e49a2a560d85cd06",
+      "P2/hover_bptt/plant.py": "e9778550891e7280fdbbd1fd494c12c87f1f1b005f57a0eb3c6ddf97ea6de7c9",
+      "P2/hover_bptt/rewards.py": "4107d2217f43e300d6140e0aeaea2677959bf0b7d90d097459fbaef76bf45719",
+      "P2/hover_bptt/sensors.py": "b0b839699f4da4a1da8b9dc9ced527238591d3169c23af8c9203400f0626415f",
+      "P2/hover_bptt/state.py": "a8d19c27b2e878a7bdc8afc2395a6dca4062f39ccddd6af4bbd4f80130a51d90",
+      "P2/hover_bptt/stationarity.py": "d12422d21ddc7eca4acacdedf4cf0c8b68e8588e4f5d482e2573dc5d3c20ac13",
+      "P2/hover_bptt/stream.py": "7a230c33495dd369060027fb43fddf89a51bce65b9ed6f53d0034e019cd290c1",
+      "P2/hover_bptt/training.py": "40e89faa2f5c6916d8733c5cd3938e42270ea379274b3a134db8f50e7e2cdd60",
+      "P2/hover_bptt/vehicle_spec.py": "5ff388026e9f349c67d366d50e5df3afc50af2fee48955d10e44f9033d3cdd67",
+      "P2/hover_bptt/wind.py": "8f27d4e7bcb48d440819f0f380dfe240a5e4af33e2224e2d6db15b62a416624f",
+      "P2/hover_bptt/configs/cases.json": "54bbc8c9c1c2e30187c3b7b894c47da44d0f9af90cf8d6985d9fadff3d1f02af",
+      "P2/hover_bptt/configs/cm_table.json": "7f7fe60d64b8f7c0b5907cc62bc9770b804551a212f175dc68853dda88920830",
+      "P2/hover_bptt/configs/vehicle.json": "0642ab6b7ae436564eb49c303ea922a90303e46adfc954a6448e4d70be156cda",
+      "P2/configuration.json": "072bd908dbeedd37332ae6b26bb3109378876e46178bf51c220a4c5754bccb88",
+      "P2/flexible_rope_protocol.json": "26265afe482859f4a0787f9a1f0413e4b041beaa11b62c1e07a5e573e6ff2a8b",
+      "P2/qualify_flexible_rope.py": "2428e3adc72505322ac22d05f8ab9cb58260e405fb0d9086c089f1b5a109c30d",
+      "P2/train_flexible_rope.py": "c071156b993943c5d285c549f9093f233acc11718d1e2a99e140ad3433026e28",
+      "P2/evaluate_flexible_rope.py": "b800de8774c2a592f019e48dc8bcd834d789e99cd0c222fa5090336b1376ac83",
+      "P2/animate.py": "ef09265d73965ed6f38dabd5c4ec6c8fa6642900af23230808c641a1e1fb5688",
+      "P2/randomized_training.py": "2075a56e5a12bbd1fff5674135f083c129494edd3ba3112f511a2e62a4397f6c",
+      "P2/parallel_cohorts.py": "8cf4abd1aac2694f3f83becef673f6a77ecfcbb2a8c5af4fc1c7070a6f184d79",
+      "track/frozen_graph.py": "0d73ba1cf01aab8b5a94312a6ae3c581b8da8aaf03a06c1984a5e9e4a7b23f81",
+      "P2/stationarity_position_refine_protocol.json": "d25a1348a61e16189e86f28d5af49a680a6e2fd8525ee9aec1b3c36947ec3727"
+    },
+    "domains": [
+      {
+        "name": "nominal",
+        "scales": {
+          "mass": 1.0,
+          "inertia": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "motor_tau": 1.0,
+          "motor_gain": 1.0
+        },
+        "actual": {
+          "mass_kg": 2.3,
+          "inertia_body_kgm2": [
+            0.0126,
+            0.0055,
+            0.0158
+          ],
+          "rotor_dx_m": 0.12,
+          "rotor_dy_m": 0.12,
+          "kf": 2.009e-05,
+          "km": 5.732e-07,
+          "motor_tau_s": 0.002,
+          "motor_speed_polynomial": [
+            -387.3,
+            1269,
+            -32.5
+          ],
+          "motor_deadzone": 0,
+          "rotor_inertia_kgm2": 8.8493e-06,
+          "include_gyro": true
+        },
+        "nominal": {
+          "mass_kg": 2.3,
+          "inertia_body_kgm2": [
+            0.0126,
+            0.0055,
+            0.0158
+          ],
+          "rotor_dx_m": 0.12,
+          "rotor_dy_m": 0.12,
+          "kf": 2.009e-05,
+          "km": 5.732e-07,
+          "motor_tau_s": 0.002,
+          "motor_speed_polynomial": [
+            -387.3,
+            1269,
+            -32.5
+          ],
+          "motor_deadzone": 0,
+          "rotor_inertia_kgm2": 8.8493e-06,
+          "include_gyro": true
+        }
+      },
+      {
+        "name": "random_1",
+        "scales": {
+          "mass": 1.0944039198895141,
+          "inertia": [
+            0.9481199279709269,
+            1.0003318323999206,
+            0.9349793547659117
+          ],
+          "motor_tau": 0.9760821450290881,
+          "motor_gain": 1.0482942265746988
+        },
+        "actual": {
+          "mass_kg": 2.517129015745882,
+          "inertia_body_kgm2": [
+            0.01194631109243368,
+            0.005501825078199563,
+            0.014772673805301405
+          ],
+          "rotor_dx_m": 0.12,
+          "rotor_dy_m": 0.12,
+          "kf": 2.009e-05,
+          "km": 5.732e-07,
+          "motor_tau_s": 0.0019521642900581762,
+          "motor_speed_polynomial": [
+            -406.0043539523809,
+            1330.2853735232927,
+            -34.06956236367771
+          ],
+          "motor_deadzone": 0,
+          "rotor_inertia_kgm2": 8.8493e-06,
+          "include_gyro": true
+        },
+        "nominal": {
+          "mass_kg": 2.3,
+          "inertia_body_kgm2": [
+            0.0126,
+            0.0055,
+            0.0158
+          ],
+          "rotor_dx_m": 0.12,
+          "rotor_dy_m": 0.12,
+          "kf": 2.009e-05,
+          "km": 5.732e-07,
+          "motor_tau_s": 0.002,
+          "motor_speed_polynomial": [
+            -387.3,
+            1269,
+            -32.5
+          ],
+          "motor_deadzone": 0,
+          "rotor_inertia_kgm2": 8.8493e-06,
+          "include_gyro": true
+        }
+      },
+      {
+        "name": "random_2",
+        "scales": {
+          "mass": 0.9526896385428233,
+          "inertia": [
+            1.1495280532419985,
+            0.9335463541977318,
+            1.131019415014079
+          ],
+          "motor_tau": 1.1972205642291518,
+          "motor_gain": 0.9644517900719272
+        },
+        "actual": {
+          "mass_kg": 2.1911861686484935,
+          "inertia_body_kgm2": [
+            0.014484053470849181,
+            0.005134504948087525,
+            0.01787010675722245
+          ],
+          "rotor_dx_m": 0.12,
+          "rotor_dy_m": 0.12,
+          "kf": 2.009e-05,
+          "km": 5.732e-07,
+          "motor_tau_s": 0.0023944411284583036,
+          "motor_speed_polynomial": [
+            -373.5321782948574,
+            1223.8893216012755,
+            -31.344683177337632
+          ],
+          "motor_deadzone": 0,
+          "rotor_inertia_kgm2": 8.8493e-06,
+          "include_gyro": true
+        },
+        "nominal": {
+          "mass_kg": 2.3,
+          "inertia_body_kgm2": [
+            0.0126,
+            0.0055,
+            0.0158
+          ],
+          "rotor_dx_m": 0.12,
+          "rotor_dy_m": 0.12,
+          "kf": 2.009e-05,
+          "km": 5.732e-07,
+          "motor_tau_s": 0.002,
+          "motor_speed_polynomial": [
+            -387.3,
+            1269,
+            -32.5
+          ],
+          "motor_deadzone": 0,
+          "rotor_inertia_kgm2": 8.8493e-06,
+          "include_gyro": true
+        }
+      }
+    ],
+    "setup_s": 5.512669699994149,
+    "gradient_s": 385.8907876999874,
+    "domain_count": 2,
+    "available_domain_count": 3,
+    "cases_per_domain": 8,
+    "gradient_norm": 274.6228942871094,
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "torch_version": "2.12.1+cu130",
+    "cuda_version": "13.0",
+    "measured_warmup_wall_s": 370.19917420001,
+    "warmup_s_by_domain": [
+      90,
+      0,
+      90
+    ],
+    "training_random_device": "cpu",
+    "cohort_threads": 2,
+    "estimated_objective_gradient_s": 840.9475791993318,
+    "estimated_one_candidate_iteration_s": 1452.0336255989969,
+    "estimation": "Short-horizon gradient extrapolation plus measured full causal warmup for baseline and candidate",
+    "domain_scores": [
+      {
+        "cost": 12.063707733154297,
+        "duration_s": 1.0,
+        "objective_start_s": 90.0,
+        "control_steps": 100,
+        "completed": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "height_rmse_m": [
+          0.08758678865903848,
+          0.013023637898509903,
+          0.13786500981265148,
+          0.10333512345180342,
+          0.09785107804747636,
+          0.2238734260206361,
+          0.11428683356615504,
+          0.0703230862628544
+        ],
+        "horizontal_rmse_m": [
+          0.29418277134568704,
+          1.4184618774961588,
+          0.48767721106653333,
+          1.1097548508784076,
+          0.0915382039555744,
+          0.1996438878413684,
+          0.24738053526342976,
+          0.7099114771514203
+        ],
+        "position_rmse_m": [
+          0.3069445365277445,
+          1.4185216646403533,
+          0.5067897227887268,
+          1.1145555063732608,
+          0.1339928216676761,
+          0.29996165226680915,
+          0.27250432942211955,
+          0.713386039849985
+        ],
+        "maximum_true_yaw_error_deg": [
+          0.0866260826587677,
+          0.20079673826694489,
+          0.1873205155134201,
+          0.11522164195775986,
+          0.1112261712551117,
+          0.08159025013446808,
+          0.09171536564826965,
+          0.12001927942037582
+        ],
+        "late_convergence": {
+          "sample_hz": 100.0,
+          "start_step": 9000,
+          "end_step": 9100,
+          "expected_samples": 100,
+          "samples": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "late_origin_rmse_m": [
+            0.30694453690419965,
+            1.4185216652947326,
+            0.5067897220942776,
+            1.1145555039239554,
+            0.13399282165439805,
+            0.2999616517452334,
+            0.27250432956304826,
+            0.713386037824914
+          ],
+          "late_horizontal_std_m": [
+            0.0071602072223165975,
+            0.004145684237500253,
+            0.0033389819184562668,
+            0.004157749538967722,
+            0.00349433868853877,
+            0.0038941865820177686,
+            0.004976365477827137,
+            0.0022466053378607615
+          ],
+          "late_horizontal_bias_m": [
+            0.2940956215785228,
+            1.4184558199209816,
+            0.48766577967256514,
+            1.109747059772527,
+            0.09147148397976708,
+            0.19960590416784071,
+            0.24733047746018352,
+            0.7099079202701547
+          ],
+          "late_horizontal_drift_mps": [
+            0.02474889527895765,
+            0.01422149941208698,
+            0.011370917525816199,
+            0.013977684519556083,
+            0.011879341930344397,
+            0.013184438806794877,
+            0.017172440853779426,
+            0.006127475713132884
+          ],
+          "late_horizontal_speed_rms_mps": [
+            0.02488854424941733,
+            0.014662848263201345,
+            0.011894931014643334,
+            0.016214260997535118,
+            0.012961696297664483,
+            0.013893797955885261,
+            0.01739646486938062,
+            0.011934039398942404
+          ],
+          "late_detrended_position_std_m": [
+            0.0022711038123477893,
+            0.0019400143586981787,
+            0.007321696367801834,
+            0.0021338132320455725,
+            0.0025753378806768917,
+            0.003907048779948208,
+            0.00200590355042454,
+            0.004287359391645876
+          ],
+          "late_detrended_height_std_m": [
+            0.002219585311614354,
+            0.00185189802189992,
+            0.0072960382229469364,
+            0.0018830706113372065,
+            0.002486098026606062,
+            0.003818989134437108,
+            0.0019573890734942852,
+            0.004057429236675272
+          ],
+          "late_speed_rms_mps": [
+            0.038753252795355325,
+            0.035051442255183675,
+            0.052673514904675846,
+            0.024085191737868834,
+            0.02632051747620637,
+            0.040120967956863256,
+            0.03419340754146348,
+            0.03434585156325995
+          ],
+          "late_angular_acceleration_rms_radps2": [
+            0.9541001156293027,
+            0.9180419601501918,
+            0.8050682724086449,
+            0.9891322909942782,
+            0.9480932131644875,
+            0.9709005423879716,
+            1.0011991058076084,
+            0.8688595884902657
+          ],
+          "late_motor_step_rms_normalized": [
+            0.004427252177688804,
+            0.003488058020305669,
+            0.004618741038412268,
+            0.004444802653157892,
+            0.004047029406379028,
+            0.004359887597271633,
+            0.0044786408934461685,
+            0.0043533675447302205
+          ]
+        },
+        "vehicle_identity": "52d2d1625ecf10dc042e75ed5a507f76ab1ab0dd7db2f48dc0e66f16903c1da8",
+        "wind_statistics": [
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          },
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          },
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          },
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          }
+        ],
+        "wind_seed": 20681102,
+        "wind_trace_dtype": "torch.float32",
+        "attachment": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wind_speed": [
+          1.0,
+          5.0,
+          1.0,
+          5.0,
+          1.0,
+          5.0,
+          1.0,
+          5.0
+        ],
+        "direction_rad": [
+          0.0,
+          0.0,
+          1.5707963267948966,
+          1.5707963267948966,
+          0.0,
+          0.0,
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        "wind_profile": [
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady"
+        ]
+      },
+      {
+        "cost": 14.05348650932312,
+        "duration_s": 1.0,
+        "objective_start_s": 90.0,
+        "control_steps": 100,
+        "completed": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "height_rmse_m": [
+          0.0761652795675016,
+          0.07822661226129658,
+          0.14528900079530482,
+          0.1449513896926881,
+          0.15366951943062657,
+          0.17753711936483235,
+          0.23413343481849053,
+          0.18532501297867335
+        ],
+        "horizontal_rmse_m": [
+          0.39307705143321214,
+          0.9712711755243523,
+          0.27334276261156226,
+          0.8203513861022472,
+          0.13508609786809234,
+          0.11184984165356511,
+          0.2347493768264545,
+          0.46375502007201647
+        ],
+        "position_rmse_m": [
+          0.4003882093356694,
+          0.9744162864352875,
+          0.3095563916707567,
+          0.8330590027445354,
+          0.20460345803350327,
+          0.20983282829502709,
+          0.3315505017645322,
+          0.499413735371327
+        ],
+        "maximum_true_yaw_error_deg": [
+          0.024090267717838287,
+          0.14642463624477386,
+          0.1343439370393753,
+          0.03723989427089691,
+          0.28829681873321533,
+          0.09335995465517044,
+          0.09622753411531448,
+          0.11130845546722412
+        ],
+        "late_convergence": {
+          "sample_hz": 100.0,
+          "start_step": 9000,
+          "end_step": 9100,
+          "expected_samples": 100,
+          "samples": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ],
+          "late_origin_rmse_m": [
+            0.4003882083371825,
+            0.9744162852855172,
+            0.30955639238553745,
+            0.8330590054193513,
+            0.2046034582160835,
+            0.2098328279908179,
+            0.3315505018921473,
+            0.49941373560445657
+          ],
+          "late_horizontal_std_m": [
+            0.0011620767316583855,
+            0.003285020617119866,
+            0.0011510258952469458,
+            0.004419415669058349,
+            0.0015458304134447088,
+            0.007034340230184729,
+            0.010782495642794675,
+            0.02817174693833058
+          ],
+          "late_horizontal_bias_m": [
+            0.3930753326780267,
+            0.9712656190873493,
+            0.27334033998433976,
+            0.8203394845624707,
+            0.13507725328150244,
+            0.11162842434058895,
+            0.23450161555847807,
+            0.46289855435151983
+          ],
+          "late_horizontal_drift_mps": [
+            0.003241331438464143,
+            0.011150481913965029,
+            0.003897495232967475,
+            0.015213045351826486,
+            0.004399568482570261,
+            0.024255214110303954,
+            0.03510788297759983,
+            0.09199500374384574
+          ],
+          "late_horizontal_speed_rms_mps": [
+            0.005949816643892945,
+            0.012408878633979359,
+            0.004193343152510049,
+            0.015116982392232196,
+            0.008346549162169054,
+            0.024976467007748932,
+            0.042800415127577256,
+            0.11085296253968843
+          ],
+          "late_detrended_position_std_m": [
+            0.003296440094019187,
+            0.0036711757999734924,
+            0.0012281826940667687,
+            0.0038240556973672757,
+            0.004174998523906571,
+            0.0037107991070170314,
+            0.003938119033038552,
+            0.010163266567599956
+          ],
+          "late_detrended_height_std_m": [
+            0.0032235890767560527,
+            0.003611957793010495,
+            0.0012038762209978225,
+            0.0037916532305581623,
+            0.004080916148187389,
+            0.003648214522877949,
+            0.0013963948105168078,
+            0.0038510858529325507
+          ],
+          "late_speed_rms_mps": [
+            0.03806659437492744,
+            0.03148946106824563,
+            0.020328033166874843,
+            0.030150580646372303,
+            0.03445230929393408,
+            0.043858350029404525,
+            0.0465323075515014,
+            0.1253911480940886
+          ],
+          "late_angular_acceleration_rms_radps2": [
+            0.7911966840956657,
+            0.7061188977231201,
+            0.7699297227255476,
+            0.7604947176386663,
+            0.7680709923391501,
+            0.77800893485992,
+            0.8156109666569095,
+            0.7840123724721672
+          ],
+          "late_motor_step_rms_normalized": [
+            0.003731035128887785,
+            0.0032518570018997303,
+            0.004154113501557449,
+            0.0037427639494341286,
+            0.0036406117332740983,
+            0.003828521995286339,
+            0.003803585741752061,
+            0.003418326690214905
+          ]
+        },
+        "vehicle_identity": "890009a8a4ab0e81c383918824906262b908a5b08135dcbf4b091eb2408b81e1",
+        "wind_statistics": [
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          },
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          },
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          },
+          {
+            "actual_mean_wind_mps": 1.0,
+            "actual_rms_wind_mps": 1.0,
+            "actual_peak_wind_mps": 1.0
+          },
+          {
+            "actual_mean_wind_mps": 5.0,
+            "actual_rms_wind_mps": 5.0,
+            "actual_peak_wind_mps": 5.0
+          }
+        ],
+        "wind_seed": 20681122,
+        "wind_trace_dtype": "torch.float32",
+        "attachment": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "wind_speed": [
+          1.0,
+          5.0,
+          1.0,
+          5.0,
+          1.0,
+          5.0,
+          1.0,
+          5.0
+        ],
+        "direction_rad": [
+          0.0,
+          0.0,
+          1.5707963267948966,
+          1.5707963267948966,
+          0.0,
+          0.0,
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        "wind_profile": [
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady",
+          "steady"
+        ]
+      }
+    ]
+  },
+  "p3_enabled": false,
+  "formal_final_acceptance": false
+}

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "full_duration_s": 120.0,
+  "score_samples": 12000,
+  "safe_completed": 1,
+  "rmse_3d_h_xy_m": [
+    2.098068221254448,
+    0.1411436092887031,
+    2.0933152516032445
+  ],
+  "PX4_offboard_and_armed_all_samples": true,
+  "normal_arm_ack": true,
+  "wire_lockstep": true,
+  "GPS_or_position_truth_sent": false,
+  "true_attitude_max_abs_deg": [
+    2.9222467572254054,
+    10.216509778455185,
+    0.43997576287504786
+  ],
+  "attitude_estimate_vs_truth_RMS_deg": [
+    0.11461216475782525,
+    0.918099616711189,
+    0.13285889163490608
+  ],
+  "attitude_error_alignment": "Onboard packet at policy tick vs physical state10ms later;includes one control period",
+  "rate_reference_vs_onboard_RMS_radps": [
+    0.03246296894950069,
+    0.05919506334454643,
+    0.0018088199736175834
+  ],
+  "angular_innovation_normalized_RMS": [
+    0.06568902730941772,
+    0.43563511967658997,
+    0.023063533008098602
+  ],
+  "maxima_checked400hz": {
+    "tilt_deg": 10.34355248476902,
+    "body_rate_radps": 0.25866757694696596,
+    "height_error_m": 0.3550171678246343,
+    "tension_n": 4.541836374600998
+  },
+  "policy_updated": false,
+  "residual_updated": false,
+  "artifact_sha256": {
+    "result.json": "fe0983e6b14061e0788bb071347682e564f27cad481e765d5bc3d13d67dcb4b7",
+    "trajectory.npz": "e16cf67e9e9c152d80987c8514c898fc3e4800bbcd5a5471548084f4bb3a730e",
+    "protocol.json": "4f1f5517a60fff4e88e0fc06783f6c991b708dbf597d2c1e2e1aa25e6bb6c87a",
+    "frozen_source.zip": "d2c8c58adcc76b393280575aa311cb306da80da63f7d8adedddafae048c7a6e4",
+    "px4.log": "8db12fc43982188f83cc1ea19e6e5b78dceffc9cd4979fe494ce8db2d0cbf103",
+    "px4_settings.json": "334df3a6d0a34d8174eeb24d6c1a6adebe1c3f8ca79f69dfb0aa8bbfacb9abb5"
+  }
+}

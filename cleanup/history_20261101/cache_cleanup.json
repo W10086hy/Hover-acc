@@ -1,0 +1,10 @@
+{
+  "generated_files_removed": [
+    {
+      "path": "cleanup/__pycache__/organize.cpython-311.pyc",
+      "bytes": 17831,
+      "sha256": "4c0f3e49481cdbe477cc0d3960fd5401688701a909a6c5d78696399dd98d8df0"
+    }
+  ],
+  "shared_environment_untouched": true
+}

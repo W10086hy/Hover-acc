@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "base_commit": "cfa262b7278967b6d2d923117c99a8895a1452ae",
+  "original_GitHub_models_and_Adam_unchanged": true,
+  "original_P2_controller_and_native_dynamics_unchanged": true,
+  "tether_geometry_config_extended": true,
+  "new_P3_controller_identity_verified": true,
+  "full120s_cases": 6,
+  "safe_completed": 6,
+  "full_equal_xyz_replays": 6,
+  "trained_Actor_updates": 0,
+  "residual_model_training_steps": 1000,
+  "new_residual_updates_during_validation": 0,
+  "formal_final_acceptance": false
+}

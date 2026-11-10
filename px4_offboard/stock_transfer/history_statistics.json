@@ -1,0 +1,1549 @@
+{
+  "historical_only": true,
+  "initial_stock_diagnosis": {
+    "position_ref": {
+      "mode_start_s": 39.184,
+      "post_observed_s": 14.996000000000002,
+      "pre_height_m": 4.854730368329157,
+      "pre_peak_tilt_deg": 1.176030111679001,
+      "pre_final_speed_mps": 0.013516275191149828,
+      "min_height_m": 4.836946210275143,
+      "max_tilt_deg": 1.1535293533179805,
+      "max_tension_n": 0.6023614512310023,
+      "position_rmse_3d_h_xy_m": [
+        0.16009849254228056,
+        0.15999570334204183,
+        0.005736046233775591
+      ],
+      "first_policy_setpoint_radps_thrust": null,
+      "last_simulated_mode": 3,
+      "max_command_gap_s": null,
+      "guard": null,
+      "default_px4_parameters": {
+        "THR_MDL_FAC": 0.0,
+        "MC_ROLLRATE_P": 0.15000000596046448,
+        "MC_ROLLRATE_I": 0.20000000298023224,
+        "MC_ROLLRATE_D": 0.003000000026077032,
+        "MC_PITCHRATE_P": 0.15000000596046448,
+        "MC_YAWRATE_P": 0.20000000298023224
+      }
+    },
+    "stock_p2": {
+      "mode_start_s": 39.52,
+      "post_observed_s": 2.5479999999999947,
+      "pre_height_m": 4.853892275251832,
+      "pre_peak_tilt_deg": 1.1542021527321877,
+      "pre_final_speed_mps": 0.006760605236440127,
+      "min_height_m": 2.9986496831055724,
+      "max_tilt_deg": 39.13043594108286,
+      "max_tension_n": 27.121171828626427,
+      "position_rmse_3d_h_xy_m": [
+        2.974873684094427,
+        0.7251107206867864,
+        2.8851495418890574
+      ],
+      "first_policy_setpoint_radps_thrust": [
+        0.06676791608333588,
+        -0.04616608843207359,
+        1.4640791119189593e-05,
+        0.4072966055854874
+      ],
+      "last_simulated_mode": 6,
+      "max_command_gap_s": 0.020000000000003126,
+      "guard": "RuntimeError: Physical guard at t=42.068: tilt=39.13, height=2.999, tension=21.10",
+      "default_px4_parameters": {
+        "THR_MDL_FAC": 0.0,
+        "MC_ROLLRATE_P": 0.15000000596046448,
+        "MC_ROLLRATE_I": 0.20000000298023224,
+        "MC_ROLLRATE_D": 0.003000000026077032,
+        "MC_PITCHRATE_P": 0.15000000596046448,
+        "MC_YAWRATE_P": 0.20000000298023224
+      }
+    },
+    "stock_p2_p3": {
+      "mode_start_s": 39.516,
+      "post_observed_s": 4.696000000000005,
+      "pre_height_m": 4.8519003293827945,
+      "pre_peak_tilt_deg": 1.1397089272978373,
+      "pre_final_speed_mps": 0.016115848527488662,
+      "min_height_m": 2.9938407267810128,
+      "max_tilt_deg": 32.723854391799264,
+      "max_tension_n": 24.763744772988964,
+      "position_rmse_3d_h_xy_m": [
+        2.5094067860769655,
+        0.7611918075981895,
+        2.3911732371483514
+      ],
+      "first_policy_setpoint_radps_thrust": [
+        -0.03567589074373245,
+        0.13370555639266968,
+        4.674678254165367e-05,
+        0.46791316405562805
+      ],
+      "last_simulated_mode": 6,
+      "max_command_gap_s": 0.012000000000000455,
+      "guard": "RuntimeError: Physical guard at t=44.212: tilt=32.34, height=2.994, tension=19.52",
+      "default_px4_parameters": {
+        "THR_MDL_FAC": 0.0,
+        "MC_ROLLRATE_P": 0.15000000596046448,
+        "MC_ROLLRATE_I": 0.20000000298023224,
+        "MC_ROLLRATE_D": 0.003000000026077032,
+        "MC_PITCHRATE_P": 0.15000000596046448,
+        "MC_YAWRATE_P": 0.20000000298023224
+      }
+    }
+  },
+  "previous_development_windows": {
+    "update1": {
+      "baseline_30_calm": {
+        "full30": true,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": null,
+        "tilt": 5.5474852822143,
+        "min_height_m": 3.5162512724538897,
+        "max_tension_n": 10.313294446145095,
+        "last5_horizontal_speed_rms_mps": 0.19818006415235506,
+        "last5_vertical_speed_rms_mps": 0.04073802721119768,
+        "last5_height_range_m": [
+          4.010280963673423,
+          4.072691947236108
+        ],
+        "last5_horizontal_offset_m": 2.5408408003294434,
+        "rmse_3d_h_xy": [
+          3.0296925261302254,
+          1.1093944699946452,
+          2.81926953532908
+        ],
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 0.0,
+        "pre_height_m": 4.924411956993672,
+        "motor_tau_s": 0.03,
+        "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+        "residual": false,
+        "seed": 21683134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "baseline_30_wind1": {
+        "full30": true,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": null,
+        "tilt": 7.091262861458756,
+        "min_height_m": 3.7281384819337915,
+        "max_tension_n": 22.164550211242197,
+        "last5_horizontal_speed_rms_mps": 0.14232061966844572,
+        "last5_vertical_speed_rms_mps": 0.05364668817831981,
+        "last5_height_range_m": [
+          3.949666841757566,
+          4.100797511714529
+        ],
+        "last5_horizontal_offset_m": 3.226123113473314,
+        "rmse_3d_h_xy": [
+          2.878773339620531,
+          1.0372914284283983,
+          2.68539800279566
+        ],
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 1.0,
+        "pre_height_m": 4.925975857912864,
+        "motor_tau_s": 0.06,
+        "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+        "residual": false,
+        "seed": 21683134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "candidate_30_calm": {
+        "full30": false,
+        "mode_time_s": 32.016,
+        "timed_out_or_failed": "RuntimeError: Physical guard at t=35.284: tilt=1.76, height=2.997, tension=0.37",
+        "tilt": 3.536014651597713,
+        "min_height_m": 2.997285212006665,
+        "max_tension_n": 26.17752183822414,
+        "last5_horizontal_speed_rms_mps": null,
+        "last5_vertical_speed_rms_mps": null,
+        "last5_height_range_m": null,
+        "last5_horizontal_offset_m": null,
+        "rmse_3d_h_xy": [
+          0.9067893624937508,
+          0.9011505786719738,
+          0.10096822515519248
+        ],
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 0.0,
+        "pre_height_m": 4.920089295819551,
+        "motor_tau_s": 0.03,
+        "actor_sha": "d89ea7266ce8cfcd64865583207e72b6ccaaa5563f8f7a85cc1e22a2e94139cd",
+        "residual": false,
+        "seed": 21683134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "candidate_30_wind1": {
+        "full30": true,
+        "mode_time_s": 32.012,
+        "timed_out_or_failed": null,
+        "tilt": 10.109350439184364,
+        "min_height_m": 3.5796977319681695,
+        "max_tension_n": 14.006659880593155,
+        "last5_horizontal_speed_rms_mps": 0.2398910276800325,
+        "last5_vertical_speed_rms_mps": 0.08108988004309658,
+        "last5_height_range_m": [
+          3.8525631540422967,
+          4.0170189502914315
+        ],
+        "last5_horizontal_offset_m": 3.3282227136640694,
+        "rmse_3d_h_xy": [
+          3.0810682639393967,
+          1.1053205767206287,
+          2.87597775890783
+        ],
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 1.0,
+        "pre_height_m": 4.918757542111983,
+        "motor_tau_s": 0.06,
+        "actor_sha": "d89ea7266ce8cfcd64865583207e72b6ccaaa5563f8f7a85cc1e22a2e94139cd",
+        "residual": false,
+        "seed": 21683134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "candidate_30_calm_p3": {
+        "full30": false,
+        "mode_time_s": 32.016,
+        "timed_out_or_failed": "RuntimeError: Physical guard at t=35.380: tilt=0.51, height=3.000, tension=0.36",
+        "tilt": 5.216245972407412,
+        "min_height_m": 2.9999615234749033,
+        "max_tension_n": 25.084335542380668,
+        "last5_horizontal_speed_rms_mps": null,
+        "last5_vertical_speed_rms_mps": null,
+        "last5_height_range_m": null,
+        "last5_horizontal_offset_m": null,
+        "rmse_3d_h_xy": [
+          0.9203553106754944,
+          0.8863169441737119,
+          0.24798421796388384
+        ],
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 0.0,
+        "pre_height_m": 4.918809133888044,
+        "motor_tau_s": 0.03,
+        "actor_sha": "d89ea7266ce8cfcd64865583207e72b6ccaaa5563f8f7a85cc1e22a2e94139cd",
+        "residual": true,
+        "seed": 21683134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "candidate_30_wind1_p3": {
+        "full30": false,
+        "mode_time_s": 32.012,
+        "timed_out_or_failed": "RuntimeError: Physical guard at t=40.944: tilt=15.47, height=4.316, tension=33.05",
+        "tilt": 34.50612817629405,
+        "min_height_m": 3.2931741165949435,
+        "max_tension_n": 33.04680129928267,
+        "last5_horizontal_speed_rms_mps": null,
+        "last5_vertical_speed_rms_mps": null,
+        "last5_height_range_m": null,
+        "last5_horizontal_offset_m": null,
+        "rmse_3d_h_xy": [
+          2.14993348261023,
+          1.079098816726322,
+          1.8595052361820341
+        ],
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 1.0,
+        "pre_height_m": 4.918757542111983,
+        "motor_tau_s": 0.06,
+        "actor_sha": "d89ea7266ce8cfcd64865583207e72b6ccaaa5563f8f7a85cc1e22a2e94139cd",
+        "residual": true,
+        "seed": 21683134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      }
+    },
+    "update2": {
+      "filtered_parent_calm": {
+        "full30": false,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": "RuntimeError: Physical guard at t=37.224: tilt=3.43, height=4.413, tension=40.35",
+        "tilt": 10.518280167387127,
+        "min_height_m": 4.412917622354911,
+        "max_tension_n": 40.35269202753153,
+        "last5_horizontal_speed_rms_mps": null,
+        "last5_vertical_speed_rms_mps": null,
+        "last5_height_range_m": null,
+        "last5_horizontal_offset_m": null,
+        "rmse_observed_3d_h_xy": [
+          0.3831216711362548,
+          0.19913943767656672,
+          0.3273006251996738
+        ],
+        "rmse_full30_3d_h_xy": [
+          6.557307480399683,
+          3.6372083211049073,
+          5.45609723349858
+        ],
+        "observed_s": 5.204000000000001,
+        "post_policy_duration_s": null,
+        "max_yaw_deg": 0.30539062061298755,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.020000000000010232,
+        "wind_mps": 0.0,
+        "pre_height_m": 4.920793459586862,
+        "motor_tau_s": 0.03,
+        "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+        "residual": false,
+        "seed": 21685134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "filtered_parent_wind1": {
+        "full30": false,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": "RuntimeError: Physical guard at t=38.300: tilt=3.26, height=4.349, tension=78.69",
+        "tilt": 18.144181102471563,
+        "min_height_m": 3.8244857878742335,
+        "max_tension_n": 78.69380890884064,
+        "last5_horizontal_speed_rms_mps": null,
+        "last5_vertical_speed_rms_mps": null,
+        "last5_height_range_m": null,
+        "last5_horizontal_offset_m": null,
+        "rmse_observed_3d_h_xy": [
+          0.5791478127180169,
+          0.4605962025629798,
+          0.35108877390287707
+        ],
+        "rmse_full30_3d_h_xy": [
+          6.417007948141993,
+          3.5627196701754325,
+          5.337135894678211
+        ],
+        "observed_s": 6.280000000000001,
+        "post_policy_duration_s": null,
+        "max_yaw_deg": 0.7435471882160325,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.020000000000010232,
+        "wind_mps": 1.0,
+        "pre_height_m": 4.919273323303988,
+        "motor_tau_s": 0.06,
+        "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+        "residual": false,
+        "seed": 21685134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "multirate_calm": {
+        "full30": true,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": null,
+        "tilt": 1.0608957826297019,
+        "min_height_m": 4.813583789705252,
+        "max_tension_n": 10.26152018015508,
+        "last5_horizontal_speed_rms_mps": 0.020983457408459933,
+        "last5_vertical_speed_rms_mps": 0.012067079071917926,
+        "last5_height_range_m": [
+          5.054942679431409,
+          5.071141742044026
+        ],
+        "last5_horizontal_offset_m": 0.5611681800908844,
+        "rmse_observed_3d_h_xy": [
+          0.5957860566772389,
+          0.06780006417655865,
+          0.5919156837157372
+        ],
+        "rmse_full30_3d_h_xy": [
+          0.5957860566772389,
+          0.06780006417655865,
+          0.5919156837157372
+        ],
+        "observed_s": 29.995999999999995,
+        "post_policy_duration_s": 30.0,
+        "max_yaw_deg": 0.06391745572274561,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 0.0,
+        "pre_height_m": 4.920793459586862,
+        "motor_tau_s": 0.03,
+        "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+        "residual": false,
+        "seed": 21685134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "multirate_wind1": {
+        "full30": true,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": null,
+        "tilt": 1.0870738035161789,
+        "min_height_m": 4.858696091670235,
+        "max_tension_n": 8.126039464746821,
+        "last5_horizontal_speed_rms_mps": 0.01822300391584852,
+        "last5_vertical_speed_rms_mps": 0.014430055913764067,
+        "last5_height_range_m": [
+          5.055123420823069,
+          5.069550967908991
+        ],
+        "last5_horizontal_offset_m": 0.553382380779398,
+        "rmse_observed_3d_h_xy": [
+          0.5762637828082718,
+          0.067579842013668,
+          0.5722874385568032
+        ],
+        "rmse_full30_3d_h_xy": [
+          0.5762637828082718,
+          0.067579842013668,
+          0.5722874385568032
+        ],
+        "observed_s": 29.995999999999995,
+        "post_policy_duration_s": 30.0,
+        "max_yaw_deg": 0.05533681007653539,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 1.0,
+        "pre_height_m": 4.919273323303988,
+        "motor_tau_s": 0.06,
+        "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+        "residual": false,
+        "seed": 21685134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "multirate_calm_p3": {
+        "full30": true,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": null,
+        "tilt": 1.0658492652547968,
+        "min_height_m": 4.897355899262148,
+        "max_tension_n": 5.772828851854666,
+        "last5_horizontal_speed_rms_mps": 0.020043559250398604,
+        "last5_vertical_speed_rms_mps": 0.014912173107865391,
+        "last5_height_range_m": [
+          5.051896668353619,
+          5.074870007568232
+        ],
+        "last5_horizontal_offset_m": 0.5088499556926354,
+        "rmse_observed_3d_h_xy": [
+          0.5581080304865189,
+          0.06612154317970496,
+          0.554177331926411
+        ],
+        "rmse_full30_3d_h_xy": [
+          0.5581080304865189,
+          0.06612154317970496,
+          0.554177331926411
+        ],
+        "observed_s": 29.995999999999995,
+        "post_policy_duration_s": 30.0,
+        "max_yaw_deg": 0.06441838521275194,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 0.0,
+        "pre_height_m": 4.921318974085694,
+        "motor_tau_s": 0.03,
+        "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+        "residual": true,
+        "seed": 21685134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "multirate_wind1_p3": {
+        "full30": false,
+        "mode_time_s": 32.012,
+        "timed_out_or_failed": "RuntimeError: Physical guard at t=37.848: tilt=19.13, height=4.288, tension=47.58",
+        "tilt": 23.01528392356418,
+        "min_height_m": 4.169122452906064,
+        "max_tension_n": 47.580580690476616,
+        "last5_horizontal_speed_rms_mps": null,
+        "last5_vertical_speed_rms_mps": null,
+        "last5_height_range_m": null,
+        "last5_horizontal_offset_m": null,
+        "rmse_observed_3d_h_xy": [
+          0.602590125329624,
+          0.31999610494833103,
+          0.5106048883066717
+        ],
+        "rmse_full30_3d_h_xy": [
+          6.476729089021725,
+          3.592390111712737,
+          5.3891328595469545
+        ],
+        "observed_s": 5.8359999999999985,
+        "post_policy_duration_s": null,
+        "max_yaw_deg": 2.9586689504800825,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.020000000000010232,
+        "wind_mps": 1.0,
+        "pre_height_m": 4.919253829871916,
+        "motor_tau_s": 0.06,
+        "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+        "residual": true,
+        "seed": 21685134,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      }
+    },
+    "repeat_update2": {
+      "repeat_calm": {
+        "full30": true,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": null,
+        "tilt": 1.0856942959923048,
+        "min_height_m": 4.834762609668107,
+        "max_tension_n": 8.583300991501032,
+        "last5_horizontal_speed_rms_mps": 0.012966719481481054,
+        "last5_vertical_speed_rms_mps": 0.02055914121095701,
+        "last5_height_range_m": [
+          5.049607820509086,
+          5.070746622220586
+        ],
+        "last5_horizontal_offset_m": 0.5611073729058268,
+        "rmse_observed_3d_h_xy": [
+          0.5815183557668457,
+          0.06616769543877783,
+          0.5777416673341962
+        ],
+        "rmse_full30_3d_h_xy": [
+          0.5815183557668457,
+          0.06616769543877783,
+          0.5777416673341962
+        ],
+        "observed_s": 29.995999999999995,
+        "post_policy_duration_s": 30.000000000000007,
+        "max_yaw_deg": 0.056250370641977285,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.012000000000000455,
+        "wind_mps": 0.0,
+        "pre_height_m": 4.923397948236516,
+        "motor_tau_s": 0.03,
+        "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+        "residual": false,
+        "seed": 21685135,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      },
+      "repeat_wind1": {
+        "full30": false,
+        "mode_time_s": 32.02,
+        "timed_out_or_failed": "RuntimeError: Physical guard at t=38.092: tilt=7.29, height=4.539, tension=74.96",
+        "tilt": 18.03215921645837,
+        "min_height_m": 4.077214633432868,
+        "max_tension_n": 74.96206183311648,
+        "last5_horizontal_speed_rms_mps": null,
+        "last5_vertical_speed_rms_mps": null,
+        "last5_height_range_m": null,
+        "last5_horizontal_offset_m": null,
+        "rmse_observed_3d_h_xy": [
+          0.5127551987393726,
+          0.36497457119540605,
+          0.3601547670307626
+        ],
+        "rmse_full30_3d_h_xy": [
+          6.443719136034554,
+          3.575813950766896,
+          5.360510320258579
+        ],
+        "observed_s": 6.071999999999996,
+        "post_policy_duration_s": null,
+        "max_yaw_deg": 1.6616387343403396,
+        "offboard_armed": true,
+        "max_command_gap_s": 0.020000000000010232,
+        "wind_mps": 1.0,
+        "pre_height_m": 4.92118141880945,
+        "motor_tau_s": 0.06,
+        "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+        "residual": false,
+        "seed": 21685135,
+        "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "px4_rate_p": 0.15000000596046448,
+        "px4_thrust_model": 0.0
+      }
+    }
+  },
+  "short_filter_development": {
+    "short_filter_calm_21685134": {
+      "sensor_seed": 21685134,
+      "requested_post_duration_s": 30.0,
+      "post_duration_s": null,
+      "simulated_motor_tau_s": 0.03,
+      "residual_enabled": false,
+      "wind_mps": 0.0,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+      "error": "RuntimeError: Physical guard at t=37.148: tilt=0.86, height=4.923, tension=37.83"
+    },
+    "short_filter_calm_21685135": {
+      "sensor_seed": 21685135,
+      "requested_post_duration_s": 30.0,
+      "post_duration_s": null,
+      "simulated_motor_tau_s": 0.03,
+      "residual_enabled": false,
+      "wind_mps": 0.0,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+      "error": "RuntimeError: Physical guard at t=37.128: tilt=0.99, height=4.902, tension=34.90"
+    },
+    "short_filter_wind1_21685134": {
+      "sensor_seed": 21685134,
+      "requested_post_duration_s": 30.0,
+      "post_duration_s": 30.0,
+      "simulated_motor_tau_s": 0.06,
+      "residual_enabled": false,
+      "wind_mps": 1.0,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+      "error": null
+    },
+    "short_filter_wind1_21685135": {
+      "sensor_seed": 21685135,
+      "requested_post_duration_s": 30.0,
+      "post_duration_s": 30.0,
+      "simulated_motor_tau_s": 0.06,
+      "residual_enabled": false,
+      "wind_mps": 1.0,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+      "error": null
+    }
+  },
+  "selected_30s_pair_comparison": {
+    "checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+    "sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+    "parent_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "frozen_p3_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+    "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+    "px4_version": "1.14.4",
+    "stock_airframe": "10016_none_iris",
+    "target_height_m": 5,
+    "tether_axial_rigidity_n": 49,
+    "tether_mount_below_body_m": 0.05,
+    "evaluation_s": 30,
+    "wind_profiles": [
+      {
+        "speed_mps": 0
+      },
+      {
+        "speed_mps": 1,
+        "direction": "sim +y",
+        "kind": "steady"
+      }
+    ],
+    "sensor_seeds": [
+      21685134,
+      21685135
+    ],
+    "simulated_motor_tau_s": 0.045,
+    "command_filter_s": 0.065,
+    "training_command_filter_s": 0.16,
+    "training_motor_tau_s": 0.03,
+    "samples_per_case": 7500,
+    "timer": "ULog vehicle_status nav_state_timestamp; complete Offboard and armed",
+    "aggregation": "sqrt(mean(per-case RMSE squared)); equal full 30 second windows",
+    "residual_enabled_by_default": false,
+    "formal_final_acceptance": false,
+    "hardware_validation": false,
+    "aggregates": {
+      "actor37": {
+        "0": {
+          "count": 2,
+          "safe_completed": 2,
+          "rmse_3d_h_xy_m": [
+            0.6129461031354435,
+            0.057341122240393484,
+            0.6102580774140871
+          ],
+          "min_height_m": 4.854473672377855,
+          "last5_horizontal_speed_rms_mps": [
+            0.01472244195080718,
+            0.016318039000412597
+          ],
+          "last5_vertical_speed_rms_mps": [
+            0.016280729217821945,
+            0.020920724324944334
+          ],
+          "last5_horizontal_offset_m": [
+            0.5770734678055559,
+            0.6099732454101598
+          ]
+        },
+        "1": {
+          "count": 2,
+          "safe_completed": 2,
+          "rmse_3d_h_xy_m": [
+            0.5969145816611495,
+            0.058676085067901375,
+            0.5940236820538467
+          ],
+          "min_height_m": 4.860666289678663,
+          "last5_horizontal_speed_rms_mps": [
+            0.01891609971787229,
+            0.025065775829656717
+          ],
+          "last5_vertical_speed_rms_mps": [
+            0.015974560400586618,
+            0.01912593945355806
+          ],
+          "last5_horizontal_offset_m": [
+            0.5742793291714253,
+            0.6043711621595134
+          ]
+        }
+      },
+      "stock_p2": {
+        "0": {
+          "count": 2,
+          "safe_completed": 2,
+          "rmse_3d_h_xy_m": [
+            0.593313074609796,
+            0.06336910987435071,
+            0.5899192829673072
+          ],
+          "min_height_m": 4.870003779557993,
+          "last5_horizontal_speed_rms_mps": [
+            0.013198097904506578,
+            0.014028676176156015
+          ],
+          "last5_vertical_speed_rms_mps": [
+            0.01662347669369289,
+            0.020901366056751008
+          ],
+          "last5_horizontal_offset_m": [
+            0.5584768832907152,
+            0.5879635345325386
+          ]
+        },
+        "1": {
+          "count": 2,
+          "safe_completed": 2,
+          "rmse_3d_h_xy_m": [
+            0.5812612851036285,
+            0.06496395047504368,
+            0.5776195691794018
+          ],
+          "min_height_m": 4.85042031908611,
+          "last5_horizontal_speed_rms_mps": [
+            0.01701297107896988,
+            0.020287534802359404
+          ],
+          "last5_vertical_speed_rms_mps": [
+            0.016294549267592728,
+            0.020993778739157323
+          ],
+          "last5_horizontal_offset_m": [
+            0.5591220707137315,
+            0.5627018790642481
+          ]
+        }
+      },
+      "stock_p2_frozen_p3": {
+        "0": {
+          "count": 2,
+          "safe_completed": 2,
+          "rmse_3d_h_xy_m": [
+            0.5559422136302667,
+            0.06630673868974213,
+            0.5519738773714308
+          ],
+          "min_height_m": 4.859649681754341,
+          "last5_horizontal_speed_rms_mps": [
+            0.01562886137374143,
+            0.018967267452711635
+          ],
+          "last5_vertical_speed_rms_mps": [
+            0.01774153560741685,
+            0.024027310625794208
+          ],
+          "last5_horizontal_offset_m": [
+            0.5326180317933512,
+            0.546408595763623
+          ]
+        },
+        "1": {
+          "count": 2,
+          "safe_completed": 2,
+          "rmse_3d_h_xy_m": [
+            0.5414803381085832,
+            0.06837921021063068,
+            0.5371454553183485
+          ],
+          "min_height_m": 4.853609534167686,
+          "last5_horizontal_speed_rms_mps": [
+            0.01778632933590738,
+            0.019904024891429842
+          ],
+          "last5_vertical_speed_rms_mps": [
+            0.017689311981198087,
+            0.02349375804363621
+          ],
+          "last5_horizontal_offset_m": [
+            0.5066824498994299,
+            0.5247467507740963
+          ]
+        }
+      }
+    },
+    "artifact_retention": "statistics_only",
+    "cases": {
+      "actor37": [
+        {
+          "case": "final_parent_calm_21685134",
+          "trace_sha256": "f1cca3f173a943120d0e43ef8e0933c82a3b15480faafcba91057d4185f5347a",
+          "ulog_sha256": "5a8969c9046d60aac068e1bc3c9fbcb75d2c40a614ac6800ee2dbc2d5b9a3521",
+          "full30": true,
+          "mode_time_s": 32.012,
+          "timed_out_or_failed": null,
+          "tilt": 0.9239394653620081,
+          "min_height_m": 4.872387838467986,
+          "max_tension_n": 5.980939698817362,
+          "last5_horizontal_speed_rms_mps": 0.016318039000412597,
+          "last5_vertical_speed_rms_mps": 0.016280729217821945,
+          "last5_height_range_m": [
+            5.045701693631156,
+            5.064344340978218
+          ],
+          "last5_horizontal_offset_m": 0.6099732454101598,
+          "rmse_observed_3d_h_xy": [
+            0.6219134988290314,
+            0.056411012199463186,
+            0.6193498185423159
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.6219134988290314,
+            0.056411012199463186,
+            0.6193498185423159
+          ],
+          "observed_s": 29.996000000000002,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.06449888398174324,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 0.0,
+          "pre_height_m": 4.921448357869551,
+          "motor_tau_s": 0.045,
+          "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+          "residual": false,
+          "seed": 21685134,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "final_parent_calm_21685135",
+          "trace_sha256": "53346631275b66f86e9c5c94d362d007d60c87366161a1a04ceededaa2094404",
+          "ulog_sha256": "dcdd0dc855b2ae782b7535511fa8dcedb95ab9dc1487eeee1f2d2adbe2a465d4",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.9164746419891072,
+          "min_height_m": 4.854473672377855,
+          "max_tension_n": 5.613194525990605,
+          "last5_horizontal_speed_rms_mps": 0.01472244195080718,
+          "last5_vertical_speed_rms_mps": 0.020920724324944334,
+          "last5_height_range_m": [
+            5.04297414379587,
+            5.0638331751785515
+          ],
+          "last5_horizontal_offset_m": 0.5770734678055559,
+          "rmse_observed_3d_h_xy": [
+            0.6038455520015726,
+            0.05825638421844865,
+            0.6010288215800274
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.6038455520015726,
+            0.05825638421844865,
+            0.6010288215800274
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.04592096415456037,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 0.0,
+          "pre_height_m": 4.922917725410183,
+          "motor_tau_s": 0.045,
+          "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+          "residual": false,
+          "seed": 21685135,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "final_parent_wind1_21685134",
+          "trace_sha256": "848b55357d88eb370be88ffdaadcd2614cb3a8675d55770424bef886b73cc201",
+          "ulog_sha256": "dee621a5f077dea06d07bad907d30ca4bea0f5bd0c84166cf6cebc7dd8fb3b83",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.9440526211684616,
+          "min_height_m": 4.869148981132229,
+          "max_tension_n": 6.198744755004372,
+          "last5_horizontal_speed_rms_mps": 0.01891609971787229,
+          "last5_vertical_speed_rms_mps": 0.015974560400586618,
+          "last5_height_range_m": [
+            5.049678564369164,
+            5.065017669392618
+          ],
+          "last5_horizontal_offset_m": 0.6043711621595134,
+          "rmse_observed_3d_h_xy": [
+            0.6051279801857864,
+            0.05808434527321131,
+            0.602333861938636
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.6051279801857864,
+            0.05808434527321131,
+            0.602333861938636
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.053962722494579736,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 1.0,
+          "pre_height_m": 4.920105852458893,
+          "motor_tau_s": 0.045,
+          "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+          "residual": false,
+          "seed": 21685134,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "final_parent_wind1_21685135",
+          "trace_sha256": "176f157f7b6ac6de0bd12f9a5950e19bc65d3410fa7f26294e41fe30abaa95b0",
+          "ulog_sha256": "3436cd6ffb2e0f043d96fe59f119ef3ae72e9b0a8147f32fce53fc4519243455",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.9215554841361324,
+          "min_height_m": 4.860666289678663,
+          "max_tension_n": 6.087787304551671,
+          "last5_horizontal_speed_rms_mps": 0.025065775829656717,
+          "last5_vertical_speed_rms_mps": 0.01912593945355806,
+          "last5_height_range_m": [
+            5.042075574404064,
+            5.065931894311399
+          ],
+          "last5_horizontal_offset_m": 0.5742793291714253,
+          "rmse_observed_3d_h_xy": [
+            0.5885865808831194,
+            0.05926191653982827,
+            0.5855955843785943
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5885865808831194,
+            0.05926191653982827,
+            0.5855955843785943
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.000000000000007,
+          "max_yaw_deg": 0.06268048330503585,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 1.0,
+          "pre_height_m": 4.9212370104197065,
+          "motor_tau_s": 0.045,
+          "actor_sha": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+          "residual": false,
+          "seed": 21685135,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        }
+      ],
+      "stock_p2": [
+        {
+          "case": "matched_tau045_calm_21685134",
+          "trace_sha256": "5bbb128124effb4b96714080fb695d0e51213a832660a0ef19c2c3c87bb59fdc",
+          "ulog_sha256": "0f4e8a67a5685ebb8eb9285df5352f64d6044c79919fa3408145225ea134fb85",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.9528671945286596,
+          "min_height_m": 4.874137022921445,
+          "max_tension_n": 6.238709059095937,
+          "last5_horizontal_speed_rms_mps": 0.013198097904506578,
+          "last5_vertical_speed_rms_mps": 0.01662347669369289,
+          "last5_height_range_m": [
+            5.055519578946488,
+            5.071663842990592
+          ],
+          "last5_horizontal_offset_m": 0.5879635345325386,
+          "rmse_observed_3d_h_xy": [
+            0.600162143555791,
+            0.06301718292146248,
+            0.5968445636965497
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.600162143555791,
+            0.06301718292146248,
+            0.5968445636965497
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.07081014544859235,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 0.0,
+          "pre_height_m": 4.921477192732186,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": false,
+          "seed": 21685134,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "matched_tau045_calm_21685135",
+          "trace_sha256": "4f9bb5a6276321daf332cda5c0f84437163c269916777fb26fb31786f499b89b",
+          "ulog_sha256": "a5613a835e6fe2b8000362e5a7879127cad11f6ba0c4e6380c2f80dcf022ec99",
+          "full30": true,
+          "mode_time_s": 32.012,
+          "timed_out_or_failed": null,
+          "tilt": 0.9073497746853164,
+          "min_height_m": 4.870003779557993,
+          "max_tension_n": 5.379094202501579,
+          "last5_horizontal_speed_rms_mps": 0.014028676176156015,
+          "last5_vertical_speed_rms_mps": 0.020901366056751008,
+          "last5_height_range_m": [
+            5.049972610040165,
+            5.07091897885157
+          ],
+          "last5_horizontal_offset_m": 0.5584768832907152,
+          "rmse_observed_3d_h_xy": [
+            0.5863840127837533,
+            0.06371909312896726,
+            0.582911732271018
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5863840127837533,
+            0.06371909312896726,
+            0.5829117322710181
+          ],
+          "observed_s": 29.996000000000002,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.05020365295979415,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 0.0,
+          "pre_height_m": 4.922825104707412,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": false,
+          "seed": 21685135,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "matched_tau045_wind1_21685134",
+          "trace_sha256": "d3d773ecdab84f1e9e38351ab9e82368120bbb38336dcab145112077dccbdc44",
+          "ulog_sha256": "6174380cf329962ebcb6f35a4c8cb076fd1021088e73133a9010b214793021d4",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.9575022529431625,
+          "min_height_m": 4.85042031908611,
+          "max_tension_n": 7.255122578103033,
+          "last5_horizontal_speed_rms_mps": 0.01701297107896988,
+          "last5_vertical_speed_rms_mps": 0.016294549267592728,
+          "last5_height_range_m": [
+            5.054754618216631,
+            5.074160616858058
+          ],
+          "last5_horizontal_offset_m": 0.5627018790642481,
+          "rmse_observed_3d_h_xy": [
+            0.5873166441922246,
+            0.0647902244820469,
+            0.58373201673095
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5873166441922246,
+            0.0647902244820469,
+            0.58373201673095
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.000000000000007,
+          "max_yaw_deg": 0.041408578299417985,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 1.0,
+          "pre_height_m": 4.9203453800037105,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": false,
+          "seed": 21685134,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "matched_tau045_wind1_21685135",
+          "trace_sha256": "f17ed2c8d9380dcf542fad3b164873ba63fa5b4d4021fc6cfcdc2c1cddb67f83",
+          "ulog_sha256": "63bd4b327ee712ee44c1ebe68cd2b4fcc6977d360bd09f92a0baed37fd4d8960",
+          "full30": true,
+          "mode_time_s": 32.012,
+          "timed_out_or_failed": null,
+          "tilt": 0.942395652605555,
+          "min_height_m": 4.859992009068314,
+          "max_tension_n": 5.866552638734081,
+          "last5_horizontal_speed_rms_mps": 0.020287534802359404,
+          "last5_vertical_speed_rms_mps": 0.020993778739157323,
+          "last5_height_range_m": [
+            5.051293665234977,
+            5.072469461427769
+          ],
+          "last5_horizontal_offset_m": 0.5591220707137315,
+          "rmse_observed_3d_h_xy": [
+            0.5751421759664537,
+            0.06513721312900811,
+            0.5714417433485354
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5751421759664537,
+            0.06513721312900811,
+            0.5714417433485354
+          ],
+          "observed_s": 29.996000000000002,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.07406838438151515,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 1.0,
+          "pre_height_m": 4.921184998636442,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": false,
+          "seed": 21685135,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        }
+      ],
+      "stock_p2_frozen_p3": [
+        {
+          "case": "final_candidate_calm_p3",
+          "trace_sha256": "ceec430538815e42023041dce854d555e474aa8840c5b12d69f21e25dc444858",
+          "ulog_sha256": "d6480354d7ab8dea83a59cfca6779209f44b94a6299ec14d472b8a82f34d6784",
+          "full30": true,
+          "mode_time_s": 32.016,
+          "timed_out_or_failed": null,
+          "tilt": 0.951979225588697,
+          "min_height_m": 4.859649681754341,
+          "max_tension_n": 6.662862480709753,
+          "last5_horizontal_speed_rms_mps": 0.018967267452711635,
+          "last5_vertical_speed_rms_mps": 0.01774153560741685,
+          "last5_height_range_m": [
+            5.0499371703123765,
+            5.07463568657395
+          ],
+          "last5_horizontal_offset_m": 0.5326180317933512,
+          "rmse_observed_3d_h_xy": [
+            0.5568213434501641,
+            0.06726828564806922,
+            0.5527431467396184
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5568213434501641,
+            0.06726828564806922,
+            0.5527431467396184
+          ],
+          "observed_s": 29.996000000000002,
+          "post_policy_duration_s": 30.003999999999998,
+          "max_yaw_deg": 0.05421789369742604,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 0.0,
+          "pre_height_m": 4.921107388597095,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": true,
+          "seed": 21685134,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "final_candidate_wind1_p3",
+          "trace_sha256": "eeddb6476e9b053c77ba55d7b17b3a4610eecc411b378f05ef637196cf689a06",
+          "ulog_sha256": "68b4ccd161af9767f2c6ec79fc7ea3efa787d8bdfbc034712e8f1d2ffd819c0e",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.932621931231262,
+          "min_height_m": 4.861854778318327,
+          "max_tension_n": 6.447180272869151,
+          "last5_horizontal_speed_rms_mps": 0.01778632933590738,
+          "last5_vertical_speed_rms_mps": 0.017689311981198087,
+          "last5_height_range_m": [
+            5.05224031269865,
+            5.076572763293624
+          ],
+          "last5_horizontal_offset_m": 0.5247467507740963,
+          "rmse_observed_3d_h_xy": [
+            0.5499747201113531,
+            0.06779305534382266,
+            0.5457804452421418
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5499747201113531,
+            0.06779305534382266,
+            0.5457804452421418
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.045678582383677474,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 1.0,
+          "pre_height_m": 4.9203453800037105,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": true,
+          "seed": 21685134,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "selected_p3_calm_21685135",
+          "trace_sha256": "896207f6d3b75e4d2f4e6309efa0c272e5941a592b37c4abcf7e8aa0d3082cb7",
+          "ulog_sha256": "f85332095a0cfab2726d129a16c902e420227c7e90646e31b331e92982dc3851",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.9985397747936487,
+          "min_height_m": 4.903578215341225,
+          "max_tension_n": 5.668531429920774,
+          "last5_horizontal_speed_rms_mps": 0.01562886137374143,
+          "last5_vertical_speed_rms_mps": 0.024027310625794208,
+          "last5_height_range_m": [
+            5.043304375236728,
+            5.072864893431678
+          ],
+          "last5_horizontal_offset_m": 0.546408595763623,
+          "rmse_observed_3d_h_xy": [
+            0.5550616914096996,
+            0.06533104114668045,
+            0.5512035343983993
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5550616914096996,
+            0.06533104114668045,
+            0.5512035343983993
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.05387879590040817,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 0.0,
+          "pre_height_m": 4.922656586681823,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": true,
+          "seed": 21685135,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        },
+        {
+          "case": "selected_p3_wind1_21685135",
+          "trace_sha256": "79862146270d1b4912a02f8c409ab0587ce9caa278ec3dd8ab8de0187679b7d9",
+          "ulog_sha256": "15b7e89ab3e742b00c231f5f58f53b7f62564249ccaec6b5b936e68fd846d18f",
+          "full30": true,
+          "mode_time_s": 32.02,
+          "timed_out_or_failed": null,
+          "tilt": 0.9411730962491375,
+          "min_height_m": 4.853609534167686,
+          "max_tension_n": 6.157188373939942,
+          "last5_horizontal_speed_rms_mps": 0.019904024891429842,
+          "last5_vertical_speed_rms_mps": 0.02349375804363621,
+          "last5_height_range_m": [
+            5.044344579519863,
+            5.074261669297069
+          ],
+          "last5_horizontal_offset_m": 0.5066824498994299,
+          "rmse_observed_3d_h_xy": [
+            0.5328505609969929,
+            0.06896038301234005,
+            0.528369365055925
+          ],
+          "rmse_full30_3d_h_xy": [
+            0.5328505609969929,
+            0.06896038301234005,
+            0.528369365055925
+          ],
+          "observed_s": 29.995999999999995,
+          "post_policy_duration_s": 30.0,
+          "max_yaw_deg": 0.06411624883805846,
+          "offboard_armed": true,
+          "max_command_gap_s": 0.012000000000000455,
+          "wind_mps": 1.0,
+          "pre_height_m": 4.919162926635476,
+          "motor_tau_s": 0.045,
+          "actor_sha": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+          "residual": true,
+          "seed": 21685135,
+          "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+          "px4_rate_p": 0.15000000596046448,
+          "px4_thrust_model": 0.0
+        }
+      ]
+    },
+    "rejected_refine": {
+      "final_refine_calm_21685134": {
+        "full30": true,
+        "failure": null
+      },
+      "final_refine_calm_21685135": {
+        "full30": false,
+        "failure": "RuntimeError: Physical guard at t=37.304: tilt=1.95, height=4.715, tension=46.08"
+      },
+      "final_refine_wind1_21685134": {
+        "full30": true,
+        "failure": null
+      },
+      "final_refine_wind1_21685135": {
+        "full30": true,
+        "failure": null
+      },
+      "final_refine_calm_p3": {
+        "full30": true,
+        "failure": null
+      },
+      "final_refine_wind1_p3": {
+        "full30": true,
+        "failure": null
+      }
+    }
+  },
+  "previous_120s_before_height_reference_fix": {
+    "weak": {
+      "duration_s": 120.0,
+      "recorded_offboard_s": 120.0,
+      "safe_completed": 1,
+      "result_error": null,
+      "sample_count": 30000,
+      "expected_sample_count": 30000,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_enabled": false,
+      "motor_tau_s": 0.045,
+      "wind_peak_mps": 1.0,
+      "wind_profile": "steady",
+      "wind_direction_sim_deg": 90,
+      "sensor_seed": 21685134,
+      "offboard_armed": true,
+      "mode_start_ulog_usec": 32020000,
+      "max_command_gap_s": 0.012000000000000455,
+      "rmse_3d_h_xy_m": [
+        0.5724641624056056,
+        0.06494323676944484,
+        0.5687684882592032
+      ],
+      "rmse_recorded_3d_h_xy_m": [
+        0.5724641624056056,
+        0.06494323676944484,
+        0.5687684882592032
+      ],
+      "failure_remainder_penalty_h_xy_m": [
+        4.0,
+        6.0
+      ],
+      "min_height_m": 4.836296495658155,
+      "max_horizontal_error_m": 0.7979072762568586,
+      "last30_horizontal_speed_rms_mps": 0.01160295947708833,
+      "last30_horizontal_offset_m": 0.5546833727331917,
+      "max_tilt_deg": 0.9718284779819649,
+      "max_yaw_abs_deg": 0.061323176586333975,
+      "peak_tension_n": 7.220539189917402,
+      "cart_speed_mps": 0.0,
+      "target_height_m": 5.0,
+      "trace_sha256": "6a00332bb15d27d8e54be7dc90a6b88002144c4080d72eb1b37ecafc4a9c6905",
+      "ulog_sha256": "31c7d4f11e5084a60b262eb7a7a6c764e906541af9cc51dff5e777c089a5aa5f"
+    },
+    "strong": {
+      "duration_s": 120.0,
+      "recorded_offboard_s": 4.244,
+      "safe_completed": 0,
+      "result_error": "RuntimeError: Physical guard at t=36.260: tilt=45.04, height=5.288, tension=4.10",
+      "sample_count": 1061,
+      "expected_sample_count": 30000,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_enabled": false,
+      "motor_tau_s": 0.045,
+      "wind_peak_mps": 5.0,
+      "requested_wind_mps": 5.0,
+      "wind_ramp_s": 0.0,
+      "wind_profile": "steady",
+      "wind_direction_sim_deg": 90,
+      "sensor_seed": 21685134,
+      "offboard_armed": true,
+      "mode_start_ulog_usec": 32020000,
+      "max_command_gap_s": 0.020000000000003126,
+      "rmse_3d_h_xy_m": [
+        7.084267888958335,
+        3.928792100167587,
+        5.895035551732233
+      ],
+      "rmse_recorded_3d_h_xy_m": [
+        0.8560620863847284,
+        0.189798718169206,
+        0.8347566964850899
+      ],
+      "failure_remainder_penalty_h_xy_m": [
+        4.0,
+        6.0
+      ],
+      "min_height_m": 4.646573300968295,
+      "max_horizontal_error_m": 1.5817199539146405,
+      "last30_horizontal_speed_rms_mps": null,
+      "last30_horizontal_offset_m": null,
+      "max_tilt_deg": 45.04300604180772,
+      "max_yaw_abs_deg": 3.6734627429986246,
+      "peak_tension_n": 7.65859644109745,
+      "cart_speed_mps": 0.0,
+      "target_height_m": 5.0,
+      "trace_sha256": "ee1a4e583a634b767c1f63b651bea9a668d7e8f87799442015fac8439845ba33",
+      "ulog_sha256": "094aa3d108661379546cf98b4b93a9c41674bb3cabcce3626ec015c080880630"
+    },
+    "strong_p3": {
+      "duration_s": 120.0,
+      "recorded_offboard_s": 120.0,
+      "safe_completed": 1,
+      "result_error": null,
+      "sample_count": 30000,
+      "expected_sample_count": 30000,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_enabled": true,
+      "motor_tau_s": 0.045,
+      "wind_peak_mps": 5.0,
+      "requested_wind_mps": 5.0,
+      "wind_ramp_s": 0.0,
+      "wind_profile": "steady",
+      "wind_direction_sim_deg": 90,
+      "sensor_seed": 21685134,
+      "offboard_armed": true,
+      "mode_start_ulog_usec": 32012000,
+      "max_command_gap_s": 0.012000000000000455,
+      "rmse_3d_h_xy_m": [
+        0.9756543739331953,
+        0.06754795286485685,
+        0.9733132750757808
+      ],
+      "rmse_recorded_3d_h_xy_m": [
+        0.9756543739331954,
+        0.06754795286485685,
+        0.9733132750757808
+      ],
+      "failure_remainder_penalty_h_xy_m": [
+        4.0,
+        6.0
+      ],
+      "min_height_m": 4.862178747243773,
+      "max_horizontal_error_m": 1.0369395634257241,
+      "last30_horizontal_speed_rms_mps": 0.026732252847370457,
+      "last30_horizontal_offset_m": 0.9849410471300591,
+      "max_tilt_deg": 5.008482637588394,
+      "max_yaw_abs_deg": 0.1693219093919808,
+      "peak_tension_n": 3.7556839508441024,
+      "cart_speed_mps": 0.0,
+      "target_height_m": 5.0,
+      "trace_sha256": "8831f6d34ae5f472111c5ac74ba4d3659fe19ecdd56f4c5d956f2975511b508d",
+      "ulog_sha256": "5b779f8abc55994810103c3c024354b6b1a06bf9eb365cc9ef3ba2d1731f6f30"
+    },
+    "strong_ramp": {
+      "duration_s": 120.0,
+      "recorded_offboard_s": 120.0,
+      "safe_completed": 1,
+      "result_error": null,
+      "sample_count": 30000,
+      "expected_sample_count": 30000,
+      "controller_sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+      "residual_enabled": false,
+      "motor_tau_s": 0.045,
+      "wind_peak_mps": 5.0,
+      "requested_wind_mps": 5.0,
+      "wind_ramp_s": 15.0,
+      "wind_profile": "ramp_to_steady",
+      "wind_direction_sim_deg": 90,
+      "sensor_seed": 21685134,
+      "offboard_armed": true,
+      "mode_start_ulog_usec": 32020000,
+      "max_command_gap_s": 0.012000000000000455,
+      "rmse_3d_h_xy_m": [
+        1.0184562651485078,
+        0.06167837599757135,
+        1.016586908215205
+      ],
+      "rmse_recorded_3d_h_xy_m": [
+        1.0184562651485078,
+        0.06167837599757135,
+        1.016586908215205
+      ],
+      "failure_remainder_penalty_h_xy_m": [
+        4.0,
+        6.0
+      ],
+      "min_height_m": 4.829964617809726,
+      "max_horizontal_error_m": 1.1556660539400634,
+      "last30_horizontal_speed_rms_mps": 0.01504889689839983,
+      "last30_horizontal_offset_m": 1.0469212713577263,
+      "max_tilt_deg": 2.5892602615523637,
+      "max_yaw_abs_deg": 0.054363781113941724,
+      "peak_tension_n": 7.373533986892471,
+      "cart_speed_mps": 0.0,
+      "target_height_m": 5.0,
+      "trace_sha256": "dafd4792e12cebcb99cd3bcabf39d39e9347e5d07c945f4494ee2d54621a6eec",
+      "ulog_sha256": "920cef20d32bfbe0704d8cd8a6217913da67328022e6eeb01c3c59dc98a653a6"
+    }
+  },
+  "fixture_smoke_5s": {
+    "duration_s": 5.0,
+    "safe_completed": 1,
+    "count": 1,
+    "physical_failure_code": null,
+    "first_failure_s": null,
+    "rmse_3d_h_xy_m": [
+      0.4209552697054731,
+      0.04472121269006568,
+      0.418572995101616
+    ],
+    "wind_peak_mps": 0.9182438913017318,
+    "wind_profile": "varying",
+    "target_height_m": 5.0,
+    "controller_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "residual_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117"
+  },
+  "initial_rejected_training": {
+    "checkpoint_sha256": "d89ea7266ce8cfcd64865583207e72b6ccaaa5563f8f7a85cc1e22a2e94139cd",
+    "parent_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+    "gradient_s": 30,
+    "gradient_wall_s": 284.72117769997567,
+    "loss": 948.9737548828125,
+    "gradient_norm": 81129.046875,
+    "passed": true
+  }
+}

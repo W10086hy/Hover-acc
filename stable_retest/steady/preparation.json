@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "wind_profile": "steady",
+  "wind_toward_deg": 90,
+  "EA_n": 49,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "assets": [
+    {
+      "attachment_cm": 5,
+      "rest_length_m": 7.849999904632568,
+      "rope_mass_kg": 0.07849999904632568,
+      "initial_extra_length_m": 0.05,
+      "asset_sha256": {
+        "config.json": "2d218db62af92f0904732864ed4529a86f1a1c846a0ffb9b1c55d6be62a3df1c",
+        "initial.npz": "c7b6c2ee6e2260413cb280e444504e3af2626cd6dcd907eed6dfca503385d1af",
+        "model.xml": "c57ab66685d52fa79429177b0bfe42fd826653b31b6918adfcbe17407c82ec8d",
+        "weights.npz": "937617069bb65bb4078ef59cfb6dcb97423800ff7baa1babd58557932b71a6ca"
+      }
+    },
+    {
+      "attachment_cm": 10,
+      "rest_length_m": 7.800000190734863,
+      "rope_mass_kg": 0.07800000190734863,
+      "initial_extra_length_m": 0.05,
+      "asset_sha256": {
+        "config.json": "c26a212cb53991a7b8e7780eeaf4134e69f615c99712e15d3fb939ba6b681034",
+        "initial.npz": "2b1f8a9a174e82a60b9cb8cd4086920cfe8e4fb27a2c885c61be1028cc2de551",
+        "model.xml": "05b3d4748400ac98bd7301fbe860444115b6ca4133d0b5451c71ad16dd728e68",
+        "weights.npz": "937617069bb65bb4078ef59cfb6dcb97423800ff7baa1babd58557932b71a6ca"
+      }
+    }
+  ]
+}

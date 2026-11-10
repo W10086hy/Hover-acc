@@ -1,0 +1,244 @@
+{
+  "scope": "Prescribed endpoint cable test; not flight, not training, not measured calibration",
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "boundary": "x=.12*(1-cos(4*pi*t)),y=0,z=-5+arm",
+  "rows": [
+    {
+      "attachment_m": 0.05,
+      "length_m": 4.9,
+      "wind_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "duration_s": 0.3,
+      "reference": {
+        "method": "Radau",
+        "rtol": 1e-07,
+        "atol": 1e-09,
+        "max_step_s": 0.002,
+        "nfev": 1449,
+        "nlu": 230,
+        "wall_s": 0.3590169999515638,
+        "success": true
+      },
+      "refinements": [
+        {
+          "dt_s": 0.002,
+          "maximum_node_gap_m": 0.001011021134108123,
+          "final_maximum_node_gap_m": 0.001011021134108123,
+          "maximum_endpoint_force_gap_n": 0.1088110799145761,
+          "rms_endpoint_force_gap_n": 0.06370069996603428,
+          "maximum_complementarity_residual": 2.0816681711721685e-16,
+          "maximum_terminal_force_impulse_gap_ns": 2.162179046986632e-05,
+          "mean_terminal_force_impulse_gap_ns": 1.1585110688781845e-05,
+          "peak_applied_terminal_tension_n": 1.0794443134370122
+        },
+        {
+          "dt_s": 0.001,
+          "maximum_node_gap_m": 0.000501848570081572,
+          "final_maximum_node_gap_m": 0.000501848570081572,
+          "maximum_endpoint_force_gap_n": 0.05359355663198971,
+          "rms_endpoint_force_gap_n": 0.03146643643809944,
+          "maximum_complementarity_residual": 1.3183898417423734e-16,
+          "maximum_terminal_force_impulse_gap_ns": 5.367973951289736e-06,
+          "mean_terminal_force_impulse_gap_ns": 2.8791018666973875e-06,
+          "peak_applied_terminal_tension_n": 1.0849052197821856
+        },
+        {
+          "dt_s": 0.0005,
+          "maximum_node_gap_m": 0.0002500267370434254,
+          "final_maximum_node_gap_m": 0.0002500267370434254,
+          "maximum_endpoint_force_gap_n": 0.026593410903486474,
+          "rms_endpoint_force_gap_n": 0.01563727863633507,
+          "maximum_complementarity_residual": 8.326672684688674e-17,
+          "maximum_terminal_force_impulse_gap_ns": 1.3372942140794242e-06,
+          "mean_terminal_force_impulse_gap_ns": 7.176370584470128e-07,
+          "peak_applied_terminal_tension_n": 1.087619584485611
+        }
+      ]
+    },
+    {
+      "attachment_m": 0.05,
+      "length_m": 4.9,
+      "wind_mps": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "duration_s": 0.3,
+      "reference": {
+        "method": "Radau",
+        "rtol": 1e-07,
+        "atol": 1e-09,
+        "max_step_s": 0.002,
+        "nfev": 1269,
+        "nlu": 250,
+        "wall_s": 0.3790392999071628,
+        "success": true
+      },
+      "refinements": [
+        {
+          "dt_s": 0.002,
+          "maximum_node_gap_m": 0.001486200076020664,
+          "final_maximum_node_gap_m": 0.001486200076020664,
+          "maximum_endpoint_force_gap_n": 0.12923330467583924,
+          "rms_endpoint_force_gap_n": 0.06525776174580956,
+          "maximum_complementarity_residual": 3.400058012914542e-16,
+          "maximum_terminal_force_impulse_gap_ns": 1.283538995800092e-05,
+          "mean_terminal_force_impulse_gap_ns": 7.246918795961429e-06,
+          "peak_applied_terminal_tension_n": 1.5520080200634658
+        },
+        {
+          "dt_s": 0.001,
+          "maximum_node_gap_m": 0.0007442196729978436,
+          "final_maximum_node_gap_m": 0.0007442196729978436,
+          "maximum_endpoint_force_gap_n": 0.06404495969980628,
+          "rms_endpoint_force_gap_n": 0.032364999360684175,
+          "maximum_complementarity_residual": 1.8041124150158794e-16,
+          "maximum_terminal_force_impulse_gap_ns": 3.195846708464745e-06,
+          "mean_terminal_force_impulse_gap_ns": 1.805642196004916e-06,
+          "peak_applied_terminal_tension_n": 1.5580235476907782
+        },
+        {
+          "dt_s": 0.0005,
+          "maximum_node_gap_m": 0.00037239371384613444,
+          "final_maximum_node_gap_m": 0.00037239371384613444,
+          "maximum_endpoint_force_gap_n": 0.03187830273713223,
+          "rms_endpoint_force_gap_n": 0.016116277295924075,
+          "maximum_complementarity_residual": 9.020562075079397e-17,
+          "maximum_terminal_force_impulse_gap_ns": 7.973273525532962e-07,
+          "mean_terminal_force_impulse_gap_ns": 4.5065179914717334e-07,
+          "peak_applied_terminal_tension_n": 1.5610323091202316
+        }
+      ]
+    },
+    {
+      "attachment_m": 0.1,
+      "length_m": 4.85,
+      "wind_mps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "duration_s": 0.3,
+      "reference": {
+        "method": "Radau",
+        "rtol": 1e-07,
+        "atol": 1e-09,
+        "max_step_s": 0.002,
+        "nfev": 1451,
+        "nlu": 228,
+        "wall_s": 0.40299259999301285,
+        "success": true
+      },
+      "refinements": [
+        {
+          "dt_s": 0.002,
+          "maximum_node_gap_m": 0.0010154758860442942,
+          "final_maximum_node_gap_m": 0.0010154758860442942,
+          "maximum_endpoint_force_gap_n": 0.10713040083621866,
+          "rms_endpoint_force_gap_n": 0.06313427952518808,
+          "maximum_complementarity_residual": 2.3592239273284576e-16,
+          "maximum_terminal_force_impulse_gap_ns": 2.1604962717742963e-05,
+          "mean_terminal_force_impulse_gap_ns": 1.1646075066778587e-05,
+          "peak_applied_terminal_tension_n": 1.082863061647911
+        },
+        {
+          "dt_s": 0.001,
+          "maximum_node_gap_m": 0.0005041897590429543,
+          "final_maximum_node_gap_m": 0.0005041897590429543,
+          "maximum_endpoint_force_gap_n": 0.05274204888712319,
+          "rms_endpoint_force_gap_n": 0.031180058924857777,
+          "maximum_complementarity_residual": 1.3877787807814457e-16,
+          "maximum_terminal_force_impulse_gap_ns": 5.363614704223182e-06,
+          "mean_terminal_force_impulse_gap_ns": 2.8943024883226896e-06,
+          "peak_applied_terminal_tension_n": 1.088387950472499
+        },
+        {
+          "dt_s": 0.0005,
+          "maximum_node_gap_m": 0.00025122587528340846,
+          "final_maximum_node_gap_m": 0.00025122587528340846,
+          "maximum_endpoint_force_gap_n": 0.026164969127449037,
+          "rms_endpoint_force_gap_n": 0.015493319666495847,
+          "maximum_complementarity_residual": 8.326672684688674e-17,
+          "maximum_terminal_force_impulse_gap_ns": 1.3362391240273063e-06,
+          "mean_terminal_force_impulse_gap_ns": 7.214323517061306e-07,
+          "peak_applied_terminal_tension_n": 1.0911350499122394
+        }
+      ]
+    },
+    {
+      "attachment_m": 0.1,
+      "length_m": 4.85,
+      "wind_mps": [
+        5.0,
+        0.0,
+        0.0
+      ],
+      "duration_s": 0.3,
+      "reference": {
+        "method": "Radau",
+        "rtol": 1e-07,
+        "atol": 1e-09,
+        "max_step_s": 0.002,
+        "nfev": 1269,
+        "nlu": 248,
+        "wall_s": 0.34755419997964054,
+        "success": true
+      },
+      "refinements": [
+        {
+          "dt_s": 0.002,
+          "maximum_node_gap_m": 0.0014732178724233414,
+          "final_maximum_node_gap_m": 0.0014732178724233414,
+          "maximum_endpoint_force_gap_n": 0.1278322434182651,
+          "rms_endpoint_force_gap_n": 0.06465398374889675,
+          "maximum_complementarity_residual": 2.983724378680108e-16,
+          "maximum_terminal_force_impulse_gap_ns": 1.2868489195504578e-05,
+          "mean_terminal_force_impulse_gap_ns": 7.303074442009443e-06,
+          "peak_applied_terminal_tension_n": 1.5592759551709512
+        },
+        {
+          "dt_s": 0.001,
+          "maximum_node_gap_m": 0.0007377502264171587,
+          "final_maximum_node_gap_m": 0.0007377502264171587,
+          "maximum_endpoint_force_gap_n": 0.06333046052832461,
+          "rms_endpoint_force_gap_n": 0.03206028128020539,
+          "maximum_complementarity_residual": 1.5959455978986625e-16,
+          "maximum_terminal_force_impulse_gap_ns": 3.2039898588997616e-06,
+          "mean_terminal_force_impulse_gap_ns": 1.8195124564729482e-06,
+          "peak_applied_terminal_tension_n": 1.5654711950874227
+        },
+        {
+          "dt_s": 0.0005,
+          "maximum_node_gap_m": 0.00036916453520424887,
+          "final_maximum_node_gap_m": 0.00036916453520424887,
+          "maximum_endpoint_force_gap_n": 0.031518514092264784,
+          "rms_endpoint_force_gap_n": 0.015963219947295,
+          "maximum_complementarity_residual": 9.71445146547012e-17,
+          "maximum_terminal_force_impulse_gap_ns": 7.99348210885385e-07,
+          "mean_terminal_force_impulse_gap_ns": 4.54098469918096e-07,
+          "peak_applied_terminal_tension_n": 1.5685705529976186
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P2\\validate_flexible_dynamics.py": "7b4752ed36a5075a5cba7deaaa0ada7325b52c37f19b46c40794cef424ae91f0",
+    "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P2\\hover_bptt\\flexible_rope.py": "b14e237aab47e0214078552f8a4f45351b971516401ca6c397577bd4316ecb98"
+  },
+  "scipy_version": "1.17.1",
+  "numpy_version": "2.4.6",
+  "torch_version": "2.12.1+cu130",
+  "optimizer_created": false,
+  "wall_s": 18.860039200051688,
+  "final_acceptance": false
+}

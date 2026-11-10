@@ -1,0 +1,12 @@
+{
+  "Python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]",
+  "PyTorch": "2.12.1+cu130",
+  "CUDA": "13.0",
+  "GPU": "NVIDIA GeForce RTX 3060",
+  "NumPy": "2.4.6",
+  "MuJoCo": "3.10.0",
+  "new_dependencies": false,
+  "shared_environment": "../training_env",
+  "P3_fit_device": "cuda",
+  "MuJoCo_device": "CPU"
+}

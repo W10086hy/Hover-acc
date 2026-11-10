@@ -1,0 +1,2063 @@
+{
+  "groups": [
+    {
+      "path": "P2/results/stationarity",
+      "files": 642,
+      "bytes": 511991465
+    },
+    {
+      "path": "track/drift8/step2",
+      "files": 117,
+      "bytes": 244070205
+    },
+    {
+      "path": "P2/results/time_varying37",
+      "files": 66,
+      "bytes": 88441340
+    },
+    {
+      "path": "P2/results/domain_recovery",
+      "files": 99,
+      "bytes": 46534732
+    },
+    {
+      "path": "P2/results/domain_randomized",
+      "files": 58,
+      "bytes": 17415462
+    },
+    {
+      "path": "P2/results/flexible_continue30",
+      "files": 17,
+      "bytes": 5731805
+    },
+    {
+      "path": "P2/tests/fixtures",
+      "files": 6,
+      "bytes": 2849685
+    },
+    {
+      "path": "mujoco_sim/results/flexible26_120",
+      "files": 24,
+      "bytes": 1710049
+    },
+    {
+      "path": "track/models/actor29.pt",
+      "files": 1,
+      "bytes": 1261435
+    },
+    {
+      "path": "P3/results/flexible26_structural120",
+      "files": 24,
+      "bytes": 986046
+    },
+    {
+      "path": "P3/results/flexible26_structural",
+      "files": 9,
+      "bytes": 829291
+    },
+    {
+      "path": "stable_retest/steady/arm5",
+      "files": 11,
+      "bytes": 728472
+    },
+    {
+      "path": "stable_retest/steady/arm10",
+      "files": 11,
+      "bytes": 728463
+    },
+    {
+      "path": "stable_retest/slack5cm/assets",
+      "files": 4,
+      "bytes": 703176
+    },
+    {
+      "path": "stable_retest/assets/weights.npz",
+      "files": 1,
+      "bytes": 671929
+    },
+    {
+      "path": "P3/retest8/residual",
+      "files": 4,
+      "bytes": 640558
+    },
+    {
+      "path": "P3/tests/fixtures",
+      "files": 2,
+      "bytes": 467079
+    },
+    {
+      "path": "cleanup/history_20261101/plan.json",
+      "files": 1,
+      "bytes": 306432
+    },
+    {
+      "path": "P3/retest8/data",
+      "files": 3,
+      "bytes": 187730
+    },
+    {
+      "path": "P3/results/flexible26",
+      "files": 3,
+      "bytes": 182322
+    },
+    {
+      "path": "P2/hover_bptt/configs",
+      "files": 3,
+      "bytes": 170445
+    },
+    {
+      "path": "track/drift8/qualification_refine",
+      "files": 3,
+      "bytes": 164706
+    },
+    {
+      "path": "track/models/actor29_provenance",
+      "files": 2,
+      "bytes": 161069
+    },
+    {
+      "path": "P2/validation/flexible_dynamic_reference_v2",
+      "files": 5,
+      "bytes": 155741
+    },
+    {
+      "path": "cleanup/retention_actor31.json",
+      "files": 1,
+      "bytes": 135446
+    },
+    {
+      "path": "cleanup/history_20261101/inventory_before.json",
+      "files": 1,
+      "bytes": 129902
+    },
+    {
+      "path": "cleanup/manifest.json",
+      "files": 1,
+      "bytes": 120100
+    },
+    {
+      "path": "track/reports/development_statistics.json",
+      "files": 1,
+      "bytes": 86766
+    },
+    {
+      "path": "cleanup/history_20261101/final_manifest.json",
+      "files": 1,
+      "bytes": 73336
+    },
+    {
+      "path": "cleanup/history_20261101/history_summary.json",
+      "files": 1,
+      "bytes": 53041
+    },
+    {
+      "path": "track/drift8/history.json",
+      "files": 1,
+      "bytes": 52134
+    },
+    {
+      "path": "cleanup/track_retention_20261102.json",
+      "files": 1,
+      "bytes": 51526
+    },
+    {
+      "path": "stable_retest/pilot30.json",
+      "files": 1,
+      "bytes": 49571
+    },
+    {
+      "path": "stable_retest/steady/evaluation.json",
+      "files": 1,
+      "bytes": 29582
+    },
+    {
+      "path": "track/run.py",
+      "files": 1,
+      "bytes": 21544
+    },
+    {
+      "path": "P2/randomized_training.py",
+      "files": 1,
+      "bytes": 20489
+    },
+    {
+      "path": "P2/hover_bptt/flexible_training.py",
+      "files": 1,
+      "bytes": 19814
+    },
+    {
+      "path": "stable_retest/assets/config.json",
+      "files": 1,
+      "bytes": 19478
+    },
+    {
+      "path": "track/reports/height_speed_statistics.json",
+      "files": 1,
+      "bytes": 18482
+    },
+    {
+      "path": "P3/replay_attitude_wind.py",
+      "files": 1,
+      "bytes": 17431
+    },
+    {
+      "path": "P2/hover_bptt/environment.py",
+      "files": 1,
+      "bytes": 17246
+    },
+    {
+      "path": "track/train_frame.py",
+      "files": 1,
+      "bytes": 16489
+    },
+    {
+      "path": "project_state.json",
+      "files": 1,
+      "bytes": 15845
+    },
+    {
+      "path": "P2/visualize_full_flight.py",
+      "files": 1,
+      "bytes": 14996
+    },
+    {
+      "path": "px4_offboard/run.py",
+      "files": 1,
+      "bytes": 14697
+    },
+    {
+      "path": "track/replay.py",
+      "files": 1,
+      "bytes": 14090
+    },
+    {
+      "path": "stable_retest/slack5cm/comparison.json",
+      "files": 1,
+      "bytes": 14004
+    },
+    {
+      "path": "AGENTS.md",
+      "files": 1,
+      "bytes": 13803
+    },
+    {
+      "path": "P2/hover_bptt/sensors.py",
+      "files": 1,
+      "bytes": 13730
+    },
+    {
+      "path": "stable_retest/slack5cm/evaluation.json",
+      "files": 1,
+      "bytes": 13524
+    },
+    {
+      "path": "stable_retest/evaluation.json",
+      "files": 1,
+      "bytes": 12683
+    },
+    {
+      "path": "P2/hover_bptt/flexible_rope.py",
+      "files": 1,
+      "bytes": 12468
+    },
+    {
+      "path": "cleanup/retain_track.py",
+      "files": 1,
+      "bytes": 11677
+    },
+    {
+      "path": "P2/hover_bptt/dynamics",
+      "files": 2,
+      "bytes": 10990
+    },
+    {
+      "path": "stable_retest/summarize.py",
+      "files": 1,
+      "bytes": 10785
+    },
+    {
+      "path": "mujoco_sim/evaluate_native_tendon.py",
+      "files": 1,
+      "bytes": 10745
+    },
+    {
+      "path": "mujoco_sim/physics.py",
+      "files": 1,
+      "bytes": 10733
+    },
+    {
+      "path": "mujoco_sim/flexible.py",
+      "files": 1,
+      "bytes": 10717
+    },
+    {
+      "path": "P2/tests/test_generalization.py",
+      "files": 1,
+      "bytes": 10677
+    },
+    {
+      "path": "px4_offboard/replay.py",
+      "files": 1,
+      "bytes": 10635
+    },
+    {
+      "path": "mujoco_sim/evaluate.py",
+      "files": 1,
+      "bytes": 10385
+    },
+    {
+      "path": "P2/select_bptt_candidate.py",
+      "files": 1,
+      "bytes": 10130
+    },
+    {
+      "path": "stable_retest/assets/model.xml",
+      "files": 1,
+      "bytes": 10016
+    },
+    {
+      "path": "P2/tests/test_candidate_materialization.py",
+      "files": 1,
+      "bytes": 9768
+    },
+    {
+      "path": "P2/hover_bptt/stream.py",
+      "files": 1,
+      "bytes": 9569
+    },
+    {
+      "path": "P3/audit_flexible120.py",
+      "files": 1,
+      "bytes": 9407
+    },
+    {
+      "path": "P2/status.json",
+      "files": 1,
+      "bytes": 9385
+    },
+    {
+      "path": "px4_offboard/control.py",
+      "files": 1,
+      "bytes": 9253
+    },
+    {
+      "path": "track/qualify_frame.py",
+      "files": 1,
+      "bytes": 9120
+    },
+    {
+      "path": "P2/hover_bptt/controller.py",
+      "files": 1,
+      "bytes": 9039
+    },
+    {
+      "path": "track/frame_environment.py",
+      "files": 1,
+      "bytes": 9001
+    },
+    {
+      "path": "P2/validate_flexible_dynamics.py",
+      "files": 1,
+      "bytes": 8954
+    },
+    {
+      "path": "P2/hover_bptt/native_rope.py",
+      "files": 1,
+      "bytes": 8618
+    },
+    {
+      "path": "P2/compare_stationarity.py",
+      "files": 1,
+      "bytes": 8604
+    },
+    {
+      "path": "mujoco_sim/replay_flexible.py",
+      "files": 1,
+      "bytes": 8578
+    },
+    {
+      "path": "P3/report_flexible120.py",
+      "files": 1,
+      "bytes": 8549
+    },
+    {
+      "path": "P2/PROGRESS.md",
+      "files": 1,
+      "bytes": 8305
+    },
+    {
+      "path": "P2/tests/test_flexible_training.py",
+      "files": 1,
+      "bytes": 8294
+    },
+    {
+      "path": "P2/hover_bptt/native_training.py",
+      "files": 1,
+      "bytes": 8268
+    },
+    {
+      "path": "stable_retest/steady/write_report.py",
+      "files": 1,
+      "bytes": 8267
+    },
+    {
+      "path": "P2/materialize_bptt_candidate.py",
+      "files": 1,
+      "bytes": 8262
+    },
+    {
+      "path": "P2/hover_bptt/onboard.py",
+      "files": 1,
+      "bytes": 8189
+    },
+    {
+      "path": "track/analyze_height_speed.py",
+      "files": 1,
+      "bytes": 8184
+    },
+    {
+      "path": "cleanup/reorganization.json",
+      "files": 1,
+      "bytes": 8011
+    },
+    {
+      "path": "P2/hover_bptt/evaluation.py",
+      "files": 1,
+      "bytes": 8004
+    },
+    {
+      "path": "px4_offboard/physics.py",
+      "files": 1,
+      "bytes": 7967
+    },
+    {
+      "path": "P2/validate_domain_recovery.py",
+      "files": 1,
+      "bytes": 7887
+    },
+    {
+      "path": "P3/evaluate_flexible.py",
+      "files": 1,
+      "bytes": 7838
+    },
+    {
+      "path": "P3/collect_flexible.py",
+      "files": 1,
+      "bytes": 7763
+    },
+    {
+      "path": "stable_retest/steady/report.py",
+      "files": 1,
+      "bytes": 7710
+    },
+    {
+      "path": "P2/qualify_flexible_rope.py",
+      "files": 1,
+      "bytes": 7618
+    },
+    {
+      "path": "P3/report_flexible.py",
+      "files": 1,
+      "bytes": 7599
+    },
+    {
+      "path": "P2/parallel_cohorts.py",
+      "files": 1,
+      "bytes": 7587
+    },
+    {
+      "path": "mujoco_sim/attitude_wind.py",
+      "files": 1,
+      "bytes": 7561
+    },
+    {
+      "path": "P2/train_flexible_rope.py",
+      "files": 1,
+      "bytes": 7434
+    },
+    {
+      "path": "P2/tests/test_domain_randomization.py",
+      "files": 1,
+      "bytes": 7428
+    },
+    {
+      "path": "track/physics.py",
+      "files": 1,
+      "bytes": 7330
+    },
+    {
+      "path": "P2/train_generalization.py",
+      "files": 1,
+      "bytes": 7269
+    },
+    {
+      "path": "mujoco_sim/report_flexible.py",
+      "files": 1,
+      "bytes": 7241
+    },
+    {
+      "path": "P3/tests/test_compensation.py",
+      "files": 1,
+      "bytes": 7215
+    },
+    {
+      "path": "P2/train_native_rope.py",
+      "files": 1,
+      "bytes": 7150
+    },
+    {
+      "path": "P3/train_mismatch.py",
+      "files": 1,
+      "bytes": 7135
+    },
+    {
+      "path": "stable_retest/slack5cm/configs",
+      "files": 3,
+      "bytes": 7050
+    },
+    {
+      "path": "P3/compensation.py",
+      "files": 1,
+      "bytes": 7022
+    },
+    {
+      "path": "P2/benchmark_parallel_cohorts.py",
+      "files": 1,
+      "bytes": 7003
+    },
+    {
+      "path": "P3/mismatch_runtime.py",
+      "files": 1,
+      "bytes": 6962
+    },
+    {
+      "path": "stable_retest/steady/README.md",
+      "files": 1,
+      "bytes": 6956
+    },
+    {
+      "path": "P2/evaluate_horizontal_targets.py",
+      "files": 1,
+      "bytes": 6902
+    },
+    {
+      "path": "P2/evaluate_stationarity.py",
+      "files": 1,
+      "bytes": 6869
+    },
+    {
+      "path": "mujoco_sim/replay.py",
+      "files": 1,
+      "bytes": 6866
+    },
+    {
+      "path": "cleanup/history_20261101/path_repairs.json",
+      "files": 1,
+      "bytes": 6800
+    },
+    {
+      "path": "mujoco_sim/evaluate_flexible.py",
+      "files": 1,
+      "bytes": 6736
+    },
+    {
+      "path": "mujoco_sim/native_tendon.py",
+      "files": 1,
+      "bytes": 6647
+    },
+    {
+      "path": "track/frozen_graph.py",
+      "files": 1,
+      "bytes": 6607
+    },
+    {
+      "path": "P2/hover_bptt/training.py",
+      "files": 1,
+      "bytes": 6570
+    },
+    {
+      "path": "verify_project.py",
+      "files": 1,
+      "bytes": 6514
+    },
+    {
+      "path": "track/drift8/validate.py",
+      "files": 1,
+      "bytes": 6514
+    },
+    {
+      "path": "P3/tests/test_mismatch.py",
+      "files": 1,
+      "bytes": 6441
+    },
+    {
+      "path": "track/drift8/README.md",
+      "files": 1,
+      "bytes": 6403
+    },
+    {
+      "path": "P3/collect_mismatch.py",
+      "files": 1,
+      "bytes": 6286
+    },
+    {
+      "path": "P2/tests/test_native_rope.py",
+      "files": 1,
+      "bytes": 6240
+    },
+    {
+      "path": "P2/hover_bptt/functional.py",
+      "files": 1,
+      "bytes": 6187
+    },
+    {
+      "path": "P2/verify_stationarity.py",
+      "files": 1,
+      "bytes": 6071
+    },
+    {
+      "path": "stable_retest/slack5cm/compare.py",
+      "files": 1,
+      "bytes": 6026
+    },
+    {
+      "path": "P2/check_bptt_candidate.py",
+      "files": 1,
+      "bytes": 6011
+    },
+    {
+      "path": "P3/mismatch_data.py",
+      "files": 1,
+      "bytes": 5919
+    },
+    {
+      "path": "P3/FLEXIBLE26_120_RESULTS.md",
+      "files": 1,
+      "bytes": 5918
+    },
+    {
+      "path": "P3/evaluate_mismatch.py",
+      "files": 1,
+      "bytes": 5686
+    },
+    {
+      "path": "P2/tests/test_flexible_rope.py",
+      "files": 1,
+      "bytes": 5659
+    },
+    {
+      "path": "P3/flexible_domains.py",
+      "files": 1,
+      "bytes": 5611
+    },
+    {
+      "path": "cleanup/retain_latest.py",
+      "files": 1,
+      "bytes": 5597
+    },
+    {
+      "path": "P2/tests/test_parallel_cohorts.py",
+      "files": 1,
+      "bytes": 5543
+    },
+    {
+      "path": "stable_retest/slack5cm/README.md",
+      "files": 1,
+      "bytes": 5514
+    },
+    {
+      "path": "track/environment.py",
+      "files": 1,
+      "bytes": 5401
+    },
+    {
+      "path": "stable_retest/verify.py",
+      "files": 1,
+      "bytes": 5380
+    },
+    {
+      "path": "P2/tests/test_timing_reuse.py",
+      "files": 1,
+      "bytes": 5309
+    },
+    {
+      "path": "P3/evaluate_compensation.py",
+      "files": 1,
+      "bytes": 5302
+    },
+    {
+      "path": "P3/flexible26_structural120_protocol.json",
+      "files": 1,
+      "bytes": 5248
+    },
+    {
+      "path": "px4_offboard/offboard.py",
+      "files": 1,
+      "bytes": 5229
+    },
+    {
+      "path": "P2/hover_bptt/vehicle_spec.py",
+      "files": 1,
+      "bytes": 5227
+    },
+    {
+      "path": "track/height_speed.py",
+      "files": 1,
+      "bytes": 5222
+    },
+    {
+      "path": "P2/tests/test_recovery.py",
+      "files": 1,
+      "bytes": 5199
+    },
+    {
+      "path": "P2/hover_bptt/generalization.py",
+      "files": 1,
+      "bytes": 5114
+    },
+    {
+      "path": "stable_retest/prepare.py",
+      "files": 1,
+      "bytes": 5108
+    },
+    {
+      "path": "P3/flexible26_structural_protocol.json",
+      "files": 1,
+      "bytes": 5051
+    },
+    {
+      "path": "P3/retest8/protocol.json",
+      "files": 1,
+      "bytes": 5044
+    },
+    {
+      "path": "track/validate_policy.py",
+      "files": 1,
+      "bytes": 5029
+    },
+    {
+      "path": "P3/audit_clear_replay.py",
+      "files": 1,
+      "bytes": 5013
+    },
+    {
+      "path": "P2/replay_flexible_policy.py",
+      "files": 1,
+      "bytes": 4961
+    },
+    {
+      "path": "P2/hover_bptt/cuda_bptt_kernel.py",
+      "files": 1,
+      "bytes": 4948
+    },
+    {
+      "path": "P2/evaluate_native_rope.py",
+      "files": 1,
+      "bytes": 4937
+    },
+    {
+      "path": "P2/tests/test_runtime.py",
+      "files": 1,
+      "bytes": 4861
+    },
+    {
+      "path": "P2/tests/test_proposal_retention.py",
+      "files": 1,
+      "bytes": 4817
+    },
+    {
+      "path": "P3/mismatch_dynamics.py",
+      "files": 1,
+      "bytes": 4817
+    },
+    {
+      "path": "mujoco_sim/tests/test_native_tendon.py",
+      "files": 1,
+      "bytes": 4808
+    },
+    {
+      "path": "P3/tests/test_flexible_residual.py",
+      "files": 1,
+      "bytes": 4788
+    },
+    {
+      "path": "P3/score_flexible.py",
+      "files": 1,
+      "bytes": 4760
+    },
+    {
+      "path": "P2/hover_bptt/state.py",
+      "files": 1,
+      "bytes": 4748
+    },
+    {
+      "path": "P2/tests/test_flexible_environment.py",
+      "files": 1,
+      "bytes": 4736
+    },
+    {
+      "path": "P2/hover_bptt/adjoint.py",
+      "files": 1,
+      "bytes": 4724
+    },
+    {
+      "path": "px4_offboard/audit.py",
+      "files": 1,
+      "bytes": 4676
+    },
+    {
+      "path": "P2/tests/test_flexible_optimization.py",
+      "files": 1,
+      "bytes": 4663
+    },
+    {
+      "path": "track/frame_stream.py",
+      "files": 1,
+      "bytes": 4611
+    },
+    {
+      "path": "P2/configuration.json",
+      "files": 1,
+      "bytes": 4596
+    },
+    {
+      "path": "P2/qualify_native_rope.py",
+      "files": 1,
+      "bytes": 4576
+    },
+    {
+      "path": "P2/DOMAIN_RANDOMIZATION.md",
+      "files": 1,
+      "bytes": 4479
+    },
+    {
+      "path": "P2/extend_domain_native.py",
+      "files": 1,
+      "bytes": 4461
+    },
+    {
+      "path": "P3/relabel_flexible.py",
+      "files": 1,
+      "bytes": 4459
+    },
+    {
+      "path": "P2/tests/test_stationarity.py",
+      "files": 1,
+      "bytes": 4448
+    },
+    {
+      "path": "track/tests/test_tracking.py",
+      "files": 1,
+      "bytes": 4394
+    },
+    {
+      "path": "P2/tests/test_short_comparison.py",
+      "files": 1,
+      "bytes": 4384
+    },
+    {
+      "path": "P3/tests/test_mismatch_runtime.py",
+      "files": 1,
+      "bytes": 4373
+    },
+    {
+      "path": "P2/hover_bptt/actor.py",
+      "files": 1,
+      "bytes": 4368
+    },
+    {
+      "path": "mujoco_sim/tests/test_bridge.py",
+      "files": 1,
+      "bytes": 4320
+    },
+    {
+      "path": "track/validation/cuda_graph_sources.zip",
+      "files": 1,
+      "bytes": 4309
+    },
+    {
+      "path": "P3/p3_mismatch_protocol.json",
+      "files": 1,
+      "bytes": 4300
+    },
+    {
+      "path": "px4_offboard/tests/test_restored_interface.py",
+      "files": 1,
+      "bytes": 4269
+    },
+    {
+      "path": "P3/run_flexible120.py",
+      "files": 1,
+      "bytes": 4250
+    },
+    {
+      "path": "P2/tests/test_native_environment.py",
+      "files": 1,
+      "bytes": 4234
+    },
+    {
+      "path": "mujoco_sim/tests/test_physics.py",
+      "files": 1,
+      "bytes": 4147
+    },
+    {
+      "path": "track/tests/test_frame_dynamics.py",
+      "files": 1,
+      "bytes": 4129
+    },
+    {
+      "path": "P2/tests/test_candidate_selection.py",
+      "files": 1,
+      "bytes": 4033
+    },
+    {
+      "path": "P2/hover_bptt/motion_statistics.py",
+      "files": 1,
+      "bytes": 3936
+    },
+    {
+      "path": "P3/mismatch_forecast.py",
+      "files": 1,
+      "bytes": 3840
+    },
+    {
+      "path": "track/drift8/report.py",
+      "files": 1,
+      "bytes": 3760
+    },
+    {
+      "path": "stable_retest/run_native.py",
+      "files": 1,
+      "bytes": 3759
+    },
+    {
+      "path": "P2/README.md",
+      "files": 1,
+      "bytes": 3710
+    },
+    {
+      "path": "px4_offboard/px4_startup.py",
+      "files": 1,
+      "bytes": 3705
+    },
+    {
+      "path": "track/tests/test_height_speed.py",
+      "files": 1,
+      "bytes": 3660
+    },
+    {
+      "path": "P2/hover_bptt/wind.py",
+      "files": 1,
+      "bytes": 3594
+    },
+    {
+      "path": "track/drift8/training_protocol_refine.json",
+      "files": 1,
+      "bytes": 3580
+    },
+    {
+      "path": "P2/hover_bptt/model.py",
+      "files": 1,
+      "bytes": 3567
+    },
+    {
+      "path": "track/drift8/training_protocol.json",
+      "files": 1,
+      "bytes": 3563
+    },
+    {
+      "path": "cleanup/package.py",
+      "files": 1,
+      "bytes": 3559
+    },
+    {
+      "path": "stable_retest/steady/verify.py",
+      "files": 1,
+      "bytes": 3485
+    },
+    {
+      "path": "P2/validate_randomized_native.py",
+      "files": 1,
+      "bytes": 3465
+    },
+    {
+      "path": "stable_retest/steady/deployment.json",
+      "files": 1,
+      "bytes": 3456
+    },
+    {
+      "path": "P2/evaluate_flexible_rope.py",
+      "files": 1,
+      "bytes": 3414
+    },
+    {
+      "path": "stable_retest/steady/vm_payload.json",
+      "files": 1,
+      "bytes": 3392
+    },
+    {
+      "path": "P2/tests/test_optimizer_resume.py",
+      "files": 1,
+      "bytes": 3306
+    },
+    {
+      "path": "P2/plot_stationarity.py",
+      "files": 1,
+      "bytes": 3300
+    },
+    {
+      "path": "P2/hover_bptt/native_environment.py",
+      "files": 1,
+      "bytes": 3289
+    },
+    {
+      "path": "P2/hover_bptt/stationarity.py",
+      "files": 1,
+      "bytes": 3281
+    },
+    {
+      "path": "mujoco_sim/tests/test_flexible.py",
+      "files": 1,
+      "bytes": 3273
+    },
+    {
+      "path": "P2/prepare_optimizer_resume.py",
+      "files": 1,
+      "bytes": 3252
+    },
+    {
+      "path": "cleanup/history_20261101/README.md",
+      "files": 1,
+      "bytes": 3247
+    },
+    {
+      "path": "mujoco_sim/plot_flexible_comparison.py",
+      "files": 1,
+      "bytes": 3217
+    },
+    {
+      "path": "P2/hover_bptt/guards.py",
+      "files": 1,
+      "bytes": 3215
+    },
+    {
+      "path": "P2/hover_bptt/flexible_environment.py",
+      "files": 1,
+      "bytes": 3201
+    },
+    {
+      "path": "P2/train.py",
+      "files": 1,
+      "bytes": 3107
+    },
+    {
+      "path": "P2/tests/test_stationarity_window.py",
+      "files": 1,
+      "bytes": 3044
+    },
+    {
+      "path": "P3/FLEXIBLE26_RESULTS.md",
+      "files": 1,
+      "bytes": 2984
+    },
+    {
+      "path": "mujoco_sim/check_flexible_step.py",
+      "files": 1,
+      "bytes": 2916
+    },
+    {
+      "path": "P2/acceptance.json",
+      "files": 1,
+      "bytes": 2915
+    },
+    {
+      "path": "track/drift8/export_px4.py",
+      "files": 1,
+      "bytes": 2908
+    },
+    {
+      "path": "P2/tests/test_random_backend.py",
+      "files": 1,
+      "bytes": 2846
+    },
+    {
+      "path": "stable_retest/steady/statistics.csv",
+      "files": 1,
+      "bytes": 2838
+    },
+    {
+      "path": "track/tests/test_steady_cases.py",
+      "files": 1,
+      "bytes": 2810
+    },
+    {
+      "path": "P2/native_rope_protocol.json",
+      "files": 1,
+      "bytes": 2785
+    },
+    {
+      "path": "P2/p2_protocol.json",
+      "files": 1,
+      "bytes": 2698
+    },
+    {
+      "path": "track/replay_cases.py",
+      "files": 1,
+      "bytes": 2668
+    },
+    {
+      "path": "P3/report_flexible_model.py",
+      "files": 1,
+      "bytes": 2666
+    },
+    {
+      "path": "P2/evaluate_generalization.py",
+      "files": 1,
+      "bytes": 2645
+    },
+    {
+      "path": "P2/stationarity_position_refine_protocol.json",
+      "files": 1,
+      "bytes": 2623
+    },
+    {
+      "path": "P2/hover_bptt/gradient.py",
+      "files": 1,
+      "bytes": 2617
+    },
+    {
+      "path": "P2/tests/test_stationarity_evidence.py",
+      "files": 1,
+      "bytes": 2593
+    },
+    {
+      "path": "P2/stationarity_smallstep_protocol.json",
+      "files": 1,
+      "bytes": 2576
+    },
+    {
+      "path": "P2/hover_bptt/domain_randomization.py",
+      "files": 1,
+      "bytes": 2543
+    },
+    {
+      "path": "P2/stationarity_fullwindow_protocol.json",
+      "files": 1,
+      "bytes": 2529
+    },
+    {
+      "path": "stable_retest/vm_deployment.json",
+      "files": 1,
+      "bytes": 2499
+    },
+    {
+      "path": "track/configs/height10_reference.json",
+      "files": 1,
+      "bytes": 2487
+    },
+    {
+      "path": "P3/replay_to_video.py",
+      "files": 1,
+      "bytes": 2483
+    },
+    {
+      "path": "track/frame_dynamics.py",
+      "files": 1,
+      "bytes": 2478
+    },
+    {
+      "path": "P2/stationarity_parallel_protocol.json",
+      "files": 1,
+      "bytes": 2476
+    },
+    {
+      "path": "P2/stationarity_robust_protocol.json",
+      "files": 1,
+      "bytes": 2427
+    },
+    {
+      "path": "P3/validation/flexible26_structural_review.md",
+      "files": 1,
+      "bytes": 2374
+    },
+    {
+      "path": "px4_offboard/network.py",
+      "files": 1,
+      "bytes": 2354
+    },
+    {
+      "path": "stable_retest/configs/hover_wind1.json",
+      "files": 1,
+      "bytes": 2323
+    },
+    {
+      "path": "stable_retest/configs/hover_wind5.json",
+      "files": 1,
+      "bytes": 2323
+    },
+    {
+      "path": "stable_retest/configs/track4_wind1.json",
+      "files": 1,
+      "bytes": 2323
+    },
+    {
+      "path": "P2/stationarity_minimax_protocol.json",
+      "files": 1,
+      "bytes": 2295
+    },
+    {
+      "path": "P2/stationarity_step5_protocol.json",
+      "files": 1,
+      "bytes": 2281
+    },
+    {
+      "path": "P2/evaluate.py",
+      "files": 1,
+      "bytes": 2264
+    },
+    {
+      "path": "mujoco_sim/environment.py",
+      "files": 1,
+      "bytes": 2260
+    },
+    {
+      "path": "P2/stationarity_late_protocol.json",
+      "files": 1,
+      "bytes": 2229
+    },
+    {
+      "path": "P2/hover_bptt/motion.py",
+      "files": 1,
+      "bytes": 2227
+    },
+    {
+      "path": "P2/stationarity_protocol.json",
+      "files": 1,
+      "bytes": 2166
+    },
+    {
+      "path": "track/tests/fixtures",
+      "files": 1,
+      "bytes": 2165
+    },
+    {
+      "path": "P2/stationarity_step2_protocol.json",
+      "files": 1,
+      "bytes": 2156
+    },
+    {
+      "path": "track/reports/height_speed_statistics.md",
+      "files": 1,
+      "bytes": 2137
+    },
+    {
+      "path": "P2/hover_bptt/rewards.py",
+      "files": 1,
+      "bytes": 2103
+    },
+    {
+      "path": "P2/tests/test_native_training.py",
+      "files": 1,
+      "bytes": 2101
+    },
+    {
+      "path": "track/tests/test_continuous_frame.py",
+      "files": 1,
+      "bytes": 2078
+    },
+    {
+      "path": "track/frame_graph.py",
+      "files": 1,
+      "bytes": 2060
+    },
+    {
+      "path": "P3/tests/test_restored_policy.py",
+      "files": 1,
+      "bytes": 1996
+    },
+    {
+      "path": "P2/validation/flexible_code_review.md",
+      "files": 1,
+      "bytes": 1976
+    },
+    {
+      "path": "cleanup/path_map.json",
+      "files": 1,
+      "bytes": 1965
+    },
+    {
+      "path": "P2/hover_bptt/optimizer.py",
+      "files": 1,
+      "bytes": 1963
+    },
+    {
+      "path": "track/tests/test_hover_start.py",
+      "files": 1,
+      "bytes": 1936
+    },
+    {
+      "path": "track/tests/test_diagnostic_continuation.py",
+      "files": 1,
+      "bytes": 1935
+    },
+    {
+      "path": "P2/flexible_rope_protocol.json",
+      "files": 1,
+      "bytes": 1920
+    },
+    {
+      "path": "P3/tests/test_mismatch_prediction.py",
+      "files": 1,
+      "bytes": 1894
+    },
+    {
+      "path": "px4_offboard/run_suite.py",
+      "files": 1,
+      "bytes": 1855
+    },
+    {
+      "path": "P2/domain_late_recovery_protocol.json",
+      "files": 1,
+      "bytes": 1839
+    },
+    {
+      "path": "mujoco_sim/native_tendon_protocol.json",
+      "files": 1,
+      "bytes": 1834
+    },
+    {
+      "path": "track/motion.py",
+      "files": 1,
+      "bytes": 1815
+    },
+    {
+      "path": "P2/domain_recovery_protocol.json",
+      "files": 1,
+      "bytes": 1789
+    },
+    {
+      "path": "P2/domain_randomization_protocol.json",
+      "files": 1,
+      "bytes": 1760
+    },
+    {
+      "path": "px4_offboard/deploy_vm.py",
+      "files": 1,
+      "bytes": 1752
+    },
+    {
+      "path": "P2/tests/test_flexible_reference.py",
+      "files": 1,
+      "bytes": 1727
+    },
+    {
+      "path": "track/configs/hover_start.json",
+      "files": 1,
+      "bytes": 1727
+    },
+    {
+      "path": "stable_retest/identity.json",
+      "files": 1,
+      "bytes": 1719
+    },
+    {
+      "path": "track/configs/height_speed_suite.json",
+      "files": 1,
+      "bytes": 1716
+    },
+    {
+      "path": "cleanup/history_20261101/final_verification.json",
+      "files": 1,
+      "bytes": 1715
+    },
+    {
+      "path": "mujoco_sim/protocol.json",
+      "files": 1,
+      "bytes": 1696
+    },
+    {
+      "path": "mujoco_sim/FLEXIBLE26.md",
+      "files": 1,
+      "bytes": 1686
+    },
+    {
+      "path": "P2/hover_bptt/onboard_graph.py",
+      "files": 1,
+      "bytes": 1679
+    },
+    {
+      "path": "stable_retest/slack5cm/px4_status.json",
+      "files": 1,
+      "bytes": 1672
+    },
+    {
+      "path": "cleanup/history_20261101/cli_checks.json",
+      "files": 1,
+      "bytes": 1671
+    },
+    {
+      "path": "stable_retest/assets/initial.npz",
+      "files": 1,
+      "bytes": 1670
+    },
+    {
+      "path": "P2/tests/test_horizontal_targets.py",
+      "files": 1,
+      "bytes": 1642
+    },
+    {
+      "path": "stable_retest/slack5cm/native_status.json",
+      "files": 1,
+      "bytes": 1626
+    },
+    {
+      "path": "stable_retest/px4_status.json",
+      "files": 1,
+      "bytes": 1618
+    },
+    {
+      "path": "P3/flexible_compensation.py",
+      "files": 1,
+      "bytes": 1551
+    },
+    {
+      "path": "track/tests/test_tether_slack.py",
+      "files": 1,
+      "bytes": 1530
+    },
+    {
+      "path": "stable_retest/native_suite.py",
+      "files": 1,
+      "bytes": 1528
+    },
+    {
+      "path": "P2/tests/test_randomized_entrypoints.py",
+      "files": 1,
+      "bytes": 1504
+    },
+    {
+      "path": "track/configs/constant_speed.json",
+      "files": 1,
+      "bytes": 1455
+    },
+    {
+      "path": "cleanup/media_retention.json",
+      "files": 1,
+      "bytes": 1443
+    },
+    {
+      "path": "stable_retest/slack5cm/comparison.csv",
+      "files": 1,
+      "bytes": 1435
+    },
+    {
+      "path": "px4_offboard/run_steady_suite.py",
+      "files": 1,
+      "bytes": 1390
+    },
+    {
+      "path": "P3/flexible_labels.py",
+      "files": 1,
+      "bytes": 1353
+    },
+    {
+      "path": "P2/hover_bptt/aerodynamics.py",
+      "files": 1,
+      "bytes": 1345
+    },
+    {
+      "path": "cleanup/history_20261101/applied.json",
+      "files": 1,
+      "bytes": 1343
+    },
+    {
+      "path": "README.md",
+      "files": 1,
+      "bytes": 1318
+    },
+    {
+      "path": "stable_retest/steady/preparation.json",
+      "files": 1,
+      "bytes": 1299
+    },
+    {
+      "path": "P2/flexible_status.json",
+      "files": 1,
+      "bytes": 1249
+    },
+    {
+      "path": "P3/status.json",
+      "files": 1,
+      "bytes": 1237
+    },
+    {
+      "path": "stable_retest/native_status.json",
+      "files": 1,
+      "bytes": 1233
+    },
+    {
+      "path": "mujoco_sim/status.json",
+      "files": 1,
+      "bytes": 1220
+    },
+    {
+      "path": "P2/hover_bptt/conditioning.py",
+      "files": 1,
+      "bytes": 1214
+    },
+    {
+      "path": "track/validation/project_check.py",
+      "files": 1,
+      "bytes": 1187
+    },
+    {
+      "path": "mujoco_sim/validation/code_review.md",
+      "files": 1,
+      "bytes": 1163
+    },
+    {
+      "path": "stable_retest/slack5cm/preparation.json",
+      "files": 1,
+      "bytes": 1162
+    },
+    {
+      "path": "P2/hover_bptt/bptt_safety.py",
+      "files": 1,
+      "bytes": 1155
+    },
+    {
+      "path": "P2/hover_bptt/plant.py",
+      "files": 1,
+      "bytes": 1141
+    },
+    {
+      "path": "stable_retest/PLAN.md",
+      "files": 1,
+      "bytes": 1138
+    },
+    {
+      "path": "P2/continue30_acceptance.json",
+      "files": 1,
+      "bytes": 1128
+    },
+    {
+      "path": "P3/retest8/prediction.json",
+      "files": 1,
+      "bytes": 1096
+    },
+    {
+      "path": "stable_retest/steady/PLAN.md",
+      "files": 1,
+      "bytes": 1070
+    },
+    {
+      "path": "px4_offboard/wind.py",
+      "files": 1,
+      "bytes": 1026
+    },
+    {
+      "path": "track/reports/constant_speed.md",
+      "files": 1,
+      "bytes": 1005
+    },
+    {
+      "path": "P2/hover_bptt/io.py",
+      "files": 1,
+      "bytes": 991
+    },
+    {
+      "path": "track/README.md",
+      "files": 1,
+      "bytes": 988
+    },
+    {
+      "path": "mujoco_sim/validation/flexible_step_check",
+      "files": 1,
+      "bytes": 932
+    },
+    {
+      "path": "px4_offboard/tests/test_deploy_helpers.py",
+      "files": 1,
+      "bytes": 911
+    },
+    {
+      "path": "stable_retest/slack5cm/statistics.csv",
+      "files": 1,
+      "bytes": 896
+    },
+    {
+      "path": "stable_retest/statistics.csv",
+      "files": 1,
+      "bytes": 893
+    },
+    {
+      "path": "cleanup/README.md",
+      "files": 1,
+      "bytes": 880
+    },
+    {
+      "path": "project_files.py",
+      "files": 1,
+      "bytes": 876
+    },
+    {
+      "path": "P3/README.md",
+      "files": 1,
+      "bytes": 870
+    },
+    {
+      "path": "px4_offboard/run_drift_checks.sh",
+      "files": 1,
+      "bytes": 831
+    },
+    {
+      "path": "cleanup/history_20261101/supplementary_changes.json",
+      "files": 1,
+      "bytes": 803
+    },
+    {
+      "path": "track/validation/cuda_graph_validation.json",
+      "files": 1,
+      "bytes": 728
+    },
+    {
+      "path": "cleanup/history_20261101/summary.json",
+      "files": 1,
+      "bytes": 713
+    },
+    {
+      "path": "P3/PROGRESS.md",
+      "files": 1,
+      "bytes": 713
+    },
+    {
+      "path": "stable_retest/steady/px4_status.json",
+      "files": 1,
+      "bytes": 660
+    },
+    {
+      "path": "px4_offboard/README.md",
+      "files": 1,
+      "bytes": 600
+    },
+    {
+      "path": "track/status.json",
+      "files": 1,
+      "bytes": 569
+    },
+    {
+      "path": "PLAN.md",
+      "files": 1,
+      "bytes": 565
+    },
+    {
+      "path": "track/reports/hover_start.md",
+      "files": 1,
+      "bytes": 555
+    },
+    {
+      "path": "stable_retest/verification.json",
+      "files": 1,
+      "bytes": 535
+    },
+    {
+      "path": "stable_retest/slack5cm/verification.json",
+      "files": 1,
+      "bytes": 535
+    },
+    {
+      "path": "P2/hover_bptt/math3d.py",
+      "files": 1,
+      "bytes": 480
+    },
+    {
+      "path": "P2/environment.json",
+      "files": 1,
+      "bytes": 440
+    },
+    {
+      "path": "cleanup/cli_checks.json",
+      "files": 1,
+      "bytes": 423
+    },
+    {
+      "path": "mujoco_sim/README.md",
+      "files": 1,
+      "bytes": 409
+    },
+    {
+      "path": "cleanup/package_summary.json",
+      "files": 1,
+      "bytes": 390
+    },
+    {
+      "path": "P2/hover_bptt/cases.py",
+      "files": 1,
+      "bytes": 371
+    },
+    {
+      "path": "python.cmd",
+      "files": 1,
+      "bytes": 366
+    },
+    {
+      "path": "stable_retest/README.md",
+      "files": 1,
+      "bytes": 364
+    },
+    {
+      "path": "stable_retest/environment.json",
+      "files": 1,
+      "bytes": 361
+    },
+    {
+      "path": "stable_retest/steady/environment.json",
+      "files": 1,
+      "bytes": 361
+    },
+    {
+      "path": "stable_retest/guest_cleanup_test.json",
+      "files": 1,
+      "bytes": 354
+    },
+    {
+      "path": "cleanup/history_20261101/reference_fixture.json",
+      "files": 1,
+      "bytes": 337
+    },
+    {
+      "path": "stable_retest/steady/verification.json",
+      "files": 1,
+      "bytes": 331
+    },
+    {
+      "path": "px4_offboard/launch.sh",
+      "files": 1,
+      "bytes": 303
+    },
+    {
+      "path": "cleanup/history_20261101/cache_cleanup.json",
+      "files": 1,
+      "bytes": 268
+    },
+    {
+      "path": "P3/flexible_status.json",
+      "files": 1,
+      "bytes": 249
+    },
+    {
+      "path": "requirements.txt",
+      "files": 1,
+      "bytes": 247
+    },
+    {
+      "path": "cleanup/verification.json",
+      "files": 1,
+      "bytes": 246
+    },
+    {
+      "path": "mujoco_sim/requirements.txt",
+      "files": 1,
+      "bytes": 185
+    },
+    {
+      "path": "stable_retest/slack5cm/deployment.json",
+      "files": 1,
+      "bytes": 168
+    },
+    {
+      "path": "P2/animate.py",
+      "files": 1,
+      "bytes": 157
+    },
+    {
+      "path": "P2/validate_p2.py",
+      "files": 1,
+      "bytes": 142
+    },
+    {
+      "path": "mujoco_sim/__init__.py",
+      "files": 1,
+      "bytes": 76
+    },
+    {
+      "path": "P3/__init__.py",
+      "files": 1,
+      "bytes": 73
+    },
+    {
+      "path": ".gitattributes",
+      "files": 1,
+      "bytes": 72
+    },
+    {
+      "path": "px4_offboard/__init__.py",
+      "files": 1,
+      "bytes": 67
+    },
+    {
+      "path": "track/__init__.py",
+      "files": 1,
+      "bytes": 66
+    },
+    {
+      "path": "P2/hover_bptt/__init__.py",
+      "files": 1,
+      "bytes": 58
+    },
+    {
+      "path": ".gitignore",
+      "files": 1,
+      "bytes": 55
+    },
+    {
+      "path": "track/validation/__init__.py",
+      "files": 1,
+      "bytes": 42
+    },
+    {
+      "path": "pytest.ini",
+      "files": 1,
+      "bytes": 39
+    },
+    {
+      "path": "mujoco_sim/tests/__init__.py",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": "P2/__init__.py",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": "P2/tests/__init__.py",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": "P3/tests/__init__.py",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": "px4_offboard/tests/__init__.py",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": "stable_retest/__init__.py",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": "track/tests/__init__.py",
+      "files": 1,
+      "bytes": 0
+    }
+  ],
+  "largest_files": [
+    {
+      "path": "track/drift8/step2/mujoco/arm5_hover_wind1/replay/flight.gif",
+      "bytes": 31051009
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_hover_wind1/replay/flight.gif",
+      "bytes": 29807918
+    },
+    {
+      "path": "track/drift8/step2/px4_arm5/results/px4_hover_wind1/replay/flight.gif",
+      "bytes": 28217730
+    },
+    {
+      "path": "track/drift8/step2/px4_arm5/results/px4_track4_wind1/replay/flight.gif",
+      "bytes": 24386992
+    },
+    {
+      "path": "track/drift8/step2/px4_arm5/results/px4_hover_wind5/replay/flight.gif",
+      "bytes": 23825691
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_hover_wind5/replay/flight.gif",
+      "bytes": 23547450
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_track4_wind1/replay/flight.gif",
+      "bytes": 23231109
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_hover_wind5/replay/flight.gif",
+      "bytes": 23091940
+    },
+    {
+      "path": "P2/results/time_varying37/replays/combined_weak120.gif",
+      "bytes": 14747991
+    },
+    {
+      "path": "P2/results/stationarity/replay_step6/strong_y120_clear.gif",
+      "bytes": 14262526
+    },
+    {
+      "path": "P2/results/time_varying37/replays/varying_weak120.gif",
+      "bytes": 13382255
+    },
+    {
+      "path": "P2/results/stationarity/replay_attitude37/weak120.gif",
+      "bytes": 12474199
+    },
+    {
+      "path": "P2/results/stationarity/replay_step7/strong_y120.gif",
+      "bytes": 11729034
+    },
+    {
+      "path": "P2/results/stationarity/replay_step7/weak_y120.gif",
+      "bytes": 11613817
+    },
+    {
+      "path": "P2/results/time_varying37/replays/combined_strong120.gif",
+      "bytes": 11363468
+    },
+    {
+      "path": "P2/results/domain_recovery/replay_late/native_critical120.gif",
+      "bytes": 11035180
+    },
+    {
+      "path": "P2/results/stationarity/replay_step6/weak_y120_clear.gif",
+      "bytes": 10736378
+    },
+    {
+      "path": "P2/results/time_varying37/replays/varying_strong120.gif",
+      "bytes": 6072485
+    },
+    {
+      "path": "track/drift8/step2/px4_arm5/results/px4_track4_wind1/trajectory.npz",
+      "bytes": 5804858
+    },
+    {
+      "path": "track/drift8/step2/px4_arm5/results/px4_hover_wind1/trajectory.npz",
+      "bytes": 5778468
+    },
+    {
+      "path": "track/drift8/step2/px4_arm5/results/px4_hover_wind5/trajectory.npz",
+      "bytes": 5776229
+    },
+    {
+      "path": "P2/results/stationarity/step6_light120/random_2/fullrate.npz",
+      "bytes": 4998387
+    },
+    {
+      "path": "P2/results/stationarity/step7_light120/random_2/fullrate.npz",
+      "bytes": 4995296
+    },
+    {
+      "path": "P2/results/stationarity/velocity9_light120/random_2/fullrate.npz",
+      "bytes": 4994594
+    },
+    {
+      "path": "P2/results/stationarity/velocity16_light120/random_2/fullrate.npz",
+      "bytes": 4990668
+    },
+    {
+      "path": "P2/results/stationarity/step6_heavy120/random_1/fullrate.npz",
+      "bytes": 4987813
+    },
+    {
+      "path": "P2/results/stationarity/step7_heavy120/random_1/fullrate.npz",
+      "bytes": 4986129
+    },
+    {
+      "path": "P2/results/stationarity/candidate9_heavy120/random_1/fullrate.npz",
+      "bytes": 4983721
+    },
+    {
+      "path": "P2/results/stationarity/velocity9_heavy120/random_1/fullrate.npz",
+      "bytes": 4983655
+    },
+    {
+      "path": "P2/results/time_varying37/light_combined/random_2/fullrate.npz",
+      "bytes": 4980956
+    },
+    {
+      "path": "P2/results/time_varying37/nominal_combined/nominal/fullrate.npz",
+      "bytes": 4978592
+    },
+    {
+      "path": "P2/results/stationarity/velocity32_light120/random_2/fullrate.npz",
+      "bytes": 4975686
+    },
+    {
+      "path": "P2/results/stationarity/velocity16_heavy120/random_1/fullrate.npz",
+      "bytes": 4975649
+    },
+    {
+      "path": "P2/results/stationarity/position32_heavy120/random_1/fullrate.npz",
+      "bytes": 4973349
+    },
+    {
+      "path": "P2/results/stationarity/position32_light120/random_2/fullrate.npz",
+      "bytes": 4973079
+    },
+    {
+      "path": "P2/results/stationarity/velocity32_heavy120/random_1/fullrate.npz",
+      "bytes": 4972411
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_original_cuda120/random_2/fullrate.npz",
+      "bytes": 4972070
+    },
+    {
+      "path": "P2/results/stationarity/step6_nominal120/nominal/fullrate.npz",
+      "bytes": 4971990
+    },
+    {
+      "path": "P2/results/stationarity/velocity32thrust_heavy120/random_1/fullrate.npz",
+      "bytes": 4971988
+    },
+    {
+      "path": "P2/results/stationarity/velocity32thrust_original_cuda120/random_2/fullrate.npz",
+      "bytes": 4971648
+    },
+    {
+      "path": "P2/results/stationarity/velocity32thrust_light120/random_2/fullrate.npz",
+      "bytes": 4971215
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_heavy120/random_1/fullrate.npz",
+      "bytes": 4970791
+    },
+    {
+      "path": "P2/results/time_varying37/light_varying/random_2/fullrate.npz",
+      "bytes": 4967645
+    },
+    {
+      "path": "P2/results/time_varying37/nominal_varying/nominal/fullrate.npz",
+      "bytes": 4967068
+    },
+    {
+      "path": "P2/results/stationarity/step7_nominal120/nominal/fullrate.npz",
+      "bytes": 4967016
+    },
+    {
+      "path": "P2/results/stationarity/candidate9_nominal120/nominal/fullrate.npz",
+      "bytes": 4966319
+    },
+    {
+      "path": "P2/results/stationarity/velocity9_nominal120/nominal/fullrate.npz",
+      "bytes": 4966122
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_light120/random_2/fullrate.npz",
+      "bytes": 4965506
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_nominal120/nominal/fullrate.npz",
+      "bytes": 4964421
+    },
+    {
+      "path": "P2/results/stationarity/velocity32thrust_nominal120/nominal/fullrate.npz",
+      "bytes": 4964200
+    }
+  ],
+  "total_files": 1466,
+  "total_bytes": 929346756
+}

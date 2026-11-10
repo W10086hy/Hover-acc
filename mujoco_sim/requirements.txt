@@ -1,0 +1,3 @@
+# Optional backend in addition to the existing shared training_env dependencies.
+# The current shared interpreter already exposes this version; no install was performed.
+mujoco==3.10.0

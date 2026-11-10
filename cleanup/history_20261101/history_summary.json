@@ -1,0 +1,1440 @@
+{
+  "scope": "compact provenance only;not current final results",
+  "records": {
+    "P2/results/training/comparison.json": {
+      "sha256": "1ea912b1e60fd86f8c45865cbb982c62b61724fd839549fd8af8f12dcddf492f",
+      "data": {
+        "stage": "P2 first pilot under user-relaxed development criteria",
+        "duration_s": 120,
+        "development_seed_pairs": [
+          [
+            20266081,
+            20266082
+          ]
+        ],
+        "models": {
+          "baseline19": {
+            "checkpoint_sha256": "5dce91e9b4d27106a42af8c9250cd0e2f97de5a201c49e4025119ba18b0c0773",
+            "count": 272,
+            "safe_completed": 272,
+            "rmse_3d_h_xy_m": [
+              0.768510453488717,
+              0.05979448802919817,
+              0.7661807465100905
+            ],
+            "weak": {
+              "count": 5,
+              "worst_3d_m": 0.6863035322919704,
+              "maximum_excess_m": 0.1863035322919704
+            },
+            "strong": {
+              "count": 8,
+              "worst_3d_m": 1.6229644814293422,
+              "maximum_excess_m": 0.12296448142934224
+            },
+            "maximum_yaw_error_deg": 0.7437519431114197,
+            "tail_motor_step_rms": 0.0034944232313745627,
+            "tail_angular_acceleration_rms_radps2": 0.74917942596248,
+            "maximum_allocation_saturation_fraction": 0.0,
+            "cohorts": [
+              {
+                "cohort": "nominal_original_course",
+                "count": 176,
+                "safe_completed": 176,
+                "rmse_3d_h_xy_m": [
+                  0.7552220789817213,
+                  0.05593747531982389,
+                  0.7531476531440017
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 6
+              },
+              {
+                "cohort": "interpolation_low",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.7473568543035906,
+                  0.061035073416802144,
+                  0.7448603812041313
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 0
+              },
+              {
+                "cohort": "interpolation_high",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.7442451213769747,
+                  0.05956572193776892,
+                  0.7418576180531276
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 0
+              },
+              {
+                "cohort": "calibration_error",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.87792111830511,
+                  0.07686270274592764,
+                  0.8745499499129172
+                ],
+                "weak_exceedances": 5,
+                "strong_exceedances": 2
+              }
+            ]
+          },
+          "unconditional21": {
+            "checkpoint_sha256": "d74021115d6c320eeeaa0a8043143902e1044e6ad1da3651c7a7bd1b799f318d",
+            "count": 272,
+            "safe_completed": 272,
+            "rmse_3d_h_xy_m": [
+              0.7645699237496385,
+              0.0594668710474092,
+              0.762253802581764
+            ],
+            "weak": {
+              "count": 4,
+              "worst_3d_m": 0.6705056073510468,
+              "maximum_excess_m": 0.1705056073510468
+            },
+            "strong": {
+              "count": 8,
+              "worst_3d_m": 1.6164225579379212,
+              "maximum_excess_m": 0.11642255793792122
+            },
+            "maximum_yaw_error_deg": 0.7437293529510498,
+            "tail_motor_step_rms": 0.0035009091175758943,
+            "tail_angular_acceleration_rms_radps2": 0.7505476737198095,
+            "maximum_allocation_saturation_fraction": 0.0,
+            "cohorts": [
+              {
+                "cohort": "nominal_original_course",
+                "count": 176,
+                "safe_completed": 176,
+                "rmse_3d_h_xy_m": [
+                  0.7515947792615242,
+                  0.05571810642399054,
+                  0.7495266538487502
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 6
+              },
+              {
+                "cohort": "interpolation_low",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.7435185261276307,
+                  0.06079477839455078,
+                  0.7410288750210492
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 0
+              },
+              {
+                "cohort": "interpolation_high",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.7403928696683877,
+                  0.05935103416467218,
+                  0.7380102006065864
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 0
+              },
+              {
+                "cohort": "calibration_error",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.8722950264951689,
+                  0.07592946363478599,
+                  0.8689840791408903
+                ],
+                "weak_exceedances": 4,
+                "strong_exceedances": 2
+              }
+            ],
+            "relative_3d_improvement_vs_parent": 0.0051274900961856594
+          },
+          "conditioned21": {
+            "checkpoint_sha256": "78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a",
+            "count": 272,
+            "safe_completed": 272,
+            "rmse_3d_h_xy_m": [
+              0.7645699197265037,
+              0.05946686935411535,
+              0.7622537986785062
+            ],
+            "weak": {
+              "count": 4,
+              "worst_3d_m": 0.6705055549330033,
+              "maximum_excess_m": 0.17050555493300334
+            },
+            "strong": {
+              "count": 8,
+              "worst_3d_m": 1.6164225423383987,
+              "maximum_excess_m": 0.11642254233839866
+            },
+            "maximum_yaw_error_deg": 0.7437293529510498,
+            "tail_motor_step_rms": 0.0035009091069518605,
+            "tail_angular_acceleration_rms_radps2": 0.7505476349222661,
+            "maximum_allocation_saturation_fraction": 0.0,
+            "cohorts": [
+              {
+                "cohort": "nominal_original_course",
+                "count": 176,
+                "safe_completed": 176,
+                "rmse_3d_h_xy_m": [
+                  0.7515947637226069,
+                  0.05571810669457093,
+                  0.749526638246843
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 6
+              },
+              {
+                "cohort": "interpolation_low",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.7435165465333738,
+                  0.06079479339681955,
+                  0.7410268875450827
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 0
+              },
+              {
+                "cohort": "interpolation_high",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.7403949114955566,
+                  0.0593509972814236,
+                  0.7380122519919392
+                ],
+                "weak_exceedances": 0,
+                "strong_exceedances": 0
+              },
+              {
+                "cohort": "calibration_error",
+                "count": 32,
+                "safe_completed": 32,
+                "rmse_3d_h_xy_m": [
+                  0.8722950244262421,
+                  0.07592946808856112,
+                  0.8689840766749218
+                ],
+                "weak_exceedances": 4,
+                "strong_exceedances": 2
+              }
+            ],
+            "relative_3d_improvement_vs_parent": 0.00512749533116302
+          }
+        },
+        "ordered_cases_and_actual_nominal_vehicles_equal": true,
+        "actual_wind_archives_identical": [
+          {
+            "cohort": "nominal_original_course",
+            "archive_bytes_identical": true,
+            "wind_trace_sha256": "900e0a7518772e026675a3e4610941dd15e0b323b9d76a049cdfc7893e39eeb3"
+          },
+          {
+            "cohort": "interpolation_low",
+            "archive_bytes_identical": true,
+            "wind_trace_sha256": "fd76dca1dfc229120697884a5f49beb16d083dd76f1bf44ab70f1958862f534e"
+          },
+          {
+            "cohort": "interpolation_high",
+            "archive_bytes_identical": true,
+            "wind_trace_sha256": "fd76dca1dfc229120697884a5f49beb16d083dd76f1bf44ab70f1958862f534e"
+          },
+          {
+            "cohort": "calibration_error",
+            "archive_bytes_identical": true,
+            "wind_trace_sha256": "fd76dca1dfc229120697884a5f49beb16d083dd76f1bf44ab70f1958862f534e"
+          }
+        ],
+        "base_wind_speeds_mps": [
+          0,
+          0.5,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "wind_profiles": [
+          "combined",
+          "gust",
+          "steady",
+          "time_varying",
+          "turbulence"
+        ],
+        "global_instantaneous_wind_peak_mps": 8.209125518798828,
+        "bptt": {
+          "objective_s": 120,
+          "truncated_credit_s": 10,
+          "recompute_s": 1,
+          "full_untruncated120s_gradient": false,
+          "per_arm_gradient_trajectory_steps": 384000,
+          "accepted_updates_per_arm": 2,
+          "history_initialization_preserved": true
+        },
+        "training_wall_s": {
+          "unconditional": 4263.366069499985,
+          "conditioned": 4358.782393899979
+        },
+        "candidate_replays": {
+          "unconditional": 2,
+          "conditioned": 2
+        },
+        "conditioning_comparison": {
+          "aggregate_3d_difference_m": -4.023134825281716e-09,
+          "maximum_absolute_case_3d_difference_m": 3.831592803482664e-06,
+          "extra_usable_gain_not_demonstrated": true
+        },
+        "all_100hz_tail_statistics_complete": true,
+        "seed_sets_disjoint": true,
+        "reserved_final_seeds_unused": true,
+        "acceptance_sha256": "361e5b170414d24c4a149b3b031d1a15f27ac8c5f22b7a706edff0e0c813237c",
+        "training_source_archive": {
+          "path": "results\\p2_pilot_v2\\frozen_source.zip",
+          "archive_sha256": "643ea707e9aafc4e12f317947bb7a4e163c729c19fd033520d570beaee2aa626",
+          "source_file_count": 48,
+          "every_source_hash_verified": true,
+          "source_files_modified": false,
+          "size_bytes": 126481
+        },
+        "scope_limits": [
+          "one development state/wind seed pair",
+          "mass/principal-inertias/motor-time-constant varied together, not independent14parameter generalization",
+          "no online weight adaptation or real flight validation",
+          "calibration_error context is zero; adapter direct contribution there is zero"
+        ],
+        "default_checkpoint_retained": "results/checkpoint.pt",
+        "final_acceptance_completed": false
+      }
+    },
+    "P2/results/flexible_continue30/goal_manifest.json": {
+      "sha256": "2a3d96f3443d978cddd9d1edba34dc10ed2cba33c4b23dd6c265e99e467e1304",
+      "data": {
+        "objective": "Two30s BPTT continuation attempts from22 and paired30s development comparison",
+        "completed": false,
+        "planned_attempts": 5,
+        "objective_credit_recompute_s": [
+          30,
+          10,
+          1
+        ],
+        "start_checkpoint": "P2/results/flexible_bptt30/latest.pt",
+        "start_checkpoint_sha256": "f350805627dd2c9296261d71060af435d1bb60fbb060d83be0410b22c8615b66",
+        "protected_original21_sha256": "78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a",
+        "protected_p3_sha256": "766dae2be7b9ef9f4757e2365afb4fbc998a945da7a8cb483f0a602e4b873a6e",
+        "steps": [
+          {
+            "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+            "goal": "Two30s continuation attempts from the accepted22-update checkpoint",
+            "step_index": 1,
+            "parent_checkpoint": "results/flexible_bptt30/latest.pt",
+            "device": "cuda",
+            "objective_s": 30,
+            "credit_s": 10,
+            "recompute_s": 1,
+            "development_pilot": true,
+            "formal_objective_s": 120,
+            "training_seed": 20673301,
+            "development_seed": 20269681,
+            "training_directions_deg": [
+              0,
+              90,
+              180,
+              270
+            ],
+            "development_directions_deg": [
+              22.5,
+              112.5,
+              202.5,
+              292.5
+            ],
+            "development_s": 30,
+            "maximum_paired_trials": 3,
+            "rope": {
+              "segments": 12,
+              "linear_density_kgpm": 0.01,
+              "axial_rigidity_n": 49.0,
+              "axial_viscosity_ns": 9.8,
+              "diameter_m": 0.003,
+              "air_drag_coefficient": 1.2
+            },
+            "rope_parameters_measured": false,
+            "final_acceptance": false,
+            "p3_enabled": false
+          },
+          {
+            "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+            "goal": "Two30s continuation attempts from the accepted22-update checkpoint",
+            "step_index": 2,
+            "parent_checkpoint": "results/flexible_continue30/step1/latest.pt",
+            "device": "cuda",
+            "objective_s": 30,
+            "credit_s": 10,
+            "recompute_s": 1,
+            "development_pilot": true,
+            "formal_objective_s": 120,
+            "training_seed": 20673401,
+            "development_seed": 20269681,
+            "training_directions_deg": [
+              45,
+              135,
+              225,
+              315
+            ],
+            "training_winds": [
+              [
+                0,
+                "steady"
+              ],
+              [
+                0.5,
+                "steady"
+              ],
+              [
+                1,
+                "steady"
+              ],
+              [
+                5,
+                "combined"
+              ]
+            ],
+            "optimizer_learning_rates": [
+              0.000234375,
+              0.00234375,
+              0.0001
+            ],
+            "adaptation_reason": "User added per-case horizontal0.5m/1.5m targets; prioritize weak winds and use a larger bounded proposal, keep Adam moments and rollback guard",
+            "development_directions_deg": [
+              22.5,
+              112.5,
+              202.5,
+              292.5
+            ],
+            "development_s": 30,
+            "maximum_paired_trials": 3,
+            "rope": {
+              "segments": 12,
+              "linear_density_kgpm": 0.01,
+              "axial_rigidity_n": 49.0,
+              "axial_viscosity_ns": 9.8,
+              "diameter_m": 0.003,
+              "air_drag_coefficient": 1.2
+            },
+            "rope_parameters_measured": false,
+            "final_acceptance": false,
+            "p3_enabled": false
+          },
+          {
+            "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+            "goal": "Meet user per-case horizontalRMSE0.5m/1.5m targets using30s BPTT",
+            "step_index": 3,
+            "parent_checkpoint": "results/flexible_continue30/step2/latest.pt",
+            "device": "cuda",
+            "objective_s": 30,
+            "credit_s": 10,
+            "recompute_s": 1,
+            "development_pilot": true,
+            "formal_objective_s": 120,
+            "training_seed": 20673501,
+            "development_seed": 20269681,
+            "training_directions_deg": [
+              0,
+              45,
+              90,
+              135,
+              180,
+              225,
+              270,
+              315
+            ],
+            "training_winds": [
+              [
+                0,
+                "steady"
+              ],
+              [
+                0.5,
+                "steady"
+              ],
+              [
+                1,
+                "steady"
+              ],
+              [
+                5,
+                "combined"
+              ]
+            ],
+            "optimizer_learning_rates": [
+              0.000234375,
+              0.00234375,
+              0.0001
+            ],
+            "development_directions_deg": [
+              22.5,
+              112.5,
+              202.5,
+              292.5
+            ],
+            "development_s": 30,
+            "maximum_paired_trials": 3,
+            "rope": {
+              "segments": 12,
+              "linear_density_kgpm": 0.01,
+              "axial_rigidity_n": 49.0,
+              "axial_viscosity_ns": 9.8,
+              "diameter_m": 0.003,
+              "air_drag_coefficient": 1.2
+            },
+            "rope_parameters_measured": false,
+            "final_acceptance": false,
+            "p3_enabled": false
+          },
+          {
+            "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+            "goal": "User explicitly requested further30s targeted training for remaining0.650/0.663m weak-wind cases",
+            "step_index": 4,
+            "parent_checkpoint": "results/flexible_continue30/step3/latest.pt",
+            "device": "cuda",
+            "objective_s": 30,
+            "credit_s": 10,
+            "recompute_s": 1,
+            "development_pilot": true,
+            "formal_objective_s": 120,
+            "training_seed": 20673601,
+            "development_seed": 20269681,
+            "training_directions_deg": [
+              0,
+              45,
+              90,
+              135,
+              180,
+              225,
+              270,
+              315
+            ],
+            "training_winds": [
+              [
+                0,
+                "steady"
+              ],
+              [
+                0.5,
+                "steady"
+              ],
+              [
+                0.5,
+                "steady"
+              ],
+              [
+                1,
+                "steady"
+              ],
+              [
+                1,
+                "steady"
+              ],
+              [
+                5,
+                "combined"
+              ]
+            ],
+            "optimizer_learning_rates": [
+              0.000234375,
+              0.00234375,
+              0.0001
+            ],
+            "development_directions_deg": [
+              22.5,
+              112.5,
+              202.5,
+              292.5
+            ],
+            "development_s": 30,
+            "maximum_paired_trials": 3,
+            "rope": {
+              "segments": 12,
+              "linear_density_kgpm": 0.01,
+              "axial_rigidity_n": 49.0,
+              "axial_viscosity_ns": 9.8,
+              "diameter_m": 0.003,
+              "air_drag_coefficient": 1.2
+            },
+            "rope_parameters_measured": false,
+            "final_acceptance": false,
+            "p3_enabled": false,
+            "adaptation_reason": "Increase0.5/1mps initial-state coverage without training on evaluation seeds/directions;retain strong-wind samples"
+          },
+          {
+            "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+            "goal": "Continue30s targeted weak-wind BPTT toward0.5m with explicit centimetre-scale height allowance",
+            "step_index": 5,
+            "parent_checkpoint": "results/flexible_continue30/step4/latest.pt",
+            "device": "cuda",
+            "objective_s": 30,
+            "credit_s": 10,
+            "recompute_s": 1,
+            "development_pilot": true,
+            "formal_objective_s": 120,
+            "training_seed": 20673701,
+            "development_seed": 20269681,
+            "training_directions_deg": [
+              0,
+              45,
+              90,
+              135,
+              180,
+              225,
+              270,
+              315
+            ],
+            "training_winds": [
+              [
+                0,
+                "steady"
+              ],
+              [
+                0.5,
+                "steady"
+              ],
+              [
+                0.5,
+                "steady"
+              ],
+              [
+                1,
+                "steady"
+              ],
+              [
+                1,
+                "steady"
+              ],
+              [
+                5,
+                "combined"
+              ]
+            ],
+            "optimizer_learning_rates": [
+              0.000234375,
+              0.00234375,
+              0.0001
+            ],
+            "development_directions_deg": [
+              22.5,
+              112.5,
+              202.5,
+              292.5
+            ],
+            "development_s": 30,
+            "maximum_paired_trials": 3,
+            "rope": {
+              "segments": 12,
+              "linear_density_kgpm": 0.01,
+              "axial_rigidity_n": 49.0,
+              "axial_viscosity_ns": 9.8,
+              "diameter_m": 0.003,
+              "air_drag_coefficient": 1.2
+            },
+            "rope_parameters_measured": false,
+            "final_acceptance": false,
+            "p3_enabled": false,
+            "adaptation_reason": "Previous quarter-step improved held-out weak cases to0.592/0.612m;retain independent train seeds/directions and strong winds;allow heightRMSE regression up to10percent+3cm instead of10percent+1cm while preserving safety,heading,lower-cost and aggregate-error guards",
+            "height_absolute_tolerance_m": 0.03
+          }
+        ],
+        "development_seed_pair": [
+          20269681,
+          20269682
+        ],
+        "initial_policy_updates": 22,
+        "formal120s_training": false,
+        "final_acceptance": false,
+        "initial_steps": [
+          {
+            "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+            "goal": "Two30s continuation attempts from the accepted22-update checkpoint",
+            "step_index": 1,
+            "parent_checkpoint": "results/flexible_bptt30/latest.pt",
+            "device": "cuda",
+            "objective_s": 30,
+            "credit_s": 10,
+            "recompute_s": 1,
+            "development_pilot": true,
+            "formal_objective_s": 120,
+            "training_seed": 20673301,
+            "development_seed": 20269681,
+            "training_directions_deg": [
+              0,
+              90,
+              180,
+              270
+            ],
+            "development_directions_deg": [
+              22.5,
+              112.5,
+              202.5,
+              292.5
+            ],
+            "development_s": 30,
+            "maximum_paired_trials": 3,
+            "rope": {
+              "segments": 12,
+              "linear_density_kgpm": 0.01,
+              "axial_rigidity_n": 49.0,
+              "axial_viscosity_ns": 9.8,
+              "diameter_m": 0.003,
+              "air_drag_coefficient": 1.2
+            },
+            "rope_parameters_measured": false,
+            "final_acceptance": false,
+            "p3_enabled": false
+          },
+          {
+            "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+            "goal": "Two30s continuation attempts from the accepted22-update checkpoint",
+            "step_index": 2,
+            "parent_checkpoint": "results/flexible_continue30/step1/latest.pt",
+            "device": "cuda",
+            "objective_s": 30,
+            "credit_s": 10,
+            "recompute_s": 1,
+            "development_pilot": true,
+            "formal_objective_s": 120,
+            "training_seed": 20673401,
+            "development_seed": 20269681,
+            "training_directions_deg": [
+              45,
+              135,
+              225,
+              315
+            ],
+            "development_directions_deg": [
+              22.5,
+              112.5,
+              202.5,
+              292.5
+            ],
+            "development_s": 30,
+            "maximum_paired_trials": 3,
+            "rope": {
+              "segments": 12,
+              "linear_density_kgpm": 0.01,
+              "axial_rigidity_n": 49.0,
+              "axial_viscosity_ns": 9.8,
+              "diameter_m": 0.003,
+              "air_drag_coefficient": 1.2
+            },
+            "rope_parameters_measured": false,
+            "final_acceptance": false,
+            "p3_enabled": false
+          }
+        ],
+        "horizontal_acceptance": {
+          "scope": "Current30s development goal; horizontalRMSE, not formal120s acceptance",
+          "duration_s": 30,
+          "metric": "Per-case full-horizon horizontalRMSE relative to origin",
+          "wind_grouping": "base_wind_speed; instantaneous peaks reported separately",
+          "weak_max_base_mps": 1.0,
+          "weak_horizontal_rmse_limit_m": 0.5,
+          "weak_absolute_tolerance_m": 0.03,
+          "tolerance_basis": "User explicitly accepted the0.527m example (about2.7cm above0.5m) as approximately not exceeding; report raw values and nominal exceedances separately",
+          "strong_max_base_mps": 5.0,
+          "strong_horizontal_rmse_limit_m": 1.5,
+          "strong_absolute_tolerance_m": 0.0,
+          "steady_base_speeds_mps": [
+            0,
+            0.5,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "additional_stress_profile": "5mps combined gust/turbulence/varying direction; peak may exceed5mps",
+          "directions_deg": [
+            22.5,
+            112.5,
+            202.5,
+            292.5
+          ],
+          "seed_pairs": [
+            [
+              20269681,
+              20269682
+            ],
+            [
+              20269781,
+              20269782
+            ]
+          ],
+          "all_cases_safe": true,
+          "failure_remainder_xy_m": 6,
+          "failure_remainder_height_m": 4,
+          "visualizations": [
+            "3D actual trajectory plus dynamic cable",
+            "XY top-down full trajectory and origin"
+          ],
+          "final_acceptance": false
+        },
+        "horizontal_acceptance_sha256": "dc96fc4ad11454e35cde09321a054a0a237ad782cdab66ae244192170c96eb95",
+        "user_target_added": true,
+        "attempt_budget_is_initial_not_completion_gate": true,
+        "completed_attempts": 4,
+        "accepted_updates": 4,
+        "progress_horizontal_check": "P2/results/flexible_continue30/horizontal_check1/summary.json",
+        "user_target_is_completion_gate": true,
+        "user_accepts_0_527m_as_tolerance": true,
+        "stop_after_current_step3": false,
+        "final_checkpoint": "P2\\results\\flexible_continue30\\step4\\latest.pt",
+        "final_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "user_requested_targeted_continuation": true,
+        "targeted_continuation_basis": "After128-case evaluation, user chose continue30s training for remaining two0.650/0.663m cases",
+        "initial_planned_attempts": 2,
+        "final_updates": 26,
+        "height_allowance_adjustment": "step5 explicitly uses10percent+3cm; prior four protocols and archives unchanged",
+        "tests_log": "P2/validation/continue30_step5_full_tests.log",
+        "tests_passed": 93,
+        "status": "paused_by_user",
+        "iterations_stopped_by_user": true,
+        "interrupted_attempts": 1,
+        "interrupted_step": 5,
+        "visualization_source": "horizontal_step4_check/after/20269781",
+        "current_evaluation_scope": "64cases,one seed pair,complete30s;not128case final acceptance"
+      }
+    },
+    "P2/results/flexible_continue30/horizontal_step4_check/summary.json": {
+      "sha256": "aa920b790997f8f0586adbdd0e52b3a3ed3adb5345efa07d4dcb6a0629478331",
+      "data": {
+        "before": {
+          "passed": false,
+          "count": 64,
+          "safe_completed": 64,
+          "metric": "Per-case horizontalRMSE over complete30s; no aggregate substitution",
+          "weak": {
+            "count": 24,
+            "maximum_horizontal_rmse_m": 0.8512241092944082
+          },
+          "strong": {
+            "count": 40,
+            "maximum_horizontal_rmse_m": 1.532453452895418
+          },
+          "violations": [
+            {
+              "index": 0,
+              "attachment": 2,
+              "direction_rad": 0.39269908169872414,
+              "base_wind_mps": 0.0,
+              "horizontal_rmse_m": 0.5367213800237481,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.03672138002374814,
+              "completed": true
+            },
+            {
+              "index": 1,
+              "attachment": 2,
+              "direction_rad": 0.39269908169872414,
+              "base_wind_mps": 0.5,
+              "horizontal_rmse_m": 0.5480110289188763,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.04801102891887632,
+              "completed": true
+            },
+            {
+              "index": 14,
+              "attachment": 2,
+              "direction_rad": 1.9634954084936207,
+              "base_wind_mps": 5.0,
+              "horizontal_rmse_m": 1.532453452895418,
+              "limit_m": 1.5,
+              "tolerance_limit_m": 1.5,
+              "excess_m": 0.0324534528954179,
+              "completed": true
+            },
+            {
+              "index": 16,
+              "attachment": 2,
+              "direction_rad": 3.5342917352885173,
+              "base_wind_mps": 0.0,
+              "horizontal_rmse_m": 0.6212324843284555,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.12123248432845546,
+              "completed": true
+            },
+            {
+              "index": 25,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 0.5,
+              "horizontal_rmse_m": 0.8512241092944082,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.35122410929440817,
+              "completed": true
+            },
+            {
+              "index": 26,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 1.0,
+              "horizontal_rmse_m": 0.8285983106309431,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.32859831063094314,
+              "completed": true
+            },
+            {
+              "index": 30,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 5.0,
+              "horizontal_rmse_m": 1.5094380689593814,
+              "limit_m": 1.5,
+              "tolerance_limit_m": 1.5,
+              "excess_m": 0.009438068959381374,
+              "completed": true
+            }
+          ],
+          "nominal_violations": [
+            {
+              "index": 0,
+              "attachment": 2,
+              "direction_rad": 0.39269908169872414,
+              "base_wind_mps": 0.0,
+              "horizontal_rmse_m": 0.5367213800237481,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.03672138002374814,
+              "completed": true
+            },
+            {
+              "index": 1,
+              "attachment": 2,
+              "direction_rad": 0.39269908169872414,
+              "base_wind_mps": 0.5,
+              "horizontal_rmse_m": 0.5480110289188763,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.04801102891887632,
+              "completed": true
+            },
+            {
+              "index": 14,
+              "attachment": 2,
+              "direction_rad": 1.9634954084936207,
+              "base_wind_mps": 5.0,
+              "horizontal_rmse_m": 1.532453452895418,
+              "limit_m": 1.5,
+              "tolerance_limit_m": 1.5,
+              "excess_m": 0.0324534528954179,
+              "completed": true
+            },
+            {
+              "index": 16,
+              "attachment": 2,
+              "direction_rad": 3.5342917352885173,
+              "base_wind_mps": 0.0,
+              "horizontal_rmse_m": 0.6212324843284555,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.12123248432845546,
+              "completed": true
+            },
+            {
+              "index": 25,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 0.5,
+              "horizontal_rmse_m": 0.8512241092944082,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.35122410929440817,
+              "completed": true
+            },
+            {
+              "index": 26,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 1.0,
+              "horizontal_rmse_m": 0.8285983106309431,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.32859831063094314,
+              "completed": true
+            },
+            {
+              "index": 30,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 5.0,
+              "horizontal_rmse_m": 1.5094380689593814,
+              "limit_m": 1.5,
+              "tolerance_limit_m": 1.5,
+              "excess_m": 0.009438068959381374,
+              "completed": true
+            }
+          ],
+          "weak_tolerance_m": 0.03,
+          "strong_tolerance_m": 0.0,
+          "final_acceptance": false
+        },
+        "after": {
+          "passed": false,
+          "count": 64,
+          "safe_completed": 64,
+          "metric": "Per-case horizontalRMSE over complete30s; no aggregate substitution",
+          "weak": {
+            "count": 24,
+            "maximum_horizontal_rmse_m": 0.611780726652577
+          },
+          "strong": {
+            "count": 40,
+            "maximum_horizontal_rmse_m": 1.4181083779876957
+          },
+          "violations": [
+            {
+              "index": 25,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 0.5,
+              "horizontal_rmse_m": 0.5921915276026837,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.09219152760268368,
+              "completed": true
+            },
+            {
+              "index": 26,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 1.0,
+              "horizontal_rmse_m": 0.611780726652577,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.11178072665257699,
+              "completed": true
+            }
+          ],
+          "nominal_violations": [
+            {
+              "index": 25,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 0.5,
+              "horizontal_rmse_m": 0.5921915276026837,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.09219152760268368,
+              "completed": true
+            },
+            {
+              "index": 26,
+              "attachment": 2,
+              "direction_rad": 5.105088062083414,
+              "base_wind_mps": 1.0,
+              "horizontal_rmse_m": 0.611780726652577,
+              "limit_m": 0.5,
+              "tolerance_limit_m": 0.53,
+              "excess_m": 0.11178072665257699,
+              "completed": true
+            }
+          ],
+          "weak_tolerance_m": 0.03,
+          "strong_tolerance_m": 0.0,
+          "final_acceptance": false
+        },
+        "duration_s": 30,
+        "seed_pairs": [
+          [
+            20269781,
+            20269782
+          ]
+        ],
+        "wind_grouping": "base speed; instantaneous peaks reported in each case",
+        "all_wind_traces_paired": true,
+        "final_acceptance": false
+      }
+    },
+    "P3/results/compensation/summary.json": {
+      "sha256": "e55ea6f3971f67224c6a099e43a82296cf06c06fe94996cd62bcd8bf85d3290b",
+      "data": {
+        "completed": true,
+        "policies": [
+          {
+            "policy": "without_compensation",
+            "count": 32,
+            "safe_completed": 32,
+            "rmse_3d_h_xy_m": [
+              0.8260548242749067,
+              0.0670379510314945,
+              0.8233301195931958
+            ],
+            "weak_exceedances": 7,
+            "strong_exceedances": 1,
+            "duration_s": 30.0,
+            "seed_pair": [
+              20268681,
+              20268682
+            ],
+            "checkpoint_sha256": "78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a",
+            "cumulative_physical_updates": 21,
+            "policy_weights_unchanged": true,
+            "maximum_true_yaw_error_deg": 0.80134516954422,
+            "result_file": "without_compensation/result.json"
+          },
+          {
+            "policy": "with_compensation",
+            "count": 32,
+            "safe_completed": 32,
+            "rmse_3d_h_xy_m": [
+              0.6325149390658178,
+              0.04384022463487677,
+              0.6309938057108
+            ],
+            "weak_exceedances": 4,
+            "strong_exceedances": 0,
+            "duration_s": 30.0,
+            "seed_pair": [
+              20268681,
+              20268682
+            ],
+            "checkpoint_sha256": "78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a",
+            "cumulative_physical_updates": 21,
+            "policy_weights_unchanged": true,
+            "maximum_true_yaw_error_deg": 0.80134516954422,
+            "result_file": "with_compensation/result.json"
+          }
+        ],
+        "count_per_policy": 32,
+        "duration_s": 30,
+        "seed_pair": [
+          20268681,
+          20268682
+        ],
+        "policy_updates": 0,
+        "optimizer_created": false,
+        "checkpoint_and_adam_file_unchanged": true,
+        "residual_unchanged": true,
+        "residual_checkpoint_sha256": "766dae2be7b9ef9f4757e2365afb4fbc998a945da7a8cb483f0a602e4b873a6e",
+        "actual_wind_archive_sha256": "ecc96609e7cf5fc855ba63dca9e486869c0e13dad504d8267df6c4dd33e79323",
+        "independent_actual_plant": true,
+        "residual_force_added_to_actual_plant": false,
+        "source_unchanged": true,
+        "wall_s": 153.28783489996567,
+        "final_acceptance": false
+      }
+    },
+    "P3/results/flexible26/comparison_torch/summary.json": {
+      "sha256": "1997cdbe6c9ddc942c5d25e6fea0333bf9613ba72a863f6da9e4570ae3b5b9ed",
+      "data": {
+        "completed": true,
+        "backend": "torch",
+        "count_per_policy": 16,
+        "duration_s": 30,
+        "seed_pair": [
+          20271281,
+          20271282
+        ],
+        "policy_updates": 0,
+        "optimizer_created": false,
+        "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "residual_checkpoint_sha256": "5aa97ae40bb767cc5a8242b70f128b2ea552bf40a61f039b2f7be8d6b3b525a3",
+        "policies": [
+          {
+            "policy": "without_compensation",
+            "count": 16,
+            "safe_completed": 16,
+            "rmse_3d_h_xy_m": [
+              0.8108839502132034,
+              0.06891328726237418,
+              0.8079503323546953
+            ],
+            "weak_exceedances": 1,
+            "strong_exceedances": 0,
+            "maximum_true_yaw_error_deg": 0.6227593421936035
+          },
+          {
+            "policy": "with_compensation",
+            "count": 16,
+            "safe_completed": 16,
+            "rmse_3d_h_xy_m": [
+              1.1887742692617773,
+              0.24474117258651942,
+              1.163308223000185
+            ],
+            "weak_exceedances": 8,
+            "strong_exceedances": 2,
+            "maximum_true_yaw_error_deg": 2.0680150985717773
+          }
+        ],
+        "relative_3d_improvement": -0.46602268912736067,
+        "improved_3d_cases": 0,
+        "initial_states_and_full_wind_equal": true,
+        "actual_parameters_identical": true,
+        "source_and_protected_files_unchanged": true,
+        "residual_force_added_to_actual_plant": false,
+        "wall_s": 227.1793601999525,
+        "final_acceptance": false
+      }
+    },
+    "P3/results/flexible26_structural/comparison_torch/summary.json": {
+      "sha256": "91d6f3cfa7a8e541bf2b425c18d6cbe1d23d20d2e3d9cd2d54c5e8b4c999d188",
+      "data": {
+        "completed": true,
+        "backend": "torch",
+        "count_per_policy": 16,
+        "duration_s": 30,
+        "seed_pair": [
+          20271381,
+          20271382
+        ],
+        "policy_updates": 0,
+        "optimizer_created": false,
+        "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+        "policies": [
+          {
+            "policy": "without_compensation",
+            "count": 16,
+            "safe_completed": 16,
+            "rmse_3d_h_xy_m": [
+              0.8138794280281203,
+              0.0681411483496784,
+              0.8110218907458462
+            ],
+            "weak_exceedances": 1,
+            "strong_exceedances": 0,
+            "maximum_true_yaw_error_deg": 0.7135191559791565
+          },
+          {
+            "policy": "with_compensation",
+            "count": 16,
+            "safe_completed": 16,
+            "rmse_3d_h_xy_m": [
+              0.6167621461639641,
+              0.05425588471241812,
+              0.6143710962560428
+            ],
+            "weak_exceedances": 0,
+            "strong_exceedances": 0,
+            "maximum_true_yaw_error_deg": 0.6850786805152893
+          }
+        ],
+        "relative_3d_improvement": 0.24219469748944877,
+        "improved_3d_cases": 16,
+        "initial_states_and_full_wind_equal": true,
+        "actual_parameters_identical": true,
+        "source_and_protected_files_unchanged": true,
+        "residual_force_added_to_actual_plant": false,
+        "wall_s": 233.6627593000885,
+        "final_acceptance": false
+      }
+    },
+    "P3/results/flexible26_structural/comparison_mujoco/summary.json": {
+      "sha256": "b34c6d2ecb6918d02c8dcfcc4da40ce017daff15f5bfd12e833b5d6cf072a710",
+      "data": {
+        "completed": true,
+        "backend": "mujoco",
+        "count_per_policy": 16,
+        "duration_s": 30,
+        "seed_pair": [
+          20271381,
+          20271382
+        ],
+        "policy_updates": 0,
+        "optimizer_created": false,
+        "checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+        "policies": [
+          {
+            "policy": "without_compensation",
+            "count": 16,
+            "safe_completed": 16,
+            "rmse_3d_h_xy_m": [
+              0.8137103633736714,
+              0.06815127171323646,
+              0.810851379492926
+            ],
+            "weak_exceedances": 1,
+            "strong_exceedances": 0,
+            "maximum_true_yaw_error_deg": 0.7144795656204224
+          },
+          {
+            "policy": "with_compensation",
+            "count": 16,
+            "safe_completed": 16,
+            "rmse_3d_h_xy_m": [
+              0.6165075652832661,
+              0.05427067590772998,
+              0.6141142172169757
+            ],
+            "weak_exceedances": 0,
+            "strong_exceedances": 0,
+            "maximum_true_yaw_error_deg": 0.6931661367416382
+          }
+        ],
+        "relative_3d_improvement": 0.24235011248080418,
+        "improved_3d_cases": 16,
+        "initial_states_and_full_wind_equal": true,
+        "actual_parameters_identical": true,
+        "source_and_protected_files_unchanged": true,
+        "residual_force_added_to_actual_plant": false,
+        "wall_s": 291.91069349995814,
+        "final_acceptance": false
+      }
+    },
+    "P3/results/flexible26_structural/completion_audit.json": {
+      "sha256": "781b29345361632f39d886c7e21da9d3fb09a2497cea05de170287e1817cf8e4",
+      "data": {
+        "completed": true,
+        "controller_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+        "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+        "policy_and_old_checkpoints_unchanged": true,
+        "frozen_history_equals_current26_actor": true,
+        "matched_wrench_labels_exactly_zero": true,
+        "collection_and_fit_archived_sources_valid": {
+          "data": true,
+          "residual": true,
+          "comparison_torch": true,
+          "comparison_mujoco": true
+        },
+        "data_sha256_verified": true,
+        "paired_checks": {
+          "torch": {
+            "duration_s": 30,
+            "count_per_policy": 16,
+            "policy_updates": 0,
+            "safe_completed": [
+              16,
+              16
+            ],
+            "rmse_3d_h_xy_m": [
+              [
+                0.8138794280281203,
+                0.0681411483496784,
+                0.8110218907458462
+              ],
+              [
+                0.6167621461639641,
+                0.05425588471241812,
+                0.6143710962560428
+              ]
+            ],
+            "relative_3d_improvement": 0.24219469748944877,
+            "initial_states_and_wind_equal": true,
+            "source_and_protected_files_unchanged": true
+          },
+          "mujoco": {
+            "duration_s": 30,
+            "count_per_policy": 16,
+            "policy_updates": 0,
+            "safe_completed": [
+              16,
+              16
+            ],
+            "rmse_3d_h_xy_m": [
+              [
+                0.8137103633736714,
+                0.06815127171323646,
+                0.810851379492926
+              ],
+              [
+                0.6165075652832661,
+                0.05427067590772998,
+                0.6141142172169757
+              ]
+            ],
+            "relative_3d_improvement": 0.24235011248080418,
+            "initial_states_and_wind_equal": true,
+            "source_and_protected_files_unchanged": true
+          }
+        },
+        "cross_backend_initial_states_equal": true,
+        "cross_backend_full_wind_equal": true,
+        "maximum_saved_cross_backend_position_difference_m": {
+          "without_compensation": 0.006232798099517822,
+          "with_compensation": 0.009709804318845272
+        },
+        "full_horizon_replays": [
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_torch\\visuals\\weak_without.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "7b0fe83b65becaa3b06c211c4365646ec99ab5ae0cb8b3a41ab5c36510c8cb3c",
+            "verified": true
+          },
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_torch\\visuals\\weak_with.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "7b0fe83b65becaa3b06c211c4365646ec99ab5ae0cb8b3a41ab5c36510c8cb3c",
+            "verified": true
+          },
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_torch\\visuals\\strong_without.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "7b0fe83b65becaa3b06c211c4365646ec99ab5ae0cb8b3a41ab5c36510c8cb3c",
+            "verified": true
+          },
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_torch\\visuals\\strong_with.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "7b0fe83b65becaa3b06c211c4365646ec99ab5ae0cb8b3a41ab5c36510c8cb3c",
+            "verified": true
+          },
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_mujoco\\visuals\\weak_without.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "f38291c6f5bd2f7d1073bd6125a6aa69bc657ac5a7ad3622a1b048f5ac75f7b4",
+            "verified": true
+          },
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_mujoco\\visuals\\weak_with.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "f38291c6f5bd2f7d1073bd6125a6aa69bc657ac5a7ad3622a1b048f5ac75f7b4",
+            "verified": true
+          },
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_mujoco\\visuals\\strong_without.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "f38291c6f5bd2f7d1073bd6125a6aa69bc657ac5a7ad3622a1b048f5ac75f7b4",
+            "verified": true
+          },
+          {
+            "file": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止\\P3\\results\\flexible26_structural\\comparison_mujoco\\visuals\\strong_with.gif",
+            "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+            "source_comparison_protocol_sha256": "f38291c6f5bd2f7d1073bd6125a6aa69bc657ac5a7ad3622a1b048f5ac75f7b4",
+            "verified": true
+          }
+        ],
+        "selected_step": 1000,
+        "training_wall_s": 5.101395700010471,
+        "test_used_for_selection": false,
+        "report_sources_sha256": {
+          "P3/score_flexible.py": "3e1759d1b2a30323092c23515d0de069e0da5adc386788b4f6b7b2bd21f41cbf",
+          "P3/report_flexible.py": "79b24515716df7849b0f10bb7f4bf6b0ac08b8e1398229c34c7f813f7e335cd8",
+          "P3/report_flexible_model.py": "629ebdef5f3fd65a76252242ba921e50880d6e18c1b7f939d6a40ec767b82491",
+          "P3/audit_flexible.py": "82d6af3f43c7115e13d1a4a81113c2b228be9411b4a736c53a0450185f65e656",
+          "P2/visualize_full_flight.py": "d2a8617e92f291c3a92e72b94ffbcc3a4e51932445c0a8a1c77781a7e087f042"
+        },
+        "formal_final_acceptance": false
+      }
+    }
+  }
+}

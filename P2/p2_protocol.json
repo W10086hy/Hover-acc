@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "wind_generation": "Explicit float32 speeds/directions retain fractional OU turbulence amplitudes for all-integer-speed subsets; v1 pilot and subset reference results are invalid for this protocol",
+  "stage": "P2 first controlled pilot; not final acceptance",
+  "objective_s": 120,
+  "credit_s": 10,
+  "recompute_s": 1,
+  "training_seed": 20631201,
+  "development_seed_pairs": [[20266081, 20266082]],
+  "reserved_generalization_final_seed_pairs": [[20269081, 20269082], [20269181, 20269182]],
+  "training_directions_deg": [0, 90, 180, 270],
+  "development_directions_deg": [22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5],
+  "training_cohorts": [
+    {"name": "light_fast", "actual_scales": {"mass": 0.95, "inertia": 0.95, "motor_tau": 0.95}, "nominal_scales": {"mass": 0.95, "inertia": 0.95, "motor_tau": 0.95}},
+    {"name": "heavy_slow", "actual_scales": {"mass": 1.05, "inertia": 1.05, "motor_tau": 1.05}, "nominal_scales": {"mass": 1.05, "inertia": 1.05, "motor_tau": 1.05}}
+  ],
+  "development_cohorts": [
+    {"name": "nominal_original_course", "case_set": "original", "actual_scales": {}, "nominal_scales": {}},
+    {"name": "interpolation_low", "case_set": "new_directions", "actual_scales": {"mass": 0.975, "inertia": 0.975, "motor_tau": 0.975}, "nominal_scales": {"mass": 0.975, "inertia": 0.975, "motor_tau": 0.975}},
+    {"name": "interpolation_high", "case_set": "new_directions", "actual_scales": {"mass": 1.025, "inertia": 1.025, "motor_tau": 1.025}, "nominal_scales": {"mass": 1.025, "inertia": 1.025, "motor_tau": 1.025}},
+    {"name": "calibration_error", "case_set": "new_directions", "actual_scales": {"mass": 1.03, "inertia": 1.03, "motor_tau": 1.03}, "nominal_scales": {}}
+  ],
+  "development_guard": {
+    "all_cases_safe": true,
+    "full_objective_must_decrease": true,
+    "aggregate_3d_relative_tolerance": 0.05,
+    "aggregate_3d_absolute_tolerance_m": 0.01,
+    "individual_height_relative_tolerance": 0.10,
+    "individual_height_absolute_tolerance_m": 0.01,
+    "heading_max_deg": 5,
+    "maximum_rate_change_radps": 0.05,
+    "maximum_thrust_change_n": 0.5,
+    "max_paired_trials": 3,
+    "existing_rmse_exceedances_allowed_for_development": true
+  },
+  "scope": "Only 5/10cm body-fixed attachments; unchanged35D sensors and feature semantics; calibrated14D airframe/actuator context excludes all tether/wind/actual drag parameters; wing off with body drag/damping retained",
+  "comparison": "Same parent checkpoint, ordered cases, paired RNG seeds and gradient windows for unconditional and conditioned arms; report actual candidate replay counts and wall time separately; no universal performance gain required in this pilot"
+}

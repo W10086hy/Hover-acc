@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "full_duration_cases": 12,
+  "safe_completed": 12,
+  "constant_wind_verified_all_samples": true,
+  "attachments_cm": [
+    5,
+    10
+  ],
+  "full120s_equal_xyz_GIFs": 12,
+  "network_and_Adam_unchanged": true,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "formal_final_acceptance": false
+}

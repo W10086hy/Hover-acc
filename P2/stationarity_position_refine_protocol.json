@@ -1,0 +1,110 @@
+{
+  "route": "P2 thrust and body-rate BPTT, PyTorch dynamic flexible rope",
+  "parent_checkpoint": "results/stationarity/resume36/latest.pt",
+  "device": "cuda",
+  "objective_s": 30,
+  "credit_s": 30,
+  "recompute_s": 1,
+  "development_pilot": true,
+  "formal_objective_s": 120,
+  "training_seed": 20681101,
+  "development_seed": 20681201,
+  "training_directions_deg": [
+    0,
+    90
+  ],
+  "training_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ]
+  ],
+  "optimizer_learning_rates": [
+    1e-05,
+    0.000146484375,
+    1e-05
+  ],
+  "development_directions_deg": [
+    45,
+    225
+  ],
+  "development_s": 30,
+  "maximum_paired_trials": 2,
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "rope_parameters_measured": false,
+  "final_acceptance": false,
+  "p3_enabled": false,
+  "adaptation_reason": "CUDA-only8case fit failed native CPU initial/sensor samples;train both nominal and light cohorts with matching exogenous random streams,while physics/gradients remain CUDA",
+  "purpose": "Secondary originRMSE after all representative strongwind cases settle;preserve stationarity in paired decision;fresh30s BPTT gradient at converged36;explicit cold restart projectedhead Adam;otherAdamstate andActor unchanged",
+  "domain_randomization": {
+    "enabled": true,
+    "sample_count": 3,
+    "seed": 20681302,
+    "include_nominal": true,
+    "mass_scale": [
+      0.9,
+      1.1
+    ],
+    "inertia_scale": [
+      0.85,
+      1.15
+    ],
+    "motor_tau_scale": [
+      0.75,
+      1.5
+    ],
+    "motor_gain_scale": [
+      0.95,
+      1.05
+    ]
+  },
+  "development_parameter_seed": 20681401,
+  "development_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ]
+  ],
+  "warmup_s_by_domain": [
+    90,
+    0,
+    90
+  ],
+  "training_domain_indices": [
+    0,
+    2
+  ],
+  "stationarity_BPTT": {
+    "enabled": true,
+    "speed_scale_mps": 0.3,
+    "speed_weight": 8.0,
+    "acceleration_scale_mps2": 0.5,
+    "acceleration_weight": 0.1,
+    "ramp_start_s": 10.0,
+    "ramp_end_s": 20.0,
+    "horizontal_std_limit_m": 0.25,
+    "horizontal_speed_limit_mps": 0.3,
+    "drift_limit_mps": 0.01
+  },
+  "late_stationarity_window": true,
+  "height_absolute_tolerance_m": 0.03,
+  "stationarity_height_rmse_cap_m": 0.25,
+  "training_random_device": "cpu",
+  "cohort_threads": 2,
+  "stationarity_metric_window_s": 30
+}

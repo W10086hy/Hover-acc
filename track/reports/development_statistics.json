@@ -1,0 +1,2895 @@
+{
+  "experiments": [
+    {
+      "stage": "cart4_120",
+      "completed": true,
+      "duration_s": 120.0,
+      "initial_states_and_full_wind_equal": true,
+      "final_weights_unchanged": true,
+      "source_unchanged": true,
+      "policy_updates": 0,
+      "residual_updates": 0,
+      "wall_s": 508.4678737000795,
+      "formal_final_acceptance": false,
+      "cases": [
+        {
+          "mode": "False",
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "completed": false,
+          "failure_code": 128,
+          "first_failure_s": 0.07999999821186066,
+          "physical_samples_including_first_failure": 8,
+          "rmse_3d_h_xy_m": [
+            7.208700335932853,
+            3.9986664443717896,
+            5.998001933972137
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 3.9999817460358864,
+          "legacy_held_tail_tension_n_not_physical": 57642.22265625
+        },
+        {
+          "mode": "False",
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "completed": false,
+          "failure_code": 128,
+          "first_failure_s": 0.07999999821186066,
+          "physical_samples_including_first_failure": 8,
+          "rmse_3d_h_xy_m": [
+            7.208700335923207,
+            3.998666444371519,
+            5.998001933960725
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 3.9999518540584287,
+          "legacy_held_tail_tension_n_not_physical": 58236.98046875
+        },
+        {
+          "mode": "False",
+          "initial_condition": "co_moving_4mps",
+          "attachment_cm": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.8591425400127526,
+            0.03662800521055423,
+            0.8583614001653731
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.8322939982263573,
+            0.03237835165908654,
+            0.8316639596780999
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.06397486771514452,
+          "maximum_interval_tension_n": 20.692319869995117
+        },
+        {
+          "mode": "False",
+          "initial_condition": "co_moving_4mps",
+          "attachment_cm": 10.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.8316839835900622,
+            0.033117534978153396,
+            0.8310243542984801
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.7834834009443639,
+            0.023175409559498112,
+            0.7831405620621987
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.0764555835389624,
+          "maximum_interval_tension_n": 19.3252010345459
+        },
+        {
+          "mode": "True",
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "completed": false,
+          "failure_code": 128,
+          "first_failure_s": 0.07999999821186066,
+          "physical_samples_including_first_failure": 8,
+          "rmse_3d_h_xy_m": [
+            7.208700335932853,
+            3.9986664443717896,
+            5.998001933972137
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 3.9999817460358864,
+          "legacy_held_tail_tension_n_not_physical": 57642.22265625
+        },
+        {
+          "mode": "True",
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "completed": false,
+          "failure_code": 128,
+          "first_failure_s": 0.07999999821186066,
+          "physical_samples_including_first_failure": 8,
+          "rmse_3d_h_xy_m": [
+            7.208700335923207,
+            3.998666444371519,
+            5.998001933960725
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 3.9999518540584287,
+          "legacy_held_tail_tension_n_not_physical": 58236.98046875
+        },
+        {
+          "mode": "True",
+          "initial_condition": "co_moving_4mps",
+          "attachment_cm": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.7116148510752841,
+            0.03326932401697289,
+            0.7108367241148648
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.6911754221958584,
+            0.034230014436826,
+            0.6903272922022406
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.07873183021896293,
+          "maximum_interval_tension_n": 20.692319869995117
+        },
+        {
+          "mode": "True",
+          "initial_condition": "co_moving_4mps",
+          "attachment_cm": 10.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.6771764322785406,
+            0.040334018251061504,
+            0.6759741765816324
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.6305525830227041,
+            0.04814306121432673,
+            0.6287120212096455
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.08583651455934022,
+          "maximum_interval_tension_n": 19.3252010345459
+        }
+      ]
+    },
+    {
+      "stage": "hover_start120",
+      "completed": true,
+      "duration_s": 120.0,
+      "initial_states_and_full_wind_equal": null,
+      "final_weights_unchanged": true,
+      "source_unchanged": true,
+      "policy_updates": 0,
+      "residual_updates": 0,
+      "wall_s": 256.24549600004684,
+      "formal_final_acceptance": false,
+      "cases": [
+        {
+          "mode": "True",
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.9836310748712334,
+            0.029638002339387164,
+            0.9831844589239948
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.7064148673626897,
+            0.018765111314607976,
+            0.7061655864090213
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.22352899621143008,
+          "maximum_interval_tension_n": 5.6030073165893555,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.032372015967367725,
+                0.022345397219731014,
+                0.02342286577009629
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                1.6690299751618773,
+                0.05852794321557301,
+                1.668003458585087
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                0.9363534497869153,
+                0.026564785372066187,
+                0.9359765462371338
+              ]
+            }
+          }
+        },
+        {
+          "mode": "True",
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.7546176947860243,
+            0.04610315020913167,
+            0.7532080488317736
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.6207901479908816,
+            0.03536711450895983,
+            0.6197818769969407
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.20428200568890387,
+          "maximum_interval_tension_n": 7.231301784515381,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.11928792664243527,
+                0.03930141629945503,
+                0.11262774134070146
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                1.4617451578994805,
+                0.07161820824065175,
+                1.4599896365697176
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                0.6915309072214303,
+                0.043909816933593866,
+                0.6901354386056064
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "stage": "frozen_current_P2_P3_baseline",
+      "completed": true,
+      "count": 16,
+      "passed_count": 0,
+      "safe_completed": 9,
+      "all_cases_pass": false,
+      "policy_updates": 0,
+      "residual_updates": 0,
+      "suite_sha256": "a68984176b4576dd6b285e8a253ad3533480a7d43fc9f8478332191cb954e5c8",
+      "wall_s": 767.6329905999592,
+      "cases": [
+        {
+          "height_m": 10,
+          "case_index": 0,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.9885115178193521,
+            0.044226424760991326,
+            0.9875216677189315
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.9566238086598474,
+            0.043651465705691596,
+            0.9556273650522034
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.10254265837335254,
+          "maximum_interval_tension_n": 2.4127581119537354,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                0.9885115178193521,
+                0.044226424760991326,
+                0.9875216677189315
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 10,
+          "case_index": 1,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.7271885470012301,
+            0.03991561558192968,
+            0.7260922300386335
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.5328269192208456,
+            0.034859392661785935,
+            0.5316853849689954
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.11707939936166538,
+          "maximum_interval_tension_n": 3.3013293743133545,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                0.7271885470012301,
+                0.03991561558192968,
+                0.7260922300386335
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 10,
+          "case_index": 2,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 4.0,
+          "completed": false,
+          "failure_code": 8,
+          "first_failure_s": 12.600000381469727,
+          "physical_samples_including_first_failure": 1260,
+          "rmse_3d_h_xy_m": [
+            6.85372736036454,
+            3.7842747261494787,
+            5.714266665744238
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.9783950762542203,
+          "maximum_interval_tension_n": 9.839293479919434,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.4808804902030103,
+                0.029250542479002814,
+                0.4799900536704605
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                2.9931842867556573,
+                0.9002740128475271,
+                2.854585587484177
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 3,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 4.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.5224817476891706,
+            0.046439342672547665,
+            1.5217733272399057
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.5824865731392712,
+            0.04135090562341285,
+            1.5819462243610551
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.2824172530926057,
+          "maximum_interval_tension_n": 2.9173388481140137,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.12412621630910704,
+                0.03327090443531832,
+                0.11958413144423112
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                2.5764383114011093,
+                0.09018151974403009,
+                2.574859542956092
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                1.4500169804938097,
+                0.041938661072862385,
+                1.4494103602595785
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 4,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.8645434175187958,
+            0.039233194994850215,
+            1.8641306049263733
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.4984714437174114,
+            0.01934759581831616,
+            1.4983465347417448
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.3399407441672081,
+          "maximum_interval_tension_n": 5.003164768218994,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.07278895749358986,
+                0.04931985989535165,
+                0.05353301554093992
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                3.264586405672194,
+                0.08680847840081846,
+                3.263432041299072
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                1.719858586475889,
+                0.030423967465726058,
+                1.719589468355307
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 5,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.5267003581676402,
+            0.062801779978877,
+            1.5254081159023265
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.644372723112129,
+            0.05709384703515083,
+            1.6433812537405692
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.2765167462272643,
+          "maximum_interval_tension_n": 3.0935463905334473,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.15776423918359844,
+                0.05610702106073506,
+                0.14745018600486706
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                2.5330655472454975,
+                0.09552938059971752,
+                2.5312635587951657
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                1.4323108853585986,
+                0.059063244035737004,
+                1.4310925915260364
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 6,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 6.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.905408132605049,
+            0.03189873352086973,
+            1.9051411030674932
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.480335135712824,
+            0.02250481127042365,
+            1.4801640610066127
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.3134926414763364,
+          "maximum_interval_tension_n": 4.707179069519043,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.15587552776844585,
+                0.0407525684255358,
+                0.15045400733717118
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                3.4289386640942072,
+                0.05292360330450487,
+                3.4285302177950006
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                1.690799454642707,
+                0.027902178538510077,
+                1.6905692130915198
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 7,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 6.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.7237211034037319,
+            0.04019464679814965,
+            1.7232523995886821
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.8853052247744806,
+            0.03972348938955478,
+            1.8848866902157997
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.2588062849711233,
+          "maximum_interval_tension_n": 2.9988136291503906,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.13348150595483274,
+                0.026671684364145964,
+                0.13078965435059997
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                2.6901263255675034,
+                0.08700152585173979,
+                2.6887190968955434
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                1.617907346543766,
+                0.031078521913673697,
+                1.6176088239979254
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 0,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            2.064637828128978,
+            0.054072124307670416,
+            2.0639296419001303
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.3365343778161076,
+            0.05217015277344826,
+            1.3355157873435586
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.19364685841331797,
+          "maximum_interval_tension_n": 2.362257480621338,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                2.064637828128978,
+                0.054072124307670416,
+                2.0639296419001303
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 20,
+          "case_index": 1,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.4637952198521065,
+            0.06141648143963313,
+            1.4625062261301494
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.3747576175485832,
+            0.05701532068708016,
+            1.3735748105635912
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.15517007578040912,
+          "maximum_interval_tension_n": 2.229732036590576,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                1.4637952198521065,
+                0.06141648143963313,
+                1.4625062261301494
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 20,
+          "case_index": 2,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 4.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 12.220000267028809,
+          "physical_samples_including_first_failure": 1222,
+          "rmse_3d_h_xy_m": [
+            6.860433368793837,
+            3.790901717884892,
+            5.717920091519059
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.2061400141905914,
+          "maximum_interval_tension_n": 4.910050392150879,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.6162925508989152,
+                0.05036563096081474,
+                0.6142310733847735
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                3.2009068710626263,
+                1.249980833633299,
+                2.9467529100291623
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 3,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 4.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 10.449999809265137,
+          "physical_samples_including_first_failure": 1045,
+          "rmse_3d_h_xy_m": [
+            6.909022989905905,
+            3.821909267801433,
+            5.755658800149801
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0730275024065685,
+          "maximum_interval_tension_n": 5.068437576293945,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.17139932279648548,
+                0.05595865940130105,
+                0.16200727234634565
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                4.527760930726756,
+                2.2589598629393537,
+                3.9239927858553254
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 4,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 5.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 10.819999694824219,
+          "physical_samples_including_first_failure": 1082,
+          "rmse_3d_h_xy_m": [
+            6.896430669023808,
+            3.8154627078163976,
+            5.74482378301672
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0620258413700068,
+          "maximum_interval_tension_n": 5.250400066375732,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.15712012911821596,
+                0.06073372279334718,
+                0.1449073838345918
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                4.971592129724552,
+                2.586739995498098,
+                4.245645357307839
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 5,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 5.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 11.210000038146973,
+          "physical_samples_including_first_failure": 1121,
+          "rmse_3d_h_xy_m": [
+            6.884181871269558,
+            3.80865800156086,
+            5.7346389828709246
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0999922617329871,
+          "maximum_interval_tension_n": 5.2330451011657715,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.2849464248133836,
+                0.06960597678021116,
+                0.27631408398849666
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                4.760559127675054,
+                2.463348691972171,
+                4.073676033983221
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 6,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 6.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 10.649999618530273,
+          "physical_samples_including_first_failure": 1065,
+          "rmse_3d_h_xy_m": [
+            6.904215147677078,
+            3.818424579122007,
+            5.752201364605602
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.9719309732834598,
+          "maximum_interval_tension_n": 3.96347975730896,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.06398818602001376,
+                0.05572043768400341,
+                0.03145982794668428
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                5.508795574729292,
+                2.9101607649935017,
+                4.677370308843364
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 7,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 6.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 11.329999923706055,
+          "physical_samples_including_first_failure": 1133,
+          "rmse_3d_h_xy_m": [
+            6.881617779484624,
+            3.8065188288398026,
+            5.732981568835447
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0521243345137652,
+          "maximum_interval_tension_n": 4.301937580108643,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.24220894677521934,
+                0.05251731126319177,
+                0.23644683528363425
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                5.216210834830015,
+                2.749795158697004,
+                4.432548032295258
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        }
+      ]
+    },
+    {
+      "stage": "frozen_current_P2_P3_baseline",
+      "completed": true,
+      "count": 16,
+      "passed_count": 0,
+      "safe_completed": 10,
+      "all_cases_pass": false,
+      "policy_updates": 0,
+      "residual_updates": 0,
+      "suite_sha256": "431d33180449808bf62a707a694a933315420af523692c64aee8f251c3c67ac1",
+      "wall_s": 898.2815865000011,
+      "cases": [
+        {
+          "height_m": 10,
+          "case_index": 0,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.9885115178193521,
+            0.044226424760991326,
+            0.9875216677189315
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.9566238086598474,
+            0.043651465705691596,
+            0.9556273650522034
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.10254265837335254,
+          "maximum_interval_tension_n": 2.4127581119537354,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                0.9885115178193521,
+                0.044226424760991326,
+                0.9875216677189315
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 10,
+          "case_index": 1,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            0.7271885470012301,
+            0.03991561558192968,
+            0.7260922300386335
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.5328269192208456,
+            0.034859392661785935,
+            0.5316853849689954
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.11707939936166538,
+          "maximum_interval_tension_n": 3.3013293743133545,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                0.7271885470012301,
+                0.03991561558192968,
+                0.7260922300386335
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 10,
+          "case_index": 2,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 4.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.899799284069192,
+            0.04492145777568729,
+            1.8992681175603199
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.7843349644449242,
+            0.036780250795343056,
+            1.783955851049039
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.4203872726043563,
+          "maximum_interval_tension_n": 9.839293479919434,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.4808804902030103,
+                0.029250542479002814,
+                0.4799900536704605
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                2.715625377585927,
+                0.11627711578875438,
+                2.7131348701700326
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                1.86696634985513,
+                0.034817491014373765,
+                1.8666416618651938
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 3,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 4.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.5224817476891706,
+            0.046439342672547665,
+            1.5217733272399057
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.5824865731392712,
+            0.04135090562341285,
+            1.5819462243610551
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.2824172530926057,
+          "maximum_interval_tension_n": 2.9173388481140137,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.12412621630910704,
+                0.03327090443531832,
+                0.11958413144423112
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                2.5764383114011093,
+                0.09018151974403009,
+                2.574859542956092
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                1.4500169804938097,
+                0.041938661072862385,
+                1.4494103602595785
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 4,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.8645434175187958,
+            0.039233194994850215,
+            1.8641306049263733
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.4984714437174114,
+            0.01934759581831616,
+            1.4983465347417448
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.3399407441672081,
+          "maximum_interval_tension_n": 5.003164768218994,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.07278895749358986,
+                0.04931985989535165,
+                0.05353301554093992
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                3.264586405672194,
+                0.08680847840081846,
+                3.263432041299072
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                1.719858586475889,
+                0.030423967465726058,
+                1.719589468355307
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 5,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.5267003581676402,
+            0.062801779978877,
+            1.5254081159023265
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.644372723112129,
+            0.05709384703515083,
+            1.6433812537405692
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.2765167462272643,
+          "maximum_interval_tension_n": 3.0935463905334473,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.15776423918359844,
+                0.05610702106073506,
+                0.14745018600486706
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                2.5330655472454975,
+                0.09552938059971752,
+                2.5312635587951657
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                1.4323108853585986,
+                0.059063244035737004,
+                1.4310925915260364
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 6,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 6.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.905408132605049,
+            0.03189873352086973,
+            1.9051411030674932
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.480335135712824,
+            0.02250481127042365,
+            1.4801640610066127
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.3134926414763364,
+          "maximum_interval_tension_n": 4.707179069519043,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.15587552776844585,
+                0.0407525684255358,
+                0.15045400733717118
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                3.4289386640942072,
+                0.05292360330450487,
+                3.4285302177950006
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                1.690799454642707,
+                0.027902178538510077,
+                1.6905692130915198
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 7,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 6.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.7237211034037319,
+            0.04019464679814965,
+            1.7232523995886821
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.8853052247744806,
+            0.03972348938955478,
+            1.8848866902157997
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.2588062849711233,
+          "maximum_interval_tension_n": 2.9988136291503906,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.13348150595483274,
+                0.026671684364145964,
+                0.13078965435059997
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                2.6901263255675034,
+                0.08700152585173979,
+                2.6887190968955434
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                1.617907346543766,
+                0.031078521913673697,
+                1.6176088239979254
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 0,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            2.064637828128978,
+            0.054072124307670416,
+            2.0639296419001303
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.3365343778161076,
+            0.05217015277344826,
+            1.3355157873435586
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.19364685841331797,
+          "maximum_interval_tension_n": 2.362257480621338,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                2.064637828128978,
+                0.054072124307670416,
+                2.0639296419001303
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 20,
+          "case_index": 1,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 12000,
+          "rmse_3d_h_xy_m": [
+            1.4637952198521065,
+            0.06141648143963313,
+            1.4625062261301494
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.3747576175485832,
+            0.05701532068708016,
+            1.3735748105635912
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.15517007578040912,
+          "maximum_interval_tension_n": 2.229732036590576,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                120.0
+              ],
+              "samples": 12000,
+              "rmse_3d_h_xy_m": [
+                1.4637952198521065,
+                0.06141648143963313,
+                1.4625062261301494
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 20,
+          "case_index": 2,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 4.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 12.220000267028809,
+          "physical_samples_including_first_failure": 1222,
+          "rmse_3d_h_xy_m": [
+            6.860433368793837,
+            3.790901717884892,
+            5.717920091519059
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.2061400141905914,
+          "maximum_interval_tension_n": 4.910050392150879,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.6162925508989152,
+                0.05036563096081474,
+                0.6142310733847735
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                3.2009068710626263,
+                1.249980833633299,
+                2.9467529100291623
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 3,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 4.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 10.449999809265137,
+          "physical_samples_including_first_failure": 1045,
+          "rmse_3d_h_xy_m": [
+            6.909022989905905,
+            3.821909267801433,
+            5.755658800149801
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0730275024065685,
+          "maximum_interval_tension_n": 5.068437576293945,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.17139932279648548,
+                0.05595865940130105,
+                0.16200727234634565
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                4.527760930726756,
+                2.2589598629393537,
+                3.9239927858553254
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                120.0
+              ],
+              "samples": 10700,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 4,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 5.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 10.819999694824219,
+          "physical_samples_including_first_failure": 1082,
+          "rmse_3d_h_xy_m": [
+            6.896430669023808,
+            3.8154627078163976,
+            5.74482378301672
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0620258413700068,
+          "maximum_interval_tension_n": 5.250400066375732,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.15712012911821596,
+                0.06073372279334718,
+                0.1449073838345918
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                4.971592129724552,
+                2.586739995498098,
+                4.245645357307839
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 5,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 5.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 11.210000038146973,
+          "physical_samples_including_first_failure": 1121,
+          "rmse_3d_h_xy_m": [
+            6.884181871269558,
+            3.80865800156086,
+            5.7346389828709246
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0999922617329871,
+          "maximum_interval_tension_n": 5.2330451011657715,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.2849464248133836,
+                0.06960597678021116,
+                0.27631408398849666
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                4.760559127675054,
+                2.463348691972171,
+                4.073676033983221
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                120.0
+              ],
+              "samples": 10500,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 6,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 19.9,
+          "cart_speed_mps": 6.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 10.649999618530273,
+          "physical_samples_including_first_failure": 1065,
+          "rmse_3d_h_xy_m": [
+            6.904215147677078,
+            3.818424579122007,
+            5.752201364605602
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.9719309732834598,
+          "maximum_interval_tension_n": 3.96347975730896,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.06398818602001376,
+                0.05572043768400341,
+                0.03145982794668428
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                5.508795574729292,
+                2.9101607649935017,
+                4.677370308843364
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 20,
+          "case_index": 7,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 19.849999999999998,
+          "cart_speed_mps": 6.0,
+          "completed": false,
+          "failure_code": 64,
+          "first_failure_s": 11.329999923706055,
+          "physical_samples_including_first_failure": 1133,
+          "rmse_3d_h_xy_m": [
+            6.881617779484624,
+            3.8065188288398026,
+            5.732981568835447
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            7.211102550927978,
+            4.0,
+            6.0
+          ],
+          "valid_horizon_speed_error_rmse_mps": 1.0521243345137652,
+          "maximum_interval_tension_n": 4.301937580108643,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.24220894677521934,
+                0.05251731126319177,
+                0.23644683528363425
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                5.216210834830015,
+                2.749795158697004,
+                4.432548032295258
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                120.0
+              ],
+              "samples": 10300,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        }
+      ]
+    },
+    {
+      "stage": "new_actor_native_development",
+      "completed": true,
+      "duration_s": 30.0,
+      "actor_checkpoint_sha256": "8bcdd2b6a83459fce367ab8928554e7815e1d55ae14e609f2fa569b2f1a88aa5",
+      "cumulative_actor_updates": 28,
+      "residual_checkpoint_sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
+      "count": 8,
+      "safe_completed": 6,
+      "passed_count": 0,
+      "all_cases_pass": false,
+      "seed_pair": [
+        20272681,
+        20272682
+      ],
+      "seeds_scope": "development",
+      "optimizer_updates_during_validation": 0,
+      "full120s_complete": false,
+      "wall_s": 99.67442339996342,
+      "cases": [
+        {
+          "height_m": 10,
+          "case_index": 0,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            0.943699729446359,
+            0.055850312124712816,
+            0.9420456050493009
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.943699729446359,
+            0.055850312124712816,
+            0.9420456050493009
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.11186439207309716,
+          "maximum_interval_tension_n": 1.4564695358276367,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                30.0
+              ],
+              "samples": 3000,
+              "rmse_3d_h_xy_m": [
+                0.943699729446359,
+                0.055850312124712816,
+                0.9420456050493009
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 10,
+          "case_index": 1,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 0.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            0.9317624095944127,
+            0.05709505089937709,
+            0.9300114747119971
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            0.9317624095944127,
+            0.05709505089937709,
+            0.9300114747119971
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.1336255199145722,
+          "maximum_interval_tension_n": 2.3271291255950928,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                30.0
+              ],
+              "samples": 3000,
+              "rmse_3d_h_xy_m": [
+                0.9317624095944127,
+                0.05709505089937709,
+                0.9300114747119971
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 0.53
+        },
+        {
+          "height_m": 10,
+          "case_index": 2,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 4.0,
+          "completed": false,
+          "failure_code": 8,
+          "first_failure_s": 12.079999923706055,
+          "physical_samples_including_first_failure": 1208,
+          "rmse_3d_h_xy_m": [
+            5.698302390936155,
+            3.0916958674880113,
+            4.78665507442371
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            5.698302390936155,
+            3.0916958674880113,
+            4.78665507442371
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.9090342770626655,
+          "maximum_interval_tension_n": 6.426340103149414,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.32656761722197053,
+                0.04318318059597093,
+                0.3236998942410257
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                3.3463837218961276,
+                1.35776361049344,
+                3.058555540151461
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                30.0
+              ],
+              "samples": 1700,
+              "rmse_3d_h_xy_m": [
+                7.211102550927978,
+                4.0,
+                6.0
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 3,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 4.0,
+          "completed": false,
+          "failure_code": 8,
+          "first_failure_s": 13.270000457763672,
+          "physical_samples_including_first_failure": 1327,
+          "rmse_3d_h_xy_m": [
+            5.543648748277138,
+            2.987413601516801,
+            4.669839549464959
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            5.543648748277138,
+            2.987413601516801,
+            4.669839549464959
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.5559185083401416,
+          "maximum_interval_tension_n": 3.089139699935913,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.24111756371922755,
+                0.04880178903014481,
+                0.2361272218981814
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                13.0
+              ],
+              "samples": 800,
+              "rmse_3d_h_xy_m": [
+                2.4857146039361657,
+                0.07580396820089418,
+                2.484558482029861
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                13.0,
+                30.0
+              ],
+              "samples": 1700,
+              "rmse_3d_h_xy_m": [
+                7.162978094885652,
+                3.9681179624751493,
+                5.963413034805971
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "physical_failure",
+            "height_rmse",
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 4,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            2.4876218163377044,
+            0.11871100025169455,
+            2.4847877171980994
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            2.4876218163377044,
+            0.11871100025169455,
+            2.4847877171980994
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.5739364377380054,
+          "maximum_interval_tension_n": 4.755756855010986,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.18023634593174648,
+                0.06553205758038011,
+                0.16790083330379849
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                3.112908444076798,
+                0.10929053925590557,
+                3.110989321620019
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                30.0
+              ],
+              "samples": 1500,
+              "rmse_3d_h_xy_m": [
+                2.4301365327838207,
+                0.13707724704479032,
+                2.426267379394363
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 5,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 5.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            1.5387926398757676,
+            0.10924590274499171,
+            1.5349098088387036
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.5387926398757676,
+            0.10924590274499171,
+            1.5349098088387036
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.46109779824528996,
+          "maximum_interval_tension_n": 2.9061896800994873,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.12771536854524662,
+                0.07325296180912841,
+                0.1046194004419761
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                15.0
+              ],
+              "samples": 1000,
+              "rmse_3d_h_xy_m": [
+                2.380835868992928,
+                0.0893872436895703,
+                2.3791572784809523
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                15.0,
+                30.0
+              ],
+              "samples": 1500,
+              "rmse_3d_h_xy_m": [
+                0.9754019078796412,
+                0.12943704842736264,
+                0.9667755336114255
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 6,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 5.0,
+          "tether_rest_length_m": 9.899999999999999,
+          "cart_speed_mps": 6.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            2.620533619455834,
+            0.12385491400641475,
+            2.617605090722196
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            2.620533619455834,
+            0.12385491400641475,
+            2.617605090722196
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.5336755659123915,
+          "maximum_interval_tension_n": 4.483989715576172,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.3192522632492299,
+                0.057063585305215436,
+                0.3141110549182725
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                3.212866048175027,
+                0.12065269418607455,
+                3.2105998148167667
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                30.0
+              ],
+              "samples": 1300,
+              "rmse_3d_h_xy_m": [
+                2.50593425785229,
+                0.14391104530613633,
+                2.5017985761680746
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        },
+        {
+          "height_m": 10,
+          "case_index": 7,
+          "initial_condition": "hover_capture",
+          "attachment_cm": 10.0,
+          "tether_rest_length_m": 9.85,
+          "cart_speed_mps": 6.0,
+          "completed": true,
+          "failure_code": 0,
+          "first_failure_s": null,
+          "physical_samples_including_first_failure": 3000,
+          "rmse_3d_h_xy_m": [
+            1.7042743975584693,
+            0.07733109362559258,
+            1.702519052501896
+          ],
+          "terminal30_rmse_3d_h_xy_m": [
+            1.7042743975584693,
+            0.07733109362559258,
+            1.702519052501896
+          ],
+          "valid_horizon_speed_error_rmse_mps": 0.43393878958010357,
+          "maximum_interval_tension_n": 3.021238327026367,
+          "phase_metrics": {
+            "hover": {
+              "window_s": [
+                0.0,
+                5.0
+              ],
+              "samples": 500,
+              "rmse_3d_h_xy_m": [
+                0.16174576159606,
+                0.04108766661222235,
+                0.15644006854592063
+              ]
+            },
+            "acceleration": {
+              "window_s": [
+                5.0,
+                17.0
+              ],
+              "samples": 1200,
+              "rmse_3d_h_xy_m": [
+                2.50158450418015,
+                0.0705816857369952,
+                2.500588582152764
+              ]
+            },
+            "cruise": {
+              "window_s": [
+                17.0,
+                30.0
+              ],
+              "samples": 1300,
+              "rmse_3d_h_xy_m": [
+                0.9571844862598976,
+                0.09247896524408128,
+                0.952706555936301
+              ]
+            }
+          },
+          "passed": false,
+          "reasons": [
+            "horizontal_rmse"
+          ],
+          "horizontal_limit_m": 1.5
+        }
+      ]
+    }
+  ],
+  "accepted_training_lineage": [
+    {
+      "stage": "height_speed_train10_guarded",
+      "accepted_updates": 2,
+      "checkpoint_sha256": "8bcdd2b6a83459fce367ab8928554e7815e1d55ae14e609f2fa569b2f1a88aa5",
+      "parent_checkpoint_sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+      "objective_s": 30.0,
+      "credit_s": 10.0,
+      "recompute_s": 1.0,
+      "wall_s": 686.4938256000169,
+      "seed_pair": [
+        20272801,
+        20272802
+      ],
+      "attempts": [
+        {
+          "accepted": true,
+          "loss_before": 12.020005169013244,
+          "loss_after": 11.041115925609756,
+          "fraction": 1.0
+        },
+        {
+          "accepted": true,
+          "loss_before": 11.041115925609756,
+          "loss_after": 10.905155473397967,
+          "fraction": 0.25
+        }
+      ]
+    },
+    {
+      "stage": "height_speed_full30_update",
+      "accepted_updates": 1,
+      "checkpoint_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+      "parent_checkpoint_sha256": "8bcdd2b6a83459fce367ab8928554e7815e1d55ae14e609f2fa569b2f1a88aa5",
+      "objective_s": 30.0,
+      "credit_s": 30.0,
+      "recompute_s": 1.0,
+      "wall_s": 273.49241760000587,
+      "seed_pair": [
+        20272811,
+        20272812
+      ],
+      "attempts": [
+        {
+          "accepted": true,
+          "loss_before": 196.7496822036543,
+          "loss_after": 196.25023040228197,
+          "fraction": 0.125
+        }
+      ]
+    }
+  ],
+  "original5m_checkpoints": {
+    "P2/results/flexible_continue30/step4/latest.pt": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57",
+    "P3/results/flexible26_structural/residual/best.pt": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80"
+  },
+  "selected_actor_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc"
+}

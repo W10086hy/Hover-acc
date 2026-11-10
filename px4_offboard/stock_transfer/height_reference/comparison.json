@@ -1,0 +1,53 @@
+{
+  "checkpoint": "P2/results/px4_transfer/update2/candidate.pt",
+  "sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3",
+  "firmware": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+  "px4_version": "1.14.4",
+  "stock_airframe": "10016_none_iris",
+  "frozen_p3_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+  "target_height_m": 5,
+  "wind_profile": "steady",
+  "wind_mps": 1.0,
+  "sensor_seeds": [
+    21685134
+  ],
+  "evaluation_s": 15,
+  "samples_per_case": 3750,
+  "count": 2,
+  "safe_completed": 2,
+  "simulated_motor_tau_s": 0.045,
+  "command_filter_s": 0.065,
+  "residual_enabled_by_default": false,
+  "formal_final_acceptance": false,
+  "hardware_validation": false,
+  "replay": "px4_offboard/stock_transfer/height_reference/site1036/replay/flight.gif",
+  "replay_sha256": "83aa789072896664f64c62c694c33943fd6dd26eb9a4def3d01e7e7ec97b1bc0",
+  "cases": [
+    {
+      "case": "site1013",
+      "result": "px4_offboard/stock_transfer/height_reference/site1013/result.json",
+      "trace": "px4_offboard/stock_transfer/height_reference/site1013/trace.npy",
+      "ulog": "px4_offboard/stock_transfer/height_reference/site1013/log/2026-11-09/17_14_10.ulg",
+      "site_pressure_hpa": 1013.25,
+      "rmse_3d_h_xy_m": [
+        0.6185982796788363,
+        0.07516018258246146,
+        0.6140152918094034
+      ],
+      "policy_height_input_rmse_m": 0.013682386097185634
+    },
+    {
+      "case": "site1036",
+      "result": "px4_offboard/stock_transfer/height_reference/site1036/result.json",
+      "trace": "px4_offboard/stock_transfer/height_reference/site1036/trace.npy",
+      "ulog": "px4_offboard/stock_transfer/height_reference/site1036/log/2026-11-09/17_13_28.ulg",
+      "site_pressure_hpa": 1036.5,
+      "rmse_3d_h_xy_m": [
+        0.6166895142713784,
+        0.06384573987556885,
+        0.613375642255225
+      ],
+      "policy_height_input_rmse_m": 0.009609325146083841
+    }
+  ]
+}

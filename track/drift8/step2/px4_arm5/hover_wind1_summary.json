@@ -1,0 +1,19 @@
+{
+  "path": "track/drift8/step2/px4_arm5/results/px4_hover_wind1",
+  "actor": "Actor31",
+  "duration_s": 120.0,
+  "safe_completed": 1,
+  "full_rmse_3d_h_xy_m": [
+    1.5294575141927766,
+    0.02692667383448843,
+    1.5292204687215525
+  ],
+  "late30_xy_rmse_m": 1.8363772111480885,
+  "wind_profile": "steady",
+  "wind_speed_mps": 1.0,
+  "attachment_cm": 5,
+  "seed": 21272985,
+  "checkpoint_sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92",
+  "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+  "audit_passed": true
+}

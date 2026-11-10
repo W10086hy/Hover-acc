@@ -1,0 +1,320 @@
+{
+  "evidence_checks_passed": true,
+  "restored_commit": "cfa262b7278967b6d2d923117c99a8895a1452ae",
+  "actor_checkpoint": "track/models/actor29.pt",
+  "actor_sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc",
+  "actor_updates_this_task": 0,
+  "residual_checkpoint": "P3/retest8/residual/best.pt",
+  "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b",
+  "residual_fit_steps": 1000,
+  "residual_fit_s": 4.746559299999717,
+  "collection_safe_completed": 36,
+  "collection_count": 36,
+  "prediction": {
+    "development": {
+      "zero_residual": {
+        "loss": 0.06502274153263946,
+        "normalized_wrench_mse": 0.09001828667364623,
+        "rpm_mse_scaled": 0.040027196391632686,
+        "windows": 3040
+      },
+      "learned_residual": {
+        "loss": 0.04705723367239299,
+        "normalized_wrench_mse": 0.05443616027110501,
+        "rpm_mse_scaled": 0.03967570807588728,
+        "windows": 3040
+      },
+      "loss_reduction_percent": 27.629576109503663
+    },
+    "test": {
+      "zero_residual": {
+        "loss": 0.0681656821777946,
+        "normalized_wrench_mse": 0.08240482109157662,
+        "rpm_mse_scaled": 0.053926546950089305,
+        "windows": 3040
+      },
+      "learned_residual": {
+        "loss": 0.09951976318108408,
+        "normalized_wrench_mse": 0.017702911696151683,
+        "rpm_mse_scaled": 0.18133445884052077,
+        "windows": 3040
+      },
+      "loss_reduction_percent": -45.99687115506232
+    },
+    "test_used_for_selection": false,
+    "policy_updates": 0,
+    "gradient_steps": 1000,
+    "residual_sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b"
+  },
+  "EA_n": 49,
+  "rest_length_m": 7.9,
+  "heading_reference_fixed_deg": 0,
+  "wind_seed": 20272982,
+  "state_seed": 20272681,
+  "sensor_seed_native": 21272684,
+  "sensor_seed_PX4": 21272985,
+  "wind_definition": "Peak1/5mps;7s and1.7s amplitude;17s direction;120s normalization;native100Hz and PX4_400Hz wind update differ",
+  "input_scope": "Onboard35+nominal14;no horizontal/cart/wind/rope truth",
+  "pipeline_order": "restore GitHub -> collect P3 -> train P3 ->30s compensation comparison -> original nativeMuJoCo ->realPX4",
+  "dynamics_mismatch": {
+    "mass_scale": 1.03,
+    "inertia_scale": 1.02,
+    "motor_tau_scale": 0.85,
+    "drag_scale": 0.9
+  },
+  "cases": [
+    {
+      "backend": "mujoco",
+      "case": "hover_wind1",
+      "path": "stable_retest/results/mujoco_hover_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 1.0,
+      "rmse_3d_h_xy_m": [
+        1.0783294457034591,
+        0.0717996726131926,
+        1.0759364295736842
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": 1,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": [
+        1.0783294457034591,
+        0.0717996726131926,
+        1.0759364295736842
+      ],
+      "yaw_abs_max_deg": 0.19497525691986084,
+      "yaw_RMSE_deg": 0.14039599895477295,
+      "yaw_sample_hz": 10,
+      "maxima": {
+        "tension_n": 2.3290438652038574,
+        "height_error_m": 0.12693405151367188,
+        "tilt_deg_saved10hz": 0.45197463035583496
+      },
+      "maximum_horizontal_error_m": 1.2937980890274048,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 0.1913403421640396,
+      "sampled_max_deflection_m": 0.4449989871552484,
+      "sampled_late60to120_mean_max_deflection_m": 0.26984165765286916,
+      "sampled_max_extension_m": 0.12438714214054514,
+      "source_sha256": {
+        "result.json": "d0995e90b35ab7bcd6dfc777ada97e59ed245c8d31149bc8611ab288266d5042",
+        "protocol.json": "c5ec61451565aac8e933b911d5d568b4a2bdddd2f615320986cc2b6f0eb71f6a",
+        "trajectory.npz": "1274d4e443b43bf31566707468145523d1313c27c9716771df494463533b866b",
+        "frozen_source.zip": "bd9b37a79c8ba7e0f58cbbe7808ad7abddfe8f51126aad4fa01d96ac4af39491"
+      }
+    },
+    {
+      "backend": "mujoco",
+      "case": "hover_wind5",
+      "path": "stable_retest/results/mujoco_hover_wind5",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "requested_wind_peak_mps": 5.0,
+      "actual_wind_peak_mps": 5.0,
+      "rmse_3d_h_xy_m": [
+        1.5641282934075853,
+        0.11743742981080567,
+        1.559713360947311
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": 1,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": [
+        1.5641282934075853,
+        0.11743742981080567,
+        1.559713360947311
+      ],
+      "yaw_abs_max_deg": 0.19791336357593536,
+      "yaw_RMSE_deg": 0.14049193263053894,
+      "yaw_sample_hz": 10,
+      "maxima": {
+        "tension_n": 12.514388084411621,
+        "height_error_m": 0.16338157653808594,
+        "tilt_deg_saved10hz": 2.4719552993774414
+      },
+      "maximum_horizontal_error_m": 2.156132459640503,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 0.597689151763916,
+      "sampled_max_deflection_m": 0.7865811732719362,
+      "sampled_late60to120_mean_max_deflection_m": 0.27826988929227875,
+      "sampled_max_extension_m": 0.337352034497183,
+      "source_sha256": {
+        "result.json": "955d6e4d400466324318969ab397d4f66664580ca78a8a1e9f8a8e9b763806f4",
+        "protocol.json": "11bb357cb0a2d1e840185f5eebfdd6527d857b6d9cbe272bd29f132816c78f69",
+        "trajectory.npz": "abcd187154dc4b69cd71bfc1ba07ea3450231cd8059c11dfcd4dac6abece4563",
+        "frozen_source.zip": "bd9b37a79c8ba7e0f58cbbe7808ad7abddfe8f51126aad4fa01d96ac4af39491"
+      }
+    },
+    {
+      "backend": "mujoco",
+      "case": "track4_wind1",
+      "path": "stable_retest/results/mujoco_track4_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 4.0,
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 1.0,
+      "rmse_3d_h_xy_m": [
+        1.403834506427349,
+        0.10770152023039298,
+        1.3996970043463624
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": 1,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": [
+        1.403834506427349,
+        0.10770152023039298,
+        1.3996970043463624
+      ],
+      "yaw_abs_max_deg": 0.19933129847049713,
+      "yaw_RMSE_deg": 0.14040809869766235,
+      "yaw_sample_hz": 10,
+      "maxima": {
+        "tension_n": 4.298375606536865,
+        "height_error_m": 0.29828453063964844,
+        "tilt_deg_saved10hz": 7.096414089202881
+      },
+      "maximum_horizontal_error_m": 3.3296749591827393,
+      "startup5to30_lead_m": 2.296314239501953,
+      "startup5to30_lag_m": 3.3127601146698,
+      "maximum_relative_speed_mps": 1.1850647926330566,
+      "sampled_max_deflection_m": 0.5907552154950729,
+      "sampled_late60to120_mean_max_deflection_m": 0.4995951235567069,
+      "sampled_max_extension_m": 0.6279567195562485,
+      "source_sha256": {
+        "result.json": "0c73bb627968fd0652a836d4af243086a386bde62a02f6302a330b573dbb1250",
+        "protocol.json": "b0d5a5d37973b1381451021c9627f8efcb8b7e304d7b01e3fa9a2a1691d50f84",
+        "trajectory.npz": "7d3dd96ed41d02f1098313c8d7f6f1b62aa278852511c15ae189b3bbf8c4163d",
+        "frozen_source.zip": "bd9b37a79c8ba7e0f58cbbe7808ad7abddfe8f51126aad4fa01d96ac4af39491"
+      }
+    },
+    {
+      "backend": "px4",
+      "case": "hover_wind1",
+      "path": "stable_retest/results/px4_hover_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 0.9999876751681975,
+      "rmse_3d_h_xy_m": [
+        1.6820593164332565,
+        0.02974102144339209,
+        1.6817963656886101
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": null,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": null,
+      "yaw_abs_max_deg": 0.3903440378996714,
+      "yaw_RMSE_deg": 0.16611935954247098,
+      "yaw_sample_hz": 100,
+      "maxima": {
+        "tilt_deg": 1.2698605497065887,
+        "body_rate_radps": 0.0780005148781744,
+        "height_error_m": 0.07507006014007267,
+        "tension_n": 3.245053243772508
+      },
+      "maximum_horizontal_error_m": 2.255531005711987,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 0.5237054743609797,
+      "sampled_max_deflection_m": 0.5178853629399954,
+      "sampled_late60to120_mean_max_deflection_m": 0.2352515980755083,
+      "sampled_max_extension_m": 0.23644272090358065,
+      "source_sha256": {
+        "result.json": "955d80ab22f841745ef673b6c773872fad478dfce44395eecb90a56f76275def",
+        "protocol.json": "6bc183a0a24f7f5d5a459b9c25ebe0ce74ed037b1e148807b6d3f42c53432658",
+        "trajectory.npz": "1aa5d0ca64452ec78931871c421b205f8beca29bd3bba02ba3ca611326f50313",
+        "frozen_source.zip": "123749774c3c6f8973325c3e2366e8150381d549d3eff38bcec75df5f3caaef0"
+      }
+    },
+    {
+      "backend": "px4",
+      "case": "hover_wind5",
+      "path": "stable_retest/results/px4_hover_wind5",
+      "height_m": 8,
+      "cart_speed_mps": 0.0,
+      "requested_wind_peak_mps": 5.0,
+      "actual_wind_peak_mps": 4.999938375840987,
+      "rmse_3d_h_xy_m": [
+        1.8485523353411508,
+        0.02421462122820136,
+        1.8483937320316786
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": null,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": null,
+      "yaw_abs_max_deg": 0.37889103782218697,
+      "yaw_RMSE_deg": 0.21006831944441073,
+      "yaw_sample_hz": 100,
+      "maxima": {
+        "tilt_deg": 2.6321824856970197,
+        "body_rate_radps": 0.0890334656555931,
+        "height_error_m": 0.07860327375128406,
+        "tension_n": 13.171482943628513
+      },
+      "maximum_horizontal_error_m": 2.531047945572341,
+      "startup5to30_lead_m": null,
+      "startup5to30_lag_m": null,
+      "maximum_relative_speed_mps": 0.5938438623895036,
+      "sampled_max_deflection_m": 0.7865212686278873,
+      "sampled_late60to120_mean_max_deflection_m": 0.3769750591922458,
+      "sampled_max_extension_m": 0.29608332647137914,
+      "source_sha256": {
+        "result.json": "c5eab8b5a4c8a3051772d971d78faedd7e5a5dde2b60f900a2bc22566bb1b8c9",
+        "protocol.json": "220298143d22f6e9ea8d57b24194300d2eadd82658c36fe6f1da1701a536ec65",
+        "trajectory.npz": "02f3e4325e19e9464244ed26362f5a6e760bf754e55f8b2c64a11c1a6b45da3c",
+        "frozen_source.zip": "123749774c3c6f8973325c3e2366e8150381d549d3eff38bcec75df5f3caaef0"
+      }
+    },
+    {
+      "backend": "px4",
+      "case": "track4_wind1",
+      "path": "stable_retest/results/px4_track4_wind1",
+      "height_m": 8,
+      "cart_speed_mps": 4.0,
+      "requested_wind_peak_mps": 1.0,
+      "actual_wind_peak_mps": 0.9999876751681975,
+      "rmse_3d_h_xy_m": [
+        2.184253523140828,
+        0.139212236366275,
+        2.179812699889378
+      ],
+      "safe_completed": 1,
+      "duration_s": 120,
+      "original_GitHub_boundary_safe": null,
+      "original_GitHub_boundary_rmse_3d_h_xy_m": null,
+      "yaw_abs_max_deg": 0.6920240368582957,
+      "yaw_RMSE_deg": 0.13724684925291297,
+      "yaw_sample_hz": 100,
+      "maxima": {
+        "tilt_deg": 11.352714327222758,
+        "body_rate_radps": 0.3854655138559669,
+        "height_error_m": 0.353568465795167,
+        "tension_n": 4.879885618138859
+      },
+      "maximum_horizontal_error_m": 4.12793210372969,
+      "startup5to30_lead_m": 4.120938370915013,
+      "startup5to30_lag_m": 3.202250365430822,
+      "maximum_relative_speed_mps": 1.7043697665672697,
+      "sampled_max_deflection_m": 0.7389737766628615,
+      "sampled_late60to120_mean_max_deflection_m": 0.5752317707416458,
+      "sampled_max_extension_m": 0.7199357160034658,
+      "source_sha256": {
+        "result.json": "d89b3e8b4215916b8079cdb8b9fceca4e54b13115c06ddf64e6f09f169873ada",
+        "protocol.json": "18521041d93731d5a07e4fbfff33ad4ffef7c9bfbfe24e28fec3dada4ca92607",
+        "trajectory.npz": "67ee794a1ea1c02fdf49a23066ce956b6f8aa26dc9ec149028a3792516943512",
+        "frozen_source.zip": "123749774c3c6f8973325c3e2366e8150381d549d3eff38bcec75df5f3caaef0"
+      }
+    }
+  ],
+  "count": 6,
+  "safe_completed": 6,
+  "formal_final_acceptance": false,
+  "source_sha256": "7aea73ea661138eb33e54c1daf8034784bb1e56874ab35baa556dceb6bbee17e"
+}

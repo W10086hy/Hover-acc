@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "controller_checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "residual_checkpoint_sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",
+  "groups": [
+    {
+      "group": {
+        "name": "new_combination",
+        "seed": 20683241,
+        "directions_deg": [
+          135,
+          315
+        ],
+        "actual_scales": {
+          "mass": 1.03,
+          "inertia": 1.02,
+          "motor_tau": 0.85
+        },
+        "nominal_scales": {},
+        "actual_drag_scale": 0.9,
+        "nominal_arm_cm": 5,
+        "duration_s": 20
+      },
+      "seed_pair": [
+        20683241,
+        20683242
+      ],
+      "windows": 3040,
+      "values": [
+        {
+          "model": "nominal",
+          "loss": 0.07381618438582671,
+          "normalized_wrench_mse": 0.0876801281383163,
+          "motor_mse_scaled": 0.059952239417716074,
+          "wrench_rmse_n_nm": [
+            0.1328015445635381,
+            0.021232749932959524,
+            0.675552770092065,
+            0.003911502645790172,
+            0.005582067904095799,
+            1.6078271297156724e-05
+          ],
+          "motor_response_rmse_radps": 0.2448514685630568,
+          "log_motor_tau_rmse": 0.1625189334154129
+        },
+        {
+          "model": "learned_residual",
+          "loss": 0.11767855898330086,
+          "normalized_wrench_mse": 0.027050635120586346,
+          "motor_mse_scaled": 0.20830445289611815,
+          "wrench_rmse_n_nm": [
+            0.13271672094647036,
+            0.047638166717365836,
+            0.3459860465994142,
+            0.002976078179337908,
+            0.0034036488075736763,
+            2.1446902775697898e-05
+          ],
+          "motor_response_rmse_radps": 0.4564038334116279,
+          "log_motor_tau_rmse": 0.30087367495198286
+        }
+      ],
+      "relative_loss_improvement": -0.5942108084077029
+    }
+  ],
+  "actual_parameter_mismatches_applied": true,
+  "neural_inputs": "obs35+frozenGRU128+nominal14+motor4",
+  "motor_response_dt_s": 0.002,
+  "motor_units": "rad/s",
+  "force_torque_units": [
+    "N",
+    "N",
+    "N",
+    "Nm",
+    "Nm",
+    "Nm"
+  ],
+  "no_policy_or_residual_updates": true,
+  "test_used_for_selection": false,
+  "test_data_sha256": {
+    "P3\\results\\actor37_5m\\data\\test\\new_combination.pt": "c8c914cd863a50ea6323cc55f78ec5c364c67a5e4dd44afa8da0f945fb118c84"
+  },
+  "source_sha256": "3e1759d1b2a30323092c23515d0de069e0da5adc386788b4f6b7b2bd21f41cbf",
+  "formal_final_acceptance": false
+}
