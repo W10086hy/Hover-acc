@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "verified_files": 974,
+  "verified_files": 1071,
   "source_snapshot_matches": true,
   "changed_sources": [],
   "actor31_safe_120s_cases": 9,
@@ -45,5 +45,73 @@
     "newest_selected": false,
     "removed_files": 148,
     "removed_bytes": 572385034
+  },
+  "acceleration_hover": {
+    "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+    "steady": {
+      "count": 80,
+      "safe": 80,
+      "rmse_pass": 80,
+      "steady": 78,
+      "joint": 78,
+      "rmse_3d_h_xy_m": [
+        0.6054000678375938,
+        0.053313477716208896,
+        0.6030480206679785
+      ],
+      "winds": {
+        "1": {
+          "count": 40,
+          "safe": 40,
+          "rmse_pass": 40,
+          "steady": 38,
+          "joint": 38,
+          "worst_3d_rmse_m": 0.3557372003455215,
+          "peak_wind_mps": 1.0
+        },
+        "5": {
+          "count": 40,
+          "safe": 40,
+          "rmse_pass": 40,
+          "steady": 40,
+          "joint": 40,
+          "worst_3d_rmse_m": 1.1750231410645338,
+          "peak_wind_mps": 5.0
+        }
+      }
+    },
+    "time_varying": {
+      "count": 20,
+      "safe": 20,
+      "rmse_pass": 20,
+      "steady": 19,
+      "joint": 19,
+      "rmse_3d_h_xy_m": [
+        0.7006238902573361,
+        0.05468801155281441,
+        0.6984862611331185
+      ],
+      "winds": {
+        "1": {
+          "count": 10,
+          "safe": 10,
+          "rmse_pass": 10,
+          "steady": 9,
+          "joint": 9,
+          "worst_3d_rmse_m": 0.3080345894651039,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 10,
+          "safe": 10,
+          "rmse_pass": 10,
+          "steady": 10,
+          "joint": 10,
+          "worst_3d_rmse_m": 1.1244419058194441,
+          "peak_wind_mps": 6.0
+        }
+      }
+    },
+    "formal_final_acceptance": false
   }
 }

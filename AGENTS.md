@@ -1,10 +1,17 @@
 # 当前工程约定
 
-## 三轴加速度开发（2026-11-10，优先）
+## P3 Position 动力学辨识（2026-11-13，优先）
 
-- 用户已授权将当前 P2 开发策略的输出改为起飞参考系三轴期望加速度并开展 BPTT 训练与验证。本轮覆盖 5 m 固定锚点，协议为 `P2/acceleration_protocol.json`。Actor 保持机载输入边界，下游使用可微的重力补偿、姿态力矩和电机分配。
-- Actor37 与其 Adam 保留为冻结配对基线。加速度训练采用独立的权重与 Adam，P3 补偿关闭。8 m、track、PX4 由各自既有配置选择检查点。开发训练、选参、MuJoCo 复验与留出正式验收种子分开。
-- 当前加速度检查点为 `P2/results/acceleration/training_transfer/latest.pt`，含两次更新及 Adam。原生 MuJoCo 8/8 条安全完成 120 秒。两条弱风超过 0.50 m 三维 RMSE，正式验收尚未完成。配对数据、回放与检查点哈希见 `P2/results/acceleration/README.md`。
+- P3 的当前定义为在 PX4 Position 模式中辨识当前飞行器相对于 P2 标准飞行器的动力学残差。参考为 P2 标称机体与电机模型，辨识入口不绑定飞行高度、任务或 Actor 权重。
+- Position 由 PX4 控制。P3 读取同步 IMU、实测电机转速和实际油门，辨识电机响应，报告可观测动力学差异。结构参数拟合需要充分激励和可控外载条件。保留已有 P3 权重供历史闭环复现。
+- P3 在 Position 辨识时允许使用本地位置估计，以估计速度和加速度、计算标称阻力并与 IMU 交叉核对。该位置输入限于 P3，P2 的 GNSS 拒止输入边界沿用原配置。
+- 当前 13 次更新的加速度控制链路仍按其冻结结果运行。Position 辨识报告尚未接入闭环，见 `P3/README.md`。
+
+## 加速度悬停成果整理（2026-11-13，优先）
+
+- 5 m 柔绳悬停当前保留水平加速度 BPTT 与仿真垂向 PID（P/I/D=3/2/0.6），Actor 保持 35 维机载输入和标称参数边界，P3 关闭。
+- 保留刚才展示的累计 13 次更新 Actor 与 Adam，检查点见 `P2/models.json`。同一权重的 80 条恒风、20 条时变风以及三份回放保留于 `P2/results/acceleration_hover/altitude_robust/low_frequency_round`。两套均逐例安全及 RMSE 达标，稳态分别 78/80、19/20，正式留出仍独立。
+- 加速度路线的其他候选、旧仿真和调试产物按 `cleanup/retention_acceleration_20261113.json` 删除。历史独立保留的 Actor37、P3、8 m、跟踪和 PX4 成果与运行依赖按以下既有约定保留。当前无训练或完整仿真。接续入口见 `P2/acceleration_hover_resume.json`。
 
 ## 最新整理约定（2026-11-09，优先）
 

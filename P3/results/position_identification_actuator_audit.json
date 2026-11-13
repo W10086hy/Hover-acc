@@ -1,0 +1,36 @@
+{
+  "source": "archived PX4 SITL Position with MuJoCo simulated rotor speeds and applied throttle",
+  "coverage": "actuator-only; archived state trace has no synchronized onboard accelerometer samples",
+  "sample_dt_s": 0.004,
+  "nominal_motor_tau_s": 0.002,
+  "cases": [
+    {
+      "trace": "px4_offboard/stock_transfer/height_reference/site1013/trace.npy",
+      "trace_sha256": "62df07f825c454c71a356de982f0fa3bc4fcd0d0a34b90c77c0b357b00864306",
+      "summary": "px4_offboard/stock_transfer/height_reference/site1013/summary.json",
+      "summary_sha256": "eba113a4344db3498ba90a1d625e918a534d5b469f5077872b1e525bbaa02f0e",
+      "intervals": 3457,
+      "span_s": 13.828000000000007,
+      "configured_tau_s": 0.045,
+      "fitted_tau_s": 0.04500000089431975,
+      "fitted_speed_gain": 1.000000000001262,
+      "nominal_next_speed_rmse_radps": 4.493988004831925,
+      "fitted_next_speed_rmse_radps": 9.316843819871725e-09,
+      "lag_excitation_radps": 0.4688009191768333
+    },
+    {
+      "trace": "px4_offboard/stock_transfer/height_reference/site1036/trace.npy",
+      "trace_sha256": "c2960918633a527200e4ee781ce1ac602d52fb408ab0e1f09b20ee40532a9468",
+      "summary": "px4_offboard/stock_transfer/height_reference/site1036/summary.json",
+      "summary_sha256": "c6759df032fc3f809b9a89a0284b0226c58208264f84e6e05322543df746dbf0",
+      "intervals": 3420,
+      "span_s": 13.68,
+      "configured_tau_s": 0.045,
+      "fitted_tau_s": 0.04500000089431975,
+      "fitted_speed_gain": 1.000000000001811,
+      "nominal_next_speed_rmse_radps": 4.543954327097182,
+      "fitted_next_speed_rmse_radps": 9.420244501872614e-09,
+      "lag_excitation_radps": 0.4740038668527559
+    }
+  ]
+}

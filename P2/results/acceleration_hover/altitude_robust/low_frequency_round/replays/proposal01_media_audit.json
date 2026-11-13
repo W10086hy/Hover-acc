@@ -1,0 +1,36 @@
+{
+  "steady": {
+    "group": "heavy_high",
+    "case_index": 6,
+    "files": {
+      ".gif": "d2165b429211d0640105a0d179c98b734b7f2eba99ff7857ab7c14a7911a00ad",
+      ".png": "7f691ec6960d9ba8521b0ec756f45c1b8d6a1f8ef01ea0a38874e906e18c7cf0",
+      ".json": "1b15dabc4adcd3cd6674be7eff61f9ac7f2fb474dc49b259bc95c4d81cf998dc"
+    },
+    "frames": 201,
+    "playback_speed": 6,
+    "duration_s": 120,
+    "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+    "seed_pair": [
+      22830041,
+      22830042
+    ]
+  },
+  "varying": {
+    "group": "nominal",
+    "case_index": 0,
+    "files": {
+      ".gif": "13d7b795a1f65005d96260797a9a02a54e6ade4f6ce7b0bd07e9e13cf2f07969",
+      ".png": "6afa07748147c3f175f7387aa659de0410e9b273de3dc3e6f86425eddeaacdbc",
+      ".json": "9ceabb0aea09eb57759bbd01359addb7390e8ce8b2b8885628f0f0ebe2c64e2f"
+    },
+    "frames": 201,
+    "playback_speed": 6,
+    "duration_s": 120,
+    "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+    "seed_pair": [
+      21830001,
+      21830002
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "action_mode": "launch_acceleration",
+  "parent_checkpoint": "P2/results/stationarity/selected37/latest.pt",
+  "parent_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "resume_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+  "resume_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "objective_s": 30,
+  "credit_s": 10,
+  "recompute_s": 1,
+  "training_seed": 23000001,
+  "selection_seed": 23020001,
+  "validation_seed": 23030001,
+  "training_directions_deg": [
+    10,
+    100,
+    190,
+    280
+  ],
+  "selection_directions_deg": [
+    47.5,
+    137.5,
+    227.5,
+    317.5
+  ],
+  "validation_directions_deg": [
+    67.5,
+    157.5,
+    247.5,
+    337.5
+  ],
+  "validation_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ],
+    [
+      1,
+      "time_varying"
+    ],
+    [
+      5,
+      "time_varying"
+    ]
+  ],
+  "learning_rates": [
+    0.0003,
+    0.00015
+  ],
+  "maximum_updates": 1,
+  "validation_s": 120,
+  "causal_prefix_s": {
+    "training": 90,
+    "selection": 90
+  },
+  "preflight_accel_calibration": true,
+  "hover_training": {
+    "weak_position_weight": 12.0,
+    "late_speed_weight": 2400.0,
+    "late_start_s": 10.0,
+    "late_ramp_s": 10.0,
+    "weak_position_weight_5cm": 24.0,
+    "weak_credit_rmse_weight": 12.0,
+    "weak_credit_rmse_margin_m": 0.4,
+    "objective_drift_weight": 32.0,
+    "objective_drift_scale_mps": 0.0075,
+    "weak_speed_filter_tau_s": 5.0
+  },
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "training_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ]
+  ],
+  "selection_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ]
+  ],
+  "domain_randomization": {
+    "enabled": true,
+    "sample_count": 5,
+    "seed": 23040001,
+    "include_nominal": true,
+    "mass_scale": [
+      0.9,
+      1.1
+    ],
+    "inertia_scale": [
+      0.9,
+      1.1
+    ],
+    "motor_tau_scale": [
+      0.9,
+      1.1
+    ],
+    "motor_gain_scale": [
+      0.9,
+      1.1
+    ]
+  },
+  "selection_parameter_seed": 23050001,
+  "validation_parameter_seed": 23060001,
+  "training_mass_gain_grid": true,
+  "selection_mass_gain_grid": true,
+  "selection_stationarity": {
+    "horizontal_std_limit_m": 0.25,
+    "horizontal_speed_limit_mps": 0.3,
+    "drift_limit_mps": 0.01
+  },
+  "retain_safe_proposals": true
+}

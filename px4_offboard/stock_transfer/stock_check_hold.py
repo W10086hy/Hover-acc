@@ -11,7 +11,7 @@ import numpy as np
 from pymavlink import mavutil
 from px4_offboard.motor_mapping import PX4_MOTORS_IN_P2_ORDER, px4_to_p2_motor_order
 from px4_offboard.network import rotation
-from px4_offboard.offboard import Offboard
+from px4_offboard.offboard import HEARTBEAT_MAX_AGE_S, Offboard
 from px4_offboard.physics import Plant
 
 BASE = Path.home() / 'hover_bptt_px4/actor37_5m_20261109'
@@ -25,13 +25,29 @@ def mode(heartbeat):
     return (heartbeat.custom_mode >> 16) & 255 if heartbeat else 0
 
 
-def control_message(conn, clock, plant, fixture, rng, step, site_pressure_altitude):
+def record_p3_odometry(message, samples):
+    if (message.get_type() != 'ODOMETRY' or message.get_srcSystem() != 1
+            or message.get_srcComponent() != 1 or message.time_usec <= 0):
+        return
+    stamp = message.time_usec / 1e6
+    if samples and stamp <= samples[-1][0]:
+        return
+    valid = (message.frame_id == mavutil.mavlink.MAV_FRAME_LOCAL_NED
+             and message.estimator_type == mavutil.mavlink.MAV_ESTIMATOR_TYPE_AUTOPILOT
+             and message.quality != -1)
+    position = [message.x, message.y, message.z] if valid else [np.nan] * 3
+    samples.append((stamp, position, message.q, message.reset_counter))
+
+
+def control_message(conn, clock, plant, fixture, rng, step, site_pressure_altitude, *, imu_sample=None):
     q = plant.x[6:10]
     force = np.array([0., 0., -plant.gravity]) if fixture else plant.specific_force()
     gyro = np.zeros(3) if fixture else plant.x[10:13]
     height = -plant.x[2]
     accel = force + rng.normal(0, .01, 3)
     rate = gyro + rng.normal(0, .0005, 3)
+    if imu_sample is not None:
+        imu_sample.extend((accel, rate))
     mag = rotation(q).T @ np.array([.215, 0., .427])
     time_usec = round(clock*1e6)
     if step % 25 == 0:
@@ -52,6 +68,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('output', type=Path)
     parser.add_argument('--keep-position', action='store_true')
+    parser.add_argument('--record-position-p3', action='store_true',
+                        help='Save Position IMU, applied throttle, ESC speed and PX4 odometry for P3')
     residual = parser.add_mutually_exclusive_group()
     residual.add_argument('--no-residual', action='store_true')
     residual.add_argument('--residual', action='store_true')
@@ -73,6 +91,8 @@ def main():
         parser.error('A wind ramp requires Offboard and a target wind above 1 m/s')
     if not math.isfinite(args.site_pressure_hpa) or args.site_pressure_hpa <= 0:
         parser.error('--site-pressure-hpa must be finite and positive')
+    if args.record_position_p3 and mavutil.mavlink.WIRE_PROTOCOL_VERSION != '2.0':
+        parser.error('Set MAVLINK20=1 to record PX4 ODOMETRY')
     site_pressure_altitude = 44330.*(1.-(args.site_pressure_hpa/1013.25)**(1./5.255))
     root = args.output.resolve()
     root.mkdir()
@@ -109,6 +129,14 @@ def main():
     switch = None
     error = None
     rows = []
+    position_samples = []
+    odometry = []
+
+    def observe_p3(message):
+        if released is not None:
+            record_p3_odometry(message, odometry)
+
+    observe = observe_p3 if args.record_position_p3 else None
     policy_ticks = []
     policy_heights = []
     wire = None
@@ -132,11 +160,14 @@ def main():
             clock = 1+k*DT
             if proc.poll() is not None:
                 raise RuntimeError(f'PX4 exited {proc.returncode}')
-            off.pump(clock)
+            off.pump(clock, observe=observe)
             h = off.last_heartbeat
             if h is not None and not stream_requested:
                 for message, hz in [(31,100),(105,100),(30,50)]:
                     off.command(mavutil.mavlink.MAV_CMD_SET_MESSAGE_INTERVAL, message, 1e6/hz)
+                if args.record_position_p3:
+                    off.command(mavutil.mavlink.MAV_CMD_SET_MESSAGE_INTERVAL,
+                                mavutil.mavlink.MAVLINK_MSG_ID_ODOMETRY, 20_000)
                 off.request_height_telemetry()
                 stream_requested = True
             armed = bool(h and h.base_mode & 128)
@@ -200,12 +231,19 @@ def main():
                     if switch is not None and clock-switch>=args.seconds:
                         duration = clock-switch
                         break
-            stamp = control_message(conn,clock,plant,released is None,rng,k,site_pressure_altitude)
+            imu_sample = [] if args.record_position_p3 and released is not None else None
+            stamp = control_message(conn, clock, plant, released is None, rng, k, site_pressure_altitude,
+                                    imu_sample=imu_sample)
+            if imu_sample is not None:
+                # Measurements describe the just-ended interval, before applying the next command.
+                position_active = (armed and current == 3 and ((h.custom_mode >> 24) & 255) == 0
+                    and 0 <= clock-off.received['HEARTBEAT'] <= HEARTBEAT_MAX_AGE_S)
+                position_samples.append((clock, *imu_sample, measured, applied.copy(), position_active))
             deadline = time.monotonic()+(1. if k>20 else .1)
             got = False
             while time.monotonic()<deadline:
                 msg = conn.recv_match(blocking=False)
-                off.pump(clock)
+                off.pump(clock, observe=observe)
                 if msg is None:
                     time.sleep(.0001)
                     continue
@@ -256,6 +294,19 @@ def main():
             hold_height_locked_s=off.hold_height_locked_s)
         if rows:
             np.save(root/'trace.npy',np.asarray(rows))
+        if position_samples:
+            t, force, rate, rpm, throttle, active = map(np.asarray, zip(*position_samples))
+            evidence = dict(time_s=t, specific_force_mps2=force,
+                gyro_radps=rate, motor_radps=rpm.clip(min=0), previous_throttle=throttle,
+                position_armed_airborne=active)
+            if odometry:
+                stamp, position, attitude, reset = map(np.asarray, zip(*odometry))
+                evidence.update(position_time_s=stamp, position_ned_m=position,
+                                position_attitude_wxyz=attitude, position_reset_counter=reset)
+            np.savez_compressed(root/'position_p3.npz', **evidence)
+            metadata['p3_position_capture'] = dict(file='position_p3.npz', count=int(active.sum()),
+                source='SITL injected IMU and simulated ESC telemetry in P2 motor order',
+                odometry_samples=len(odometry), position_source='PX4 estimator ODOMETRY')
         (root/'summary.json').write_text(json.dumps(metadata,indent=2)+'\n')
         print(json.dumps({key:value for key,value in metadata.items()
                           if key not in ('policy_ticks', 'policy_baro_heights_m')}),flush=True)

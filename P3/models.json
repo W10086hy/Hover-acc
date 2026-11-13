@@ -1,4 +1,9 @@
 {
+  "current_position_identification": {
+    "entrypoint": "P3/position_identification.py",
+    "reference_plant": "P2/hover_bptt/configs/vehicle.json",
+    "actor_checkpoint_required": false
+  },
   "residual5m": {
     "checkpoint": "P3/results/flexible26_structural/residual/best.pt",
     "sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80",
@@ -12,7 +17,7 @@
     "trained_with_actor": "track/models/actor29.pt"
   },
   "actor37_residual_combination_validated": true,
-  "note": "Actor37 paired with its 5 m residual in native MuJoCo and PX4 SITL development comparisons. The accepted 8 m defaults use their own pair.",
+  "note": "The learned residual checkpoints reproduce historical compensation experiments. Position identification uses the standard P2 plant and telemetry.",
   "residual_actor37_5m": {
     "checkpoint": "P3/results/actor37_5m/residual/best.pt",
     "sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117",

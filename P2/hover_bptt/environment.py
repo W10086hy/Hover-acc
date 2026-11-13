@@ -235,8 +235,11 @@ class DifferentiableRateEnvironment(RateEnvironment):
             self.history.motion.aerodynamics.__class__=DifferentiableAerodynamics
 
     def step(self,raw_action):
-        invalid=(~torch.isfinite(raw_action).all(-1)|~torch.isfinite(self.packet.gyro).all(-1)
-                 |~torch.isfinite(self.packet.motor_speed).all(-1)|~torch.isfinite(self.packet.attitude).all(-1))
+        if isinstance(self.controller, AccelerationInterface):
+            invalid = ~self.controller.valid_inputs(self.packet, raw_action)
+        else:
+            invalid=(~torch.isfinite(raw_action).all(-1)|~torch.isfinite(self.packet.gyro).all(-1)
+                     |~torch.isfinite(self.packet.motor_speed).all(-1)|~torch.isfinite(self.packet.attitude).all(-1))
         previous=self.controller.previous
         motors,_=self.controller.apply(self.packet,raw_action,self.dt)
         commands=torch.cat((motors,torch.zeros_like(motors[:,:2])),-1)

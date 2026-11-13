@@ -20,9 +20,21 @@ LABELS = {'actor37': 'Actor37 推力与角速度基线', 'initial': '三轴加�
 STATIONARITY = dict(horizontal_std_limit_m=.25, horizontal_speed_limit_mps=.3, drift_limit_mps=.01)
 
 
-def run(protocol_path, output, variant, checkpoint):
+def hover_gate(case):
+    limit = {1: .5, 5: 1.5}[case['wind_speed']]
+    settled = bool(case['completed'] and case['tail_statistics_complete']
+        and case['late_horizontal_std_m'] <= STATIONARITY['horizontal_std_limit_m']
+        and case['late_horizontal_speed_rms_mps'] <= STATIONARITY['horizontal_speed_limit_mps']
+        and case['late_horizontal_drift_mps'] <= STATIONARITY['drift_limit_mps'])
+    meets_rmse = case['position_rmse_m'] <= limit
+    return dict(passed=settled and meets_rmse, settled=settled, meets_rmse=meets_rmse, rmse_limit_m=limit)
+
+
+def run(protocol_path, output, variant, checkpoint, phase='validation'):
     protocol = read(protocol_path)
     validate_protocol(protocol)
+    if protocol.get('domain_randomization', {}).get('enabled'):
+        raise ValueError('Use P2.evaluate_stationarity with an explicit holdout vehicle protocol and cases')
     saved, checkpoint_sha = load_checkpoint(checkpoint)
     if variant == 'actor37':
         if checkpoint_sha != protocol['parent_sha256']:
@@ -40,12 +52,12 @@ def run(protocol_path, output, variant, checkpoint):
     with ZipFile(output/'frozen_source.zip', 'x', ZIP_DEFLATED) as archive:
         for name in sources:
             archive.write(REPO/name, name)
-    cases = cases_at(protocol['validation_directions_deg'], [(1, 'steady'), (5, 'combined')])
-    seed = protocol['validation_seed']
+    cases = cases_at(protocol[f'{phase}_directions_deg'], protocol.get('validation_winds', [(1, 'steady'), (5, 'combined')]))
+    seed = protocol[f'{phase}_seed']
     seconds = protocol['validation_s']
     write(output/'manifest.json', dict(protocol=protocol, checkpoint=str(checkpoint),
         checkpoint_sha256=checkpoint_sha, source_sha256=sources, variant=variant,
-        seed_pair=[seed, seed+1], cases=cases, duration_s=seconds, device='cpu', formal_final_acceptance=False))
+        phase=phase, seed_pair=[seed, seed+1], cases=cases, duration_s=seconds, device='cpu', formal_final_acceptance=False))
 
     built = []
     body, codes, invalid, tension = [], [], [], []
@@ -75,10 +87,10 @@ def run(protocol_path, output, variant, checkpoint):
         invalid_policy_action=np.stack(invalid), interval_peak_tension_n=np.stack(tension),
         target_w_m=env.model.target.numpy(), dt_s=env.dt)
     for case in result['cases']:
-        case['stationarity_working_criteria_passed'] = bool(case['completed'] and case['tail_statistics_complete']
-            and case['late_horizontal_std_m'] <= STATIONARITY['horizontal_std_limit_m']
-            and case['late_horizontal_speed_rms_mps'] <= STATIONARITY['horizontal_speed_limit_mps']
-            and case['late_horizontal_drift_mps'] <= STATIONARITY['drift_limit_mps'])
+        gate = hover_gate(case)
+        case['stationarity_working_criteria_passed'] = gate['settled']
+        if protocol.get('validation_winds') and case['wind_profile'] == 'steady':
+            case['hover_gate'] = gate
     result.update(engine='MuJoCo', rope=protocol['rope'], physics_dt_s=env.model.dt, mj_step_calls=env.model.mj_step_calls,
         offline_limits=env.cfg['offline_limits'], policy_updates=0, optimizer_created=False,
         stationarity_working_criteria=STATIONARITY, fullrate_evidence_sha256=digest(folder/'fullrate.npz'))
@@ -95,12 +107,13 @@ def main():
     parser.add_argument('--protocol', type=Path, default=REPO/'P2/acceleration_protocol.json')
     parser.add_argument('--checkpoint', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--phase', choices=['selection', 'validation'], default='validation')
     args = parser.parse_args()
     output = args.output.resolve()
     if not output.is_relative_to(REPO/'P2/results'):
         raise ValueError('Native evaluation outputs must stay in P2/results')
     torch.set_num_threads(1)
-    run(args.protocol, output, args.variant, args.checkpoint.resolve())
+    run(args.protocol, output, args.variant, args.checkpoint.resolve(), args.phase)
 
 
 if __name__ == '__main__':

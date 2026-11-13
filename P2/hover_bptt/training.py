@@ -69,6 +69,13 @@ def trajectory(stream,actor,gradient=False,credit_steps=1000,*,steps=12000,recom
                 for _ in range(steps):stream.step(actor)
             loss=math.fsum(cache['costs'])/steps;diag={}
     result,commands=score(stream,initial,cache,steps,motion)
+    if hasattr(stream, 'objective_penalty'):
+        with torch.no_grad():
+            terminal_cost = float(stream.objective_penalty(stream.objective_statistic))
+        result['objective_terminal_cost'] = terminal_cost
+        result['cost'] += terminal_cost
+        if not gradient:
+            loss += terminal_cost
     if not math.isclose(loss,result['cost'],rel_tol=3e-6,abs_tol=3e-6):raise RuntimeError('BPTT forward/replay cost mismatch')
     return loss,diag,result,commands
 

@@ -1,14 +1,24 @@
 {
   "current": {
-    "checkpoint": "P2/results/acceleration/training_transfer/latest.pt",
-    "sha256": "134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782",
+    "checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+    "sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
     "action_mode": "launch_acceleration",
-    "cumulative_physical_updates": 2,
+    "vertical_control": "px4_altitude_pid",
+    "vertical_velocity_p": 3.0,
+    "vertical_velocity_i": 2.0,
+    "vertical_velocity_d": 0.6,
+    "cumulative_physical_updates": 13,
     "optimizer_embedded": true,
     "height_m": 5,
     "p3_enabled": false,
-    "report": "P2/results/acceleration/README.md",
-    "verification": "P2/results/acceleration/native120/step2/flight/audit.json"
+    "preflight_accel_calibration": true,
+    "selected_for_use": false,
+    "native_validation_status": "development_stationarity_gaps",
+    "report": "P2/results/acceleration_hover/README.md",
+    "validation": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady_summary.json",
+    "varying_validation": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying_summary.json",
+    "training_record": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/retained_training.json",
+    "resume_protocol": "P2/acceleration_hover_resume.json"
   },
   "frozen_rate_thrust_baseline": {
     "checkpoint": "P2/results/stationarity/selected37/latest.pt",

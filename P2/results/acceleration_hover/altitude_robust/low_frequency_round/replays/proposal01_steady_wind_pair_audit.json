@@ -1,0 +1,32 @@
+{
+  "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "source_summary_sha256": "45e663fd3d24fe02144b4267c2d3e35b902ed4316f6c8196c56bf39c249b7ae0",
+  "group": "heavy_high",
+  "seed_pair": [
+    22830041,
+    22830042
+  ],
+  "duration_s": 120,
+  "playback_speed": 6,
+  "frames": 201,
+  "cases": [
+    {
+      "index": 6,
+      "wind_speed": 1.0,
+      "files": {
+        ".gif": "d2165b429211d0640105a0d179c98b734b7f2eba99ff7857ab7c14a7911a00ad",
+        ".png": "7f691ec6960d9ba8521b0ec756f45c1b8d6a1f8ef01ea0a38874e906e18c7cf0",
+        ".json": "1b15dabc4adcd3cd6674be7eff61f9ac7f2fb474dc49b259bc95c4d81cf998dc"
+      }
+    },
+    {
+      "index": 7,
+      "wind_speed": 5.0,
+      "files": {
+        ".gif": "3bfdcd1fbd4201e81a6d29f1ee0ac9f65fe1e26fa5f0b6cb9d10cd79d7377d3e",
+        ".png": "17d3d29104c176cd39459f3a4a0056ca644dcbf83b3ba329c83d3c4ffc19f489",
+        ".json": "c4043465af21a8b212d2fca333cb2cf9d9cd6750bad92232ba756f411f3a5e48"
+      }
+    }
+  ]
+}

@@ -115,11 +115,13 @@ class Offboard:
         self.hold_target_height_m = float(height)
         self.hold_height_locked_s = clock
         self.controller.observer.target_height_m = self.hold_target_height_m
-    def pump(self,clock):
+    def pump(self,clock,*,observe=None):
         while True:
             msg=self.link.recv_match(blocking=False)
             if msg is None:break
             self.ingest(msg,clock)
+            if observe is not None:
+                observe(msg)
     def heartbeat(self):
         from pymavlink import mavutil
         self.link.mav.heartbeat_send(mavutil.mavlink.MAV_TYPE_ONBOARD_CONTROLLER,mavutil.mavlink.MAV_AUTOPILOT_INVALID,0,0,mavutil.mavlink.MAV_STATE_ACTIVE)

@@ -4,7 +4,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 FINAL={
- 'P2/results/acceleration/training_transfer/latest.pt':'134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782',
+ 'P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt':'4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5',
  'P2/results/stationarity/selected37/latest.pt':'148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb',
  'P2/results/px4_transfer/update2/candidate.pt':'d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3',
  'P2/results/px4_transfer/update3/candidate.pt':'d759fb67e5e376916cd50d05d14efe5dc401ee8d17f71c60f162634402def910',
@@ -39,6 +39,7 @@ def manifest():
     latest=read(ROOT/'cleanup/retention_20261109.json');assert latest['status']=='complete'
     px4=read(ROOT/'cleanup/retention_px4_narrow_20261109.json');assert px4['status']=='complete'
     stock=read(ROOT/'cleanup/retention_stock_px4_20261110.json');assert stock['status']=='complete'
+    acceleration=read(ROOT/'cleanup/retention_acceleration_20261113.json');assert acceleration['status']=='complete'
     for name,expected in FINAL.items():assert digest(ROOT/name)==expected
     excluded={'cleanup/manifest.json','cleanup/verification.json','cleanup/package_summary.json'};rows=[]
     for p in sorted(files(ROOT)):
@@ -50,10 +51,11 @@ def manifest():
         artifact=artifact or name.endswith('track_retention_20261102.json') or name in {'track/reports/height_speed_statistics.json','track/reports/development_statistics.json'}
         kind='fixture' if '/tests/fixtures/' in name else ('artifact' if artifact else 'source_or_configuration')
         rows.append(dict(path=name,bytes=p.stat().st_size,sha256=digest(p),kind=kind))
-    write(ROOT/'cleanup/manifest.json',dict(date=stock['date'],
-        scope='Three-axis acceleration BPTT and frozen rate/thrust baselines, weights and Adam, P2/P3/PX4 development evidence, accepted tracking results and regression fixtures',
+    write(ROOT/'cleanup/manifest.json',dict(date=acceleration['date'],
+        scope='Latest horizontal acceleration BPTT with vertical PID, frozen baselines, accepted tracking and PX4 results, and regression fixtures',
         files=rows))
-    summary=dict(date=stock['date'],this_cleanup_removed_files=stock['removed_count'],this_cleanup_removed_bytes=stock['removed_bytes'],
+    summary=dict(date=acceleration['date'],this_cleanup_removed_files=acceleration['removed_count'],this_cleanup_removed_bytes=acceleration['removed_bytes'],
+        stock_px4_removed_files=stock['removed_count'],stock_px4_removed_bytes=stock['removed_bytes'],
         prior_actor37_removed_files=latest['removed_count'],prior_actor37_removed_bytes=latest['removed_bytes'],
         moved_regression_files=latest['moved_count'],actor37_native_cases=64,actor37_attitude_gifs=6,
         latest_px4_removed_files=px4['removed_count'],latest_px4_removed_bytes=px4['removed_bytes'],

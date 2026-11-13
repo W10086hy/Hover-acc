@@ -1,7 +1,9 @@
 {
-  "date": "2026-11-10",
-  "this_cleanup_removed_files": 148,
-  "this_cleanup_removed_bytes": 572385034,
+  "date": "2026-11-13",
+  "this_cleanup_removed_files": 4434,
+  "this_cleanup_removed_bytes": 5600999453,
+  "stock_px4_removed_files": 148,
+  "stock_px4_removed_bytes": 572385034,
   "prior_actor37_removed_files": 678,
   "prior_actor37_removed_bytes": 460960185,
   "moved_regression_files": 39,
@@ -16,6 +18,6 @@
   "final_checkpoints_unchanged": true,
   "new_training_during_cleanup": false,
   "new_experiment_run_during_cleanup": false,
-  "current_files": 977,
-  "current_bytes": 642734617
+  "current_files": 1074,
+  "current_bytes": 745162251
 }

@@ -13,7 +13,7 @@ import torch
 
 
 class CohortExecutor:
-    def __init__(self, streams, actor, cuda_streams, checkpoint):
+    def __init__(self, streams, actor, cuda_streams, checkpoint, *, mask_rate_thrust=True):
         from .hover_bptt.actor import Actor
         from .hover_bptt.optimizer import install_gradient_masks
         if not streams or len(streams) != len(cuda_streams):
@@ -31,7 +31,8 @@ class CohortExecutor:
                 # Install the original masks explicitly on each fresh replica.
                 replica = Actor(checkpoint['configuration']['model']).to(context.device)
                 replica.load_state_dict(actor.state_dict())
-                install_gradient_masks(replica)
+                if mask_rate_thrust:
+                    install_gradient_masks(replica)
                 replica.rnn.rnn.flatten_parameters()
             self.actors.append(replica)
         torch.cuda.synchronize()

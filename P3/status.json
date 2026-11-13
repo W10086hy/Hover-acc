@@ -1,6 +1,16 @@
 {
   "schema_version": 5,
   "date": "2026-11-09",
+  "current_position_identification": {
+    "date": "2026-11-13",
+    "entrypoint": "P3/position_identification.py",
+    "nominal_plant": "P2/hover_bptt/configs/vehicle.json",
+    "capture_entrypoint": "px4_offboard/stock_transfer/stock_check_hold.py",
+    "optional_position_aiding": "synchronized local NED position and attitude for nominal drag and kinematic cross-check",
+    "archived_position_actuator_audit": "P3/results/position_identification_actuator_audit.json",
+    "full_sitl_capture_verified": false,
+    "closed_loop_compensation_enabled": false
+  },
   "stage": "actor37_5m_residual_fit_and_native_px4_development_complete",
   "training_running": false,
   "validation_running": false,

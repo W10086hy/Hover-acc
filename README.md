@@ -1,8 +1,10 @@
 # Hover-BPTT · GNSS 拒止环境下的系留无人机控制
 
+当前 5 m 悬停结果采用水平加速度 BPTT 和仿真垂向 PID。保留累计 13 次更新的 Actor 与 Adam，以及同一权重的 80 条恒风和 20 条时变风完整复验。100 条均安全完成 120 秒并逐例达到三维 RMSE 门限。恒风和时变风稳态分别为 78/80 和 19/20。 [检查点、逐例结果和回放](P2/results/acceleration_hover/README.md)
+
 本工程研究四旋翼在无法使用 GNSS 定位时，如何仅凭机载感知，在柔性系留绳的约束下稳定悬停或跟随移动地面平台。控制策略由 PyTorch 中的可微动力学训练，随后在 MuJoCo 原生柔绳和 PX4 SITL 闭环中复验。
 
-当前 5 m 开发路线使用 BPTT 训练三轴加速度输出。Actor 在起飞参考系中给出前向、右向和向下的期望加速度，固定可微执行层根据重力与期望加速度求期望推力方向，保持起飞航向，再按机载姿态与陀螺反馈生成力矩并分配至电机。BPTT 经过执行层和柔绳闭环。 [三轴加速度训练与验证入口](P2/README.md#三轴加速度开发) · [配对复验与回放](P2/results/acceleration/README.md)
+Actor 保留起飞参考系三轴加速度输出结构。当前混合控制执行前向、右向两轴，垂向由仿真气压高度 PID 控制。可微执行层用水平期望加速度和标称重力确定倾斜方向，按机载姿态与陀螺反馈生成力矩并分配至电机。BPTT 经过执行层和柔绳闭环。 [训练与复验入口](P2/README.md#水平加速度-bptt-与垂向-pid)
 
 [最新 PX4 高度零点复测](px4_offboard/stock_transfer/height_reference/README.md) · [P2 模型与 Adam](P2/models.json) · [P3 模型与 Adam](P3/models.json) · [移动平台复测](track/drift8/README.md)
 
@@ -38,7 +40,7 @@ flowchart LR
 ```
 
 1. **P2 参数化 BPTT。** 将循环策略、控制接口、电机响应、刚体和柔绳在 PyTorch 中组成可微闭环，通过时间反向传播更新 Actor。训练中的位置损失优先约束高度，同时抑制水平漂移和大姿态运动。参数随机化覆盖质量 ±10%、三轴主惯量 ±15%、ESC 响应时间常数为标称值的 0.75–1.50 倍、转速增益 ±5%。Actor37 的最终训练采用 90 秒因果前置、末 30 秒梯度信用和 1 秒分段重算。默认 PX4 迁移另用 30 秒 BPTT 适配动作头，训练中近似 PX4 角速度内环、控制分配和电机响应。[P2 训练与配置](P2/README.md) · [默认 PX4 迁移](P2/results/px4_transfer/README.md)
-2. **P3 模型误差补偿。** 冻结 P2 策略后采集短程柔绳轨迹，对同一状态和电机指令下的实际动力学与标称动力学作差，拟合质量、惯量、阻力和电机响应失配形成的残差。P3 使用机载历史、标称参数和电机命令，输出力、力矩及电机响应的补偿信息。在 PX4 Offboard 路径中，垂向力修正总推力，力矩通过等效角速度偏置接入。P3 在闭环对照中冻结权重，可单独启停。[P3 训练与配对验证](P3/README.md)
+2. **P3 飞行器动力学辨识。** PX4 在 Position 模式控制飞机，P3 根据油门、转速和 IMU 辨识当前飞机相对于 P2 标准机体的差异。辨识输入独立于高度、任务与 Actor 权重。该入口生成辨识报告。上图的前馈分支对应历史冻结残差网络的闭环对照。[Position 辨识与历史验证](P3/README.md)
 3. **逐级验证。** 先在可微模型检查梯度、闭环稳定性及候选参数，再冻结权重进入原生 MuJoCo。PX4 SITL 使用飞控二进制和 MAVLink 机载遥测闭环，审计解锁、模式切换、命令间隔、姿态、张力和完整评价时域。结果分列三维、高度及水平 RMSE，报告风型、时域、传感器种子和策略版本。提前失效的试验按对应协议对余下时段计罚。[MuJoCo 验证](mujoco_sim/README.md) · [PX4 验证](px4_offboard/stock_transfer/README.md)
 
 ## PX4 实施
@@ -50,7 +52,8 @@ flowchart LR
 
 | 工况 | 完整时域与安全完成 | 三维／高度／水平 RMSE（m） |
 | --- | --- | ---: |
-| [5 m 原生 MuJoCo 三轴加速度，BPTT 两次更新](P2/results/acceleration/README.md) | 120 秒，8/8 | 0.744 / 0.081 / 0.739 |
+| [5 m 水平加速度 BPTT 恒风](P2/results/acceleration_hover/README.md) | 120 秒，80/80 | 0.605 / 0.053 / 0.603 |
+| [5 m 水平加速度 BPTT 时变风](P2/results/acceleration_hover/README.md) | 120 秒，20/20 | 0.701 / 0.055 / 0.698 |
 | [5 m 原生 MuJoCo 恒风，Actor37](P2/results/stationarity/FINAL37.md) | 120 秒，32/32 | 0.657 / 0.113 / 0.647 |
 | [5 m 原生 MuJoCo 时变与组合风，Actor37](P2/results/time_varying37/README.md) | 120 秒，32/32 | 0.604 / 0.132 / 0.590 |
 | [8 m 原生 MuJoCo 悬停与跟踪，Actor31＋P3](track/drift8/README.md) | 120 秒，6/6 | 1.327 / 0.100 / 1.323 |
@@ -60,7 +63,7 @@ MuJoCo 行按各组汇总，最后一行列出两条 1 m/s 恒风单例，传感
 
 | 检查点 | 用途 |
 | --- | --- |
-| [P2 三轴加速度，BPTT 两次更新](P2/results/acceleration/training_transfer/latest.pt) | 当前 5 m 加速度开发策略 |
+| [P2 水平加速度 BPTT，累计 13 次更新](P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt) | 当前保留的 5 m 混合控制开发权重 |
 | [P2 Actor37](P2/results/stationarity/selected37/latest.pt) | 5 m 常规 P2 基线 |
 | [P2 Actor38](P2/results/px4_transfer/update2/candidate.pt) | 选定的默认 PX4 迁移权重，用于最后一组复测 |
 | [P2 Actor39](P2/results/px4_transfer/update3/candidate.pt) | 最近训练产物，开发复测出现保护触发，作为未入选候选归档 |
@@ -74,7 +77,7 @@ MuJoCo 行按各组汇总，最后一行列出两条 1 m/s 恒风单例，传感
 | 目录 | 内容 |
 | --- | --- |
 | [P2](P2/README.md) | 可微物理、机载观测、循环 Actor、参数随机化、预检和 BPTT |
-| [P3](P3/README.md) | 残差采集、拟合、验证和补偿 |
+| [P3](P3/README.md) | Position 模式动力学辨识、历史残差及补偿复现 |
 | [mujoco_sim](mujoco_sim/README.md) | 原生柔绳模型与数值回归 |
 | [track](track/README.md) | 移动锚点场景、跟踪评价、阶段权重和回放 |
 | [px4_offboard](px4_offboard/README.md) | 独立的 PX4 SITL 接口、运行资产和闭环审计 |

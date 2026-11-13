@@ -5,6 +5,18 @@ from .math3d import quaternion,multiply
 from .onboard import Sensors
 BARO_RECORDER=None
 YAW_RECORDER=None
+
+
+def fit_stationary_force_offset(measurements, attitude, gravity):
+    """Estimate body accelerometer bias from past stationary readings and attitude."""
+    if (measurements.ndim != 2 or measurements.shape[1] != 3 or len(measurements) < 2000
+            or attitude.shape != (len(measurements), 4) or not math.isfinite(gravity) or gravity <= 0
+            or not bool(torch.isfinite(measurements).all() & torch.isfinite(attitude).all())
+            or not bool((attitude.norm(dim=-1) > 1e-6).all())):
+        raise ValueError('Need 2000 or more finite stationary accelerometer and attitude samples')
+    return (measurements + gravity * rotations(attitude)[:, 2, :]).mean(0)
+
+
 class SensorSimulation:
     """Truth enters here to simulate measurements, never into onboard controller functions."""
     def __init__(self, n, device, cfg, generator):
@@ -27,6 +39,10 @@ class SensorSimulation:
         self.force = torch.zeros_like(self.rate)
         self.rpm = torch.zeros(n, 4, device=device)
         self.height = torch.zeros(n, device=device)
+        self.accel_calibration = cfg.get('preflight_accel_calibration')
+        if self.accel_calibration:
+            self.accel_offset = torch.zeros_like(self.accel_bias)
+            self.accel_calibration_epoch = 0
 
     def normal(self, *shape):
         return torch.randn(*shape, device=self.gen.device, generator=self.gen).to(self.device)
@@ -35,6 +51,19 @@ class SensorSimulation:
         c, n = self.cfg, self.n
         self.gyro_bias[mask] = (c["gyro_bias_radps"]*self.normal(n, 3))[mask]
         self.accel_bias[mask] = (c["accel_bias_mps2"]*self.normal(n, 3))[mask]
+        if self.accel_calibration and bool(mask.any()):
+            # Simulate past measurements at a stationary level fixture. The
+            # fit consumes measurements and a known level attitude only.
+            gravity = self.accel_calibration['gravity_mps2']
+            seed = self.gen.initial_seed() + 28361 + self.accel_calibration_epoch * 10000019
+            rng = torch.Generator(device=self.gen.device).manual_seed(seed)
+            noise = torch.randn(n, 2000, 3, generator=rng, device=self.gen.device).to(self.device)
+            attitude = self.q.new_tensor([1., 0., 0., 0.]).expand(2000, 4)
+            gravity_reading = self.force.new_tensor([0., 0., -gravity])
+            measured = gravity_reading + self.accel_bias[:, None, :] + c['accel_noise_mps2'] * noise
+            self.accel_offset[mask] = torch.stack([fit_stationary_force_offset(samples, attitude, gravity)
+                for samples in measured[mask]])
+            self.accel_calibration_epoch += 1
         self.yaw_drift[mask] = (math.radians(c["yaw_drift_degps"])*self.normal(n))[mask]
         self.baro_bias[mask] = (c["baro_bias_m"]*self.normal(n))[mask]
         self.baro_drift[mask] = (c["baro_drift_mps"]*self.normal(n))[mask]
@@ -59,6 +88,8 @@ class SensorSimulation:
         q = q*torch.where(q[:, :1] < 0, -1., 1.)
         gyro = truth_rate+self.gyro_bias+c["gyro_noise_radps"]*self.normal(n, 3)
         force = truth_force+self.accel_bias+c["accel_noise_mps2"]*self.normal(n, 3)
+        if self.accel_calibration:
+            force = force - self.accel_offset
         force = torch.where(new[:, None], force, self.force+c["specific_force_filter_alpha"]*(force-self.force))
         rpm = (truth_rpm+c["rpm_noise_radps"]*self.normal(n, 4)).clamp_min(0)
         baro = truth_height+self.baro_bias+self.tick*.01*self.baro_drift+c["baro_noise_m"]*self.normal(n)
@@ -89,6 +120,8 @@ class FunctionalSensors(SensorSimulation):
         q=multiply(quaternion(reference),q);q=q*torch.where(q[:,:1]<0,-1.,1.)
         gyro=truth_rate+self.gyro_bias+c['gyro_noise_radps']*self.normal(n,3)
         force=truth_force+self.accel_bias+c['accel_noise_mps2']*self.normal(n,3)
+        if self.accel_calibration:
+            force = force - self.accel_offset
         force=torch.where(new[:,None],force,self.force+c['specific_force_filter_alpha']*(force-self.force))
         rpm=(truth_rpm+c['rpm_noise_radps']*self.normal(n,4)).clamp_min(0)
         baro=truth_height+self.baro_bias+self.tick*.01*self.baro_drift+c['baro_noise_m']*self.normal(n)

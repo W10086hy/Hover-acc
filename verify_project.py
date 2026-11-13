@@ -1,5 +1,6 @@
-"""Verify latest Actor37 evidence and retained P3/tracking/PX4 dependencies."""
+"""Verify retained acceleration, Actor37, P3, tracking and PX4 evidence."""
 import argparse
+from hashlib import sha256
 import json
 import re
 from pathlib import Path
@@ -16,7 +17,8 @@ ROOT = Path(__file__).resolve().parent
 RESULT = ROOT / 'track/drift8/step2'
 NATIVE = {f'arm{arm}_{case}' for arm in (5, 10) for case in ('hover_wind1', 'hover_wind5', 'track4_wind1')}
 PX4 = {'px4_hover_wind1', 'px4_hover_wind5', 'px4_track4_wind1'}
-DOCS = ('README.md', 'P2/README.md', 'P2/PROGRESS.md', 'P3/README.md', 'P3/PROGRESS.md',
+DOCS = ('README.md', 'P2/README.md', 'P2/PROGRESS.md', 'P2/results/acceleration_hover/README.md',
+    'P3/README.md', 'P3/PROGRESS.md',
     'mujoco_sim/README.md', 'track/README.md', 'track/drift8/README.md', 'px4_offboard/README.md',
     'stable_retest/README.md', 'cleanup/README.md','P2/DOMAIN_RANDOMIZATION.md',
     'P2/results/stationarity/README.md','P2/results/stationarity/FINAL37.md',
@@ -78,6 +80,78 @@ def verify_stock_transfer():
     return dict(safe_15s_cases=2, firmware=validation['px4_version'], sensor_seeds=validation['sensor_seeds'],
                 selected_actor_updates=38, newest_trained_actor_updates=39, newest_selected=False,
                 removed_files=retention['removed_count'], removed_bytes=retention['removed_bytes'])
+
+
+def verify_acceleration_hover():
+    from P2.verify_hover_matrix import GROUPS, evaluation, statistics
+
+    retention = read(ROOT / 'cleanup/retention_acceleration_20261113.json')
+    assert retention['status'] == 'complete'
+    assert len(retention['removed_files']) == retention['removed_count']
+    assert sum(row['bytes'] for row in retention['removed_files']) == retention['removed_bytes']
+    assert all(not (ROOT / row['path']).exists() for row in retention['removed_files'])
+    for row in retention['retained_evidence']:
+        assert digest(ROOT / row['path']) == row['sha256'], row['path']
+    entry = read(ROOT / 'P2/models.json')['current']
+    checkpoint = ROOT / entry['checkpoint']
+    saved = torch.load(checkpoint, map_location='cpu', weights_only=False)
+    assert digest(checkpoint) == entry['sha256'] == FINAL[entry['checkpoint']]
+    assert saved['model_kind'] == 'launch_acceleration_BPTT' and not saved['p3_enabled']
+    assert saved['optimizer_steps'] == saved['cumulative_physical_updates'] == entry['cumulative_physical_updates']
+    assert saved['optimizer']['state'] and not saved['paired_selection_accepted']
+    acceleration = saved['configuration']['controller']['acceleration']
+    assert acceleration['vertical_control'] == entry['vertical_control'] == 'px4_altitude_pid'
+    assert [acceleration[f'vertical_velocity_{axis}'] for axis in 'pid'] == [3., 2., .6]
+    training = read(ROOT / entry['training_record'])
+    assert training['candidate']['diagnostic_proposal']['sha256'] == entry['sha256']
+    assert training['selected_updates'] == 0 and not training['candidate']['accepted']
+    frozen = ROOT / training['frozen_training_manifest']
+    with ZipFile(frozen.with_name('frozen_source.zip')) as archive:
+        for source, sha in read(frozen)['source_sha256'].items():
+            assert sha256(archive.read(source)).hexdigest() == sha, source
+    protocol = read(ROOT / entry['resume_protocol'])
+    assert protocol['resume_checkpoint'] == entry['checkpoint'] and protocol['resume_sha256'] == entry['sha256']
+
+    torch.set_num_threads(1)
+    folder = checkpoint.parent.parent
+    suites = {}
+    for profile, name, count in (('steady', 'validation', 80), ('time_varying', 'varying_validation', 20)):
+        path = ROOT / entry[name]
+        summary = read(path)
+        assert summary['checkpoint_sha256'] == entry['sha256'] and not summary['formal_final_acceptance']
+        cases = []
+        for group in GROUPS:
+            raw, result, _, audit, _ = evaluation(path.with_name(path.stem.removesuffix('_summary')), group)
+            assert result['checkpoint_sha256'] == entry['sha256'] and result['cases'] == summary['cases'][group]
+            assert audit == summary['groups'][group]['fullrate_audit']
+            assert {case['wind_profile'] for case in result['cases']} == {profile}
+            manifest = read(raw.parent / 'manifest.json')
+            with ZipFile(raw.parent / 'frozen_source.zip') as archive:
+                for source, sha in manifest['source_sha256'].items():
+                    assert sha256(archive.read(source)).hexdigest() == sha, source
+            cases.extend(result['cases'])
+        overall = statistics(cases)
+        assert overall == summary['overall'] and overall['safe'] == overall['rmse_pass'] == count
+        suites[profile] = overall
+    for name, suite, group, index in (
+        ('proposal01_steady', 'proposal01_steady', 'heavy_high', 6),
+        ('proposal01_steady_paired_strong', 'proposal01_steady', 'heavy_high', 7),
+        ('proposal01_varying', 'proposal01_varying', 'nominal', 0),
+    ):
+        replay = folder / 'replays' / name
+        meta = read(replay.with_suffix('.json'))
+        result_path, = (folder / suite / group).glob('*/result.json')
+        assert meta['case_index'] == index and meta['case'] == read(result_path)['cases'][index]
+        assert meta['checkpoint_sha256'] == entry['sha256']
+        assert meta['animation_start_s'] == 0 and meta['animation_end_s'] == 120 and meta['playback_speed'] == 6
+        assert meta['source_result_sha256'] == digest(result_path)
+        assert meta['source_trajectory_sha256'] == digest(result_path.with_name('trajectory.npz'))
+        assert meta['source_wind_sha256'] == digest(result_path.with_name('wind_trace.pt'))
+        assert meta['gif_sha256'] == digest(replay.with_suffix('.gif'))
+        assert meta['png_sha256'] == digest(replay.with_suffix('.png'))
+        with Image.open(replay.with_suffix('.gif')) as gif:
+            assert gif.n_frames == meta['frames'] == 201
+    return dict(checkpoint_sha256=entry['sha256'], **suites, formal_final_acceptance=False)
 
 
 def media(folder, wind_profile='steady'):
@@ -215,6 +289,7 @@ def main():
     report['latest_actor37']={k:v for k,v in latest.items() if k not in ['audits','media']}
     report['latest_px4'] = verify_px4_retention()
     report['stock_px4_transfer'] = verify_stock_transfer()
+    report['acceleration_hover'] = verify_acceleration_hover()
     if args.write_report:
         from P2.hover_bptt.io import write
         write(ROOT / 'cleanup/verification.json', report)

@@ -1,0 +1,1733 @@
+{
+  "duration_s": 120,
+  "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "groups": {
+    "nominal": {
+      "count": 4,
+      "safe": 4,
+      "rmse_pass": 4,
+      "steady": 3,
+      "joint": 3,
+      "rmse_3d_h_xy_m": [
+        0.6918731356533656,
+        0.022516917919670604,
+        0.6915066335518548
+      ],
+      "winds": {
+        "1": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 1,
+          "joint": 1,
+          "worst_3d_rmse_m": 0.3080345894651039,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 1.0437695151141462,
+          "peak_wind_mps": 6.0
+        }
+      },
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal",
+      "seed_pair": [
+        21830001,
+        21830002
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "peak_tension_n": 4.856745719909668,
+      "fullrate_audit": {
+        "numerical_integrity_passed": true,
+        "duration_s": 120.0,
+        "count": 4,
+        "safe_completed": 4,
+        "strong_stationary": 2,
+        "strong_count": 2,
+        "fullrate_scoring_recomputed": true,
+        "tail_motion_recomputed": true,
+        "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "rows": [
+          {
+            "case_index": 0,
+            "std_m": 0.1898145720156017,
+            "speed_rms_mps": 0.029097645603714722,
+            "drift_mps": 0.01987349320486548,
+            "bias_m": 0.21316319783456902,
+            "stationary": false
+          },
+          {
+            "case_index": 1,
+            "std_m": 0.12779914527523695,
+            "speed_rms_mps": 0.033774328472269646,
+            "drift_mps": 0.005552982390464211,
+            "bias_m": 0.9903587947294475,
+            "stationary": true
+          },
+          {
+            "case_index": 2,
+            "std_m": 0.03799968683167528,
+            "speed_rms_mps": 0.013892668540629689,
+            "drift_mps": 0.0008473559990709508,
+            "bias_m": 0.04009261385408143,
+            "stationary": true
+          },
+          {
+            "case_index": 3,
+            "std_m": 0.12350646513354477,
+            "speed_rms_mps": 0.03604183453485928,
+            "drift_mps": 0.0069220583083725255,
+            "bias_m": 0.7946593168541688,
+            "stationary": true
+          }
+        ],
+        "formal_final_acceptance": false
+      },
+      "paired_before": {
+        "count": 4,
+        "safe": 4,
+        "rmse_pass": 4,
+        "steady": 3,
+        "joint": 3,
+        "rmse_3d_h_xy_m": [
+          0.6890783437261796,
+          0.022505514509319702,
+          0.6887107270901809
+        ],
+        "winds": {
+          "1": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 1,
+            "joint": 1,
+            "worst_3d_rmse_m": 0.2905824942554709,
+            "peak_wind_mps": 1.2000001668930054
+          },
+          "5": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 1.0424821138645317,
+            "peak_wind_mps": 6.0
+          }
+        }
+      }
+    },
+    "light_low": {
+      "count": 4,
+      "safe": 4,
+      "rmse_pass": 4,
+      "steady": 4,
+      "joint": 4,
+      "rmse_3d_h_xy_m": [
+        0.6824503351238146,
+        0.04283485249035892,
+        0.681104716855445
+      ],
+      "winds": {
+        "1": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 0.28081805435071183,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 1.0002475398582535,
+          "peak_wind_mps": 6.0
+        }
+      },
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1",
+      "seed_pair": [
+        21830011,
+        21830012
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.07,
+        "inertia_body_kgm2": [
+          0.012795451104435591,
+          0.005030905950211621,
+          0.014761529783882888
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002010312533666134,
+        "motor_speed_polynomial": [
+          -348.57,
+          1142.1000000000001,
+          -29.25
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "peak_tension_n": 29.10901641845703,
+      "fullrate_audit": {
+        "numerical_integrity_passed": true,
+        "duration_s": 120.0,
+        "count": 4,
+        "safe_completed": 4,
+        "strong_stationary": 2,
+        "strong_count": 2,
+        "fullrate_scoring_recomputed": true,
+        "tail_motion_recomputed": true,
+        "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "rows": [
+          {
+            "case_index": 0,
+            "std_m": 0.1686591481919721,
+            "speed_rms_mps": 0.037539227248177195,
+            "drift_mps": 0.008817018315318378,
+            "bias_m": 0.286631224167446,
+            "stationary": true
+          },
+          {
+            "case_index": 1,
+            "std_m": 0.13617582896170657,
+            "speed_rms_mps": 0.034544151314197434,
+            "drift_mps": 0.00538086698437916,
+            "bias_m": 0.959192678002015,
+            "stationary": true
+          },
+          {
+            "case_index": 2,
+            "std_m": 0.08385566479040263,
+            "speed_rms_mps": 0.019926187950074253,
+            "drift_mps": 0.007342237351317961,
+            "bias_m": 0.1665126007994231,
+            "stationary": true
+          },
+          {
+            "case_index": 3,
+            "std_m": 0.13317433238802456,
+            "speed_rms_mps": 0.03942246918879688,
+            "drift_mps": 0.007261377545304323,
+            "bias_m": 0.8387606845684329,
+            "stationary": true
+          }
+        ],
+        "formal_final_acceptance": false
+      },
+      "paired_before": {
+        "count": 4,
+        "safe": 4,
+        "rmse_pass": 4,
+        "steady": 4,
+        "joint": 4,
+        "rmse_3d_h_xy_m": [
+          0.6827782029605456,
+          0.04283224688517532,
+          0.6814333959124688
+        ],
+        "winds": {
+          "1": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 0.3066198675132506,
+            "peak_wind_mps": 1.2000001668930054
+          },
+          "5": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 0.9983406653755096,
+            "peak_wind_mps": 6.0
+          }
+        }
+      }
+    },
+    "light_high": {
+      "count": 4,
+      "safe": 4,
+      "rmse_pass": 4,
+      "steady": 4,
+      "joint": 4,
+      "rmse_3d_h_xy_m": [
+        0.7038140592267553,
+        0.04051051554214686,
+        0.7026472287682861
+      ],
+      "winds": {
+        "1": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 0.17181900269647238,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 1.0387998286875846,
+          "peak_wind_mps": 6.0
+        }
+      },
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1",
+      "seed_pair": [
+        21830021,
+        21830022
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.07,
+        "inertia_body_kgm2": [
+          0.012883731000030945,
+          0.005291759357212472,
+          0.016245724423380667
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002017862027234247,
+        "motor_speed_polynomial": [
+          -426.03000000000003,
+          1395.9,
+          -35.75
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "peak_tension_n": 4.570417404174805,
+      "fullrate_audit": {
+        "numerical_integrity_passed": true,
+        "duration_s": 120.0,
+        "count": 4,
+        "safe_completed": 4,
+        "strong_stationary": 2,
+        "strong_count": 2,
+        "fullrate_scoring_recomputed": true,
+        "tail_motion_recomputed": true,
+        "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "rows": [
+          {
+            "case_index": 0,
+            "std_m": 0.05433211612241565,
+            "speed_rms_mps": 0.016363416845601157,
+            "drift_mps": 0.002400304185845629,
+            "bias_m": 0.1026040071096523,
+            "stationary": true
+          },
+          {
+            "case_index": 1,
+            "std_m": 0.14497886072437757,
+            "speed_rms_mps": 0.03647289451273125,
+            "drift_mps": 0.005551390493238341,
+            "bias_m": 0.9599719063113167,
+            "stationary": true
+          },
+          {
+            "case_index": 2,
+            "std_m": 0.05488318127102045,
+            "speed_rms_mps": 0.01468067762395888,
+            "drift_mps": 0.0035611557239361366,
+            "bias_m": 0.05062713343914747,
+            "stationary": true
+          },
+          {
+            "case_index": 3,
+            "std_m": 0.13998428660178527,
+            "speed_rms_mps": 0.04116288938087762,
+            "drift_mps": 0.006829206354378233,
+            "bias_m": 0.9106234868483423,
+            "stationary": true
+          }
+        ],
+        "formal_final_acceptance": false
+      },
+      "paired_before": {
+        "count": 4,
+        "safe": 4,
+        "rmse_pass": 4,
+        "steady": 4,
+        "joint": 4,
+        "rmse_3d_h_xy_m": [
+          0.7030851983141212,
+          0.04051855963714545,
+          0.7019166919324102
+        ],
+        "winds": {
+          "1": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 0.18819511281442675,
+            "peak_wind_mps": 1.2000001668930054
+          },
+          "5": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 1.0363982654877562,
+            "peak_wind_mps": 6.0
+          }
+        }
+      }
+    },
+    "heavy_low": {
+      "count": 4,
+      "safe": 4,
+      "rmse_pass": 4,
+      "steady": 4,
+      "joint": 4,
+      "rmse_3d_h_xy_m": [
+        0.6840368130760395,
+        0.10292622613544207,
+        0.6762488843737492
+      ],
+      "winds": {
+        "1": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 0.2674214557339628,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 1.0295636600161673,
+          "peak_wind_mps": 6.0
+        }
+      },
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1",
+      "seed_pair": [
+        21830031,
+        21830032
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.53,
+        "inertia_body_kgm2": [
+          0.012340830498337537,
+          0.0060051734130791784,
+          0.01505232301806209
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0021835342783055834,
+        "motor_speed_polynomial": [
+          -348.57,
+          1142.1000000000001,
+          -29.25
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "peak_tension_n": 21.025066375732422,
+      "fullrate_audit": {
+        "numerical_integrity_passed": true,
+        "duration_s": 120.0,
+        "count": 4,
+        "safe_completed": 4,
+        "strong_stationary": 2,
+        "strong_count": 2,
+        "fullrate_scoring_recomputed": true,
+        "tail_motion_recomputed": true,
+        "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "rows": [
+          {
+            "case_index": 0,
+            "std_m": 0.046052867956086305,
+            "speed_rms_mps": 0.015184495057341934,
+            "drift_mps": 0.0030330319699178993,
+            "bias_m": 0.17610207765551578,
+            "stationary": true
+          },
+          {
+            "case_index": 1,
+            "std_m": 0.13741345447852057,
+            "speed_rms_mps": 0.03542262252116513,
+            "drift_mps": 0.005827481658879876,
+            "bias_m": 0.9798430529568055,
+            "stationary": true
+          },
+          {
+            "case_index": 2,
+            "std_m": 0.05747012279329335,
+            "speed_rms_mps": 0.017362853116905132,
+            "drift_mps": 0.00048769392663196336,
+            "bias_m": 0.2023298411942955,
+            "stationary": true
+          },
+          {
+            "case_index": 3,
+            "std_m": 0.13008587989159406,
+            "speed_rms_mps": 0.036025068397024844,
+            "drift_mps": 0.008533457122306484,
+            "bias_m": 0.7745718008794256,
+            "stationary": true
+          }
+        ],
+        "formal_final_acceptance": false
+      },
+      "paired_before": {
+        "count": 4,
+        "safe": 4,
+        "rmse_pass": 4,
+        "steady": 4,
+        "joint": 4,
+        "rmse_3d_h_xy_m": [
+          0.6825335916683415,
+          0.10292955664526489,
+          0.6747278044696955
+        ],
+        "winds": {
+          "1": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 0.2575132938409349,
+            "peak_wind_mps": 1.2000001668930054
+          },
+          "5": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 1.0292350182214152,
+            "peak_wind_mps": 6.0
+          }
+        }
+      }
+    },
+    "heavy_high": {
+      "count": 4,
+      "safe": 4,
+      "rmse_pass": 4,
+      "steady": 4,
+      "joint": 4,
+      "rmse_3d_h_xy_m": [
+        0.7393792603520362,
+        0.019420271922842257,
+        0.7391241733816903
+      ],
+      "winds": {
+        "1": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 0.2594828924327171,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 2,
+          "safe": 2,
+          "rmse_pass": 2,
+          "steady": 2,
+          "joint": 2,
+          "worst_3d_rmse_m": 1.1244419058194441,
+          "peak_wind_mps": 6.0
+        }
+      },
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1",
+      "seed_pair": [
+        21830041,
+        21830042
+      ],
+      "actual_vehicle_spec": {
+        "mass_kg": 2.53,
+        "inertia_body_kgm2": [
+          0.013676658102819756,
+          0.005408594998017489,
+          0.014632340212467674
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.0018432043939648883,
+        "motor_speed_polynomial": [
+          -426.03000000000003,
+          1395.9,
+          -35.75
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "nominal_vehicle_spec": {
+        "mass_kg": 2.3,
+        "inertia_body_kgm2": [
+          0.0126,
+          0.0055,
+          0.0158
+        ],
+        "rotor_dx_m": 0.12,
+        "rotor_dy_m": 0.12,
+        "kf": 2.009e-05,
+        "km": 5.732e-07,
+        "motor_tau_s": 0.002,
+        "motor_speed_polynomial": [
+          -387.3,
+          1269,
+          -32.5
+        ],
+        "motor_deadzone": 0,
+        "rotor_inertia_kgm2": 8.8493e-06,
+        "include_gyro": true
+      },
+      "peak_tension_n": 3.833987236022949,
+      "fullrate_audit": {
+        "numerical_integrity_passed": true,
+        "duration_s": 120.0,
+        "count": 4,
+        "safe_completed": 4,
+        "strong_stationary": 2,
+        "strong_count": 2,
+        "fullrate_scoring_recomputed": true,
+        "tail_motion_recomputed": true,
+        "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "rows": [
+          {
+            "case_index": 0,
+            "std_m": 0.09195400741445497,
+            "speed_rms_mps": 0.018231283904273653,
+            "drift_mps": 0.009045360496194171,
+            "bias_m": 0.1166198828992944,
+            "stationary": true
+          },
+          {
+            "case_index": 1,
+            "std_m": 0.1402354875847748,
+            "speed_rms_mps": 0.034124711844740814,
+            "drift_mps": 0.004996252377305971,
+            "bias_m": 1.1089343195230232,
+            "stationary": true
+          },
+          {
+            "case_index": 2,
+            "std_m": 0.06372881759307253,
+            "speed_rms_mps": 0.01697298917975387,
+            "drift_mps": 0.004420368724955181,
+            "bias_m": 0.09346209600587604,
+            "stationary": true
+          },
+          {
+            "case_index": 3,
+            "std_m": 0.13671416444042386,
+            "speed_rms_mps": 0.041242765329207245,
+            "drift_mps": 0.006775810643409344,
+            "bias_m": 0.8913089599998691,
+            "stationary": true
+          }
+        ],
+        "formal_final_acceptance": false
+      },
+      "paired_before": {
+        "count": 4,
+        "safe": 4,
+        "rmse_pass": 4,
+        "steady": 4,
+        "joint": 4,
+        "rmse_3d_h_xy_m": [
+          0.7388248122562838,
+          0.01943623611052502,
+          0.7385691138487914
+        ],
+        "winds": {
+          "1": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 0.2540678329553001,
+            "peak_wind_mps": 1.2000001668930054
+          },
+          "5": {
+            "count": 2,
+            "safe": 2,
+            "rmse_pass": 2,
+            "steady": 2,
+            "joint": 2,
+            "worst_3d_rmse_m": 1.1243043908982608,
+            "peak_wind_mps": 6.0
+          }
+        }
+      }
+    }
+  },
+  "cases": {
+    "nominal": [
+      {
+        "attachment": 2,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.3080345894651039,
+        "height_rmse_m": 0.033556576164984246,
+        "horizontal_rmse_m": 0.3062013463442294,
+        "terminal30_horizontal_rmse_m": 0.2854262087722737,
+        "terminal30_height_rmse_m": 0.04731035942761497,
+        "origin_dwell_fraction": 0.949,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.28932056748356716,
+        "late_horizontal_std_m": 0.18981457201560192,
+        "late_horizontal_bias_m": 0.21316319783456902,
+        "late_horizontal_drift_mps": 0.019873493204865512,
+        "late_horizontal_speed_rms_mps": 0.029097645603714774,
+        "late_detrended_position_std_m": 0.08050286653616444,
+        "late_detrended_height_std_m": 0.008533252138734685,
+        "late_speed_rms_mps": 0.037863336223851615,
+        "late_angular_acceleration_rms_radps2": 0.9842328357283874,
+        "late_motor_step_rms_normalized": 0.003384267518455943,
+        "stationarity_working_criteria_passed": false
+      },
+      {
+        "attachment": 2,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 1.0437695151141462,
+        "height_rmse_m": 0.021020343138299823,
+        "horizontal_rmse_m": 1.043557830623664,
+        "terminal30_horizontal_rmse_m": 0.9985705606291584,
+        "terminal30_height_rmse_m": 0.012626425142323636,
+        "origin_dwell_fraction": 0.022416666666666668,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.9986503844903664,
+        "late_horizontal_std_m": 0.1277991452752494,
+        "late_horizontal_bias_m": 0.9903587947294475,
+        "late_horizontal_drift_mps": 0.005552982390464417,
+        "late_horizontal_speed_rms_mps": 0.033774328472269674,
+        "late_detrended_position_std_m": 0.11881242168433755,
+        "late_detrended_height_std_m": 0.009820425836473802,
+        "late_speed_rms_mps": 0.0423286736067951,
+        "late_angular_acceleration_rms_radps2": 0.9867741737413601,
+        "late_motor_step_rms_normalized": 0.0033153252541075623,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.1338512596132429,
+        "height_rmse_m": 0.014122524160819097,
+        "horizontal_rmse_m": 0.13310414723583494,
+        "terminal30_horizontal_rmse_m": 0.055239423285805465,
+        "terminal30_height_rmse_m": 0.016887278994418487,
+        "origin_dwell_fraction": 1.0,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.057763085760384386,
+        "late_horizontal_std_m": 0.03799968683167539,
+        "late_horizontal_bias_m": 0.04009261385408143,
+        "late_horizontal_drift_mps": 0.000847355999070954,
+        "late_horizontal_speed_rms_mps": 0.013892668540629701,
+        "late_detrended_position_std_m": 0.03780285257851546,
+        "late_detrended_height_std_m": 0.00623942080414913,
+        "late_speed_rms_mps": 0.026291308094273942,
+        "late_angular_acceleration_rms_radps2": 0.9950483556824331,
+        "late_motor_step_rms_normalized": 0.0033744980077689392,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.8440956549270203,
+        "height_rmse_m": 0.01614627053419943,
+        "horizontal_rmse_m": 0.8439412139565835,
+        "terminal30_horizontal_rmse_m": 0.8041997743229046,
+        "terminal30_height_rmse_m": 0.010914066353756495,
+        "origin_dwell_fraction": 0.03983333333333333,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.8042738300089485,
+        "late_horizontal_std_m": 0.12350646513356629,
+        "late_horizontal_bias_m": 0.7946593168541688,
+        "late_horizontal_drift_mps": 0.00692205830837257,
+        "late_horizontal_speed_rms_mps": 0.0360418345348593,
+        "late_detrended_position_std_m": 0.10831581435602157,
+        "late_detrended_height_std_m": 0.008490297542887675,
+        "late_speed_rms_mps": 0.0428020727954747,
+        "late_angular_acceleration_rms_radps2": 0.959669140908241,
+        "late_motor_step_rms_normalized": 0.0033388061770502518,
+        "stationarity_working_criteria_passed": true
+      }
+    ],
+    "light_low": [
+      {
+        "attachment": 2,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.28081805435071183,
+        "height_rmse_m": 0.043377759975501154,
+        "horizontal_rmse_m": 0.27744756187219805,
+        "terminal30_horizontal_rmse_m": 0.33257084486323873,
+        "terminal30_height_rmse_m": 0.03980510561168924,
+        "origin_dwell_fraction": 1.0,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.3349444929662802,
+        "late_horizontal_std_m": 0.1686591481919743,
+        "late_horizontal_bias_m": 0.286631224167446,
+        "late_horizontal_drift_mps": 0.008817018315318328,
+        "late_horizontal_speed_rms_mps": 0.0375392272481773,
+        "late_detrended_position_std_m": 0.150659634369809,
+        "late_detrended_height_std_m": 0.009105076041408233,
+        "late_speed_rms_mps": 0.04442742298004648,
+        "late_angular_acceleration_rms_radps2": 0.7994129743613313,
+        "late_motor_step_rms_normalized": 0.0030679033358305,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 2,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 1.0002475398582535,
+        "height_rmse_m": 0.04058483746927097,
+        "horizontal_rmse_m": 0.9994238399998678,
+        "terminal30_horizontal_rmse_m": 0.9688108431977871,
+        "terminal30_height_rmse_m": 0.01218365046969606,
+        "origin_dwell_fraction": 0.04716666666666667,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.9688874502565121,
+        "late_horizontal_std_m": 0.1361758289617325,
+        "late_horizontal_bias_m": 0.959192678002015,
+        "late_horizontal_drift_mps": 0.005380866984379267,
+        "late_horizontal_speed_rms_mps": 0.034544151314197476,
+        "late_detrended_position_std_m": 0.1284161413965419,
+        "late_detrended_height_std_m": 0.010880186085230408,
+        "late_speed_rms_mps": 0.04321765514272346,
+        "late_angular_acceleration_rms_radps2": 0.8036904274688336,
+        "late_motor_step_rms_normalized": 0.002978594954025639,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.21751054799444583,
+        "height_rmse_m": 0.04238850409156393,
+        "horizontal_rmse_m": 0.2133402287655181,
+        "terminal30_horizontal_rmse_m": 0.1864355619147729,
+        "terminal30_height_rmse_m": 0.0324809478206157,
+        "origin_dwell_fraction": 1.0,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.18924383930062433,
+        "late_horizontal_std_m": 0.08385566479040377,
+        "late_horizontal_bias_m": 0.1665126007994231,
+        "late_horizontal_drift_mps": 0.007342237351317989,
+        "late_horizontal_speed_rms_mps": 0.019926187950074274,
+        "late_detrended_position_std_m": 0.05534165282440878,
+        "late_detrended_height_std_m": 0.008605769569969893,
+        "late_speed_rms_mps": 0.032215602447574425,
+        "late_angular_acceleration_rms_radps2": 0.7876020173354025,
+        "late_motor_step_rms_normalized": 0.0029874794631271594,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.8580728876452018,
+        "height_rmse_m": 0.04487487024452961,
+        "horizontal_rmse_m": 0.8568986675986325,
+        "terminal30_horizontal_rmse_m": 0.8492672660302295,
+        "terminal30_height_rmse_m": 0.025824520529369205,
+        "origin_dwell_fraction": 0.03358333333333333,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.8496598111273963,
+        "late_horizontal_std_m": 0.13317433238804582,
+        "late_horizontal_bias_m": 0.8387606845684329,
+        "late_horizontal_drift_mps": 0.0072613775453043965,
+        "late_horizontal_speed_rms_mps": 0.039422469188796896,
+        "late_detrended_position_std_m": 0.11777687177290527,
+        "late_detrended_height_std_m": 0.009516226530078541,
+        "late_speed_rms_mps": 0.04555428708566012,
+        "late_angular_acceleration_rms_radps2": 0.7942441352091907,
+        "late_motor_step_rms_normalized": 0.0029654141746356844,
+        "stationarity_working_criteria_passed": true
+      }
+    ],
+    "light_high": [
+      {
+        "attachment": 2,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.17181900269647238,
+        "height_rmse_m": 0.0395062960019431,
+        "horizontal_rmse_m": 0.1672154964822855,
+        "terminal30_horizontal_rmse_m": 0.11610151209838239,
+        "terminal30_height_rmse_m": 0.011734887341771435,
+        "origin_dwell_fraction": 1.0,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.11669305334167084,
+        "late_horizontal_std_m": 0.05433211612241616,
+        "late_horizontal_bias_m": 0.1026040071096523,
+        "late_horizontal_drift_mps": 0.002400304185845618,
+        "late_horizontal_speed_rms_mps": 0.016363416845601185,
+        "late_detrended_position_std_m": 0.050922011984082464,
+        "late_detrended_height_std_m": 0.008554643651213955,
+        "late_speed_rms_mps": 0.034439119877752236,
+        "late_angular_acceleration_rms_radps2": 1.3037049012474713,
+        "late_motor_step_rms_normalized": 0.004161849602418084,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 2,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 1.0387998286875846,
+        "height_rmse_m": 0.044365823885128844,
+        "horizontal_rmse_m": 1.0378519922187117,
+        "terminal30_horizontal_rmse_m": 0.9708578326581725,
+        "terminal30_height_rmse_m": 0.030923161676175835,
+        "origin_dwell_fraction": 0.043916666666666666,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.9713501803630119,
+        "late_horizontal_std_m": 0.14497886072439659,
+        "late_horizontal_bias_m": 0.9599719063113167,
+        "late_horizontal_drift_mps": 0.005551390493238572,
+        "late_horizontal_speed_rms_mps": 0.03647289451273132,
+        "late_detrended_position_std_m": 0.13730525399123833,
+        "late_detrended_height_std_m": 0.012050215370266919,
+        "late_speed_rms_mps": 0.048518822543128136,
+        "late_angular_acceleration_rms_radps2": 1.3167769114172154,
+        "late_motor_step_rms_normalized": 0.004141212080000617,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.12310794798982225,
+        "height_rmse_m": 0.03813737495500532,
+        "horizontal_rmse_m": 0.11705172997357242,
+        "terminal30_horizontal_rmse_m": 0.07466773219129419,
+        "terminal30_height_rmse_m": 0.008158533635732948,
+        "origin_dwell_fraction": 1.0,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.07511212883245759,
+        "late_horizontal_std_m": 0.05488318127102065,
+        "late_horizontal_bias_m": 0.05062713343914747,
+        "late_horizontal_drift_mps": 0.003561155723936137,
+        "late_horizontal_speed_rms_mps": 0.014680677623958898,
+        "late_detrended_position_std_m": 0.045964911060119844,
+        "late_detrended_height_std_m": 0.007193511897142377,
+        "late_speed_rms_mps": 0.030432612774545797,
+        "late_angular_acceleration_rms_radps2": 1.2991366510224627,
+        "late_motor_step_rms_normalized": 0.004041071953528476,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.9260855787851038,
+        "height_rmse_m": 0.03976021072258051,
+        "horizontal_rmse_m": 0.9252316601138532,
+        "terminal30_horizontal_rmse_m": 0.9213201047223216,
+        "terminal30_height_rmse_m": 0.02445333895666518,
+        "origin_dwell_fraction": 0.03766666666666667,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.9216445633110553,
+        "late_horizontal_std_m": 0.13998428660180262,
+        "late_horizontal_bias_m": 0.9106234868483423,
+        "late_horizontal_drift_mps": 0.0068292063543781804,
+        "late_horizontal_speed_rms_mps": 0.041162889380877615,
+        "late_detrended_position_std_m": 0.1273832245650285,
+        "late_detrended_height_std_m": 0.011346341869488687,
+        "late_speed_rms_mps": 0.05414130689263822,
+        "late_angular_acceleration_rms_radps2": 1.3154739333942578,
+        "late_motor_step_rms_normalized": 0.004152173956564182,
+        "stationarity_working_criteria_passed": true
+      }
+    ],
+    "heavy_low": [
+      {
+        "attachment": 2,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.2674214557339628,
+        "height_rmse_m": 0.10327970756638316,
+        "horizontal_rmse_m": 0.24667293526423653,
+        "terminal30_horizontal_rmse_m": 0.18202419724056113,
+        "terminal30_height_rmse_m": 0.02636471181958052,
+        "origin_dwell_fraction": 0.9861666666666666,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.18392364293419908,
+        "late_horizontal_std_m": 0.0460528679560899,
+        "late_horizontal_bias_m": 0.17610207765551578,
+        "late_horizontal_drift_mps": 0.003033031969917915,
+        "late_horizontal_speed_rms_mps": 0.015184495057341957,
+        "late_detrended_position_std_m": 0.03841969382211369,
+        "late_detrended_height_std_m": 0.006719551289634395,
+        "late_speed_rms_mps": 0.025914537732329337,
+        "late_angular_acceleration_rms_radps2": 0.7655757657714661,
+        "late_motor_step_rms_normalized": 0.0029823789263237173,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 2,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 1.0295636600161673,
+        "height_rmse_m": 0.10174660458063649,
+        "horizontal_rmse_m": 1.024523771555447,
+        "terminal30_horizontal_rmse_m": 0.9894315872629369,
+        "terminal30_height_rmse_m": 0.018846511028151793,
+        "origin_dwell_fraction": 0.023916666666666666,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.9896110634371428,
+        "late_horizontal_std_m": 0.13741345447855302,
+        "late_horizontal_bias_m": 0.9798430529568055,
+        "late_horizontal_drift_mps": 0.005827481658880042,
+        "late_horizontal_speed_rms_mps": 0.035422622521165174,
+        "late_detrended_position_std_m": 0.12835640714836663,
+        "late_detrended_height_std_m": 0.011826884105944754,
+        "late_speed_rms_mps": 0.04141956885093702,
+        "late_angular_acceleration_rms_radps2": 0.7532843957941414,
+        "late_motor_step_rms_normalized": 0.0029748263395816188,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.25261636962065925,
+        "height_rmse_m": 0.10210879321530074,
+        "horizontal_rmse_m": 0.2310602184462667,
+        "terminal30_horizontal_rmse_m": 0.21033349621345512,
+        "terminal30_height_rmse_m": 0.014059646809701442,
+        "origin_dwell_fraction": 0.9664166666666667,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.2108028778737362,
+        "late_horizontal_std_m": 0.05747012279329501,
+        "late_horizontal_bias_m": 0.2023298411942955,
+        "late_horizontal_drift_mps": 0.0004876939266319719,
+        "late_horizontal_speed_rms_mps": 0.01736285311690514,
+        "late_detrended_position_std_m": 0.05773561936044834,
+        "late_detrended_height_std_m": 0.006958816676106224,
+        "late_speed_rms_mps": 0.027635895628253252,
+        "late_angular_acceleration_rms_radps2": 0.7655993719079331,
+        "late_motor_step_rms_normalized": 0.0030277658019532646,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.822371480147396,
+        "height_rmse_m": 0.10454643425466777,
+        "horizontal_rmse_m": 0.8156990219710046,
+        "terminal30_horizontal_rmse_m": 0.7854195126668295,
+        "terminal30_height_rmse_m": 0.007957175120389811,
+        "origin_dwell_fraction": 0.023583333333333335,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.7854598191509746,
+        "late_horizontal_std_m": 0.13008587989160425,
+        "late_horizontal_bias_m": 0.7745718008794256,
+        "late_horizontal_drift_mps": 0.008533457122306461,
+        "late_horizontal_speed_rms_mps": 0.03602506839702497,
+        "late_detrended_position_std_m": 0.10734374610214552,
+        "late_detrended_height_std_m": 0.007863514329151533,
+        "late_speed_rms_mps": 0.041077725918561625,
+        "late_angular_acceleration_rms_radps2": 0.7450870256849277,
+        "late_motor_step_rms_normalized": 0.0029351717698215952,
+        "stationarity_working_criteria_passed": true
+      }
+    ],
+    "heavy_high": [
+      {
+        "attachment": 2,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.2594828924327171,
+        "height_rmse_m": 0.021996734358097486,
+        "horizontal_rmse_m": 0.2585488641298359,
+        "terminal30_horizontal_rmse_m": 0.14851173862455308,
+        "terminal30_height_rmse_m": 0.02771809981173852,
+        "origin_dwell_fraction": 1.0,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.15107623778673981,
+        "late_horizontal_std_m": 0.09195400741445489,
+        "late_horizontal_bias_m": 0.1166198828992944,
+        "late_horizontal_drift_mps": 0.009045360496194199,
+        "late_horizontal_speed_rms_mps": 0.018231283904273678,
+        "late_detrended_position_std_m": 0.049286252379524276,
+        "late_detrended_height_std_m": 0.010487397207009702,
+        "late_speed_rms_mps": 0.03781583913255862,
+        "late_angular_acceleration_rms_radps2": 1.2851934708557051,
+        "late_motor_step_rms_normalized": 0.0038630613099979896,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 2,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.05
+        ],
+        "tether_rest_length_m": 4.9,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 1.1244419058194441,
+        "height_rmse_m": 0.021940459230629535,
+        "horizontal_rmse_m": 1.1242278309184544,
+        "terminal30_horizontal_rmse_m": 1.1177662178716021,
+        "terminal30_height_rmse_m": 0.020481350516351374,
+        "origin_dwell_fraction": 0.04033333333333333,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 1.1179538464145158,
+        "late_horizontal_std_m": 0.14023548758478951,
+        "late_horizontal_bias_m": 1.1089343195230232,
+        "late_horizontal_drift_mps": 0.004996252377306015,
+        "late_horizontal_speed_rms_mps": 0.03412471184474087,
+        "late_detrended_position_std_m": 0.1337658229152343,
+        "late_detrended_height_std_m": 0.009974644372368153,
+        "late_speed_rms_mps": 0.043696648330744686,
+        "late_angular_acceleration_rms_radps2": 1.2821449432744172,
+        "late_motor_step_rms_normalized": 0.0038423023043803834,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 1.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 0.9733937382698059,
+        "actual_rms_wind_mps": 0.9940959215164185,
+        "actual_peak_wind_mps": 1.2000001668930054,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.18860219033044495,
+        "height_rmse_m": 0.014295914737383963,
+        "horizontal_rmse_m": 0.1880595996466621,
+        "terminal30_horizontal_rmse_m": 0.11312172905373642,
+        "terminal30_height_rmse_m": 0.00872715867880837,
+        "origin_dwell_fraction": 1.0,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.11345787271180702,
+        "late_horizontal_std_m": 0.06372881759307264,
+        "late_horizontal_bias_m": 0.09346209600587604,
+        "late_horizontal_drift_mps": 0.004420368724955178,
+        "late_horizontal_speed_rms_mps": 0.016972989179753893,
+        "late_detrended_position_std_m": 0.051638517118341366,
+        "late_detrended_height_std_m": 0.00840527039313729,
+        "late_speed_rms_mps": 0.033047028865975575,
+        "late_angular_acceleration_rms_radps2": 1.2781114897636325,
+        "late_motor_step_rms_normalized": 0.003885218887678981,
+        "stationarity_working_criteria_passed": true
+      },
+      {
+        "attachment": 1,
+        "wind_speed": 5.0,
+        "direction_rad": 1.9634954084936207,
+        "gust_fraction": 0,
+        "wind_profile": "time_varying",
+        "group": "time_varying",
+        "trial": 0,
+        "preflight_heading_rad": 0,
+        "attachment_b_m": [
+          0,
+          0,
+          0.1
+        ],
+        "tether_rest_length_m": 4.85,
+        "heading_command_deg": 0,
+        "actual_mean_wind_mps": 4.866968631744385,
+        "actual_rms_wind_mps": 4.970479488372803,
+        "actual_peak_wind_mps": 6.0,
+        "completed": true,
+        "failure_code": 0,
+        "safe_duration_s": 120.0,
+        "position_rmse_m": 0.9052375408307711,
+        "height_rmse_m": 0.018411262704615513,
+        "horizontal_rmse_m": 0.9050502918263513,
+        "terminal30_horizontal_rmse_m": 0.9017330122146823,
+        "terminal30_height_rmse_m": 0.019795832274522272,
+        "origin_dwell_fraction": 0.04616666666666667,
+        "allocation_saturation_fraction": 0.0,
+        "tail_statistics_complete": true,
+        "samples": 3000.0,
+        "late_origin_rmse_m": 0.9019502757415009,
+        "late_horizontal_std_m": 0.1367141644404451,
+        "late_horizontal_bias_m": 0.8913089599998691,
+        "late_horizontal_drift_mps": 0.006775810643409338,
+        "late_horizontal_speed_rms_mps": 0.041242765329207294,
+        "late_detrended_position_std_m": 0.1241886561253062,
+        "late_detrended_height_std_m": 0.013244995644173696,
+        "late_speed_rms_mps": 0.05703597779298744,
+        "late_angular_acceleration_rms_radps2": 1.2544327173853071,
+        "late_motor_step_rms_normalized": 0.0038048387358671823,
+        "stationarity_working_criteria_passed": true
+      }
+    ]
+  },
+  "overall": {
+    "count": 20,
+    "safe": 20,
+    "rmse_pass": 20,
+    "steady": 19,
+    "joint": 19,
+    "rmse_3d_h_xy_m": [
+      0.7006238902573361,
+      0.05468801155281441,
+      0.6984862611331185
+    ],
+    "winds": {
+      "1": {
+        "count": 10,
+        "safe": 10,
+        "rmse_pass": 10,
+        "steady": 9,
+        "joint": 9,
+        "worst_3d_rmse_m": 0.3080345894651039,
+        "peak_wind_mps": 1.2000001668930054
+      },
+      "5": {
+        "count": 10,
+        "safe": 10,
+        "rmse_pass": 10,
+        "steady": 10,
+        "joint": 10,
+        "worst_3d_rmse_m": 1.1244419058194441,
+        "peak_wind_mps": 6.0
+      }
+    }
+  },
+  "baseline": {
+    "count": 20,
+    "safe": 20,
+    "rmse_pass": 20,
+    "steady": 19,
+    "joint": 19,
+    "rmse_3d_h_xy_m": [
+      0.6995795939391133,
+      0.05469024435302075,
+      0.6974385890016566
+    ],
+    "winds": {
+      "1": {
+        "count": 10,
+        "safe": 10,
+        "rmse_pass": 10,
+        "steady": 9,
+        "joint": 9,
+        "worst_3d_rmse_m": 0.3066198675132506,
+        "peak_wind_mps": 1.2000001668930054
+      },
+      "5": {
+        "count": 10,
+        "safe": 10,
+        "rmse_pass": 10,
+        "steady": 10,
+        "joint": 10,
+        "worst_3d_rmse_m": 1.1243043908982608,
+        "peak_wind_mps": 6.0
+      }
+    }
+  },
+  "formal_final_acceptance": false
+}

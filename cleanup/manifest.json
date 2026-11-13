@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-10",
-  "scope": "Three-axis acceleration BPTT and frozen rate/thrust baselines, weights and Adam, P2/P3/PX4 development evidence, accepted tracking results and regression fixtures",
+  "date": "2026-11-13",
+  "scope": "Latest horizontal acceleration BPTT with vertical PID, frozen baselines, accepted tracking and PX4 results, and regression fixtures",
   "files": [
     {
       "path": ".gitattributes",
@@ -16,8 +16,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 16273,
-      "sha256": "93a7d5a957b5d66de5315795db1bd5d224e2354baa0c588faebd66031ae477c8",
+      "bytes": 17113,
+      "sha256": "2204dfe8cbd2b9ff39c29820f24d6abfa79453bc8f755ab1bfb3747b48b82b55",
       "kind": "source_or_configuration"
     },
     {
@@ -124,8 +124,8 @@
     },
     {
       "path": "cleanup/package.py",
-      "bytes": 4999,
-      "sha256": "f2e87ac0bf11ce49f2da30351258b87b584f10023879f0ff7580cb00e5999884",
+      "bytes": 5261,
+      "sha256": "bab13b736057e824f6012d2a9875cf9b81c2492078a9b096e2a90abb24edd849",
       "kind": "source_or_configuration"
     },
     {
@@ -142,8 +142,8 @@
     },
     {
       "path": "cleanup/README.md",
-      "bytes": 2578,
-      "sha256": "60a021224e43b6caf8b1639bd8dd25044027f97afeea69cdbe6c904d7dd608bc",
+      "bytes": 3039,
+      "sha256": "2a15d0c5389fc809f764d33d2c8349590c786b2c9f3a20dc934fd51e4bb5f6ba",
       "kind": "source_or_configuration"
     },
     {
@@ -183,6 +183,12 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "cleanup/retention_acceleration_20261113.json",
+      "bytes": 1111134,
+      "sha256": "cc7f04bd42e8d5058bc2913aaa942cadc236811620a6340dec498987be47a6a7",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "cleanup/retention_actor31.json",
       "bytes": 135446,
       "sha256": "48b7dd933f7bb1c8a238a247703be9e7205cc3c03a051979be4bc04d55c5fe3a",
@@ -216,6 +222,18 @@
       "path": "cleanup/update_20261109.py",
       "bytes": 17543,
       "sha256": "da10462fc87f596c92daf89b6be77395980c3c4753145657abae2294d560dd11",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-acceleration-hover.md",
+      "bytes": 3046,
+      "sha256": "414bde473c6b2c975ad98e78a24d00dd4362d112a4a799ca1e6ccc59d95be386",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-10-acceleration-hover-design.md",
+      "bytes": 1013,
+      "sha256": "136949f66411f0c3c345c2ec0471c5642cbd9784116d5ebe223d3f41be900fc2",
       "kind": "source_or_configuration"
     },
     {
@@ -531,6 +549,18 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "P2/acceleration_altitude_robust_low_frequency_protocol.json",
+      "bytes": 2725,
+      "sha256": "0443adb301e17a4ee3fdb4d551013cd2bbca9bfda04b012cf3d94e5f3a4d8ecf",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P2/acceleration_hover_resume.json",
+      "bytes": 2729,
+      "sha256": "e43dfec8b76a1b92b2d7cfa1c4e507f45b03b58bd53fe6a70171a2c3fb092c8c",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P2/acceleration_protocol.json",
       "bytes": 980,
       "sha256": "2de5f31559646cd94c082b69551c0f2e44097e195ac749abb1930ba0e2f02949",
@@ -622,8 +652,8 @@
     },
     {
       "path": "P2/evaluate_acceleration.py",
-      "bytes": 5360,
-      "sha256": "4ecc1394d785053bde49e334bcbd03c0b255b9572f81fb1ddc255059fe5e079b",
+      "bytes": 6101,
+      "sha256": "202b20f410b149f21af6311340fcbf73a2fb6d2a68bd1fca31a31afd03c807dc",
       "kind": "source_or_configuration"
     },
     {
@@ -682,8 +712,8 @@
     },
     {
       "path": "P2/hover_bptt/acceleration.py",
-      "bytes": 8013,
-      "sha256": "b99b3a8074b4be1d67bd4adc326868ab80170665b629964da73ac328cea1e744",
+      "bytes": 13692,
+      "sha256": "00b00ee7760accdf9c4852b9ae447b92e2ec3fc2b6858793c14cacd75ea3c370",
       "kind": "source_or_configuration"
     },
     {
@@ -772,8 +802,8 @@
     },
     {
       "path": "P2/hover_bptt/environment.py",
-      "bytes": 17707,
-      "sha256": "07ab54fbb930166ebad3cfc660cd6dd632809e57cb9c57f51e196da84f29f2df",
+      "bytes": 17869,
+      "sha256": "88c86f700cb41113836b8984cea8903f39260231447ce5f97dd1eba2de374021",
       "kind": "source_or_configuration"
     },
     {
@@ -814,8 +844,8 @@
     },
     {
       "path": "P2/hover_bptt/gradient.py",
-      "bytes": 2617,
-      "sha256": "2cca635a3908e01956947ce8caa601e8f88af6a35adad2c7ee7bfcaa1817f796",
+      "bytes": 4116,
+      "sha256": "3ed8f760a1f6a39e700572d6257c3893689723cd7bab2ec5c598cb60e47adb5c",
       "kind": "source_or_configuration"
     },
     {
@@ -874,8 +904,8 @@
     },
     {
       "path": "P2/hover_bptt/onboard.py",
-      "bytes": 8399,
-      "sha256": "2d5ae317d85a15410b4f93aca66445d30e05bb3c4437e92842e828fb76caa317",
+      "bytes": 8582,
+      "sha256": "335b84aa3bbb4b0501466a19a2add66cf2312225081b992cc745c7380f5ee5a5",
       "kind": "source_or_configuration"
     },
     {
@@ -904,8 +934,8 @@
     },
     {
       "path": "P2/hover_bptt/sensors.py",
-      "bytes": 13730,
-      "sha256": "b0b839699f4da4a1da8b9dc9ced527238591d3169c23af8c9203400f0626415f",
+      "bytes": 15772,
+      "sha256": "7fdd7a5add5788c50509b98501e80677fb9267379e46d01861c6ac9d81c34878",
       "kind": "source_or_configuration"
     },
     {
@@ -928,8 +958,8 @@
     },
     {
       "path": "P2/hover_bptt/training.py",
-      "bytes": 6512,
-      "sha256": "99dbc8f558a5ae8aa87b825bd43ae8df174ebce3aed46ef6cd9faca2180d402c",
+      "bytes": 6832,
+      "sha256": "2e2451b6e9ecb6a090bbc0b341d8f7643186d38c1f96cb2e30d1ca46829e727b",
       "kind": "source_or_configuration"
     },
     {
@@ -952,8 +982,8 @@
     },
     {
       "path": "P2/models.json",
-      "bytes": 2487,
-      "sha256": "a5935953e873ee76ccad80362395d4364bfc1074fe73c773e79ee3185dcf3ce8",
+      "bytes": 3174,
+      "sha256": "a0b168a21d99df4cda062acf6718200df2b749a7442c6da30eddae6c4fc8c077",
       "kind": "source_or_configuration"
     },
     {
@@ -970,8 +1000,8 @@
     },
     {
       "path": "P2/parallel_cohorts.py",
-      "bytes": 7587,
-      "sha256": "8cf4abd1aac2694f3f83becef673f6a77ecfcbb2a8c5af4fc1c7070a6f184d79",
+      "bytes": 7654,
+      "sha256": "a04cc83712c7c1bec9ff230ca69bbbfa0f51e35448a932aaf48008acb1ca7ea4",
       "kind": "source_or_configuration"
     },
     {
@@ -988,8 +1018,8 @@
     },
     {
       "path": "P2/PROGRESS.md",
-      "bytes": 1820,
-      "sha256": "6ff101abba2cd9e448ce9bdc8dbcd179a90585280b31facefa1b508d745e9bc9",
+      "bytes": 2106,
+      "sha256": "2b24cda005a4386c72d3f945fff36fe7da8fbb2c2d9c72bfaab881093493dc65",
       "kind": "source_or_configuration"
     },
     {
@@ -1024,8 +1054,8 @@
     },
     {
       "path": "P2/README.md",
-      "bytes": 4601,
-      "sha256": "8c28ee02fc31e138389bac7a1392ffbf7ddeb1458156191354682ec128cd7ad2",
+      "bytes": 3718,
+      "sha256": "1c52f9253722e5048e6d3c095f3df7ca730f0624eb5265d780c61aa218c7918a",
       "kind": "source_or_configuration"
     },
     {
@@ -1035,267 +1065,777 @@
       "kind": "source_or_configuration"
     },
     {
-      "path": "P2/results/acceleration/comparison.json",
-      "bytes": 87697,
-      "sha256": "a1099397eff9f0670e0ee3626dcadcef1750f085613c327aa2523f23697e37a5",
+      "path": "P2/results/acceleration_hover/altitude_robust/cases_time_varying.json",
+      "bytes": 1485,
+      "sha256": "2f0839edb4f16470e065b9bca1d0e14e1e456f07108d6cddea217543a089956f",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/initialization_history.json",
-      "bytes": 19895,
-      "sha256": "9e5e93e0de83fa8a5765d95477a043f1f9bbafab53ce4f25f5c6b80f7b73bb62",
+      "path": "P2/results/acceleration_hover/altitude_robust/drift_displacement_round/heldout/heavy_high.json",
+      "bytes": 1046,
+      "sha256": "43033a854b05d0219a01b43f8f2ff3a0982d5ee40e68136e952409e0a39c2c0f",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/flight/audit.json",
-      "bytes": 2201,
-      "sha256": "aadc986eeeef366834bcffcb6dfeb04e772f32ca303b637d0bc70cc9a69952f9",
+      "path": "P2/results/acceleration_hover/altitude_robust/drift_displacement_round/heldout/heavy_low.json",
+      "bytes": 1046,
+      "sha256": "e9c01ad9b1f64267e84d5d86aa636727abf8c4f8e716317e34b44f05cd8b2332",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/flight/fullrate.npz",
-      "bytes": 4980053,
-      "sha256": "df415bff5667d7a8e56c7d663561f214585564632aae18183a2cd21f08b8bcc7",
+      "path": "P2/results/acceleration_hover/altitude_robust/drift_displacement_round/heldout/light_high.json",
+      "bytes": 1046,
+      "sha256": "0d9b25fef9b94bb6220fcd9a5a4e402ee742af8ea771df5fc04c22659d833b50",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/flight/heading_witness.pt",
-      "bytes": 385577,
-      "sha256": "66596c42b01533f5e9279fa6840565d0c4d2d8e34e55bd0f54dea0967e37819a",
+      "path": "P2/results/acceleration_hover/altitude_robust/drift_displacement_round/heldout/light_low.json",
+      "bytes": 1046,
+      "sha256": "938d35338ab91e5c2adafa79c907534406765849ff1f8291ff37aacbbb55c930",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/flight/result.json",
-      "bytes": 16125,
-      "sha256": "ab51109eaa3ef77c277254abc4fdc7471e588330171776aadffd6b58550e9a32",
+      "path": "P2/results/acceleration_hover/altitude_robust/drift_displacement_round/heldout/nominal.json",
+      "bytes": 770,
+      "sha256": "bb395802718e416ef77262a2221fc0b4f992ec4839244b2c6c5e5a838f1f169b",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/flight/scene.xml",
-      "bytes": 65714,
-      "sha256": "52443969fc2570b04fbd60c9ad992c13d823f8fc401dfa9312e4dd8bdd3bee89",
+      "path": "P2/results/acceleration_hover/altitude_robust/heldout/heavy_high.json",
+      "bytes": 1027,
+      "sha256": "0c4bc14f2ab27082e2e5511159ba5fbaa9b3b2e9b02d8fa90648b74f58b15536",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/flight/trajectory.npz",
-      "bytes": 3226616,
-      "sha256": "deda28beb7b4484673b6e0a468eb5ef9adfcac60031cc194047e632e692b9fd6",
+      "path": "P2/results/acceleration_hover/altitude_robust/heldout/heavy_low.json",
+      "bytes": 1027,
+      "sha256": "5c6ccbdbd70717dc0dc41a7226abe628143163add68fdcf3aef806ff41feea0f",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/flight/wind_trace.pt",
-      "bytes": 1153705,
-      "sha256": "4cbf9c879b13642181316a0b790ea903ed1a27e437ad2910212906215b8258df",
+      "path": "P2/results/acceleration_hover/altitude_robust/heldout/light_high.json",
+      "bytes": 1027,
+      "sha256": "596a5721fb3ed963fe70e5472dd875f6d4c9701e07c7d3d7c1733ae32f584f72",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/frozen_source.zip",
-      "bytes": 166048,
-      "sha256": "fdc1601299391d8a7ddf69f0decdec7aecc72d411309c7e03c411c3ffaedef39",
+      "path": "P2/results/acceleration_hover/altitude_robust/heldout/light_low.json",
+      "bytes": 1027,
+      "sha256": "2481b6cc42fba717e501bfe8831ec4a710c5b56484fb8108318377ff3bfd8002",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/actor37/manifest.json",
-      "bytes": 11165,
-      "sha256": "737dfdd1af33f626622c856cf62f47a72225a10e710c9833d32f001bed0375aa",
+      "path": "P2/results/acceleration_hover/altitude_robust/heldout/nominal.json",
+      "bytes": 728,
+      "sha256": "c87ae9091c593edab4fd89a0149b811e3e009fc2c4827e4ecc459efcfa7f0c88",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/flight/audit.json",
-      "bytes": 2188,
-      "sha256": "706483a6779d32865816acea02b5f2d9dbf296e3c59d433df1518fd5b9957c38",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/frozen_source.zip",
+      "bytes": 162926,
+      "sha256": "88c068669f5618f58485155daf01be9d860a319e3218e0d05ffc35b326db4089",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/flight/fullrate.npz",
-      "bytes": 4977942,
-      "sha256": "d79f94b855b26348e5668c02c97aa097be5773e5ac4d2e35966c7fde6b986fb8",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/manifest.json",
+      "bytes": 13995,
+      "sha256": "b34b62058a3202e72820658134d1e0f31293e8a8f45462b43e6bce1bdc8205b4",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/flight/heading_witness.pt",
-      "bytes": 385577,
-      "sha256": "88aee756b974af4660b5287dac2372baf3c2394543ada17ccd5ce8e2415d889a",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/fullrate.npz",
+      "bytes": 9896891,
+      "sha256": "f8bd3c134dc10c7fb01b85c8682f5ffde0876fb963534f5c3893b188070c8ead",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/flight/result.json",
-      "bytes": 16271,
-      "sha256": "bfa42e67005126426a9f9158d5cac39cf0e285d1c29f940675bbf478fd58e5f7",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/heading_witness.pt",
+      "bytes": 769718,
+      "sha256": "530ba0a7a70f85bb322b53782db7296d5e212a854f0f91758ed321ce262a7679",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/flight/scene.xml",
-      "bytes": 65714,
-      "sha256": "52443969fc2570b04fbd60c9ad992c13d823f8fc401dfa9312e4dd8bdd3bee89",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/result.json",
+      "bytes": 29988,
+      "sha256": "354d9e161458fc936b24056cdb6ae07a732d51ed006a5fde99e44a324df39922",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/flight/trajectory.npz",
-      "bytes": 3190263,
-      "sha256": "36f24c80dc4bafb753efa523df2141f38db22c102e016809860aaaa3f4d239ed",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/scene.xml",
+      "bytes": 131142,
+      "sha256": "fcb1e966749a934fba7bb644df62d80d210b178773e04284cd0cf8b06c22254b",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/flight/wind_trace.pt",
-      "bytes": 1153705,
-      "sha256": "4cbf9c879b13642181316a0b790ea903ed1a27e437ad2910212906215b8258df",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/tilt_fullrate.npz",
+      "bytes": 464043,
+      "sha256": "d780ff75aec9e6c9999d81892a0feade682089e748b30f6c7c37f6ef50511510",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/frozen_source.zip",
-      "bytes": 166048,
-      "sha256": "fdc1601299391d8a7ddf69f0decdec7aecc72d411309c7e03c411c3ffaedef39",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/trajectory.npz",
+      "bytes": 6385435,
+      "sha256": "0b5a3bff9aa42ef429067b3f9cf1904dc601f384a0640aea8df0a610ba79b43a",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/initial/manifest.json",
-      "bytes": 11173,
-      "sha256": "a5e542afa53365235855aff5ecc4d804383fa8d9082ecafe665275191b5b6d91",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/wind_trace.pt",
+      "bytes": 2305875,
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/flight/audit.json",
-      "bytes": 2194,
-      "sha256": "3ef6ecc173bce9d271a7a56a5888f17e58d7e1d1e2669cabd016c64e322fc8da",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/summary.json",
+      "bytes": 27907,
+      "sha256": "d99aee032511963d07b92b10f7419f9e00a9f90acee4c50e4b243e51a336ec60",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/flight/fullrate.npz",
-      "bytes": 4977040,
-      "sha256": "6eec908075d4679f143f5ff8990a33241d8ca55332c921f014a24c067df3e834",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/frozen_source.zip",
+      "bytes": 162925,
+      "sha256": "74f6dd7d467a4d30c26157e89e37ded3646a6145b5820b8e8d7ce61d20395568",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/flight/heading_witness.pt",
-      "bytes": 385577,
-      "sha256": "4254497198c1363f792881e9141ae82dd77568dd92ad2ac5ae9013365dabe181",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/manifest.json",
+      "bytes": 13994,
+      "sha256": "20eed0687470be41761d6061f82010f205b73d492d9ce5880e40b996e865b619",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/flight/result.json",
-      "bytes": 16294,
-      "sha256": "693381e82b373030569324257bc52e788c542b62ff5e6056b987534a238185bf",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/fullrate.npz",
+      "bytes": 9885214,
+      "sha256": "1819e0991664f5f9df20c145b63fcabb2226f858389510a51d32c4c0d506a27b",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/flight/scene.xml",
-      "bytes": 65714,
-      "sha256": "52443969fc2570b04fbd60c9ad992c13d823f8fc401dfa9312e4dd8bdd3bee89",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/heading_witness.pt",
+      "bytes": 769718,
+      "sha256": "eac3a1a80fd9d7a750558d7878e795de0e167eb961e6af0303451e05609d03f4",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/flight/trajectory.npz",
-      "bytes": 3191038,
-      "sha256": "54299f3f0dc4aae05827442ae122f489c50de6f44d4e08c4127d3dfa8ab3437d",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/result.json",
+      "bytes": 30088,
+      "sha256": "6a09020789767a2820665305278fabf1a479de0611de8244511649d1fd3105a0",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/flight/wind_trace.pt",
-      "bytes": 1153705,
-      "sha256": "4cbf9c879b13642181316a0b790ea903ed1a27e437ad2910212906215b8258df",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/scene.xml",
+      "bytes": 131142,
+      "sha256": "5ab571bd6daa553d80905517be53ea3815a6bbd966075124c9454a25dd05e994",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/frozen_source.zip",
-      "bytes": 166048,
-      "sha256": "fdc1601299391d8a7ddf69f0decdec7aecc72d411309c7e03c411c3ffaedef39",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/tilt_fullrate.npz",
+      "bytes": 470988,
+      "sha256": "f797d2c032d31bff5c3cd1aa977083b2f8aadee300580bb4ce6477a0cd64a4d1",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/native120/step2/manifest.json",
-      "bytes": 11172,
-      "sha256": "81ee204a62abb891d92492e2fdea11835cbb062fdbe05d00ed43ce5da45923a3",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/trajectory.npz",
+      "bytes": 6385101,
+      "sha256": "5b8b60eba042176ee6ffdfb9085327d9cb5f8debd871b22a3f5d52eb428cfea1",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/qualification_transfer/frozen_source.zip",
-      "bytes": 161365,
-      "sha256": "afd7a10ae91cbc2d3e361affefa15795a0b63c1af33af24ec7e6fccfaef77cc5",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/wind_trace.pt",
+      "bytes": 2305875,
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/qualification_transfer/manifest.json",
-      "bytes": 7540,
-      "sha256": "acd7ec37597763aed0135b286349bb6e3032bf2c6cbcc3953d8e07ccdcd514a5",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/summary.json",
+      "bytes": 28010,
+      "sha256": "0b89a766a1660a99f81003f4bf1939a6f7017cda18c3bf75b1cb891bceaff6f3",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/qualification_transfer/qualification.json",
-      "bytes": 18538,
-      "sha256": "24c39f7b88c14408f32b1ac5553b99ead640fee502c03e251478216f264e084b",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/frozen_source.zip",
+      "bytes": 162927,
+      "sha256": "0966fe2500a3d7d5241d030230525b26b8df1568b3a7abbdc3370094b9e1211b",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/README.md",
-      "bytes": 3566,
-      "sha256": "209bb0b5c2ac97de388faf089863a3c36ce4ce69af680f5812cf46d3b5df473b",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/manifest.json",
+      "bytes": 13995,
+      "sha256": "14073ad070c64c7471dae47c95ff2439c662fc00413c355f9bbf88c8bafa02cf",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/replays/strong120.gif",
-      "bytes": 5859077,
-      "sha256": "72a6f1d455e5b80c6f3d9b530bd49728432c6f63bd23c592cdbf13f5e6acdeab",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/fullrate.npz",
+      "bytes": 9910320,
+      "sha256": "bb78e495277d44dc44f7b093297cceb763ca66eeba542650cbfd942be7ebcbc3",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/replays/strong120.json",
-      "bytes": 3734,
-      "sha256": "2c1d4275a770a2deebb53c917f7b7e0c6d625dd7969f2c59f2999cb3376cab84",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/heading_witness.pt",
+      "bytes": 769718,
+      "sha256": "5fc232cb658a29c85637b54b6599c165131e7655c7a9ab347aae2673c0f485c8",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/replays/strong120.png",
-      "bytes": 235064,
-      "sha256": "523cc4cd6c8d878129abbefeec024b1a266474cc7b4c4e1c31963e62970548ce",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/result.json",
+      "bytes": 29966,
+      "sha256": "de991291b3f0777f972da785bd62ab49dc5b98adfcae639f35c53de4a53c07c3",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/replays/weak120.gif",
-      "bytes": 4702248,
-      "sha256": "aae9527d010057038b48c5fdafa52f77fbefb914b683c57eb321da6d47064f74",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/scene.xml",
+      "bytes": 131142,
+      "sha256": "4b76cec77d145cdbf54515eace4eee8fde2af52e97e733ba71acb31f624be067",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/replays/weak120.json",
-      "bytes": 3716,
-      "sha256": "bfb07f27c2122e154070f87fbec4703624d6c2d4eb99197e909201448b291e71",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/tilt_fullrate.npz",
+      "bytes": 474145,
+      "sha256": "7770b23243768d67caebceab144f6ae1de1fc270a7f954ec2db9b4793afb592b",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/replays/weak120.png",
-      "bytes": 205481,
-      "sha256": "e8f70482838add4bdb68b0dca43c900664a9879c53de24264576963b20e8825b",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/trajectory.npz",
+      "bytes": 6388896,
+      "sha256": "9bdaef8a2844b5cedab36f004e043f9b6f9ef08d1f4eae4a4878e280a2480783",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/training_transfer/frozen_source.zip",
-      "bytes": 161365,
-      "sha256": "afd7a10ae91cbc2d3e361affefa15795a0b63c1af33af24ec7e6fccfaef77cc5",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/wind_trace.pt",
+      "bytes": 2305875,
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/training_transfer/initial.pt",
-      "bytes": 421113,
-      "sha256": "24136334fa3e5864a80645dd3a5edcfa90614451612c1739cb72338dd2c09e40",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/summary.json",
+      "bytes": 27891,
+      "sha256": "49b495706622384f9ea8dd48f1e8e3701ea180ca81b0f9632acef9401fefaf5d",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/training_transfer/latest.pt",
-      "bytes": 1244283,
-      "sha256": "134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/frozen_source.zip",
+      "bytes": 162923,
+      "sha256": "1588b4af4a5a685b4583dc89a7092d52ba0cd045541c4169fbb1c300adee102c",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/training_transfer/manifest.json",
-      "bytes": 7538,
-      "sha256": "a86813abd01a470597fd3fe042c797c275f1e9db3f763c2ec1043544b9c1a766",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/manifest.json",
+      "bytes": 13994,
+      "sha256": "6eb818489f843b7dd6dfbe196d9dffc5ba74c7ef67edf88d55ef1eeb88d0b997",
       "kind": "artifact"
     },
     {
-      "path": "P2/results/acceleration/training_transfer/training_summary.json",
-      "bytes": 57028,
-      "sha256": "53644e35f79c98cea0b280c6e306094a8ea21c03465c7d415cc94ca0921bd357",
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/fullrate.npz",
+      "bytes": 9902504,
+      "sha256": "ce4b55d5ed94c4bcc13e97b7694ce782976229b322034468856c2824a3f4fe4a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/heading_witness.pt",
+      "bytes": 769718,
+      "sha256": "d91516f9c2d4d7a37f7654fa5a63e7b91d8dd4ae05e12417661ebddb14f9a491",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/result.json",
+      "bytes": 30022,
+      "sha256": "2dd228a04fbe356863c3b82955b40a053381793a8ad3141d3797051bc130b65a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/scene.xml",
+      "bytes": 131142,
+      "sha256": "44ea810cf732b3a6a2fcf9c34bfc0b5d290f1e3c33d3d809897036421b2056fd",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/tilt_fullrate.npz",
+      "bytes": 474379,
+      "sha256": "b1df31c3931555ff90ba6e57a8462efd371b51f9fe6c699784b008817ca8c749",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/trajectory.npz",
+      "bytes": 6387029,
+      "sha256": "ec8493a6cb09805320d35f63fb4bac146c18dedcf6a9e5e6b5210fc5ff403c25",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/wind_trace.pt",
+      "bytes": 2305875,
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/summary.json",
+      "bytes": 27946,
+      "sha256": "99ac658e501e5fb1f0f963071dd1043efcb27fa98125bfbcf5a3b6ef585dd685",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/frozen_source.zip",
+      "bytes": 162841,
+      "sha256": "2d767306c1ec4b9494afd45ac991463f3d0e996801322ff8a39943d52ef16dfb",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/manifest.json",
+      "bytes": 13680,
+      "sha256": "db6fb285da6d768ac3111ada4a265b2655c990f8c712c08b5cfa4597954d78d1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/fullrate.npz",
+      "bytes": 9910757,
+      "sha256": "f3d3d7f5f1d35d4bee37bdc0e082a7d8fc1d11a9a63fc9dc8b8556dc3a4d9866",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/heading_witness.pt",
+      "bytes": 769718,
+      "sha256": "d02c302ddc1e45742ee64e908e15a15f38515da3efbd09858b804faef0971f3d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/result.json",
+      "bytes": 29895,
+      "sha256": "d41c5f5fa4f4ced8c544e677ecd85c41b5c3d0112a3c39e8d11634f2c0b7b6ea",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/scene.xml",
+      "bytes": 130918,
+      "sha256": "4b2e9a5dfd267919a104019edae038be964011967680b0322e67b601cb95e6f0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/tilt_fullrate.npz",
+      "bytes": 466809,
+      "sha256": "41bdb7a3c2f308570051c5312b2593db2783cf95cbde01e4ff3dfa080893e15f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/trajectory.npz",
+      "bytes": 6385483,
+      "sha256": "b07d619ff9232ec875c5b9040ca270c1a4938bd1b1ff50205508e8f3bd304d61",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/wind_trace.pt",
+      "bytes": 2305875,
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/summary.json",
+      "bytes": 27879,
+      "sha256": "65a2a62b0c842622e2a2695692fc26665628811f1333122800841d0b3df7a3b6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady_summary.json",
+      "bytes": 180112,
+      "sha256": "45e663fd3d24fe02144b4267c2d3e35b902ed4316f6c8196c56bf39c249b7ae0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/frozen_source.zip",
+      "bytes": 163330,
+      "sha256": "2c6534c612fa5c3574afa7a250007cbad3f2f871a867b0fac72f977597d9c7fe",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/manifest.json",
+      "bytes": 9518,
+      "sha256": "664656d34a640656315c22f138d1879310a603abdeccc8f6606570530656219e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/fullrate.npz",
+      "bytes": 2458744,
+      "sha256": "4558837371d66c133b7007bf585bd17ac18e97c4443362afdb568a2d18eb7f9e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/heading_witness.pt",
+      "bytes": 193654,
+      "sha256": "cce1beb1171046d2913d886372e07f3a0dbfd5b05670245a630c7e873fbfa6e5",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/result.json",
+      "bytes": 9891,
+      "sha256": "a0b2fd81f044c1f3a4fc2576a5742300180931134c24921a3149a03665a16a97",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/scene.xml",
+      "bytes": 33344,
+      "sha256": "d8f34e21d611139ca7fbcde02633e810796994393d6501328dde2d52d9ec1591",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/tilt_fullrate.npz",
+      "bytes": 118399,
+      "sha256": "d00b86098d13286f97e8efb36633eafb9cd701bcf1eedaa52f16805ef767d177",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/trajectory.npz",
+      "bytes": 1596594,
+      "sha256": "9019c636773c2ad92f7c50804b1a26a66ca6d2cbc855dd94f7ec3f6f950bf966",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/wind_trace.pt",
+      "bytes": 577683,
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/summary.json",
+      "bytes": 7458,
+      "sha256": "1b90dc8be9d34eedfcb43b99de647aaddbf3633171a503986f7e71002e4ad28c",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/frozen_source.zip",
+      "bytes": 163329,
+      "sha256": "1e754c98c72d17a9406a4745e1324c35569c18499706198fa95e2f9283c98d7f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/manifest.json",
+      "bytes": 9517,
+      "sha256": "eeab0ca45f1ee64b373e2469939ab64296b17163853a4b0084844c63c315bdf8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/fullrate.npz",
+      "bytes": 2460047,
+      "sha256": "3fdd42c0d7f5becf3904f4604c221087f71a0d33df6a18efa41ce05137724a69",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/heading_witness.pt",
+      "bytes": 193654,
+      "sha256": "d47da001373e5a3bc13a2d4379608bea87ff6b7d2646dbd2be21484f3d5dea70",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/result.json",
+      "bytes": 9917,
+      "sha256": "35b6d4396edba03db7d7584e60334e4ed2b10b84a9d0842522f1c1a1a9385ea2",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/scene.xml",
+      "bytes": 33348,
+      "sha256": "4ce9baf3af15a6676f358e32e202c9b3abbccd48e6ea74c90a0f79dcabd4c29a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/tilt_fullrate.npz",
+      "bytes": 121517,
+      "sha256": "34865c3000a514582cb43053a4c1c9fa171ae63c549f6d408406cd60d16bbaf1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/trajectory.npz",
+      "bytes": 1596618,
+      "sha256": "5962fd0099d5981695309cea8d6b00dbbde38ed0ab6afbb3adca41959a9b4bb6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/wind_trace.pt",
+      "bytes": 577683,
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/summary.json",
+      "bytes": 7487,
+      "sha256": "f836afdac0aa3539ba8adcffd2b06aa710bc57234bb5e07abf190ac04075e7c1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/frozen_source.zip",
+      "bytes": 163333,
+      "sha256": "f832f1bcab01e4bc4749c6d92445ceafae47a0ca0d192c848fa48bbfcf4d8379",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/manifest.json",
+      "bytes": 9518,
+      "sha256": "ed68fed52de43beff0eb56b8cfd42aa2bc27906eee797193bc454d4885f3727b",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/fullrate.npz",
+      "bytes": 2463111,
+      "sha256": "28488bd546746293225f2dddd98bf7f226b091ae3dc6629b8d2451b06e7b5803",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/heading_witness.pt",
+      "bytes": 193654,
+      "sha256": "c8eb07e54387c66a3f7713b30403973fde0586837a840906e7ed6849c7bc2772",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/result.json",
+      "bytes": 9891,
+      "sha256": "04e1ea8cc8a2ac7c2ef3ba4556f18998218c8a5eb67b4f27e8c47de42c284d79",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/scene.xml",
+      "bytes": 33348,
+      "sha256": "198e94139c5f96b7b727fb7d65cdb96295baaf7a2ba70062f0cff5354ade4ece",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/tilt_fullrate.npz",
+      "bytes": 121063,
+      "sha256": "787456748979eddfdfe2cae877b378341f519439a3a72c068249381b8466837a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/trajectory.npz",
+      "bytes": 1597335,
+      "sha256": "3273813ad438d97c6ab494a03c914dafdc04d9be1d9842470eaf60b4100a4254",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/wind_trace.pt",
+      "bytes": 577683,
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/summary.json",
+      "bytes": 7461,
+      "sha256": "c97c320f0ce7299c49a0dfc6679cbb49c944437f1a48a18d00ee30a9631b8bc1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/frozen_source.zip",
+      "bytes": 163327,
+      "sha256": "6a87237277d51afe7da4f4c86af3e068a03fcc97c10a9309c3218c4825917543",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/manifest.json",
+      "bytes": 9517,
+      "sha256": "21ebb9a8ce83c02ba9a5fd04cb687f2e5067946c1ffbbe2cbf292a626e2fdb2e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/fullrate.npz",
+      "bytes": 2463365,
+      "sha256": "919282fe82d361ae8d04f487d8956e2882d48864c541f0b0c20e3b5d274a58f5",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/heading_witness.pt",
+      "bytes": 193654,
+      "sha256": "131b2857bf9c9709b88192fb06d7994aa637f5a87b060bd291e5a8cc510c9c2b",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/result.json",
+      "bytes": 9871,
+      "sha256": "5abe015497238fa76b56b42553390fc58c7cecdaa8ea46920b02164e7092592d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/scene.xml",
+      "bytes": 33348,
+      "sha256": "c467f831be4cad33fb930413497c4722ba9cf9cedc346f697f13a0bcd7c91782",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/tilt_fullrate.npz",
+      "bytes": 123648,
+      "sha256": "76fd4ac823b3b54b93935012ffa94645a5ba39f5acc8f68823e002723a444712",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/trajectory.npz",
+      "bytes": 1596670,
+      "sha256": "6c2d73774f0caf8093a8cba32ff4ebccbabca3544682fdc92090daf2923958fa",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/wind_trace.pt",
+      "bytes": 577683,
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/summary.json",
+      "bytes": 7442,
+      "sha256": "d43e3cabcacabafb764378a6e9e5e59def5fad54153943415b88c3a6577ae667",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/frozen_source.zip",
+      "bytes": 163237,
+      "sha256": "b868665b8619abe668d281d601b92ac864d34874d09fde041b855643b27e410d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/manifest.json",
+      "bytes": 9178,
+      "sha256": "af763391b63e21a6b0d7dcc687588d7434296135e2778f6750fdf4eaed24c87a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/fullrate.npz",
+      "bytes": 2463516,
+      "sha256": "7860c16cd7d137085528b5eb435bfdec9822fbd54219c2800f0b1bd9b4cbd829",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/heading_witness.pt",
+      "bytes": 193654,
+      "sha256": "cc48bb329c4e26b0baba4d24d1f6cf0013af042cfaa6358ccfe4e36837075788",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/result.json",
+      "bytes": 9813,
+      "sha256": "4514769ff88c8db1e2a8af9faa6d0351b5eca57f016f85300bd5537bba7fb39b",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/scene.xml",
+      "bytes": 33292,
+      "sha256": "fe88bea00a121baef1c61c6e97596ffca210205cdd769a86053b340a30cc3fa9",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/tilt_fullrate.npz",
+      "bytes": 118704,
+      "sha256": "dfa5399fcdbb757f59b184c7c0464dbcf523184fe1aa225821a39c1225493ba9",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/trajectory.npz",
+      "bytes": 1596656,
+      "sha256": "e5b6e1bfa8ad987ed390322fb32b81c41167743b50e4642b6bb684bdad1943e7",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/wind_trace.pt",
+      "bytes": 577683,
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/summary.json",
+      "bytes": 7450,
+      "sha256": "2bd50996525fa0412af9bcdbcb59749eefe313ae780dc5fc56707df4f48bc6e8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying_summary.json",
+      "bytes": 59357,
+      "sha256": "938d0b2bcb95c8298b86493b971d9e7b3f45b5cda5addf4c9d2869cc3ca3e62d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_media_audit.json",
+      "bytes": 1137,
+      "sha256": "3535eb5718e38a6dae420ef5e544ef546da665bd580b52806790fc894f20059a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_steady.gif",
+      "bytes": 4808878,
+      "sha256": "d2165b429211d0640105a0d179c98b734b7f2eba99ff7857ab7c14a7911a00ad",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_steady.json",
+      "bytes": 3710,
+      "sha256": "1b15dabc4adcd3cd6674be7eff61f9ac7f2fb474dc49b259bc95c4d81cf998dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_steady.png",
+      "bytes": 204200,
+      "sha256": "7f691ec6960d9ba8521b0ec756f45c1b8d6a1f8ef01ea0a38874e906e18c7cf0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_steady_paired_strong.gif",
+      "bytes": 4368838,
+      "sha256": "3bfdcd1fbd4201e81a6d29f1ee0ac9f65fe1e26fa5f0b6cb9d10cd79d7377d3e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_steady_paired_strong.json",
+      "bytes": 3698,
+      "sha256": "c4043465af21a8b212d2fca333cb2cf9d9cd6750bad92232ba756f411f3a5e48",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_steady_paired_strong.png",
+      "bytes": 205999,
+      "sha256": "17d3d29104c176cd39459f3a4a0056ca644dcbf83b3ba329c83d3c4ffc19f489",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_steady_wind_pair_audit.json",
+      "bytes": 1037,
+      "sha256": "4dea2a5350d886b8b37b648495e6d5eac491b4b2883405bbcb66f4e79ac7f685",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_varying.gif",
+      "bytes": 5669264,
+      "sha256": "13d7b795a1f65005d96260797a9a02a54e6ade4f6ce7b0bd07e9e13cf2f07969",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_varying.json",
+      "bytes": 3740,
+      "sha256": "9ceabb0aea09eb57759bbd01359addb7390e8ce8b2b8885628f0f0ebe2c64e2f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/replays/proposal01_varying.png",
+      "bytes": 223811,
+      "sha256": "6afa07748147c3f175f7387aa659de0410e9b273de3dc3e6f86425eddeaacdbc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/frozen_source.zip",
+      "bytes": 170292,
+      "sha256": "3fd541cf83a82ba6ce5251e530b3945134bcf6d7e9434f86054267bd02e9cb97",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/manifest.json",
+      "bytes": 9235,
+      "sha256": "ccbc1f339968be78d411930d42db95526f022e9602d1593b5cf52b88f4845186",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+      "bytes": 1244731,
+      "sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/retained_training.json",
+      "bytes": 266536,
+      "sha256": "7722c5b26babc8346534fb36922484dbafd536f4646477c80c33c56440ec596c",
+      "kind": "artifact"
+    },
+    {
+      "path": "P2/results/acceleration_hover/README.md",
+      "bytes": 4267,
+      "sha256": "6fd11698ca6d0ad26d7d215b1f172763d384ec0c72f24b8d394e7d6129479a7d",
       "kind": "artifact"
     },
     {
@@ -2428,8 +2968,8 @@
     },
     {
       "path": "P2/status.json",
-      "bytes": 4294,
-      "sha256": "9a78186d43c715df4cef8f96d2569d990fed788b08f4abaa32cfee77621d5c30",
+      "bytes": 6527,
+      "sha256": "aa3f88b6eb52be841cf063b7aae437baac2df47ba0238564c31f93dfd943fd08",
       "kind": "source_or_configuration"
     },
     {
@@ -2710,8 +3250,14 @@
     },
     {
       "path": "P2/tests/test_acceleration.py",
-      "bytes": 3266,
-      "sha256": "c98e2f74deac900c99daa4218e5358bd71c71e2179861c4615bf23103fc78f81",
+      "bytes": 6104,
+      "sha256": "2b46d10c109a70cd2398cb2f092ffde4a4ca0bfd348a94c351dbb4cb8f2dc8e3",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P2/tests/test_acceleration_hover.py",
+      "bytes": 17000,
+      "sha256": "1965dab2c26a70c0fc89aaa2039e547010019d2a2a2c52efdeed553d8f966989",
       "kind": "source_or_configuration"
     },
     {
@@ -2884,8 +3430,8 @@
     },
     {
       "path": "P2/train_acceleration.py",
-      "bytes": 11927,
-      "sha256": "027d4ef845a419b98a149ca47eae65755cda9973e4c3a8dad9e9bfd580830cf2",
+      "bytes": 36275,
+      "sha256": "32696a8a7655c634ca26301b39bab9925f464ebac57e511db1bbe8aaae8dfc54",
       "kind": "source_or_configuration"
     },
     {
@@ -2971,6 +3517,12 @@
       "bytes": 422,
       "sha256": "261efc322295ec599c6607eb36fb11d2d80072070d7241561eabf7c9eabbdeab",
       "kind": "artifact"
+    },
+    {
+      "path": "P2/verify_hover_matrix.py",
+      "bytes": 6710,
+      "sha256": "4ad7fda25b8c420645d06c45cb5e93336509e058ef412585867547b0e17acfcc",
+      "kind": "source_or_configuration"
     },
     {
       "path": "P2/verify_stationarity.py",
@@ -3118,8 +3670,8 @@
     },
     {
       "path": "P3/models.json",
-      "bytes": 1234,
-      "sha256": "0fb4351fad062e7b8f5493a5a98c378a4ce13f9ac0e760b49face92a8ec36bb0",
+      "bytes": 1442,
+      "sha256": "affe65b97758617b8c2a7b03a9407c60078003df9238cd593a9184389f5419a2",
       "kind": "source_or_configuration"
     },
     {
@@ -3129,15 +3681,21 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "P3/position_identification.py",
+      "bytes": 17220,
+      "sha256": "fa0ee0fc9d2ba47abceec627b5d41bfcb176abfaf8c385a4a3079f82db27aa54",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P3/PROGRESS.md",
-      "bytes": 1059,
-      "sha256": "708b580120ae881f41e7e584af22f93788b05a46e1cd151e5afae14b2550c14e",
+      "bytes": 2388,
+      "sha256": "c53f85576778cae50ec5f057e1c3e7482363f5bdb3fd9211a1bdc41dd52517f3",
       "kind": "source_or_configuration"
     },
     {
       "path": "P3/README.md",
-      "bytes": 1089,
-      "sha256": "b9f1707e45b11442f31667573328dee87a0eace420b64ef1b73b4f547ed741b3",
+      "bytes": 4589,
+      "sha256": "4b8afc3b29ccd2ead01850204b560c7a57b3d8473d42fbd2e6b0adc71568a1f0",
       "kind": "source_or_configuration"
     },
     {
@@ -3585,6 +4143,12 @@
       "kind": "artifact"
     },
     {
+      "path": "P3/results/position_identification_actuator_audit.json",
+      "bytes": 1730,
+      "sha256": "36c626071e5e6190b2221fd26fa71318e9e47e3f33e6449ed22d99ebd23f3184",
+      "kind": "artifact"
+    },
+    {
       "path": "P3/retest8/data/frozen_source.zip",
       "bytes": 156969,
       "sha256": "161e855f271030e009269a5533769d3d110f5e1ac5a63dc9fb52a4dd1d364ba2",
@@ -3652,8 +4216,8 @@
     },
     {
       "path": "P3/status.json",
-      "bytes": 1350,
-      "sha256": "2e329a916af561ec40e729213df477ae0696a2e99a79dd997087c5ead93420d9",
+      "bytes": 1925,
+      "sha256": "9475c5f3e28d3165b3ea5f90a82ad0095103b898acaa1fa78dc64ae91876e493",
       "kind": "source_or_configuration"
     },
     {
@@ -3705,6 +4269,12 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "P3/tests/test_position_identification.py",
+      "bytes": 7485,
+      "sha256": "681272cd9b2fc5efe5838d6eeda5e3db5d4a4b8c228bb928f1676097681c8727",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P3/tests/test_restored_policy.py",
       "bytes": 1996,
       "sha256": "7ed47178b233fed74f6b5a77f0aaa7ef33b9d33b9c496ddd3fde4421f8fd4b68",
@@ -3724,8 +4294,8 @@
     },
     {
       "path": "PLAN.md",
-      "bytes": 523,
-      "sha256": "23f57e680494a88c28ff8c1d232bd692a9f42d5ba6172085d976cb9726da0ad0",
+      "bytes": 618,
+      "sha256": "dc956cd396b4f95a6b9fc934f8f49596934aec5301243e34bef7f367bc950098",
       "kind": "source_or_configuration"
     },
     {
@@ -3736,14 +4306,20 @@
     },
     {
       "path": "project_state.json",
-      "bytes": 14649,
-      "sha256": "b58572a7a3113eab6a809e907675b29bf26ed6b819944d59ec0d5b76a3239050",
+      "bytes": 17204,
+      "sha256": "0cea98ecb6e9602e09119ccad4c332071a0001503f006a4f28d57cdcb33fd9e1",
       "kind": "source_or_configuration"
     },
     {
       "path": "px4_offboard/__init__.py",
       "bytes": 67,
       "sha256": "f5da387f43885a4688b9e6b4c8c94854e1b1273f2a0720b1e09bf879b3b2fcda",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "px4_offboard/acceleration_setpoint.py",
+      "bytes": 2995,
+      "sha256": "4c70c8f32fa538dbb0d23d852b6dcfdadd8e308e74bfcbbe6235ea6164f4909e",
       "kind": "source_or_configuration"
     },
     {
@@ -4066,8 +4642,8 @@
     },
     {
       "path": "px4_offboard/offboard.py",
-      "bytes": 9510,
-      "sha256": "5191c2ed77750bf878db7d3d117f3f7fb09da46b16056c7084afe072993f1d99",
+      "bytes": 9592,
+      "sha256": "714748fdf3fe00cf2807304c3296caaf8cdf257d752cdf8afbf748f59400d4a7",
       "kind": "source_or_configuration"
     },
     {
@@ -4084,8 +4660,8 @@
     },
     {
       "path": "px4_offboard/README.md",
-      "bytes": 4553,
-      "sha256": "bf71c9bf686447d760ae7c010f00d2c6adc379c2fdec3cbaccea0665946243a3",
+      "bytes": 6448,
+      "sha256": "c6ba5ca2dfb85ea5dd1ee5875222582764c5aa9876a60bd4187b269babdc4bf8",
       "kind": "source_or_configuration"
     },
     {
@@ -4276,14 +4852,20 @@
     },
     {
       "path": "px4_offboard/stock_transfer/stock_check_hold.py",
-      "bytes": 14973,
-      "sha256": "e7e2655c194d0813897fd8cae2aa472f99db4ce0b204dc51dbc52d158231c982",
+      "bytes": 18043,
+      "sha256": "0a853feb6017290c7eb301ebec1e0bb0f8c8c6693eb83a72254862029b8f0ac3",
       "kind": "source_or_configuration"
     },
     {
       "path": "px4_offboard/tests/__init__.py",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "px4_offboard/tests/test_acceleration_setpoint.py",
+      "bytes": 2194,
+      "sha256": "66eb91e868b0c53e970f70d72124b10b480668a88a225aad967e05bb38d3dc42",
       "kind": "source_or_configuration"
     },
     {
@@ -4330,8 +4912,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9973,
-      "sha256": "d25e017da8da26511caaa0fd3f09808b18a220fc91723bbc9a0158fbfa0e984a",
+      "bytes": 10406,
+      "sha256": "4133f3e151706eb4137a0953e754d2e4daedc893c5c60fe39d5bd2f06b233e04",
       "kind": "source_or_configuration"
     },
     {
@@ -5842,8 +6424,8 @@
     },
     {
       "path": "verify_project.py",
-      "bytes": 12982,
-      "sha256": "7309cae0378f1795f498ad1c27249cbb70c5d464c8dd273d4ab8f5d30f6e7143",
+      "bytes": 17756,
+      "sha256": "0ac03ba68f04a4d03b40a5ee98c6acd577729495e044b5438fb296c02a0f27dc",
       "kind": "source_or_configuration"
     }
   ]

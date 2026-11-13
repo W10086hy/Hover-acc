@@ -4,6 +4,14 @@
 
 本目录存放 PX4 SITL、MAVLink 机载遥测、角速度与总推力 Offboard 接口及 MuJoCo 联调代码。PX4 使用自身 EKF 和角速度内环。P3 补偿通过垂向力和等效力矩前馈接入。 [Actor31 结果](../track/drift8/README.md)
 
+通用 P3 的采集入口为原厂接管试验的 `--record-position-p3`。PX4 在 Position 段保持控制权，采集器在应用下一步油门前记录本步 IMU、ESC 转速和上一时段实际油门。输出供 P3 辨识 P2 标准机体与当前飞机的差异。 [Position 辨识入口](../P3/README.md#position-辨识入口)
+
+## 水平加速度与原厂高度环
+
+`AltitudeSetpoint` 发送一条 `SET_POSITION_TARGET_LOCAL_NED`。有效字段是本地 NED 的 `z`、`afx`、`afy` 和 `yaw`。策略的前向、右向加速度按起飞航向旋转到北、东，竖直加速度字段由掩码忽略。调用方在请求模式前用 `prime()` 发送零水平加速度和当前本地 Z。确认已解锁且进入 Offboard 后，`update()` 用首个有效样本锁存 EKF 本地 Z。退出模式时传 `mode_active=False`，下次切入重新锁存。Actor 仍使用相对起飞点的气压高度，两种高度各自在原坐标系中使用。 [混合设定值接口](acceleration_setpoint.py) · [PX4 接收器](https://github.com/PX4/PX4-Autopilot/blob/v1.14.4/src/modules/mavlink/mavlink_receiver.cpp#L878-L975)
+
+调用方只应传入 PX4 估计器有效的本地 Z、单调接收时间和估计参考系重置计数，并用同一起飞航向构造策略姿态输入和发送器。过期样本停止发送，参考系重置后本次接管停止发送，重新进入前须重新确认参考系和航向。策略输出使用 `AccelerationPolicy.update()` 返回张量的前两列。原厂 PX4 1.14.4 将该消息识别为位置类 Offboard，仍要求有效的本地水平位置估计。没有水平定位源的工况用 MuJoCo 垂向模型单独开发。 [PX4 模式检查](https://github.com/PX4/PX4-Autopilot/blob/v1.14.4/src/modules/commander/HealthAndArmingChecks/checks/offboardCheck.cpp#L36-L61) · [MuJoCo 混合控制复验](../P2/results/acceleration_hover/README.md)
+
 ## 电机编号
 
 原厂接管和定制 SITL 入口均按 PX4 1.14.4 Iris 编号。Motor 1、2、3、4 分别是右前、左后、左前、右后，旋向依次为逆时针、逆时针、顺时针、顺时针（俯视）。定制入口使用工程配置的臂长和力矩系数。 [PX4 原厂机架配置](https://github.com/PX4/PX4-Autopilot/blob/v1.14.4/ROMFS/px4fmu_common/init.d-posix/airframes/10016_none_iris)

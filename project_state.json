@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "date": "2026-11-10",
+  "date": "2026-11-13",
   "training_running": false,
   "validation_running": false,
   "formal_final_acceptance": false,
@@ -22,20 +22,22 @@
     "duration_s": 30,
     "per_case": true
   },
-  "goal_achieved": true,
+  "goal_achieved": false,
+  "active_goal_report": "P2/results/acceleration_hover/README.md",
+  "latest_hybrid_development_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
   "final_acceptance_completed": false,
-  "iterations_stopped_by_user": false,
-  "latest_checkpoint": "P2/results/acceleration/training_transfer/latest.pt",
-  "latest_checkpoint_sha256": "134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782",
+  "iterations_stopped_by_user": true,
+  "latest_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+  "latest_checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
   "launch_acceleration": {
-    "stage": "native_mujoco_development_complete",
-    "report": "P2/results/acceleration/README.md",
-    "comparison": "P2/results/acceleration/comparison.json",
+    "stage": "retained_hybrid_development",
+    "report": "P2/results/acceleration_hover/README.md",
+    "protocol": "P2/acceleration_hover_resume.json",
     "target_height_m": 5,
-    "physical_updates": 2,
-    "native_safe_completed": 8,
-    "native_count": 8,
+    "physical_updates": 13,
     "evaluation_duration_s": 120,
+    "native_safe_completed": 100,
+    "native_count": 100,
     "p3_enabled": false,
     "formal_final_acceptance": false
   },
@@ -326,7 +328,7 @@
     "media_sessions": {},
     "formal_final_acceptance": false
   },
-  "goal_achieved_scope": "Launch-frame acceleration implementation, BPTT and paired native MuJoCo development validation",
+  "goal_achieved_scope": "Launch-acceleration 5 m steady hover: 16/16 paired native MuJoCo development cases passed 120 s safety, per-case 3D RMSE and tail stationarity",
   "actor37_p3_pair": {
     "stage": "actor37_5m_residual_fit_and_native_px4_development_complete",
     "target_height_m": 5,
@@ -383,5 +385,79 @@
     "count": 2,
     "policy_updates": 0,
     "residual_updates": 0
-  }
+  },
+  "latest_hybrid_native_development": {
+    "checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+    "sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+    "duration_s": 120,
+    "steady": {
+      "count": 80,
+      "safe": 80,
+      "rmse_pass": 80,
+      "steady": 78,
+      "joint": 78,
+      "rmse_3d_h_xy_m": [
+        0.6054000678375938,
+        0.053313477716208896,
+        0.6030480206679785
+      ],
+      "winds": {
+        "1": {
+          "count": 40,
+          "safe": 40,
+          "rmse_pass": 40,
+          "steady": 38,
+          "joint": 38,
+          "worst_3d_rmse_m": 0.3557372003455215,
+          "peak_wind_mps": 1.0
+        },
+        "5": {
+          "count": 40,
+          "safe": 40,
+          "rmse_pass": 40,
+          "steady": 40,
+          "joint": 40,
+          "worst_3d_rmse_m": 1.1750231410645338,
+          "peak_wind_mps": 5.0
+        }
+      }
+    },
+    "time_varying": {
+      "count": 20,
+      "safe": 20,
+      "rmse_pass": 20,
+      "steady": 19,
+      "joint": 19,
+      "rmse_3d_h_xy_m": [
+        0.7006238902573361,
+        0.05468801155281441,
+        0.6984862611331185
+      ],
+      "winds": {
+        "1": {
+          "count": 10,
+          "safe": 10,
+          "rmse_pass": 10,
+          "steady": 9,
+          "joint": 9,
+          "worst_3d_rmse_m": 0.3080345894651039,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 10,
+          "safe": 10,
+          "rmse_pass": 10,
+          "steady": 10,
+          "joint": 10,
+          "worst_3d_rmse_m": 1.1244419058194441,
+          "peak_wind_mps": 6.0
+        }
+      }
+    },
+    "summary": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady_summary.json",
+    "varying_summary": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying_summary.json",
+    "formal_final_acceptance": false
+  },
+  "continuation_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+  "active_protocol": "P2/acceleration_hover_resume.json"
 }

@@ -84,6 +84,12 @@ def observation_fields(cfg):
                       leaky_position_proxy_div5=[30,32],nominal_aero_force_residual_div5=[32,35])
     return fields
 
+def barometric_height_step(height, speed, valid, measurement, dt):
+    filtered = torch.where(valid, height + .15*(measurement-height), measurement)
+    vertical_speed = torch.where(valid, .92*speed+.08*(filtered-height)/dt, torch.zeros_like(filtered))
+    return filtered, vertical_speed
+
+
 class HeightObserver:
     """Causal filtering and vertical-speed estimate using barometric history only."""
     def __init__(self, n, device, dt):
@@ -99,8 +105,7 @@ class HeightObserver:
 
     def update(self, measurement, active=None):
         if active is None: active = torch.ones_like(self.valid)
-        height = torch.where(self.valid, self.height + .15*(measurement-self.height), measurement)
-        speed = torch.where(self.valid, .92*self.speed+.08*(height-self.height)/self.dt, torch.zeros_like(height))
+        height, speed = barometric_height_step(self.height, self.speed, self.valid, measurement, self.dt)
         self.height.copy_(torch.where(active, height, self.height))
         self.speed.copy_(torch.where(active, speed, self.speed))
         self.valid |= active

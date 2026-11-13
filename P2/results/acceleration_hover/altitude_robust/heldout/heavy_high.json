@@ -1,0 +1,54 @@
+{
+  "scope": "Paired 120 s frozen MuJoCo development; independent state, wind and vehicle seeds",
+  "training_seed": 21830041,
+  "training_directions_deg": [
+    67.5,
+    247.5
+  ],
+  "training_winds": [
+    [
+      1,
+      "steady"
+    ],
+    [
+      5,
+      "steady"
+    ]
+  ],
+  "domain_randomization": {
+    "enabled": true,
+    "sample_count": 1,
+    "seed": 21860005,
+    "include_nominal": false,
+    "mass_scale": [
+      1.1,
+      1.1
+    ],
+    "inertia_scale": [
+      0.9,
+      1.1
+    ],
+    "motor_tau_scale": [
+      0.9,
+      1.1
+    ],
+    "motor_gain_scale": [
+      1.1,
+      1.1
+    ]
+  },
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "stationarity_BPTT": {
+    "horizontal_std_limit_m": 0.25,
+    "horizontal_speed_limit_mps": 0.3,
+    "drift_limit_mps": 0.01
+  },
+  "formal_final_acceptance": false
+}

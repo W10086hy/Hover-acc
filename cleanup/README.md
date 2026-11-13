@@ -1,5 +1,7 @@
 # 当前工程整理与核验
 
+2026-11-13 清理当前加速度悬停开发中的旧候选、对照仿真和调试产物。保留累计 13 次更新的 Actor 与 Adam、对应训练记录、80 条恒风和 20 条时变风完整证据、三份代表回放和复现协议。其余已单独保留的 Actor37、P3、PX4 与跟踪成果继续按各阶段清单管理。 [保留结果](../P2/results/acceleration_hover/README.md) · [逐文件清理清单](retention_acceleration_20261113.json)
+
 2026-11-10 清理默认 PX4 迁移阶段的 148 份中间文件，释放 572,385,034 字节。完整保留最后一组高度零点复测、所用 Actor38、最近训练但未入选的 Actor39、P3 残差和各自 Adam。此前接管和强弱风的调试结果合并为统计。工程约定保护的 Actor37、P3 和追踪基线继续归档。[最近结果](../px4_offboard/stock_transfer/height_reference/README.md) · [删除与保护清单](retention_stock_px4_20261110.json) · [历史统计](../px4_offboard/stock_transfer/history_statistics.json)
 
 此前归档的 5 m PX4 小幅时变风包含两条 120 秒轨迹、审计与回放。较大变幅风的统计、工况配置、历史审计及公共源码快照归入 PX4 历史目录。该轮清理 21 份旧轨迹、回放、运行日志和重复快照，释放 50,714,484 字节，另迁移 16 份历史记录。[小幅时变风基线](../px4_offboard/actor37_5m/narrow_wind/README.md) · [归档清单](retention_px4_narrow_20261109.json)

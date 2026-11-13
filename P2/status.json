@@ -1,26 +1,28 @@
 {
   "schema_version": 6,
-  "date": "2026-11-10",
-  "stage": "launch_acceleration_development_complete",
+  "date": "2026-11-13",
+  "stage": "hybrid_acceleration_hover_development_retained",
   "route": "launch_acceleration_BPTT",
-  "checkpoint": "P2/results/acceleration/training_transfer/latest.pt",
-  "checkpoint_sha256": "134dabe77da3393fbaa16cacfbd1f6eb5625c5a572c3aef50c815512dbd32782",
-  "cumulative_physical_updates": 2,
+  "checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+  "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "cumulative_physical_updates": 13,
   "optimizer_preserved": true,
   "training_running": false,
   "validation_running": false,
+  "active_goal_report": "P2/results/acceleration_hover/README.md",
+  "active_protocol": "P2/acceleration_hover_resume.json",
   "formal_final_acceptance": false,
   "launch_acceleration": {
-    "protocol": "P2/acceleration_protocol.json",
-    "report": "P2/results/acceleration/README.md",
-    "comparison": "P2/results/acceleration/comparison.json",
+    "stage": "retained_hybrid_development",
+    "report": "P2/results/acceleration_hover/README.md",
+    "protocol": "P2/acceleration_hover_resume.json",
     "target_height_m": 5,
+    "physical_updates": 13,
     "evaluation_duration_s": 120,
-    "native_safe_completed": 8,
-    "native_count": 8,
-    "weak_3d_rmse_exceedances": 2,
-    "strong_3d_rmse_exceedances": 0,
-    "px4_validated": false
+    "native_safe_completed": 100,
+    "native_count": 100,
+    "p3_enabled": false,
+    "formal_final_acceptance": false
   },
   "stationarity": {
     "stage": "actor37_representative_development_complete",
@@ -122,5 +124,77 @@
   },
   "historical_randomization_statistics": "P2/results/history/development_statistics_20261109.json",
   "model_registry": "P2/models.json",
-  "evaluation_duration_s": 120
+  "evaluation_duration_s": 120,
+  "latest_hybrid_native_development": {
+    "checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+    "sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+    "duration_s": 120,
+    "steady": {
+      "count": 80,
+      "safe": 80,
+      "rmse_pass": 80,
+      "steady": 78,
+      "joint": 78,
+      "rmse_3d_h_xy_m": [
+        0.6054000678375938,
+        0.053313477716208896,
+        0.6030480206679785
+      ],
+      "winds": {
+        "1": {
+          "count": 40,
+          "safe": 40,
+          "rmse_pass": 40,
+          "steady": 38,
+          "joint": 38,
+          "worst_3d_rmse_m": 0.3557372003455215,
+          "peak_wind_mps": 1.0
+        },
+        "5": {
+          "count": 40,
+          "safe": 40,
+          "rmse_pass": 40,
+          "steady": 40,
+          "joint": 40,
+          "worst_3d_rmse_m": 1.1750231410645338,
+          "peak_wind_mps": 5.0
+        }
+      }
+    },
+    "time_varying": {
+      "count": 20,
+      "safe": 20,
+      "rmse_pass": 20,
+      "steady": 19,
+      "joint": 19,
+      "rmse_3d_h_xy_m": [
+        0.7006238902573361,
+        0.05468801155281441,
+        0.6984862611331185
+      ],
+      "winds": {
+        "1": {
+          "count": 10,
+          "safe": 10,
+          "rmse_pass": 10,
+          "steady": 9,
+          "joint": 9,
+          "worst_3d_rmse_m": 0.3080345894651039,
+          "peak_wind_mps": 1.2000001668930054
+        },
+        "5": {
+          "count": 10,
+          "safe": 10,
+          "rmse_pass": 10,
+          "steady": 10,
+          "joint": 10,
+          "worst_3d_rmse_m": 1.1244419058194441,
+          "peak_wind_mps": 6.0
+        }
+      }
+    },
+    "summary": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady_summary.json",
+    "varying_summary": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying_summary.json",
+    "formal_final_acceptance": false
+  }
 }

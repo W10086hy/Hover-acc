@@ -1,22 +1,12 @@
 # P2 参数化 BPTT
 
-## 三轴加速度开发
+## 水平加速度 BPTT 与垂向 PID
 
-新策略输出起飞参考系中的 `a_x/a_y/a_down`，单位为 m/s²，正轴分别指向起飞航向、右侧和下方。执行层用标称重力减去期望加速度来确定机体 Z 轴目标，用起飞航向确定其余两轴，以姿态误差和机载陀螺反馈产生力矩。总推力由标称质量和推力轴投影得到。推力和力矩通过原有电机分配和油门变化率限制接入柔绳动力学。
+当前 5 m 柔绳悬停检查点累计 13 次 BPTT 更新，保留 Actor 与 Adam。策略以起飞参考系水平加速度控制倾斜，仿真垂向速度 PID 采用 P=3、I=2、D=0.6，P3 关闭。5 组机体以等权平均梯度训练，覆盖标称机体与质量、转速增益各 ±10% 的四个角点，三轴惯量与电机响应时间常数在 ±10% 内分别采样。 [当前结果与复现](results/acceleration_hover/README.md)
 
-当前三轴策略完成两次 BPTT 更新。原生 MuJoCo 8/8 条安全完成 120 秒，汇总三维／高度／水平 RMSE 为 0.744／0.081／0.739 m。 [配对复验与回放](results/acceleration/README.md)
+Actor 使用 35 维机载历史和 14 维标称配置。机载推理可用 `AccelerationPolicy(checkpoint)`。飞控确认模式切入后，用新鲜机载 `Sensors` 和上一周期油门调用 `update(..., mode_active=True)`。第一份有效包锁存相对起飞点气压高度，网络读取目标与滤波高度之差。退出时调用 `update(None, None, mode_active=False)`。起飞前静置，以 100 Hz 收集至少 2,000 组配对的机体比力和 `wxyz` 姿态，并调用 `calibrate_accelerometer(measurements, attitude)`。 [推理入口](hover_bptt/acceleration.py)
 
-Actor 仍使用 35 维机载历史和 14 维标称参数。初始化继承 Actor37 的历史编码、条件编码和隐藏层，把其悬停附近的力矩与推力解析换算成新的三维输出头，使用独立的 Adam 训练。训练损失仍使用高度 8 比水平 2 的位置权重。P3 补偿关闭，旧推力与角速度结果作为配对基线。 [开发协议](acceleration_protocol.json)
-
-机载推理可用 `AccelerationPolicy(checkpoint)` 加载三轴权重。在飞控确认模式切入后，用新鲜机载 `Sensors` 和上一周期油门调用 `update(..., mode_active=True)`。第一份有效包的相对起飞点气压高度锁存为悬停目标。网络读取 `(悬停目标 − 滤波后的相对气压高度) / 2`。退出时调用 `update(None, None, mode_active=False)`，下次切入重新取样。调用方负责校准起飞零点、确认模式并传入新鲜遥测。5 m 是当前权重的训练与完整闭环复验工况。 [推理入口](hover_bptt/acceleration.py)
-
-以下命令从工程根目录运行，各步骤使用新的输出目录。训练按 30 秒完整目标、10 秒截断信用及 1 秒分段重算运行。MuJoCo 使用独立开发种子和风向，评价 120 秒全时域。
-
-```powershell
-.\python.cmd -B -m P2.train_acceleration qualify --output P2/results/new_accel_preflight
-.\python.cmd -B -m P2.train_acceleration train --qualification P2/results/new_accel_preflight --output P2/results/new_accel_train
-.\python.cmd -B -m P2.evaluate_acceleration trained --checkpoint P2/results/new_accel_train/latest.pt --output P2/results/new_accel_evaluation
-```
+[训练接续配置](acceleration_hover_resume.json) 从当前检查点和 Adam 启动预检，可供今后续训。保留 90 秒因果前置、末 30 秒训练、10 秒截断及 1 秒重算。原生仿真使用独立机体、风向和种子，覆盖完整 120 秒。 [复验命令与门限](results/acceleration_hover/README.md#复现)
 
 ## 冻结推力与角速度基线
 
