@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "method": "Position_body_FRD_physical_parameter_Adam",
+  "steps": 1600,
+  "initial_loss": 3.1162933222875884,
+  "final_loss": 0.010130666880369585,
+  "accel_bias_body_mps2": [
+    -0.18010406920877253,
+    0.1399072475144679,
+    -0.15999262910812312
+  ],
+  "com_body_m": [
+    -0.007000469356925245,
+    0.00899841045584043,
+    0.0
+  ],
+  "com_z_identified": false,
+  "inertia_body_kgm2": [
+    0.01139325389857965,
+    0.005682887017916462,
+    0.01498152435367256
+  ],
+  "design_relative_min_singular": 0.001589940044327208,
+  "metrics": {
+    "samples": 259,
+    "torque_before_rmse_nm": [
+      0.18425098088936823,
+      0.1433440359828745,
+      0.0002813706205465265
+    ],
+    "torque_after_rmse_nm": [
+      0.0003476462066073706,
+      0.00033092133922877156,
+      0.0001553863386516164
+    ],
+    "accel_before_rmse_mps2": [
+      0.1803334852299409,
+      0.1402355916358751,
+      0.1603960347743429
+    ],
+    "accel_after_rmse_mps2": [
+      0.009093412429829601,
+      0.009590790081601191,
+      0.011368667573764668
+    ]
+  },
+  "torque_sign": "disturbance=-r_cross_F; compensation=+r_cross_F",
+  "controlled_external_loads_required": true,
+  "holdout": {
+    "samples": 143,
+    "torque_before_rmse_nm": [
+      0.1842097786249598,
+      0.14327440376479372,
+      0.0003365121956276758
+    ],
+    "torque_after_rmse_nm": [
+      0.00034360123592853806,
+      0.00032849672432637384,
+      0.00015772760594576495
+    ],
+    "accel_before_rmse_mps2": [
+      0.17955840874342938,
+      0.1406162226612864,
+      0.15984958318388717
+    ],
+    "accel_after_rmse_mps2": [
+      0.008860341304932459,
+      0.00934413939684702,
+      0.010418577747526147
+    ]
+  },
+  "input_metadata": {
+    "source": "armed_airborne_position_body_FRD",
+    "motor_interval_model": "measured_linear_interpolation",
+    "raw_valid_intervals": 2071,
+    "integrated_blocks": 259,
+    "controlled_external_loads": true,
+    "position_reference": "same_point_as_IMU",
+    "motor_response_source": "this_record"
+  },
+  "input_sha256": "6ae0300a0a6ca8f69df629ed61a8ae8d8977df6e8c53660dcd4896c7dcffb230",
+  "train_blocks": 259,
+  "holdout_blocks": 143,
+  "raw_time_holdout_independent": true,
+  "split_time_s": 24.12,
+  "training_raw_time_s": [
+    0.0,
+    24.11
+  ],
+  "holdout_raw_time_s": [
+    24.12,
+    36.0
+  ],
+  "holdout_input_metadata": {
+    "source": "armed_airborne_position_body_FRD",
+    "motor_interval_model": "measured_linear_interpolation",
+    "raw_valid_intervals": 1147,
+    "integrated_blocks": 143,
+    "controlled_external_loads": true,
+    "position_reference": "same_point_as_IMU",
+    "motor_response_source": "training_record"
+  },
+  "reference_transport": {
+    "mass_kg": 2.0701293537731016,
+    "samples": 2071,
+    "force_rmse_n": [
+      0.009788608397921601,
+      0.01258100283335344,
+      0.021688182518414586
+    ],
+    "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+    "known_kf_and_controlled_external_loads_required": true,
+    "holdout": {
+      "mass_kg": 2.0701293537731016,
+      "samples": 1147,
+      "force_rmse_n": [
+        0.007873382035849018,
+        0.010212776996986368,
+        0.020544452229501436
+      ],
+      "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+      "known_kf_and_controlled_external_loads_required": true
+    }
+  },
+  "development_quality_gate_passed": true,
+  "checkpoint_sha256": "e98139e8e806f100632f870b3ece4401fb19f8e451e5c7f92b98b019175dd34a",
+  "physical_error": {
+    "accel_bias_error_mps2": [
+      -0.00010406920877253922,
+      -9.275248553211601e-05,
+      7.3708918768844445e-06
+    ],
+    "horizontal_com_error_mm": [
+      -0.00046935692524490563,
+      -0.001589544159569592
+    ],
+    "inertia_relative_error": [
+      0.004696110985859647,
+      -0.0606798317493451,
+      -0.0018971116807089405
+    ],
+    "mass_relative_error": 6.248974545974839e-05
+  },
+  "capture_and_train_wall_s": 24.70919219998177,
+  "training_source_archive": "frozen_source.zip"
+}

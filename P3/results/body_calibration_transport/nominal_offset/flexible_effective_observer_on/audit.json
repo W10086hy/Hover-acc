@@ -1,0 +1,46 @@
+{
+  "numerical_integrity_passed": true,
+  "duration_s": 120.0,
+  "count": 4,
+  "safe_completed": 4,
+  "strong_stationary": 2,
+  "strong_count": 2,
+  "fullrate_scoring_recomputed": true,
+  "tail_motion_recomputed": true,
+  "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "rows": [
+    {
+      "case_index": 0,
+      "std_m": 0.057529817260563346,
+      "speed_rms_mps": 0.015316030767590619,
+      "drift_mps": 0.0047375274996780325,
+      "bias_m": 0.1116999837922977,
+      "stationary": true
+    },
+    {
+      "case_index": 1,
+      "std_m": 0.023451399963885598,
+      "speed_rms_mps": 0.016243575091393885,
+      "drift_mps": 0.001259180975777701,
+      "bias_m": 1.0262261690500103,
+      "stationary": true
+    },
+    {
+      "case_index": 2,
+      "std_m": 0.042623686747161965,
+      "speed_rms_mps": 0.014598860117298471,
+      "drift_mps": 0.0019632334347088483,
+      "bias_m": 0.1353737665783707,
+      "stationary": true
+    },
+    {
+      "case_index": 3,
+      "std_m": 0.02014335825621265,
+      "speed_rms_mps": 0.03058505114834856,
+      "drift_mps": 0.0011834416362596196,
+      "bias_m": 0.9381840893232911,
+      "stationary": true
+    }
+  ],
+  "formal_final_acceptance": false
+}

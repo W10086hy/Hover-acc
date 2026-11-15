@@ -1,0 +1,24 @@
+{
+  "speed_gain": 1.0000005566032664,
+  "thrust_effectiveness": 1.0000011132068425,
+  "scalar_samples": 10052,
+  "rpm_fit_rmse_radps": 0.20052872869102498,
+  "relative_fit_rmse": 0.0003713275157372233,
+  "model": "slow_command_common_speed_gain_at_nominal_kf",
+  "lag_identified": false,
+  "max_fractional_command_change_per_interval": 0.002,
+  "holdout": {
+    "speed_gain": 1.0000005566032664,
+    "thrust_effectiveness": 1.0000011132068425,
+    "scalar_samples": 5544,
+    "rpm_fit_rmse_radps": 0.2035122168325965,
+    "relative_fit_rmse": 0.00037850370987259135,
+    "model": "slow_command_common_speed_gain_at_nominal_kf",
+    "lag_identified": false,
+    "max_fractional_command_change_per_interval": 0.002
+  },
+  "input_sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0",
+  "split_time_s": 28.14,
+  "raw_time_holdout_independent": true,
+  "source_sha256": "349609803309fe297edfed532d4bfb3b147c7ce5bd44ed484aa9aef4dd6a3578"
+}

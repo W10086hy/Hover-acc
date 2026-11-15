@@ -1,0 +1,46 @@
+{
+  "numerical_integrity_passed": true,
+  "duration_s": 120.0,
+  "count": 4,
+  "safe_completed": 2,
+  "strong_stationary": 1,
+  "strong_count": 2,
+  "fullrate_scoring_recomputed": true,
+  "tail_motion_recomputed": true,
+  "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "rows": [
+    {
+      "case_index": 0,
+      "std_m": 0.022527080085899105,
+      "speed_rms_mps": 0.04884758962242569,
+      "drift_mps": 0.00022737326765362946,
+      "bias_m": 3.3470217875536328,
+      "stationary": true
+    },
+    {
+      "case_index": 1,
+      "std_m": 0.02219994105629892,
+      "speed_rms_mps": 0.04227700894798457,
+      "drift_mps": 0.0003547775701596756,
+      "bias_m": 3.1961654775576416,
+      "stationary": true
+    },
+    {
+      "case_index": 2,
+      "std_m": 0.0,
+      "speed_rms_mps": 0.0,
+      "drift_mps": 0.0,
+      "bias_m": 0.0,
+      "stationary": false
+    },
+    {
+      "case_index": 3,
+      "std_m": 0.0,
+      "speed_rms_mps": 0.0,
+      "drift_mps": 0.0,
+      "bias_m": 0.0,
+      "stationary": false
+    }
+  ],
+  "formal_final_acceptance": false
+}

@@ -2,11 +2,15 @@
 
 当前 5 m 悬停结果采用水平加速度 BPTT 和仿真垂向 PID。保留累计 13 次更新的 Actor 与 Adam，以及同一权重的 80 条恒风和 20 条时变风完整复验。100 条均安全完成 120 秒并逐例达到三维 RMSE 门限。恒风和时变风稳态分别为 78/80 和 19/20。 [检查点、逐例结果和回放](P2/results/acceleration_hover/README.md)
 
+最新 P3 在 Position 机体系零偏／水平质心校准上加入 IMU 安装旋转、电机公共推力轴和完整惯量辨识。实际注入 IMU 每轴 1–3°、电机滚转／俯仰每轴 1–1.5°及偏置点载荷；三机体、两挂点、1／5 m/s 风的 120 秒配对中，P2 安全 2/12，P2+P3 安全、稳态及逐例 RMSE 均 12/12，弱／强风最差三维 RMSE 为 0.408／1.141 m。辨识采用独立机体系姿态参考，此为原生 MuJoCo 开发验证；真实 PX4 与实机仍待验证。[最新 P3 参数、完整结果与回放](P3/results/installation_20261115/README.md) · [此前零偏／质心结果](P3/results/body_calibration_transport/README.md)
+
 本工程研究四旋翼在无法使用 GNSS 定位时，如何仅凭机载感知，在柔性系留绳的约束下稳定悬停或跟随移动地面平台。控制策略由 PyTorch 中的可微动力学训练，随后在 MuJoCo 原生柔绳和 PX4 SITL 闭环中复验。
 
 Actor 保留起飞参考系三轴加速度输出结构。当前混合控制执行前向、右向两轴，垂向由仿真气压高度 PID 控制。可微执行层用水平期望加速度和标称重力确定倾斜方向，按机载姿态与陀螺反馈生成力矩并分配至电机。BPTT 经过执行层和柔绳闭环。 [训练与复验入口](P2/README.md#水平加速度-bptt-与垂向-pid)
 
 [最新 PX4 高度零点复测](px4_offboard/stock_transfer/height_reference/README.md) · [P2 模型与 Adam](P2/models.json) · [P3 模型与 Adam](P3/models.json) · [移动平台复测](track/drift8/README.md)
+
+当前交付按最新成果整理，保留训练参数、Adam、完整仿真及复现所需代码／配置；过期候选和调试数据已清理，统计保留。[整理清单与核验](cleanup/README.md) · [GitHub 工程](https://github.com/W10086hy/Hover-acc)
 
 ## 场景与控制目标
 
@@ -40,7 +44,7 @@ flowchart LR
 ```
 
 1. **P2 参数化 BPTT。** 将循环策略、控制接口、电机响应、刚体和柔绳在 PyTorch 中组成可微闭环，通过时间反向传播更新 Actor。训练中的位置损失优先约束高度，同时抑制水平漂移和大姿态运动。参数随机化覆盖质量 ±10%、三轴主惯量 ±15%、ESC 响应时间常数为标称值的 0.75–1.50 倍、转速增益 ±5%。Actor37 的最终训练采用 90 秒因果前置、末 30 秒梯度信用和 1 秒分段重算。默认 PX4 迁移另用 30 秒 BPTT 适配动作头，训练中近似 PX4 角速度内环、控制分配和电机响应。[P2 训练与配置](P2/README.md) · [默认 PX4 迁移](P2/results/px4_transfer/README.md)
-2. **P3 飞行器动力学辨识。** PX4 在 Position 模式控制飞机，P3 根据油门、转速和 IMU 辨识当前飞机相对于 P2 标准机体的差异。辨识输入独立于高度、任务与 Actor 权重。该入口生成辨识报告。上图的前馈分支对应历史冻结残差网络的闭环对照。[Position 辨识与历史验证](P3/README.md)
+2. **P3 零偏与质心辨识。** 在 Position 模式、机体系学习加速度计三轴零偏和水平质心偏移，位置估计只辅助辨识。校正 IMU 并运输至质心后形成 P2 历史，按辨识质量与机载比力处理参考点平移的附加力矩，执行器增益同步用于前馈分配和角运动预测。P2 与历史结果冻结。新参数采用原生 MuJoCo 配对；真实 PX4 Position 与实机部署验证分列。[辨识、训练与历史结果](P3/README.md)
 3. **逐级验证。** 先在可微模型检查梯度、闭环稳定性及候选参数，再冻结权重进入原生 MuJoCo。PX4 SITL 使用飞控二进制和 MAVLink 机载遥测闭环，审计解锁、模式切换、命令间隔、姿态、张力和完整评价时域。结果分列三维、高度及水平 RMSE，报告风型、时域、传感器种子和策略版本。提前失效的试验按对应协议对余下时段计罚。[MuJoCo 验证](mujoco_sim/README.md) · [PX4 验证](px4_offboard/stock_transfer/README.md)
 
 ## PX4 实施
@@ -52,6 +56,7 @@ flowchart LR
 
 | 工况 | 完整时域与安全完成 | 三维／高度／水平 RMSE（m） |
 | --- | --- | ---: |
+| [P3 零偏／质心校准，补偿开启](P3/results/body_calibration_transport/README.md) | 120 秒，12/12 | 0.725 / 0.065 / 0.722 |
 | [5 m 水平加速度 BPTT 恒风](P2/results/acceleration_hover/README.md) | 120 秒，80/80 | 0.605 / 0.053 / 0.603 |
 | [5 m 水平加速度 BPTT 时变风](P2/results/acceleration_hover/README.md) | 120 秒，20/20 | 0.701 / 0.055 / 0.698 |
 | [5 m 原生 MuJoCo 恒风，Actor37](P2/results/stationarity/FINAL37.md) | 120 秒，32/32 | 0.657 / 0.113 / 0.647 |

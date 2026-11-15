@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-15",
+  "task_complete": true,
+  "summary_sha256": "9b7bb664c43acb8348eb0821c12dabad3478c2c1b2c86b00161aa4abd2ae0ec8",
+  "current_checkpoints": [
+    {
+      "aircraft": "nominal_offset",
+      "checkpoint": "P3/results/body_calibration_transport/nominal_offset/calibration/calibration.pt",
+      "sha256": "cb4a1c3e9d88b31ead9e25b11e230e0b44eadf4dfd59b44631cf9c95e68c1839",
+      "optimizer_embedded": true,
+      "actuator_gain_sidecar": "P3/results/body_calibration_transport/nominal_offset/actuator_gain.json",
+      "actuator_gain_sha256": "02ba8a3fde204728a6bfd56f1f7d42a109fe5ba1673c6905eb332c2e832b3df8",
+      "position_data": "P3/results/body_calibration_transport/nominal_offset/position.npz",
+      "position_data_sha256": "5dcf196f40f5b494c54351d879dbda5175ae73c808dcaec1cdef81bef0597301",
+      "training_report": "P3/results/body_calibration_transport/nominal_offset/calibration/training.json",
+      "auxiliary_mass_kg": 2.3001509163495037
+    },
+    {
+      "aircraft": "light_offset",
+      "checkpoint": "P3/results/body_calibration_transport/light_offset/calibration/calibration.pt",
+      "sha256": "e98139e8e806f100632f870b3ece4401fb19f8e451e5c7f92b98b019175dd34a",
+      "optimizer_embedded": true,
+      "actuator_gain_sidecar": "P3/results/body_calibration_transport/light_offset/actuator_gain.json",
+      "actuator_gain_sha256": "7cc6e46b0eb62d01aecd0e06418063bbdcbea05e3d0afa65b860c15080b1274d",
+      "position_data": "P3/results/body_calibration_transport/light_offset/position.npz",
+      "position_data_sha256": "6ae0300a0a6ca8f69df629ed61a8ae8d8977df6e8c53660dcd4896c7dcffb230",
+      "training_report": "P3/results/body_calibration_transport/light_offset/calibration/training.json",
+      "auxiliary_mass_kg": 2.0701293537731016
+    },
+    {
+      "aircraft": "heavy_offset",
+      "checkpoint": "P3/results/body_calibration_transport/heavy_offset/calibration/calibration.pt",
+      "sha256": "646b74d1024dc8d173f5459cd269e3504ef700594cf565bd3cfc2a0eb3d0b710",
+      "optimizer_embedded": true,
+      "actuator_gain_sidecar": "P3/results/body_calibration_transport/heavy_offset/actuator_gain.json",
+      "actuator_gain_sha256": "ab199bed8430a53fefe00daa3ce1b5fc272c9245a043277ed584bb3f9816cf46",
+      "position_data": "P3/results/body_calibration_transport/heavy_offset/position.npz",
+      "position_data_sha256": "5074bb6d2ce0afd38cdb54b6afed14d7fc9d680fb9cdfbe12fb18f995d5cb890",
+      "training_report": "P3/results/body_calibration_transport/heavy_offset/calibration/training.json",
+      "auxiliary_mass_kg": 2.5301525030791403
+    }
+  ],
+  "policy_checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "p2_unchanged": true,
+  "regression_reports": {
+    "regression_mujoco.txt": "16c937553cd396f5168ab024e233decd289a091f5823918166bb13053b936cbd",
+    "regression_p2.txt": "0053b49f790cdd23d74bc1ad009d8cd9a28dbf6ab64ceabfc490a6dee62ef152",
+    "regression_p3.txt": "5d5224768147cdf0ad38d7acc25caeec65c6206a8b9bb688ef878eca3688c0b9",
+    "regression_px4.txt": "f7a7ef67578dc2f6c5fb1226ddfbaaced9d03d9dacc890651f0622860ea90cd0",
+    "regression_transport.txt": "ceafc2e684ce6e4ae5f2423f1c689190836be471d56449826078924d238b9211"
+  },
+  "native_pair_count": 24,
+  "after_case_count": 12,
+  "fullrate_audits": 6,
+  "real_px4_position_validated": false,
+  "formal_final_acceptance": false,
+  "retained_intermediates_reason": "Automatic approval rejected deletion of experimental evidence; preserve previous diagnostic variants"
+}

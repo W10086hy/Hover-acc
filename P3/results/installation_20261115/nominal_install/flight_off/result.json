@@ -1,0 +1,367 @@
+{
+  "policy_weights_unchanged": true,
+  "count": 4,
+  "safe_completed": 0,
+  "rmse_3d_h_xy_m": [
+    7.079521049873492,
+    3.9070881984571906,
+    5.903751358676821
+  ],
+  "weak_exceedances": 2,
+  "strong_exceedances": 2,
+  "duration_s": 120.0,
+  "tail_window_s": 30.0,
+  "seed_pair": [
+    2026113501,
+    2026113502
+  ],
+  "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "source_checkpoint_sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb",
+  "cumulative_physical_updates": 13,
+  "maximum_true_yaw_error_deg": 17.001068115234375,
+  "cases": [
+    {
+      "attachment": 2,
+      "wind_speed": 1.0,
+      "direction_rad": 1.1780972450961724,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0,
+      "actual_mean_wind_mps": 0.974960446357727,
+      "actual_rms_wind_mps": 0.9859933853149414,
+      "actual_peak_wind_mps": 1.0,
+      "completed": false,
+      "failure_code": 8,
+      "safe_duration_s": 8.84999942779541,
+      "position_rmse_m": 6.998396765690744,
+      "height_rmse_m": 3.851295692820444,
+      "horizontal_rmse_m": 5.843379054664636,
+      "terminal30_horizontal_rmse_m": 6.0,
+      "terminal30_height_rmse_m": 4.0,
+      "origin_dwell_fraction": 0.008083333333333333,
+      "allocation_saturation_fraction": 0.0,
+      "tail_statistics_complete": false,
+      "samples": 0.0,
+      "late_origin_rmse_m": 0.0,
+      "late_horizontal_std_m": 0.0,
+      "late_horizontal_bias_m": 0.0,
+      "late_horizontal_drift_mps": 0.0,
+      "late_horizontal_speed_rms_mps": 0.0,
+      "late_detrended_position_std_m": 0.0,
+      "late_detrended_height_std_m": 0.0,
+      "late_speed_rms_mps": 0.0,
+      "late_angular_acceleration_rms_radps2": 0.0,
+      "late_motor_step_rms_normalized": 0.0,
+      "hover_gate": {
+        "passed": false,
+        "settled": false,
+        "meets_rmse": false,
+        "rmse_limit_m": 0.5
+      },
+      "stationarity_working_criteria_passed": false
+    },
+    {
+      "attachment": 2,
+      "wind_speed": 5.0,
+      "direction_rad": 1.1780972450961724,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.05
+      ],
+      "tether_rest_length_m": 4.9,
+      "heading_command_deg": 0,
+      "actual_mean_wind_mps": 4.874802112579346,
+      "actual_rms_wind_mps": 4.929966926574707,
+      "actual_peak_wind_mps": 5.0,
+      "completed": false,
+      "failure_code": 64,
+      "safe_duration_s": 7.349999904632568,
+      "position_rmse_m": 7.04855313273173,
+      "height_rmse_m": 3.8774148044773975,
+      "horizontal_rmse_m": 5.886234424397467,
+      "terminal30_horizontal_rmse_m": 6.0,
+      "terminal30_height_rmse_m": 4.0,
+      "origin_dwell_fraction": 0.00825,
+      "allocation_saturation_fraction": 0.0,
+      "tail_statistics_complete": false,
+      "samples": 0.0,
+      "late_origin_rmse_m": 0.0,
+      "late_horizontal_std_m": 0.0,
+      "late_horizontal_bias_m": 0.0,
+      "late_horizontal_drift_mps": 0.0,
+      "late_horizontal_speed_rms_mps": 0.0,
+      "late_detrended_position_std_m": 0.0,
+      "late_detrended_height_std_m": 0.0,
+      "late_speed_rms_mps": 0.0,
+      "late_angular_acceleration_rms_radps2": 0.0,
+      "late_motor_step_rms_normalized": 0.0,
+      "hover_gate": {
+        "passed": false,
+        "settled": false,
+        "meets_rmse": false,
+        "rmse_limit_m": 1.5
+      },
+      "stationarity_working_criteria_passed": false
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 1.0,
+      "direction_rad": 1.1780972450961724,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0,
+      "actual_mean_wind_mps": 0.974960446357727,
+      "actual_rms_wind_mps": 0.9859933853149414,
+      "actual_peak_wind_mps": 1.0,
+      "completed": false,
+      "failure_code": 64,
+      "safe_duration_s": 3.009999990463257,
+      "position_rmse_m": 7.135734083329265,
+      "height_rmse_m": 3.9500762671084573,
+      "horizontal_rmse_m": 5.942692856947384,
+      "terminal30_horizontal_rmse_m": 6.0,
+      "terminal30_height_rmse_m": 4.0,
+      "origin_dwell_fraction": 0.008916666666666666,
+      "allocation_saturation_fraction": 0.0,
+      "tail_statistics_complete": false,
+      "samples": 0.0,
+      "late_origin_rmse_m": 0.0,
+      "late_horizontal_std_m": 0.0,
+      "late_horizontal_bias_m": 0.0,
+      "late_horizontal_drift_mps": 0.0,
+      "late_horizontal_speed_rms_mps": 0.0,
+      "late_detrended_position_std_m": 0.0,
+      "late_detrended_height_std_m": 0.0,
+      "late_speed_rms_mps": 0.0,
+      "late_angular_acceleration_rms_radps2": 0.0,
+      "late_motor_step_rms_normalized": 0.0,
+      "hover_gate": {
+        "passed": false,
+        "settled": false,
+        "meets_rmse": false,
+        "rmse_limit_m": 0.5
+      },
+      "stationarity_working_criteria_passed": false
+    },
+    {
+      "attachment": 1,
+      "wind_speed": 5.0,
+      "direction_rad": 1.1780972450961724,
+      "gust_fraction": 0,
+      "wind_profile": "steady",
+      "group": "steady",
+      "trial": 0,
+      "preflight_heading_rad": 0,
+      "attachment_b_m": [
+        0,
+        0,
+        0.1
+      ],
+      "tether_rest_length_m": 4.85,
+      "heading_command_deg": 0,
+      "actual_mean_wind_mps": 4.874802112579346,
+      "actual_rms_wind_mps": 4.929966926574707,
+      "actual_peak_wind_mps": 5.0,
+      "completed": false,
+      "failure_code": 64,
+      "safe_duration_s": 3.0999999046325684,
+      "position_rmse_m": 7.134431562461551,
+      "height_rmse_m": 3.948598000126442,
+      "horizontal_rmse_m": 5.942111371629198,
+      "terminal30_horizontal_rmse_m": 6.0,
+      "terminal30_height_rmse_m": 4.0,
+      "origin_dwell_fraction": 0.00825,
+      "allocation_saturation_fraction": 0.0,
+      "tail_statistics_complete": false,
+      "samples": 0.0,
+      "late_origin_rmse_m": 0.0,
+      "late_horizontal_std_m": 0.0,
+      "late_horizontal_bias_m": 0.0,
+      "late_horizontal_drift_mps": 0.0,
+      "late_horizontal_speed_rms_mps": 0.0,
+      "late_detrended_position_std_m": 0.0,
+      "late_detrended_height_std_m": 0.0,
+      "late_speed_rms_mps": 0.0,
+      "late_angular_acceleration_rms_radps2": 0.0,
+      "late_motor_step_rms_normalized": 0.0,
+      "hover_gate": {
+        "passed": false,
+        "settled": false,
+        "meets_rmse": false,
+        "rmse_limit_m": 1.5
+      },
+      "stationarity_working_criteria_passed": false
+    }
+  ],
+  "migration_comparison": null,
+  "failure_aggregation": "First failure state actual;remaining horizon xy6m/h4m",
+  "goal_achieved": false,
+  "stage_label": "安装倾斜/偏载 P2",
+  "actual_vehicle_spec": {
+    "mass_kg": 2.38,
+    "inertia_body_kgm2": [
+      0.01319915294117647,
+      0.006163166386554622,
+      0.016918319327731093
+    ],
+    "rotor_dx_m": 0.12,
+    "rotor_dy_m": 0.12,
+    "kf": 2.009e-05,
+    "km": 5.732e-07,
+    "motor_tau_s": 0.002,
+    "motor_speed_polynomial": [
+      -387.3,
+      1269,
+      -32.5
+    ],
+    "motor_deadzone": 0,
+    "rotor_inertia_kgm2": 8.8493e-06,
+    "include_gyro": true
+  },
+  "nominal_vehicle_spec": {
+    "mass_kg": 2.3,
+    "inertia_body_kgm2": [
+      0.0126,
+      0.0055,
+      0.0158
+    ],
+    "rotor_dx_m": 0.12,
+    "rotor_dy_m": 0.12,
+    "kf": 2.009e-05,
+    "km": 5.732e-07,
+    "motor_tau_s": 0.002,
+    "motor_speed_polynomial": [
+      -387.3,
+      1269,
+      -32.5
+    ],
+    "motor_deadzone": 0,
+    "rotor_inertia_kgm2": 8.8493e-06,
+    "include_gyro": true
+  },
+  "vehicle_identity": "a324ae97f2d1f2c5352af9f0b1a6e40b6e759e8c357a108d0d07a422139f0c57",
+  "device": "cpu",
+  "fullrate_tail_sample_hz": 100,
+  "saved_traces": true,
+  "final_acceptance": false,
+  "physical_command_fields": [
+    "launch_x_mps2",
+    "launch_y_mps2",
+    "launch_down_mps2"
+  ],
+  "engine": "native_MuJoCo_installation_and_payload",
+  "p3_enabled": false,
+  "installation": {
+    "imu_mount_deg": [
+      2.0,
+      -1.0,
+      1.0
+    ],
+    "motor_mount_deg": [
+      1.0,
+      -1.5,
+      0.0
+    ],
+    "full_inertia": [
+      [
+        0.01319915294117647,
+        -0.000477364705882353,
+        -0.000192
+      ],
+      [
+        -0.000477364705882353,
+        0.006163166386554622,
+        -0.000192
+      ],
+      [
+        -0.000192,
+        -0.000192,
+        0.016918319327731093
+      ]
+    ],
+    "gyro_bias_sensor": [
+      0.001,
+      -0.002,
+      0.0015
+    ],
+    "payloads": [
+      {
+        "mass_kg": 0.04,
+        "position_m": [
+          0.12,
+          0.06,
+          0.03
+        ]
+      },
+      {
+        "mass_kg": 0.04,
+        "position_m": [
+          -0.04,
+          -0.1,
+          -0.03
+        ]
+      }
+    ],
+    "total_mass_kg": 2.38,
+    "com_geometry_m": [
+      0.00907563025210084,
+      -0.006470588235294118,
+      0.0
+    ]
+  },
+  "installation_sha256": "be952bd10971f0f65b4fb40a92660530cf0bca76cb666469268309f6cf29617d",
+  "rope": {
+    "segments": 12,
+    "linear_density_kgpm": 0.01,
+    "axial_rigidity_n": 49.0,
+    "axial_viscosity_ns": 9.8,
+    "diameter_m": 0.003,
+    "air_drag_coefficient": 1.2
+  },
+  "policy_updates": 0,
+  "optimizer_created": false,
+  "p3_checkpoint_sha256": "0d2579bad7afa1168b780fd40654670243db93bdd2dbd68e9a34317969cd6e7f",
+  "actuator_gain_sha256": "a7c9522a222285a818804100b4c19c34a693f31063e12b2df3c3ec158acfb0f2",
+  "fullrate_evidence_sha256": "ac302886ebf990f3a03681944f2ff0c2500ed7a416574c63b041c17baba06a9a",
+  "offline_limits": {
+    "status": "Provisional simulation termination limits, not deployable safety guarantees or measured hardware limits",
+    "tilt_deg": 45,
+    "rate_radps": 4,
+    "speed_mps": 5,
+    "min_height_m": 1,
+    "max_height_m": 9,
+    "horizontal_radius_m": 6,
+    "tension_n": 30
+  },
+  "stationarity_working_criteria": {
+    "horizontal_std_limit_m": 0.25,
+    "horizontal_speed_limit_mps": 0.3,
+    "drift_limit_mps": 0.01
+  },
+  "physics_dt_s": 0.0005,
+  "mj_step_calls": 240000
+}

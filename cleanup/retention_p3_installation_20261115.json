@@ -1,0 +1,2267 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "status": "complete",
+  "authorization": "2026-11-15 user: 整理当前工程，保留最新的训练结果、仿真结果，整理完成后上传github",
+  "workspace": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower稳定控制\\拒止_加速度环",
+  "selected_result": "P3/results/installation_20261115",
+  "historical_statistics": "P3/results/history/calibration_development_20261115.json",
+  "removed_count": 327,
+  "removed_bytes": 70356393,
+  "removed_files": [
+    {
+      "path": "cleanup/update_p3_body_20261115.py",
+      "bytes": 6424,
+      "sha256": "67abd3654c023f9157a27fdd715b8b956b43b25a6aa2d2c30a06162c7e8056f9"
+    },
+    {
+      "path": "P3/results/body_calibration/frozen_source.zip",
+      "bytes": 42371,
+      "sha256": "ee87546ced7f28885b5059fd582a195fa48df655cff8563ae332b522e88aee4f"
+    },
+    {
+      "path": "P3/results/body_calibration/frozen_source_01.zip",
+      "bytes": 42800,
+      "sha256": "c57267d7f87017e9887ff8a0a4c316d4d80d7e68d4433453cc7f022700492ca8"
+    },
+    {
+      "path": "P3/results/body_calibration/frozen_source_02.zip",
+      "bytes": 183789,
+      "sha256": "09121171600e1496afd64da292bf0d9ec896b70a1367c37fbb80f2ec97f9640d"
+    },
+    {
+      "path": "P3/results/body_calibration/frozen_source_03.zip",
+      "bytes": 184683,
+      "sha256": "fba1f37b901ab55b42c228404f52baf4d386193c6fb3c46edd700ac5c70b3312"
+    },
+    {
+      "path": "P3/results/body_calibration/frozen_source_04.zip",
+      "bytes": 184736,
+      "sha256": "5e839dd4b38d9266916f9f97af41426deb18871f1cc3d10503fa980e92b89648"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/calibration/calibration.pt",
+      "bytes": 11004,
+      "sha256": "f60b4ffa7ea8509ebe3b1b34261497d87751108d192d963ad4bedab5e8e428d3"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/calibration/training.json",
+      "bytes": 3424,
+      "sha256": "e1c7ed3632bc7c564f3353664475751d2e1a4e77832f0b42cea3f0a66fb79601"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/capture.json",
+      "bytes": 757,
+      "sha256": "cbd4fca16532b1b8d540f8bfc18344f265bdc95789eb217001dfe28f19fbf0b2"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_off/audit.json",
+      "bytes": 1028,
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_off/fullrate.npz",
+      "bytes": 63017,
+      "sha256": "3ba6f10b106c4773c246bb7b03d4b4e4dc6544b1ef16ebbc8dcf4b844f1f767e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "d3b88346eaa1e957b37743c8ef52fcc55bd989dbe3c4fb87ee5c979089e0539d"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_off/result.json",
+      "bytes": 9866,
+      "sha256": "94d3d8eab1c2edf92a942abb2c6e8821a710c4d8755d0ba17accdd1203ec1714"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_off/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_off/trajectory.npz",
+      "bytes": 44811,
+      "sha256": "60516657b615811fef6dd87d523ccd6b45e6ec58795ddf53106d626557522966"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_on/audit.json",
+      "bytes": 1294,
+      "sha256": "768106758f8732237200162a8bcff15c497b07bacb128cd56dda6dec5f0207e3"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_on/fullrate.npz",
+      "bytes": 2443039,
+      "sha256": "e629245179d44d05a9135be2d03a4450452af8a079b43abb823eefeddc5876d9"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "2dcc446678c9e30b2d814ed5379c81e1798e38a332cbdee30648487f4d7d3cae"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_on/result.json",
+      "bytes": 10543,
+      "sha256": "cc71825cd08366bdb4e48c92c93f56ef3ec823905011b8e9db83c0e503a5f3ab"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_on/trajectory.npz",
+      "bytes": 1593454,
+      "sha256": "8d7ec90fb03202ab8062635bc76e774d2e9070e81f6ce63e15023ea0154c5f91"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/flexible_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/no_tether_off.json",
+      "bytes": 714,
+      "sha256": "f7d8b2ae232b4361d34da3458939c97b7c3ca0c272a85d10d45935a280ffad95"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/no_tether_off.npz",
+      "bytes": 339288,
+      "sha256": "4b9fa45bb18028c71667acfbb1386521b477d09d435cc80f18b4664579f4d02a"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/no_tether_on.json",
+      "bytes": 716,
+      "sha256": "8c3be856ba785a0dacb6db135f966f1580e165c16bab015d1e1ada353431a2d3"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/no_tether_on.npz",
+      "bytes": 339135,
+      "sha256": "911a17980590f9dc4bfa810c9b46b64a0c412e075ce78e63a0354bd7a0f951b1"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/position.npz",
+      "bytes": 431940,
+      "sha256": "f13d9e37b460fdabd17481d5b641003c430d48a903924d2e22a525738d5d0e32"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_off/audit.json",
+      "bytes": 1259,
+      "sha256": "99cea398562927c8c2c3d01cb03e77bc6d0aa6b809ed365615f3ba63b9059391"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_off/fullrate.npz",
+      "bytes": 42271,
+      "sha256": "523b8ac5571878cca7dd4d1f989c30db053b4373ea460a3e306e1a0718d6ef1e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "dd1ad6157716ade017a0afae47ec7baa507619874cdf11b24962cafa73ff065e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_off/result.json",
+      "bytes": 10318,
+      "sha256": "580a2c1822120f4f8ae3adf47cd541a84ff28efbae03fca6e7cbf6279b43fa47"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_off/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_off/trajectory.npz",
+      "bytes": 27400,
+      "sha256": "f0b147a1758df9049bf26a5472d29536c23eec95d9c188d259ae3cbab54dd476"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_on/audit.json",
+      "bytes": 1277,
+      "sha256": "01286ccb3204ce9d1413bcc1fcc36f04d80608f8d3e353c7436f190d02db5284"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_on/fullrate.npz",
+      "bytes": 42866,
+      "sha256": "eb5e5724eef21bdb00961a2c6d584eaef7a4663850382c5e19024134ae7346f3"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "b921851c10003930eded4d40fe5521e6788b0b9b0a346ce26a32fe68b9b74326"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_on/result.json",
+      "bytes": 10318,
+      "sha256": "06a30727e92e258acad0c9d336d2a63342f254ac90ad230a7b759b7e50f60d81"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_on/trajectory.npz",
+      "bytes": 27777,
+      "sha256": "538678ffc6e84d7acbf70e305413a7e31ddeff07278b65ba6e1fa63efee14495"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_corrected_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_off/audit.json",
+      "bytes": 1259,
+      "sha256": "99cea398562927c8c2c3d01cb03e77bc6d0aa6b809ed365615f3ba63b9059391"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_off/fullrate.npz",
+      "bytes": 42271,
+      "sha256": "523b8ac5571878cca7dd4d1f989c30db053b4373ea460a3e306e1a0718d6ef1e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "dd1ad6157716ade017a0afae47ec7baa507619874cdf11b24962cafa73ff065e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_off/result.json",
+      "bytes": 10318,
+      "sha256": "c0e0583d15cda6b15f1c4f298f81fc07481e6e1bfe448d14ef7551b8052018e8"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_off/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_off/trajectory.npz",
+      "bytes": 27400,
+      "sha256": "f0b147a1758df9049bf26a5472d29536c23eec95d9c188d259ae3cbab54dd476"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_on/audit.json",
+      "bytes": 1264,
+      "sha256": "b81e02df90bc2e950175b020fa324b8b3bcb44d39cd35e2fd09585d0cf59eb18"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_on/fullrate.npz",
+      "bytes": 31561,
+      "sha256": "941f92273713eff225c0d041ea395cd757d355ec96e9e49fbae093af5b350c50"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "181853caa0f96e37c9aa40fb2f63135c7bdfe26525eba9b50b312c6406c5c157"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_on/result.json",
+      "bytes": 10368,
+      "sha256": "2b4b04e781affb3a2bc07c94da0fd1271b256c683a225ed5fd2f2803f1f6a901"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_on/trajectory.npz",
+      "bytes": 20968,
+      "sha256": "ee8782925602358af5132dc3755e98b774ffdfabb424ee891c6e8b2c00e0088f"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/smoke_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/training/calibration.pt",
+      "bytes": 10620,
+      "sha256": "104192610db03e01f69cc2bbdef66844f069d759693fed083302c2344114d8d3"
+    },
+    {
+      "path": "P3/results/body_calibration/heavy_offset/training/training.json",
+      "bytes": 2796,
+      "sha256": "6ca98a7c46899957e7771f962945dbd772cf661cc22db1baf6ecb314cfb0dc94"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/calibration/calibration.pt",
+      "bytes": 11004,
+      "sha256": "8736d72bbd28274685bb8579d2151ad8415451818e80a7996a65a07e2a970698"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/calibration/training.json",
+      "bytes": 3423,
+      "sha256": "1b223e7dd9bc134806546f8c453074dca0ba5b6287c25c9b4ecedce4478fe574"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/capture.json",
+      "bytes": 764,
+      "sha256": "4df658111ba67555d46d936c6039dada99054a16fec738d261fee2e9e2d29863"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_off/audit.json",
+      "bytes": 1152,
+      "sha256": "e26f76236f9eb7a16987bd8a309bf8f5ae1359f5ad0bf77f7b305392ca22763c"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_off/fullrate.npz",
+      "bytes": 1316639,
+      "sha256": "a7bcd34f7f7cdcf9857fc3e1c8038eb506456ebfc79ab00d651babf197651563"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "bc01d246d95037f3c51b9edd8bb554daa0545631fa47003f60e21bd3ce94fe42"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_off/result.json",
+      "bytes": 10136,
+      "sha256": "bad98c181fc20aa8c4910d17d38232a843899f786451e32328bb8b906147e900"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_off/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_off/trajectory.npz",
+      "bytes": 836562,
+      "sha256": "71948cf64d8b112bc52da433643b0b90f9eb3e9aa00a122a191d3a288933108c"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_on/audit.json",
+      "bytes": 1288,
+      "sha256": "694023e44990fa8be7b827375cde053d14e4d0e046841070b2758c2e0fd5fedc"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_on/fullrate.npz",
+      "bytes": 2462621,
+      "sha256": "e2b40ac13a3b049536663801bb41cfd626ee088407a58a001944d52828856b04"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "de168f4e8c56879506251130e8f299694cb36ac14938a5e44d91ffaa167a1e2a"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_on/result.json",
+      "bytes": 10525,
+      "sha256": "141406cea3a1d2271debb327a03c156de73a26d9bab3533e099fcde0ec9a9626"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_on/trajectory.npz",
+      "bytes": 1602071,
+      "sha256": "707ebfffce2fb6ab6b25bf22749c2160adde634f51defe0a87430b5606ac782f"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/flexible_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/no_tether_off.json",
+      "bytes": 722,
+      "sha256": "b91921d541b2b8a34d4f375efc20c604f3cb6d53e717b378c177329189aa54e9"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/no_tether_off.npz",
+      "bytes": 341950,
+      "sha256": "baf53a432eebae33e250a02e5eaa179521a711f6f15b0d381f79287994297fb3"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/no_tether_on.json",
+      "bytes": 720,
+      "sha256": "a6a461c8831a27c6f7a53ebd1fd076ea23f874455bf3f96fe7a13a28dd844044"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/no_tether_on.npz",
+      "bytes": 341935,
+      "sha256": "3ad1b39b5fc8797ae3a2438b59b117b916e7303a39e2228d1a3d2849951087cb"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/position.npz",
+      "bytes": 432985,
+      "sha256": "4c87a33b6d516776f1729b224e79fbc2267bf42e969c3b4652f3ba9642c269f9"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_off/audit.json",
+      "bytes": 1262,
+      "sha256": "05a96d0a025ab5eaa400ee66c1e155c0c9344c049da9248e5775eab121516866"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_off/fullrate.npz",
+      "bytes": 43277,
+      "sha256": "a9e4d1f0935c993116edc49ecd9be061a20b5c443549ca9878ff17b0f9b78d1e"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "7cf8abc61f1a69f9a9098fbe24566f1a5d81303827553b274b17e9f197d926da"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_off/result.json",
+      "bytes": 10306,
+      "sha256": "e4412ff9a9bfe1920ec9f95a4bd6ae2fa85d7dbd53a65a5ff53a0f7a09357f42"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_off/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_off/trajectory.npz",
+      "bytes": 27837,
+      "sha256": "7a1a3c18e81fefd79fb9f9d3f01221c03107de980f889d2037a942d67d41e82a"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_on/audit.json",
+      "bytes": 1274,
+      "sha256": "1c183ed04268e4f7bc967cabdcb2b0f494bfcd2e0f222137cd0b5a3c4cd059ee"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_on/fullrate.npz",
+      "bytes": 43267,
+      "sha256": "2221a7a7be6e285c13148d55cd51cbfcd7808e91abe9a78462679c1e38f44451"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "36fbf2793283fcce06dd95c2a8955d456308086b6239a35e607329eb963d37d5"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_on/result.json",
+      "bytes": 10328,
+      "sha256": "14d3c3c4e7a0dbe0595aa753ebcc81b603f58f27a03be28296d8bcb2a6f56e17"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_on/trajectory.npz",
+      "bytes": 27936,
+      "sha256": "fa22abeed086d9579d9edde222ac6bbd63a57cb88d5dd5be59be36bb6578a229"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_corrected_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_off/audit.json",
+      "bytes": 1262,
+      "sha256": "05a96d0a025ab5eaa400ee66c1e155c0c9344c049da9248e5775eab121516866"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_off/fullrate.npz",
+      "bytes": 43277,
+      "sha256": "a9e4d1f0935c993116edc49ecd9be061a20b5c443549ca9878ff17b0f9b78d1e"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "7cf8abc61f1a69f9a9098fbe24566f1a5d81303827553b274b17e9f197d926da"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_off/result.json",
+      "bytes": 10306,
+      "sha256": "fbb0301e1e0d99ee9e8e179f7ea0e44851f524e3330f19ceafe34baea86064df"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_off/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_off/trajectory.npz",
+      "bytes": 27837,
+      "sha256": "7a1a3c18e81fefd79fb9f9d3f01221c03107de980f889d2037a942d67d41e82a"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_on/audit.json",
+      "bytes": 1257,
+      "sha256": "cd8a9c9a79570a54d330715664f2867f80a2808aed26fe4792fb2313a739ff92"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_on/fullrate.npz",
+      "bytes": 43339,
+      "sha256": "6871e48c8cb770794400550ec1d6f963a42aa4d79722570cf7367a694eab416e"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "50a82442caee1916053304f350e66fe869e1a85b27a87cef2c6e2a6cc221ad75"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_on/result.json",
+      "bytes": 10292,
+      "sha256": "40a0f3d1e1b402065c6fc0cba37bb1744ffa47a5435115206c616b5ff83388e1"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_on/trajectory.npz",
+      "bytes": 27895,
+      "sha256": "174d5cdf1e93055eb22356e9962ea8091dfc724a1f8fe5c7bf6c901f652ae852"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/smoke_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/training/calibration.pt",
+      "bytes": 10620,
+      "sha256": "280ec6094312fb76491ec8f7f0d720aac94b8fda2f1f83ad8efccc7230b0f305"
+    },
+    {
+      "path": "P3/results/body_calibration/light_offset/training/training.json",
+      "bytes": 2797,
+      "sha256": "ed572d371359607f727026ebb21a52445c1e743eaf9b41c5317a27e60fa0d166"
+    },
+    {
+      "path": "P3/results/body_calibration/manifest.json",
+      "bytes": 32012,
+      "sha256": "679928a4e311efadd843b0c316231682a013c66d1d3b8aac3ce952a5c39fd374"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/calibration/calibration.pt",
+      "bytes": 11004,
+      "sha256": "8e0023be24ec363129a7260f1ed40a388f01f162618a1b6092babe21e3a4493a"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/calibration/training.json",
+      "bytes": 3426,
+      "sha256": "1f060f3c35ec9de338d558850a5a30bcfd5df2a3226c3b5d9c90050a991ed8f6"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/capture.json",
+      "bytes": 716,
+      "sha256": "1b0e6c9459ace716b30b34829476b855c98444bea0d1422f2ddf50eee392e246"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_off/audit.json",
+      "bytes": 1028,
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_off/fullrate.npz",
+      "bytes": 122194,
+      "sha256": "c5ef5b2513115c96e3c47e93c9def634bd51c9ecd5da56d0fa6fc9c58a268ea7"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "fa0605adfc4244ca6a6149e5e1a83a9961978b533808a75333cedd5308b0a416"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_off/result.json",
+      "bytes": 9751,
+      "sha256": "6e9b40eb14435571b83577bb11c978427bf30f4c4e49c2cca1dc1a33a1a110e6"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_off/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_off/trajectory.npz",
+      "bytes": 81977,
+      "sha256": "326154665f736a8637d7a9c22f689f5074991da6a11125547ebc5e35717bf1b6"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_on/audit.json",
+      "bytes": 1288,
+      "sha256": "240e58c939efa4ce19fa79eeeaf289f2b8f13e410564ae7a5d815e8dbcc39ccd"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_on/fullrate.npz",
+      "bytes": 2459321,
+      "sha256": "76c64ab0d15c928474e404c6c4a8a627a19703854f82b1fea493c7f368681b24"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "89dc6732dd74f8a02c83aa161e48f37b456617482aa9fc7ff965f8b2d8045329"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_on/result.json",
+      "bytes": 10487,
+      "sha256": "2d7e784a332919f2cae7e123f4a21f5e677f8e55a34c27b6ab4005ff3734ae77"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_on/trajectory.npz",
+      "bytes": 1598660,
+      "sha256": "672bd84d46fa2f584e3f03e97e045bfabece7adbda0bb79c0d49f3fa0c9622f7"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/flexible_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/no_tether_off.json",
+      "bytes": 720,
+      "sha256": "1e685de2f39a2f5efd0070578cfd093c46390dadc0cd4a79aedef37d0878ba3e"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/no_tether_off.npz",
+      "bytes": 338272,
+      "sha256": "4315185c500a1846d0cfcffee244245d59550eadd75b1c27b84ba179d8f3cda5"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/no_tether_on.json",
+      "bytes": 730,
+      "sha256": "f9fda2310aee5befcbf68c8476b98b71a72b91e67c1ca71a73d3df2ba6266846"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/no_tether_on.npz",
+      "bytes": 336135,
+      "sha256": "9fe2e8fcda8640dacea8f125d85780745974311513b59ead9670968dfd1dd502"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/position.npz",
+      "bytes": 431969,
+      "sha256": "1419bb7562799e9b30dc4239909f55c8d12676abb976dc18f1e523284393d890"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_off/audit.json",
+      "bytes": 1260,
+      "sha256": "544405740b33720640d6af24a2e1b7f65e0b2c23ab1384dfb474cd16b5e60766"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_off/fullrate.npz",
+      "bytes": 43143,
+      "sha256": "945e2dc133508d916e168032d72a6b6c1f95f50dd7c77df8ea2361b93ff660e5"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "b269326464cde47cdd7144f9364fced013f89f2f0f500753ac02df85bf68dadf"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_off/result.json",
+      "bytes": 10264,
+      "sha256": "65adcba56ab69a20d477008ab1704a90dbef8a9f8756a6fc271bf84b2cb6fc3d"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_off/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_off/trajectory.npz",
+      "bytes": 27850,
+      "sha256": "fe2ea535f76a3b33a0ce09427b8d84b699f5f51773b03b30703d370c65f536c6"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_on/audit.json",
+      "bytes": 1277,
+      "sha256": "5284be3fb3596d3b13955387dec84aee6e360a12fa04fb7ac25e3af7ffe071ee"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_on/fullrate.npz",
+      "bytes": 42929,
+      "sha256": "74cb1bbb4ccc18487bde5a8331550db8850579ca14c2611ebe7f087eb355be47"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "245a4273bb32294e7a6336c51f2f29aa7c08ab8f8c9f0a354153d293895f8c20"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_on/result.json",
+      "bytes": 10296,
+      "sha256": "d053f90527b65df0ef2e6acf2795250cca01205b88d565f0213264c7f78ed07a"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_on/trajectory.npz",
+      "bytes": 27855,
+      "sha256": "e16e5fd6d24b7b120d9ff456d24df56094266e1fbd2e91ab27bfc6929be303c9"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_corrected_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_off/audit.json",
+      "bytes": 1260,
+      "sha256": "544405740b33720640d6af24a2e1b7f65e0b2c23ab1384dfb474cd16b5e60766"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_off/fullrate.npz",
+      "bytes": 43143,
+      "sha256": "945e2dc133508d916e168032d72a6b6c1f95f50dd7c77df8ea2361b93ff660e5"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "b269326464cde47cdd7144f9364fced013f89f2f0f500753ac02df85bf68dadf"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_off/result.json",
+      "bytes": 10264,
+      "sha256": "5c3a29cddf5213b158fa49dcf8cf6ba9325c71eff495e8c84a817d87fff2cdfa"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_off/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_off/trajectory.npz",
+      "bytes": 27850,
+      "sha256": "fe2ea535f76a3b33a0ce09427b8d84b699f5f51773b03b30703d370c65f536c6"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_on/audit.json",
+      "bytes": 1260,
+      "sha256": "6c826ee2fc6c1d4bccbf3d27f002e02a9c01f5bc623a405df601a77a78e2d0a9"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_on/fullrate.npz",
+      "bytes": 43211,
+      "sha256": "e646e6e2506d78478c49d50dc9a2ffbd193b00bb2918f315ee8ff20ea8531875"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "0873cc523034fb68e612b691620d86b87a028050e7894c7aedc979f9ce7afd60"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_on/result.json",
+      "bytes": 10251,
+      "sha256": "b516598efeb8c1ffdd04abc7864cecbec61aa88b6729d3729a98b1755b2f74f5"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_on/trajectory.npz",
+      "bytes": 27872,
+      "sha256": "97d1621bb87394847923ac166b8354f8d2ee789faf985af584c0e5371dffe9e0"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/smoke_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/training/calibration.pt",
+      "bytes": 10620,
+      "sha256": "84a2c0d3d0f1d45f754b79ca162989aa2afd4881a4802aa8a1a096117743764e"
+    },
+    {
+      "path": "P3/results/body_calibration/nominal_offset/training/training.json",
+      "bytes": 2795,
+      "sha256": "d21716069e13a7478262526dba865fb55c07aaa9b85ec3086551a7a81942f27c"
+    },
+    {
+      "path": "P3/results/body_calibration/README.md",
+      "bytes": 3837,
+      "sha256": "df1e9b938792b631495a5e53891b8edee45255f6093aeded6010922cd2bce369"
+    },
+    {
+      "path": "P3/results/body_calibration/regression_mujoco.txt",
+      "bytes": 1588,
+      "sha256": "16c937553cd396f5168ab024e233decd289a091f5823918166bb13053b936cbd"
+    },
+    {
+      "path": "P3/results/body_calibration/regression_p2.txt",
+      "bytes": 7382,
+      "sha256": "0053b49f790cdd23d74bc1ad009d8cd9a28dbf6ab64ceabfc490a6dee62ef152"
+    },
+    {
+      "path": "P3/results/body_calibration/regression_p3.txt",
+      "bytes": 10428,
+      "sha256": "56983552eb1bc410e8025dd271d5a2e63957cacfa23afc71826b10dbf3ed951f"
+    },
+    {
+      "path": "P3/results/body_calibration/regression_px4.txt",
+      "bytes": 114,
+      "sha256": "f7a7ef67578dc2f6c5fb1226ddfbaaced9d03d9dacc890651f0622860ea90cd0"
+    },
+    {
+      "path": "P3/results/body_calibration/replays/strong.gif",
+      "bytes": 5366435,
+      "sha256": "e2ce6fa191aca25f6cfc184e976409e32b30bc2321c3ef47a94d339189626a8f"
+    },
+    {
+      "path": "P3/results/body_calibration/replays/strong.json",
+      "bytes": 3887,
+      "sha256": "f52ee12033cf2929f6e770e0ca9d7050cbef35948f3317c2ffb91d9c2af9fd5b"
+    },
+    {
+      "path": "P3/results/body_calibration/replays/strong.png",
+      "bytes": 218071,
+      "sha256": "4ce2cb1e06b4145c9b3275a461ca2a48b3c16bc688d9f99f34e8c59a0a886215"
+    },
+    {
+      "path": "P3/results/body_calibration/replays/weak.gif",
+      "bytes": 3514654,
+      "sha256": "d38816c45f20e3883d4beb7b4203c424a00c6bfb733e53a3834964e1a998c778"
+    },
+    {
+      "path": "P3/results/body_calibration/replays/weak.json",
+      "bytes": 3910,
+      "sha256": "0dce2b56b76561388a6a5ff035dc312bf4380e38c62408d5101e6fd413a1d21c"
+    },
+    {
+      "path": "P3/results/body_calibration/replays/weak.png",
+      "bytes": 207551,
+      "sha256": "0d4ec3d2a3899ecf281b114c0211e4243952f9d291b99766fa405d27f086f78a"
+    },
+    {
+      "path": "P3/results/body_calibration/standard_reference/audit.json",
+      "bytes": 1291,
+      "sha256": "0c6d901b78f47f688413779a440450bcacd8cd4cb207490737717e381f334a3f"
+    },
+    {
+      "path": "P3/results/body_calibration/standard_reference/fullrate.npz",
+      "bytes": 2457759,
+      "sha256": "dba324531faf33a7acc97e8554f5558649b12952e5b090f09f0ae52d7d053bfe"
+    },
+    {
+      "path": "P3/results/body_calibration/standard_reference/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "1eecfaac1e9ac792720c0c640379638a0dee54adc0ae50453cf5c56e52721d27"
+    },
+    {
+      "path": "P3/results/body_calibration/standard_reference/result.json",
+      "bytes": 10336,
+      "sha256": "579834b15d7b0a6babdde4827ba9a1eb9a870af73841140db41cc99493ce3954"
+    },
+    {
+      "path": "P3/results/body_calibration/standard_reference/trajectory.npz",
+      "bytes": 1593660,
+      "sha256": "c055b267f2d9776b232ec348edab556c7c269ccf9eed0de23b05411898aec408"
+    },
+    {
+      "path": "P3/results/body_calibration/standard_reference/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration/summary.json",
+      "bytes": 80799,
+      "sha256": "b05a45e31e314f77286a8dbd70899971bd57b0458ee9238bf2ffb12097258d8f"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/before_actuator_effectiveness_fix.json",
+      "bytes": 40937,
+      "sha256": "d77d297259656a61410cbc0a988de764343132bd6235031f2db09ff15cebe967"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on/audit.json",
+      "bytes": 1158,
+      "sha256": "a0fac1e9d168148bd0eccfc8f01cbe530571635dd9bf8660aa548995df928d29"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on/fullrate.npz",
+      "bytes": 1347794,
+      "sha256": "46e8ee24ba0911c1e7647e9857a044e815f0582229b371ad68ec8bd845f8a1e5"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "c461684a81dd03d65f7fa7d46185d2256f07c264e04e652f82055922af84d8a4"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on/result.json",
+      "bytes": 10574,
+      "sha256": "d90953cb42c457e18c7b5d3081bba93849848a8f8e5a646201b81188b72781c9"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on/trajectory.npz",
+      "bytes": 868400,
+      "sha256": "494e57f361e50f3c89909a166e0029cbb53e232e3d8d8d60fc0e5f02652021d5"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_on/audit.json",
+      "bytes": 1223,
+      "sha256": "85210026b9740647fac049602ccd12b085f45a4621abe3ce00a02ece58993324"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_on/fullrate.npz",
+      "bytes": 1874308,
+      "sha256": "5792431ec4dc98a670a5338ac5df33b8069f94bf62b2e6dc9037d66fdc7a3829"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "f1f7e126e452601fc5bbe019115c3416ac9b55e0ca329725e113b1c2f8e35152"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_on/result.json",
+      "bytes": 10530,
+      "sha256": "aed4a61f71042655b5cab49e979c0e53d4cbdabb7baf90fd2c5ba3ab7df29b92"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_on/trajectory.npz",
+      "bytes": 1206970,
+      "sha256": "0703953806ee414b76fb498904484738d9a1c1dbc733dfe942d7cb7a9a89b096"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/no_tether_on.json",
+      "bytes": 716,
+      "sha256": "66824560f1207fdb77b3e82e17c1bb7a81d324375c79edf8a38d9e302e3a3f2c"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/no_tether_on.npz",
+      "bytes": 344692,
+      "sha256": "3415225db993777cbb62f421f06c6e7b82f0102a5128c3e82eab3c28d99d6b5e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on/audit.json",
+      "bytes": 1281,
+      "sha256": "f68cc73cab13240b20ab0cb91311cd99262a6030c7f6c2a2dca92ac1bb641340"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on/fullrate.npz",
+      "bytes": 42924,
+      "sha256": "1b6c3bc8b8ade774da17cdd839d51f7835e7098c10ab3d5821b6ae85822cd56b"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on/heading_witness.pt",
+      "bytes": 4854,
+      "sha256": "81911bd495c75b0c2fc9040acd60f28022e6adc965208bf58ae7efc1f25dde37"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on/result.json",
+      "bytes": 10725,
+      "sha256": "96d81ec860717b05cb720745c51922daefad4bf67ae9f52dfd184664e34ccdc1"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on/trajectory.npz",
+      "bytes": 27848,
+      "sha256": "5a34facbbc7929d717bf9e4e69d23ff318b7b8a7710a95b284b6b099364fad46"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on/wind_trace.pt",
+      "bytes": 11283,
+      "sha256": "2ccccaec1dfbd36546a760ba8b78798915096e1fe3019dddef9e52a1ba150e56"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off/audit.json",
+      "bytes": 1261,
+      "sha256": "58e48a79288e6a3bf57193f4881383ff5d6820522233ddabbbb900c968a6e75b"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off/fullrate.npz",
+      "bytes": 42258,
+      "sha256": "2766514b3098bb8d4cc26b5928c08c0dff616445db53af9fa067a79127a010d2"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "2ee4aba0a67cd06340047bb07857362bf5a835f7d9f2aa38e86b6a50e7abce46"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off/result.json",
+      "bytes": 10473,
+      "sha256": "91cda8feb05e9b8e4e682bd2e012a2e235a5a04b249d353d967bf5f8b1905ed0"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off/trajectory.npz",
+      "bytes": 27387,
+      "sha256": "44cf0662a40dfcdcda6dd94d40d407155eb2bf409c9c4a46a3852d2c7c36b9c2"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on/audit.json",
+      "bytes": 1271,
+      "sha256": "3a9e00ffc86cd7998ed66d66005d29a535b6336a24282b64245c2d130c2afb08"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on/fullrate.npz",
+      "bytes": 43034,
+      "sha256": "3796530d6b1b3d2680992536fea98e5b8d8e319b0e2a9ee2eea4503b0d9fe0c6"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "13c8b33c9cdfdfc230656acd6f6abc164ef7b559ae12f1f17faf433240ac5b65"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on/result.json",
+      "bytes": 10469,
+      "sha256": "27cbde1e87392b5ffd09df5b1b4c5497f8d4abd1a2bd60cbb23ee81c6812efed"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on/trajectory.npz",
+      "bytes": 27743,
+      "sha256": "c7b739dc3c514dd71278916cf115521bc5817b03648cb35349251b22ed661fed"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_on/audit.json",
+      "bytes": 1286,
+      "sha256": "e75615316600a12664135e5f1a99c7f08461dd4ee1ff678b97be413f71fc29c4"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_on/fullrate.npz",
+      "bytes": 2456885,
+      "sha256": "48c97685fb13eefe2c8c91f96846556b531f576c27fb7069c8d6de29e4ec051c"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "6f4e41c5ff30cc1ce31ede9a28631f9b9bb331eda6bcfe74f63e4b9f6377caf1"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_on/result.json",
+      "bytes": 10915,
+      "sha256": "e949009f64a39821ccba5fad27169eef2bce00269746c6dc6fd623aaf0e9111e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_on/trajectory.npz",
+      "bytes": 1599887,
+      "sha256": "c2af4bcbb559a65aa93e045a8901545713c531b4f406b967c2f88f28b3a79df3"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_on/audit.json",
+      "bytes": 1288,
+      "sha256": "2d6b198d4fc398d6cea0edabe24325ea10642ee4ba49121de178e101e85ff799"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_on/fullrate.npz",
+      "bytes": 2455763,
+      "sha256": "fee6957565e162cbe210f77b27409b794ef802c5a3e23922a9ea3df1103c05ca"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "1b3ed2e4ae2f7c58b1d4101097fd528ed10d46c328c58c9a2a0068a4f2d2f4db"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_on/result.json",
+      "bytes": 10720,
+      "sha256": "58b21ad63724d180623501d8b249b859136d12725a2f59e1465be42b2028b2bd"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_on/trajectory.npz",
+      "bytes": 1600085,
+      "sha256": "a7bcb33f32dbe2d4b852f3aa67bc34b5654f015bd4b5a700288ee2de42539b83"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/no_tether_on.json",
+      "bytes": 723,
+      "sha256": "ade77ccb952802351d24fb4824805916ad1d0fec99c906860e428cea02af52d5"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/no_tether_on.npz",
+      "bytes": 347561,
+      "sha256": "c9986b94305ac6ed2b9e680b7b346f0653159810f87a1e4dd05b3bd7333ef241"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on/audit.json",
+      "bytes": 1277,
+      "sha256": "4dea3d1abd34cc9ed685d5b770623293a1259c0c3479ba46ea349b14241bb93d"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on/fullrate.npz",
+      "bytes": 43273,
+      "sha256": "41170ba890cd3da138519a4c0bb788e4c09b1951366b9a706cf01ac943b73776"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on/heading_witness.pt",
+      "bytes": 4854,
+      "sha256": "25b05061526d764e0f20faa53c0f60b82831bde7fbdb5ed38009e168ca2ca100"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on/result.json",
+      "bytes": 10737,
+      "sha256": "2013fb997071d90c3e4722d0100552da53261232fcef6a21a49c7b39d3d2605a"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on/trajectory.npz",
+      "bytes": 27972,
+      "sha256": "38fae34f388b2284f527e2e66dbea77d605a9f5bb0c398f347a57a47f61b2427"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on/wind_trace.pt",
+      "bytes": 11283,
+      "sha256": "2ccccaec1dfbd36546a760ba8b78798915096e1fe3019dddef9e52a1ba150e56"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_off/audit.json",
+      "bytes": 1257,
+      "sha256": "f49c021e27dbbcf7f761006953d1da12334fe0e98dc595bbb003cfa5b43c7665"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_off/fullrate.npz",
+      "bytes": 43257,
+      "sha256": "67f42f350e9da12a8b9da38a33a526b944e1184c57ede56ecb17533fbda4563d"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "ce6cf9eff5d2ae24fd23074fca1339c7de0db71b098ea22c878807e2d7732bf9"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_off/result.json",
+      "bytes": 10464,
+      "sha256": "2af27c2b69d664da2fcb49c20c909f98420b91c9bf61087c6c45ca81dae99b22"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_off/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_off/trajectory.npz",
+      "bytes": 27826,
+      "sha256": "7b8406305b15f6ec26660f8026cc662a678cb06e7e861c5c63f52e921d999f48"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_on/audit.json",
+      "bytes": 1268,
+      "sha256": "48869d1c207a214da4d9aa82ab2116f154eab6dfadaad71ca04922b0fe9fdb45"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_on/fullrate.npz",
+      "bytes": 43149,
+      "sha256": "8fb673e28238921ab480a6204ba1a4ae79a6bb1687b16342f67619ea599e5570"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "55f406b56d160c606848614f136088cdf8cc7b86223191db6db116d2dfdaba1c"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_on/result.json",
+      "bytes": 10485,
+      "sha256": "07159261eefcfb7e0fab0eeef4cd637edc1ded019625cf214154f5afc1e7d725"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_on/trajectory.npz",
+      "bytes": 27883,
+      "sha256": "6b06b11959e145cce56c68530bacac4c022aede681e92ad2a44a28a9bda032a4"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/smoke_corrected_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on/audit.json",
+      "bytes": 1285,
+      "sha256": "af253b1a8e95d02ebec1d582434e3c703142a1a6f37241f3637099c6a0eab576"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on/fullrate.npz",
+      "bytes": 2457632,
+      "sha256": "577c43dd058644395e6f6f2bd07a23db74d40a5b351db3e05d1fa57ab634d134"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "6039f49879b28aad2be75aff156fa53ada7086c06cd96b6ef24381cdb0515eb6"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on/result.json",
+      "bytes": 10839,
+      "sha256": "82755f6e0d5cae628dcabf9c33fc9295e289af4f37992bf0f1b3b5a354c59341"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on/trajectory.npz",
+      "bytes": 1594470,
+      "sha256": "d9455217ce13860c362f79750122aead1da22a4c2fb396b4964e0b5192c48ee3"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_on/audit.json",
+      "bytes": 1290,
+      "sha256": "ca95602c9a24b56e40b4e00ecb24d85443f677f393241e92a7010052d58f717c"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_on/fullrate.npz",
+      "bytes": 2457608,
+      "sha256": "970380b4791f1843c2265d819e592218a62c025f85206b4955f9ab1011b0e4fa"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "e4e4978c8567d412af08f38cac8aede8ce1b9d0e519bb95e632526c80b9f3468"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_on/result.json",
+      "bytes": 10659,
+      "sha256": "6745ea63d900d177c683a30e006221a9d9c922278023c71036bc9d8949604402"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_on/trajectory.npz",
+      "bytes": 1594438,
+      "sha256": "2687dfcce61a1eeb139e500fd5250a6312a54496acbbb6e4e4738fcd796bff48"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/no_tether_on.json",
+      "bytes": 728,
+      "sha256": "9a98a8ccdaaca5f7ed015700803ab3e131407df1b429012ece249e042211162d"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/no_tether_on.npz",
+      "bytes": 342863,
+      "sha256": "c97b432aaa6a0d58b7f3cfb0031eafb7e9f36ee296d869e461609494d099d707"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on/audit.json",
+      "bytes": 1281,
+      "sha256": "49ba3f7c9c63a026d1fe778681201a73de0031f30875039a27bb2090d18a2835"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on/fullrate.npz",
+      "bytes": 42932,
+      "sha256": "fe7522fcdffc4c9a5728d0f54f784aa650e6069dc8dc8fa8b1989f8b7a6a8be8"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on/heading_witness.pt",
+      "bytes": 4854,
+      "sha256": "38974ad7ec273d8691ffc2cc923204bb0bbdca9c75d6126e7d96b8d13da4c6de"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on/result.json",
+      "bytes": 10705,
+      "sha256": "e995ff9b0d91659d06842fddbbcbc0f7d1065dc9a0966e8945c5160785423abc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on/trajectory.npz",
+      "bytes": 27888,
+      "sha256": "7982948a64b51459b16028834d67036fc1be614027ef50622f6c8b46774f0ee8"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on/wind_trace.pt",
+      "bytes": 11283,
+      "sha256": "2ccccaec1dfbd36546a760ba8b78798915096e1fe3019dddef9e52a1ba150e56"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off/audit.json",
+      "bytes": 1262,
+      "sha256": "32bd2e23c814ce172d267d66b22e0a875431abe627d32b99b05c53a064df38bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off/fullrate.npz",
+      "bytes": 43169,
+      "sha256": "80fa771d20750c9c4152c23a2890cdcc193b8e907454c72a057cef1ec045cc47"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "7b878ba9006bec091e451f14f77adff639567c8be265c47b1028a9adaa0340fe"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off/result.json",
+      "bytes": 10416,
+      "sha256": "a0cb45edd98a297efdde15c28a2161632dde124025a32a117cecaa006509fbd2"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off/trajectory.npz",
+      "bytes": 27856,
+      "sha256": "f2808f8dce4a9fcc0494419bfdc26683fb0ae5bb723b560daf019591a0de568c"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on/audit.json",
+      "bytes": 1282,
+      "sha256": "6f248cb0bbb8b6a36226b358e97280241b7b7decd7f914b2257fe15de86ddeaa"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on/fullrate.npz",
+      "bytes": 42946,
+      "sha256": "9e6d8c5b201d859690dc0d68d4a9e13bc036625dab94c087e267d0beb77795c7"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "8f4dcb8b3f688307ebb272c1f0bd9baac86e25d2cf352fe806b0849b7c77dc7c"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on/result.json",
+      "bytes": 10467,
+      "sha256": "214a31ffe37c7b4814a06487aa50bf1eef612fe11f81a89cc727e9433e0d9bb4"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on/trajectory.npz",
+      "bytes": 27906,
+      "sha256": "9dc5475faeeb97f14b133f56fdf1191ba80d1ccf2b9e75c192b0357ad0eb5bad"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_off/audit.json",
+      "bytes": 1260,
+      "sha256": "bf808eb64c5d97f86934175fde01256ba4c674bab97dc63fb0941169b7deac12"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_off/fullrate.npz",
+      "bytes": 38780,
+      "sha256": "b3bd41b636735ebd260bc69dd974f78c683ae592a92a7668b16e636300a00927"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_off/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "83dad502fb4a274dbdd5b5ed872dc205024f433e6371914ede9f00e68ed6090c"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_off/result.json",
+      "bytes": 11312,
+      "sha256": "0793317a654ad0d09c4fe1df29d5831a5c8e971ab9add2323eb7de1b1506c63d"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_off/scene.xml",
+      "bytes": 33612,
+      "sha256": "7460acb26ef71efb1083c6f32d0974081522e2dd777e0b13713992ab215a8a43"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_off/trajectory.npz",
+      "bytes": 25244,
+      "sha256": "dd3d7a3664bbf4e2be542dd0f80ca0884a96fade19494a75bca7276becdc2966"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_off/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_on/audit.json",
+      "bytes": 1285,
+      "sha256": "0cf1c2d6851c2f255f85bbc81e0cbb002d041856c75990f634a2d6088ba71abc"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_on/fullrate.npz",
+      "bytes": 42766,
+      "sha256": "e58996f74a76ff93ffb4ba87881f076e552527b412cba1e45d53d46de6bbe1fa"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_on/heading_witness.pt",
+      "bytes": 4777,
+      "sha256": "0dbac06de9e7114fced611c3c0a5492fc8d317640efb5a848c78639d1edea342"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_on/result.json",
+      "bytes": 11301,
+      "sha256": "d79877f1a63dc35423eabf24a18e037e8df9b326b6a9eb2ba1b76aeec97ee1e3"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_on/scene.xml",
+      "bytes": 33612,
+      "sha256": "7460acb26ef71efb1083c6f32d0974081522e2dd777e0b13713992ab215a8a43"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_on/trajectory.npz",
+      "bytes": 27909,
+      "sha256": "81a52100467bbe2cec333df8131e7e16ebf099d51ff5e0216223c803db7887fd"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/smoke_on/wind_trace.pt",
+      "bytes": 11241,
+      "sha256": "ab0427184e8b8919474fec25bc8acca205ec21483d0da6df9b1c886babbbd339"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/frozen_source.zip",
+      "bytes": 200650,
+      "sha256": "f79d6207205963ce51b561a403620343d84cb65117a9ec0fb023a5b45648370f"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/heavy_install/actuator_gain.json",
+      "bytes": 980,
+      "sha256": "d9ed4ca9ddbc6774375a00e15f402424269f2cf7d1d6e731bc2ced07a7f30627"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/heavy_install/calibration/calibration.pt",
+      "bytes": 12973,
+      "sha256": "a8fe4b9e7d863f0750ef6dbe41bd45b54abde1656a925034d2df62cefc2c43d8"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/heavy_install/calibration/training.json",
+      "bytes": 3447,
+      "sha256": "b3e03e09187ac902034b8380d8f9646ad5f50f39ccbc4673a3693d572ea6aa27"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/heavy_install/capture.json",
+      "bytes": 1866,
+      "sha256": "e75dc0c9615db97cdd42ee4e64a69bc1a8792ad7224984d9f8e4e339b4727ce6"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/heavy_install/position.npz",
+      "bytes": 503904,
+      "sha256": "45cb41c56ad54efe5013302bd66ae79d589f13ae4bca2cfe8435ea96cdab45e5"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/light_install/actuator_gain.json",
+      "bytes": 975,
+      "sha256": "b7a5be65bc0b4ac638e55051b95d1a6e1de9b91551e975d1fb574a1bdd0ae308"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/light_install/calibration/calibration.pt",
+      "bytes": 12973,
+      "sha256": "1ac2f5368c948c37f3cae2dc6f0a3ec84936bce1ac41e2c29f9b3be9203f9086"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/light_install/calibration/training.json",
+      "bytes": 3453,
+      "sha256": "31537e8f6d1f0e8e9c4efb8687882b7cd712283ad29aba4feaa371609c447d0b"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/light_install/capture.json",
+      "bytes": 1875,
+      "sha256": "ed3cffa56444b26d9b2629b14e50e5f7ee98bce8ebb61f3038f7a3c84d697ea1"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/light_install/position.npz",
+      "bytes": 504450,
+      "sha256": "2b2a20761ea14ea46f2785fb0a0be71ce4f7045242f403bd0c953dcbef975d6b"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/manifest.json",
+      "bytes": 9549,
+      "sha256": "3873a6774c7204870f6c41844bce874ab8250ec6172f2fb51d492f2ab6832d2e"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/nominal_install/actuator_gain.json",
+      "bytes": 979,
+      "sha256": "a7c9522a222285a818804100b4c19c34a693f31063e12b2df3c3ec158acfb0f2"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/nominal_install/calibration/calibration.pt",
+      "bytes": 12973,
+      "sha256": "0d2579bad7afa1168b780fd40654670243db93bdd2dbd68e9a34317969cd6e7f"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/nominal_install/calibration/training.json",
+      "bytes": 3449,
+      "sha256": "2291799d10c878c2652e5cebcc22a53f75ecee583b7ea6c3e333562804d53d9a"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/nominal_install/capture.json",
+      "bytes": 1866,
+      "sha256": "9091c8d84e366ea06b779c6aba562acebfc2121a53b662381b40f1c0e762ba7a"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/nominal_install/position.npz",
+      "bytes": 503275,
+      "sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/nominal_install/reuse.json",
+      "bytes": 351,
+      "sha256": "f7bb65784eb4168f4670768fcd7fc607cf2acf659f8543a481592002ba80dc3d"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/README.md",
+      "bytes": 283,
+      "sha256": "108a09babe8ab609a32b060286008c62edcd35b129b0645afdb2edeb6cdcfc2b"
+    },
+    {
+      "path": "P3/results/installation_angles12_20261115/reused_nominal_source.zip",
+      "bytes": 200367,
+      "sha256": "b8bbd8e41eb4edcfd8d180318e622380987e04ab5de88fda40ea5bdd235011dc"
+    }
+  ],
+  "empty_directory_candidates": [
+    "P3/results/body_calibration/heavy_offset/calibration",
+    "P3/results/body_calibration/heavy_offset/flexible_off",
+    "P3/results/body_calibration/heavy_offset/flexible_on",
+    "P3/results/body_calibration/heavy_offset/smoke_corrected_off",
+    "P3/results/body_calibration/heavy_offset/smoke_corrected_on",
+    "P3/results/body_calibration/heavy_offset/smoke_off",
+    "P3/results/body_calibration/heavy_offset/smoke_on",
+    "P3/results/body_calibration/heavy_offset/training",
+    "P3/results/body_calibration/light_offset/calibration",
+    "P3/results/body_calibration/light_offset/flexible_off",
+    "P3/results/body_calibration/light_offset/flexible_on",
+    "P3/results/body_calibration/light_offset/smoke_corrected_off",
+    "P3/results/body_calibration/light_offset/smoke_corrected_on",
+    "P3/results/body_calibration/light_offset/smoke_off",
+    "P3/results/body_calibration/light_offset/smoke_on",
+    "P3/results/body_calibration/light_offset/training",
+    "P3/results/body_calibration/nominal_offset/calibration",
+    "P3/results/body_calibration/nominal_offset/flexible_off",
+    "P3/results/body_calibration/nominal_offset/flexible_on",
+    "P3/results/body_calibration/nominal_offset/smoke_corrected_off",
+    "P3/results/body_calibration/nominal_offset/smoke_corrected_on",
+    "P3/results/body_calibration/nominal_offset/smoke_off",
+    "P3/results/body_calibration/nominal_offset/smoke_on",
+    "P3/results/body_calibration/nominal_offset/training",
+    "P3/results/body_calibration_transport/heavy_offset/flexible_effective_on",
+    "P3/results/body_calibration_transport/heavy_offset/flexible_on",
+    "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_effective_observer_on",
+    "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_off",
+    "P3/results/body_calibration_transport/heavy_offset/smoke_corrected_on",
+    "P3/results/body_calibration_transport/light_offset/flexible_effective_on",
+    "P3/results/body_calibration_transport/light_offset/flexible_on",
+    "P3/results/body_calibration_transport/light_offset/smoke_corrected_effective_observer_on",
+    "P3/results/body_calibration_transport/light_offset/smoke_corrected_off",
+    "P3/results/body_calibration_transport/light_offset/smoke_corrected_on",
+    "P3/results/body_calibration_transport/nominal_offset/flexible_effective_on",
+    "P3/results/body_calibration_transport/nominal_offset/flexible_on",
+    "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_effective_observer_on",
+    "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_off",
+    "P3/results/body_calibration_transport/nominal_offset/smoke_corrected_on",
+    "P3/results/installation_20261115/heavy_install/smoke_off",
+    "P3/results/installation_20261115/heavy_install/smoke_on",
+    "P3/results/installation_angles12_20261115/heavy_install/calibration",
+    "P3/results/installation_angles12_20261115/light_install/calibration",
+    "P3/results/installation_angles12_20261115/nominal_install/calibration",
+    "P3/results/body_calibration/heavy_offset",
+    "P3/results/body_calibration/light_offset",
+    "P3/results/body_calibration/nominal_offset",
+    "P3/results/body_calibration/replays",
+    "P3/results/body_calibration/standard_reference",
+    "P3/results/body_calibration_transport/heavy_offset",
+    "P3/results/body_calibration_transport/light_offset",
+    "P3/results/body_calibration_transport/nominal_offset",
+    "P3/results/installation_20261115/heavy_install",
+    "P3/results/installation_angles12_20261115/heavy_install",
+    "P3/results/installation_angles12_20261115/light_install",
+    "P3/results/installation_angles12_20261115/nominal_install",
+    "P3/results/body_calibration",
+    "P3/results/installation_angles12_20261115"
+  ],
+  "protected_files": [
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+      "sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5"
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/latest.pt",
+      "sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57"
+    },
+    {
+      "path": "P2/results/px4_transfer/update2/candidate.pt",
+      "sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3"
+    },
+    {
+      "path": "P2/results/px4_transfer/update3/candidate.pt",
+      "sha256": "d759fb67e5e376916cd50d05d14efe5dc401ee8d17f71c60f162634402def910"
+    },
+    {
+      "path": "P2/results/stationarity/selected37/latest.pt",
+      "sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb"
+    },
+    {
+      "path": "P3/results/actor37_5m/residual/best.pt",
+      "sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/delivery.json",
+      "sha256": "2f13f00be24097db135269aead68cd27db215d64dbfbe40e0cf5f237ae960f6d"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/actuator_gain.json",
+      "sha256": "ab199bed8430a53fefe00daa3ce1b5fc272c9245a043277ed584bb3f9816cf46"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/calibration/calibration.pt",
+      "sha256": "646b74d1024dc8d173f5459cd269e3504ef700594cf565bd3cfc2a0eb3d0b710"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/calibration/training.json",
+      "sha256": "f88ab77aa904a3409ee2eb72e7309de2301114be43dec9fa9e0fedc7a425e03f"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/audit.json",
+      "sha256": "d9eefc04c8c86e909ce917e468975e641204daef913e25c19ae8f56d1f1d0879"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/fullrate.npz",
+      "sha256": "35662955af70893eb976424e1244d20b95c98a1fe998e90c563132757d6517df"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/heading_witness.pt",
+      "sha256": "356a7d7ad6332b39654805c41b7c23d82c96cb8a6449790528c7bbd90c6ec469"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/result.json",
+      "sha256": "f904ecb2c3d49389a7c8599b7519fa57ccb9c4c2696c1020bd20d3f7e874e325"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/scene.xml",
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/trajectory.npz",
+      "sha256": "61813e0b4727bb06512d381ba8789d5dd5f897482cfad779e7de0b5d93f0991a"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/audit.json",
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/fullrate.npz",
+      "sha256": "7df7281d55fff33d463490837e55f01429eaf9139858dae265772dbd8f3d3b15"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/heading_witness.pt",
+      "sha256": "c319426c52c435c5fbf30b2abcc8069bf04eedc44344e8558ababa89211f740d"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/result.json",
+      "sha256": "ac3a11df3f1ce9d75458ebea8e2b2e642b9eba9a675b1512e1ffd78bc6cd45f8"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/scene.xml",
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/trajectory.npz",
+      "sha256": "6ef95de52286a1a3023bd40a3625c3678a833c016d6b7ad4da4822f982b93492"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/position.npz",
+      "sha256": "5074bb6d2ce0afd38cdb54b6afed14d7fc9d680fb9cdfbe12fb18f995d5cb890"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/actuator_gain.json",
+      "sha256": "7cc6e46b0eb62d01aecd0e06418063bbdcbea05e3d0afa65b860c15080b1274d"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/calibration/calibration.pt",
+      "sha256": "e98139e8e806f100632f870b3ece4401fb19f8e451e5c7f92b98b019175dd34a"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/calibration/training.json",
+      "sha256": "226c80097ebf8845fbd81ea9e0f1f586ed0d696c100e9db3efb1163581f654e9"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/audit.json",
+      "sha256": "ccbdbb342176987906af6cea1e60c1fb1154f2696ea7fbeef16656c020eb5941"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/fullrate.npz",
+      "sha256": "4d654b62c941cf6753182cb9eb52e730ee531542671558ffb1fca6e30f79a7d6"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/heading_witness.pt",
+      "sha256": "4d3829f8bca0162ad84eae03c95630c96123bbfb17ed7b55a2b7c6c319599b42"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/result.json",
+      "sha256": "597006f8deaa169242d7597f753e71e7622c1a6d1b44106b1d19a287ccee7828"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/scene.xml",
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/trajectory.npz",
+      "sha256": "8a8d5f1111c22d15c521217fa6273f4576669c411f4e5a32c26df631241c93ae"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/audit.json",
+      "sha256": "c610ab025e6ae100d6b8ea5271667448010db1ee8b1f3517bfb0b8194d99933e"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/fullrate.npz",
+      "sha256": "aa447886a7567166f674eb7666d0c15c02ed0b3026bb6c41ae9b41183d698ef9"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/heading_witness.pt",
+      "sha256": "46bd3d8a496c0ba45ae13197caf70da3b67fedb7b25addfbc72f87a1be205ff9"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/result.json",
+      "sha256": "6db4c70c3ede9e893ccd4616fe81af018a611c46bb29c53885d384b3c37de5ec"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/scene.xml",
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/trajectory.npz",
+      "sha256": "d0ccb17ca08efed6c2ea278e715b40ba9e5192092deae9fd7b83016f701961f6"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/position.npz",
+      "sha256": "6ae0300a0a6ca8f69df629ed61a8ae8d8977df6e8c53660dcd4896c7dcffb230"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/manifest.json",
+      "sha256": "d7504c2610397ad556a85a36cf27ca46d915c555b9d2722d2c3d3b586ffb7651"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/actuator_gain.json",
+      "sha256": "02ba8a3fde204728a6bfd56f1f7d42a109fe5ba1673c6905eb332c2e832b3df8"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/calibration/calibration.pt",
+      "sha256": "cb4a1c3e9d88b31ead9e25b11e230e0b44eadf4dfd59b44631cf9c95e68c1839"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/calibration/training.json",
+      "sha256": "26ddaa2baeac6ea0e69edb1d3d60fc7ae9284799646d3a69a472ef8f3e79fc0a"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/audit.json",
+      "sha256": "2411702e2752588c868df311fe4e7d359cf3fc6834f6526f04a95c6c542e386b"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/fullrate.npz",
+      "sha256": "8d87960710b1ae6fe3fd7fa83d21ec24a103c047dcce19000da12817a0577092"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/heading_witness.pt",
+      "sha256": "b404b53087bcbdb249ef5b7a2c1c065de21f61ecaa6acf68b411d7d655045621"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/result.json",
+      "sha256": "e91a391f00d644dedcd3ca7527c944559122b11128abdea94256e1139043da77"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/scene.xml",
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/trajectory.npz",
+      "sha256": "bed05f0c38880a1c515185adc92404d35565e4f1ed04b23c3a1b72434ffb3c29"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/audit.json",
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/fullrate.npz",
+      "sha256": "044d145ef9bcdb02002655815620f54bcadf63e37eb1ded194f29e6afdd9ecba"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/heading_witness.pt",
+      "sha256": "52d29528728c20e5fd5890964af7556ea17b248559d4c2cdf893855e42c10e06"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/result.json",
+      "sha256": "069b93759af0450568fafcac0bf921dc973171eb88f9fd18c9dfca73154475e6"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/scene.xml",
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/trajectory.npz",
+      "sha256": "60e9f99f9cf3458f5a2d34bfd063a030fb723f66c2b5e79eab69027dd6bf2029"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/position.npz",
+      "sha256": "5dcf196f40f5b494c54351d879dbda5175ae73c808dcaec1cdef81bef0597301"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/README.md",
+      "sha256": "77bab9b4f1e0751509a051654ade5cd738c8bb4cf49bd45f8325b25642f5f2a8"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/summary.json",
+      "sha256": "9b7bb664c43acb8348eb0821c12dabad3478c2c1b2c86b00161aa4abd2ae0ec8"
+    },
+    {
+      "path": "P3/results/flexible26_structural/residual/best.pt",
+      "sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80"
+    },
+    {
+      "path": "P3/results/installation_20261115/frozen_source.zip",
+      "sha256": "b8bbd8e41eb4edcfd8d180318e622380987e04ab5de88fda40ea5bdd235011dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/frozen_source_01.zip",
+      "sha256": "f50f1c6695541adc64a1c3f57c28a90239441915345f14dbd888c7c80d24c26f"
+    },
+    {
+      "path": "P3/results/installation_20261115/frozen_source_02.zip",
+      "sha256": "46863ea2a3d20ab5079f4c3b3b7229e9193ffa6abf2e7452d8d19b37306349f8"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/actuator_gain.json",
+      "sha256": "ab61a70aaf35a5f437c157f3f9ab36d9ae3f7071e6ed5d3b74a36b315639accd"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/calibration/calibration.pt",
+      "sha256": "abbd902da0f5ceb5e46b166bdf0ecd85c5da801e57b41e555d1b447ca733f723"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/calibration/training.json",
+      "sha256": "6918310be943eba59f603c970988515b8f60cb8e9cb066067a411493b4b64ca5"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/capture.json",
+      "sha256": "3b66f74811a46c6107aaf0e547b0fb297941c48b9e2d92ca870ac763bc8759e5"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/audit.json",
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/fullrate.npz",
+      "sha256": "66fa397b40c6a71c48cc6c39d0decd46d39a0ee99c2c0a6a75fec857ee8e3e7d"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/heading_witness.pt",
+      "sha256": "4dba2ddf2560306859a154cf39bdd9c32888dea7666321593ea6139cf221997d"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/result.json",
+      "sha256": "e0c94ad49520ac7b9b319b13b0b49e84477ae3e22e491d608c98b094923ff4a2"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/scene.xml",
+      "sha256": "7460acb26ef71efb1083c6f32d0974081522e2dd777e0b13713992ab215a8a43"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/trajectory.npz",
+      "sha256": "4e4fb9729634bb6e5050f5b722ed0654d995f11f93617881be13e6993917ed27"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/audit.json",
+      "sha256": "3875c504d2cae69bd4ac229499ee4ea5b0e9c64cad6d62e8f3a4c99493cbac5e"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/fullrate.npz",
+      "sha256": "9aff0fda452a7bb9123089e61aa210d44e285393dd5957a36b9583403024a0c4"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/heading_witness.pt",
+      "sha256": "6d31c22095ccc25ddd38e2ff26e2e5713226b166e852a1b559a14e6a021b78d0"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/result.json",
+      "sha256": "631601d3f36e969455f8aabab6d252fd324a9786a0004e296c5a6cdd4b819df0"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/scene.xml",
+      "sha256": "7460acb26ef71efb1083c6f32d0974081522e2dd777e0b13713992ab215a8a43"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/trajectory.npz",
+      "sha256": "9de3f1e617de8874857b43c8c12dce69d36abcdcf9c71317552ca965dfad06c8"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/position.npz",
+      "sha256": "9ef10e757a6d473c2e4c9b078cb3f5fe2af0ea16bb84efcd53fc27879e81ab56"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/actuator_gain.json",
+      "sha256": "d2cd03cb8f29cfb80375d6fb37ead39cc62b733582a7558a98080b017373d871"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/calibration/calibration.pt",
+      "sha256": "a9c9b43fc3374c6cbf41df99d9cbebc0cedb457cc67f19274f7edaab7e357309"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/calibration/training.json",
+      "sha256": "564671b1a0982a799fb01846e342ae29f0a6e9d0875df15f9a6e767eae01bc19"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/capture.json",
+      "sha256": "338ed74f15a6d2c2b464845863b11bd235beda8ff3c209a4c5b06589a066c18f"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/audit.json",
+      "sha256": "7621e828a2a7d6357f272db4cb6d8432ef9af8d4b86f73696f3ec1126a6fb575"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/fullrate.npz",
+      "sha256": "55eed540ae3401b5bf6705f3c77a69d71a8ec7d0778ead499866c3bee007aaed"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/heading_witness.pt",
+      "sha256": "3f7f0a24e68540b8f8514d9737137e767ae405131ce4593312378590d16d5e67"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/result.json",
+      "sha256": "d4c39d018ce65c5e06a40b12f5df39b669143c8de609fc97ab3e81c4cd9bd033"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/scene.xml",
+      "sha256": "9f1fcaf5d627a25ae4c765c8d5a99d5dda37bf2f379c7ac7912072a45caf486c"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/trajectory.npz",
+      "sha256": "c96e671cbc9a798d5ce407d0c6d2c92d2210d6ce1d799b7cda149fa655b219d7"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/audit.json",
+      "sha256": "b75f003fc147677eec5b0a61edcc2764e1916df2b630615aa2a1b79272a2e4ed"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/fullrate.npz",
+      "sha256": "bf1aa1bc27e9d2af6f11bda40d3989ef13d4e2c377647ea8c73b71af2255c2e8"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/heading_witness.pt",
+      "sha256": "bbb4faa821014e682c0b705d4cf4718bd92c4c87d527f0c6318c6427fe6703cf"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/result.json",
+      "sha256": "c12259d3cc1f8d3a0e9da09fe0fed6b1663e4bc4ca8fd8787f26be3d439e2947"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/scene.xml",
+      "sha256": "9f1fcaf5d627a25ae4c765c8d5a99d5dda37bf2f379c7ac7912072a45caf486c"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/trajectory.npz",
+      "sha256": "ea39353b9e2c14e96e0482ea4a0ae2c8a423309a1b901156f3b5c2f34c8d4512"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/position.npz",
+      "sha256": "01482b7a18e72d656a49d6ce313357c966c16fa7fc08ce8bf056dd8fcea0c44c"
+    },
+    {
+      "path": "P3/results/installation_20261115/manifest.json",
+      "sha256": "9d11eba05af623a41a0eee7988a7ff4caf6a616a6a8333a0a9f972640780687a"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/actuator_gain.json",
+      "sha256": "a7c9522a222285a818804100b4c19c34a693f31063e12b2df3c3ec158acfb0f2"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/calibration/calibration.pt",
+      "sha256": "0d2579bad7afa1168b780fd40654670243db93bdd2dbd68e9a34317969cd6e7f"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/calibration/training.json",
+      "sha256": "2291799d10c878c2652e5cebcc22a53f75ecee583b7ea6c3e333562804d53d9a"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/capture.json",
+      "sha256": "9091c8d84e366ea06b779c6aba562acebfc2121a53b662381b40f1c0e762ba7a"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/audit.json",
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/fullrate.npz",
+      "sha256": "ac302886ebf990f3a03681944f2ff0c2500ed7a416574c63b041c17baba06a9a"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/heading_witness.pt",
+      "sha256": "f8ff9064642c79fd0a092c2934e41205753157bd4cf60a156562ba19b6b90858"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/result.json",
+      "sha256": "4751fa4d34666ac5ff30d0f32d17dc434491efef211c51ba953bb7ea5d00e814"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/scene.xml",
+      "sha256": "304e5638eb56681e87fc20688fd29a5e1e0b7248ebbda5bebb283f38ca1cb9b6"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/trajectory.npz",
+      "sha256": "71a429577f803481e7fd9554b11ea673b5aa074dc06b8a4479834e7f9ec4ec53"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/audit.json",
+      "sha256": "9945ec1b285044537e36601d3e5f58ef599a11b9efb771e0b8d7f175e3810814"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/fullrate.npz",
+      "sha256": "b4e7849255850e35d74c8efadc5e9d7efa95ea38f1edf8d68e1d14502fd6b1af"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/heading_witness.pt",
+      "sha256": "2e0bc6100f81654dfa969ecb26ad8bb30d65a63c62840bf4d9c7f5695a6edc36"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/result.json",
+      "sha256": "d1587e150d988ffb6ec6e41e0cd4830c612c082cf708d2a65374ef712364e807"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/scene.xml",
+      "sha256": "304e5638eb56681e87fc20688fd29a5e1e0b7248ebbda5bebb283f38ca1cb9b6"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/trajectory.npz",
+      "sha256": "46118057d8f4b2a34c7996d9ccec18fe6abd3ef451d0cce915cbb058a55ebcd6"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/position.npz",
+      "sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0"
+    },
+    {
+      "path": "P3/results/installation_20261115/README.md",
+      "sha256": "4d3aad0e87d8a74beac38457501a53ddc9f3b22099bf53d9ea7a60e98f6b7d92"
+    },
+    {
+      "path": "P3/results/installation_20261115/regression_p3.txt",
+      "sha256": "fabc575ee4b297adc9c01468dfef8cbb79125e0f7892523fa36f4049345c796f"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/strong.gif",
+      "sha256": "c7173be4c03b0f7d0b01407e1de75404fdce9707b0b38cc5d9925a2fd7b996c0"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/strong.json",
+      "sha256": "6cb9c05e9d893f3ea60d1bc1a6166166fa9a37f443cfadd9c52a2a19e9460558"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/strong.png",
+      "sha256": "48ab0f04d07425ed2164395687164b4879b59cc19e046a50838e2f099fdbe3b7"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/weak.gif",
+      "sha256": "ef7e6fb179caec86c3a88309354ab1624526ee335e7123bfebc01716d27d2b5e"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/weak.json",
+      "sha256": "87bf80ea26eef737ae05025a7c20ed10b7eb909d43b95aab6d14d71f4b3175cc"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/weak.png",
+      "sha256": "8e9c7df11ec3c2d02a887a60357f78fa5178efa1867bf009cd100b653a16b6c8"
+    },
+    {
+      "path": "P3/results/installation_20261115/summary.json",
+      "sha256": "d62a4c6823e4f940f1cde7ed8441de50f529d11c5b547b6dabb8d78cdddccaf2"
+    },
+    {
+      "path": "P3/results/installation_20261115/verification_tests.json",
+      "sha256": "5b45e69523850bce58163319ab59dcf1ed8cdcfb8b8adb2ca5e31427486e32d2"
+    },
+    {
+      "path": "P3/retest8/residual/best.pt",
+      "sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b"
+    },
+    {
+      "path": "track/drift8/step2/latest.pt",
+      "sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92"
+    },
+    {
+      "path": "track/models/actor29.pt",
+      "sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc"
+    }
+  ],
+  "scope": "Retain latest installation calibration, all 24 paired 120s trials, earlier indexed final models and required accepted baselines; remove only superseded/debug artifacts"
+}

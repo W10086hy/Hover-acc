@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-13",
-  "scope": "Latest horizontal acceleration BPTT with vertical PID, frozen baselines, accepted tracking and PX4 results, and regression fixtures",
+  "date": "2026-11-15",
+  "scope": "Latest installation/bias/CG P3 and paired native validation, horizontal acceleration BPTT with vertical PID, indexed historical models and accepted tracking/PX4 evidence",
   "files": [
     {
       "path": ".gitattributes",
@@ -16,8 +16,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 17113,
-      "sha256": "2204dfe8cbd2b9ff39c29820f24d6abfa79453bc8f755ab1bfb3747b48b82b55",
+      "bytes": 21693,
+      "sha256": "cefdac93c66a430ffc0e3bf663ff0d45957000b18c84d3c8f778aa3704a8ef76",
       "kind": "source_or_configuration"
     },
     {
@@ -124,8 +124,8 @@
     },
     {
       "path": "cleanup/package.py",
-      "bytes": 5261,
-      "sha256": "bab13b736057e824f6012d2a9875cf9b81c2492078a9b096e2a90abb24edd849",
+      "bytes": 6372,
+      "sha256": "cabe6b4164664169e12bbcbbd6a6622902c622f9f6e9ce45395284b15aabe043",
       "kind": "source_or_configuration"
     },
     {
@@ -142,14 +142,20 @@
     },
     {
       "path": "cleanup/README.md",
-      "bytes": 3039,
-      "sha256": "2a15d0c5389fc809f764d33d2c8349590c786b2c9f3a20dc934fd51e4bb5f6ba",
+      "bytes": 4545,
+      "sha256": "cf8bf8eb54df29a0db468658f27f4a89210e3e201df4b7757dcd77664984554e",
       "kind": "source_or_configuration"
     },
     {
       "path": "cleanup/regression_20261109.json",
       "bytes": 788,
       "sha256": "5092452e91f7acba9607001e3ec922f06d50d296cd90535a4292a4a7e2fdf586",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "cleanup/regression_publish_20261115.txt",
+      "bytes": 12987,
+      "sha256": "971197f5808118e8c47dc995424eaa593b62deb8e385795bdc53feef36a3cc6a",
       "kind": "source_or_configuration"
     },
     {
@@ -195,6 +201,12 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "cleanup/retention_p3_installation_20261115.json",
+      "bytes": 100420,
+      "sha256": "1f473416b1878febc26f104b0a85eb9611259839bd226755d9f743c07102e189",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "cleanup/retention_px4_narrow_20261109.json",
       "bytes": 21431,
       "sha256": "b2e91fe0c1879f2dba4d1461b6951ae4a0462bbe8d732a6ca74950a87fc914bb",
@@ -231,9 +243,33 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "docs/superpowers/plans/2026-11-15-p3-body-calibration.md",
+      "bytes": 7823,
+      "sha256": "3e4ee6867e860d8a6dc232fadbcc080d0fc8b4003d03627bfb8f5a456c23f209",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-15-p3-installation.md",
+      "bytes": 5461,
+      "sha256": "a3e52d1fd5d6bdd7b687b40ceca63a252c1367f01178760c32b115514579629a",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-15-retain-latest-publish.md",
+      "bytes": 1900,
+      "sha256": "cdc50eae158016485fcd953d31f907fcf249ab3512fa60ee50dee37981619e44",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "docs/superpowers/specs/2026-11-10-acceleration-hover-design.md",
       "bytes": 1013,
       "sha256": "136949f66411f0c3c345c2ec0471c5642cbd9784116d5ebe223d3f41be900fc2",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-15-p3-body-calibration.md",
+      "bytes": 2508,
+      "sha256": "74143543c0f2107303bb96f4f3fca0682d0f58a934f13a06724ed7072b38e305",
       "kind": "source_or_configuration"
     },
     {
@@ -712,8 +748,8 @@
     },
     {
       "path": "P2/hover_bptt/acceleration.py",
-      "bytes": 13692,
-      "sha256": "00b00ee7760accdf9c4852b9ae447b92e2ec3fc2b6858793c14cacd75ea3c370",
+      "bytes": 14274,
+      "sha256": "5133bcfc9daa5a70a374899b68760aa725e2bb499fd91c39033ec2917c4b1b6b",
       "kind": "source_or_configuration"
     },
     {
@@ -1018,8 +1054,8 @@
     },
     {
       "path": "P2/PROGRESS.md",
-      "bytes": 2106,
-      "sha256": "2b24cda005a4386c72d3f945fff36fe7da8fbb2c2d9c72bfaab881093493dc65",
+      "bytes": 2446,
+      "sha256": "434dde2a0054b02f96a34a75e671c6906a6c667c19dfd5fcb2a2502d81da2a06",
       "kind": "source_or_configuration"
     },
     {
@@ -3549,6 +3585,12 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "P3/actuator_calibration.py",
+      "bytes": 1536,
+      "sha256": "349609803309fe297edfed532d4bfb3b147c7ce5bd44ed484aa9aef4dd6a3578",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P3/audit_clear_replay.py",
       "bytes": 5013,
       "sha256": "4109edbdd2020fd8728f508fed69bbca57aa4e8f89420bf56ae90d70f1edd22e",
@@ -3558,6 +3600,30 @@
       "path": "P3/audit_flexible120.py",
       "bytes": 9407,
       "sha256": "3a11c770e1c3dbcdbde2e580aa70fc838c3450fb1723e26d726e766e62ee21ff",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/body_calibration.py",
+      "bytes": 12460,
+      "sha256": "b0b0639cd64b67d472169f1e5c599e824a449e2bbbdc75c0b456598b10f43084",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/body_calibration_run.py",
+      "bytes": 16488,
+      "sha256": "1d6a793103c0e679312b4f3606c41128d8d1a8ee5327fee154795127b014c5b2",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/body_calibration_sim.py",
+      "bytes": 15531,
+      "sha256": "8cdacb6a1ac8e8e893c4424966aadb68f0dbf49aac189fc3d000c85aeb88f1f4",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/body_transport.py",
+      "bytes": 6523,
+      "sha256": "f441d2d5a9d75c40d240cf7ee2fa5597405afcc06996b6e41119dc0214d212b7",
       "kind": "source_or_configuration"
     },
     {
@@ -3645,6 +3711,24 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "P3/installation_calibration.py",
+      "bytes": 13090,
+      "sha256": "0f9251783eb4b516d02dbf3e7030b0cecdd2db63204fa73ac88b7679b136a291",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/installation_run.py",
+      "bytes": 12759,
+      "sha256": "c3c8adbdccaa7a13460d1fa98a647e41bb22d1cec6b7de7613afcb6e3695f8f6",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/installation_sim.py",
+      "bytes": 5532,
+      "sha256": "2cf9a8dd79953a2d4701007a1fbd35a05b895a1f0b26ec21661aff2af1ca8530",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P3/mismatch_data.py",
       "bytes": 5919,
       "sha256": "fc9cd77d05fab7fe1d74938d39690a4ce395a75c41aeec11d582ebf60ba7af0d",
@@ -3670,8 +3754,8 @@
     },
     {
       "path": "P3/models.json",
-      "bytes": 1442,
-      "sha256": "affe65b97758617b8c2a7b03a9407c60078003df9238cd593a9184389f5419a2",
+      "bytes": 8842,
+      "sha256": "b546ab2ed646abca1b69621b36e5501f1392130212b978642471ddf88d6b12dd",
       "kind": "source_or_configuration"
     },
     {
@@ -3688,14 +3772,14 @@
     },
     {
       "path": "P3/PROGRESS.md",
-      "bytes": 2388,
-      "sha256": "c53f85576778cae50ec5f057e1c3e7482363f5bdb3fd9211a1bdc41dd52517f3",
+      "bytes": 5866,
+      "sha256": "aea653f18dbe2acbe9ded0751fa83b2494d13957898e56dc8749fee298ec2f18",
       "kind": "source_or_configuration"
     },
     {
       "path": "P3/README.md",
-      "bytes": 4589,
-      "sha256": "4b8afc3b29ccd2ead01850204b560c7a57b3d8473d42fbd2e6b0adc71568a1f0",
+      "bytes": 8503,
+      "sha256": "b57e939238367d02a433429a4b8874c3ae93dc4824fcd122fcf4e77990150b34",
       "kind": "source_or_configuration"
     },
     {
@@ -3717,6 +3801,12 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "P3/report_body_calibration.py",
+      "bytes": 13376,
+      "sha256": "2d3ec82d25dd5f97a42a1fd21182482ba1ad92f90a1cc2a718361502e086abf7",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P3/report_flexible.py",
       "bytes": 7599,
       "sha256": "52b721052d52f439e5f9aa68426eed19c00e137d9f5f49d8077ac0440160c56c",
@@ -3732,6 +3822,12 @@
       "path": "P3/report_flexible_model.py",
       "bytes": 2666,
       "sha256": "629ebdef5f3fd65a76252242ba921e50880d6e18c1b7f939d6a40ec767b82491",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/report_installation.py",
+      "bytes": 10350,
+      "sha256": "e5b5a17b5937fe9048b28be93ad61f76ab51b12d94c3e1bb5fd5bbb0de037662",
       "kind": "source_or_configuration"
     },
     {
@@ -3924,6 +4020,588 @@
       "path": "P3/results/actor37_5m/residual/training_summary.json",
       "bytes": 2977,
       "sha256": "dba198dd6678136a3ac940d266b61ded9fbc0153eacaedea0aabdf700577c33a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/delivery.json",
+      "bytes": 3579,
+      "sha256": "2f13f00be24097db135269aead68cd27db215d64dbfbe40e0cf5f237ae960f6d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/frozen_source.zip",
+      "bytes": 187471,
+      "sha256": "cd993535fdd9ef92abb34ac6272416e5ea015e87c2e9d692b987228609b332e6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/frozen_source_01.zip",
+      "bytes": 187503,
+      "sha256": "7ece47c58e79e95ce7dfb3a68645129e9f0dd442066c88e975c7d837914d3426",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/frozen_source_02.zip",
+      "bytes": 187867,
+      "sha256": "5f24f192933025d7023b7c69dd0810eb9652a4df6076ffce8d82fa206cb6c149",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/frozen_source_03.zip",
+      "bytes": 189172,
+      "sha256": "7fc6b652f11d0f60eff904a5a38bdbe23609613573c7959564a1de2c76aea6e1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/frozen_source_04.zip",
+      "bytes": 189276,
+      "sha256": "25dc8ab0399bcb059970b067c552ef8e765fe222a9210d84b32b3c848235805c",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/frozen_source_05.zip",
+      "bytes": 189491,
+      "sha256": "718f0fc9d8b73578fdb7ca30c154ee1fa8164af8cfe1820cbb39eb22582b6daa",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/actuator_gain.json",
+      "bytes": 980,
+      "sha256": "ab199bed8430a53fefe00daa3ce1b5fc272c9245a043277ed584bb3f9816cf46",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/calibration/calibration.pt",
+      "bytes": 11324,
+      "sha256": "646b74d1024dc8d173f5459cd269e3504ef700594cf565bd3cfc2a0eb3d0b710",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/calibration/training.json",
+      "bytes": 4159,
+      "sha256": "f88ab77aa904a3409ee2eb72e7309de2301114be43dec9fa9e0fedc7a425e03f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/capture.json",
+      "bytes": 849,
+      "sha256": "35034c30b684c31843f7507499ff5ccb05a33411636bd4951ebec1da33ae06d1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/audit.json",
+      "bytes": 1285,
+      "sha256": "d9eefc04c8c86e909ce917e468975e641204daef913e25c19ae8f56d1f1d0879",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/fullrate.npz",
+      "bytes": 2452587,
+      "sha256": "35662955af70893eb976424e1244d20b95c98a1fe998e90c563132757d6517df",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "356a7d7ad6332b39654805c41b7c23d82c96cb8a6449790528c7bbd90c6ec469",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/result.json",
+      "bytes": 10932,
+      "sha256": "f904ecb2c3d49389a7c8599b7519fa57ccb9c4c2696c1020bd20d3f7e874e325",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/trajectory.npz",
+      "bytes": 1593040,
+      "sha256": "61813e0b4727bb06512d381ba8789d5dd5f897482cfad779e7de0b5d93f0991a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/audit.json",
+      "bytes": 1028,
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/fullrate.npz",
+      "bytes": 62965,
+      "sha256": "7df7281d55fff33d463490837e55f01429eaf9139858dae265772dbd8f3d3b15",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "c319426c52c435c5fbf30b2abcc8069bf04eedc44344e8558ababa89211f740d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/result.json",
+      "bytes": 10082,
+      "sha256": "ac3a11df3f1ce9d75458ebea8e2b2e642b9eba9a675b1512e1ffd78bc6cd45f8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/scene.xml",
+      "bytes": 33392,
+      "sha256": "e568ab92b154806a8914275b7059d2718b446d9edbfd9f6baa13a59ef00c955e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/trajectory.npz",
+      "bytes": 44785,
+      "sha256": "6ef95de52286a1a3023bd40a3625c3678a833c016d6b7ad4da4822f982b93492",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/no_tether_effective_on.json",
+      "bytes": 718,
+      "sha256": "a0f435608929160319f960b7345742a1dd13075bc36fa8810f0124f317b796d8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/no_tether_effective_on.npz",
+      "bytes": 345409,
+      "sha256": "fea155336a0ab482baa4cd8efb177642b97e8eafabbb5eca8d42fdde5c9f664d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/no_tether_off.json",
+      "bytes": 715,
+      "sha256": "bbccd766738a20fc9dc33247e151b223dfbe1bb0c1b73812dcfb1b2f8ae472c7",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/no_tether_off.npz",
+      "bytes": 339309,
+      "sha256": "f441d576a0bc8dbecc060a324dc6912de96fb01daab8032e4220156b4ceadf52",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/position.npz",
+      "bytes": 432002,
+      "sha256": "5074bb6d2ce0afd38cdb54b6afed14d7fc9d680fb9cdfbe12fb18f995d5cb890",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/actuator_gain.json",
+      "bytes": 979,
+      "sha256": "7cc6e46b0eb62d01aecd0e06418063bbdcbea05e3d0afa65b860c15080b1274d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/calibration/calibration.pt",
+      "bytes": 11324,
+      "sha256": "e98139e8e806f100632f870b3ece4401fb19f8e451e5c7f92b98b019175dd34a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/calibration/training.json",
+      "bytes": 4155,
+      "sha256": "226c80097ebf8845fbd81ea9e0f1f586ed0d696c100e9db3efb1163581f654e9",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/capture.json",
+      "bytes": 853,
+      "sha256": "96c7d761309befd5348b902a31b1c03ed14dd8310115d1b16fa48974aef7bf72",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/audit.json",
+      "bytes": 1291,
+      "sha256": "ccbdbb342176987906af6cea1e60c1fb1154f2696ea7fbeef16656c020eb5941",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/fullrate.npz",
+      "bytes": 2461870,
+      "sha256": "4d654b62c941cf6753182cb9eb52e730ee531542671558ffb1fca6e30f79a7d6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "4d3829f8bca0162ad84eae03c95630c96123bbfb17ed7b55a2b7c6c319599b42",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/result.json",
+      "bytes": 10937,
+      "sha256": "597006f8deaa169242d7597f753e71e7622c1a6d1b44106b1d19a287ccee7828",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/trajectory.npz",
+      "bytes": 1594417,
+      "sha256": "8a8d5f1111c22d15c521217fa6273f4576669c411f4e5a32c26df631241c93ae",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/audit.json",
+      "bytes": 1153,
+      "sha256": "c610ab025e6ae100d6b8ea5271667448010db1ee8b1f3517bfb0b8194d99933e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/fullrate.npz",
+      "bytes": 1316894,
+      "sha256": "aa447886a7567166f674eb7666d0c15c02ed0b3026bb6c41ae9b41183d698ef9",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "46bd3d8a496c0ba45ae13197caf70da3b67fedb7b25addfbc72f87a1be205ff9",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/result.json",
+      "bytes": 10348,
+      "sha256": "6db4c70c3ede9e893ccd4616fe81af018a611c46bb29c53885d384b3c37de5ec",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/scene.xml",
+      "bytes": 33400,
+      "sha256": "5cfec0eb2904916388b31e881ca2deeae8286f44e09bbfde100a37a69bcc9094",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/trajectory.npz",
+      "bytes": 836494,
+      "sha256": "d0ccb17ca08efed6c2ea278e715b40ba9e5192092deae9fd7b83016f701961f6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/no_tether_effective_on.json",
+      "bytes": 726,
+      "sha256": "6ec5ad5a2b1ff17089612ef10d24440b45d1e851b773b954acd50dd81ed60991",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/no_tether_effective_on.npz",
+      "bytes": 346848,
+      "sha256": "38c534d9b6d9c01fce79e7b45b3ed5a9ecf259e79db5e148ce1aada1bc12253b",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/no_tether_off.json",
+      "bytes": 721,
+      "sha256": "8a0ce9cbbf7f5de34e291570e7d2fe2bd35740d57abb58de248f883b86cb4bc1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/no_tether_off.npz",
+      "bytes": 341911,
+      "sha256": "fa49f6f61073f483ea06da57d02e825f43eccb777c0d0c4d3741e0c066dcf31a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/position.npz",
+      "bytes": 432907,
+      "sha256": "6ae0300a0a6ca8f69df629ed61a8ae8d8977df6e8c53660dcd4896c7dcffb230",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/manifest.json",
+      "bytes": 51589,
+      "sha256": "d7504c2610397ad556a85a36cf27ca46d915c555b9d2722d2c3d3b586ffb7651",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/actuator_gain.json",
+      "bytes": 976,
+      "sha256": "02ba8a3fde204728a6bfd56f1f7d42a109fe5ba1673c6905eb332c2e832b3df8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/calibration/calibration.pt",
+      "bytes": 11324,
+      "sha256": "cb4a1c3e9d88b31ead9e25b11e230e0b44eadf4dfd59b44631cf9c95e68c1839",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/calibration/training.json",
+      "bytes": 4155,
+      "sha256": "26ddaa2baeac6ea0e69edb1d3d60fc7ae9284799646d3a69a472ef8f3e79fc0a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/capture.json",
+      "bytes": 853,
+      "sha256": "93bc3988bb70054113f54a31b897687475fb9cd4fe0550c41648519b550cc43d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/audit.json",
+      "bytes": 1289,
+      "sha256": "2411702e2752588c868df311fe4e7d359cf3fc6834f6526f04a95c6c542e386b",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/fullrate.npz",
+      "bytes": 2457522,
+      "sha256": "8d87960710b1ae6fe3fd7fa83d21ec24a103c047dcce19000da12817a0577092",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "b404b53087bcbdb249ef5b7a2c1c065de21f61ecaa6acf68b411d7d655045621",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/result.json",
+      "bytes": 10847,
+      "sha256": "e91a391f00d644dedcd3ca7527c944559122b11128abdea94256e1139043da77",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/trajectory.npz",
+      "bytes": 1594333,
+      "sha256": "bed05f0c38880a1c515185adc92404d35565e4f1ed04b23c3a1b72434ffb3c29",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/audit.json",
+      "bytes": 1028,
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/fullrate.npz",
+      "bytes": 122073,
+      "sha256": "044d145ef9bcdb02002655815620f54bcadf63e37eb1ded194f29e6afdd9ecba",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "52d29528728c20e5fd5890964af7556ea17b248559d4c2cdf893855e42c10e06",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/result.json",
+      "bytes": 9956,
+      "sha256": "069b93759af0450568fafcac0bf921dc973171eb88f9fd18c9dfca73154475e6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/scene.xml",
+      "bytes": 33336,
+      "sha256": "c1800abba1a9287797b70f7bb4ff4e436e309aad4117e5aa162d173919b118bc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/trajectory.npz",
+      "bytes": 81616,
+      "sha256": "60e9f99f9cf3458f5a2d34bfd063a030fb723f66c2b5e79eab69027dd6bf2029",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/no_tether_effective_on.json",
+      "bytes": 730,
+      "sha256": "570ef51ad0a9a7b57740db17bf4059882c52ca1e584b019135866a7c0d4b9e64",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/no_tether_effective_on.npz",
+      "bytes": 342879,
+      "sha256": "876b1056f4114627f5618ab2ca1a93c7db26a8aa8790e14b44d970b2487c3bda",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/no_tether_off.json",
+      "bytes": 721,
+      "sha256": "e91c48a60972a8a94f3d893393509b11ba452f4ab8f111ea63d84cf66daf04fd",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/no_tether_off.npz",
+      "bytes": 338346,
+      "sha256": "e0dcdf850670def4ff89d67aa02ee2d93a6bf2ec5c860bfbba21c8e6cabb5300",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/position.npz",
+      "bytes": 432169,
+      "sha256": "5dcf196f40f5b494c54351d879dbda5175ae73c808dcaec1cdef81bef0597301",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/README.md",
+      "bytes": 5047,
+      "sha256": "77bab9b4f1e0751509a051654ade5cd738c8bb4cf49bd45f8325b25642f5f2a8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/audit.json",
+      "bytes": 1287,
+      "sha256": "3709b408f1fa6e6a7bed523bf5e4f3eafd58d9a464642129431569a36e55a710",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/frozen_reference.py",
+      "bytes": 3729,
+      "sha256": "f7b097209ab129b98070d2efcb43e77a77b5b3a0f9f61fe8fde4de0ac0a8b78a",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/fullrate.npz",
+      "bytes": 2452151,
+      "sha256": "3ed761d5bbd59fa8d49389b411ff141e30dca8ee5a4918ace2a827f0f1e76591",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "7b81d6efce28bae185484c63d719606def511d184ea17508b3cbdb9a6e26fece",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/result.json",
+      "bytes": 10414,
+      "sha256": "2758304660aa92cc4ad27695698bf1b7a4942a529a87651d225fa7fee798f0d4",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/trajectory.npz",
+      "bytes": 1592907,
+      "sha256": "54ec9118e7776bea22564f66aa7238a6ae7aca0d5b9bf7f1b208a27786025fd9",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/regression_mujoco.txt",
+      "bytes": 1588,
+      "sha256": "16c937553cd396f5168ab024e233decd289a091f5823918166bb13053b936cbd",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/regression_p2.txt",
+      "bytes": 7382,
+      "sha256": "0053b49f790cdd23d74bc1ad009d8cd9a28dbf6ab64ceabfc490a6dee62ef152",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/regression_p3.txt",
+      "bytes": 12151,
+      "sha256": "5d5224768147cdf0ad38d7acc25caeec65c6206a8b9bb688ef878eca3688c0b9",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/regression_px4.txt",
+      "bytes": 114,
+      "sha256": "f7a7ef67578dc2f6c5fb1226ddfbaaced9d03d9dacc890651f0622860ea90cd0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/regression_transport.txt",
+      "bytes": 103,
+      "sha256": "ceafc2e684ce6e4ae5f2423f1c689190836be471d56449826078924d238b9211",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/replays/strong.gif",
+      "bytes": 4930771,
+      "sha256": "bae779859025f6577708b5b26fe0015f3138f79f928771a22ff26e7a455e89c0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/replays/strong.json",
+      "bytes": 3870,
+      "sha256": "84f6a26be01704127c9ad54445a79bdac9c2fe114e9492712c4ba95e2fa8fdfb",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/replays/strong.png",
+      "bytes": 212330,
+      "sha256": "360ca39c986250825cd1c5f2ccab4103317454d8bdd90eeb88d48400cb23e5b3",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/replays/weak.gif",
+      "bytes": 5594412,
+      "sha256": "0e085092243189221f7f8e956caec02fa1e2234f1eb63634c7250c9d5b9230d3",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/replays/weak.json",
+      "bytes": 3890,
+      "sha256": "da67ac2bb9bd39ba3006cae76f646a586c331748dcf3c77171facf3dd890f194",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/replays/weak.png",
+      "bytes": 208588,
+      "sha256": "e090399263b5ea2b664e751ea7dc022e57d74e2f4ad4d5543f1f555a42762b43",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/summary.json",
+      "bytes": 87553,
+      "sha256": "9b7bb664c43acb8348eb0821c12dabad3478c2c1b2c86b00161aa4abd2ae0ec8",
       "kind": "artifact"
     },
     {
@@ -4143,6 +4821,438 @@
       "kind": "artifact"
     },
     {
+      "path": "P3/results/history/calibration_development_20261115.json",
+      "bytes": 640797,
+      "sha256": "38d7ad3ac89af8382328b9ce98a0cb7c9eb7d0c3f20123603c375e493d58c6b1",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/frozen_source.zip",
+      "bytes": 200367,
+      "sha256": "b8bbd8e41eb4edcfd8d180318e622380987e04ab5de88fda40ea5bdd235011dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/frozen_source_01.zip",
+      "bytes": 200878,
+      "sha256": "f50f1c6695541adc64a1c3f57c28a90239441915345f14dbd888c7c80d24c26f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/frozen_source_02.zip",
+      "bytes": 200943,
+      "sha256": "46863ea2a3d20ab5079f4c3b3b7229e9193ffa6abf2e7452d8d19b37306349f8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/actuator_gain.json",
+      "bytes": 978,
+      "sha256": "ab61a70aaf35a5f437c157f3f9ab36d9ae3f7071e6ed5d3b74a36b315639accd",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/calibration/calibration.pt",
+      "bytes": 12973,
+      "sha256": "abbd902da0f5ceb5e46b166bdf0ecd85c5da801e57b41e555d1b447ca733f723",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/calibration/training.json",
+      "bytes": 3445,
+      "sha256": "6918310be943eba59f603c970988515b8f60cb8e9cb066067a411493b4b64ca5",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/capture.json",
+      "bytes": 1868,
+      "sha256": "3b66f74811a46c6107aaf0e547b0fb297941c48b9e2d92ca870ac763bc8759e5",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/audit.json",
+      "bytes": 1028,
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/fullrate.npz",
+      "bytes": 53847,
+      "sha256": "66fa397b40c6a71c48cc6c39d0decd46d39a0ee99c2c0a6a75fec857ee8e3e7d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "4dba2ddf2560306859a154cf39bdd9c32888dea7666321593ea6139cf221997d",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/result.json",
+      "bytes": 10761,
+      "sha256": "e0c94ad49520ac7b9b319b13b0b49e84477ae3e22e491d608c98b094923ff4a2",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/scene.xml",
+      "bytes": 33612,
+      "sha256": "7460acb26ef71efb1083c6f32d0974081522e2dd777e0b13713992ab215a8a43",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/trajectory.npz",
+      "bytes": 39569,
+      "sha256": "4e4fb9729634bb6e5050f5b722ed0654d995f11f93617881be13e6993917ed27",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/audit.json",
+      "bytes": 1288,
+      "sha256": "3875c504d2cae69bd4ac229499ee4ea5b0e9c64cad6d62e8f3a4c99493cbac5e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/fullrate.npz",
+      "bytes": 2461703,
+      "sha256": "9aff0fda452a7bb9123089e61aa210d44e285393dd5957a36b9583403024a0c4",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "6d31c22095ccc25ddd38e2ff26e2e5713226b166e852a1b559a14e6a021b78d0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/result.json",
+      "bytes": 11471,
+      "sha256": "631601d3f36e969455f8aabab6d252fd324a9786a0004e296c5a6cdd4b819df0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/scene.xml",
+      "bytes": 33612,
+      "sha256": "7460acb26ef71efb1083c6f32d0974081522e2dd777e0b13713992ab215a8a43",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/trajectory.npz",
+      "bytes": 1595187,
+      "sha256": "9de3f1e617de8874857b43c8c12dce69d36abcdcf9c71317552ca965dfad06c8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/position.npz",
+      "bytes": 503283,
+      "sha256": "9ef10e757a6d473c2e4c9b078cb3f5fe2af0ea16bb84efcd53fc27879e81ab56",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/actuator_gain.json",
+      "bytes": 978,
+      "sha256": "d2cd03cb8f29cfb80375d6fb37ead39cc62b733582a7558a98080b017373d871",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/calibration/calibration.pt",
+      "bytes": 12973,
+      "sha256": "a9c9b43fc3374c6cbf41df99d9cbebc0cedb457cc67f19274f7edaab7e357309",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/calibration/training.json",
+      "bytes": 3449,
+      "sha256": "564671b1a0982a799fb01846e342ae29f0a6e9d0875df15f9a6e767eae01bc19",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/capture.json",
+      "bytes": 1874,
+      "sha256": "338ed74f15a6d2c2b464845863b11bd235beda8ff3c209a4c5b06589a066c18f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/audit.json",
+      "bytes": 1158,
+      "sha256": "7621e828a2a7d6357f272db4cb6d8432ef9af8d4b86f73696f3ec1126a6fb575",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/fullrate.npz",
+      "bytes": 1314411,
+      "sha256": "55eed540ae3401b5bf6705f3c77a69d71a8ec7d0778ead499866c3bee007aaed",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "3f7f0a24e68540b8f8514d9737137e767ae405131ce4593312378590d16d5e67",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/result.json",
+      "bytes": 11127,
+      "sha256": "d4c39d018ce65c5e06a40b12f5df39b669143c8de609fc97ab3e81c4cd9bd033",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/scene.xml",
+      "bytes": 33620,
+      "sha256": "9f1fcaf5d627a25ae4c765c8d5a99d5dda37bf2f379c7ac7912072a45caf486c",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/trajectory.npz",
+      "bytes": 850999,
+      "sha256": "c96e671cbc9a798d5ce407d0c6d2c92d2210d6ce1d799b7cda149fa655b219d7",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/audit.json",
+      "bytes": 1286,
+      "sha256": "b75f003fc147677eec5b0a61edcc2764e1916df2b630615aa2a1b79272a2e4ed",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/fullrate.npz",
+      "bytes": 2463210,
+      "sha256": "bf1aa1bc27e9d2af6f11bda40d3989ef13d4e2c377647ea8c73b71af2255c2e8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "bbb4faa821014e682c0b705d4cf4718bd92c4c87d527f0c6318c6427fe6703cf",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/result.json",
+      "bytes": 11512,
+      "sha256": "c12259d3cc1f8d3a0e9da09fe0fed6b1663e4bc4ca8fd8787f26be3d439e2947",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/scene.xml",
+      "bytes": 33620,
+      "sha256": "9f1fcaf5d627a25ae4c765c8d5a99d5dda37bf2f379c7ac7912072a45caf486c",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/trajectory.npz",
+      "bytes": 1594734,
+      "sha256": "ea39353b9e2c14e96e0482ea4a0ae2c8a423309a1b901156f3b5c2f34c8d4512",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/position.npz",
+      "bytes": 503386,
+      "sha256": "01482b7a18e72d656a49d6ce313357c966c16fa7fc08ce8bf056dd8fcea0c44c",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/manifest.json",
+      "bytes": 32059,
+      "sha256": "9d11eba05af623a41a0eee7988a7ff4caf6a616a6a8333a0a9f972640780687a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/actuator_gain.json",
+      "bytes": 979,
+      "sha256": "a7c9522a222285a818804100b4c19c34a693f31063e12b2df3c3ec158acfb0f2",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/calibration/calibration.pt",
+      "bytes": 12973,
+      "sha256": "0d2579bad7afa1168b780fd40654670243db93bdd2dbd68e9a34317969cd6e7f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/calibration/training.json",
+      "bytes": 3449,
+      "sha256": "2291799d10c878c2652e5cebcc22a53f75ecee583b7ea6c3e333562804d53d9a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/capture.json",
+      "bytes": 1866,
+      "sha256": "9091c8d84e366ea06b779c6aba562acebfc2121a53b662381b40f1c0e762ba7a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/audit.json",
+      "bytes": 1028,
+      "sha256": "3cb82784d7a08ce8e31b47ae2d1861b766d1d5f5fd8d34bb55316458c22c1052",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/fullrate.npz",
+      "bytes": 130979,
+      "sha256": "ac302886ebf990f3a03681944f2ff0c2500ed7a416574c63b041c17baba06a9a",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "f8ff9064642c79fd0a092c2934e41205753157bd4cf60a156562ba19b6b90858",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/result.json",
+      "bytes": 10724,
+      "sha256": "4751fa4d34666ac5ff30d0f32d17dc434491efef211c51ba953bb7ea5d00e814",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/scene.xml",
+      "bytes": 33600,
+      "sha256": "304e5638eb56681e87fc20688fd29a5e1e0b7248ebbda5bebb283f38ca1cb9b6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/trajectory.npz",
+      "bytes": 87515,
+      "sha256": "71a429577f803481e7fd9554b11ea673b5aa074dc06b8a4479834e7f9ec4ec53",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/audit.json",
+      "bytes": 1287,
+      "sha256": "9945ec1b285044537e36601d3e5f58ef599a11b9efb771e0b8d7f175e3810814",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/fullrate.npz",
+      "bytes": 2466944,
+      "sha256": "b4e7849255850e35d74c8efadc5e9d7efa95ea38f1edf8d68e1d14502fd6b1af",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/heading_witness.pt",
+      "bytes": 193577,
+      "sha256": "2e0bc6100f81654dfa969ecb26ad8bb30d65a63c62840bf4d9c7f5695a6edc36",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/result.json",
+      "bytes": 11460,
+      "sha256": "d1587e150d988ffb6ec6e41e0cd4830c612c082cf708d2a65374ef712364e807",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/scene.xml",
+      "bytes": 33600,
+      "sha256": "304e5638eb56681e87fc20688fd29a5e1e0b7248ebbda5bebb283f38ca1cb9b6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/trajectory.npz",
+      "bytes": 1596068,
+      "sha256": "46118057d8f4b2a34c7996d9ccec18fe6abd3ef451d0cce915cbb058a55ebcd6",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/wind_trace.pt",
+      "bytes": 577641,
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/position.npz",
+      "bytes": 503275,
+      "sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/README.md",
+      "bytes": 5768,
+      "sha256": "4d3aad0e87d8a74beac38457501a53ddc9f3b22099bf53d9ea7a60e98f6b7d92",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/regression_p3.txt",
+      "bytes": 3974,
+      "sha256": "fabc575ee4b297adc9c01468dfef8cbb79125e0f7892523fa36f4049345c796f",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/strong.gif",
+      "bytes": 3575753,
+      "sha256": "c7173be4c03b0f7d0b01407e1de75404fdce9707b0b38cc5d9925a2fd7b996c0",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/strong.json",
+      "bytes": 3864,
+      "sha256": "6cb9c05e9d893f3ea60d1bc1a6166166fa9a37f443cfadd9c52a2a19e9460558",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/strong.png",
+      "bytes": 211986,
+      "sha256": "48ab0f04d07425ed2164395687164b4879b59cc19e046a50838e2f099fdbe3b7",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/weak.gif",
+      "bytes": 2679647,
+      "sha256": "ef7e6fb179caec86c3a88309354ab1624526ee335e7123bfebc01716d27d2b5e",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/weak.json",
+      "bytes": 3847,
+      "sha256": "87bf80ea26eef737ae05025a7c20ed10b7eb909d43b95aab6d14d71f4b3175cc",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/replays/weak.png",
+      "bytes": 212882,
+      "sha256": "8e9c7df11ec3c2d02a887a60357f78fa5178efa1867bf009cd100b653a16b6c8",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/summary.json",
+      "bytes": 78319,
+      "sha256": "d62a4c6823e4f940f1cde7ed8441de50f529d11c5b547b6dabb8d78cdddccaf2",
+      "kind": "artifact"
+    },
+    {
+      "path": "P3/results/installation_20261115/verification_tests.json",
+      "bytes": 800,
+      "sha256": "5b45e69523850bce58163319ab59dcf1ed8cdcfb8b8adb2ca5e31427486e32d2",
+      "kind": "artifact"
+    },
+    {
       "path": "P3/results/position_identification_actuator_audit.json",
       "bytes": 1730,
       "sha256": "36c626071e5e6190b2221fd26fa71318e9e47e3f33e6449ed22d99ebd23f3184",
@@ -4216,8 +5326,8 @@
     },
     {
       "path": "P3/status.json",
-      "bytes": 1925,
-      "sha256": "9475c5f3e28d3165b3ea5f90a82ad0095103b898acaa1fa78dc64ae91876e493",
+      "bytes": 11629,
+      "sha256": "ed1fddb82f3ddd87e72d23695499016ef69350e091295bc7bb8445cc8586cbb2",
       "kind": "source_or_configuration"
     },
     {
@@ -4239,6 +5349,18 @@
       "kind": "fixture"
     },
     {
+      "path": "P3/tests/test_body_calibration.py",
+      "bytes": 11939,
+      "sha256": "d1665b647f189b8db03880689a8333681024557a74a5aa0b02ea7ca20a6a6a49",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/tests/test_body_transport.py",
+      "bytes": 9915,
+      "sha256": "3d32c7e8c2806816281e2b997d7a45755bb6eda43247e2a98c76621b8a73aa5b",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P3/tests/test_compensation.py",
       "bytes": 7215,
       "sha256": "f6bc2066c0efeac53c4e7547c630fc7a8bdbfe4506ff334d5ad65eb7c36b83bc",
@@ -4248,6 +5370,12 @@
       "path": "P3/tests/test_flexible_residual.py",
       "bytes": 4788,
       "sha256": "98fa3d0594a2a2176c12379e422e9dc8945595763b832182976daad24311e319",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/tests/test_installation.py",
+      "bytes": 4314,
+      "sha256": "77ee53da99318acd6c948972f9f987d411b263393fef72a382319772169ff9a2",
       "kind": "source_or_configuration"
     },
     {
@@ -4281,9 +5409,21 @@
       "kind": "source_or_configuration"
     },
     {
+      "path": "P3/train_body_calibration.py",
+      "bytes": 5643,
+      "sha256": "75e9d9bbb1da35369995edb19f7d220ed6478d47031c847339e4cc51dbad0b78",
+      "kind": "source_or_configuration"
+    },
+    {
       "path": "P3/train_mismatch.py",
       "bytes": 7141,
       "sha256": "b2ce391c26fa61740c40d0135e9fbd789d8b9cb345930a68d103afd6491ffb68",
+      "kind": "source_or_configuration"
+    },
+    {
+      "path": "P3/validate_body_reference.py",
+      "bytes": 3729,
+      "sha256": "f7b097209ab129b98070d2efcb43e77a77b5b3a0f9f61fe8fde4de0ac0a8b78a",
       "kind": "source_or_configuration"
     },
     {
@@ -4306,8 +5446,8 @@
     },
     {
       "path": "project_state.json",
-      "bytes": 17204,
-      "sha256": "0cea98ecb6e9602e09119ccad4c332071a0001503f006a4f28d57cdcb33fd9e1",
+      "bytes": 25094,
+      "sha256": "f01070d9bbe5e1c12b86b385cb2ca89c1e8ad9e08fdf7fe3c3ce29ec3ae16473",
       "kind": "source_or_configuration"
     },
     {
@@ -4912,8 +6052,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10406,
-      "sha256": "4133f3e151706eb4137a0953e754d2e4daedc893c5c60fe39d5bd2f06b233e04",
+      "bytes": 11625,
+      "sha256": "0b737258f165478ba9f9b5a25a90760f8ed8d9f3c88a0b0f4854b78ea5cd9bbd",
       "kind": "source_or_configuration"
     },
     {

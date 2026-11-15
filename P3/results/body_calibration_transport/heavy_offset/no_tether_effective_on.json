@@ -1,0 +1,31 @@
+{
+  "engine": "native_MuJoCo",
+  "position_controller": "local_development_surrogate_NOT_PX4",
+  "duration_s": 30.0,
+  "seed": 2026111801,
+  "height_m": 6.0,
+  "tether_enabled": false,
+  "wind_mps": 0,
+  "peak_tilt_deg": 0.4729544512088228,
+  "physics_dt_s": 0.0005,
+  "mj_step_calls": 60000,
+  "imu_position_reference": "geometric_origin",
+  "true_com_body_m": [
+    0.01,
+    0.006,
+    0.0
+  ],
+  "true_accel_bias_body_mps2": [
+    0.12,
+    0.2,
+    -0.18
+  ],
+  "p3_enabled": true,
+  "position_excitation": false,
+  "hover_rmse_3d_h_xy_m": [
+    0.426429524431263,
+    0.4264283273116775,
+    0.0010104320055746515
+  ],
+  "final_attitude_integral_norm_rad_s": 0.0001830172841437161
+}

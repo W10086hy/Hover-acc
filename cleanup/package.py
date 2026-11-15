@@ -40,6 +40,15 @@ def manifest():
     px4=read(ROOT/'cleanup/retention_px4_narrow_20261109.json');assert px4['status']=='complete'
     stock=read(ROOT/'cleanup/retention_stock_px4_20261110.json');assert stock['status']=='complete'
     acceleration=read(ROOT/'cleanup/retention_acceleration_20261113.json');assert acceleration['status']=='complete'
+    p3_path=ROOT/'cleanup/retention_p3_installation_20261115.json'
+    p3=read(p3_path) if p3_path.exists() else None
+    if p3 is not None:
+        assert p3['status']=='complete'
+        assert len(p3['removed_files'])==p3['removed_count']
+        assert sum(r['bytes'] for r in p3['removed_files'])==p3['removed_bytes']
+        assert all(not (ROOT/r['path']).exists() for r in p3['removed_files'])
+        for row in p3['protected_files']:
+            assert digest(ROOT/row['path'])==row['sha256'],row['path']
     for name,expected in FINAL.items():assert digest(ROOT/name)==expected
     excluded={'cleanup/manifest.json','cleanup/verification.json','cleanup/package_summary.json'};rows=[]
     for p in sorted(files(ROOT)):
@@ -51,8 +60,8 @@ def manifest():
         artifact=artifact or name.endswith('track_retention_20261102.json') or name in {'track/reports/height_speed_statistics.json','track/reports/development_statistics.json'}
         kind='fixture' if '/tests/fixtures/' in name else ('artifact' if artifact else 'source_or_configuration')
         rows.append(dict(path=name,bytes=p.stat().st_size,sha256=digest(p),kind=kind))
-    write(ROOT/'cleanup/manifest.json',dict(date=acceleration['date'],
-        scope='Latest horizontal acceleration BPTT with vertical PID, frozen baselines, accepted tracking and PX4 results, and regression fixtures',
+    write(ROOT/'cleanup/manifest.json',dict(date=p3['date'] if p3 else acceleration['date'],
+        scope='Latest installation/bias/CG P3 and paired native validation, horizontal acceleration BPTT with vertical PID, indexed historical models and accepted tracking/PX4 evidence',
         files=rows))
     summary=dict(date=acceleration['date'],this_cleanup_removed_files=acceleration['removed_count'],this_cleanup_removed_bytes=acceleration['removed_bytes'],
         stock_px4_removed_files=stock['removed_count'],stock_px4_removed_bytes=stock['removed_bytes'],
@@ -61,6 +70,11 @@ def manifest():
         latest_px4_removed_files=px4['removed_count'],latest_px4_removed_bytes=px4['removed_bytes'],
         latest_px4_archived_files=px4['moved_count'],
         actor31_detailed_cases=9,actor31_gifs=8,tracking_cases_in_statistics=16,final_checkpoints_unchanged=True,new_training_during_cleanup=False,new_experiment_run_during_cleanup=False)
+    if p3 is not None:
+        summary.update(date=p3['date'],this_cleanup_removed_files=p3['removed_count'],this_cleanup_removed_bytes=p3['removed_bytes'],
+            previous_acceleration_removed_files=acceleration['removed_count'],previous_acceleration_removed_bytes=acceleration['removed_bytes'],
+            latest_p3_retention='cleanup/retention_p3_installation_20261115.json',latest_p3_protected_files=len(p3['protected_files']),
+            latest_p3_paired_120s_cases=24,latest_p3_current_aircraft=3,latest_p3_full_replays=2)
     for _ in range(3):
         write(ROOT/'cleanup/package_summary.json',summary);current=list(files(ROOT));summary.update(current_files=len(current),current_bytes=sum(p.stat().st_size for p in current))
     write(ROOT/'cleanup/package_summary.json',summary);print(json.dumps(summary,ensure_ascii=False))

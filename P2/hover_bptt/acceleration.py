@@ -90,7 +90,7 @@ class AccelerationInterface:
         acceleration = torch.tanh(torch.nan_to_num(raw)) * self.limit
         return torch.where(valid, acceleration, self.trim_acceleration)
 
-    def apply(self, packet, raw, dt):
+    def apply(self, packet, raw, dt, *, body_torque_feedforward=None):
         invalid = ~self.valid_inputs(packet, raw)
         acceleration = torch.where(invalid[:, None], self.trim_acceleration, self.policy_command(raw))
         rotation = rotations(torch.nan_to_num(packet.attitude, nan=0., posinf=0., neginf=0.))
@@ -144,12 +144,20 @@ class AccelerationInterface:
             self.vertical_integral = torch.where(invalid | integral_limited, self.vertical_integral, integral)
         else:
             collective = (self.vehicle.mass * (down * rotation[:, :, 2]).sum(-1)).clamp(self.min_thrust, self.max_thrust)
+        if body_torque_feedforward is not None:
+            if (body_torque_feedforward.shape != torque.shape
+                    or not bool(torch.isfinite(body_torque_feedforward).all())):
+                raise ValueError('Finite body torque feedforward [N,3] required')
+            torque = torque + torch.where(invalid[:, None], 0., body_torque_feedforward.to(torque))
         actual, self.saturated, rate_limited = allocate_throttle(
             self.vehicle, collective, torque, self.previous, self.settings['throttle_rate_per_s'] * dt)
         self.previous = actual
-        return actual, dict(acceleration_reference_mps2=acceleration, invalid_policy_action=invalid,
+        info = dict(acceleration_reference_mps2=acceleration, invalid_policy_action=invalid,
             fallback=invalid, normalized_action=acceleration / self.limit,
             allocation_saturated=self.saturated, rate_limited=rate_limited)
+        if body_torque_feedforward is not None:
+            info['body_torque_feedforward_nm'] = torch.where(invalid[:, None], 0., body_torque_feedforward)
+        return actual, info
 
 
 class AccelerationPolicy:

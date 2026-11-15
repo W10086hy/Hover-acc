@@ -1,0 +1,2302 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "profiles": [
+    {
+      "name": "nominal_offset",
+      "calibration": {
+        "schema_version": 1,
+        "method": "Position_body_FRD_physical_parameter_Adam",
+        "steps": 1600,
+        "initial_loss": 3.3775737269088335,
+        "final_loss": 0.009779596949207348,
+        "accel_bias_body_mps2": [
+          0.15919873207557056,
+          -0.10983420498272413,
+          0.21986088641409934
+        ],
+        "com_body_m": [
+          0.008001028568238444,
+          -0.005999912893990282,
+          0.0
+        ],
+        "com_z_identified": false,
+        "inertia_body_kgm2": [
+          0.012319669755651418,
+          0.004827647676181482,
+          0.015702447397007095
+        ],
+        "design_relative_min_singular": 0.001363860391012811,
+        "metrics": {
+          "samples": 259,
+          "torque_before_rmse_nm": [
+            0.13645206691066955,
+            0.181962843792578,
+            0.00022808471640225713
+          ],
+          "torque_after_rmse_nm": [
+            0.0003755779152267541,
+            0.00035511449089992283,
+            0.0001661186500809681
+          ],
+          "accel_before_rmse_mps2": [
+            0.1594255620612104,
+            0.11025063765228575,
+            0.22015511172956584
+          ],
+          "accel_after_rmse_mps2": [
+            0.008501384832105267,
+            0.009573427732455444,
+            0.011378218044321525
+          ]
+        },
+        "torque_sign": "disturbance=-r_cross_F; compensation=+r_cross_F",
+        "controlled_external_loads_required": true,
+        "holdout": {
+          "samples": 143,
+          "torque_before_rmse_nm": [
+            0.13631213695379654,
+            0.18182226271987542,
+            0.0002928165151164062
+          ],
+          "torque_after_rmse_nm": [
+            0.0003692451161648873,
+            0.0003668291819624614,
+            0.00016524218186120105
+          ],
+          "accel_before_rmse_mps2": [
+            0.1600222847007122,
+            0.11101840275997979,
+            0.22044498765677925
+          ],
+          "accel_after_rmse_mps2": [
+            0.009752966536348743,
+            0.009153307888058447,
+            0.01244740112082439
+          ]
+        },
+        "input_metadata": {
+          "source": "armed_airborne_position_body_FRD",
+          "motor_interval_model": "measured_linear_interpolation",
+          "raw_valid_intervals": 2071,
+          "integrated_blocks": 259,
+          "controlled_external_loads": true,
+          "position_reference": "same_point_as_IMU",
+          "motor_response_source": "this_record"
+        },
+        "input_sha256": "5dcf196f40f5b494c54351d879dbda5175ae73c808dcaec1cdef81bef0597301",
+        "train_blocks": 259,
+        "holdout_blocks": 143,
+        "raw_time_holdout_independent": true,
+        "split_time_s": 24.12,
+        "training_raw_time_s": [
+          0.0,
+          24.11
+        ],
+        "holdout_raw_time_s": [
+          24.12,
+          36.0
+        ],
+        "holdout_input_metadata": {
+          "source": "armed_airborne_position_body_FRD",
+          "motor_interval_model": "measured_linear_interpolation",
+          "raw_valid_intervals": 1147,
+          "integrated_blocks": 143,
+          "controlled_external_loads": true,
+          "position_reference": "same_point_as_IMU",
+          "motor_response_source": "training_record"
+        },
+        "reference_transport": {
+          "mass_kg": 2.3001509163495037,
+          "samples": 2071,
+          "force_rmse_n": [
+            0.010300087590415898,
+            0.01382267836425814,
+            0.024283503553235247
+          ],
+          "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+          "known_kf_and_controlled_external_loads_required": true,
+          "holdout": {
+            "mass_kg": 2.3001509163495037,
+            "samples": 1147,
+            "force_rmse_n": [
+              0.009850149974038665,
+              0.01160254557513079,
+              0.021633388836518015
+            ],
+            "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+            "known_kf_and_controlled_external_loads_required": true
+          }
+        },
+        "development_quality_gate_passed": true,
+        "checkpoint_sha256": "cb4a1c3e9d88b31ead9e25b11e230e0b44eadf4dfd59b44631cf9c95e68c1839",
+        "physical_error": {
+          "accel_bias_error_mps2": [
+            -0.0008012679244294441,
+            0.00016579501727587154,
+            -0.0001391135859006576
+          ],
+          "horizontal_com_error_mm": [
+            0.0010285682384442857,
+            8.710600971854193e-05
+          ],
+          "inertia_relative_error": [
+            -0.022248432091157233,
+            -0.12224587705791223,
+            -0.006174215379297854
+          ],
+          "mass_relative_error": 6.56158041321131e-05
+        },
+        "capture_and_train_wall_s": 25.03169129998423,
+        "training_source_archive": "frozen_source.zip"
+      },
+      "actuator_gain": {
+        "speed_gain": 0.999998489192457,
+        "thrust_effectiveness": 0.9999969783871966,
+        "scalar_samples": 8444,
+        "rpm_fit_rmse_radps": 0.20035524210474934,
+        "relative_fit_rmse": 0.0003774969139014366,
+        "model": "slow_command_common_speed_gain_at_nominal_kf",
+        "lag_identified": false,
+        "max_fractional_command_change_per_interval": 0.002,
+        "holdout": {
+          "speed_gain": 0.999998489192457,
+          "thrust_effectiveness": 0.9999969783871966,
+          "scalar_samples": 4752,
+          "rpm_fit_rmse_radps": 0.19741478105328303,
+          "relative_fit_rmse": 0.0003718565082239089,
+          "model": "slow_command_common_speed_gain_at_nominal_kf",
+          "lag_identified": false,
+          "max_fractional_command_change_per_interval": 0.002
+        },
+        "input_sha256": "5dcf196f40f5b494c54351d879dbda5175ae73c808dcaec1cdef81bef0597301",
+        "split_time_s": 24.12,
+        "raw_time_holdout_independent": true,
+        "source_sha256": "349609803309fe297edfed532d4bfb3b147c7ce5bd44ed484aa9aef4dd6a3578"
+      },
+      "physical_configuration": {
+        "name": "nominal_offset",
+        "mass": 1.0,
+        "inertia": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "motor_tau": 1.0,
+        "motor_gain": 1.0,
+        "bias": [
+          0.16,
+          -0.11,
+          0.22
+        ],
+        "com": [
+          0.008,
+          -0.006,
+          0.0
+        ],
+        "identification_height_m": 5.0
+      },
+      "paired": {
+        "off": {
+          "count": 4,
+          "safe_completed": 0,
+          "rmse_3d_h_xy_m": [
+            7.081580437284241,
+            3.913823099536239,
+            5.90175992694242
+          ],
+          "rmse_passed": 0,
+          "settled": 0,
+          "hover_passed": 0,
+          "cases": [
+            {
+              "attachment": 2,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": false,
+              "failure_code": 8,
+              "safe_duration_s": 7.210000038146973,
+              "position_rmse_m": 7.028741445757472,
+              "height_rmse_m": 3.879119634821378,
+              "horizontal_rmse_m": 5.861368199495072,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.008916666666666666,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "nominal_offset",
+              "case_index": 0,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            },
+            {
+              "attachment": 2,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": false,
+              "failure_code": 8,
+              "safe_duration_s": 7.359999656677246,
+              "position_rmse_m": 7.0264382242182135,
+              "height_rmse_m": 3.876536834644233,
+              "horizontal_rmse_m": 5.860315374482953,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.009083333333333334,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "nominal_offset",
+              "case_index": 1,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": false,
+              "failure_code": 64,
+              "safe_duration_s": 3.0199999809265137,
+              "position_rmse_m": 7.1357739098549775,
+              "height_rmse_m": 3.9499232473516797,
+              "horizontal_rmse_m": 5.942842386652851,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.00875,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "nominal_offset",
+              "case_index": 2,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": false,
+              "failure_code": 64,
+              "safe_duration_s": 3.069999933242798,
+              "position_rmse_m": 7.134550878385883,
+              "height_rmse_m": 3.9490561386582375,
+              "horizontal_rmse_m": 5.941950172292129,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.008333333333333333,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "nominal_offset",
+              "case_index": 3,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            }
+          ],
+          "no_tether": {
+            "engine": "native_MuJoCo",
+            "position_controller": "local_development_surrogate_NOT_PX4",
+            "duration_s": 30.0,
+            "seed": 2026111601,
+            "height_m": 6.0,
+            "tether_enabled": false,
+            "wind_mps": 0,
+            "peak_tilt_deg": 12.779732576730206,
+            "physics_dt_s": 0.0005,
+            "mj_step_calls": 60000,
+            "imu_position_reference": "geometric_origin",
+            "true_com_body_m": [
+              0.008,
+              -0.006,
+              0.0
+            ],
+            "true_accel_bias_body_mps2": [
+              0.16,
+              -0.11,
+              0.22
+            ],
+            "p3_enabled": false,
+            "position_excitation": false,
+            "hover_rmse_3d_h_xy_m": [
+              0.06918789359624049,
+              0.011161829155119613,
+              0.0682816094581595
+            ],
+            "final_attitude_integral_norm_rad_s": 0.14374569058418274
+          },
+          "result_path": "nominal_offset/flexible_off"
+        },
+        "on": {
+          "count": 4,
+          "safe_completed": 4,
+          "rmse_3d_h_xy_m": [
+            0.7093106490953834,
+            0.024263592963923,
+            0.7088955317792568
+          ],
+          "rmse_passed": 4,
+          "settled": 4,
+          "hover_passed": 4,
+          "cases": [
+            {
+              "attachment": 2,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.16130564955452287,
+              "height_rmse_m": 0.026355727571910764,
+              "horizontal_rmse_m": 0.1591379533686473,
+              "terminal30_horizontal_rmse_m": 0.1256446029809992,
+              "terminal30_height_rmse_m": 0.03644005782680226,
+              "origin_dwell_fraction": 1.0,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.13082218491791095,
+              "late_horizontal_std_m": 0.0575298172605635,
+              "late_horizontal_bias_m": 0.1116999837922977,
+              "late_horizontal_drift_mps": 0.004737527499678023,
+              "late_horizontal_speed_rms_mps": 0.015316030767590656,
+              "late_detrended_position_std_m": 0.04103622000251361,
+              "late_detrended_height_std_m": 0.007589716845281786,
+              "late_speed_rms_mps": 0.02992829265942008,
+              "late_angular_acceleration_rms_radps2": 1.0069975503948831,
+              "late_motor_step_rms_normalized": 0.003382913268959508,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "nominal_offset",
+              "case_index": 0,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            },
+            {
+              "attachment": 2,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 1.0529573036546394,
+              "height_rmse_m": 0.03427193860216139,
+              "horizontal_rmse_m": 1.052399409703416,
+              "terminal30_horizontal_rmse_m": 1.0264940909280482,
+              "terminal30_height_rmse_m": 0.04545839610151947,
+              "origin_dwell_fraction": 0.0385,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 1.027500162519877,
+              "late_horizontal_std_m": 0.023451399963946587,
+              "late_horizontal_bias_m": 1.0262261690500103,
+              "late_horizontal_drift_mps": 0.0012591809757776377,
+              "late_horizontal_speed_rms_mps": 0.01624357509139392,
+              "late_detrended_position_std_m": 0.021824207334865054,
+              "late_detrended_height_std_m": 0.0067262996547434286,
+              "late_speed_rms_mps": 0.027812167957850357,
+              "late_angular_acceleration_rms_radps2": 1.011026849011877,
+              "late_motor_step_rms_normalized": 0.003402966856450392,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "nominal_offset",
+              "case_index": 1,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.18105409164121605,
+              "height_rmse_m": 0.012427703888128274,
+              "horizontal_rmse_m": 0.18062706407428225,
+              "terminal30_horizontal_rmse_m": 0.14192545695459388,
+              "terminal30_height_rmse_m": 0.011122316781156683,
+              "origin_dwell_fraction": 1.0,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.1423606029772226,
+              "late_horizontal_std_m": 0.042623686747162895,
+              "late_horizontal_bias_m": 0.1353737665783707,
+              "late_horizontal_drift_mps": 0.001963233434708876,
+              "late_horizontal_speed_rms_mps": 0.014598860117298494,
+              "late_detrended_position_std_m": 0.040206179906320985,
+              "late_detrended_height_std_m": 0.009424946289345268,
+              "late_speed_rms_mps": 0.03318478941142757,
+              "late_angular_acceleration_rms_radps2": 1.0204961595227753,
+              "late_motor_step_rms_normalized": 0.00345963044980275,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "nominal_offset",
+              "case_index": 2,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.9192209787002121,
+              "height_rmse_m": 0.01820026919442783,
+              "horizontal_rmse_m": 0.9190407814040823,
+              "terminal30_horizontal_rmse_m": 0.9384003093648782,
+              "terminal30_height_rmse_m": 0.011868506112186551,
+              "origin_dwell_fraction": 0.03916666666666667,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.9384753602404776,
+              "late_horizontal_std_m": 0.020143358256354448,
+              "late_horizontal_bias_m": 0.9381840893232911,
+              "late_horizontal_drift_mps": 0.0011834416362596603,
+              "late_horizontal_speed_rms_mps": 0.030585051148348547,
+              "late_detrended_position_std_m": 0.019245867087090432,
+              "late_detrended_height_std_m": 0.008347967680906572,
+              "late_speed_rms_mps": 0.04043200908991765,
+              "late_angular_acceleration_rms_radps2": 1.003909540387597,
+              "late_motor_step_rms_normalized": 0.0034021334450423995,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "nominal_offset",
+              "case_index": 3,
+              "seed_pair": [
+                2026111701,
+                2026111702
+              ]
+            }
+          ],
+          "no_tether": {
+            "engine": "native_MuJoCo",
+            "position_controller": "local_development_surrogate_NOT_PX4",
+            "duration_s": 30.0,
+            "seed": 2026111601,
+            "height_m": 6.0,
+            "tether_enabled": false,
+            "wind_mps": 0,
+            "peak_tilt_deg": 0.28422221915428403,
+            "physics_dt_s": 0.0005,
+            "mj_step_calls": 60000,
+            "imu_position_reference": "geometric_origin",
+            "true_com_body_m": [
+              0.008,
+              -0.006,
+              0.0
+            ],
+            "true_accel_bias_body_mps2": [
+              0.16,
+              -0.11,
+              0.22
+            ],
+            "p3_enabled": true,
+            "position_excitation": false,
+            "hover_rmse_3d_h_xy_m": [
+              0.000421226746459231,
+              0.00011677129784281776,
+              0.00040471772376896617
+            ],
+            "final_attitude_integral_norm_rad_s": 0.0001306534104514867
+          },
+          "result_path": "nominal_offset/flexible_effective_observer_on"
+        }
+      }
+    },
+    {
+      "name": "light_offset",
+      "calibration": {
+        "schema_version": 1,
+        "method": "Position_body_FRD_physical_parameter_Adam",
+        "steps": 1600,
+        "initial_loss": 3.1162933222875884,
+        "final_loss": 0.010130666880369585,
+        "accel_bias_body_mps2": [
+          -0.18010406920877253,
+          0.1399072475144679,
+          -0.15999262910812312
+        ],
+        "com_body_m": [
+          -0.007000469356925245,
+          0.00899841045584043,
+          0.0
+        ],
+        "com_z_identified": false,
+        "inertia_body_kgm2": [
+          0.01139325389857965,
+          0.005682887017916462,
+          0.01498152435367256
+        ],
+        "design_relative_min_singular": 0.001589940044327208,
+        "metrics": {
+          "samples": 259,
+          "torque_before_rmse_nm": [
+            0.18425098088936823,
+            0.1433440359828745,
+            0.0002813706205465265
+          ],
+          "torque_after_rmse_nm": [
+            0.0003476462066073706,
+            0.00033092133922877156,
+            0.0001553863386516164
+          ],
+          "accel_before_rmse_mps2": [
+            0.1803334852299409,
+            0.1402355916358751,
+            0.1603960347743429
+          ],
+          "accel_after_rmse_mps2": [
+            0.009093412429829601,
+            0.009590790081601191,
+            0.011368667573764668
+          ]
+        },
+        "torque_sign": "disturbance=-r_cross_F; compensation=+r_cross_F",
+        "controlled_external_loads_required": true,
+        "holdout": {
+          "samples": 143,
+          "torque_before_rmse_nm": [
+            0.1842097786249598,
+            0.14327440376479372,
+            0.0003365121956276758
+          ],
+          "torque_after_rmse_nm": [
+            0.00034360123592853806,
+            0.00032849672432637384,
+            0.00015772760594576495
+          ],
+          "accel_before_rmse_mps2": [
+            0.17955840874342938,
+            0.1406162226612864,
+            0.15984958318388717
+          ],
+          "accel_after_rmse_mps2": [
+            0.008860341304932459,
+            0.00934413939684702,
+            0.010418577747526147
+          ]
+        },
+        "input_metadata": {
+          "source": "armed_airborne_position_body_FRD",
+          "motor_interval_model": "measured_linear_interpolation",
+          "raw_valid_intervals": 2071,
+          "integrated_blocks": 259,
+          "controlled_external_loads": true,
+          "position_reference": "same_point_as_IMU",
+          "motor_response_source": "this_record"
+        },
+        "input_sha256": "6ae0300a0a6ca8f69df629ed61a8ae8d8977df6e8c53660dcd4896c7dcffb230",
+        "train_blocks": 259,
+        "holdout_blocks": 143,
+        "raw_time_holdout_independent": true,
+        "split_time_s": 24.12,
+        "training_raw_time_s": [
+          0.0,
+          24.11
+        ],
+        "holdout_raw_time_s": [
+          24.12,
+          36.0
+        ],
+        "holdout_input_metadata": {
+          "source": "armed_airborne_position_body_FRD",
+          "motor_interval_model": "measured_linear_interpolation",
+          "raw_valid_intervals": 1147,
+          "integrated_blocks": 143,
+          "controlled_external_loads": true,
+          "position_reference": "same_point_as_IMU",
+          "motor_response_source": "training_record"
+        },
+        "reference_transport": {
+          "mass_kg": 2.0701293537731016,
+          "samples": 2071,
+          "force_rmse_n": [
+            0.009788608397921601,
+            0.01258100283335344,
+            0.021688182518414586
+          ],
+          "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+          "known_kf_and_controlled_external_loads_required": true,
+          "holdout": {
+            "mass_kg": 2.0701293537731016,
+            "samples": 1147,
+            "force_rmse_n": [
+              0.007873382035849018,
+              0.010212776996986368,
+              0.020544452229501436
+            ],
+            "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+            "known_kf_and_controlled_external_loads_required": true
+          }
+        },
+        "development_quality_gate_passed": true,
+        "checkpoint_sha256": "e98139e8e806f100632f870b3ece4401fb19f8e451e5c7f92b98b019175dd34a",
+        "physical_error": {
+          "accel_bias_error_mps2": [
+            -0.00010406920877253922,
+            -9.275248553211601e-05,
+            7.3708918768844445e-06
+          ],
+          "horizontal_com_error_mm": [
+            -0.00046935692524490563,
+            -0.001589544159569592
+          ],
+          "inertia_relative_error": [
+            0.004696110985859647,
+            -0.0606798317493451,
+            -0.0018971116807089405
+          ],
+          "mass_relative_error": 6.248974545974839e-05
+        },
+        "capture_and_train_wall_s": 24.70919219998177,
+        "training_source_archive": "frozen_source.zip"
+      },
+      "actuator_gain": {
+        "speed_gain": 1.0999934950193566,
+        "thrust_effectiveness": 1.2099856890848992,
+        "scalar_samples": 8444,
+        "rpm_fit_rmse_radps": 0.20259406866551274,
+        "relative_fit_rmse": 0.0004023040671167165,
+        "model": "slow_command_common_speed_gain_at_nominal_kf",
+        "lag_identified": false,
+        "max_fractional_command_change_per_interval": 0.002,
+        "holdout": {
+          "speed_gain": 1.0999934950193566,
+          "thrust_effectiveness": 1.2099856890848992,
+          "scalar_samples": 4752,
+          "rpm_fit_rmse_radps": 0.19919186968740477,
+          "relative_fit_rmse": 0.00039540391441677186,
+          "model": "slow_command_common_speed_gain_at_nominal_kf",
+          "lag_identified": false,
+          "max_fractional_command_change_per_interval": 0.002
+        },
+        "input_sha256": "6ae0300a0a6ca8f69df629ed61a8ae8d8977df6e8c53660dcd4896c7dcffb230",
+        "split_time_s": 24.12,
+        "raw_time_holdout_independent": true,
+        "source_sha256": "349609803309fe297edfed532d4bfb3b147c7ce5bd44ed484aa9aef4dd6a3578"
+      },
+      "physical_configuration": {
+        "name": "light_offset",
+        "mass": 0.9,
+        "inertia": [
+          0.9,
+          1.1,
+          0.95
+        ],
+        "motor_tau": 0.9,
+        "motor_gain": 1.1,
+        "bias": [
+          -0.18,
+          0.14,
+          -0.16
+        ],
+        "com": [
+          -0.007,
+          0.009,
+          0.0
+        ],
+        "identification_height_m": 8.0
+      },
+      "paired": {
+        "off": {
+          "count": 4,
+          "safe_completed": 2,
+          "rmse_3d_h_xy_m": [
+            5.556261903330555,
+            2.7786004464140444,
+            4.8115928649034885
+          ],
+          "rmse_passed": 0,
+          "settled": 0,
+          "hover_passed": 0,
+          "cases": [
+            {
+              "attachment": 2,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 3.350080888571241,
+              "height_rmse_m": 0.10374835886178026,
+              "horizontal_rmse_m": 3.348474016325013,
+              "terminal30_horizontal_rmse_m": 3.365216970595395,
+              "terminal30_height_rmse_m": 0.09184369159298954,
+              "origin_dwell_fraction": 0.0055,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 3.366470035898864,
+              "late_horizontal_std_m": 0.6334529072974872,
+              "late_horizontal_bias_m": 3.3050601587816573,
+              "late_horizontal_drift_mps": 0.004438353885856824,
+              "late_horizontal_speed_rms_mps": 0.9900183994292342,
+              "late_detrended_position_std_m": 0.6388495943733461,
+              "late_detrended_height_std_m": 0.09134353942342767,
+              "late_speed_rms_mps": 1.0036414539696712,
+              "late_angular_acceleration_rms_radps2": 1.2533548798430563,
+              "late_motor_step_rms_normalized": 0.0037868836272389704,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "light_offset",
+              "case_index": 0,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            },
+            {
+              "attachment": 2,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 3.333939087724243,
+              "height_rmse_m": 0.07532500252266011,
+              "horizontal_rmse_m": 3.3330880553400504,
+              "terminal30_horizontal_rmse_m": 3.360255617814247,
+              "terminal30_height_rmse_m": 0.050603611670015335,
+              "origin_dwell_fraction": 0.006333333333333333,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 3.360636629322198,
+              "late_horizontal_std_m": 0.23287013065371218,
+              "late_horizontal_bias_m": 3.3521768048656004,
+              "late_horizontal_drift_mps": 0.0035574287938322513,
+              "late_horizontal_speed_rms_mps": 0.37129721275958355,
+              "late_detrended_position_std_m": 0.2354273084865605,
+              "late_detrended_height_std_m": 0.04633213999835639,
+              "late_speed_rms_mps": 0.3808491652594848,
+              "late_angular_acceleration_rms_radps2": 1.0472890196941709,
+              "late_motor_step_rms_normalized": 0.0033683974957809683,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "light_offset",
+              "case_index": 1,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": false,
+              "failure_code": 64,
+              "safe_duration_s": 3.859999895095825,
+              "position_rmse_m": 7.123515046187072,
+              "height_rmse_m": 3.935598452667357,
+              "horizontal_rmse_m": 5.93763685590622,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.007333333333333333,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "light_offset",
+              "case_index": 2,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": false,
+              "failure_code": 8,
+              "safe_duration_s": 4.690000057220459,
+              "position_rmse_m": 7.099684988767495,
+              "height_rmse_m": 3.9213657065670455,
+              "horizontal_rmse_m": 5.918481049652052,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.00475,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "light_offset",
+              "case_index": 3,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            }
+          ],
+          "no_tether": {
+            "engine": "native_MuJoCo",
+            "position_controller": "local_development_surrogate_NOT_PX4",
+            "duration_s": 30.0,
+            "seed": 2026111701,
+            "height_m": 6.0,
+            "tether_enabled": false,
+            "wind_mps": 0,
+            "peak_tilt_deg": 12.998699517202828,
+            "physics_dt_s": 0.0005,
+            "mj_step_calls": 60000,
+            "imu_position_reference": "geometric_origin",
+            "true_com_body_m": [
+              -0.007,
+              0.009,
+              0.0
+            ],
+            "true_accel_bias_body_mps2": [
+              -0.18,
+              0.14,
+              -0.16
+            ],
+            "p3_enabled": false,
+            "position_excitation": false,
+            "hover_rmse_3d_h_xy_m": [
+              0.27382046486292466,
+              0.2710362808601158,
+              0.03894844586456065
+            ],
+            "final_attitude_integral_norm_rad_s": 0.10194258391857147
+          },
+          "result_path": "light_offset/flexible_off"
+        },
+        "on": {
+          "count": 4,
+          "safe_completed": 4,
+          "rmse_3d_h_xy_m": [
+            0.7095131785022145,
+            0.03875018867327303,
+            0.7084542140082879
+          ],
+          "rmse_passed": 4,
+          "settled": 4,
+          "hover_passed": 4,
+          "cases": [
+            {
+              "attachment": 2,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.12976814255427688,
+              "height_rmse_m": 0.04032782367505544,
+              "horizontal_rmse_m": 0.12334276411537388,
+              "terminal30_horizontal_rmse_m": 0.09353393196988577,
+              "terminal30_height_rmse_m": 0.008708338382287678,
+              "origin_dwell_fraction": 1.0,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.09393844568137064,
+              "late_horizontal_std_m": 0.050055869969485495,
+              "late_horizontal_bias_m": 0.07901269708876314,
+              "late_horizontal_drift_mps": 0.0020427473543351655,
+              "late_horizontal_speed_rms_mps": 0.013112899059888824,
+              "late_detrended_position_std_m": 0.047503723132305026,
+              "late_detrended_height_std_m": 0.007998425768763938,
+              "late_speed_rms_mps": 0.032654442784551437,
+              "late_angular_acceleration_rms_radps2": 1.4222210998608147,
+              "late_motor_step_rms_normalized": 0.004222500510971435,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "light_offset",
+              "case_index": 0,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            },
+            {
+              "attachment": 2,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 1.0882502033134398,
+              "height_rmse_m": 0.04001234570283641,
+              "horizontal_rmse_m": 1.0875143756305474,
+              "terminal30_horizontal_rmse_m": 1.0889394878201522,
+              "terminal30_height_rmse_m": 0.02269554387119339,
+              "origin_dwell_fraction": 0.040916666666666664,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 1.089175971421352,
+              "late_horizontal_std_m": 0.015645258101708415,
+              "late_horizontal_bias_m": 1.0888270913738323,
+              "late_horizontal_drift_mps": 0.0008439656402737187,
+              "late_horizontal_speed_rms_mps": 0.0154573597773093,
+              "late_detrended_position_std_m": 0.016714986359518378,
+              "late_detrended_height_std_m": 0.009382830710471106,
+              "late_speed_rms_mps": 0.037203813217647035,
+              "late_angular_acceleration_rms_radps2": 1.359743055480601,
+              "late_motor_step_rms_normalized": 0.004006044467859749,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "light_offset",
+              "case_index": 1,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.09030237523859735,
+              "height_rmse_m": 0.03781276839767191,
+              "horizontal_rmse_m": 0.08200435061529641,
+              "terminal30_horizontal_rmse_m": 0.062495310101716904,
+              "terminal30_height_rmse_m": 0.010059943256198467,
+              "origin_dwell_fraction": 0.9958333333333333,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.06329981231577508,
+              "late_horizontal_std_m": 0.025479504684643117,
+              "late_horizontal_bias_m": 0.05706538900259919,
+              "late_horizontal_drift_mps": 0.0007065087444113842,
+              "late_horizontal_speed_rms_mps": 0.011374991738411212,
+              "late_detrended_position_std_m": 0.025790268826700272,
+              "late_detrended_height_std_m": 0.00730543622679897,
+              "late_speed_rms_mps": 0.029589264756520788,
+              "late_angular_acceleration_rms_radps2": 1.4131714256843881,
+              "late_motor_step_rms_normalized": 0.004206900345941867,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "light_offset",
+              "case_index": 2,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.8968572947051267,
+              "height_rmse_m": 0.036731211033008436,
+              "horizontal_rmse_m": 0.8961048070409214,
+              "terminal30_horizontal_rmse_m": 0.9171630965197215,
+              "terminal30_height_rmse_m": 0.009355911974025395,
+              "origin_dwell_fraction": 0.036083333333333335,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.917210815036989,
+              "late_horizontal_std_m": 0.0200623062571191,
+              "late_horizontal_bias_m": 0.9169436460326282,
+              "late_horizontal_drift_mps": 0.0011339784446964243,
+              "late_horizontal_speed_rms_mps": 0.030927380702017507,
+              "late_detrended_position_std_m": 0.019818562428342835,
+              "late_detrended_height_std_m": 0.009312481255470979,
+              "late_speed_rms_mps": 0.04603650042453129,
+              "late_angular_acceleration_rms_radps2": 1.402576497501376,
+              "late_motor_step_rms_normalized": 0.004126792353717162,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "light_offset",
+              "case_index": 3,
+              "seed_pair": [
+                2026111801,
+                2026111802
+              ]
+            }
+          ],
+          "no_tether": {
+            "engine": "native_MuJoCo",
+            "position_controller": "local_development_surrogate_NOT_PX4",
+            "duration_s": 30.0,
+            "seed": 2026111701,
+            "height_m": 6.0,
+            "tether_enabled": false,
+            "wind_mps": 0,
+            "peak_tilt_deg": 0.36785248247617597,
+            "physics_dt_s": 0.0005,
+            "mj_step_calls": 60000,
+            "imu_position_reference": "geometric_origin",
+            "true_com_body_m": [
+              -0.007,
+              0.009,
+              0.0
+            ],
+            "true_accel_bias_body_mps2": [
+              -0.18,
+              0.14,
+              -0.16
+            ],
+            "p3_enabled": true,
+            "position_excitation": false,
+            "hover_rmse_3d_h_xy_m": [
+              0.27260165731606223,
+              0.2726014270163971,
+              0.0003543445889708777
+            ],
+            "final_attitude_integral_norm_rad_s": 5.8351481129648164e-05
+          },
+          "result_path": "light_offset/flexible_effective_observer_on"
+        }
+      }
+    },
+    {
+      "name": "heavy_offset",
+      "calibration": {
+        "schema_version": 1,
+        "method": "Position_body_FRD_physical_parameter_Adam",
+        "steps": 1600,
+        "initial_loss": 3.6636944170723282,
+        "final_loss": 0.011052377627309188,
+        "accel_bias_body_mps2": [
+          0.12085710290931795,
+          0.19988482913356811,
+          -0.18146316349064912
+        ],
+        "com_body_m": [
+          0.009999312478064846,
+          0.006001107996200913,
+          0.0
+        ],
+        "com_z_identified": false,
+        "inertia_body_kgm2": [
+          0.01401589330661016,
+          0.0049914505987494855,
+          0.01651356342616431
+        ],
+        "design_relative_min_singular": 0.0021565187558105414,
+        "metrics": {
+          "samples": 259,
+          "torque_before_rmse_nm": [
+            0.1500509241642765,
+            0.2500045745127383,
+            0.00041052550591426894
+          ],
+          "torque_after_rmse_nm": [
+            0.00036907933297930577,
+            0.0003534846515383958,
+            0.00017125130054880641
+          ],
+          "accel_before_rmse_mps2": [
+            0.12131018640725692,
+            0.20012930347138597,
+            0.1818046639669538
+          ],
+          "accel_after_rmse_mps2": [
+            0.010474827088308063,
+            0.009889043947034952,
+            0.011138049025881268
+          ]
+        },
+        "torque_sign": "disturbance=-r_cross_F; compensation=+r_cross_F",
+        "controlled_external_loads_required": true,
+        "holdout": {
+          "samples": 143,
+          "torque_before_rmse_nm": [
+            0.14974091297808645,
+            0.24961531056520614,
+            0.0002937464266962573
+          ],
+          "torque_after_rmse_nm": [
+            0.00036271842911519736,
+            0.0003427285914367099,
+            0.00016285361605799126
+          ],
+          "accel_before_rmse_mps2": [
+            0.12069513769927025,
+            0.20045827794717677,
+            0.18160808507772405
+          ],
+          "accel_after_rmse_mps2": [
+            0.009775065498397724,
+            0.00873959629868271,
+            0.011658691810066447
+          ]
+        },
+        "input_metadata": {
+          "source": "armed_airborne_position_body_FRD",
+          "motor_interval_model": "measured_linear_interpolation",
+          "raw_valid_intervals": 2071,
+          "integrated_blocks": 259,
+          "controlled_external_loads": true,
+          "position_reference": "same_point_as_IMU",
+          "motor_response_source": "this_record"
+        },
+        "input_sha256": "5074bb6d2ce0afd38cdb54b6afed14d7fc9d680fb9cdfbe12fb18f995d5cb890",
+        "train_blocks": 259,
+        "holdout_blocks": 143,
+        "raw_time_holdout_independent": true,
+        "split_time_s": 24.12,
+        "training_raw_time_s": [
+          0.0,
+          24.11
+        ],
+        "holdout_raw_time_s": [
+          24.12,
+          36.0
+        ],
+        "holdout_input_metadata": {
+          "source": "armed_airborne_position_body_FRD",
+          "motor_interval_model": "measured_linear_interpolation",
+          "raw_valid_intervals": 1147,
+          "integrated_blocks": 143,
+          "controlled_external_loads": true,
+          "position_reference": "same_point_as_IMU",
+          "motor_response_source": "training_record"
+        },
+        "reference_transport": {
+          "mass_kg": 2.5301525030791403,
+          "samples": 2071,
+          "force_rmse_n": [
+            0.018853663117945157,
+            0.016689582749587633,
+            0.026552413158946377
+          ],
+          "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+          "known_kf_and_controlled_external_loads_required": true,
+          "holdout": {
+            "mass_kg": 2.5301525030791403,
+            "samples": 1147,
+            "force_rmse_n": [
+              0.011622865188739787,
+              0.013984709718047128,
+              0.023742452767173013
+            ],
+            "reference": "Position_same_point_as_IMU_plus_learned_CG_lever",
+            "known_kf_and_controlled_external_loads_required": true
+          }
+        },
+        "development_quality_gate_passed": true,
+        "checkpoint_sha256": "646b74d1024dc8d173f5459cd269e3504ef700594cf565bd3cfc2a0eb3d0b710",
+        "physical_error": {
+          "accel_bias_error_mps2": [
+            0.0008571029093179527,
+            -0.00011517086643189622,
+            -0.001463163490649122
+          ],
+          "horizontal_com_error_mm": [
+            -0.000687521935154034,
+            0.0011079962009127517
+          ],
+          "inertia_relative_error": [
+            0.011247713319636254,
+            0.008373858333229567,
+            -0.004607388416859148
+          ],
+          "mass_relative_error": 6.027789689344587e-05
+        },
+        "capture_and_train_wall_s": 25.326621899963357,
+        "training_source_archive": "frozen_source.zip"
+      },
+      "actuator_gain": {
+        "speed_gain": 0.8999956808206707,
+        "thrust_effectiveness": 0.8099922254958626,
+        "scalar_samples": 8444,
+        "rpm_fit_rmse_radps": 0.20203165792477276,
+        "relative_fit_rmse": 0.00036293435066822545,
+        "model": "slow_command_common_speed_gain_at_nominal_kf",
+        "lag_identified": false,
+        "max_fractional_command_change_per_interval": 0.002,
+        "holdout": {
+          "speed_gain": 0.8999956808206707,
+          "thrust_effectiveness": 0.8099922254958626,
+          "scalar_samples": 4752,
+          "rpm_fit_rmse_radps": 0.19765370073760152,
+          "relative_fit_rmse": 0.00035515752985006165,
+          "model": "slow_command_common_speed_gain_at_nominal_kf",
+          "lag_identified": false,
+          "max_fractional_command_change_per_interval": 0.002
+        },
+        "input_sha256": "5074bb6d2ce0afd38cdb54b6afed14d7fc9d680fb9cdfbe12fb18f995d5cb890",
+        "split_time_s": 24.12,
+        "raw_time_holdout_independent": true,
+        "source_sha256": "349609803309fe297edfed532d4bfb3b147c7ce5bd44ed484aa9aef4dd6a3578"
+      },
+      "physical_configuration": {
+        "name": "heavy_offset",
+        "mass": 1.1,
+        "inertia": [
+          1.1,
+          0.9,
+          1.05
+        ],
+        "motor_tau": 1.1,
+        "motor_gain": 0.9,
+        "bias": [
+          0.12,
+          0.2,
+          -0.18
+        ],
+        "com": [
+          0.01,
+          0.006,
+          0.0
+        ],
+        "identification_height_m": 12.0
+      },
+      "paired": {
+        "off": {
+          "count": 4,
+          "safe_completed": 0,
+          "rmse_3d_h_xy_m": [
+            7.147512559150773,
+            3.9610227523892974,
+            5.949557507770838
+          ],
+          "rmse_passed": 0,
+          "settled": 0,
+          "hover_passed": 0,
+          "cases": [
+            {
+              "attachment": 2,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": false,
+              "failure_code": 64,
+              "safe_duration_s": 2.6399998664855957,
+              "position_rmse_m": 7.1434675337055955,
+              "height_rmse_m": 3.9571581858371307,
+              "horizontal_rmse_m": 5.9472705922438145,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.005916666666666666,
+              "allocation_saturation_fraction": 0.0010833332780748606,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "heavy_offset",
+              "case_index": 0,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            },
+            {
+              "attachment": 2,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": false,
+              "failure_code": 128,
+              "safe_duration_s": 1.8399999141693115,
+              "position_rmse_m": 7.1570856730145715,
+              "height_rmse_m": 3.9699690109514543,
+              "horizontal_rmse_m": 5.9551004511221795,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.006833333333333334,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "heavy_offset",
+              "case_index": 1,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": false,
+              "failure_code": 8,
+              "safe_duration_s": 2.5299999713897705,
+              "position_rmse_m": 7.144976198245531,
+              "height_rmse_m": 3.9588757099038903,
+              "horizontal_rmse_m": 5.947939810306433,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.006416666666666667,
+              "allocation_saturation_fraction": 0.0017500000540167093,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "heavy_offset",
+              "case_index": 2,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": false,
+              "failure_code": 74,
+              "safe_duration_s": 2.5799999237060547,
+              "position_rmse_m": 7.1445121963224745,
+              "height_rmse_m": 3.9580744355889808,
+              "horizontal_rmse_m": 5.947915709367237,
+              "terminal30_horizontal_rmse_m": 6.0,
+              "terminal30_height_rmse_m": 4.0,
+              "origin_dwell_fraction": 0.005666666666666667,
+              "allocation_saturation_fraction": 0.0020833334419876337,
+              "tail_statistics_complete": false,
+              "samples": 0.0,
+              "late_origin_rmse_m": 0.0,
+              "late_horizontal_std_m": 0.0,
+              "late_horizontal_bias_m": 0.0,
+              "late_horizontal_drift_mps": 0.0,
+              "late_horizontal_speed_rms_mps": 0.0,
+              "late_detrended_position_std_m": 0.0,
+              "late_detrended_height_std_m": 0.0,
+              "late_speed_rms_mps": 0.0,
+              "late_angular_acceleration_rms_radps2": 0.0,
+              "late_motor_step_rms_normalized": 0.0,
+              "hover_gate": {
+                "passed": false,
+                "settled": false,
+                "meets_rmse": false,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": false,
+              "profile": "heavy_offset",
+              "case_index": 3,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            }
+          ],
+          "no_tether": {
+            "engine": "native_MuJoCo",
+            "position_controller": "local_development_surrogate_NOT_PX4",
+            "duration_s": 30.0,
+            "seed": 2026111801,
+            "height_m": 6.0,
+            "tether_enabled": false,
+            "wind_mps": 0,
+            "peak_tilt_deg": 18.17220293209021,
+            "physics_dt_s": 0.0005,
+            "mj_step_calls": 60000,
+            "imu_position_reference": "geometric_origin",
+            "true_com_body_m": [
+              0.01,
+              0.006,
+              0.0
+            ],
+            "true_accel_bias_body_mps2": [
+              0.12,
+              0.2,
+              -0.18
+            ],
+            "p3_enabled": false,
+            "position_excitation": false,
+            "hover_rmse_3d_h_xy_m": [
+              0.47351167412200185,
+              0.4315426828198082,
+              0.1948954038311404
+            ],
+            "final_attitude_integral_norm_rad_s": 0.23970448970794678
+          },
+          "result_path": "heavy_offset/flexible_off"
+        },
+        "on": {
+          "count": 4,
+          "safe_completed": 4,
+          "rmse_3d_h_xy_m": [
+            0.7555648544220204,
+            0.10238948592183525,
+            0.7485951124676351
+          ],
+          "rmse_passed": 4,
+          "settled": 4,
+          "hover_passed": 4,
+          "cases": [
+            {
+              "attachment": 2,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.32662736756247923,
+              "height_rmse_m": 0.101878042985292,
+              "horizontal_rmse_m": 0.31033256612589327,
+              "terminal30_horizontal_rmse_m": 0.2693907652373449,
+              "terminal30_height_rmse_m": 0.008590206759966449,
+              "origin_dwell_fraction": 0.9148333333333334,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.26952769067581156,
+              "late_horizontal_std_m": 0.052719685750980114,
+              "late_horizontal_bias_m": 0.2641817918085719,
+              "late_horizontal_drift_mps": 0.004728857578639305,
+              "late_horizontal_speed_rms_mps": 0.013057464985089638,
+              "late_detrended_position_std_m": 0.03391886528538114,
+              "late_detrended_height_std_m": 0.006948454514784646,
+              "late_speed_rms_mps": 0.02575825781586128,
+              "late_angular_acceleration_rms_radps2": 0.7834133794981671,
+              "late_motor_step_rms_normalized": 0.0031612458662708893,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "heavy_offset",
+              "case_index": 0,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            },
+            {
+              "attachment": 2,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.05
+              ],
+              "tether_rest_length_m": 4.9,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 1.1670965252216383,
+              "height_rmse_m": 0.1068833408447215,
+              "horizontal_rmse_m": 1.1621920024825043,
+              "terminal30_horizontal_rmse_m": 1.1909823090107914,
+              "terminal30_height_rmse_m": 0.027579478363060794,
+              "origin_dwell_fraction": 0.0105,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 1.1913015942958063,
+              "late_horizontal_std_m": 0.023401453523083666,
+              "late_horizontal_bias_m": 1.1907523810261156,
+              "late_horizontal_drift_mps": 0.0007397623729006123,
+              "late_horizontal_speed_rms_mps": 0.01508792724319535,
+              "late_detrended_position_std_m": 0.023270085054719676,
+              "late_detrended_height_std_m": 0.005908676207697094,
+              "late_speed_rms_mps": 0.023251268682591635,
+              "late_angular_acceleration_rms_radps2": 0.8014119691887612,
+              "late_motor_step_rms_normalized": 0.0031777063594863224,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "heavy_offset",
+              "case_index": 1,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 1.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 0.974960446357727,
+              "actual_rms_wind_mps": 0.9859933853149414,
+              "actual_peak_wind_mps": 1.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.20163633687078933,
+              "height_rmse_m": 0.09973289220237051,
+              "horizontal_rmse_m": 0.1752442939431147,
+              "terminal30_horizontal_rmse_m": 0.14983703599316936,
+              "terminal30_height_rmse_m": 0.008393441452734265,
+              "origin_dwell_fraction": 0.9860833333333333,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.15007194006602143,
+              "late_horizontal_std_m": 0.018990685732416437,
+              "late_horizontal_bias_m": 0.14862870244696844,
+              "late_horizontal_drift_mps": 0.001243000085144465,
+              "late_horizontal_speed_rms_mps": 0.01004413934533217,
+              "late_detrended_position_std_m": 0.017079915282734847,
+              "late_detrended_height_std_m": 0.006852447699747141,
+              "late_speed_rms_mps": 0.023822033570389603,
+              "late_angular_acceleration_rms_radps2": 0.7975573636159144,
+              "late_motor_step_rms_normalized": 0.003067865996378232,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 0.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "heavy_offset",
+              "case_index": 2,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            },
+            {
+              "attachment": 1,
+              "wind_speed": 5.0,
+              "direction_rad": 1.1780972450961724,
+              "gust_fraction": 0,
+              "wind_profile": "steady",
+              "group": "steady",
+              "trial": 0,
+              "preflight_heading_rad": 0,
+              "attachment_b_m": [
+                0,
+                0,
+                0.1
+              ],
+              "tether_rest_length_m": 4.85,
+              "heading_command_deg": 0,
+              "actual_mean_wind_mps": 4.874802112579346,
+              "actual_rms_wind_mps": 4.929966926574707,
+              "actual_peak_wind_mps": 5.0,
+              "completed": true,
+              "failure_code": 0,
+              "safe_duration_s": 120.0,
+              "position_rmse_m": 0.8798045511243893,
+              "height_rmse_m": 0.10091874617562005,
+              "horizontal_rmse_m": 0.8739973997956337,
+              "terminal30_horizontal_rmse_m": 0.8582628117836737,
+              "terminal30_height_rmse_m": 0.018261936044736762,
+              "origin_dwell_fraction": 0.021083333333333332,
+              "allocation_saturation_fraction": 0.0,
+              "tail_statistics_complete": true,
+              "samples": 3000.0,
+              "late_origin_rmse_m": 0.8584570765277867,
+              "late_horizontal_std_m": 0.021113646244681268,
+              "late_horizontal_bias_m": 0.8580030698518067,
+              "late_horizontal_drift_mps": 0.000622547826275365,
+              "late_horizontal_speed_rms_mps": 0.023739046334361674,
+              "late_detrended_position_std_m": 0.02136421316883299,
+              "late_detrended_height_std_m": 0.006301664704511981,
+              "late_speed_rms_mps": 0.031032764574852805,
+              "late_angular_acceleration_rms_radps2": 0.7856176786409904,
+              "late_motor_step_rms_normalized": 0.0031745619512968124,
+              "hover_gate": {
+                "passed": true,
+                "settled": true,
+                "meets_rmse": true,
+                "rmse_limit_m": 1.5
+              },
+              "stationarity_working_criteria_passed": true,
+              "profile": "heavy_offset",
+              "case_index": 3,
+              "seed_pair": [
+                2026111901,
+                2026111902
+              ]
+            }
+          ],
+          "no_tether": {
+            "engine": "native_MuJoCo",
+            "position_controller": "local_development_surrogate_NOT_PX4",
+            "duration_s": 30.0,
+            "seed": 2026111801,
+            "height_m": 6.0,
+            "tether_enabled": false,
+            "wind_mps": 0,
+            "peak_tilt_deg": 0.4729544512088228,
+            "physics_dt_s": 0.0005,
+            "mj_step_calls": 60000,
+            "imu_position_reference": "geometric_origin",
+            "true_com_body_m": [
+              0.01,
+              0.006,
+              0.0
+            ],
+            "true_accel_bias_body_mps2": [
+              0.12,
+              0.2,
+              -0.18
+            ],
+            "p3_enabled": true,
+            "position_excitation": false,
+            "hover_rmse_3d_h_xy_m": [
+              0.426429524431263,
+              0.4264283273116775,
+              0.0010104320055746515
+            ],
+            "final_attitude_integral_norm_rad_s": 0.0001830172841437161
+          },
+          "result_path": "heavy_offset/flexible_effective_observer_on"
+        }
+      }
+    }
+  ],
+  "groups": {
+    "off": {
+      "count": 12,
+      "safe_completed": 2,
+      "rmse_3d_h_xy_m": [
+        6.635956690921247,
+        3.592971515807933,
+        5.579110761615627
+      ],
+      "weak_exceedances": 6,
+      "strong_exceedances": 6,
+      "rmse_passed": 0,
+      "settled": 0,
+      "hover_passed": 0,
+      "weak": {
+        "count": 6,
+        "safe_completed": 1,
+        "rmse_3d_h_xy_m": [
+          6.637893710303252,
+          3.5935349239533636,
+          5.581051841688174
+        ],
+        "weak_exceedances": 6,
+        "strong_exceedances": 0
+      },
+      "strong": {
+        "count": 6,
+        "safe_completed": 1,
+        "rmse_3d_h_xy_m": [
+          6.634019105962949,
+          3.5924080193015113,
+          5.577169005968856
+        ],
+        "weak_exceedances": 0,
+        "strong_exceedances": 6
+      }
+    },
+    "on": {
+      "count": 12,
+      "safe_completed": 12,
+      "rmse_3d_h_xy_m": [
+        0.7251227014848817,
+        0.06474026540227468,
+        0.7222268551115887
+      ],
+      "weak_exceedances": 0,
+      "strong_exceedances": 0,
+      "rmse_passed": 12,
+      "settled": 12,
+      "hover_passed": 12,
+      "weak": {
+        "count": 6,
+        "safe_completed": 6,
+        "rmse_3d_h_xy_m": [
+          0.19627236011107002,
+          0.06354918888231485,
+          0.18569959594993585
+        ],
+        "weak_exceedances": 0,
+        "strong_exceedances": 0
+      },
+      "strong": {
+        "count": 6,
+        "safe_completed": 6,
+        "rmse_3d_h_xy_m": [
+          1.0065202556699473,
+          0.06590982112791535,
+          1.0043599556696703
+        ],
+        "weak_exceedances": 0,
+        "strong_exceedances": 0
+      }
+    }
+  },
+  "total_flexible_trials": 24,
+  "duration_s": 120,
+  "policy_checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "policy_updates": 0,
+  "p2_adam_unchanged": true,
+  "max_bias_vector_error_mps2": 0.0016996285258857287,
+  "max_horizontal_com_error_mm": 0.0016573914922241976,
+  "all_calibrations_passed": true,
+  "all_after_safe": true,
+  "all_after_rmse": true,
+  "all_after_hover": true,
+  "paired_initial_state_and_wind_verified": true,
+  "raw_holdout_independent": true,
+  "engine": "native_MuJoCo",
+  "position_controller": "local_development_surrogate_NOT_PX4",
+  "compensation_mode": "reference_transport",
+  "validation_variant": "effective_observer",
+  "force_reference": "identified_mass_times_bias_and_filter_matched_lever_corrected_IMU",
+  "aerodynamic_force_reference": "fixed_geometric_origin",
+  "real_px4_position_validated": false,
+  "formal_final_acceptance": false,
+  "known_limits": [
+    "z-CG not observable with parallel thrust",
+    "known thrust coefficients and diagonal principal inertia model; controlled external loads",
+    "position and IMU must share a known measurement reference point",
+    "block gyro covariance omitted; nuisance inertia is diagnostic, not a controller update",
+    "fixed geometric aerodynamic force center is a simulator assumption requiring hardware verification",
+    "current raw simulated odometry precision is 0.1 mm; real estimator accuracy not established"
+  ],
+  "versions": {
+    "python": "3.11.5",
+    "torch": "2.12.1+cu130",
+    "mujoco": "3.10.0",
+    "numpy": "2.4.6"
+  }
+}

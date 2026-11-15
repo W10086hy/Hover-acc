@@ -1,5 +1,7 @@
 # P2 进展
 
+2026-11-15 新增 P3 Position 机体系零偏／质心辨识与参考点运输。P2 13 次 Actor／Adam 冻结，新增偏置工况中补偿开启的 12 条 120 秒原生 MuJoCo 开发测试逐例安全、稳态和 RMSE 达标；原 100 条冻结结果不改写。[P3 校准及配对](../P3/results/body_calibration_transport/README.md)
+
 保留累计 13 次更新的水平加速度 BPTT Actor 与 Adam，仿真高度由垂向 PID 保持。该权重原生 MuJoCo 复验中，80 条恒风和 20 条时变风均安全完成 120 秒，三维 RMSE 逐例达标。末 30 秒稳态分别通过 78/80 和 19/20，恒风两处缺口均为弱风漂移。独立选参未采用该候选作为通过稳态门限的策略。用户清除续训目标后已停止训练。 [结果、回放与复现](results/acceleration_hover/README.md)
 
 2026-11-13 按用户要求删除本加速度路线的旧候选、调试和旧仿真批次。 [清理清单](../cleanup/retention_acceleration_20261113.json)

@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-13",
-  "this_cleanup_removed_files": 4434,
-  "this_cleanup_removed_bytes": 5600999453,
+  "date": "2026-11-15",
+  "this_cleanup_removed_files": 327,
+  "this_cleanup_removed_bytes": 70356393,
   "stock_px4_removed_files": 148,
   "stock_px4_removed_bytes": 572385034,
   "prior_actor37_removed_files": 678,
@@ -18,6 +18,13 @@
   "final_checkpoints_unchanged": true,
   "new_training_during_cleanup": false,
   "new_experiment_run_during_cleanup": false,
-  "current_files": 1074,
-  "current_bytes": 745162251
+  "previous_acceleration_removed_files": 4434,
+  "previous_acceleration_removed_bytes": 5600999453,
+  "latest_p3_retention": "cleanup/retention_p3_installation_20261115.json",
+  "latest_p3_protected_files": 139,
+  "latest_p3_paired_120s_cases": 24,
+  "latest_p3_current_aircraft": 3,
+  "latest_p3_full_replays": 2,
+  "current_files": 1264,
+  "current_bytes": 814711281
 }

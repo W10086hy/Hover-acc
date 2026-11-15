@@ -1,5 +1,13 @@
 # 当前工程整理与核验
 
+2026-11-15 按用户新授权整理安装误差 P3 阶段，删除 327 个已替代候选／调试文件，共 70,356,393 字节。保留最新三架飞机的 P3 参数和 Adam、原始 Position 遥测、执行器侧文件、24 条完整 120 秒配对证据、两份完整回放，以及配置和对应源码快照。上一阶段已索引的最终零偏／质心模型及其最终对照、历史 P2／P3／track／PX4 必要依赖保持不变。早期候选、未选 IMU 1–2°方案、烟雾测试和旧补偿变体的统计合并归档；本轮新授权替代此前中间产物的临时保留。没有训练或新增完整仿真。
+
+[本轮删除与保护清单](retention_p3_installation_20261115.json) · [合并历史统计](../P3/results/history/calibration_development_20261115.json) · [最新训练与仿真](../P3/results/installation_20261115/README.md) · [参数与 Adam 索引](../P3/models.json)
+
+发布前全工程回归共 234 项，233 项通过、1 项跳过；最新与前一已索引最终配对均重新进行完整数值审计，模型／Adam、原始遥测、执行器增益及回放哈希通过核对。[回归记录](regression_publish_20261115.txt) · [严格完整性核验](verification.json)
+
+上传目标为 [W10086hy/Hover-acc](https://github.com/W10086hy/Hover-acc)。本地 `origin` 保留旧 Hover-BPTT 配置，本轮在基于 Hover-acc/main 的 `codex/retain-latest-p3-20261115` 分支整理，向 Hover-acc/main 普通快进推送，不改写远端历史。
+
 2026-11-13 清理当前加速度悬停开发中的旧候选、对照仿真和调试产物。保留累计 13 次更新的 Actor 与 Adam、对应训练记录、80 条恒风和 20 条时变风完整证据、三份代表回放和复现协议。其余已单独保留的 Actor37、P3、PX4 与跟踪成果继续按各阶段清单管理。 [保留结果](../P2/results/acceleration_hover/README.md) · [逐文件清理清单](retention_acceleration_20261113.json)
 
 2026-11-10 清理默认 PX4 迁移阶段的 148 份中间文件，释放 572,385,034 字节。完整保留最后一组高度零点复测、所用 Actor38、最近训练但未入选的 Actor39、P3 残差和各自 Adam。此前接管和强弱风的调试结果合并为统计。工程约定保护的 Actor37、P3 和追踪基线继续归档。[最近结果](../px4_offboard/stock_transfer/height_reference/README.md) · [删除与保护清单](retention_stock_px4_20261110.json) · [历史统计](../px4_offboard/stock_transfer/history_statistics.json)

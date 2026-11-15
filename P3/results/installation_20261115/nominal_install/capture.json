@@ -1,0 +1,90 @@
+{
+  "engine": "native_MuJoCo",
+  "position_controller": "local_development_surrogate_NOT_PX4",
+  "duration_s": 42.0,
+  "seed": 2026112501,
+  "height_m": 5.0,
+  "tether_enabled": false,
+  "wind_mps": 0,
+  "peak_tilt_deg": 29.358422000393848,
+  "physics_dt_s": 0.0005,
+  "mj_step_calls": 84000,
+  "imu_position_reference": "geometric_origin",
+  "true_com_body_m": [
+    0.00907563025210084,
+    -0.006470588235294118,
+    0.0
+  ],
+  "true_accel_bias_body_mps2": [
+    0.15823424160696684,
+    -0.1148668067208641,
+    0.21878652037275903
+  ],
+  "p3_enabled": false,
+  "position_excitation": true,
+  "hover_rmse_3d_h_xy_m": [
+    0.8448555241468729,
+    0.35653253607985463,
+    0.7659408641650832
+  ],
+  "final_attitude_integral_norm_rad_s": 0.1625186800956726,
+  "installation": {
+    "imu_mount_deg": [
+      2.0,
+      -1.0,
+      1.0
+    ],
+    "motor_mount_deg": [
+      1.0,
+      -1.5,
+      0.0
+    ],
+    "full_inertia": [
+      [
+        0.01319915294117647,
+        -0.000477364705882353,
+        -0.000192
+      ],
+      [
+        -0.000477364705882353,
+        0.006163166386554622,
+        -0.000192
+      ],
+      [
+        -0.000192,
+        -0.000192,
+        0.016918319327731093
+      ]
+    ],
+    "gyro_bias_sensor": [
+      0.001,
+      -0.002,
+      0.0015
+    ],
+    "payloads": [
+      {
+        "mass_kg": 0.04,
+        "position_m": [
+          0.12,
+          0.06,
+          0.03
+        ]
+      },
+      {
+        "mass_kg": 0.04,
+        "position_m": [
+          -0.04,
+          -0.1,
+          -0.03
+        ]
+      }
+    ],
+    "total_mass_kg": 2.38,
+    "com_geometry_m": [
+      0.00907563025210084,
+      -0.006470588235294118,
+      0.0
+    ]
+  },
+  "position_npz_sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0"
+}

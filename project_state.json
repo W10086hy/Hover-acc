@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "date": "2026-11-13",
+  "date": "2026-11-15",
   "training_running": false,
   "validation_running": false,
   "formal_final_acceptance": false,
@@ -93,7 +93,18 @@
   "height_speed_statistics": "track/reports/height_speed_statistics.json",
   "height_speed_training_provenance": "track/models/actor29_provenance/training_manifest.json",
   "track_previous_statistics": "track/reports/development_statistics.json",
-  "latest_cleanup": "cleanup/retention_px4_narrow_20261109.json",
+  "latest_cleanup": {
+    "date": "2026-11-15",
+    "status": "complete",
+    "retention": "cleanup/retention_p3_installation_20261115.json",
+    "removed_files": 327,
+    "removed_bytes": 70356393,
+    "selected_p3": "P3/results/installation_20261115",
+    "training_during_cleanup": false,
+    "new_full_simulation_during_cleanup": false,
+    "publication_repository": "https://github.com/W10086hy/Hover-acc",
+    "publication_branch": "main"
+  },
   "latest_cleanup_removed_files": 21,
   "latest_cleanup_removed_bytes": 50714484,
   "retained_tracking_detail_groups": 1,
@@ -459,5 +470,153 @@
     "formal_final_acceptance": false
   },
   "continuation_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
-  "active_protocol": "P2/acceleration_hover_resume.json"
+  "active_protocol": "P2/acceleration_hover_resume.json",
+  "p3_body_calibration": {
+    "stage": "complete",
+    "output": "P3/results/body_calibration_transport",
+    "P2_frozen": true,
+    "checkpoints": [
+      {
+        "aircraft": "nominal_offset",
+        "checkpoint": "P3/results/body_calibration_transport/nominal_offset/calibration/calibration.pt",
+        "sha256": "cb4a1c3e9d88b31ead9e25b11e230e0b44eadf4dfd59b44631cf9c95e68c1839",
+        "optimizer_embedded": true,
+        "actuator_gain_sidecar": "P3/results/body_calibration_transport/nominal_offset/actuator_gain.json",
+        "actuator_gain_sha256": "02ba8a3fde204728a6bfd56f1f7d42a109fe5ba1673c6905eb332c2e832b3df8",
+        "position_data": "P3/results/body_calibration_transport/nominal_offset/position.npz",
+        "position_data_sha256": "5dcf196f40f5b494c54351d879dbda5175ae73c808dcaec1cdef81bef0597301",
+        "training_report": "P3/results/body_calibration_transport/nominal_offset/calibration/training.json",
+        "auxiliary_mass_kg": 2.3001509163495037
+      },
+      {
+        "aircraft": "light_offset",
+        "checkpoint": "P3/results/body_calibration_transport/light_offset/calibration/calibration.pt",
+        "sha256": "e98139e8e806f100632f870b3ece4401fb19f8e451e5c7f92b98b019175dd34a",
+        "optimizer_embedded": true,
+        "actuator_gain_sidecar": "P3/results/body_calibration_transport/light_offset/actuator_gain.json",
+        "actuator_gain_sha256": "7cc6e46b0eb62d01aecd0e06418063bbdcbea05e3d0afa65b860c15080b1274d",
+        "position_data": "P3/results/body_calibration_transport/light_offset/position.npz",
+        "position_data_sha256": "6ae0300a0a6ca8f69df629ed61a8ae8d8977df6e8c53660dcd4896c7dcffb230",
+        "training_report": "P3/results/body_calibration_transport/light_offset/calibration/training.json",
+        "auxiliary_mass_kg": 2.0701293537731016
+      },
+      {
+        "aircraft": "heavy_offset",
+        "checkpoint": "P3/results/body_calibration_transport/heavy_offset/calibration/calibration.pt",
+        "sha256": "646b74d1024dc8d173f5459cd269e3504ef700594cf565bd3cfc2a0eb3d0b710",
+        "optimizer_embedded": true,
+        "actuator_gain_sidecar": "P3/results/body_calibration_transport/heavy_offset/actuator_gain.json",
+        "actuator_gain_sha256": "ab199bed8430a53fefe00daa3ce1b5fc272c9245a043277ed584bb3f9816cf46",
+        "position_data": "P3/results/body_calibration_transport/heavy_offset/position.npz",
+        "position_data_sha256": "5074bb6d2ce0afd38cdb54b6afed14d7fc9d680fb9cdfbe12fb18f995d5cb890",
+        "training_report": "P3/results/body_calibration_transport/heavy_offset/calibration/training.json",
+        "auxiliary_mass_kg": 2.5301525030791403
+      }
+    ],
+    "after_safe": 12,
+    "after_count": 12,
+    "after_rmse_passed": 12,
+    "after_stationary": 12,
+    "formal_final_acceptance": false,
+    "real_px4_position_validated": false
+  },
+  "development_priority": "Completed P3 installation/bias/CG and payload paired native development validation",
+  "current_task": {
+    "name": "P3_IMU_motor_installation_and_payload",
+    "status": "complete",
+    "output": "P3/results/installation_20261115",
+    "report": "P3/results/installation_20261115/README.md",
+    "results": "P3/results/installation_20261115/summary.json",
+    "P2_frozen": true
+  },
+  "p3_installation_calibration": {
+    "model_kind": "P3_installed_IMU_motor_axis_full_inertia",
+    "checkpoints": [
+      {
+        "aircraft": "nominal_install",
+        "checkpoint": "P3/results/installation_20261115/nominal_install/calibration/calibration.pt",
+        "sha256": "0d2579bad7afa1168b780fd40654670243db93bdd2dbd68e9a34317969cd6e7f",
+        "optimizer_embedded": true,
+        "actuator_gain_sidecar": "P3/results/installation_20261115/nominal_install/actuator_gain.json",
+        "actuator_gain_sha256": "a7c9522a222285a818804100b4c19c34a693f31063e12b2df3c3ec158acfb0f2",
+        "position_data": "P3/results/installation_20261115/nominal_install/position.npz",
+        "position_data_sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0",
+        "training_report": "P3/results/installation_20261115/nominal_install/calibration/training.json",
+        "auxiliary_mass_kg": 2.380167518351619
+      },
+      {
+        "aircraft": "light_install",
+        "checkpoint": "P3/results/installation_20261115/light_install/calibration/calibration.pt",
+        "sha256": "a9c9b43fc3374c6cbf41df99d9cbebc0cedb457cc67f19274f7edaab7e357309",
+        "optimizer_embedded": true,
+        "actuator_gain_sidecar": "P3/results/installation_20261115/light_install/actuator_gain.json",
+        "actuator_gain_sha256": "d2cd03cb8f29cfb80375d6fb37ead39cc62b733582a7558a98080b017373d871",
+        "position_data": "P3/results/installation_20261115/light_install/position.npz",
+        "position_data_sha256": "01482b7a18e72d656a49d6ce313357c966c16fa7fc08ce8bf056dd8fcea0c44c",
+        "training_report": "P3/results/installation_20261115/light_install/calibration/training.json",
+        "auxiliary_mass_kg": 2.1501796440020517
+      },
+      {
+        "aircraft": "heavy_install",
+        "checkpoint": "P3/results/installation_20261115/heavy_install/calibration/calibration.pt",
+        "sha256": "abbd902da0f5ceb5e46b166bdf0ecd85c5da801e57b41e555d1b447ca733f723",
+        "optimizer_embedded": true,
+        "actuator_gain_sidecar": "P3/results/installation_20261115/heavy_install/actuator_gain.json",
+        "actuator_gain_sha256": "ab61a70aaf35a5f437c157f3f9ab36d9ae3f7071e6ed5d3b74a36b315639accd",
+        "position_data": "P3/results/installation_20261115/heavy_install/position.npz",
+        "position_data_sha256": "9ef10e757a6d473c2e4c9b078cb3f5fe2af0ea16bb84efcd53fc27879e81ab56",
+        "training_report": "P3/results/installation_20261115/heavy_install/calibration/training.json",
+        "auxiliary_mass_kg": 2.6102791658415225
+      }
+    ],
+    "report": "P3/results/installation_20261115/README.md",
+    "results": "P3/results/installation_20261115/summary.json",
+    "learned_primary_parameters": [
+      "accelerometer_bias_xyz",
+      "horizontal_CG_xy",
+      "IMU_mount_rotation",
+      "gyro_bias_xyz",
+      "common_motor_thrust_axis"
+    ],
+    "auxiliary_parameters": [
+      "full_symmetric_inertia",
+      "Position_mass",
+      "motor_speed_gain"
+    ],
+    "reference": "P2 standard vehicle; independent body pose during Position calibration",
+    "actor_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+    "actor_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+    "policy_updates": 0,
+    "paired": {
+      "off": {
+        "count": 12,
+        "safe_completed": 2,
+        "rmse_3d_h_xy_m": [
+          6.616969515710118,
+          3.5858224787110995,
+          5.561129626524379
+        ],
+        "weak_exceedances": 6,
+        "strong_exceedances": 6,
+        "rmse_passed": 0,
+        "settled": 2
+      },
+      "on": {
+        "count": 12,
+        "safe_completed": 12,
+        "rmse_3d_h_xy_m": [
+          0.7544725053935561,
+          0.03320178031656456,
+          0.7537416023934463
+        ],
+        "weak_exceedances": 0,
+        "strong_exceedances": 0,
+        "rmse_passed": 12,
+        "settled": 12
+      }
+    },
+    "duration_s": 120,
+    "formal_final_acceptance": false,
+    "real_px4_position_validated": false
+  }
 }

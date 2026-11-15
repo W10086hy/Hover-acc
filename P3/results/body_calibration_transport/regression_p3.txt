@@ -1,0 +1,60 @@
+test_acceleration_allocator_accepts_body_feedforward_before_allocation (test_body_calibration.BodyCalibrationTests.test_acceleration_allocator_accepts_body_feedforward_before_allocation) ... ok
+test_bad_rpm_keeps_fallback_local_to_invalid_stream (test_body_calibration.BodyCalibrationTests.test_bad_rpm_keeps_fallback_local_to_invalid_stream) ... ok
+test_frozen_observer_predicts_identified_cg_moment_without_changing_allocator (test_body_calibration.BodyCalibrationTests.test_frozen_observer_predicts_identified_cg_moment_without_changing_allocator) ... ok
+test_learns_bias_com_and_nuisance_inertia_from_body_momentum (test_body_calibration.BodyCalibrationTests.test_learns_bias_com_and_nuisance_inertia_from_body_momentum) ... ok
+test_native_cg_shift_includes_origin_sensor_lever_acceleration (test_body_calibration.BodyCalibrationTests.test_native_cg_shift_includes_origin_sensor_lever_acceleration) ... ok
+test_native_offset_adapter_preserves_requested_drag_scales (test_body_calibration.BodyCalibrationTests.test_native_offset_adapter_preserves_requested_drag_scales) ... ok
+test_position_collection_handles_heavy_low_gain_vehicle (test_body_calibration.BodyCalibrationTests.test_position_collection_handles_heavy_low_gain_vehicle) ... ok
+test_position_collection_handles_light_high_gain_vehicle (test_body_calibration.BodyCalibrationTests.test_position_collection_handles_light_high_gain_vehicle) ... ok
+test_position_preprocessing_reuses_training_motor_response (test_body_calibration.BodyCalibrationTests.test_position_preprocessing_reuses_training_motor_response) ... ok
+test_sensor_correction_is_once_and_cg_compensation_cancels_real_torque (test_body_calibration.BodyCalibrationTests.test_sensor_correction_is_once_and_cg_compensation_cancels_real_torque) ... ok
+test_unobservable_motion_and_uncontrolled_loads_are_rejected (test_body_calibration.BodyCalibrationTests.test_unobservable_motion_and_uncontrolled_loads_are_rejected) ... ok
+test_captured_position_can_resume_fitting_without_any_checkpoint (test_body_transport.BodyTransportTests.test_captured_position_can_resume_fitting_without_any_checkpoint) ... ok
+test_compensating_moment_accounts_for_identified_motor_thrust_effectiveness (test_body_transport.BodyTransportTests.test_compensating_moment_accounts_for_identified_motor_thrust_effectiveness) ... ok
+test_geometric_origin_imu_is_transported_to_cg_with_causal_gyro (test_body_transport.BodyTransportTests.test_geometric_origin_imu_is_transported_to_cg_with_causal_gyro) ... ok
+test_interval_motor_prediction_uses_identified_gain_and_preserves_actor_normalization (test_body_transport.BodyTransportTests.test_interval_motor_prediction_uses_identified_gain_and_preserves_actor_normalization) ... ok
+test_lever_correction_matches_accelerometer_filter_and_resets_per_stream (test_body_transport.BodyTransportTests.test_lever_correction_matches_accelerometer_filter_and_resets_per_stream) ... ok
+test_mass_auxiliary_uses_position_rpm_and_known_drag_without_true_mass (test_body_transport.BodyTransportTests.test_mass_auxiliary_uses_position_rpm_and_known_drag_without_true_mass) ... ok
+test_native_cg_shift_keeps_aerodynamic_force_at_fixed_airframe_geometry (test_body_transport.BodyTransportTests.test_native_cg_shift_keeps_aerodynamic_force_at_fixed_airframe_geometry) ... ok
+test_position_actuator_gain_is_identified_without_true_gain (test_body_transport.BodyTransportTests.test_position_actuator_gain_is_identified_without_true_gain) ... ok
+test_reference_transport_removes_false_innovation_from_total_force_moment (test_body_transport.BodyTransportTests.test_reference_transport_removes_false_innovation_from_total_force_moment) ... ok
+test_force_torque_sign_and_single_integrator_commit (test_compensation.CompensationTests.test_force_torque_sign_and_single_integrator_commit) ... ok
+{'policy_weights_unchanged': True, 'count': 4, 'safe_completed': 4, 'rmse_3d_h_xy_m': [0.18056745393005558, 0.012172784187845887, 0.18015667832167329], 'weak_exceedances': 0, 'strong_exceedances': 0, 'duration_s': 0.02, 'tail_window_s': 0.02, 'seed_pair': [20268681, 20268682], 'checkpoint_sha256': '78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a', 'source_checkpoint_sha256': '80739d8e361f977fa983dd81064e5f4e766c4f67a6de8350e07d5b2790761a25', 'cumulative_physical_updates': 21, 'maximum_true_yaw_error_deg': 0.17735646665096283, 'migration_comparison': None, 'failure_aggregation': 'First failure state actual;remaining horizon xy6m/h4m', 'goal_achieved': False, 'stage_label': 'P3冻结BPTT21次；无残差补偿', 'actual_vehicle_spec': {'mass_kg': 2.3689999999999998, 'inertia_body_kgm2': (0.012852, 0.0056099999999999995, 0.016116000000000002), 'rotor_dx_m': 0.12, 'rotor_dy_m': 0.12, 'kf': 2.009e-05, 'km': 5.732e-07, 'motor_tau_s': 0.0017, 'motor_speed_polynomial': (-387.3, 1269, -32.5), 'motor_deadzone': 0, 'rotor_inertia_kgm2': 8.8493e-06, 'include_gyro': True}, 'nominal_vehicle_spec': {'mass_kg': 2.3, 'inertia_body_kgm2': (0.0126, 0.0055, 0.0158), 'rotor_dx_m': 0.12, 'rotor_dy_m': 0.12, 'kf': 2.009e-05, 'km': 5.732e-07, 'motor_tau_s': 0.002, 'motor_speed_polynomial': (-387.3, 1269, -32.5), 'motor_deadzone': 0, 'rotor_inertia_kgm2': 8.8493e-06, 'include_gyro': True}, 'vehicle_identity': '8c1c4675aa5947b41067359e6a27f8ae24484b17276043be6ab7d4f34892a242', 'device': 'cpu', 'fullrate_tail_sample_hz': 100, 'saved_traces': True, 'final_acceptance': False}
+{'policy_weights_unchanged': True, 'count': 4, 'safe_completed': 4, 'rmse_3d_h_xy_m': [0.18056745393005558, 0.012172784187845887, 0.18015667832167329], 'weak_exceedances': 0, 'strong_exceedances': 0, 'duration_s': 0.02, 'tail_window_s': 0.02, 'seed_pair': [20268681, 20268682], 'checkpoint_sha256': '78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a', 'source_checkpoint_sha256': '80739d8e361f977fa983dd81064e5f4e766c4f67a6de8350e07d5b2790761a25', 'cumulative_physical_updates': 21, 'maximum_true_yaw_error_deg': 0.17735646665096283, 'migration_comparison': None, 'failure_aggregation': 'First failure state actual;remaining horizon xy6m/h4m', 'goal_achieved': False, 'stage_label': 'P3冻结BPTT21次；有残差前馈补偿', 'actual_vehicle_spec': {'mass_kg': 2.3689999999999998, 'inertia_body_kgm2': (0.012852, 0.0056099999999999995, 0.016116000000000002), 'rotor_dx_m': 0.12, 'rotor_dy_m': 0.12, 'kf': 2.009e-05, 'km': 5.732e-07, 'motor_tau_s': 0.0017, 'motor_speed_polynomial': (-387.3, 1269, -32.5), 'motor_deadzone': 0, 'rotor_inertia_kgm2': 8.8493e-06, 'include_gyro': True}, 'nominal_vehicle_spec': {'mass_kg': 2.3, 'inertia_body_kgm2': (0.0126, 0.0055, 0.0158), 'rotor_dx_m': 0.12, 'rotor_dy_m': 0.12, 'kf': 2.009e-05, 'km': 5.732e-07, 'motor_tau_s': 0.002, 'motor_speed_polynomial': (-387.3, 1269, -32.5), 'motor_deadzone': 0, 'rotor_inertia_kgm2': 8.8493e-06, 'include_gyro': True}, 'vehicle_identity': '8c1c4675aa5947b41067359e6a27f8ae24484b17276043be6ab7d4f34892a242', 'device': 'cpu', 'fullrate_tail_sample_hz': 100, 'saved_traces': True, 'final_acceptance': False}
+test_frozen_checkpoint_comparison_entry (test_compensation.CompensationTests.test_frozen_checkpoint_comparison_entry) ... ok
+test_invalid_sensor_packet_disables_all_feedforward (test_compensation.CompensationTests.test_invalid_sensor_packet_disables_all_feedforward) ... ok
+test_motor_inverse_matches_nominal_endpoint (test_compensation.CompensationTests.test_motor_inverse_matches_nominal_endpoint) ... ok
+test_nonfinite_network_falls_back_and_large_output_is_bounded (test_compensation.CompensationTests.test_nonfinite_network_falls_back_and_large_output_is_bounded) ... ok
+test_zero_residual_preserves_closed_loop_bitwise (test_compensation.CompensationTests.test_zero_residual_preserves_closed_loop_bitwise) ... ok
+test_common_traction_isolates_attachment_torque_without_false_vertical_force (test_flexible_residual.FlexibleResidualTests.test_common_traction_isolates_attachment_torque_without_false_vertical_force) ... ok
+test_matched_flexible_loads_cancel_and_true_parameter_changes_create_labels (test_flexible_residual.FlexibleResidualTests.test_matched_flexible_loads_cancel_and_true_parameter_changes_create_labels) ... ok
+test_substep_motor_loss_uses_the_short_response_target (test_flexible_residual.FlexibleResidualTests.test_substep_motor_loss_uses_the_short_response_target) ... E:\Rfly\01_Relateive_Works\B9_RflyTower稳定控制\拒止_加速度环\P3\tests\test_flexible_residual.py:65: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:839.)
+  self.assertEqual(float(motor),0.)
+ok
+test_zero_residual_preserves86state_and_nominal_controller (test_flexible_residual.FlexibleResidualTests.test_zero_residual_preserves86state_and_nominal_controller) ... ok
+test_nominal_arm_is_external_and_does_not_change_actual_cases (test_mismatch.MismatchDataTests.test_nominal_arm_is_external_and_does_not_change_actual_cases) ... ok
+test_seed_sets_and_final_seeds_cannot_overlap (test_mismatch.MismatchDataTests.test_seed_sets_and_final_seeds_cannot_overlap) ... ok
+test_windows_do_not_cross_failure_or_end (test_mismatch.MismatchDataTests.test_windows_do_not_cross_failure_or_end) ... ok
+test_drag_mismatch_is_state_dependent (test_mismatch.MismatchDynamicsTests.test_drag_mismatch_is_state_dependent) ... ok
+test_frozen_network_and_hybrid_input_gradients (test_mismatch.MismatchDynamicsTests.test_frozen_network_and_hybrid_input_gradients) ... ok
+test_inertia_and_arm_residual_recover_actual_accelerations (test_mismatch.MismatchDynamicsTests.test_inertia_and_arm_residual_recover_actual_accelerations) ... ok
+test_mass_difference_has_force_units (test_mismatch.MismatchDynamicsTests.test_mass_difference_has_force_units) ... ok
+test_matched_parameters_produce_zero_residual_not_total_load (test_mismatch.MismatchDynamicsTests.test_matched_parameters_produce_zero_residual_not_total_load) ... ok
+test_motor_lag_correction_changes_dynamic_response (test_mismatch.MismatchDynamicsTests.test_motor_lag_correction_changes_dynamic_response) ... ok
+test_given_input_forecast_cannot_read_future_targets (test_mismatch_prediction.MismatchPredictionTests.test_given_input_forecast_cannot_read_future_targets) ... ok
+{'stage': 'credit_window_completed', 'elapsed_simulation_s': 0.2, 'objective_s': 0.2, 'credit_s': 0.2, 'cost': 2.348428726196289}
+test_frozen_dynamics_gradient_and_exact_stream_restore (test_mismatch_runtime.HybridRuntimeTests.test_frozen_dynamics_gradient_and_exact_stream_restore) ... ok
+{'stage': 'credit_window_completed', 'elapsed_simulation_s': 0.2, 'objective_s': 0.2, 'credit_s': 0.2, 'cost': 23.17227554321289}
+test_frozen_history_allows_cuda_input_gradients (test_mismatch_runtime.HybridRuntimeTests.test_frozen_history_allows_cuda_input_gradients) ... ok
+test_nominal_physics_does_not_copy_actual_drag_or_actual_arm (test_mismatch_runtime.HybridRuntimeTests.test_nominal_physics_does_not_copy_actual_drag_or_actual_arm) ... ok
+test_mode_gating_recovers_vehicle_parameters_without_height_or_actor (test_position_identification.PositionIdentificationTests.test_mode_gating_recovers_vehicle_parameters_without_height_or_actor) ... ok
+test_position_aiding_accounts_for_drag_without_fitting_across_resets_or_modes (test_position_identification.PositionIdentificationTests.test_position_aiding_accounts_for_drag_without_fitting_across_resets_or_modes) ... ok
+test_stationary_samples_report_unresolved_lag_and_keep_observed_innovation (test_position_identification.PositionIdentificationTests.test_stationary_samples_report_unresolved_lag_and_keep_observed_innovation) ... ok
+test_8m_labels_and_collection_use_8m_geometry (test_restored_policy.RestoredPolicyTests.test_8m_labels_and_collection_use_8m_geometry) ... ok
+test_restored29_identity_is_checked_explicitly (test_restored_policy.RestoredPolicyTests.test_restored29_identity_is_checked_explicitly) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 36.752s
+
+OK

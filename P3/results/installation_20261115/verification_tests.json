@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-15",
+  "command": "python -B -X utf8 -m unittest discover -s P3/tests -v",
+  "tests": 53,
+  "failures": 0,
+  "exit_code": 0,
+  "note": "Executed in this session after excitation and controlled-load guard changes; P2/MuJoCo/PX4 legacy sources unchanged",
+  "media": [
+    {
+      "name": "weak",
+      "frames": 101,
+      "duration_s": 120,
+      "gif_sha256": "ef7e6fb179caec86c3a88309354ab1624526ee335e7123bfebc01716d27d2b5e"
+    },
+    {
+      "name": "strong",
+      "frames": 101,
+      "duration_s": 120,
+      "gif_sha256": "c7173be4c03b0f7d0b01407e1de75404fdce9707b0b38cc5d9925a2fd7b996c0"
+    }
+  ],
+  "calibration_sources": "frozen_source.zip",
+  "paired_flight_sources": "frozen_source_01.zip",
+  "maintenance_sources": "frozen_source_02.zip"
+}
