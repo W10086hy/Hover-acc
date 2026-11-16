@@ -1,5 +1,7 @@
 # P3 阶段记录
 
+2026-11-16：真实PX4 Position120s采集及独立时段留出完成，4800步Adam拟合后使用250Hz电机时钟对齐版本calibration_aligned。P3标准化现有35维观测，冻结P2 Actor13/Adam，MAVROS加速度与推力＋角速度两接口各弱强风120s。安全4/4、名义RMSE2/4、稳态2/4，弱风漂移未解决，不接受为实飞策略。用户授权整理后，中间试跑、旧拟合及短测仅保留统计和源码；最新模型、Adam、Position数据、四条闭环及P2四条基线完整保留。报告px4_offboard/acceleration_dual/observer_report.md，清单cleanup/retention_px4_observer_20261116.json。
+
 ## 2026-11-15：最新成果整理
 
 按用户新授权删除已替代候选、未选角度方案及调试产物，完整保留安装误差 P3 的三机参数／Adam、原始 Position、24 条 120 秒配对及回放。前一已索引零偏／CG 最终模型及其最终配对保留。删除 327 文件共 70,356,393 字节，原统计并入 [历史统计](results/history/calibration_development_20261115.json)，逐文件哈希见 [整理清单](../cleanup/retention_p3_installation_20261115.json)。没有新增训练或完整仿真。

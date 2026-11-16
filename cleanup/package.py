@@ -50,6 +50,15 @@ def manifest():
         for row in p3['protected_files']:
             assert digest(ROOT/row['path'])==row['sha256'],row['path']
     for name,expected in FINAL.items():assert digest(ROOT/name)==expected
+    observer_retention_path=ROOT/'cleanup/retention_px4_observer_20261116.json'
+    observer_retention=read(observer_retention_path) if observer_retention_path.exists() else None
+    if observer_retention is not None:
+        assert observer_retention['status']=='complete'
+        assert len(observer_retention['removed_files'])==observer_retention['removed_count']
+        assert sum(r['bytes'] for r in observer_retention['removed_files'])==observer_retention['removed_bytes']
+        assert digest(ROOT/observer_retention['archive'])==observer_retention['archive_sha256']
+        for row in observer_retention['removed_files']:assert not (ROOT/row['path']).exists()
+        for row in observer_retention['protected_files']:assert digest(ROOT/row['path'])==row['sha256']
     excluded={'cleanup/manifest.json','cleanup/verification.json','cleanup/package_summary.json'};rows=[]
     for p in sorted(files(ROOT)):
         name=p.relative_to(ROOT).as_posix()
@@ -60,8 +69,8 @@ def manifest():
         artifact=artifact or name.endswith('track_retention_20261102.json') or name in {'track/reports/height_speed_statistics.json','track/reports/development_statistics.json'}
         kind='fixture' if '/tests/fixtures/' in name else ('artifact' if artifact else 'source_or_configuration')
         rows.append(dict(path=name,bytes=p.stat().st_size,sha256=digest(p),kind=kind))
-    write(ROOT/'cleanup/manifest.json',dict(date=p3['date'] if p3 else acceleration['date'],
-        scope='Latest installation/bias/CG P3 and paired native validation, horizontal acceleration BPTT with vertical PID, indexed historical models and accepted tracking/PX4 evidence',
+    write(ROOT/'cleanup/manifest.json',dict(date=observer_retention['date'] if observer_retention else p3['date'] if p3 else acceleration['date'],
+        scope='Latest native installation/bias/CG P3, real PX4 Position calibration and frozen P2/P3 observer dual-interface development evidence; indexed historical models and accepted tracking/PX4 evidence',
         files=rows))
     summary=dict(date=acceleration['date'],this_cleanup_removed_files=acceleration['removed_count'],this_cleanup_removed_bytes=acceleration['removed_bytes'],
         stock_px4_removed_files=stock['removed_count'],stock_px4_removed_bytes=stock['removed_bytes'],
@@ -75,6 +84,18 @@ def manifest():
             previous_acceleration_removed_files=acceleration['removed_count'],previous_acceleration_removed_bytes=acceleration['removed_bytes'],
             latest_p3_retention='cleanup/retention_p3_installation_20261115.json',latest_p3_protected_files=len(p3['protected_files']),
             latest_p3_paired_120s_cases=24,latest_p3_current_aircraft=3,latest_p3_full_replays=2)
+    observer=ROOT/'px4_offboard/acceleration_dual/observer_summary.json'
+    if observer.exists():
+        current=read(observer)
+        summary.update(latest_PX4_observer_report='px4_offboard/acceleration_dual/observer_report.md',
+            latest_PX4_observer_cases=current['case_count'],latest_PX4_observer_safe=current['safe_completed'],
+            latest_PX4_observer_settled=current['settled'],latest_PX4_observer_formal_acceptance=False)
+    if observer_retention is not None:
+        summary.update(date=observer_retention['date'],this_cleanup_removed_files=observer_retention['removed_count'],
+            this_cleanup_removed_bytes=observer_retention['removed_bytes'],
+            latest_retention='cleanup/retention_px4_observer_20261116.json',
+            latest_protected_files=len(observer_retention['protected_files']),
+            previous_installation_removed_files=p3['removed_count'],previous_installation_removed_bytes=p3['removed_bytes'])
     for _ in range(3):
         write(ROOT/'cleanup/package_summary.json',summary);current=list(files(ROOT));summary.update(current_files=len(current),current_bytes=sum(p.stat().st_size for p in current))
     write(ROOT/'cleanup/package_summary.json',summary);print(json.dumps(summary,ensure_ascii=False))

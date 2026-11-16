@@ -172,5 +172,30 @@
     "duration_s": 120,
     "formal_final_acceptance": false,
     "real_px4_position_validated": false
+  },
+  "px4_position_calibration": {
+    "checkpoint": "P3/results/px4_position_20261116/calibration_aligned/calibration.pt",
+    "sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7",
+    "optimizer_embedded": true,
+    "position_data": "P3/results/px4_position_20261116/capture/position.npz",
+    "training_report": "P3/results/px4_position_20261116/calibration_aligned/training.json",
+    "real_PX4_Position": true,
+    "independent_body_pose_reference": true,
+    "fit_on": "shared host training environment; actual PX4 Position acquisition in VM",
+    "closed_loop_validated": false,
+    "full_torque_FF_in_PX4": false,
+    "selected_for_use": false,
+    "alignment_audit_passed": true,
+    "status": "Position_fit_and_holdout_passed; observer_PX4_matrix_complete; weak_wind_drift_unresolved",
+    "alignment_audit": "P3/results/px4_position_20261116/alignment_audit.json",
+    "observer_PX4_tested": true,
+    "observer_results": "px4_offboard/acceleration_dual/observer_summary.json",
+    "observer_report": "px4_offboard/acceleration_dual/observer_report.md",
+    "observer_scope": "sensor/reference/innovation standardization; no explicit torque feedforward",
+    "observer_safe_completed": 4,
+    "observer_cases": 4,
+    "observer_settled": 2,
+    "observer_nominal_rmse_passed": 2,
+    "observer_engineering_rmse_passed": 3
   }
 }

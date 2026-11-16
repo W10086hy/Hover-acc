@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-15",
-  "this_cleanup_removed_files": 327,
-  "this_cleanup_removed_bytes": 70356393,
+  "date": "2026-11-16",
+  "this_cleanup_removed_files": 250,
+  "this_cleanup_removed_bytes": 872819038,
   "stock_px4_removed_files": 148,
   "stock_px4_removed_bytes": 572385034,
   "prior_actor37_removed_files": 678,
@@ -25,6 +25,15 @@
   "latest_p3_paired_120s_cases": 24,
   "latest_p3_current_aircraft": 3,
   "latest_p3_full_replays": 2,
-  "current_files": 1264,
-  "current_bytes": 814711281
+  "latest_PX4_observer_report": "px4_offboard/acceleration_dual/observer_report.md",
+  "latest_PX4_observer_cases": 4,
+  "latest_PX4_observer_safe": 4,
+  "latest_PX4_observer_settled": 2,
+  "latest_PX4_observer_formal_acceptance": false,
+  "latest_retention": "cleanup/retention_px4_observer_20261116.json",
+  "latest_protected_files": 316,
+  "previous_installation_removed_files": 327,
+  "previous_installation_removed_bytes": 70356393,
+  "current_files": 1527,
+  "current_bytes": 1459911157
 }

@@ -1,0 +1,87 @@
+{
+  "position_checks": [
+    {
+      "path": "prechecks/stock15",
+      "mode": "PX4_Position",
+      "Actor_used": false,
+      "safe_completed": true,
+      "duration_s": 15.0,
+      "gyro_RMS_radps": [
+        0.0014404784239917,
+        2.38053772851954,
+        0.0003413726330420057
+      ],
+      "motor_saturation_fraction": 0.7501333333333333,
+      "px4_param_overrides": {},
+      "excitation_start_s": null,
+      "source_sha256": "9fb6b473c048f92883ba300e88b2b786893c95bb2334201ae364623bdd32ffdc"
+    },
+    {
+      "path": "prechecks/pitch01_15",
+      "mode": "PX4_Position",
+      "Actor_used": false,
+      "safe_completed": true,
+      "duration_s": 15.0,
+      "gyro_RMS_radps": [
+        0.0014826788128593437,
+        0.0022173933667193994,
+        0.0003310992863467176
+      ],
+      "motor_saturation_fraction": 0.0,
+      "px4_param_overrides": {
+        "MC_PITCHRATE_K": 0.1
+      },
+      "excitation_start_s": 33.552,
+      "source_sha256": "459adaa8f735116465f27293444cecbcbc1f915c15769859339cad959bf302bb"
+    },
+    {
+      "path": "prechecks/excited15",
+      "mode": "PX4_Position",
+      "Actor_used": false,
+      "safe_completed": true,
+      "duration_s": 15.0,
+      "gyro_RMS_radps": [
+        0.0122673132218144,
+        0.009756741224120274,
+        0.04861703464444143
+      ],
+      "motor_saturation_fraction": 0.0,
+      "px4_param_overrides": {
+        "MC_PITCHRATE_K": 0.1
+      },
+      "excitation_start_s": 33.552,
+      "source_sha256": "938bec04643c01d4f06bb09edd56420f3c8ea6f0ee5081f4104bdadab5776a86"
+    },
+    {
+      "path": "capture",
+      "mode": "PX4_Position",
+      "Actor_used": false,
+      "safe_completed": true,
+      "duration_s": 120.0,
+      "gyro_RMS_radps": [
+        0.013380092775396668,
+        0.011960403661965746,
+        0.05204754820274006
+      ],
+      "motor_saturation_fraction": 0.0,
+      "px4_param_overrides": {
+        "MC_PITCHRATE_K": 0.1
+      },
+      "excitation_start_s": 33.56,
+      "source_sha256": "938bec04643c01d4f06bb09edd56420f3c8ea6f0ee5081f4104bdadab5776a86"
+    }
+  ],
+  "calibration_checkpoint": "calibration_aligned/calibration.pt",
+  "calibration_sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7",
+  "quality_passed": true,
+  "P2_actor_updates": 0,
+  "P3_adam_updates": 4800,
+  "P2_P3_closed_loop_validated": false,
+  "full_P3_torque_in_PX4": false,
+  "alignment_audit_passed": true,
+  "position_precheck_raw_retained": false,
+  "position_precheck_statistics_archive": "px4_offboard/acceleration_dual/history/development_20261116.json",
+  "latest_capture_raw_retained": true,
+  "P3_observer_PX4_tested": true,
+  "observer_report": "px4_offboard/acceleration_dual/observer_report.md"
+}

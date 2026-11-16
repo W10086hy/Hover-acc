@@ -267,5 +267,19 @@
     "new_full_simulation_during_cleanup": false,
     "publication_repository": "https://github.com/W10086hy/Hover-acc",
     "publication_branch": "main"
+  },
+  "px4_observer_development": {
+    "date": "2026-11-16",
+    "training_running": false,
+    "validation_running": false,
+    "report": "px4_offboard/acceleration_dual/observer_report.md",
+    "checkpoint": "P3/results/px4_position_20261116/calibration_aligned/calibration.pt",
+    "P2_frozen": true,
+    "safe_completed": 4,
+    "count": 4,
+    "nominal_rmse_passed": 2,
+    "settled": 2,
+    "accepted_for_flight": false,
+    "explicit_torque_feedforward": false
   }
 }

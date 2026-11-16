@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checkpoint_sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7",
+  "raw_partitions_split_before_interpolation": true,
+  "interval_command_model": "Actual250Hz RPM and held throttle; no command changes omitted",
+  "IMU": "Real PX4 HIGHRES_IMU interpolated offline within each original time partition",
+  "input_sha256": {
+    "capture/position.npz": "56acca53573a4c4033474a62f93755cdc2c3bdd67000f0eae26d060f20ed9fec",
+    "capture/raw_capture.npz": "2a51757b749fdf1d4eb25fd377d6d58ab4bdc7e3fb32db66fe534022232f7385",
+    "capture/capture.json": "05a80d779cbf27158809450086ef1007f19c082239713cf2a4942998d57a4852",
+    "capture/flight/summary.json": "36ca6330fef1e300ad86e3033e69e5cade58bd41d3b903a872fe3dbc0e77da86",
+    "capture/flight/trace.npy": "24fdf44482c65686788bff9ab7492c00ecfc490ecdffa1f49ce4432bd5f519e9"
+  },
+  "transport_archive_sha256": "03a9ecb1e241cbbc39ff0e90812ff65c46b3e7bc8bca0de07879af310c2b2995",
+  "transport_archive_entries_verified": true,
+  "motor_tau_s": 0.002000012996555047,
+  "truth_only_evaluation": {
+    "actual_tau_s": 0.002,
+    "relative_full_inertia_error": 0.005658659527093701
+  },
+  "P2_P3_closed_loop_validated": false,
+  "full_P3_torque_in_PX4": false,
+  "first_fit_superseded": "calibration/calibration.pt; lowrate command approximation, not for compensation"
+}

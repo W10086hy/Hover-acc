@@ -1,5 +1,28 @@
 # 当前工程约定
 
+## 最新整理上传（2026-11-16，优先）
+
+- 用户授权整理并上传最新工程，按 cleanup/retention_px4_observer_20261116.json 删除250个已替代调试／中间文件（872819038字节，以清单为准）；本节替代此前对 full_01/full_02、Position短测与旧低频calibration中间证据的保留条款。历史原始统计、审计、飞行摘要、接口及唯一源码快照合并 px4_offboard/acceleration_dual/history/development_20261116.json；不恢复已清理目录。
+- 最新保留 P2 Actor13及Adam、P3 calibration_aligned参数及Adam、完整120s Position原始数据、full_05四条P3→P2闭环及full_03同内环P2基线、八份回放。316份本轮保护文件和此前139份原生P3保护文件哈希核对；历史最终P2/P3/track/PX4依赖不删。
+- 最新P3→P2安全4/4、名义RMSE2/4、工程容差RMSE3/4、稳态2/4，弱风漂移仍未解决；不是实飞或正式独立验收。整理不训练、不新增完整仿真、不自动续跑。上传目标为W10086hy/Hover-acc/main，旧origin仍是Hover-BPTT，明确URL普通快进推送。
+
+## 冻结P2与P3机体适配（2026-11-16，后续用户授权）
+
+- 用户明确不重新训练P2，P2作为通用标准机体策略；P3利用机载历史进行自身动力学观测补偿，允许继续输出加速度。当前不增加P2输入维度、不改变35维输入/14维标称上下文、Actor13/Adam不更新。若以后采用GRU，训练与新增状态放P3，不把当前物理参数+因果历史实现冒称GRU网络。
+- 已完成真实PX4 Position120s采集，风/绳力关闭，独立机体系位姿仅用于P3。原始IMU先按67/33分割，再各段插值至保存的250Hz实测电机/实际油门时钟，避免末端油门代替整个8/12ms区间。新P3参数在P3/results/px4_position_20261116/calibration_aligned，含Adam；旧低频近似calibration已标为NOT_FOR_COMPENSATION，原生P3不改。
+- 纯Position已复现默认Iris内环俯仰gyro RMS2.38rad/s/75%电机饱和；单独MC_PITCHRATE_K=0.1后RMS0.0022/饱和0。XML实际质量2.369kg，旧config.actual写2.3kg不准确；P2标称仍2.3kg，真实属性仅核验、不喂给辨识。旧失败证据不覆盖。
+- 新机载P3为传感器/姿态一致校正、CG参考点运输、使用辨识电机响应的角运动创新标准化。没有直接叠加P3与P2动作，没有显式力矩MAVLink消息。物理扰动由PX4反馈内环承担；不能把该路线与原生分配前力矩前馈的完整补偿混称。
+- 接入p3_observer.py及mavros_policy.py；角速度命令最后从虚拟轴按C^T V转回PX4报告机体轴，创新单位rad/s并归一至标准10ms步长。断流/时间回退不复用旧GRU/观测历史，阻止本次接管直到退出模式。
+- 匹配内环P2基线full_03_matched_px4与新P3观测补偿full_05_p3_observer分开；后者已完成四条120s，安全4/4、名义RMSE2/4、工程容差3/4、稳态2/4。弱风两例仍缓慢漂移，不接受为稳定飞行策略；当前无训练或仿真作业，不自动续训/重启矩阵。VM仅1个可用CPU，飞行顺序运行，四份离线动图并行生成。只作当前机体开发验证，不代表非零安装/CG全域或正式留出已验收。报告px4_offboard/acceleration_dual/observer_report.md。
+
+## PX4 双接口开发验证（2026-11-16，优先）
+
+- 用户授权新增独立 MAVROS 加速度入口、一键脚本并保留原路线，在既有虚拟机验证。入口 `px4_offboard/mavros_policy.py`、`launch_acceleration.sh/.cmd`，双接口夹具 `launch_dual_sitl.sh/.cmd`；旧 offboard/control/stock_check_hold/launch.sh 不改。均冻结 Actor13／Adam，P3 关闭，完整原生 P3 参数及证据独立保留。
+- 最新四例使用 MAVROS IMU／高度／状态进入真实机载推理节点，输出经真实 MAVROS；1 m/s 恒风与 1→5 m/s、5 s 渐升风，两接口各计划120 s。强风两例安全完成，弱风分别22.384／74.736 s高度保护终止；三维RMSE分别6.591／4.749／2.272／1.771 m，逐例RMSE与稳态均0/4。失败余下完整时域计罚，不接受为稳定飞行策略。
+- 结果与四份12倍速三维／XY／姿态回放：`px4_offboard/acceleration_dual/results/full_02_mavros`；较早MAVLink输入适配器对照在full_01。报告与汇总见同级 `report.md`、`summary.json`，只作开发验证。GPS仍供PX4，Actor不取水平导航真值；未验证新完整P3内环迁移、参数全域或实机。
+- 原始飞行目标评分沿用夹具心跳锁存气压参考，早期机载节点内部目标未单独录制；后续维护已增加目标日志，不冒称已飞版本。来源以每例frozen_source.zip为准。原始固件日志有磁力计STALE／加速度计零偏告警，失败原因尚未隔离。
+- 本轮没有网络训练。VM作业已结束，不自动重启矩阵或续训；继续诊断须沿用已有证据，启动时用新目录。虚拟机路径 `/home/s/hover_bptt_px4/acceleration_dual_20261115`。登录秘密不落盘。当前无需新活动目标。
+
 ## 最新整理与上传（2026-11-15，优先）
 
 - 用户新授权整理并上传 Hover-acc，已按 `cleanup/retention_p3_installation_20261115.json` 清理 327 个已替代候选、未选角度方案、烟雾测试及调试产物，合计 70,356,393 字节；旧统计合并 `P3/results/history/calibration_development_20261115.json`。这替代以下关于中间产物临时全量保留的条款，不恢复这些目录。

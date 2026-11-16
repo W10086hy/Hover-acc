@@ -1,0 +1,12 @@
+{
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "actor_numpy_max_error": 4.470348358154297e-08,
+  "P3_enabled": false,
+  "scope": "Same frozen Actor for both wire interfaces; full native P3 torque/allocator compensation retained separately",
+  "artifact_sha256": {
+    "config.json": "8da96a0d2ce6929265dfa22ca35806d864a2c8025b8c63fb3a7ba962356e09a6",
+    "initial.npz": "9b4aaf76a40fb6e555aab22ba859a0de8f0b76a422d5e6c10795e26380640107",
+    "model.xml": "829983b2e1657e2bf185469ef965f5fde879ca4ac7310d34e982d70d96896642",
+    "weights.npz": "c16a96352a847a0bccdcec60d46583f3d7cb5507fdf06e91a53b3fd2c4c0f78b"
+  }
+}

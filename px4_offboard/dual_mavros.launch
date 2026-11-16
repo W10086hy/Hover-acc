@@ -1,0 +1,13 @@
+<launch>
+  <arg name="fcu_url" default="udp://:14541@127.0.0.1:14582" />
+  <node pkg="mavros" type="mavros_node" name="mavros" output="screen" required="true">
+    <rosparam command="load" file="$(find mavros)/launch/px4_pluginlists.yaml" />
+    <rosparam command="load" file="$(find mavros)/launch/px4_config.yaml" />
+    <param name="fcu_url" value="$(arg fcu_url)" />
+    <param name="gcs_url" value="" />
+    <!-- The run publishes HIL simulation time on /clock; no wall-clock sync. -->
+    <param name="time/timesync_mode" value="NONE" />
+    <param name="time/timesync_rate" value="0.0" />
+    <param name="time/system_time_rate" value="0.0" />
+  </node>
+</launch>

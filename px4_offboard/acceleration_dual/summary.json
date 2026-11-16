@@ -1,0 +1,526 @@
+{
+  "date": "2026-11-16",
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "P3_enabled": false,
+  "formal_final_acceptance": false,
+  "accepted_for_flight": false,
+  "policy_updates": 0,
+  "duration_s": 120,
+  "seeds": [
+    2026114501,
+    2026114503
+  ],
+  "attachment_cm": 5,
+  "cases": [
+    {
+      "batch": "full_01",
+      "path": "results/full_01/acceleration_wind1",
+      "audit": {
+        "safe_completed": false,
+        "rmse_3d_h_xy_m": [
+          4.575147082614226,
+          2.4118935737676215,
+          3.8877680250205144
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 19172,
+        "physical_post_duration_s": 76.688,
+        "penalized_remaining_samples": 10828,
+        "settled": false,
+        "tail": {
+          "complete": false,
+          "horizontal_std_m": null,
+          "speed_rms_mps": null,
+          "horizontal_drift_mps": null
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "interface": "acceleration",
+        "policy_source": "mavlink",
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "actual_wire_commands": 7786,
+        "wire_fields_passed": true,
+        "error": "RuntimeError: Physical guard at t=124.872: tilt=9.34, height=2.997, tension=7.42",
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 1.0,
+        "sensor_seed": 2026114501,
+        "target_baro_height_m": 4.760554313659668,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": true,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 0.0,
+        "launch_heading_rad": 0.0,
+        "target_local_z_ned_m": 0.1489749699831009,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "164327a8b6c1be9c13f658ca21d4c76321ec44916bde27ee8ceb80a66917d8e0",
+          "flight/summary.json": "742d5240cbfe0f864da91b73c1187dcd93196382d781618533f0bb17385d170c",
+          "interface.json": "087e57222c37d02ca5c53d4456611e5b13f977d40b381635f9d0377a7bdb89e0",
+          "wire_commands.json": "a142f0c9af32e4492cfd37fc6e378d40aaf884ec6c14a3e310600e3965fdce36",
+          "mavros_commands.json": "c910f309f48fa739fa316ddaac679b8db3adb5d841778edab4ffe7b43b5489db",
+          "preflight_calibration.json": "cbf80af6d969de71e2f19ecac9dab715c551e4982713c58d6647de667beca6c7",
+          "frozen_source.zip": "f5653f38c8cc283be3543d66eadb486e5f8d564452d6d4f970038966ee19d7b1"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 7,
+        "high_accelerometer_bias": 2
+      }
+    },
+    {
+      "batch": "full_01",
+      "path": "results/full_01/rate_thrust_wind1",
+      "audit": {
+        "safe_completed": true,
+        "rmse_3d_h_xy_m": [
+          0.7967692246597987,
+          0.03105677949724036,
+          0.7961637229943579
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 30000,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "settled": false,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.29987167463390435,
+          "speed_rms_mps": 0.05890563884724363,
+          "horizontal_drift_mps": 0.03344791713897844
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "interface": "rate_thrust",
+        "policy_source": "mavlink",
+        "wire_kind": "SET_ATTITUDE_TARGET",
+        "actual_wire_commands": 12128,
+        "wire_fields_passed": true,
+        "error": null,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 1.0,
+        "sensor_seed": 2026114501,
+        "target_baro_height_m": 4.779334545135498,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": true,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 0.0,
+        "launch_heading_rad": 0.0,
+        "target_local_z_ned_m": null,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "1566a9bb7d74c4cf7c81cdd2ed4a565919bac8cb681671d624cbe2c40205ee54",
+          "flight/summary.json": "6b05a51a14499e6e4ca0e79b8b4ff26af866faa64f7062f574354bc89e30bb6c",
+          "interface.json": "054d2b66b3833bb7613c4394c3311800a6a5759ee5820307cbee926ab95c50f6",
+          "wire_commands.json": "0c1d6081f1567ed3c41355cace915132a389c44c7e6a1d21a9116002e899c1c3",
+          "mavros_commands.json": "e5f8f71521e75b1b572429cc12e20e55814a0100d093538c31bd92e470bbbb2b",
+          "preflight_calibration.json": "16d8f6d602856c829e8dc8d57921b511f4392ed72fbe826bb556fa83a7419027",
+          "frozen_source.zip": "f5653f38c8cc283be3543d66eadb486e5f8d564452d6d4f970038966ee19d7b1"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 7,
+        "high_accelerometer_bias": 2
+      }
+    },
+    {
+      "batch": "full_01",
+      "path": "results/full_01/acceleration_wind5",
+      "audit": {
+        "safe_completed": true,
+        "rmse_3d_h_xy_m": [
+          1.9784386156805431,
+          0.10956023103200198,
+          1.9754027214196497
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 30000,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "settled": false,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 1.6554585853763313,
+          "speed_rms_mps": 0.6425675347466551,
+          "horizontal_drift_mps": 0.04544999805607664
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 1.5,
+        "interface": "acceleration",
+        "policy_source": "mavlink",
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "actual_wire_commands": 12136,
+        "wire_fields_passed": true,
+        "error": null,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 5.0,
+        "sensor_seed": 2026114503,
+        "target_baro_height_m": 4.737079620361328,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": true,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 5.0,
+        "launch_heading_rad": 0.0,
+        "target_local_z_ned_m": 0.17113131284713745,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "1cc07f79979f7e9bf0e32c5c30f504159c84a966843d25f39e6a167b8dab5913",
+          "flight/summary.json": "9a89c2fc12107888d4b94489489f4cba9dbe69c150585a7119ba1d4f3558f6f6",
+          "interface.json": "26badaa495cee6b5f73a076e27b8fd2b3ca081b74c874cead4d37b5ec73ef7d9",
+          "wire_commands.json": "0f8e3b1fb08ae4d8a80b14d8d08b23554d864ee0b0ff98ed625277d42a9758da",
+          "mavros_commands.json": "0282e3356d025b0f4839fdc3c74c34313353189ae87a8838f903307ae4ab9e21",
+          "preflight_calibration.json": "0d6fe3f0fa820d0351ffa9168d88508723fa66a47b5eeb43a64fc552a97f5a5a",
+          "frozen_source.zip": "f5653f38c8cc283be3543d66eadb486e5f8d564452d6d4f970038966ee19d7b1"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 7,
+        "high_accelerometer_bias": 2
+      }
+    },
+    {
+      "batch": "full_01",
+      "path": "results/full_01/rate_thrust_wind5",
+      "audit": {
+        "safe_completed": true,
+        "rmse_3d_h_xy_m": [
+          1.5777367468463601,
+          0.035428888466880915,
+          1.5773389097500057
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 30000,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "settled": true,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.03856042716386142,
+          "speed_rms_mps": 0.031875563727384475,
+          "horizontal_drift_mps": 0.00022613450938873832
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 1.5,
+        "interface": "rate_thrust",
+        "policy_source": "mavlink",
+        "wire_kind": "SET_ATTITUDE_TARGET",
+        "actual_wire_commands": 12115,
+        "wire_fields_passed": true,
+        "error": null,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 5.0,
+        "sensor_seed": 2026114503,
+        "target_baro_height_m": 4.807504653930664,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": true,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 5.0,
+        "launch_heading_rad": 0.0,
+        "target_local_z_ned_m": null,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "cd986a10a27b9acb175d0149da6b9dda6e8de204a70f0bd7f3c246c8734be989",
+          "flight/summary.json": "68956a47576019feed010e4f597d7e28e90a52289d4b1a0a9e67157b08d47e8c",
+          "interface.json": "beab1adce384a468f96f7f9bfe843229be452d1501ca57a135baa20ea4debfa4",
+          "wire_commands.json": "c4fb632d2dc9831c3f3469d0d2ac29d6f49a906676c1a82e3a9fabae77410ec0",
+          "mavros_commands.json": "a6a392602119ce1397d87d9438405285a7b3932e172c6b893228085f0f3c19bd",
+          "preflight_calibration.json": "f063815d5c48e5c4248e755e4cb819ba4f232dbade03bc9d566b7f518f6bfa6b",
+          "frozen_source.zip": "f5653f38c8cc283be3543d66eadb486e5f8d564452d6d4f970038966ee19d7b1"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 7,
+        "high_accelerometer_bias": 2
+      }
+    },
+    {
+      "batch": "full_02_mavros",
+      "path": "results/full_02_mavros/acceleration_wind1",
+      "audit": {
+        "safe_completed": false,
+        "rmse_3d_h_xy_m": [
+          6.59111627459151,
+          3.6126876508522616,
+          5.512830641563791
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 5596,
+        "physical_post_duration_s": 22.384,
+        "penalized_remaining_samples": 24404,
+        "settled": false,
+        "tail": {
+          "complete": false,
+          "horizontal_std_m": null,
+          "speed_rms_mps": null,
+          "horizontal_drift_mps": null
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "interface": "acceleration",
+        "policy_source": "mavros",
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "actual_wire_commands": 7076,
+        "wire_fields_passed": true,
+        "error": "RuntimeError: Physical guard at t=73.816: tilt=5.01, height=2.999, tension=6.73",
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 1.0,
+        "sensor_seed": 2026114501,
+        "target_baro_height_m": 4.760554313659668,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": false,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 0.0,
+        "launch_heading_rad": 0.05619778985168475,
+        "target_local_z_ned_m": 0.13386555016040802,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "f1731994cbb93a1b14d890a2a43545e53781a72d04081242732df03ecc4bcfbb",
+          "flight/summary.json": "37e48e27bbf6a265947865c747e72cd3eab1ba8282fa34b0bd06bcf0785556c0",
+          "interface.json": "bda57e5ee35305be92474908a199532ede545bbd04607c8e277a3340f5ef7841",
+          "wire_commands.json": "53d0812007d1b3aff1a99d415e9ac55e89d6433e03c4972380f3c7b9b86b9489",
+          "mavros_commands.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "preflight_calibration.json": "c762c216ce7760f1f0ff65f479dd2c8b6bf3ae9cc14b2f010e1f6cf585a83d86",
+          "frozen_source.zip": "a61521cf2cdc6c57540c28cecd17c2164c160e6d768cefb587f8991d8d4a1f11"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 8,
+        "high_accelerometer_bias": 1
+      }
+    },
+    {
+      "batch": "full_02_mavros",
+      "path": "results/full_02_mavros/rate_thrust_wind1",
+      "audit": {
+        "safe_completed": false,
+        "rmse_3d_h_xy_m": [
+          4.748876810692171,
+          2.4815840229321116,
+          4.048897590734783
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 18684,
+        "physical_post_duration_s": 74.736,
+        "penalized_remaining_samples": 11316,
+        "settled": false,
+        "tail": {
+          "complete": false,
+          "horizontal_std_m": null,
+          "speed_rms_mps": null,
+          "horizontal_drift_mps": null
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "interface": "rate_thrust",
+        "policy_source": "mavros",
+        "wire_kind": "SET_ATTITUDE_TARGET",
+        "actual_wire_commands": 9588,
+        "wire_fields_passed": true,
+        "error": "RuntimeError: Physical guard at t=123.232: tilt=3.77, height=2.998, tension=6.43",
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 1.0,
+        "sensor_seed": 2026114501,
+        "target_baro_height_m": 4.845064640045166,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": false,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 0.0,
+        "launch_heading_rad": 0.056003960938133306,
+        "target_local_z_ned_m": null,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "bd6349145af2e05550225ca78d1481236e111ae6192ea648fc2d5e1a4e186713",
+          "flight/summary.json": "5b4ba0f45f0ed1cac5a47b1f75eaef670e938f8f5ffae77cf8cfc6b1b5117d6f",
+          "interface.json": "f32f1c3dd4cd389803815a793324a244e455f3dc611423d32ae2f0709da31dc7",
+          "wire_commands.json": "6a5f21ff72b61e85d74353204c7434f7ca83444bf2bbdb2c59ca00f1d9a744c0",
+          "mavros_commands.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "preflight_calibration.json": "66d2b252815e9e88fdd7125daea938027fb9d00dc36b427aafdecc7e304ff968",
+          "frozen_source.zip": "e3e51132b8ce2d310a31c79405357ab06926ffe702fa8d0f8d35d99a569f3e8b"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 7,
+        "high_accelerometer_bias": 1
+      }
+    },
+    {
+      "batch": "full_02_mavros",
+      "path": "results/full_02_mavros/acceleration_wind5",
+      "audit": {
+        "safe_completed": true,
+        "rmse_3d_h_xy_m": [
+          2.2715579374456927,
+          0.32409437552731535,
+          2.248318994031783
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 30000,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "settled": false,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 2.5408324598613,
+          "speed_rms_mps": 1.091983743666906,
+          "horizontal_drift_mps": 0.12225575397158668
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 1.5,
+        "interface": "acceleration",
+        "policy_source": "mavros",
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "actual_wire_commands": 16404,
+        "wire_fields_passed": true,
+        "error": null,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 5.0,
+        "sensor_seed": 2026114503,
+        "target_baro_height_m": 4.788724422454834,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": false,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 5.0,
+        "launch_heading_rad": 0.05631388790737289,
+        "target_local_z_ned_m": 0.1313006430864334,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "1bd2f236ef803941d867a653c5df4bcf2c72a28f9add0d9f2a8ee346639586bb",
+          "flight/summary.json": "1dc0acaa54bf9e681d82788c4ef1875e6c9184e0e6bbed492f6f20c5b052425d",
+          "interface.json": "cd262bfe285d034bfd5fba7d13f0737b2f5a0cfae8c163f30013a6a3e916bd73",
+          "wire_commands.json": "c57c22f4718058ef39ad7c97d3dafee62d2c0a8dac811cd279b7f1ce48284c55",
+          "mavros_commands.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "preflight_calibration.json": "6f73cd9ef735ff954460646ed57bb4c5bb898c8260cc5778760084dc60590e4d",
+          "frozen_source.zip": "e3e51132b8ce2d310a31c79405357ab06926ffe702fa8d0f8d35d99a569f3e8b"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 8,
+        "high_accelerometer_bias": 1
+      }
+    },
+    {
+      "batch": "full_02_mavros",
+      "path": "results/full_02_mavros/rate_thrust_wind5",
+      "audit": {
+        "safe_completed": true,
+        "rmse_3d_h_xy_m": [
+          1.770655236910354,
+          0.12299202187048669,
+          1.7663784788527832
+        ],
+        "evaluation_horizon_s": 120.0,
+        "actual_post_samples": 30000,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "settled": false,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 1.0611269252296498,
+          "speed_rms_mps": 0.5730881157346013,
+          "horizontal_drift_mps": 0.02330601428894208
+        },
+        "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+        "rmse_passed": false,
+        "rmse_limit_m": 1.5,
+        "interface": "rate_thrust",
+        "policy_source": "mavros",
+        "wire_kind": "SET_ATTITUDE_TARGET",
+        "actual_wire_commands": 16301,
+        "wire_fields_passed": true,
+        "error": null,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "P3_enabled": false,
+        "wind_mps": 5.0,
+        "sensor_seed": 2026114503,
+        "target_baro_height_m": 4.821589469909668,
+        "scoring_height_source": "fixture heartbeat-latched barometric reference",
+        "controller_target_logged": false,
+        "acceleration_filter_s": 0.065,
+        "wind_ramp_s": 5.0,
+        "launch_heading_rad": 0.05631277989527256,
+        "target_local_z_ned_m": null,
+        "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+        "true_position_used_for_scoring_only": true,
+        "formal_final_acceptance": false,
+        "artifact_sha256": {
+          "flight/trace.npy": "3f72c2bec55001c1742d059fe162777deac069a7f39e1f4c623c69627995a2cc",
+          "flight/summary.json": "489ee458b14e2dbd7052345a989cdf2d59af169fa152c73c12e42ef67e1e6f18",
+          "interface.json": "f835928e4686d3de9666d4e302caf8b263df93f5a3664a2729201716bf99f3d9",
+          "wire_commands.json": "41f65e880019449b508a23a70747ba9e375e37706c4e34a01518c3017946b6b0",
+          "mavros_commands.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "preflight_calibration.json": "225e7dfcb0fb84a2d12d15abd4b05c901e98e6181578d02770960c4f3a3251f9",
+          "frozen_source.zip": "e3e51132b8ce2d310a31c79405357ab06926ffe702fa8d0f8d35d99a569f3e8b"
+        }
+      },
+      "firmware_log_counts": {
+        "magnetometer_stale": 7,
+        "high_accelerometer_bias": 1
+      }
+    }
+  ],
+  "latest_batch": "full_02_mavros",
+  "legacy_source_sha256": {
+    "px4_offboard/offboard.py": "714748fdf3fe00cf2807304c3296caaf8cdf257d752cdf8afbf748f59400d4a7",
+    "px4_offboard/control.py": "b5653f189bedcb5bd9f2bfc1154eb7391adb892c76254ff4b6310aac3db76f94",
+    "px4_offboard/stock_transfer/stock_check_hold.py": "0a853feb6017290c7eb301ebec1e0bb0f8c8c6693eb83a72254862029b8f0ac3",
+    "px4_offboard/launch.sh": "808a6b16842f851df6414b075037625a5644737ce72e347623cb0c1c1cb2b70d"
+  },
+  "environment": {
+    "vm": "Ubuntu 20.04.3 / Linux 5.15",
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "mujoco": "3.10.0",
+    "pymavlink": "2.4.49",
+    "mavros": "1.20.1-1focal.20250520.005419",
+    "rospy": "1.15.13-1focal.20210922.175756",
+    "px4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+    "px4_binary_sha256": "e635cac958c4f78766dece2c596f640811713e671c8a231999f494f98b9eb0f4",
+    "px4_source_dirty_tracked": false,
+    "px4_source_untracked": [
+      ".venv/"
+    ],
+    "dependencies_installed_this_task": false,
+    "system_files_modified": false
+  },
+  "regression": {
+    "total": 248,
+    "passed": 247,
+    "skipped": 1
+  },
+  "scoring_note": "Full planned 120 s; actual failing state then remaining h4/xy6m. Recorded fixture heartbeat barometric reference; original MAVROS node target was not logged separately.",
+  "source_note": "Per-case frozen_source.zip is flight identity. Later maintenance adds policy target logging, CLI default mavros and audit/replay/report checks; no network updates.",
+  "limitations": [
+    "P3 OFF; full native P3 torque compensation preserved separately",
+    "PX4 still receives simulated GPS; Actor does not receive horizontal position/velocity",
+    "Single nominal body, 5cm attachment, one seed per wind; no independent acceptance",
+    "Asynchronous separate runs do not have bit-identical initial states",
+    "Firmware logs contain magnetometer stale and accelerometer-bias warnings; cause of oscillation not isolated"
+  ]
+}

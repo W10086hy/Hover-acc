@@ -1,0 +1,108 @@
+{
+  "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+  "stock_rcS": true,
+  "stock_airframe": "10016_none_iris",
+  "simulation_motor_order": [
+    1,
+    4,
+    3,
+    2
+  ],
+  "GPS_for_PX4_position_reference": true,
+  "GPS_policy_input": false,
+  "parameters_overridden": true,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "simulated_motor_tau_s": 0.002,
+  "site_pressure_hpa": 1013.25,
+  "stock_thrust_conversion": false,
+  "sensor_seed": 2026114501,
+  "requested_post_duration_s": 120.0,
+  "wind_mps": 1.0,
+  "wind_ramp_s": 0.0,
+  "hold_position": false,
+  "residual_enabled": false,
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "residual_sha256": null,
+  "release_s": 25.900000000000002,
+  "stable_position_since_s": 34.12,
+  "prestream_s": 37.12,
+  "switch_heartbeat_s": 40.4,
+  "post_duration_s": null,
+  "error": "RuntimeError: Physical guard at t=51.144: tilt=0.15, height=4.742, tension=33.48",
+  "policy_ticks": [],
+  "observed_wire_messages": {
+    "COMMAND_LONG": 1,
+    "HEARTBEAT": 1,
+    "HIL_ACTUATOR_CONTROLS": 12523
+  },
+  "acks": [
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.404
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.412
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.42
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.428
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.436
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.444
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.452
+    },
+    {
+      "command": 400,
+      "result": 0,
+      "time_s": 22.004
+    },
+    {
+      "command": 176,
+      "result": 0,
+      "time_s": 39.512
+    },
+    {
+      "command": 176,
+      "result": 0,
+      "time_s": 40.004
+    }
+  ],
+  "events": [],
+  "last_received_times": {
+    "HIGHRES_IMU": 51.136,
+    "ATTITUDE_QUATERNION": 51.136,
+    "ALTITUDE": 51.096000000000004,
+    "EXTENDED_SYS_STATE": 50.996,
+    "HEARTBEAT": 50.396
+  },
+  "last_gyro_timestamp": null,
+  "takeoff_baro_zero_m": -0.004507541656494141,
+  "takeoff_baro_locked_s": 3.396,
+  "policy_baro_heights_m": [],
+  "hold_target_height_m": 4.81689453125,
+  "hold_height_locked_s": 40.396,
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  }
+}

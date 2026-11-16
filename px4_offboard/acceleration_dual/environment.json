@@ -1,0 +1,17 @@
+{
+  "vm": "Ubuntu 20.04.3 / Linux 5.15",
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "mujoco": "3.10.0",
+  "pymavlink": "2.4.49",
+  "mavros": "1.20.1-1focal.20250520.005419",
+  "rospy": "1.15.13-1focal.20210922.175756",
+  "px4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+  "px4_binary_sha256": "e635cac958c4f78766dece2c596f640811713e671c8a231999f494f98b9eb0f4",
+  "px4_source_dirty_tracked": false,
+  "px4_source_untracked": [
+    ".venv/"
+  ],
+  "dependencies_installed_this_task": false,
+  "system_files_modified": false
+}

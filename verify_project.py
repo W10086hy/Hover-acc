@@ -290,6 +290,10 @@ def main():
     report['latest_px4'] = verify_px4_retention()
     report['stock_px4_transfer'] = verify_stock_transfer()
     report['acceleration_hover'] = verify_acceleration_hover()
+    from px4_offboard.dual_verify import verify as verify_dual
+    report['dual_px4_interfaces'] = verify_dual()
+    from P3.verify_px4_position import verify as verify_position_p3
+    report['PX4_Position_P3'] = verify_position_p3()
     if args.write_report:
         from P2.hover_bptt.io import write
         write(ROOT / 'cleanup/verification.json', report)

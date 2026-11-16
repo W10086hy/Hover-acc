@@ -1,5 +1,7 @@
 # P3 Position 机体系零偏与质心辨识
 
+2026-11-16 已补充真实 PX4 Position 的 120 s 辨识，并按用户最新方案接入“P3 标准化观测 → 冻结 P2 → 加速度”的机载链路。P2 的 Actor／Adam、35 维输入和标称上下文不改，P3 使用自己的物理参数及因果历史状态，不把它冒称为已实现的 GRU 网络。原生分配前的显式力矩补偿仍独立保留；当前 MAVROS 路线验证观测补偿，由 PX4 内环执行。[真实 Position 数据与参数](results/px4_position_20261116/README.md) · [机载接入与对照](../px4_offboard/acceleration_dual/observer_report.md)
+
 最新安装误差实验同时辨识 IMU 安装旋转／陀螺零偏、电机共用推力轴、加速度计零偏、水平质心与完整对称惯量。每机分别在受控无外载 Position 中学习，P2 Actor／Adam 冻结。实际 IMU 每轴 1–3°、电机 roll／pitch 每轴 1–1.5°；两个 40 g 偏置载荷通过并行轴定理真实改变质量／质心／惯量，原生 MuJoCo 采用 `fullinertia`。三机体 24 条 120 秒配对中，P2+P3 安全、稳态和逐例 RMSE 12/12，P2 安全 2/12。[最新完整报告与回放](results/installation_20261115/README.md) · [安装模型](installation_calibration.py) · [物理注入](installation_sim.py) · [采集／训练／验证入口](installation_run.py)
 
 该实验假设 Position 提供独立、正确的机体系姿态参考；单凭同一未校准 IMU 的姿态不保证能分离两种安装角。本轮为三组离散机体的开发验证，电机倾斜是四电机共用安装面；真实 PX4、独立逐电机倾角和非受控外载尚未验证。原始时间段先划分，留出不拟合；无三轴激励和未显式确认受控外载的记录拒绝训练。校正 IMU 后转至辨识推力轴定义的虚拟机体，分配与前向预测使用相同辨识几何及转速增益，Actor 条件和归一化仍采用 P2 标准。`calibration.pt` 含参数与 Adam，三机参数索引见 [models.json](models.json)。

@@ -1,0 +1,146 @@
+{
+  "steps": 1600,
+  "loss": 0.03748056897048699,
+  "relative_min_singular": 0.00250063537435629,
+  "accel_bias_body_mps2": [
+    0.000991333020647844,
+    0.004483374331618286,
+    -0.00671558867519238
+  ],
+  "com_geometry_m": [
+    5.904656769299403e-10,
+    -1.0916905306478713e-09,
+    0.0
+  ],
+  "full_inertia_body_kgm2": [
+    [
+      0.012956345368927043,
+      -9.19660113471969e-06,
+      1.5799143160109381e-06
+    ],
+    [
+      -9.19660113471969e-06,
+      0.005669539667293527,
+      9.983554032042073e-07
+    ],
+    [
+      1.5799143160109381e-06,
+      9.983554032042073e-07,
+      0.016118034867366387
+    ]
+  ],
+  "mounting": {
+    "body_from_sensor": [
+      [
+        0.9999999849158193,
+        0.00016034954094723861,
+        -6.675617084629507e-05
+      ],
+      [
+        -0.0001603775002380131,
+        0.9999998993453661,
+        -0.0004190325952104539
+      ],
+      [
+        6.668897244274361e-05,
+        0.0004190432950774527,
+        0.9999999099776453
+      ]
+    ],
+    "gyro_bias_sensor_radps": [
+      4.831154312030687e-05,
+      7.195506601724127e-07,
+      -5.6471456067890046e-05
+    ],
+    "gyro_fit_rmse_radps": [
+      0.0009888776764089549,
+      0.0009432836573684279,
+      0.0007410960800870051
+    ],
+    "relative_min_singular": 0.049153970600520916,
+    "reference": "independent_Position_body_pose"
+  },
+  "axis_mass": {
+    "thrust_axis_body": [
+      4.7273294095845865e-07,
+      -1.1152816368974196e-07,
+      -0.999999999999882
+    ],
+    "mass_kg": 2.369098304229553,
+    "samples": 19658,
+    "force_rmse_n": [
+      0.004547871474405031,
+      0.004942774704226637,
+      0.13883293684288298
+    ]
+  },
+  "train": {
+    "samples": 2457,
+    "torque_rmse_nm": [
+      4.363026605659148e-05,
+      2.8440421202327566e-05,
+      1.0408626880090063e-05
+    ],
+    "accel_rmse_mps2": [
+      0.003358923611478356,
+      0.0034868931938315125,
+      0.03318096248689972
+    ]
+  },
+  "holdout": {
+    "samples": 1204,
+    "torque_rmse_nm": [
+      4.925566578846926e-05,
+      2.874453386449287e-05,
+      1.2411085160634075e-05
+    ],
+    "accel_rmse_mps2": [
+      0.0035984423879426696,
+      0.0036045438826554596,
+      0.03522680198943326
+    ]
+  },
+  "axis_mass_holdout": {
+    "thrust_axis_body": [
+      4.7273294095845865e-07,
+      -1.1152816368974196e-07,
+      -0.999999999999882
+    ],
+    "mass_kg": 2.369098304229553,
+    "samples": 9632,
+    "force_rmse_n": [
+      0.00524937581419343,
+      0.004732983121884232,
+      0.1443861542814499
+    ]
+  },
+  "raw_time_holdout_independent": true,
+  "split_time_s": 112.616,
+  "total_adam_steps": 4800,
+  "com_z_identified": false,
+  "motor_response": {
+    "identified": true,
+    "tau": 0.002000012996555047,
+    "gain": 1.0000000000072053
+  },
+  "sampling": "Original PX4 IMU split first, interpolated within partitions to actual 250Hz ESC/command clock",
+  "angular_fitting_reference": "independent Position body pose derivative",
+  "development_quality_gate_passed": true,
+  "input_sha256": "56acca53573a4c4033474a62f93755cdc2c3bdd67000f0eae26d060f20ed9fec",
+  "capture_metadata_sha256": "05a80d779cbf27158809450086ef1007f19c082239713cf2a4942998d57a4852",
+  "real_PX4_Position": true,
+  "independent_reference": "simulated independent body tracking, Position-only; not P2 input",
+  "P2_updates": 0,
+  "source_sha256": {
+    "P3/px4_position_train.py": "f411c465fb2a59f5c4bbd1230e2dc500c1eb42b756db9856df69bcf773a9bf50",
+    "P3/installation_calibration.py": "0f9251783eb4b516d02dbf3e7030b0cecdd2db63204fa73ac88b7679b136a291",
+    "P3/body_calibration.py": "b0b0639cd64b67d472169f1e5c599e824a449e2bbbdc75c0b456598b10f43084",
+    "P3/position_identification.py": "fa0ee0fc9d2ba47abceec627b5d41bfcb176abfaf8c385a4a3079f82db27aa54",
+    "P3/train_body_calibration.py": "75e9d9bbb1da35369995edb19f7d220ed6478d47031c847339e4cc51dbad0b78",
+    "P3/actuator_calibration.py": "349609803309fe297edfed532d4bfb3b147c7ce5bd44ed484aa9aef4dd6a3578"
+  },
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  },
+  "checkpoint_sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "P3_observer_standardization_v1",
+  "quality_passed": true,
+  "alignment_audit_passed": true,
+  "checkpoint_sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7",
+  "alignment_audit_sha256": "1aeaf70d4c122d81d8eb57a1fff706eff6bd7af4fe9b0d5d049868465bc0579c",
+  "body_from_sensor": [
+    [
+      0.9999999849158193,
+      0.00016034954094723861,
+      -6.675617084629507e-05
+    ],
+    [
+      -0.0001603775002380131,
+      0.9999998993453661,
+      -0.0004190325952104539
+    ],
+    [
+      6.668897244274361e-05,
+      0.0004190432950774527,
+      0.9999999099776453
+    ]
+  ],
+  "body_from_virtual": [
+    [
+      0.9999999999998883,
+      2.6361518410375612e-14,
+      -4.7273294095845875e-07
+    ],
+    [
+      2.6361518410375612e-14,
+      0.9999999999999938,
+      1.1152816368974199e-07
+    ],
+    [
+      4.7273294095845875e-07,
+      -1.1152816368974199e-07,
+      0.9999999999998821
+    ]
+  ],
+  "gyro_bias_sensor": [
+    4.831154312030687e-05,
+    7.195506601724127e-07,
+    -5.6471456067890046e-05
+  ],
+  "bias_body": [
+    0.000991333020647844,
+    0.004483374331618286,
+    -0.00671558867519238
+  ],
+  "com_geometry": [
+    5.904656769299403e-10,
+    -1.0916905306478713e-09,
+    0.0
+  ],
+  "mass_kg": 2.369098304229553,
+  "motor_speed_gain": 1.0000000434886465,
+  "motor_tau_s": 0.002000012996555047,
+  "reference_physics": {
+    "mass_kg": 2.3,
+    "inertia": [
+      0.0126,
+      0.0055,
+      0.0158
+    ],
+    "rotor_dx_m": 0.12,
+    "rotor_dy_m": 0.12,
+    "gravity": 9.8,
+    "kf": 2.009e-05,
+    "km": 5.732e-07,
+    "poly": [
+      -387.3,
+      1269,
+      -32.5
+    ],
+    "motor_tau": 0.002,
+    "rotor_inertia": 8.8493e-06,
+    "include_gyro": true
+  },
+  "scope": "P3 sensor/reference/innovation standardization; PX4 owns disturbance rejection; no torque feedforward field",
+  "additional_Actor_inputs": 0,
+  "PX4_firmware_modified": false
+}

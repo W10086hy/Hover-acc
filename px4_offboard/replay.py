@@ -23,6 +23,7 @@ def main():
     native=protocol.get('real_PX4_process') is False
     stock=protocol.get('stock_px4',False)
     platform='GitHub原版MuJoCo＋P2/P3内环' if native else ('默认 PX4 Offboard＋MuJoCo' if stock else 'PX4 Offboard＋MuJoCo')
+    platform=protocol.get('replay_platform_label',platform)
     override=protocol['config'].get('validation_physics_override')
     physics_note=f"线缆轴向刚度：EA {override['old_EA_n']:g}→{override['new_EA_n']:g} N；绳长与阻尼不变" if override else ''
     height=float(protocol['config']['stage']['controller']['target_height_m'])
@@ -32,6 +33,7 @@ def main():
     if protocol['config'].get('validation_height_override'):
         h=protocol['config']['validation_height_override']
         physics_note=f"EA {protocol['config']['rope']['axial_rigidity_n']:g} N；未拉伸绳长 {h['rest_length_m']:.2f} m；航向参考固定 0°"
+    physics_note=protocol.get('replay_physics_note',physics_note)
     if native:
         import torch
         t=trace['times'];x=trace['state'][:,0]

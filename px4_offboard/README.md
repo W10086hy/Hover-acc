@@ -2,6 +2,8 @@
 
 原厂 PX4 多旋翼的 Position → Offboard 接管试验与训练适配记录单独存放。[默认 PX4 接管试验](stock_transfer/README.md) · [30 秒 BPTT 迁移与复测](../P2/results/px4_transfer/README.md)
 
+新增真实 MAVROS 加速度入口 `launch_acceleration.sh`／`.cmd` 与双接口 SITL 一键入口 `launch_dual_sitl.sh`／`.cmd`，旧入口保留。新对照用同一 Actor13，分别发送水平加速度＋高度目标，或经兼容适配器发送角速度＋推力；P3 关闭。[运行与消息定义](acceleration_dual/README.md) · [逐例开发验证](acceleration_dual/report.md)
+
 本目录存放 PX4 SITL、MAVLink 机载遥测、角速度与总推力 Offboard 接口及 MuJoCo 联调代码。PX4 使用自身 EKF 和角速度内环。P3 补偿通过垂向力和等效力矩前馈接入。 [Actor31 结果](../track/drift8/README.md)
 
 通用 P3 的采集入口为原厂接管试验的 `--record-position-p3`。PX4 在 Position 段保持控制权，采集器在应用下一步油门前记录本步 IMU、ESC 转速和上一时段实际油门。输出供 P3 辨识 P2 标准机体与当前飞机的差异。 [Position 辨识入口](../P3/README.md#position-辨识入口)

@@ -1,0 +1,123 @@
+{
+  "cases": [
+    {
+      "batch": "full_01",
+      "case": "acceleration_wind1",
+      "actual_rmse_3d_h_xy_m": [
+        1.8399206483453505,
+        0.25726643371019003,
+        1.8218457602919123
+      ],
+      "actual_s": 76.688,
+      "any_motor_saturation_fraction": 0.697058209889422,
+      "last10s_saturation_fraction": 0.7904,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    },
+    {
+      "batch": "full_01",
+      "case": "rate_thrust_wind1",
+      "actual_rmse_3d_h_xy_m": [
+        0.7967692246597983,
+        0.03105677949724036,
+        0.7961637229943574
+      ],
+      "actual_s": 120.0,
+      "any_motor_saturation_fraction": 0.6585,
+      "last10s_saturation_fraction": 0.6608,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    },
+    {
+      "batch": "full_01",
+      "case": "acceleration_wind5",
+      "actual_rmse_3d_h_xy_m": [
+        1.9784386156805445,
+        0.10956023103200198,
+        1.975402721419651
+      ],
+      "actual_s": 120.0,
+      "any_motor_saturation_fraction": 0.7483,
+      "last10s_saturation_fraction": 0.7468,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    },
+    {
+      "batch": "full_01",
+      "case": "rate_thrust_wind5",
+      "actual_rmse_3d_h_xy_m": [
+        1.577736746846358,
+        0.035428888466880915,
+        1.5773389097500035
+      ],
+      "actual_s": 120.0,
+      "any_motor_saturation_fraction": 0.6751666666666667,
+      "last10s_saturation_fraction": 0.6748,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    },
+    {
+      "batch": "full_02_mavros",
+      "case": "acceleration_wind1",
+      "actual_rmse_3d_h_xy_m": [
+        2.474906672399868,
+        0.43958885662475056,
+        2.435554284802688
+      ],
+      "actual_s": 22.384,
+      "any_motor_saturation_fraction": 0.731951393852752,
+      "last10s_saturation_fraction": 0.7888,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    },
+    {
+      "batch": "full_02_mavros",
+      "case": "rate_thrust_wind1",
+      "actual_rmse_3d_h_xy_m": [
+        2.1717485101663017,
+        0.44451134809687537,
+        2.1257707432417656
+      ],
+      "actual_s": 74.736,
+      "any_motor_saturation_fraction": 0.7249518304431599,
+      "last10s_saturation_fraction": 0.8428,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    },
+    {
+      "batch": "full_02_mavros",
+      "case": "acceleration_wind5",
+      "actual_rmse_3d_h_xy_m": [
+        2.271557937445696,
+        0.32409437552731535,
+        2.248318994031786
+      ],
+      "actual_s": 120.0,
+      "any_motor_saturation_fraction": 0.6949,
+      "last10s_saturation_fraction": 0.7532,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    },
+    {
+      "batch": "full_02_mavros",
+      "case": "rate_thrust_wind5",
+      "actual_rmse_3d_h_xy_m": [
+        1.7706552369103572,
+        0.12299202187048669,
+        1.7663784788527863
+      ],
+      "actual_s": 120.0,
+      "any_motor_saturation_fraction": 0.6861666666666667,
+      "last10s_saturation_fraction": 0.6904,
+      "source": "actual PX4 HIL_ACTUATOR_CONTROLS four channels; all actual flight samples, no failure padding"
+    }
+  ],
+  "asset_error": {
+    "config_mass_kg": 2.3,
+    "XML_mass_kg": 2.369,
+    "config_J": [
+      0.0126,
+      0.0055,
+      0.0158
+    ],
+    "XML_J": [
+      0.012852,
+      0.00561,
+      0.016116
+    ]
+  },
+  "scope": "read-only diagnosis; original frozen scores unchanged"
+}

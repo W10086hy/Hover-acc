@@ -1,5 +1,13 @@
 # 当前工程整理与核验
 
+2026-11-16 按用户要求整理最新 PX4 P3→P2 阶段，删除 250 个已替代调试／中间文件，合计 872,819,038 字节（约 832.4 MiB）。早期 full_01/full_02、15秒预检、已弃用拟合和维护前试跑合并为历史统计及唯一源码快照；最新八条闭环、最新 P3 参数和 Adam、完整 Position 原始数据保持不变。删除 PX4 临时 dataman、重复参数备份及重复回显。原生三机 P3 的139份保护文件和历史最终成果继续保留。没有训练或新增仿真。
+
+保留结果：P3→P2 full_05 四条120s（安全4/4、名义RMSE2/4、稳态2/4），同内环 P2 full_03 四条完整计划时域证据与失败计罚；两组各四份动图。弱风漂移仍未解决，整理上传不构成性能验收。
+
+[本轮清理与保护清单](retention_px4_observer_20261116.json) · [历史开发统计](../px4_offboard/acceleration_dual/history/development_20261116.json) · [最新闭环与四份动图](../px4_offboard/acceleration_dual/observer_report.md) · [最新P3训练与Adam](../P3/results/px4_position_20261116/README.md)
+
+本轮完整回归262项：261项通过、1项平台跳过；独立整理复核未发现Critical/Important问题，已修正旧队列状态字段。上传仍指定 Hover-acc/main，使用普通快进，不改写远端历史。最新核验见[verification.json](verification.json)，本轮回归记录见[regression_publish_20261116.txt](regression_publish_20261116.txt)。
+
 2026-11-15 按用户新授权整理安装误差 P3 阶段，删除 327 个已替代候选／调试文件，共 70,356,393 字节。保留最新三架飞机的 P3 参数和 Adam、原始 Position 遥测、执行器侧文件、24 条完整 120 秒配对证据、两份完整回放，以及配置和对应源码快照。上一阶段已索引的最终零偏／质心模型及其最终对照、历史 P2／P3／track／PX4 必要依赖保持不变。早期候选、未选 IMU 1–2°方案、烟雾测试和旧补偿变体的统计合并归档；本轮新授权替代此前中间产物的临时保留。没有训练或新增完整仿真。
 
 [本轮删除与保护清单](retention_p3_installation_20261115.json) · [合并历史统计](../P3/results/history/calibration_development_20261115.json) · [最新训练与仿真](../P3/results/installation_20261115/README.md) · [参数与 Adam 索引](../P3/models.json)

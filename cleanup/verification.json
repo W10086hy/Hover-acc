@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "verified_files": 1261,
+  "verified_files": 1524,
   "source_snapshot_matches": true,
   "changed_sources": [],
   "actor31_safe_120s_cases": 9,
@@ -113,5 +113,31 @@
       }
     },
     "formal_final_acceptance": false
+  },
+  "dual_px4_interfaces": {
+    "archived_development_cases": 8,
+    "raw_cases_verified_before_cleanup": true,
+    "archived_safe_completed": 5,
+    "archived_rmse_passed": 0,
+    "latest_evidence": "full_05_p3_observer; verified by P3.verify_px4_position",
+    "removed_intermediate_files": 250,
+    "protected_files": 316,
+    "models_unchanged": true,
+    "formal_final_acceptance": false
+  },
+  "PX4_Position_P3": {
+    "real_PX4_Position_120s": true,
+    "P3_holdout_passed": true,
+    "highrate_motor_alignment": true,
+    "calibration_sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7",
+    "matched_P2_cases": 4,
+    "matched_P2_safe": 3,
+    "P2_P3_observer_PX4_tested": true,
+    "P2_P3_observer_cases": 4,
+    "P2_P3_safe": 4,
+    "P2_P3_settled": 2,
+    "P2_P3_nominal_rmse_passed": 2,
+    "P2_P3_full_compensation_validated": false,
+    "accepted_for_flight": false
   }
 }

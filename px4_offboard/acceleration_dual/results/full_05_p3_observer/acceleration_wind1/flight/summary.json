@@ -1,0 +1,108 @@
+{
+  "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+  "stock_rcS": true,
+  "stock_airframe": "10016_none_iris",
+  "simulation_motor_order": [
+    1,
+    4,
+    3,
+    2
+  ],
+  "GPS_for_PX4_position_reference": true,
+  "GPS_policy_input": false,
+  "parameters_overridden": true,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "simulated_motor_tau_s": 0.002,
+  "site_pressure_hpa": 1013.25,
+  "stock_thrust_conversion": false,
+  "sensor_seed": 2026114501,
+  "requested_post_duration_s": 120.0,
+  "wind_mps": 1.0,
+  "wind_ramp_s": 0.0,
+  "hold_position": false,
+  "residual_enabled": false,
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "residual_sha256": null,
+  "release_s": 27.900000000000002,
+  "stable_position_since_s": 36.104,
+  "prestream_s": 39.104,
+  "switch_heartbeat_s": 42.472,
+  "post_duration_s": 120.0,
+  "error": null,
+  "policy_ticks": [],
+  "observed_wire_messages": {
+    "COMMAND_LONG": 1,
+    "HEARTBEAT": 1,
+    "HIL_ACTUATOR_CONTROLS": 40351
+  },
+  "acks": [
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.476
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.484
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.492
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.5
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.508
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.516
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.524
+    },
+    {
+      "command": 400,
+      "result": 0,
+      "time_s": 24.008
+    },
+    {
+      "command": 176,
+      "result": 0,
+      "time_s": 41.504
+    },
+    {
+      "command": 176,
+      "result": 0,
+      "time_s": 42.008
+    }
+  ],
+  "events": [],
+  "last_received_times": {
+    "HIGHRES_IMU": 162.468,
+    "ATTITUDE_QUATERNION": 162.468,
+    "ALTITUDE": 162.468,
+    "EXTENDED_SYS_STATE": 162.468,
+    "HEARTBEAT": 162.468
+  },
+  "last_gyro_timestamp": null,
+  "takeoff_baro_zero_m": 0.00018739700317382812,
+  "takeoff_baro_locked_s": 3.468,
+  "policy_baro_heights_m": [],
+  "hold_target_height_m": 4.93896484375,
+  "hold_height_locked_s": 42.468,
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  }
+}
