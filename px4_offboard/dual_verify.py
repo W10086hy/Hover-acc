@@ -24,14 +24,17 @@ def verify():
         source=entry['source'];assert digest(project/source['path'])==source['sha256']
         with ZipFile(project/source['path']) as z:assert z.testzip() is None
     for r in retention['removed_files']:assert not (project/r['path']).exists()
-    for r in retention['protected_files']:assert digest(project/r['path'])==r['sha256']
+    from cleanup.current_retention import verify as verify_current
+    retired=set(verify_current()['superseded_protected_files'])
+    for r in retention['protected_files']:
+        if r['path'] not in retired:assert digest(project/r['path'])==r['sha256']
     for p in (base/'history/sources').glob('*.zip'):
         assert digest(p)==p.stem
         with ZipFile(p) as z:assert z.testzip() is None
     return dict(archived_development_cases=8,raw_cases_verified_before_cleanup=True,
         archived_safe_completed=sum(e['audit']['safe_completed'] for e in archive['cases']),
-        archived_rmse_passed=0,latest_evidence='full_05_p3_observer; verified by P3.verify_px4_position',
-        removed_intermediate_files=retention['removed_count'],protected_files=len(retention['protected_files']),
+        archived_rmse_passed=0,latest_evidence='unified_bounded_20261117; verified by P3.verify_unified',
+        removed_intermediate_files=retention['removed_count'],protected_files=len(retention['protected_files'])-len(retired),explicitly_retired_protected_files=len(retired),
         models_unchanged=True,formal_final_acceptance=False)
 
 

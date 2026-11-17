@@ -1,0 +1,66 @@
+[rospy.client][INFO] 2026-11-17 16:05:50,400: init_node, name[/hover_dual_interface], pid[29455]
+[xmlrpc][INFO] 2026-11-17 16:05:50,400: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-17 16:05:50,400: Started XML-RPC server [http://s-virtual-machine:33685/]
+[rospy.init][INFO] 2026-11-17 16:05:50,401: ROS Slave URI: [http://s-virtual-machine:33685/]
+[rospy.impl.masterslave][INFO] 2026-11-17 16:05:50,401: _ready: http://s-virtual-machine:33685/
+[rospy.registration][INFO] 2026-11-17 16:05:50,401: Registering with master node http://127.0.0.1:11315
+[xmlrpc][INFO] 2026-11-17 16:05:50,401: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2026-11-17 16:05:50,501: registered with master
+[rospy.rosout][INFO] 2026-11-17 16:05:50,501: initializing /rosout core topic
+[rospy.rosout][INFO] 2026-11-17 16:05:50,502: connected to core topic /rosout
+[rospy.simtime][INFO] 2026-11-17 16:05:50,503: initializing /clock core topic
+[rospy.simtime][INFO] 2026-11-17 16:05:50,504: connected to core topic /clock
+[rospy.internal][INFO] 2026-11-17 16:05:50,750: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:50,926: topic[/clock] adding connection to [http://s-virtual-machine:33685/], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:50,952: topic[/clock] adding connection to [/hover_dual_interface], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:51,053: topic[/clock] adding connection to [/rosout], count 1
+[rospy.internal][INFO] 2026-11-17 16:05:52,541: topic[/clock] adding connection to [/mavros], count 2
+[rospy.internal][INFO] 2026-11-17 16:05:52,568: topic[/clock] adding connection to [/hover_acceleration_policy], count 3
+[rospy.internal][INFO] 2026-11-17 16:05:52,653: topic[/hover/policy_ready] adding connection to [http://s-virtual-machine:33735/], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:52,654: topic[/hover/esc_feedback] adding connection to [/hover_acceleration_policy], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:52,759: topic[/mavros/local_position/pose] adding connection to [http://s-virtual-machine:33795/], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:52,969: topic[/mavros/state] adding connection to [http://s-virtual-machine:33795/], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:53,069: topic[/mavros/setpoint_raw/local] adding connection to [/mavros], count 0
+[rospy.internal][INFO] 2026-11-17 16:05:53,070: topic[/mavros/setpoint_raw/attitude] adding connection to [/mavros], count 0
+[rospy.core][INFO] 2026-11-17 16:09:16,442: signal_shutdown [run completed]
+[rospy.internal][INFO] 2026-11-17 16:09:16,446: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2026-11-17 16:09:16,447: topic[/mavros/setpoint_raw/local] removing connection to /mavros
+[rospy.internal][INFO] 2026-11-17 16:09:16,447: topic[/mavros/setpoint_raw/attitude] removing connection to /mavros
+[rospy.internal][INFO] 2026-11-17 16:09:16,448: topic[/hover/esc_feedback] removing connection to /hover_acceleration_policy
+[rospy.internal][INFO] 2026-11-17 16:09:16,449: topic[/clock] removing connection to http://s-virtual-machine:33685/
+[rospy.internal][INFO] 2026-11-17 16:09:16,449: topic[/clock] removing connection to /hover_dual_interface
+[rospy.internal][INFO] 2026-11-17 16:09:16,450: topic[/clock] removing connection to /rosout
+[rospy.internal][INFO] 2026-11-17 16:09:16,450: topic[/clock] removing connection to /mavros
+[rospy.internal][INFO] 2026-11-17 16:09:16,451: topic[/clock] removing connection to /hover_acceleration_policy
+[rospy.internal][INFO] 2026-11-17 16:09:16,451: topic[/mavros/local_position/pose] removing connection to http://s-virtual-machine:33795/
+[rospy.internal][INFO] 2026-11-17 16:09:16,452: topic[/mavros/local_position/pose] removing connection to http://s-virtual-machine:33795/
+[rospy.topics][ERROR] 2026-11-17 16:09:16,452: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2026-11-17 16:09:16,453: topic[/mavros/state] removing connection to http://s-virtual-machine:33795/
+[rospy.internal][INFO] 2026-11-17 16:09:16,453: topic[/mavros/state] removing connection to http://s-virtual-machine:33795/
+[rospy.topics][ERROR] 2026-11-17 16:09:16,453: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2026-11-17 16:09:16,454: topic[/hover/policy_ready] removing connection to http://s-virtual-machine:33735/
+[rospy.internal][INFO] 2026-11-17 16:09:16,454: topic[/hover/policy_ready] removing connection to http://s-virtual-machine:33735/
+[rospy.topics][ERROR] 2026-11-17 16:09:16,454: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/topics.py", line 326, in close
+    c.close()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_base.py", line 858, in close
+    self.socket.close()
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.impl.masterslave][INFO] 2026-11-17 16:09:16,459: run completed
+[rospy.core][INFO] 2026-11-17 16:09:20,415: signal_shutdown [atexit]

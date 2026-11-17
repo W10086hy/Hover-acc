@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "verified_files": 1524,
+  "verified_files": 1421,
   "source_snapshot_matches": true,
   "changed_sources": [],
   "actor31_safe_120s_cases": 9,
@@ -119,9 +119,10 @@
     "raw_cases_verified_before_cleanup": true,
     "archived_safe_completed": 5,
     "archived_rmse_passed": 0,
-    "latest_evidence": "full_05_p3_observer; verified by P3.verify_px4_position",
+    "latest_evidence": "unified_bounded_20261117; verified by P3.verify_unified",
     "removed_intermediate_files": 250,
-    "protected_files": 316,
+    "protected_files": 132,
+    "explicitly_retired_protected_files": 184,
     "models_unchanged": true,
     "formal_final_acceptance": false
   },
@@ -129,6 +130,7 @@
     "real_PX4_Position_120s": true,
     "P3_holdout_passed": true,
     "highrate_motor_alignment": true,
+    "pre_unified_raw_retired": true,
     "calibration_sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7",
     "matched_P2_cases": 4,
     "matched_P2_safe": 3,
@@ -139,5 +141,267 @@
     "P2_P3_nominal_rmse_passed": 2,
     "P2_P3_full_compensation_validated": false,
     "accepted_for_flight": false
+  },
+  "unified_Position_P3": {
+    "passed": true,
+    "joint_models": 4,
+    "P2_updates": 0,
+    "output_dim": 9,
+    "source_parameter_decomposition": false,
+    "models": [
+      {
+        "aircraft": "nominal_install",
+        "checkpoint_sha256": "67fd5fc6d152a0ad4061fe7bb792b2cd9534ff0a655e80a27ec3e6e7140592d8",
+        "capture_conditions": {
+          "mode": "local_Position_surrogate",
+          "wind_mps": 0.0,
+          "tether_force_disabled": true,
+          "P2_used": false
+        },
+        "sensor_signal_gain_preserved": true,
+        "torque_limit_nm": [
+          0.21070826873554602,
+          0.29569072798917484,
+          0.001166040640723461
+        ],
+        "holdout": {
+          "samples": 1345,
+          "sensor_before_rmse": [
+            0.0022058190911633064,
+            0.004350503419392623,
+            0.002509814353806402,
+            0.028739072699712088,
+            0.4572525277341955,
+            0.21871114124082564
+          ],
+          "gyro_rmse_radps": [
+            0.0005160705406100504,
+            0.0005265678834482284,
+            0.0005303824052099542
+          ],
+          "force_rmse_mps2": [
+            0.024454005234985993,
+            0.025267996462522063,
+            0.027132133873490335
+          ],
+          "torque_before_rmse_nm": [
+            0.1511741058307266,
+            0.21201339464515392,
+            0.0003440218152620162
+          ],
+          "torque_after_rmse_nm": [
+            9.798619032993654e-05,
+            6.668197402882633e-05,
+            0.00010524514145700757
+          ],
+          "source_time_range_s": [
+            28.14,
+            42.0
+          ]
+        }
+      },
+      {
+        "aircraft": "light_install",
+        "checkpoint_sha256": "a719647ae0765312761e6c51fe7eca23e6b5b7a9b03faf8f617e1519eb111416",
+        "capture_conditions": {
+          "mode": "local_Position_surrogate",
+          "wind_mps": 0.0,
+          "tether_force_disabled": true,
+          "P2_used": false
+        },
+        "sensor_signal_gain_preserved": true,
+        "torque_limit_nm": [
+          0.2001377974514073,
+          0.1328532702284309,
+          0.0011288111199156004
+        ],
+        "holdout": {
+          "samples": 1345,
+          "sensor_before_rmse": [
+            0.0038271803742922533,
+            0.0056068877525388165,
+            0.0038358083129501936,
+            0.17183032571697396,
+            0.6497696842992801,
+            0.1624227443890146
+          ],
+          "gyro_rmse_radps": [
+            0.0005369790113366319,
+            0.0005368957815711419,
+            0.0005259324906604944
+          ],
+          "force_rmse_mps2": [
+            0.025986630088704745,
+            0.02502881919936731,
+            0.025962588833374663
+          ],
+          "torque_before_rmse_nm": [
+            0.1437705631229238,
+            0.0953101826236908,
+            0.0003875836920999505
+          ],
+          "torque_after_rmse_nm": [
+            0.00013745231385916553,
+            5.779867567498619e-05,
+            0.0001011650734766181
+          ],
+          "source_time_range_s": [
+            28.14,
+            42.0
+          ]
+        }
+      },
+      {
+        "aircraft": "heavy_install",
+        "checkpoint_sha256": "c922642e2b3fb4411f16aa5eae4a58df6479ce2518c1598381d7544b4f7221d0",
+        "capture_conditions": {
+          "mode": "local_Position_surrogate",
+          "wind_mps": 0.0,
+          "tether_force_disabled": true,
+          "P2_used": false
+        },
+        "sensor_signal_gain_preserved": true,
+        "torque_limit_nm": [
+          0.22119134073712854,
+          0.46257934708871506,
+          0.004506568038051643
+        ],
+        "holdout": {
+          "samples": 1345,
+          "sensor_before_rmse": [
+            0.005973444677433653,
+            0.006488135725877612,
+            0.004576156245248597,
+            0.3856658426374381,
+            0.3063510558372422,
+            0.15657965836313803
+          ],
+          "gyro_rmse_radps": [
+            0.0005167942407329425,
+            0.000508792227281493,
+            0.000513946950044702
+          ],
+          "force_rmse_mps2": [
+            0.02455042242362312,
+            0.025360175177533504,
+            0.026017888141402018
+          ],
+          "torque_before_rmse_nm": [
+            0.15825179253066463,
+            0.3322458518380528,
+            0.001234209040559885
+          ],
+          "torque_after_rmse_nm": [
+            7.477647165800926e-05,
+            7.850466977914414e-05,
+            0.00015260580792850496
+          ],
+          "source_time_range_s": [
+            28.14,
+            42.0
+          ]
+        }
+      },
+      {
+        "aircraft": "px4_position",
+        "checkpoint_sha256": "d1bf4b95de309fef43035ca0c45bcac52d5e03a8a0a1aa7a5435570a510378e5",
+        "capture_conditions": {
+          "mode": "PX4_Position",
+          "wind_mps": 0.0,
+          "tether_force_disabled": true,
+          "P2_used": false
+        },
+        "sensor_signal_gain_preserved": true,
+        "torque_limit_nm": [
+          0.003251722637158201,
+          0.0009341821487952087,
+          0.00036698099192374945
+        ],
+        "holdout": {
+          "samples": 9634,
+          "sensor_before_rmse": [
+            0.0009272300276175636,
+            0.0009391541797245972,
+            0.0007481551384268289,
+            0.0049255123591539504,
+            0.0049187354356883435,
+            0.051905053220528206
+          ],
+          "gyro_rmse_radps": [
+            0.0009260304880632696,
+            0.0009388587708261898,
+            0.0007454419512708773
+          ],
+          "force_rmse_mps2": [
+            0.004910250587686536,
+            0.004927377472627226,
+            0.05145524174023276
+          ],
+          "torque_before_rmse_nm": [
+            0.0003479131021166517,
+            0.0002353711260882531,
+            9.125528306100849e-05
+          ],
+          "torque_after_rmse_nm": [
+            0.0002442553031623396,
+            0.00016661867197571346,
+            6.936559764110772e-05
+          ],
+          "source_time_range_s": [
+            112.616,
+            151.548
+          ]
+        }
+      }
+    ],
+    "PX4_acceleration": {
+      "cases": [
+        {
+          "wind_mps": 1,
+          "safe_completed": true,
+          "rmse_3d_h_xy_m": [
+            0.5322804350381598,
+            0.008145065677041449,
+            0.5322181126469949
+          ],
+          "evaluation_horizon_s": 120.0,
+          "actual_post_samples": 30000,
+          "physical_post_duration_s": 120.0,
+          "penalized_remaining_samples": 0,
+          "settled": true,
+          "tail": {
+            "complete": true,
+            "horizontal_std_m": 0.07173093727913545,
+            "speed_rms_mps": 0.012730795518581398,
+            "horizontal_drift_mps": 0.007807075696027378
+          },
+          "failure_aggregation": "actual first failure state; remaining xy6m/h4m"
+        },
+        {
+          "wind_mps": 5,
+          "safe_completed": true,
+          "rmse_3d_h_xy_m": [
+            1.357480140073877,
+            0.009084281752600615,
+            1.3574497436443207
+          ],
+          "evaluation_horizon_s": 120.0,
+          "actual_post_samples": 30000,
+          "physical_post_duration_s": 120.0,
+          "penalized_remaining_samples": 0,
+          "settled": true,
+          "tail": {
+            "complete": true,
+            "horizontal_std_m": 0.014020598902567403,
+            "speed_rms_mps": 0.006610981920279323,
+            "horizontal_drift_mps": 0.00034909884111222837
+          },
+          "failure_aggregation": "actual first failure state; remaining xy6m/h4m"
+        }
+      ],
+      "safe_completed": 2,
+      "settled": 2,
+      "formal_final_acceptance": false
+    }
   }
 }

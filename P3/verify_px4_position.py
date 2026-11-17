@@ -5,7 +5,6 @@ import hashlib
 import json
 import numpy as np
 import torch
-from PIL import Image
 from P2.hover_bptt.io import read,digest
 
 
@@ -41,30 +40,27 @@ def verify():
     for key,source in [('safe_completed','safe_completed'),('nominal_rmse_passed','rmse_passed'),('settled','settled')]:
         assert observer[key]==sum(c['audit'][source] for c in observer['cases'])
     assert observer['engineering_rmse_passed']==sum(c['engineering_rmse_passed'] for c in observer['cases'])
-    for entry in matrix['cases']+observer['cases']:
-        folder=base/entry['path'];a=read(folder/'audit.json');assert a==entry['audit']
+    from cleanup.current_retention import verify as verify_current
+    ledger=verify_current();archive=read(repo/ledger['archive'])
+    assert archive['raw_evidence_verified_before_removal']
+    assert archive['matched']==matrix and archive['observer']==observer
+    assert len(archive['cases'])==8
+    previous=archive['pre_removal_verification']
+    assert previous['matched_P2_cases']==4 and previous['matched_P2_safe']==3
+    assert previous['P2_P3_observer_cases']==4 and previous['P2_P3_safe']==4
+    originals={entry['path']:entry for entry in matrix['cases']+observer['cases']}
+    assert len(originals)==8 and {entry['original_path'] for entry in archive['cases']}==originals.keys()
+    for entry in archive['cases']:
+        original=originals[entry['original_path']]
+        a=entry['audit'];assert a==original['audit']
         assert a['px4_param_overrides']=={'MC_PITCHRATE_K':.1} and a['controller_target_logged']
-        for name,sha in a['artifact_sha256'].items():assert digest(folder/name)==sha
-        with ZipFile(folder/'frozen_source.zip') as z:assert z.testzip() is None
-        if a.get('P3_enabled'):
-            runtime=read(folder/'policy_runtime.json')
-            assert digest(folder/'policy_runtime.json')==entry['runtime_sha256']
-            assert runtime['P3_enabled'] and runtime['p3_checkpoint_sha256']==r['checkpoint_sha256']
-            assert not runtime['physical_torque_feedforward_sent'] and runtime['calibration_samples']==2000
-            assert a['p3_config_sha256']==digest(root/'runtime/observer.json')==digest(base/'p3_observer.json')
-            assert a['controller_sha256']==observer['controller_sha256']
-        raw=np.load(folder/'flight/trace.npy');summary=read(folder/'flight/summary.json');start=summary['switch_heartbeat_s']
-        raw=raw[(raw[:,0]>=start-1e-7)&(raw[:,0]<start+120-1e-7)];err=raw[:,3:6]-[0,0,-a['target_baro_height_m']]
-        missing=30000-len(raw);h=(np.sum(err[:,2]**2)+16*missing)/30000;xy=(np.sum(err[:,:2]**2)+36*missing)/30000
-        np.testing.assert_allclose(np.sqrt([h+xy,h,xy]),a['rmse_3d_h_xy_m'],rtol=1e-12)
-        m=read(folder/'replay/manifest.json')
-        for name,sha in m['source_sha256'].items():assert digest(folder/name)==sha
-        assert digest(folder/'replay/flight.gif')==m['GIF_sha256']
-        assert m['equal_xyz_scale'] and m['playback_speed']==12 and m['physics_steps']==0
-        with Image.open(folder/'replay/flight.gif') as image:assert image.n_frames==m['frames']
-        np.testing.assert_allclose(m['end_s'],a['physical_post_duration_s'],atol=1e-8)
+        assert a['evaluation_horizon_s']==120
+        assert a['actual_post_samples']+a['penalized_remaining_samples']==30000
+        source=entry['source'];assert digest(repo/source['path'])==source['sha256']
+        with ZipFile(repo/source['path']) as z:assert z.testzip() is None
+    # Older raw closed loops are explicitly retired; current Position input remains raw.
     return dict(real_PX4_Position_120s=True,P3_holdout_passed=True,highrate_motor_alignment=True,
-        calibration_sha256=r['checkpoint_sha256'],matched_P2_cases=4,
+        pre_unified_raw_retired=True,calibration_sha256=r['checkpoint_sha256'],matched_P2_cases=4,
         matched_P2_safe=sum(v['audit']['safe_completed'] for v in matrix['cases']),
         P2_P3_observer_PX4_tested=True,P2_P3_observer_cases=observer['case_count'],
         P2_P3_safe=observer['safe_completed'],P2_P3_settled=observer['settled'],

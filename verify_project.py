@@ -294,6 +294,8 @@ def main():
     report['dual_px4_interfaces'] = verify_dual()
     from P3.verify_px4_position import verify as verify_position_p3
     report['PX4_Position_P3'] = verify_position_p3()
+    from P3.verify_unified import verify as verify_unified_p3
+    report['unified_Position_P3'] = verify_unified_p3()
     if args.write_report:
         from P2.hover_bptt.io import write
         write(ROOT / 'cleanup/verification.json', report)

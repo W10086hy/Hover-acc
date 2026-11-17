@@ -1,38 +1,19 @@
-# 当前工程整理与核验
+# 工程整理与完整性核验
 
-2026-11-16 按用户要求整理最新 PX4 P3→P2 阶段，删除 250 个已替代调试／中间文件，合计 872,819,038 字节（约 832.4 MiB）。早期 full_01/full_02、15秒预检、已弃用拟合和维护前试跑合并为历史统计及唯一源码快照；最新八条闭环、最新 P3 参数和 Adam、完整 Position 原始数据保持不变。删除 PX4 临时 dataman、重复参数备份及重复回显。原生三机 P3 的139份保护文件和历史最终成果继续保留。没有训练或新增仿真。
+2026-11-17按用户要求清除已替代脚本和开发中间文件。本轮删除213个文件、583,696,215字节（556.7MiB），含11个一次性脚本和full_03/full_05八组旧开发试验的轨迹、日志与回放。删除前逐例核验，统计和唯一源码合并归档。
 
-保留结果：P3→P2 full_05 四条120s（安全4/4、名义RMSE2/4、稳态2/4），同内环 P2 full_03 四条完整计划时域证据与失败计罚；两组各四份动图。弱风漂移仍未解决，整理上传不构成性能验收。
+[逐文件删除与保护清单](retention_current_only_20261117.json) · [历史统计与删除前核验](../px4_offboard/acceleration_dual/history/pre_unified_20261117.json) · [退役脚本及计划源码包](history_20261117/retired_sources.zip)
 
-[本轮清理与保护清单](retention_px4_observer_20261116.json) · [历史开发统计](../px4_offboard/acceleration_dual/history/development_20261116.json) · [最新闭环与四份动图](../px4_offboard/acceleration_dual/observer_report.md) · [最新P3训练与Adam](../P3/results/px4_position_20261116/README.md)
+保留最新统一P3四模型及Adam、四份Position训练原始数据、冻结P2 Actor13/Adam、两组完整120s闭环及两份12倍速回放，保护文件218份。此前原生P3保护139份和最新统一P3保护90份不变。此前316份保护中，仅184份已替代full_03/full_05文件由本轮清单明确退役。历史已接受P2/P3/track/PX4成果及运行/回归依赖保留。
 
-本轮完整回归262项：261项通过、1项平台跳过；独立整理复核未发现Critical/Important问题，已修正旧队列状态字段。上传仍指定 Hover-acc/main，使用普通快进，不改写远端历史。最新核验见[verification.json](verification.json)，本轮回归记录见[regression_publish_20261116.txt](regression_publish_20261116.txt)。
+[最新训练与仿真](../P3/results/unified_20261117/README.md) · [模型索引](../P3/models.json) · [工程清单](manifest.json) · [容量摘要](package_summary.json) · [核验结果](verification.json)
 
-2026-11-15 按用户新授权整理安装误差 P3 阶段，删除 327 个已替代候选／调试文件，共 70,356,393 字节。保留最新三架飞机的 P3 参数和 Adam、原始 Position 遥测、执行器侧文件、24 条完整 120 秒配对证据、两份完整回放，以及配置和对应源码快照。上一阶段已索引的最终零偏／质心模型及其最终对照、历史 P2／P3／track／PX4 必要依赖保持不变。早期候选、未选 IMU 1–2°方案、烟雾测试和旧补偿变体的统计合并归档；本轮新授权替代此前中间产物的临时保留。没有训练或新增完整仿真。
-
-[本轮删除与保护清单](retention_p3_installation_20261115.json) · [合并历史统计](../P3/results/history/calibration_development_20261115.json) · [最新训练与仿真](../P3/results/installation_20261115/README.md) · [参数与 Adam 索引](../P3/models.json)
-
-发布前全工程回归共 234 项，233 项通过、1 项跳过；最新与前一已索引最终配对均重新进行完整数值审计，模型／Adam、原始遥测、执行器增益及回放哈希通过核对。[回归记录](regression_publish_20261115.txt) · [严格完整性核验](verification.json)
-
-上传目标为 [W10086hy/Hover-acc](https://github.com/W10086hy/Hover-acc)。本地 `origin` 保留旧 Hover-BPTT 配置，本轮在基于 Hover-acc/main 的 `codex/retain-latest-p3-20261115` 分支整理，向 Hover-acc/main 普通快进推送，不改写远端历史。
-
-2026-11-13 清理当前加速度悬停开发中的旧候选、对照仿真和调试产物。保留累计 13 次更新的 Actor 与 Adam、对应训练记录、80 条恒风和 20 条时变风完整证据、三份代表回放和复现协议。其余已单独保留的 Actor37、P3、PX4 与跟踪成果继续按各阶段清单管理。 [保留结果](../P2/results/acceleration_hover/README.md) · [逐文件清理清单](retention_acceleration_20261113.json)
-
-2026-11-10 清理默认 PX4 迁移阶段的 148 份中间文件，释放 572,385,034 字节。完整保留最后一组高度零点复测、所用 Actor38、最近训练但未入选的 Actor39、P3 残差和各自 Adam。此前接管和强弱风的调试结果合并为统计。工程约定保护的 Actor37、P3 和追踪基线继续归档。[最近结果](../px4_offboard/stock_transfer/height_reference/README.md) · [删除与保护清单](retention_stock_px4_20261110.json) · [历史统计](../px4_offboard/stock_transfer/history_statistics.json)
-
-此前归档的 5 m PX4 小幅时变风包含两条 120 秒轨迹、审计与回放。较大变幅风的统计、工况配置、历史审计及公共源码快照归入 PX4 历史目录。该轮清理 21 份旧轨迹、回放、运行日志和重复快照，释放 50,714,484 字节，另迁移 16 份历史记录。[小幅时变风基线](../px4_offboard/actor37_5m/narrow_wind/README.md) · [归档清单](retention_px4_narrow_20261109.json)
-
-2026-11-09按用户要求沿用P2、P3、mujoco_sim、track、px4_offboard和stable_retest分类。删除678个过期调试文件，释放460,960,185字节（约439.6MiB），39份必要回归文件移至P2/tests/fixtures/stationarity_selection。共享环境未改动，整理期间未训练或运行新的完整仿真。
-
-保留Actor37及Adam、最终训练来源、32条恒风和32条时变风完整原始数据及6份最新姿态动图；P3两阶段残差及Adam、Actor26/29/31、已接受的track/PX4结果与运行资产保留。原始结果和模型字节不改写。旧候选仅保留合并统计和必要回归证据。
-
-[逐项删除/迁移/保护清单](retention_20261109.json) · [整理计划](PLAN_20261109.md) · [工程清单](manifest.json) · [容量摘要](package_summary.json) · [核验结果](verification.json) · [历史统计](../P2/results/history/development_statistics_20261109.json)
-
-原始运行中的路径和哈希不改写；迁移由[path_map.json](path_map.json)解释。历史冻结源码身份与当前维护代码分开核对；选择器只放行明确审核过的历史入口SHA，仍检查冻结ZIP与候选物理核心，拒绝未知入口。旧一次性脚本保存在冻结ZIP中，当前核验统一使用以下入口。
+保留的较早模块仍有当前训练/运行/回归调用，不按日期删除。历史结果核对其冻结ZIP，当前维护源码单独核验。归档核验不声称重算已删除原始轨迹。本轮不训练、不新增仿真、不推送GitHub。
 
 ```powershell
-.\python.cmd -B verify_project.py --strict-sources
-.\python.cmd -B -m unittest discover -s . -t .
+.\python.cmd -B -X utf8 -m cleanup.package manifest
+.\python.cmd -B -X utf8 verify_project.py --strict-sources --write-report
+.\python.cmd -B -X utf8 -m unittest discover -s . -t .
 ```
 
-[先前Actor31保留要求](retention_actor31.json)继续适用于track及PX4成果；本次清理不代表新增训练或正式独立验收。
+此前保留记录继续适用于未被本轮明确替代的文件：[统一P3候选清理](retention_unified_20261117.json)、[11月16日整理](retention_px4_observer_20261116.json)、[原生安装P3整理](retention_p3_installation_20261115.json)、[Actor37整理](retention_20261109.json)、[Actor31整理](retention_actor31.json)。路径迁移由[path_map.json](path_map.json)解释，不恢复已删除调试产物。

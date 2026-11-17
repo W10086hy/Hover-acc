@@ -1,0 +1,84 @@
+[roslaunch][INFO] 2026-11-17 16:09:21,260: Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2026-11-17 16:09:21,264: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2026-11-17 16:09:21,264: roslaunch starting with args ['roscore', '--core', '-p', '11315']
+[roslaunch][INFO] 2026-11-17 16:09:21,264: roslaunch env is environ({'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'SVGA_VGPU10': '0', 'NVM_INC': '/home/s/.nvm/versions/node/v24.14.1/include/node', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'LANGUAGE': 'zh_CN:zh', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/home/s/hover_bptt_px4/acceleration_dual_20261115', 'LOGNAME': 's', 'XDG_SESSION_TYPE': 'tty', 'OPENBLAS_NUM_THREADS': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/s', 'LANG': 'zh_CN.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'LS_COLORS': '', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'MAVLINK20': '1', 'SSH_CONNECTION': '192.168.174.1 57695 192.168.174.128 22', 'NVM_DIR': '/home/s/.nvm', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'dumb', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 's', 'SHLVL': '1', 'NVM_CD_FLAGS': '', 'TURTLEBOT3_MODEL': 'waffle', 'ROS_MASTER_URI': 'http://127.0.0.1:11315', 'XDG_SESSION_ID': '76', 'PYTHONDONTWRITEBYTECODE': '1', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '192.168.174.1 57695 22', 'OMP_NUM_THREADS': '1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PATH': '/opt/ros/noetic/bin:/usr/bin:/bin:/usr/sbin:/sbin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'NVM_BIN': '/home/s/.nvm/versions/node/v24.14.1/bin', 'SSH_TTY': '/dev/pts/1', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/home/s/hover_bptt_px4/acceleration_dual_20261115', 'ROS_HOME': '/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_home', 'ROS_LOG_DIR': '/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_logs', 'PYTHONNOUSERSITE': '1', 'ROS_LOG_FILENAME': '/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-30029.log'})
+[roslaunch][INFO] 2026-11-17 16:09:21,264: starting in server mode
+[roslaunch.parent][INFO] 2026-11-17 16:09:21,264: starting roslaunch parent run
+[roslaunch][INFO] 2026-11-17 16:09:21,265: loading roscore config file /opt/ros/noetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2026-11-17 16:09:21,616: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2026-11-17 16:09:21,617: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2026-11-17 16:09:21,617: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2026-11-17 16:09:21,617: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2026-11-17 16:09:21,617: starting parent XML-RPC server
+[roslaunch.server][INFO] 2026-11-17 16:09:21,618: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2026-11-17 16:09:21,618: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2026-11-17 16:09:21,618: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2026-11-17 16:09:21,618: Started XML-RPC server [http://s-virtual-machine:42159/]
+[xmlrpc][INFO] 2026-11-17 16:09:21,619: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2026-11-17 16:09:21,630: started roslaunch server http://s-virtual-machine:42159/
+[roslaunch.parent][INFO] 2026-11-17 16:09:21,630: ... parent XML-RPC server started
+[roslaunch][INFO] 2026-11-17 16:09:21,630: master.is_running[http://s-virtual-machine:11315/]
+[roslaunch][INFO] 2026-11-17 16:09:21,631: auto-starting new master
+[roslaunch][INFO] 2026-11-17 16:09:21,631: create_master_process: rosmaster, /opt/ros/noetic/share/ros, 11315, 3, None, False
+[roslaunch][INFO] 2026-11-17 16:09:21,631: process[master]: launching with args [['rosmaster', '--core', '-p', '11315', '-w', '3']]
+[roslaunch.pmon][INFO] 2026-11-17 16:09:21,631: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2026-11-17 16:09:21,631: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2026-11-17 16:09:21,631: process[master]: starting os process
+[roslaunch][INFO] 2026-11-17 16:09:21,631: process[master]: start w/ args [['rosmaster', '--core', '-p', '11315', '-w', '3', '__log:=/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/master.log']]
+[roslaunch][INFO] 2026-11-17 16:09:21,631: process[master]: cwd will be [/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_home]
+[roslaunch][INFO] 2026-11-17 16:09:21,637: process[master]: started with pid [30037]
+[roslaunch][INFO] 2026-11-17 16:09:21,638: master.is_running[http://s-virtual-machine:11315/]
+[roslaunch][INFO] 2026-11-17 16:09:21,738: master.is_running[http://s-virtual-machine:11315/]
+[roslaunch][INFO] 2026-11-17 16:09:21,839: master.is_running[http://s-virtual-machine:11315/]
+[roslaunch][INFO] 2026-11-17 16:09:21,940: master.is_running[http://s-virtual-machine:11315/]
+[roslaunch][INFO] 2026-11-17 16:09:21,946: master.is_running[http://s-virtual-machine:11315/]
+[roslaunch][INFO] 2026-11-17 16:09:21,950: ROS_MASTER_URI=http://s-virtual-machine:11315/
+[roslaunch][INFO] 2026-11-17 16:09:21,951: setting /run_id to 319b9adc-e25e-11f1-8cf9-7f62190611ed
+[roslaunch][INFO] 2026-11-17 16:09:21,952: setting /roslaunch/uris/host_s_virtual_machine__42159' to http://s-virtual-machine:42159/
+[roslaunch][INFO] 2026-11-17 16:09:21,953: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2026-11-17 16:09:21,953: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://s-virtual-machine:11315/]
+[roslaunch][INFO] 2026-11-17 16:09:21,953: process[rosout-1]: env[{'SHELL': '/bin/bash', 'ROS_VERSION': '1', 'SVGA_VGPU10': '0', 'NVM_INC': '/home/s/.nvm/versions/node/v24.14.1/include/node', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'ROS_PYTHON_VERSION': '3', 'LANGUAGE': 'zh_CN:zh', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'PWD': '/home/s/hover_bptt_px4/acceleration_dual_20261115', 'LOGNAME': 's', 'XDG_SESSION_TYPE': 'tty', 'OPENBLAS_NUM_THREADS': '1', 'MOTD_SHOWN': 'pam', 'HOME': '/home/s', 'LANG': 'zh_CN.UTF-8', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'LS_COLORS': '', 'CMAKE_PREFIX_PATH': '/opt/ros/noetic', 'MAVLINK20': '1', 'SSH_CONNECTION': '192.168.174.1 57695 192.168.174.128 22', 'NVM_DIR': '/home/s/.nvm', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/opt/ros/noetic/lib/python3/dist-packages', 'TERM': 'dumb', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 's', 'SHLVL': '1', 'NVM_CD_FLAGS': '', 'TURTLEBOT3_MODEL': 'waffle', 'ROS_MASTER_URI': 'http://s-virtual-machine:11315/', 'XDG_SESSION_ID': '76', 'PYTHONDONTWRITEBYTECODE': '1', 'LD_LIBRARY_PATH': '/opt/ros/noetic/lib', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '192.168.174.1 57695 22', 'OMP_NUM_THREADS': '1', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PATH': '/opt/ros/noetic/bin:/usr/bin:/bin:/usr/sbin:/sbin', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'NVM_BIN': '/home/s/.nvm/versions/node/v24.14.1/bin', 'SSH_TTY': '/dev/pts/1', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'ROS_DISTRO': 'noetic', 'OLDPWD': '/home/s/hover_bptt_px4/acceleration_dual_20261115', 'ROS_HOME': '/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_home', 'ROS_LOG_DIR': '/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_logs', 'PYTHONNOUSERSITE': '1', 'ROS_LOG_FILENAME': '/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-30029.log'}]
+[roslaunch][INFO] 2026-11-17 16:09:22,015: process[rosout-1]: args[['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout']]
+[roslaunch][INFO] 2026-11-17 16:09:22,015: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2026-11-17 16:09:22,015: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2026-11-17 16:09:22,015: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2026-11-17 16:09:22,015: ... registered process [rosout-1]
+[roslaunch][INFO] 2026-11-17 16:09:22,015: process[rosout-1]: starting os process
+[roslaunch][INFO] 2026-11-17 16:09:22,016: process[rosout-1]: start w/ args [['/opt/ros/noetic/lib/rosout/rosout', '__name:=rosout', '__log:=/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/rosout-1.log']]
+[roslaunch][INFO] 2026-11-17 16:09:22,016: process[rosout-1]: cwd will be [/home/s/hover_bptt_px4/acceleration_dual_20261115/results/unified_bounded_20261117/acceleration_wind5/ros_home]
+[roslaunch][INFO] 2026-11-17 16:09:22,025: process[rosout-1]: started with pid [30050]
+[roslaunch][INFO] 2026-11-17 16:09:22,026: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2026-11-17 16:09:22,033: load_parameters starting ...
+[roslaunch][INFO] 2026-11-17 16:09:22,036: ... load_parameters complete
+[roslaunch][INFO] 2026-11-17 16:09:22,036: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2026-11-17 16:09:22,036: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2026-11-17 16:09:22,036: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140558978311936)>
+[roslaunch.parent][INFO] 2026-11-17 16:09:22,036: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2026-11-17 16:09:22,036: spin
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,433: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 140558978311936)>
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,482: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140558978311936)>
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,482: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140558978311936)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7fd66ffc3af0>, <roslaunch.nodeprocess.LocalProcess object at 0x7fd66ffc3a90>]
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,483: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2026-11-17 16:12:55,483: [rosout-1] killing on exit
+[roslaunch][INFO] 2026-11-17 16:12:55,483: process[rosout-1]: killing os process with pid[30050] pgid[30050]
+[roslaunch][INFO] 2026-11-17 16:12:55,483: [rosout-1] sending SIGINT to pgid [30050]
+[roslaunch][INFO] 2026-11-17 16:12:55,484: [rosout-1] sent SIGINT to pgid [30050]
+[roslaunch][INFO] 2026-11-17 16:12:55,684: process[rosout-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,684: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2026-11-17 16:12:55,685: [master] killing on exit
+[roslaunch][INFO] 2026-11-17 16:12:55,685: process[master]: killing os process with pid[30037] pgid[30037]
+[roslaunch][INFO] 2026-11-17 16:12:55,685: [master] sending SIGINT to pgid [30037]
+[roslaunch][INFO] 2026-11-17 16:12:55,685: [master] sent SIGINT to pgid [30037]
+[roslaunch][INFO] 2026-11-17 16:12:55,885: process[master]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,885: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,885: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2026-11-17 16:12:55,886: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2026-11-17 16:12:55,886: runner.stop()
+[roslaunch][INFO] 2026-11-17 16:12:55,886: shutting down processing monitor...
+[roslaunch][INFO] 2026-11-17 16:12:55,886: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 140558978311936)>
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,886: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140558978311936)>
+[roslaunch][INFO] 2026-11-17 16:12:55,886: ... shutting down processing monitor complete
+[roslaunch][INFO] 2026-11-17 16:12:55,886: done
+[roslaunch.pmon][INFO] 2026-11-17 16:12:55,886: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140558978311936)>
+[rospy.core][INFO] 2026-11-17 16:12:55,887: signal_shutdown [atexit]

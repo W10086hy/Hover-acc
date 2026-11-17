@@ -1,0 +1,101 @@
+{
+  "train": {
+    "samples": 2473,
+    "sensor_before_rmse": [
+      0.002286772251516412,
+      0.004319930796664562,
+      0.0027524283502419243,
+      0.030468509912752496,
+      0.4597163213490847,
+      0.21765851033708328
+    ],
+    "gyro_rmse_radps": [
+      0.0005090018797280517,
+      0.0005202613844022981,
+      0.0005155566931252982
+    ],
+    "force_rmse_mps2": [
+      0.02567483678800612,
+      0.026167182809075158,
+      0.026474901943943717
+    ],
+    "torque_before_rmse_nm": [
+      0.15227602276527957,
+      0.2135909143770216,
+      0.0003191412094459857
+    ],
+    "torque_after_rmse_nm": [
+      9.637374842553328e-05,
+      6.211276197134719e-05,
+      7.255868721167199e-05
+    ],
+    "source_time_range_s": [
+      0.0,
+      28.13
+    ]
+  },
+  "holdout": {
+    "samples": 1345,
+    "sensor_before_rmse": [
+      0.0022058190911633064,
+      0.004350503419392623,
+      0.002509814353806402,
+      0.028739072699712088,
+      0.4572525277341955,
+      0.21871114124082564
+    ],
+    "gyro_rmse_radps": [
+      0.0005160705406100504,
+      0.0005265678834482284,
+      0.0005303824052099542
+    ],
+    "force_rmse_mps2": [
+      0.024454005234985993,
+      0.025267996462522063,
+      0.027132133873490335
+    ],
+    "torque_before_rmse_nm": [
+      0.1511741058307266,
+      0.21201339464515392,
+      0.0003440218152620162
+    ],
+    "torque_after_rmse_nm": [
+      9.798619032993654e-05,
+      6.668197402882633e-05,
+      0.00010524514145700757
+    ],
+    "source_time_range_s": [
+      28.14,
+      42.0
+    ]
+  },
+  "angular_limit_radps2": [
+    16.72287847107508,
+    53.761950543486336,
+    0.07380004055211778
+  ],
+  "torque_limit_nm": [
+    0.21070826873554602,
+    0.29569072798917484,
+    0.001166040640723461
+  ],
+  "limit_source": "Position training partition only",
+  "limit_rule": "1.25 times per-axis99.9percentile of training equivalent torque; floor0.0001Nm",
+  "capture_conditions": {
+    "mode": "local_Position_surrogate",
+    "wind_mps": 0.0,
+    "tether_force_disabled": true,
+    "P2_used": false
+  },
+  "capture_metadata_sha256": "9091c8d84e366ea06b779c6aba562acebfc2121a53b662381b40f1c0e762ba7a",
+  "input_sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0",
+  "split_time_s": 28.14,
+  "optimizer_updates": 0,
+  "quality_passed": true,
+  "bounded_output_sha256": "2b477400956d10cec1ae362be94492b52e42632ba12403af8abcf1d7d48e5c18",
+  "export_source_sha256": {
+    "P3/unified_export.py": "3dbbbff4135f6c6f39837546900cb1d556ddef8ec2a14fa67dab501d7f37eec4",
+    "P3/unified_train.py": "223ca4196d2a7d57f93c74f5fb7b6f27786b34c35f138e8db34a18618de19f59",
+    "px4_offboard/unified_p3.py": "9fce3c9c6fc8a12ca435d976742d66672b55e120b8beb80900fc66e99c9a3bed"
+  }
+}

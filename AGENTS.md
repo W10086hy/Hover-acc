@@ -1,5 +1,20 @@
 # 当前工程约定
 
+## 最新工程清理（2026-11-17，优先）
+
+- 按用户本轮授权，依据cleanup/retention_current_only_20261117.json删除213个已替代文件（583696215字节），含11个一次性脚本、旧计划/日志和full_03/full_05八组原始轨迹及回放。统计、删除前完整核验及唯一源码归档px4_offboard/acceleration_dual/history/pre_unified_20261117.json，退役脚本合并cleanup/history_20261117/retired_sources.zip。不恢复这些目录。
+- 本节仅替代此前full_03/full_05原始证据保留条款；旧316份保护中184份明确退役，其余不变。原生139份、统一P3最新90份保护不变。保留四个统一P3模型/Adam、四份Position原始数据、冻结Actor13/Adam、最新两组120s完整闭环及两份回放、历史必要运行与回归依赖。
+- 最新统一P3联合学习观测与自身角运动残差，Position无风/无绳拉力训练，不分别辨识物理来源。P3→35维冻结P2→MAVROS水平加速度+锁存高度/航向。两组120s安全且稳态，弱/强风三维RMSE0.532280/1.357480m，弱风仍超0.53m工程容差2.280mm；非正式验收或实飞。报告P3/results/unified_20261117/README.md。
+- 本轮只整理，不训练、不新增仿真、不自动上传或续跑。
+
+
+## 统一残差P3（2026-11-17，用户最新要求）
+
+- 用户要求把自身扰动训练成一个补偿P2的统一量，训练条件明确为无风、无绳拉力Position。当前P3为一个九维联合观测残差，每机一个模型/Adam，包含gyro、比力读数修正及等效自身角加速度，不回归各扰动来源的质量/质心/安装角/惯量参数。P2 Actor13、Adam、35维输入/14维标准上下文保持原哈希。
+- 新模型及Adam在P3/results/unified_20261117/constrained，部署使用各机bounded_observer.json。四份原始Position先分时段留出，三架安装/偏载来自本地Position仿真，px4_position来自真实PX4 Position120s；监督位置/独立姿态仅限训练。共享读数映射保持单位增益，角残差幅度只由Position训练段估计；当前gyro冲量保留给P2。
+- 最新真实MAVROS加速度结果px4_offboard/acceleration_dual/results/unified_bounded_20261117，两条120s安全、稳态2/2，三维/高度/水平RMSE弱风0.532280/0.008145/0.532218m、强风1.357480/0.009084/1.357450m。弱风超0.53m工程容差2.280mm，判为未通过；非正式独立/实飞验收。种子2026114501/4503，强风前5s1→5m/s，5cm挂点，实际XML2.369kg，MC_PITCHRATE_K=0.1。
+- 初版增益塌缩及无界残差试跑合并P3/results/unified_20261117/history/development.json和唯一源码，79个本轮中间文件按cleanup/retention_unified_20261117.json清理，90份新最终模型/飞行文件保护；此前316/139份保护文件仍原哈希。当前无训练/仿真作业，不自动续跑或创建活动目标。
+
 ## 最新整理上传（2026-11-16，优先）
 
 - 用户授权整理并上传最新工程，按 cleanup/retention_px4_observer_20261116.json 删除250个已替代调试／中间文件（872819038字节，以清单为准）；本节替代此前对 full_01/full_02、Position短测与旧低频calibration中间证据的保留条款。历史原始统计、审计、飞行摘要、接口及唯一源码快照合并 px4_offboard/acceleration_dual/history/development_20261116.json；不恢复已清理目录。

@@ -1,8 +1,6 @@
 # 同一加速度 Actor 的两条 PX4 接口
 
-本轮新增真实 MAVROS 加速度入口和 Linux／Windows 一键脚本，保留原 `offboard.py`、`control.py`、`stock_transfer/stock_check_hold.py` 与 `launch.sh`。最新冻结P2＋P3观测补偿、四份动图见 [observer_report.md](observer_report.md)，早期P3关闭的迁移结果见 `report.md`；这组迁移试验不代替原生 MuJoCo 成绩。
-
-后续结果分开记录：[内环诊断与 P2 基线](diagnosis.md) · [P3 观测补偿与冻结 P2](observer_report.md)。后者先由真实 Position 辨识，再用 `--p3-calibration` 接入既有 35 维观测；P2 不重训，原生执行器前的显式力矩补偿不与此混称。
+当前采用统一残差P3→冻结P2；[最新四模型、两组完整120s与两份回放](../../P3/results/unified_20261117/README.md)。早期接口与物理参数观测器开发对照按[归档](history/pre_unified_20261117.json)保留统计和源码，旧原始轨迹/回放已清理。保留角速度＋推力兼容入口及原有 offboard/control/stock_check_hold/launch.sh。
 
 ## 指令与推理
 
@@ -17,7 +15,7 @@
 
 状态、位置或命令过期时停止发送；退出模式后清除锁存。可订阅 `/hover/local_frame_reset_counter` 提供估计器重置计数，变化后阻止本次加速度接管；另有本地高度突变检测。当前没有通用 PX4 EKF reset-counter 桥，突变检测也不覆盖所有参考系重置。
 
-早期 full_01/full_02 与匹配内环基线 full_03 **P3 关闭**；最新 full_05 通过 `--p3-calibration px4_offboard/acceleration_dual/p3_observer.json` 启用观测和模型补偿。完整原生 IMU 安装误差、质心与电机倾斜补偿仍保留在 `P3/results/installation_20261115`。角速度兼容适配器也不等价于原生力矩控制，不宣称已把完整执行器前力矩补偿迁移至 PX4。
+当前P3通过 `--p3-calibration P3/results/unified_20261117/constrained/px4_position/bounded_observer.json` 启用。先校正机载观测再进入原有35维P2，不额外发送力矩；历史原生执行器前补偿与此路线分开记录。
 
 ## 机载一键入口
 
@@ -54,12 +52,6 @@ Position 预悬停夹具使用 GPS 和接管前的高度辅助；接管后 Actor
 
 ## 数值与回放
 
-`dual_audit.py` 检查代理记录的真实 MAVLink 字节、消息号、mask、字段和航向；从 250 Hz 原始轨迹按完整 120 s 计分。失效样本保留，余下时域按水平 6 m／高度 4 m 计罚。弱／强风逐例三维 RMSE 门限为 0.5／1.5 m；末 30 s 的水平离散、三维速度与漂移分别要求 ≤0.25 m、≤0.3 m/s、≤0.01 m/s。
+`dual_audit.py` 核对实际MAVLink消息及完整120s计罚，`P3.verify_unified` 从最新原始轨迹重算指标并核验模型/Adam、来源及回放。[当前完整证据](../../P3/results/unified_20261117/README.md)
 
-```powershell
-.\python.cmd -B -m px4_offboard.dual_audit CASE_DIRECTORY
-.\python.cmd -B -m px4_offboard.dual_replay CASE_DIRECTORY --assets px4_offboard/acceleration_dual/assets
-.\python.cmd -B -m px4_offboard.replay --result CASE_DIRECTORY --speed 12
-```
-
-回放仅对实际飞行轨迹降采样，不补造失败后的飞行。原始全频轨迹和评分独立保留，回放中的未使用绳速字段为可视化占位零，不是新的物理解算结果。
+历史[接口统计](report.md)、[内环基线](diagnosis.md)和[物理观测器对照](observer_report.md)仍保留，原始数据退役按清理清单说明，不与最新结果混用。当前不自动训练或重启矩阵。

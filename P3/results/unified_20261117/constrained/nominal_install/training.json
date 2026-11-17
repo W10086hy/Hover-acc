@@ -1,0 +1,98 @@
+{
+  "train": {
+    "samples": 2473,
+    "sensor_before_rmse": [
+      0.002286772251516412,
+      0.004319930796664562,
+      0.0027524283502419243,
+      0.030468509912752496,
+      0.4597163213490847,
+      0.21765851033708328
+    ],
+    "gyro_rmse_radps": [
+      0.0005090018797280517,
+      0.0005202613844022981,
+      0.0005155566931252982
+    ],
+    "force_rmse_mps2": [
+      0.02567483678800612,
+      0.026167182809075158,
+      0.026474901943943717
+    ],
+    "torque_before_rmse_nm": [
+      0.15227602276527957,
+      0.2135909143770216,
+      0.0003191412094459857
+    ],
+    "torque_after_rmse_nm": [
+      9.637374842553328e-05,
+      6.211276197134719e-05,
+      7.255868721167199e-05
+    ],
+    "source_time_range_s": [
+      0.0,
+      28.13
+    ]
+  },
+  "holdout": {
+    "samples": 1345,
+    "sensor_before_rmse": [
+      0.0022058190911633064,
+      0.004350503419392623,
+      0.002509814353806402,
+      0.028739072699712088,
+      0.4572525277341955,
+      0.21871114124082564
+    ],
+    "gyro_rmse_radps": [
+      0.0005160705406100504,
+      0.0005265678834482284,
+      0.0005303824052099542
+    ],
+    "force_rmse_mps2": [
+      0.024454005234985993,
+      0.025267996462522063,
+      0.027132133873490335
+    ],
+    "torque_before_rmse_nm": [
+      0.1511741058307266,
+      0.21201339464515392,
+      0.0003440218152620162
+    ],
+    "torque_after_rmse_nm": [
+      9.798619032993654e-05,
+      6.668197402882633e-05,
+      0.00010524514145700757
+    ],
+    "source_time_range_s": [
+      28.14,
+      42.0
+    ]
+  },
+  "split_time_s": 28.14,
+  "raw_time_holdout_independent": true,
+  "joint_adam_steps": 400,
+  "input_sha256": "a93980ffb02a41dc40653185db3a185a68fd9b5b5dd0224711dcf4edacdf26c0",
+  "P2_updates": 0,
+  "learned_output_dim": 9,
+  "output_channels": [
+    "gyro_readout_correction_radps_xyz",
+    "specific_force_correction_mps2_xyz",
+    "equivalent_self_angular_acceleration_radps2_xyz"
+  ],
+  "angular_prediction_inputs": "previous gyro; current/previous force and measured RPM; executed throttle",
+  "attitude_reference": "PX4_body_FRD",
+  "fitted_physical_source_parameters": [],
+  "sensor_gain_preserving": true,
+  "independent_reference_used_only_during_Position_training": true,
+  "quality_passed": true,
+  "source_sha256": {
+    "P3/unified_train.py": "a08167b179573b1dc5f9a416421fea5b8a276c4ab93d8ad28af43e905f1ff2c7",
+    "px4_offboard/unified_p3.py": "3058c0c81ae09c2c8709e3b2360074e834ad7f622ce06e2e2266feaa580b32d8",
+    "P3/installation_calibration.py": "0f9251783eb4b516d02dbf3e7030b0cecdd2db63204fa73ac88b7679b136a291",
+    "P3/position_identification.py": "fa0ee0fc9d2ba47abceec627b5d41bfcb176abfaf8c385a4a3079f82db27aa54",
+    "P3/px4_position_train.py": "46446513de0c1b477b3cbc459d4d9e646515060bc10a3fb67b13991348b802b7",
+    "P3/train_body_calibration.py": "75e9d9bbb1da35369995edb19f7d220ed6478d47031c847339e4cc51dbad0b78"
+  },
+  "checkpoint_sha256": "67fd5fc6d152a0ad4061fe7bb792b2cd9534ff0a655e80a27ec3e6e7140592d8"
+}

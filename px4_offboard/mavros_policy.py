@@ -158,8 +158,12 @@ def main():
             if calibration_model is not None:rates=calibration_model.rates_to_reported(rates)
         sink.latch.heading=heading;sink.send(acceleration,rates,thrust,now)
         if calibration_model is not None and a.record is not None and steps%10==0:
-            v=controller.observer;p3_diagnostics.append(dict(stamp_s=stamp,transport_torque_nm=v.transport_torque.tolist(),
-                innovation_before_radps=v.innovation_before.tolist(),innovation_after_radps=v.innovation_after.tolist()))
+            v=controller.observer
+            diagnostic=dict(stamp_s=stamp,innovation_before_radps=v.innovation_before.tolist(),innovation_after_radps=v.innovation_after.tolist())
+            if hasattr(v,'unified_compensation'):
+                diagnostic.update(unified_compensation=v.unified_compensation.tolist(),equivalent_self_torque_nm=v.equivalent_self_torque.tolist())
+            else:diagnostic['transport_torque_nm']=v.transport_torque.tolist()
+            p3_diagnostics.append(diagnostic)
         steps+=1;rate.sleep()
 
 

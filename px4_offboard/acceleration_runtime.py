@@ -12,6 +12,9 @@ class AccelerationController:
         if self.settings['action_mode']!='launch_acceleration' or cfg['stage']['model'].get('action_dim')!=3:
             raise ValueError('A three-axis acceleration checkpoint is required')
         if calibration is None:self.observer=Observer(cfg,dt)
+        elif calibration.parameters.get('schema')=='P3_unified_residual_v1':
+            from .unified_p3 import UnifiedObserver
+            self.observer=UnifiedObserver(cfg,calibration,dt)
         else:
             from .p3_observer import CalibratedObserver
             self.observer=CalibratedObserver(cfg,calibration,dt)

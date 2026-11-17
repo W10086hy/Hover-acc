@@ -1,5 +1,8 @@
 # PX4 Offboard 闭环
 
+当前入口为[统一残差P3→冻结P2的MAVROS加速度接口](acceleration_dual/README.md)，最新模型与闭环见[本轮报告](../P3/results/unified_20261117/README.md)。发送水平加速度及锁存高度/航向，PX4执行内环。下列Actor29/31、推力＋角速度和物理参数前馈说明用于保留的历史复现入口；其默认配置独立于最新MAVROS入口。
+
+
 原厂 PX4 多旋翼的 Position → Offboard 接管试验与训练适配记录单独存放。[默认 PX4 接管试验](stock_transfer/README.md) · [30 秒 BPTT 迁移与复测](../P2/results/px4_transfer/README.md)
 
 新增真实 MAVROS 加速度入口 `launch_acceleration.sh`／`.cmd` 与双接口 SITL 一键入口 `launch_dual_sitl.sh`／`.cmd`，旧入口保留。新对照用同一 Actor13，分别发送水平加速度＋高度目标，或经兼容适配器发送角速度＋推力；P3 关闭。[运行与消息定义](acceleration_dual/README.md) · [逐例开发验证](acceleration_dual/report.md)

@@ -196,6 +196,67 @@
     "observer_cases": 4,
     "observer_settled": 2,
     "observer_nominal_rmse_passed": 2,
-    "observer_engineering_rmse_passed": 3
+    "observer_engineering_rmse_passed": 3,
+    "observer_raw_retired": true,
+    "observer_archive": "px4_offboard/acceleration_dual/history/pre_unified_20261117.json"
+  },
+  "unified_residual": {
+    "model_kind": "P3_unified_observation_residual",
+    "report": "P3/results/unified_20261117/README.md",
+    "summary": "P3/results/unified_20261117/summary.json",
+    "output_dim": 9,
+    "physical_source_parameter_decomposition": false,
+    "P2_actor_updates": 0,
+    "P2_Adam_updates": 0,
+    "Actor_input_dim": 35,
+    "nominal_context_dim": 14,
+    "training_conditions": {
+      "mode": "Position",
+      "wind_mps": 0,
+      "tether_force_disabled": true
+    },
+    "selected_for_flight": false,
+    "checkpoints": [
+      {
+        "aircraft": "nominal_install",
+        "checkpoint": "P3/results/unified_20261117/constrained/nominal_install/model.pt",
+        "sha256": "67fd5fc6d152a0ad4061fe7bb792b2cd9534ff0a655e80a27ec3e6e7140592d8",
+        "optimizer_embedded": true,
+        "runtime": "P3/results/unified_20261117/constrained/nominal_install/bounded_observer.json",
+        "runtime_sha256": "2b477400956d10cec1ae362be94492b52e42632ba12403af8abcf1d7d48e5c18"
+      },
+      {
+        "aircraft": "light_install",
+        "checkpoint": "P3/results/unified_20261117/constrained/light_install/model.pt",
+        "sha256": "a719647ae0765312761e6c51fe7eca23e6b5b7a9b03faf8f617e1519eb111416",
+        "optimizer_embedded": true,
+        "runtime": "P3/results/unified_20261117/constrained/light_install/bounded_observer.json",
+        "runtime_sha256": "e51ba4fc8b368f07f764eef05360c0c68ec7b8b81a0031777ea6411008f47cef"
+      },
+      {
+        "aircraft": "heavy_install",
+        "checkpoint": "P3/results/unified_20261117/constrained/heavy_install/model.pt",
+        "sha256": "c922642e2b3fb4411f16aa5eae4a58df6479ce2518c1598381d7544b4f7221d0",
+        "optimizer_embedded": true,
+        "runtime": "P3/results/unified_20261117/constrained/heavy_install/bounded_observer.json",
+        "runtime_sha256": "e091e31b308e7a6fc6a6634804f99f6a0516a7e8c44459d25dbde4dc1c17032d"
+      },
+      {
+        "aircraft": "px4_position",
+        "checkpoint": "P3/results/unified_20261117/constrained/px4_position/model.pt",
+        "sha256": "d1bf4b95de309fef43035ca0c45bcac52d5e03a8a0a1aa7a5435570a510378e5",
+        "optimizer_embedded": true,
+        "runtime": "P3/results/unified_20261117/constrained/px4_position/bounded_observer.json",
+        "runtime_sha256": "93496677fadfd73203c1c25c9a2f10455e96bd5278c038a24be50acdb6b04ccd"
+      }
+    ],
+    "PX4_acceleration": {
+      "safe_completed": 2,
+      "count": 2,
+      "settled": 2,
+      "nominal_rmse_passed": 1,
+      "engineering_rmse_passed": 1
+    },
+    "status": "development_complete_weak_RMSE_gap"
   }
 }

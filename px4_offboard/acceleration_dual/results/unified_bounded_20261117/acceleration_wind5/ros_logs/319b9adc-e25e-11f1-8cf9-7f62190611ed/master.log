@@ -1,0 +1,802 @@
+[rosmaster.main][INFO] 2026-11-17 16:09:21,859: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2026-11-17 16:09:21,859: Starting ROS Master Node
+[xmlrpc][INFO] 2026-11-17 16:09:21,860: XML-RPC server binding to 0.0.0.0:11315
+[xmlrpc][INFO] 2026-11-17 16:09:21,860: Started XML-RPC server [http://s-virtual-machine:11315/]
+[xmlrpc][INFO] 2026-11-17 16:09:21,860: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2026-11-17 16:09:21,860: Master initialized: port[11315], uri[http://s-virtual-machine:11315/]
+[rosmaster.master][INFO] 2026-11-17 16:09:21,935: +PARAM [/use_sim_time] by /unnamed
+[rosmaster.master][INFO] 2026-11-17 16:09:21,951: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:21,952: +PARAM [/roslaunch/uris/host_s_virtual_machine__42159] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:22,035: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:22,036: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:22,050: +SERVICE [/rosout/get_loggers] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,051: +SERVICE [/rosout/set_logger_level] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,053: +SUB [/clock] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,054: +PUB [/rosout_agg] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,058: +SUB [/rosout] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,120: +PUB [/rosout] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,122: +SUB [/clock] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,125: +SERVICE [/hover_dual_interface/get_loggers] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,126: +SERVICE [/hover_dual_interface/set_logger_level] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,160: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/']
+[rosmaster.master][INFO] 2026-11-17 16:09:22,163: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:22,455: +PUB [/mavros/setpoint_raw/local] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,456: +PUB [/mavros/setpoint_raw/attitude] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,457: +SUB [/mavros/local_position/pose] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,458: +SUB [/mavros/state] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,462: +SUB [/hover/local_frame_reset_counter] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,463: +SUB [/hover/policy_ready] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,464: +PUB [/hover/esc_feedback] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,464: +PUB [/clock] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:09:22,563: publisherUpdate[/clock] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/']
+[rosmaster.master][INFO] 2026-11-17 16:09:22,563: publisherUpdate[/clock] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:37669/']
+[rosmaster.master][INFO] 2026-11-17 16:09:22,564: publisherUpdate[/clock] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:22,600: publisherUpdate[/clock] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:37669/']: sec=0.04, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:24,135: +PARAM [/roslaunch/uris/host_s_virtual_machine__35325] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,153: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,153: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,154: +PARAM [/mavros/plugin_blacklist] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,154: +PARAM [/mavros/plugin_whitelist] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,154: +PARAM [/mavros/startup_px4_usb_quirk] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,154: +PARAM [/mavros/conn/heartbeat_rate] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,154: +PARAM [/mavros/conn/timeout] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,155: +PARAM [/mavros/conn/timesync_rate] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,155: +PARAM [/mavros/conn/system_time_rate] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,155: +PARAM [/mavros/sys/min_voltage] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,155: +PARAM [/mavros/sys/disable_diag] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,155: +PARAM [/mavros/time/time_ref_source] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,155: +PARAM [/mavros/time/timesync_mode] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,155: +PARAM [/mavros/time/timesync_avg_alpha] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,156: +PARAM [/mavros/tdr_radio/low_rssi] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,156: +PARAM [/mavros/cmd/use_comp_id_system_control] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,156: +PARAM [/mavros/global_position/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,156: +PARAM [/mavros/global_position/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,156: +PARAM [/mavros/global_position/rot_covariance] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,156: +PARAM [/mavros/global_position/gps_uere] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,157: +PARAM [/mavros/global_position/use_relative_alt] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,157: +PARAM [/mavros/global_position/tf/send] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,157: +PARAM [/mavros/global_position/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,157: +PARAM [/mavros/global_position/tf/global_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,157: +PARAM [/mavros/global_position/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,157: +PARAM [/mavros/imu/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,158: +PARAM [/mavros/imu/linear_acceleration_stdev] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,158: +PARAM [/mavros/imu/angular_velocity_stdev] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,158: +PARAM [/mavros/imu/orientation_stdev] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,158: +PARAM [/mavros/imu/magnetic_stdev] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,158: +PARAM [/mavros/local_position/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,158: +PARAM [/mavros/local_position/tf/send] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,159: +PARAM [/mavros/local_position/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,159: +PARAM [/mavros/local_position/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,159: +PARAM [/mavros/local_position/tf/send_fcu] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,160: +PARAM [/mavros/safety_area/p1/x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,160: +PARAM [/mavros/safety_area/p1/y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,160: +PARAM [/mavros/safety_area/p1/z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,160: +PARAM [/mavros/safety_area/p2/x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,161: +PARAM [/mavros/safety_area/p2/y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,161: +PARAM [/mavros/safety_area/p2/z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,161: +PARAM [/mavros/setpoint_accel/send_force] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,161: +PARAM [/mavros/setpoint_attitude/reverse_thrust] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_attitude/use_quaternion] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_attitude/tf/listen] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_attitude/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_attitude/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_attitude/tf/rate_limit] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_raw/thrust_scaling] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_position/tf/listen] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,162: +PARAM [/mavros/setpoint_position/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,163: +PARAM [/mavros/setpoint_position/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,163: +PARAM [/mavros/setpoint_position/tf/rate_limit] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,163: +PARAM [/mavros/setpoint_position/mav_frame] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,163: +PARAM [/mavros/setpoint_velocity/mav_frame] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,164: +PARAM [/mavros/mission/pull_after_gcs] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,164: +PARAM [/mavros/mission/use_mission_item_int] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,164: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,164: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,165: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/orientation] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,165: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/field_of_view] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,165: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/send_tf] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,165: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/sensor_position/x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,166: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/sensor_position/y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,166: +PARAM [/mavros/distance_sensor/hrlv_ez4_pub/sensor_position/z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/orientation] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/field_of_view] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/send_tf] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/sensor_position/x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/sensor_position/y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,167: +PARAM [/mavros/distance_sensor/lidarlite_pub/sensor_position/z] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/sonar_1_sub/subscriber] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/sonar_1_sub/id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/sonar_1_sub/orientation] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/sonar_1_sub/horizontal_fov_ratio] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/sonar_1_sub/vertical_fov_ratio] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/laser_1_sub/subscriber] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/laser_1_sub/id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/distance_sensor/laser_1_sub/orientation] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,168: +PARAM [/mavros/image/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,169: +PARAM [/mavros/fake_gps/use_mocap] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,169: +PARAM [/mavros/fake_gps/mocap_transform] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,169: +PARAM [/mavros/fake_gps/use_vision] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,169: +PARAM [/mavros/fake_gps/geo_origin/lat] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,169: +PARAM [/mavros/fake_gps/geo_origin/lon] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,169: +PARAM [/mavros/fake_gps/geo_origin/alt] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,170: +PARAM [/mavros/fake_gps/eph] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,170: +PARAM [/mavros/fake_gps/epv] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,170: +PARAM [/mavros/fake_gps/satellites_visible] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,170: +PARAM [/mavros/fake_gps/fix_type] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,170: +PARAM [/mavros/fake_gps/tf/listen] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,170: +PARAM [/mavros/fake_gps/tf/send] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,170: +PARAM [/mavros/fake_gps/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,171: +PARAM [/mavros/fake_gps/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,171: +PARAM [/mavros/fake_gps/tf/rate_limit] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,171: +PARAM [/mavros/fake_gps/gps_rate] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,171: +PARAM [/mavros/landing_target/listen_lt] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,171: +PARAM [/mavros/landing_target/mav_frame] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,172: +PARAM [/mavros/landing_target/land_target_type] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,172: +PARAM [/mavros/landing_target/image/width] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,172: +PARAM [/mavros/landing_target/image/height] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,172: +PARAM [/mavros/landing_target/camera/fov_x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,173: +PARAM [/mavros/landing_target/camera/fov_y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,173: +PARAM [/mavros/landing_target/tf/send] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,173: +PARAM [/mavros/landing_target/tf/listen] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,173: +PARAM [/mavros/landing_target/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,174: +PARAM [/mavros/landing_target/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,174: +PARAM [/mavros/landing_target/tf/rate_limit] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,174: +PARAM [/mavros/landing_target/target_size/x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,174: +PARAM [/mavros/landing_target/target_size/y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,174: +PARAM [/mavros/mocap/use_tf] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,174: +PARAM [/mavros/mocap/use_pose] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,174: +PARAM [/mavros/mount/debounce_s] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/mount/err_threshold_deg] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/mount/negate_measured_roll] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/mount/negate_measured_pitch] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/mount/negate_measured_yaw] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/odometry/fcu/odom_parent_id_des] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/odometry/fcu/odom_child_id_des] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/odometry/fcu/map_id_des] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,175: +PARAM [/mavros/px4flow/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,176: +PARAM [/mavros/px4flow/ranger_fov] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,176: +PARAM [/mavros/px4flow/ranger_min_range] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,176: +PARAM [/mavros/px4flow/ranger_max_range] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,176: +PARAM [/mavros/vision_pose/tf/listen] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,177: +PARAM [/mavros/vision_pose/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,177: +PARAM [/mavros/vision_pose/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,177: +PARAM [/mavros/vision_pose/tf/rate_limit] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,177: +PARAM [/mavros/vision_speed/listen_twist] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,178: +PARAM [/mavros/vision_speed/twist_cov] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,178: +PARAM [/mavros/vibration/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,179: +PARAM [/mavros/wheel_odometry/count] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,179: +PARAM [/mavros/wheel_odometry/use_rpm] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,179: +PARAM [/mavros/wheel_odometry/wheel0/x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,179: +PARAM [/mavros/wheel_odometry/wheel0/y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,180: +PARAM [/mavros/wheel_odometry/wheel0/radius] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,180: +PARAM [/mavros/wheel_odometry/wheel1/x] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,180: +PARAM [/mavros/wheel_odometry/wheel1/y] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,181: +PARAM [/mavros/wheel_odometry/wheel1/radius] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,181: +PARAM [/mavros/wheel_odometry/send_raw] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,181: +PARAM [/mavros/wheel_odometry/send_twist] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,182: +PARAM [/mavros/wheel_odometry/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,182: +PARAM [/mavros/wheel_odometry/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,182: +PARAM [/mavros/wheel_odometry/vel_error] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,182: +PARAM [/mavros/wheel_odometry/tf/send] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,183: +PARAM [/mavros/wheel_odometry/tf/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,183: +PARAM [/mavros/wheel_odometry/tf/child_frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,183: +PARAM [/mavros/camera/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,183: +PARAM [/mavros/fcu_url] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,184: +PARAM [/mavros/gcs_url] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,184: +PARAM [/mavros/time/timesync_rate] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,184: +PARAM [/mavros/time/system_time_rate] by /roslaunch
+[rosmaster.master][INFO] 2026-11-17 16:09:24,378: +PUB [/rosout] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,379: +SERVICE [/mavros/get_loggers] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,380: +SERVICE [/mavros/set_logger_level] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,384: +SUB [/clock] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,387: +PUB [/diagnostics] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,388: +CACHEDPARAM [/mavros/diagnostic_period] by /mavros
+[rosmaster.master][INFO] 2026-11-17 16:09:24,403: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/', 'http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:24,404: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/', 'http://s-virtual-machine:45433/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:24,467: +SUB [/tf] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,469: +SUB [/tf_static] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,470: +PUB [/tf] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,471: +PUB [/tf_static] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,504: publisherUpdate[/tf] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:24,507: publisherUpdate[/tf] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:45433/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:24,507: publisherUpdate[/tf_static] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:24,508: publisherUpdate[/tf_static] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:45433/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:24,577: +CACHEDPARAM [/rosout_disable_topics_generation] by /mavros
+[rosmaster.master][INFO] 2026-11-17 16:09:24,579: +PUB [/mavlink/from] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,582: +SUB [/mavlink/to] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,609: +CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.master][INFO] 2026-11-17 16:09:24,614: +PUB [/mavros/radio_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,615: +PUB [/mavros/target_actuator_control] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,619: +SUB [/mavros/actuator_control] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,632: +PUB [/mavros/adsb/vehicle] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,634: +SUB [/mavros/adsb/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,635: +PUB [/mavros/altitude] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,635: +PUB [/mavros/cam_imu_sync/cam_imu_stamp] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,636: +PUB [/mavros/camera/image_captured] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,640: +SUB [/mavros/cellular_status/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,644: +SERVICE [/mavros/cmd/command] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,644: +SERVICE [/mavros/cmd/command_ack] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,645: +SERVICE [/mavros/cmd/command_int] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,646: +SERVICE [/mavros/cmd/arming] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,652: +SERVICE [/mavros/cmd/set_home] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,653: +SERVICE [/mavros/cmd/takeoff] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,653: +SERVICE [/mavros/cmd/land] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,654: +SERVICE [/mavros/cmd/trigger_control] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,654: +SERVICE [/mavros/cmd/trigger_interval] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,654: +SERVICE [/mavros/cmd/vtol_transition] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,661: +SUB [/mavros/companion_process/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,666: +SUB [/mavros/debug_value/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,666: +PUB [/mavros/debug_value/debug] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,667: +PUB [/mavros/debug_value/debug_vector] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,667: +PUB [/mavros/debug_value/debug_float_array] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,669: +PUB [/mavros/debug_value/named_value_float] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,670: +PUB [/mavros/debug_value/named_value_int] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,671: +PUB [/mavros/esc_info] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,675: +PUB [/mavros/esc_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,675: +PUB [/mavros/esc_telemetry] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,713: +SUB [/mavros/fake_gps/mocap/tf] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,714: +SERVICE [/mavros/ftp/list] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,716: +SERVICE [/mavros/ftp/open] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,722: +SERVICE [/mavros/ftp/close] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,722: +SERVICE [/mavros/ftp/read] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,723: +SERVICE [/mavros/ftp/write] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,724: +SERVICE [/mavros/ftp/mkdir] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,725: +SERVICE [/mavros/ftp/rmdir] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,726: +SERVICE [/mavros/ftp/remove] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,729: +SERVICE [/mavros/ftp/truncate] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,730: +SERVICE [/mavros/ftp/reset] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,731: +SERVICE [/mavros/ftp/rename] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,733: +SERVICE [/mavros/ftp/checksum] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,735: +PUB [/mavros/geofence/waypoints] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,735: +SERVICE [/mavros/geofence/pull] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,737: +SERVICE [/mavros/geofence/push] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,739: +SERVICE [/mavros/geofence/clear] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,763: +PUB [/mavros/global_position/raw/fix] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,764: +PUB [/mavros/global_position/raw/gps_vel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,765: +PUB [/mavros/global_position/raw/satellites] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,765: +PUB [/mavros/global_position/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,767: +PUB [/mavros/global_position/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,767: +PUB [/mavros/global_position/rel_alt] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,768: +PUB [/mavros/global_position/compass_hdg] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,770: +PUB [/mavros/global_position/gp_origin] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,779: +SUB [/mavros/global_position/set_gp_origin] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,785: +SUB [/mavros/home_position/home] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,786: +PUB [/mavros/global_position/gp_lp_offset] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,792: +SUB [/mavros/gps_input/gps_input] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,797: +SUB [/mavros/gps_rtk/send_rtcm] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,799: +PUB [/mavros/gps_rtk/rtk_baseline] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,801: +PUB [/mavros/gpsstatus/gps1/raw] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,805: +PUB [/mavros/gpsstatus/gps2/raw] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,806: +PUB [/mavros/gpsstatus/gps1/rtk] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,807: +PUB [/mavros/gpsstatus/gps2/rtk] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,811: +PUB [/move_base_simple/goal] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,819: +SUB [/mavros/global_position/gp_origin] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,823: +SUB [/mavros/hil/state] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,825: +SUB [/mavros/hil/gps] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,830: +SUB [/mavros/hil/imu_ned] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,834: +SUB [/mavros/hil/optical_flow] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,838: +SUB [/mavros/hil/rc_inputs] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,840: +PUB [/mavros/hil/controls] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,841: +PUB [/mavros/hil/actuator_controls] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,843: +PUB [/mavros/home_position/home] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,847: +SUB [/mavros/home_position/set] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,848: +SERVICE [/mavros/home_position/req_update] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,858: +PUB [/mavros/imu/data] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,860: +PUB [/mavros/imu/mag] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,861: +PUB [/mavros/imu/temperature_imu] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,861: +PUB [/mavros/imu/temperature_baro] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,862: +PUB [/mavros/imu/static_pressure] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,863: +PUB [/mavros/imu/diff_pressure] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,864: +PUB [/mavros/imu/data_raw] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,867: publisherUpdate[/mavros/home_position/home] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:24,868: publisherUpdate[/mavros/home_position/home] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:45433/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:24,890: +PUB [/rosout] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,899: +SUB [/clock] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,903: +SERVICE [/hover_acceleration_policy/get_loggers] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,908: +SERVICE [/hover_acceleration_policy/set_logger_level] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,912: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/', 'http://s-virtual-machine:45433/', 'http://s-virtual-machine:37281/']
+[rosmaster.master][INFO] 2026-11-17 16:09:24,914: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:37669/', 'http://s-virtual-machine:45433/', 'http://s-virtual-machine:37281/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:24,920: +PUB [/mavros/landing_target/pose_in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,922: +PUB [/mavros/landing_target/lt_marker] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,927: +SUB [/mavros/landing_target/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,936: +PUB [/mavros/local_position/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,937: +PUB [/mavros/local_position/pose_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,938: +PUB [/mavros/local_position/velocity_local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,940: +PUB [/mavros/local_position/velocity_body] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,941: +PUB [/mavros/local_position/velocity_body_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,942: +PUB [/mavros/local_position/accel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,944: +PUB [/mavros/local_position/odom] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,945: +PUB [/mavros/log_transfer/raw/log_entry] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,947: +PUB [/mavros/log_transfer/raw/log_data] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,948: +SERVICE [/mavros/log_transfer/raw/log_request_list] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,949: +SERVICE [/mavros/log_transfer/raw/log_request_data] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,950: +SERVICE [/mavros/log_transfer/raw/log_request_end] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,954: +SERVICE [/mavros/log_transfer/raw/log_request_erase] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,956: +PUB [/mavros/mag_calibration/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,959: +PUB [/mavros/mag_calibration/report] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,963: +PUB [/mavros/setpoint_raw/local] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,965: +PUB [/mavros/manual_control/control] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,968: publisherUpdate[/mavros/local_position/pose] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:24,972: +PUB [/mavros/setpoint_raw/attitude] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,979: +SUB [/mavros/local_position/pose] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:24,982: publisherUpdate[/mavros/local_position/pose] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:45433/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:24,993: +SUB [/mavros/state] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,000: +SUB [/hover/local_frame_reset_counter] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,003: +PUB [/hover/policy_ready] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,006: +SUB [/mavros/manual_control/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,010: +SUB [/mavros/imu/data] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,015: publisherUpdate[/hover/policy_ready] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:37281/']
+[rosmaster.master][INFO] 2026-11-17 16:09:25,020: publisherUpdate[/hover/policy_ready] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:37281/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:25,021: +SUB [/mavros/altitude] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,029: +SUB [/mavros/esc_status] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,035: +SUB [/mavros/rc/out] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,036: +SUB [/mavros/mocap/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,040: +SUB [/hover/esc_feedback] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,053: +SUB [/mavros/mount_control/command] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,056: +PUB [/mavros/mount_control/orientation] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,059: +PUB [/mavros/mount_control/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,061: +SERVICE [/mavros/mount_control/configure] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,071: +PUB [/mavros/nav_controller_output] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,078: +SUB [/mavros/obstacle/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,084: +PUB [/mavros/odometry/in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,092: +SUB [/mavros/odometry/out] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,097: +SUB [/mavros/onboard_computer/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,098: +SERVICE [/mavros/param/pull] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,099: +SERVICE [/mavros/param/push] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,099: +SERVICE [/mavros/param/set] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,099: +SERVICE [/mavros/param/get] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,100: +PUB [/mavros/param/param_value] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,104: +SUB [/mavros/play_tune] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,109: +PUB [/mavros/px4flow/raw/optical_flow_rad] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,112: +PUB [/mavros/px4flow/ground_distance] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,113: +PUB [/mavros/px4flow/temperature] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,120: +SUB [/mavros/px4flow/raw/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,123: +PUB [/mavros/rallypoint/waypoints] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,124: +SERVICE [/mavros/rallypoint/pull] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,124: +SERVICE [/mavros/rallypoint/push] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,126: +SERVICE [/mavros/rallypoint/clear] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,126: +PUB [/mavros/rc/in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,128: +PUB [/mavros/rc/out] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,131: +SUB [/mavros/rc/override] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,136: +SUB [/mavros/setpoint_accel/accel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,155: +SUB [/mavros/setpoint_attitude/thrust] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,159: +SUB [/mavros/setpoint_attitude/cmd_vel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,169: +SUB [/mavros/setpoint_position/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,169: publisherUpdate[/mavros/rc/out] -> http://s-virtual-machine:37281/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:25,175: publisherUpdate[/mavros/rc/out] -> http://s-virtual-machine:37281/ ['http://s-virtual-machine:45433/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:25,180: +SUB [/mavros/setpoint_position/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,184: +SUB [/mavros/setpoint_position/global_to_local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,188: +SUB [/mavros/global_position/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,192: +SUB [/mavros/local_position/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,193: +SERVICE [/mavros/setpoint_position/mav_frame] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,197: +SUB [/mavros/setpoint_raw/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,202: +SUB [/mavros/setpoint_raw/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,206: +SUB [/mavros/setpoint_raw/attitude] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,207: +PUB [/mavros/setpoint_raw/target_local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,208: +PUB [/mavros/setpoint_raw/target_global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,209: +PUB [/mavros/setpoint_raw/target_attitude] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,214: +SUB [/mavros/setpoint_trajectory/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,215: +PUB [/mavros/setpoint_trajectory/desired] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,216: +SERVICE [/mavros/setpoint_trajectory/reset] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,217: +SERVICE [/mavros/setpoint_trajectory/mav_frame] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,223: +SUB [/mavros/setpoint_velocity/cmd_vel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,228: +SUB [/mavros/setpoint_velocity/cmd_vel_unstamped] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,228: +SERVICE [/mavros/setpoint_velocity/mav_frame] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,237: +PUB [/mavros/state] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,237: +PUB [/mavros/extended_state] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,238: +PUB [/mavros/battery] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,239: +PUB [/mavros/estimator_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,239: +PUB [/mavros/statustext/recv] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,240: +PUB [/mavros/sys_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,244: +SUB [/mavros/statustext/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,246: +SERVICE [/mavros/set_stream_rate] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,246: +SERVICE [/mavros/set_mode] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,247: +SERVICE [/mavros/vehicle_info_get] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,249: +SERVICE [/mavros/set_message_interval] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,263: +PUB [/mavros/time_reference] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,265: +PUB [/mavros/timesync_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,266: +PUB [/mavros/terrain/report] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,271: +SUB [/mavros/trajectory/generated] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,275: +SUB [/mavros/trajectory/path] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,276: publisherUpdate[/mavros/state] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:25,276: +PUB [/mavros/trajectory/desired] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,279: publisherUpdate[/mavros/state] -> http://s-virtual-machine:37669/ ['http://s-virtual-machine:45433/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:25,279: publisherUpdate[/mavros/state] -> http://s-virtual-machine:37281/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:09:25,282: publisherUpdate[/mavros/state] -> http://s-virtual-machine:37281/ ['http://s-virtual-machine:45433/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:09:25,286: +SUB [/mavros/tunnel/in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,287: +PUB [/mavros/tunnel/out] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,288: +PUB [/mavros/vfr_hud] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,299: +SUB [/mavros/vision_pose/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,304: +SUB [/mavros/vision_pose/pose_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,309: +SUB [/mavros/vision_speed/speed_twist_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,314: +PUB [/mavros/mission/waypoints] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,314: +SERVICE [/mavros/mission/pull] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,316: +SERVICE [/mavros/mission/push] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,316: +SERVICE [/mavros/mission/clear] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,316: +PUB [/mavros/mission/reached] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,317: +SERVICE [/mavros/mission/set_current] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,318: +PUB [/mavros/wind_estimation] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:25,897: +PUB [/mavlink/gcs_ip] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:09:42,105: +CACHEDPARAM [/rosout_disable_topics_generation] by /hover_acceleration_policy
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -SUB [/clock] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -SUB [/mavros/local_position/pose] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -SUB [/mavros/state] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -SUB [/hover/local_frame_reset_counter] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -SUB [/hover/policy_ready] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -PUB [/rosout] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -PUB [/mavros/setpoint_raw/local] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -PUB [/mavros/setpoint_raw/attitude] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -PUB [/hover/esc_feedback] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -PUB [/clock] /hover_dual_interface http://s-virtual-machine:37669/
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -SERVICE [/hover_dual_interface/get_loggers] /hover_dual_interface rosrpc://s-virtual-machine:41283
+[rosmaster.master][INFO] 2026-11-17 16:12:52,360: -SERVICE [/hover_dual_interface/set_logger_level] /hover_dual_interface rosrpc://s-virtual-machine:41283
+[rosmaster.master][INFO] 2026-11-17 16:12:52,375: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:45433/', 'http://s-virtual-machine:37281/']
+[rosmaster.master][INFO] 2026-11-17 16:12:52,376: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:45433/', 'http://s-virtual-machine:37281/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:52,376: publisherUpdate[/mavros/setpoint_raw/local] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:37281/']
+[rosmaster.master][INFO] 2026-11-17 16:12:52,377: publisherUpdate[/mavros/setpoint_raw/local] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:37281/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:52,377: publisherUpdate[/mavros/setpoint_raw/attitude] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:37281/']
+[rosmaster.master][INFO] 2026-11-17 16:12:52,377: publisherUpdate[/mavros/setpoint_raw/attitude] -> http://s-virtual-machine:45433/ ['http://s-virtual-machine:37281/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:52,377: publisherUpdate[/hover/esc_feedback] -> http://s-virtual-machine:37281/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:52,378: publisherUpdate[/hover/esc_feedback] -> http://s-virtual-machine:37281/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:52,378: publisherUpdate[/clock] -> http://s-virtual-machine:43243/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:52,379: publisherUpdate[/clock] -> http://s-virtual-machine:43243/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:52,379: publisherUpdate[/clock] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:52,379: publisherUpdate[/clock] -> http://s-virtual-machine:45433/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:52,379: publisherUpdate[/clock] -> http://s-virtual-machine:37281/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:52,380: publisherUpdate[/clock] -> http://s-virtual-machine:37281/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/clock] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/mavros/local_position/pose] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/mavros/state] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/hover/local_frame_reset_counter] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/mavros/imu/data] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/mavros/altitude] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/mavros/esc_status] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/mavros/rc/out] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SUB [/hover/esc_feedback] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -PUB [/rosout] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -PUB [/mavros/setpoint_raw/local] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -PUB [/mavros/setpoint_raw/attitude] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -PUB [/hover/policy_ready] /hover_acceleration_policy http://s-virtual-machine:37281/
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SERVICE [/hover_acceleration_policy/get_loggers] /hover_acceleration_policy rosrpc://s-virtual-machine:39979
+[rosmaster.master][INFO] 2026-11-17 16:12:53,923: -SERVICE [/hover_acceleration_policy/set_logger_level] /hover_acceleration_policy rosrpc://s-virtual-machine:39979
+[rosmaster.master][INFO] 2026-11-17 16:12:53,982: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:45433/']
+[rosmaster.master][INFO] 2026-11-17 16:12:53,983: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ ['http://s-virtual-machine:45433/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:53,983: publisherUpdate[/mavros/setpoint_raw/local] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:53,983: publisherUpdate[/mavros/setpoint_raw/local] -> http://s-virtual-machine:45433/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:53,983: publisherUpdate[/mavros/setpoint_raw/attitude] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:53,984: publisherUpdate[/mavros/setpoint_raw/attitude] -> http://s-virtual-machine:45433/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:54,885: -PUB [/rosout] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,885: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:54,886: publisherUpdate[/rosout] -> http://s-virtual-machine:43243/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2026-11-17 16:12:54,887: -PUB [/diagnostics] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,887: -PUB [/tf] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,889: -PUB [/tf_static] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,894: -PUB [/mavlink/from] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,894: publisherUpdate[/tf] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:54,897: publisherUpdate[/tf] -> http://s-virtual-machine:45433/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-11-17 16:12:54,899: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-11-17 16:12:54,899: publisherUpdate[/tf_static] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:54,905: -PUB [/mavros/radio_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,908: publisherUpdate[/tf_static] -> http://s-virtual-machine:45433/ []: sec=0.01, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-11-17 16:12:54,908: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-11-17 16:12:54,909: -PUB [/mavros/target_actuator_control] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,910: -PUB [/mavros/adsb/vehicle] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,910: -PUB [/mavros/altitude] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,911: -PUB [/mavros/cam_imu_sync/cam_imu_stamp] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,911: -PUB [/mavros/camera/image_captured] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,913: -PUB [/mavros/debug_value/debug] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,914: -PUB [/mavros/debug_value/debug_vector] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,918: -PUB [/mavros/debug_value/debug_float_array] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,919: -PUB [/mavros/debug_value/named_value_float] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,919: -PUB [/mavros/debug_value/named_value_int] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,920: -PUB [/mavros/esc_info] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,920: -PUB [/mavros/esc_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,921: -PUB [/mavros/esc_telemetry] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,922: -PUB [/mavros/geofence/waypoints] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,925: -PUB [/mavros/global_position/raw/fix] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,926: -PUB [/mavros/global_position/raw/gps_vel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,926: -PUB [/mavros/global_position/raw/satellites] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,927: -PUB [/mavros/global_position/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,929: -PUB [/mavros/global_position/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,929: -PUB [/mavros/global_position/rel_alt] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,929: -PUB [/mavros/global_position/compass_hdg] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,931: -PUB [/mavros/global_position/gp_origin] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,932: -PUB [/mavros/global_position/gp_lp_offset] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,933: -PUB [/mavros/gps_rtk/rtk_baseline] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,935: -PUB [/mavros/gpsstatus/gps1/raw] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,936: -PUB [/mavros/gpsstatus/gps2/raw] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,936: -PUB [/mavros/gpsstatus/gps1/rtk] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,941: -PUB [/mavros/gpsstatus/gps2/rtk] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,942: -PUB [/move_base_simple/goal] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,943: -PUB [/mavros/hil/controls] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,943: -PUB [/mavros/hil/actuator_controls] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,944: -PUB [/mavros/home_position/home] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,944: -PUB [/mavros/imu/data] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,944: -PUB [/mavros/imu/mag] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,945: -PUB [/mavros/imu/temperature_imu] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,945: -PUB [/mavros/imu/temperature_baro] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,945: -PUB [/mavros/imu/static_pressure] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,946: -PUB [/mavros/imu/diff_pressure] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,946: -PUB [/mavros/imu/data_raw] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,948: -PUB [/mavros/landing_target/pose_in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,948: -PUB [/mavros/landing_target/lt_marker] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,948: -PUB [/mavros/local_position/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,948: -PUB [/mavros/local_position/pose_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,948: -PUB [/mavros/local_position/velocity_local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,949: -PUB [/mavros/local_position/velocity_body] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,950: -PUB [/mavros/local_position/velocity_body_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,957: -PUB [/mavros/local_position/accel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,958: -PUB [/mavros/local_position/odom] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,958: -PUB [/mavros/log_transfer/raw/log_entry] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,958: -PUB [/mavros/log_transfer/raw/log_data] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,960: -PUB [/mavros/mag_calibration/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,960: -PUB [/mavros/mag_calibration/report] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,961: -PUB [/mavros/manual_control/control] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,961: -PUB [/mavros/mount_control/orientation] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,962: -PUB [/mavros/mount_control/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,963: -PUB [/mavros/nav_controller_output] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,963: -PUB [/mavros/odometry/in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,964: -PUB [/mavros/param/param_value] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,965: -PUB [/mavros/px4flow/raw/optical_flow_rad] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,965: -PUB [/mavros/px4flow/ground_distance] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,967: -PUB [/mavros/px4flow/temperature] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,967: -PUB [/mavros/rallypoint/waypoints] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,968: -PUB [/mavros/rc/in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,968: -PUB [/mavros/rc/out] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,969: -PUB [/mavros/setpoint_raw/target_local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,969: -PUB [/mavros/setpoint_raw/target_global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,970: -PUB [/mavros/setpoint_raw/target_attitude] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,971: -PUB [/mavros/setpoint_trajectory/desired] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,971: -PUB [/mavros/state] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,971: -PUB [/mavros/extended_state] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,972: -PUB [/mavros/battery] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,977: -PUB [/mavros/estimator_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,979: -PUB [/mavros/statustext/recv] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,979: -PUB [/mavros/sys_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,979: -PUB [/mavros/time_reference] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,979: -PUB [/mavros/timesync_status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,980: -PUB [/mavros/terrain/report] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,980: -PUB [/mavros/trajectory/desired] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,980: -PUB [/mavros/tunnel/out] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,981: -PUB [/mavros/vfr_hud] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,981: -PUB [/mavros/mission/waypoints] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,981: -PUB [/mavros/mission/reached] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,982: -PUB [/mavros/wind_estimation] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,982: -PUB [/mavlink/gcs_ip] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,983: -SUB [/clock] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,983: -SUB [/tf] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,983: -SUB [/tf_static] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,984: -SUB [/mavlink/to] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,984: -SUB [/mavros/actuator_control] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,984: -SUB [/mavros/adsb/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,985: -SUB [/mavros/cellular_status/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,985: -SUB [/mavros/companion_process/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,985: -SUB [/mavros/debug_value/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,986: -SUB [/mavros/fake_gps/mocap/tf] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,986: -SUB [/mavros/global_position/set_gp_origin] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,987: publisherUpdate[/mavros/global_position/global] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:54,988: -SUB [/mavros/home_position/home] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,993: publisherUpdate[/mavros/global_position/global] -> http://s-virtual-machine:45433/ []: sec=0.01, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-11-17 16:12:54,994: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-11-17 16:12:54,994: publisherUpdate[/mavros/global_position/gp_origin] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:54,995: publisherUpdate[/mavros/global_position/gp_origin] -> http://s-virtual-machine:45433/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-11-17 16:12:54,995: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-11-17 16:12:54,995: publisherUpdate[/mavros/home_position/home] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:54,996: -SUB [/mavros/gps_input/gps_input] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,997: publisherUpdate[/mavros/home_position/home] -> http://s-virtual-machine:45433/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-11-17 16:12:54,997: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-11-17 16:12:54,997: publisherUpdate[/mavros/local_position/pose] -> http://s-virtual-machine:45433/ []
+[rosmaster.master][INFO] 2026-11-17 16:12:54,997: -SUB [/mavros/gps_rtk/send_rtcm] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:54,998: publisherUpdate[/mavros/local_position/pose] -> http://s-virtual-machine:45433/ []: sec=0.00, exception=<Fault -1: 'publisherUpdate: unknown method name'>
+[rosmaster.threadpool][ERROR] 2026-11-17 16:12:54,998: Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/threadpool.py", line 218, in run
+    result = cmd(*args)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rosmaster/master_api.py", line 210, in publisher_update_task
+    ret = xmlrpcapi(api).publisherUpdate('/master', topic, pub_uris)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1109, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1450, in __request
+    response = self.__transport.request(
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1153, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1169, in single_request
+    return self.parse_response(resp)
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 1341, in parse_response
+    return u.close()
+  File "/usr/lib/python3.8/xmlrpc/client.py", line 655, in close
+    raise Fault(**self._stack[0])
+xmlrpc.client.Fault: <Fault -1: 'publisherUpdate: unknown method name'>
+
+[rosmaster.master][INFO] 2026-11-17 16:12:54,998: -SUB [/mavros/global_position/gp_origin] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,000: -SUB [/mavros/hil/state] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,000: -SUB [/mavros/hil/gps] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,000: -SUB [/mavros/hil/imu_ned] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,001: -SUB [/mavros/hil/optical_flow] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,002: -SUB [/mavros/hil/rc_inputs] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,004: -SUB [/mavros/home_position/set] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,004: -SUB [/mavros/landing_target/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,004: -SUB [/mavros/manual_control/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,005: -SUB [/mavros/mocap/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,006: -SUB [/mavros/mount_control/command] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,006: -SUB [/mavros/obstacle/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,010: -SUB [/mavros/odometry/out] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,010: -SUB [/mavros/onboard_computer/status] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,010: -SUB [/mavros/play_tune] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,010: -SUB [/mavros/px4flow/raw/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,010: -SUB [/mavros/rc/override] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,010: -SUB [/mavros/setpoint_accel/accel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,012: -SUB [/mavros/setpoint_attitude/thrust] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,012: -SUB [/mavros/setpoint_attitude/cmd_vel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,013: -SUB [/mavros/setpoint_position/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,014: -SUB [/mavros/setpoint_position/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,015: -SUB [/mavros/setpoint_position/global_to_local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,015: -SUB [/mavros/global_position/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,016: -SUB [/mavros/local_position/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,017: -SUB [/mavros/setpoint_raw/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,021: -SUB [/mavros/setpoint_raw/global] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,022: -SUB [/mavros/setpoint_raw/attitude] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,023: -SUB [/mavros/setpoint_trajectory/local] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,023: -SUB [/mavros/setpoint_velocity/cmd_vel] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,024: -SUB [/mavros/setpoint_velocity/cmd_vel_unstamped] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,025: -SUB [/mavros/statustext/send] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,025: -SUB [/mavros/trajectory/generated] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,025: -SUB [/mavros/trajectory/path] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,026: -SUB [/mavros/tunnel/in] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,026: -SUB [/mavros/vision_pose/pose] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,034: -SUB [/mavros/vision_pose/pose_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,037: -SUB [/mavros/vision_speed/speed_twist_cov] /mavros http://s-virtual-machine:45433/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,038: -SERVICE [/mavros/get_loggers] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,040: -SERVICE [/mavros/set_logger_level] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,041: -SERVICE [/mavros/cmd/command] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,043: -SERVICE [/mavros/cmd/command_ack] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,044: -SERVICE [/mavros/cmd/command_int] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,045: -SERVICE [/mavros/cmd/arming] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,045: -SERVICE [/mavros/cmd/set_home] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,046: -SERVICE [/mavros/cmd/takeoff] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,046: -SERVICE [/mavros/cmd/land] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,054: -SERVICE [/mavros/cmd/trigger_control] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,055: -SERVICE [/mavros/cmd/trigger_interval] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,056: -SERVICE [/mavros/cmd/vtol_transition] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,058: -SERVICE [/mavros/ftp/list] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,058: -SERVICE [/mavros/ftp/open] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,059: -SERVICE [/mavros/ftp/close] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,060: -SERVICE [/mavros/ftp/read] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,060: -SERVICE [/mavros/ftp/write] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,061: -SERVICE [/mavros/ftp/mkdir] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,061: -SERVICE [/mavros/ftp/rmdir] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,062: -SERVICE [/mavros/ftp/remove] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,062: -SERVICE [/mavros/ftp/truncate] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,063: -SERVICE [/mavros/ftp/reset] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,063: -SERVICE [/mavros/ftp/rename] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,064: -SERVICE [/mavros/ftp/checksum] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,064: -SERVICE [/mavros/geofence/pull] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,065: -SERVICE [/mavros/geofence/push] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,065: -SERVICE [/mavros/geofence/clear] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,067: -SERVICE [/mavros/home_position/req_update] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,067: -SERVICE [/mavros/log_transfer/raw/log_request_list] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,070: -SERVICE [/mavros/log_transfer/raw/log_request_data] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,070: -SERVICE [/mavros/log_transfer/raw/log_request_end] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,071: -SERVICE [/mavros/log_transfer/raw/log_request_erase] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,072: -SERVICE [/mavros/mount_control/configure] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,075: -SERVICE [/mavros/param/pull] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,076: -SERVICE [/mavros/param/push] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,076: -SERVICE [/mavros/param/set] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,076: -SERVICE [/mavros/param/get] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,076: -SERVICE [/mavros/rallypoint/pull] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,078: -SERVICE [/mavros/rallypoint/push] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,078: -SERVICE [/mavros/rallypoint/clear] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,078: -SERVICE [/mavros/setpoint_position/mav_frame] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,079: -SERVICE [/mavros/setpoint_trajectory/reset] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,079: -SERVICE [/mavros/setpoint_trajectory/mav_frame] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,080: -SERVICE [/mavros/setpoint_velocity/mav_frame] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,080: -SERVICE [/mavros/set_stream_rate] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,080: -SERVICE [/mavros/set_mode] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,081: -SERVICE [/mavros/vehicle_info_get] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,081: -SERVICE [/mavros/set_message_interval] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,082: -SERVICE [/mavros/mission/pull] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,084: -SERVICE [/mavros/mission/push] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,086: -SERVICE [/mavros/mission/clear] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,087: -SERVICE [/mavros/mission/set_current] /mavros rosrpc://s-virtual-machine:47429
+[rosmaster.master][INFO] 2026-11-17 16:12:55,087: -CACHEDPARAM [/mavros/diagnostic_period] by /mavros
+[rosmaster.master][INFO] 2026-11-17 16:12:55,088: -CACHEDPARAM [/rosout_disable_topics_generation] by /mavros
+[rosmaster.master][INFO] 2026-11-17 16:12:55,594: -PUB [/rosout_agg] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,594: -SUB [/clock] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,594: -SUB [/rosout] /rosout http://s-virtual-machine:43243/
+[rosmaster.master][INFO] 2026-11-17 16:12:55,595: -SERVICE [/rosout/get_loggers] /rosout rosrpc://s-virtual-machine:36663
+[rosmaster.master][INFO] 2026-11-17 16:12:55,595: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://s-virtual-machine:36663
+[rosmaster.master][INFO] 2026-11-17 16:12:55,595: -CACHEDPARAM [/rosout/omit_topics] by /rosout
+[rosmaster.main][INFO] 2026-11-17 16:12:55,685: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2026-11-17 16:12:55,685: stopping master...
+[rospy.core][INFO] 2026-11-17 16:12:55,685: signal_shutdown [atexit]

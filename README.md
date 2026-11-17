@@ -1,12 +1,14 @@
 # Hover-BPTT · GNSS 拒止环境下的系留无人机控制
 
+2026-11-17 当前新增统一残差P3，使用无风、无绳拉力Position数据联合学习，接入冻结P2并输出加速度。两组PX4120s均安全且稳态，弱/强风三维RMSE0.532/1.357m，弱风工程容差仍差2.3mm。[当前模型、Adam、完整证据和动图](P3/results/unified_20261117/README.md)
+
 当前 5 m 悬停结果采用水平加速度 BPTT 和仿真垂向 PID。保留累计 13 次更新的 Actor 与 Adam，以及同一权重的 80 条恒风和 20 条时变风完整复验。100 条均安全完成 120 秒并逐例达到三维 RMSE 门限。恒风和时变风稳态分别为 78/80 和 19/20。 [检查点、逐例结果和回放](P2/results/acceleration_hover/README.md)
 
-最新 P3 在 Position 机体系零偏／水平质心校准上加入 IMU 安装旋转、电机公共推力轴和完整惯量辨识。实际注入 IMU 每轴 1–3°、电机滚转／俯仰每轴 1–1.5°及偏置点载荷；三机体、两挂点、1／5 m/s 风的 120 秒配对中，P2 安全 2/12，P2+P3 安全、稳态及逐例 RMSE 均 12/12，弱／强风最差三维 RMSE 为 0.408／1.141 m。辨识采用独立机体系姿态参考，此为原生 MuJoCo 开发验证；真实 PX4 与实机仍待验证。[最新 P3 参数、完整结果与回放](P3/results/installation_20261115/README.md) · [此前零偏／质心结果](P3/results/body_calibration_transport/README.md)
+此前物理参数 P3 在 Position 机体系零偏／水平质心校准上加入 IMU 安装旋转、电机公共推力轴和完整惯量辨识。实际注入 IMU 每轴 1–3°、电机滚转／俯仰每轴 1–1.5°及偏置点载荷；三机体、两挂点、1／5 m/s 风的 120 秒配对中，P2 安全 2/12，P2+P3 安全、稳态及逐例 RMSE 均 12/12，弱／强风最差三维 RMSE 为 0.408／1.141 m。辨识采用独立机体系姿态参考，此为原生 MuJoCo 开发验证；真实 PX4 与实机仍待验证。[历史物理参数 P3、完整结果与回放](P3/results/installation_20261115/README.md) · [此前零偏／质心结果](P3/results/body_calibration_transport/README.md)
 
 新增独立 MAVROS 水平加速度＋PX4 高度环入口，并保留角速度＋总推力路线。两者使用同一冻结 Actor13；早期 VM 对照关闭 P3，后续按 Position 辨识后接入观测补偿；迁移效果与上述原生成绩分开记录。[一键脚本、接口与输入边界](px4_offboard/acceleration_dual/README.md) · [虚拟机逐例结果](px4_offboard/acceleration_dual/report.md)
 
-后续诊断已定位 stock Iris 俯仰内环对当前机体过激，并修正了实际 XML 质量的元数据说明。真实 Position 的 P3 辨识与高频电机对齐已通过；按用户要求，P2 保持冻结，P3 从现有观测通道做机体适配，仍输出加速度。最新四条120s均安全，强风两例RMSE/稳态通过，弱风两例仍漂移；不能称为稳定收敛。[诊断及匹配内环基线](px4_offboard/acceleration_dual/diagnosis.md) · [P3 观测补偿对照](px4_offboard/acceleration_dual/observer_report.md)
+后续诊断已定位 stock Iris 俯仰内环对当前机体过激，并修正了实际 XML 质量的元数据说明。真实 Position 的 P3 辨识与高频电机对齐已通过；按用户要求，P2 保持冻结，P3 从现有观测通道做机体适配，仍输出加速度。该阶段四条120s均安全，强风两例RMSE/稳态通过，弱风两例仍漂移；不能称为稳定收敛。[诊断及匹配内环基线](px4_offboard/acceleration_dual/diagnosis.md) · [P3 观测补偿对照](px4_offboard/acceleration_dual/observer_report.md)
 
 本工程研究四旋翼在无法使用 GNSS 定位时，如何仅凭机载感知，在柔性系留绳的约束下稳定悬停或跟随移动地面平台。控制策略由 PyTorch 中的可微动力学训练，随后在 MuJoCo 原生柔绳和 PX4 SITL 闭环中复验。
 
@@ -32,7 +34,7 @@ Actor 保留起飞参考系三轴加速度输出结构。当前混合控制执�
 
 由惯性信号构造的运动特征会漂移，因此水平位置以仿真真值在离线评估。原厂 PX4 接管试验在切换前由 Position 使用仿真 GNSS 建立稳定悬停，Offboard 策略推理始终使用上述机载输入边界。另有关闭 GNSS 和视觉注入的 SITL 夹具验证。[PX4 运行方式](px4_offboard/README.md)
 
-## 推力与角速度基线及 PX4 迁移
+## 历史推力与角速度基线及 PX4 迁移
 
 ```mermaid
 flowchart LR

@@ -1,0 +1,2141 @@
+{
+  "date": "2026-11-17",
+  "status": "complete",
+  "scope": "User requested removal of obsolete scripts and development intermediates; retain necessary dependencies and current models/evidence",
+  "removed_count": 213,
+  "removed_bytes": 583696215,
+  "retired_script_count": 11,
+  "archived_development_cases": 8,
+  "archive": "px4_offboard/acceleration_dual/history/pre_unified_20261117.json",
+  "archive_sha256": "8dacfaeae802466c32df21a79e4e37779a168e23b324977049773e5cbfe0a903",
+  "retired_sources": "cleanup/history_20261117/retired_sources.zip",
+  "retired_sources_sha256": "30f9a288e1628d53e8a4a0d24b319fd1c678324b8c9a98b2a52bbc67126a732f",
+  "removed_files": [
+    {
+      "path": "cleanup/cli_checks.json",
+      "bytes": 423,
+      "sha256": "4954befa53b144fe9878d134f5d996ddd2d8ebccf1b97c029d827120504c2d01"
+    },
+    {
+      "path": "cleanup/inventory_20261109.json",
+      "bytes": 44038,
+      "sha256": "05cb375f8f5355a7406d65691b7f7ee3dd1e163d9ea27f9fb237c72a673785e9"
+    },
+    {
+      "path": "cleanup/PLAN_20261109.md",
+      "bytes": 2782,
+      "sha256": "31569f5d65632e844ae577600280a19fb366abb5d7b25dd06479c0adb328aa51"
+    },
+    {
+      "path": "cleanup/regression_20261109.json",
+      "bytes": 788,
+      "sha256": "5092452e91f7acba9607001e3ec922f06d50d296cd90535a4292a4a7e2fdf586"
+    },
+    {
+      "path": "cleanup/regression_publish_20261115.txt",
+      "bytes": 12987,
+      "sha256": "971197f5808118e8c47dc995424eaa593b62deb8e385795bdc53feef36a3cc6a"
+    },
+    {
+      "path": "cleanup/regression_publish_20261116.txt",
+      "bytes": 13015,
+      "sha256": "310593b15a173124de668761e05b405cd66f07dea0316aba6a7c01ae41c2cc87"
+    },
+    {
+      "path": "cleanup/retain_20261109.py",
+      "bytes": 9034,
+      "sha256": "b022fdc101de73b2707c785cbce81734be5454259e116f653c59d2bcd3d3cfc1"
+    },
+    {
+      "path": "cleanup/retain_latest.py",
+      "bytes": 5597,
+      "sha256": "419bb471c3e0af064e5b7250b0bf62777436215323ac62de9c750626f120daaf"
+    },
+    {
+      "path": "cleanup/retain_track.py",
+      "bytes": 11677,
+      "sha256": "e2fe9a796edced93b3964a4cd776fec43f6616355e00971a853cf4300b127e3f"
+    },
+    {
+      "path": "cleanup/seal_20261109.py",
+      "bytes": 1415,
+      "sha256": "98db9de1740b67939e18c3ae7a585e865131e931db4f156bc946701140dcde75"
+    },
+    {
+      "path": "cleanup/update_20261109.py",
+      "bytes": 17543,
+      "sha256": "da10462fc87f596c92daf89b6be77395980c3c4753145657abae2294d560dd11"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-10-acceleration-hover.md",
+      "bytes": 3046,
+      "sha256": "414bde473c6b2c975ad98e78a24d00dd4362d112a4a799ca1e6ccc59d95be386"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-15-p3-body-calibration.md",
+      "bytes": 7823,
+      "sha256": "3e4ee6867e860d8a6dc232fadbcc080d0fc8b4003d03627bfb8f5a456c23f209"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-15-p3-installation.md",
+      "bytes": 5461,
+      "sha256": "a3e52d1fd5d6bdd7b687b40ceca63a252c1367f01178760c32b115514579629a"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-15-px4-dual-interface.md",
+      "bytes": 4897,
+      "sha256": "1f90aea072cb7d6ea38e6299bfc2db0aab060a17f6d40597ceaed6892baaace9"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-15-retain-latest-publish.md",
+      "bytes": 1900,
+      "sha256": "cdc50eae158016485fcd953d31f907fcf249ab3512fa60ee50dee37981619e44"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-16-px4-position-p3.md",
+      "bytes": 5844,
+      "sha256": "524df3012d0b8eb5256b1bb04ab20d7f02103df0623d0293eef59145f228eb03"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-17-unified-p3.md",
+      "bytes": 2086,
+      "sha256": "47771a1e1ffe05dfee28414331afde3985950c82854075b48c4a9e4c549bf2e6"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-10-acceleration-hover-design.md",
+      "bytes": 1013,
+      "sha256": "136949f66411f0c3c345c2ec0471c5642cbd9784116d5ebe223d3f41be900fc2"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-15-p3-body-calibration.md",
+      "bytes": 2508,
+      "sha256": "74143543c0f2107303bb96f4f3fca0682d0f58a934f13a06724ed7072b38e305"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-15-px4-dual-interface.md",
+      "bytes": 1543,
+      "sha256": "91cbd7c2c48f30e2440c9db5803f317cf59866310c03aea32574896d91d611dd"
+    },
+    {
+      "path": "P2/benchmark_parallel_cohorts.py",
+      "bytes": 7003,
+      "sha256": "714ec566eded46716095d561f232987aefd754cb3baaa5f570c9bab8a8d46e30"
+    },
+    {
+      "path": "P3/export_px4_observer.py",
+      "bytes": 2192,
+      "sha256": "40648862e44781600a6c5c32a5933ac4f9cf715c040b65d91e319fde3853a70c"
+    },
+    {
+      "path": "P3/report_body_calibration.py",
+      "bytes": 13376,
+      "sha256": "2d3ec82d25dd5f97a42a1fd21182482ba1ad92f90a1cc2a718361502e086abf7"
+    },
+    {
+      "path": "P3/report_installation.py",
+      "bytes": 10350,
+      "sha256": "e5b5a17b5937fe9048b28be93ad61f76ab51b12d94c3e1bb5fd5bbb0de037662"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 618,
+      "sha256": "dc956cd396b4f95a6b9fc934f8f49596934aec5301243e34bef7f367bc950098"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/0_service.log",
+      "bytes": 991,
+      "sha256": "0ae1b26270789678558d48d3f10226f9555b43e31491875c65608364a53d7ac5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/1_service.log",
+      "bytes": 20265,
+      "sha256": "9bb41d65aa87fc4077f062d819f776e279669e87e28e4f811a56c100b00d70aa"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/2_service.log",
+      "bytes": 1010,
+      "sha256": "08181deaea981086c5d435d04fb37ce39a0161ac376b80464fdf5576e3b15cd0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/audit.json",
+      "bytes": 2162,
+      "sha256": "344d0bf041b4b5e48a4d0c383607a97c666a4c73ef1fa870a5ab67bd637b97c7"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/log/2026-11-16/01_43_23.ulg",
+      "bytes": 33962504,
+      "sha256": "0348228d1883b046d7b663bf906fc82efe43f0b657a4a5507308a607c457b3fa"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/px4.log",
+      "bytes": 15354,
+      "sha256": "f694e4e6c3db4c214528762a71a1c2a8e45f4c0cb770224389daa4c35d54b27f"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/summary.json",
+      "bytes": 2372,
+      "sha256": "9085404f97f78cb44a18c4e242b1ded2213c0cbe25544bc057487d5d741e2161"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/trace.npy",
+      "bytes": 18014552,
+      "sha256": "da66b3b9010d2148f3ab49b4e504ae98cd5396d54181c00be5f292025340bf28"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/frozen_source.zip",
+      "bytes": 75602,
+      "sha256": "9d1e14aa1347d1e9cc92c5fce5dd61a2d88ec5f4bf74530d87ac451ff42697a5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/interface.json",
+      "bytes": 1139,
+      "sha256": "b37959de0e0645618390e403e98af39f4ef5dac6b7c92afe796990c0e8c06f32"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/policy_runtime.json",
+      "bytes": 5069351,
+      "sha256": "e4e5883b79dc7de16dd4e208da76aa81fb1fae92a746ed7fa37ad792237ade6c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/preflight_calibration.json",
+      "bytes": 148,
+      "sha256": "e7b14af03cf005c9ba6a7ec1c0214bdfdf0e071dfa3076c0314ce7fff8ee691c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/protocol.json",
+      "bytes": 21258,
+      "sha256": "6fa240ca8b2532099d36a21e3f0f41283e7a95ddc1eb9729fed12a0717bc71e6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/curves.png",
+      "bytes": 250831,
+      "sha256": "2d2928f8af5c3314ed7ca8e34830846ddd55ecbbc7b8c6c4a3348b40a706f212"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/flight.gif",
+      "bytes": 12750810,
+      "sha256": "2daaf2ccc71271993d9edf0349443b7dd7abf7eeb21954adf19502145ef390f7"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/flight.png",
+      "bytes": 238286,
+      "sha256": "c73176c7b7762a29e65dc43f4f9f457e91ee8757dfef12a0f8e9736ad4a2103d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/manifest.json",
+      "bytes": 1004,
+      "sha256": "b5ff4a97d9d3b8b31c740d8d62fc134d56be3d0e0901ae6275938c87aef22ef8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/result.json",
+      "bytes": 2265,
+      "sha256": "d9768c19835bafed04dfed379d04e70f2f0deccee26b72475ec1d931c59d70bf"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/trajectory.npz",
+      "bytes": 453381,
+      "sha256": "9279408de7f3f7ad4f422594db76b79cd80dd0fca32e4a0cd1e2c6b871b227ee"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/wire_commands.json",
+      "bytes": 13597939,
+      "sha256": "38b68efecaae1f109a08701869adc5dede2a5c973d7da6f121537426bc63c739"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1.log",
+      "bytes": 15477,
+      "sha256": "9ecdac12a6f36032d4f99ed11fdfc314f0467680dcec96160c152aa2eab2ca8b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/0_service.log",
+      "bytes": 991,
+      "sha256": "660305d8e796397468d5df63d46f00dafa0387559afa34f42addcc7d8c05cee3"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/1_service.log",
+      "bytes": 19628,
+      "sha256": "cdf88d5dd9af1061493d6026145e369964368b61e96c27f80335b413e87c1efd"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/2_service.log",
+      "bytes": 1010,
+      "sha256": "ed9798e489d3c28b0d9ab2e47c32093217af20e82ec78a4124a2f58ae183759e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/audit.json",
+      "bytes": 2163,
+      "sha256": "89ebcabc31b8b1ce4c5a73eff04fbc2d7d645fddc49e2add1fd6cd86d7611ad3"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/log/2026-11-16/01_47_26.ulg",
+      "bytes": 32456883,
+      "sha256": "1c85914b12055ba6e9758e5c0ad6c7aa1f7246a241308c155f3cbc068aa87ec4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/px4.log",
+      "bytes": 15248,
+      "sha256": "25b67df901bd64612d5d0fdc5e048f64d71803ddd4413ec9c5e3479819ce927d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/summary.json",
+      "bytes": 2294,
+      "sha256": "f48e74623f98ba5d9db288f156b6db9c6a8a197296a9ed094411a9c43408df68"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/trace.npy",
+      "bytes": 18036528,
+      "sha256": "ca4d3e9afbc0a4e3a142b37b22df54ca75cd4c28fee8fe6481640742d09bae11"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/frozen_source.zip",
+      "bytes": 75602,
+      "sha256": "9d1e14aa1347d1e9cc92c5fce5dd61a2d88ec5f4bf74530d87ac451ff42697a5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/interface.json",
+      "bytes": 1139,
+      "sha256": "f7c208db5080ccba18e93172e3391bcb06d7ba92d4706bb2bb9cbeef5429fa03"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/policy_runtime.json",
+      "bytes": 4832157,
+      "sha256": "8567934b9d84c15377a83983f8c0652d3227d7ed6f5d5910ff0de8cf165ae420"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/preflight_calibration.json",
+      "bytes": 149,
+      "sha256": "3d5739656d13916b788c303f2bc319a4c4840f26dfc1ba8e0994ae1d3848305e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/protocol.json",
+      "bytes": 21266,
+      "sha256": "f6ff736d1d0183d443fc965ae38fc1018b341d0f3e09804ef65ce4aaf51a941f"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/curves.png",
+      "bytes": 178365,
+      "sha256": "989c02d1f815a3179aaa2725d63ab40adee415719f95dffe936d5de13062234e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/flight.gif",
+      "bytes": 11062007,
+      "sha256": "b7540363d0dd156397e87a06ee6bee169c466d8cb84a1b9e1ac850e02fa6fc37"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/flight.png",
+      "bytes": 208943,
+      "sha256": "d8944ef41e29c4d397302f480dcdd40a0d01b366bfc8861ce99a59937706cc5a"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/manifest.json",
+      "bytes": 999,
+      "sha256": "d3a24253d5521fc89c082f50d342b92d94fe574a33026b062e3e0b572a971fce"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/result.json",
+      "bytes": 2266,
+      "sha256": "73943f081a62ed1ee884b5a1241c410771b2945dd1f356ef32d23662d3056c76"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/trajectory.npz",
+      "bytes": 450752,
+      "sha256": "39a9f2944f8eccca27271910fb3bc2c3f9f61704935f99b2213c11ebee19bc95"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/wire_commands.json",
+      "bytes": 12954805,
+      "sha256": "9f82c8e57f05b943af72f775adae8a1ed6c0a6a5ce6aa194392052dfb98e3fc7"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5.log",
+      "bytes": 16212,
+      "sha256": "d74124cb6e3c0d08f05d717ef5af2994f54591646cb357ff2558858054c5fea5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/0_service.log",
+      "bytes": 990,
+      "sha256": "940845bb209014a6e026625720a97ad47e0d85dbd2046ef32d3b9a46147d11f7"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/1_service.log",
+      "bytes": 20563,
+      "sha256": "f8d81187b027f14eed1f5c49d0b4d693e2a7c97f04e13b2634b190d06d07e99c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/2_service.log",
+      "bytes": 1010,
+      "sha256": "d8e82da479697091db98d8393c1b5195f1ae437a67d06b760165ae619a267fa5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/audit.json",
+      "bytes": 2183,
+      "sha256": "0b12dd5101c9d290c24c84b6bcc8d6d744c04d1e51c2849d155fb8d2bf9e3a57"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/log/2026-11-16/01_46_38.ulg",
+      "bytes": 9933535,
+      "sha256": "c25b77c6b31b69dadd702461af5472683d221b958e58b54510efb77b45d6e365"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/px4.log",
+      "bytes": 15248,
+      "sha256": "c9d726b2f406831b5edb6b42ca4184c12c8c00febb5d863b5d05d5c083d8bb7c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/summary.json",
+      "bytes": 2368,
+      "sha256": "47425177fb34af05f27b12c94c6839b982e1c94147a0ef993b5dc76234e6e738"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/trace.npy",
+      "bytes": 3383360,
+      "sha256": "05b5e3514aeae2210e753b809411e6c5bb0da9890a4f3c333a1354c977b363a5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/frozen_source.zip",
+      "bytes": 75602,
+      "sha256": "9d1e14aa1347d1e9cc92c5fce5dd61a2d88ec5f4bf74530d87ac451ff42697a5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/interface.json",
+      "bytes": 1138,
+      "sha256": "e7c6da7c6d086f7bd6ff0933dd356c0b8d50443d54af282b4d15339d272b6e69"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/policy_runtime.json",
+      "bytes": 872345,
+      "sha256": "5ea859f648f7e171c6718d82be4edcabd63fd30f57d55ba792b45dec26c353ef"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/preflight_calibration.json",
+      "bytes": 149,
+      "sha256": "aa98c9b41df33c7f7985d55f12a2b1bca7c06289d29f562a492cc4cf36e75817"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/protocol.json",
+      "bytes": 21261,
+      "sha256": "5749d19102b66792ccf22e431bbfd4a1f6ad014e8ef07c4cb7f16e39ade4a9ea"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/curves.png",
+      "bytes": 175220,
+      "sha256": "3d87a37d180dbb97ff8a3fcc833d68c7bb5eef05defcb7dd466b849ea12ba28b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/flight.gif",
+      "bytes": 1135912,
+      "sha256": "f73f7ddf0fe839445ea2252c87335611ad0149c905af8e560d6e6cd7d1a27067"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/flight.png",
+      "bytes": 212712,
+      "sha256": "395328f45a26d7697da3ed7c69d10271ca6d3c4f99065fb26ca3a096e85a21d0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/manifest.json",
+      "bytes": 991,
+      "sha256": "ef622f7f7867fcc32b97053db368a2ba8a975d776fefe7ce1bc8fe0c3d4dadba"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/result.json",
+      "bytes": 2286,
+      "sha256": "3e6d46c03165a6a274b2c4bfdd89c53a77b4a48d4557c5053d534e183b8f4e9c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/trajectory.npz",
+      "bytes": 42636,
+      "sha256": "fd68efa0690c59e8c1dbf90098afbfab81fddecf4b31a2d5280582290c93a2b1"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/wire_commands.json",
+      "bytes": 3320082,
+      "sha256": "ba5e39cdf1c079ab4c4918375408da435f7cae4dbdb8ec9d1ac96ff0e182c5f6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1.log",
+      "bytes": 6205,
+      "sha256": "da97b7562ff70d35a80687a0003ed47d896aed690983840d6c393a648f05370e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/0_service.log",
+      "bytes": 990,
+      "sha256": "0da6216cb003545c0ef6438da6b6129c9ed7d926d90b23daae0ea6bafb6a2f0e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/1_service.log",
+      "bytes": 19874,
+      "sha256": "abd7967f15d09ff97f942a7d1c1e48de9625bfadfe9df9c22e85ecd8041f2530"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/2_service.log",
+      "bytes": 1010,
+      "sha256": "665a448f6789d2e271954e4df0de3ecb4539c95450ae299f7f7573a344cbee05"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/audit.json",
+      "bytes": 2138,
+      "sha256": "fc9f4d4af5db21a8aaf00551dd9852634d65a1915d0d7c71c1df7782758f5279"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/log/2026-11-16/01_50_29.ulg",
+      "bytes": 32525540,
+      "sha256": "49e6f9fb76ea1b713a5274f4b7f8e74418c45c92c6ce2fa131af21bbe93baf9c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/px4.log",
+      "bytes": 15248,
+      "sha256": "3058dc11cd3c950abdfaf40977e862ec4fec65b45f4caddf546a4f3c7c21b504"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/summary.json",
+      "bytes": 2285,
+      "sha256": "f495d3eb06ab73186b6aa989c71b3b3da878d0dfef44a524921d885772b785c9"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/trace.npy",
+      "bytes": 18033848,
+      "sha256": "01045b618cf6129f87419a76369c26a79d903c57181fd2c3270dc877140cf2af"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/frozen_source.zip",
+      "bytes": 75602,
+      "sha256": "9d1e14aa1347d1e9cc92c5fce5dd61a2d88ec5f4bf74530d87ac451ff42697a5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/interface.json",
+      "bytes": 1138,
+      "sha256": "694c96ed7b305600ecd982b2763b4fee7faf35c3ac3c4ad8a9fb6c29e1999a10"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/policy_runtime.json",
+      "bytes": 3751021,
+      "sha256": "dc82e4addc38f2d151f6643364838fa5307aa72dd3f7401e2dfa7505e1ede938"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/preflight_calibration.json",
+      "bytes": 149,
+      "sha256": "ebf8506d982cf2abb21211604674f952b40721f2b1380370d2abad337ffd68e1"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/protocol.json",
+      "bytes": 21269,
+      "sha256": "4c526388745d476795f17094ce7ca3a1dd30ba0d683890fe9ee6634b784ea32c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/curves.png",
+      "bytes": 215673,
+      "sha256": "cb0d6030ddfcb07f1fe10551d7aadba83eab822112fa93b2fd8da3d219df452d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/flight.gif",
+      "bytes": 11880730,
+      "sha256": "73fc7ee0f34f5bdc44a87cbd696e537d1be526eb29bc6c33d062cbae35eec87c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/flight.png",
+      "bytes": 228132,
+      "sha256": "c5a7c46d46e3a0b42f762a8463ca257da4316ff77f8564456a2ad2bf908e8a79"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/manifest.json",
+      "bytes": 1012,
+      "sha256": "c3387ae5cd5f7e29fac0f717fd6bc14479c395c0db51fa7a0135103b797f46eb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/result.json",
+      "bytes": 2241,
+      "sha256": "7c14e168e07ca234734ae34a437aeb0a501c5bbab74d5c1dbbe93a4fbb78175e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/trajectory.npz",
+      "bytes": 462080,
+      "sha256": "1b956880d0a6dbc337dead6b0ca362e7c466e63f482664942e44bef1069ebc06"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/wire_commands.json",
+      "bytes": 12778395,
+      "sha256": "e56ce1d027dfc24fc97ced0d1f02e50814bb08a8e71f4203749fa6dcbd68eeeb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5.log",
+      "bytes": 14923,
+      "sha256": "3a2b332aa1770a0b02a411c78cc137910ccfc2fc81f1961fa147450e4bbb3a15"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/0_service.log",
+      "bytes": 991,
+      "sha256": "9d5baee4b1349deb90f09c3b663f550380515256b2675c83295429e2d0628726"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/1_service.log",
+      "bytes": 20538,
+      "sha256": "58f443310e7e5584519e0879ba3df79839c8b8195bb3d35be2e0ea5546edda77"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/2_service.log",
+      "bytes": 968,
+      "sha256": "e5d07fd51d743fcbe34a1c55b48b7e3fffdb41ad6840fd8d47b01b1032d1b5d4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/audit.json",
+      "bytes": 2517,
+      "sha256": "16c9f561782f455081adb96ac959a6176d577f6c6135381a200cae3c9572a066"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/log/2026-11-16/02_58_36.ulg",
+      "bytes": 32822633,
+      "sha256": "48021e949ee9a595c2bdd38db2dd0c84745591746cdd9485096f471cd9510364"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/px4.log",
+      "bytes": 15248,
+      "sha256": "a4e63912dcc80fb4a5fce7cfaf68b7da50277a21e20284571ba7d82acf03f63b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/summary.json",
+      "bytes": 2288,
+      "sha256": "a8d5c55121b53a61d640ba15c70dbb16c9fbd38c4bdd1e17cb93d52703072df4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/trace.npy",
+      "bytes": 18032776,
+      "sha256": "165e679c696f555844a4378fda11f7a90b517c583419d5c449694f74631552c8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/frozen_source.zip",
+      "bytes": 79420,
+      "sha256": "3d1c6a9e12a6dc18d22efa2e35bc78af961697ce69b635f0f8face5bfd49319f"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/interface.json",
+      "bytes": 1492,
+      "sha256": "d2e610ae6159f6d6128c142a687f9cedf058864c26b076917e04ce6c97c084de"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/policy_runtime.json",
+      "bytes": 4659129,
+      "sha256": "d039e5255f4a3718b6a0cb8eec12feca7e731f1ffa5095484a47c837e77571b2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/preflight_calibration.json",
+      "bytes": 148,
+      "sha256": "c7e01983773382580f9407025a6a47b0a2174c8c1df1abff7da5144e952a1bbb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/protocol.json",
+      "bytes": 21297,
+      "sha256": "6f45b80bad449d9ac0111cdfdc63b12180637ac1ad80940cf243be9a60fd3a8b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/curves.png",
+      "bytes": 304693,
+      "sha256": "2709f5ed60f41b495995a2f2373d0e41c15ea0453632677457d1902fda954970"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/flight.gif",
+      "bytes": 14531102,
+      "sha256": "6ea23ed59e9bc518641d844539fd31c31b79941a33b10e35ec510527c2acba74"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/flight.png",
+      "bytes": 267864,
+      "sha256": "ade6d7c4e17946cfcb9df07b50d91eaa8d6dc58ba7fef50fe1e54569aae827bf"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/manifest.json",
+      "bytes": 1000,
+      "sha256": "9f5ea8414f22f1e13aa416faca183397c711b4e28012676fc3d50e8e0c7537dc"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/result.json",
+      "bytes": 2619,
+      "sha256": "0a1968b4a2ff2f732ddf9568980811619adaef4073bbbd75a56a4b71f65bf847"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/trajectory.npz",
+      "bytes": 449800,
+      "sha256": "f1a22f4aa20914979a54fb8864a0d2039fa039d5345bd5c5d4cd2a0a9cef31d0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/wire_commands.json",
+      "bytes": 11308328,
+      "sha256": "9fb05cb4f4828316f93ead7e4bdc11ad841cd533dc563aaaace78372bff93ee2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1.log",
+      "bytes": 16555,
+      "sha256": "1207261857c322c73753ea415f3417a1d7f62d820cb7c648c4d78be0f6c8b605"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/0_service.log",
+      "bytes": 991,
+      "sha256": "e95a588761cf30deb013e636e8d420665cf9aeb9a2bba2a822c870af33ab4eeb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/1_service.log",
+      "bytes": 20434,
+      "sha256": "a768d023f3f86c9155fffc525735637d3db096f3d607e66a7ddbec794cf3e56d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/2_service.log",
+      "bytes": 959,
+      "sha256": "25fbbe286376bbdde206fc175c92ec2a97f626e9740fd1b801ba9e3e9f7fb3b6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/audit.json",
+      "bytes": 2520,
+      "sha256": "833503baac110aa2a946cb1d198c18057824315528527a18260b0a739ac4275f"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/log/2026-11-16/03_06_24.ulg",
+      "bytes": 33579269,
+      "sha256": "ff4e8590345ec872044b76654e1018e205dc7603a1f3073660bd78a22f21c6a8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/px4.log",
+      "bytes": 15468,
+      "sha256": "abf6e9ed442d81954db36feba745cae9f297e03e4fe14ae64dd0efa03d91d42a"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/summary.json",
+      "bytes": 2355,
+      "sha256": "787e96067237c8a0df9599e97f31692165f1f22898cc7c51699be9896efe509a"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/trace.npy",
+      "bytes": 18037064,
+      "sha256": "d0b9a327c04d081fae4ff918ec2260120a9c8971841689135530e1f65d811728"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/frozen_source.zip",
+      "bytes": 79420,
+      "sha256": "3d1c6a9e12a6dc18d22efa2e35bc78af961697ce69b635f0f8face5bfd49319f"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/interface.json",
+      "bytes": 1492,
+      "sha256": "274d0f4828e91b3b525f50ec31d79eef030872834532ff11d8c4f803a616f248"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/policy_runtime.json",
+      "bytes": 3365677,
+      "sha256": "f3dd0402671c844c4e1d077d4d894b067d6dd73f8ba184bbbd408260ff832dd0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/preflight_calibration.json",
+      "bytes": 146,
+      "sha256": "78cc0d134e6a3983696dda2ccd9dc0f1c3c9e368d65f73051e90e33116500232"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/protocol.json",
+      "bytes": 21309,
+      "sha256": "910228ef8d2547bc07a16d8e8bf009a20d70808f2254c5754cc26c5582be0dce"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/curves.png",
+      "bytes": 175085,
+      "sha256": "89283ace8d6ac313fc4577bfb373e3b57930954f4937ff7139951b71e534cf4c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/flight.gif",
+      "bytes": 11123865,
+      "sha256": "b1a0f3938f4f2bb479cacb47d8fbcfc720c024abd62a84d93d6140961bd90514"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/flight.png",
+      "bytes": 210163,
+      "sha256": "69451defd780b5348f4f137fc659517b0befa945ff092b2c090d3ceed70ee533"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/manifest.json",
+      "bytes": 1012,
+      "sha256": "84710b75b74c1a936de8ebdb1876ecc800b8abb514b4eb6282364724bfefbaa1"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/result.json",
+      "bytes": 2622,
+      "sha256": "bd61d1ca2bdfc640023f829db0ae6a71386926b8a1a7ad3b8cc3139c5d25bd35"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/trajectory.npz",
+      "bytes": 447354,
+      "sha256": "a80592f119c9202f08fa5d236658c053e1bcf166ee4f7677e2b9f7e6bfb03bbf"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/wire_commands.json",
+      "bytes": 8411119,
+      "sha256": "bea237e83ad83068e1f9dd45f3eb18b84abec99cc848ee93789293a3a2410222"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5.log",
+      "bytes": 16914,
+      "sha256": "cfde272fa9ce72d9b0043eb2287da0bb29aae6128525b4b039da5c9716997586"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/0_service.log",
+      "bytes": 990,
+      "sha256": "cbbd99d12620af2d14fde5007459afbfa5defc0477655bc616810555f75cdf72"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/1_service.log",
+      "bytes": 20186,
+      "sha256": "dbb5931d2b29874300b7feb7918a3d272461160fde3a4bb49f9d4ca216234571"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/2_service.log",
+      "bytes": 968,
+      "sha256": "c01271d85fdf309b2ec4c0de8395ec78dc18386d2eb5d94a9fed6075d34bb6f5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/audit.json",
+      "bytes": 2496,
+      "sha256": "949efe0b86e72d619fded4539c08b861e36e1101adec765adc6b141a127a7d85"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/log/2026-11-16/03_02_32.ulg",
+      "bytes": 32110772,
+      "sha256": "e3a9ab13cbff4ad9ca4fff8723e46739429575975a10bb92152f622eecd2fe2c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/px4.log",
+      "bytes": 15362,
+      "sha256": "495d202d2c843037908da333bb8987de9773756a55cdefce8c903ead69de8b39"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/summary.json",
+      "bytes": 2345,
+      "sha256": "fb0bc53d653a2cf68365823ff76f3ce2582f64ef9acbb227eaf566690fe50d30"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/trace.npy",
+      "bytes": 18033848,
+      "sha256": "557a729ba28abfbc8004141454708318a1f3c7fede76f5951bf574fc5ee45fdf"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/frozen_source.zip",
+      "bytes": 79420,
+      "sha256": "3d1c6a9e12a6dc18d22efa2e35bc78af961697ce69b635f0f8face5bfd49319f"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/interface.json",
+      "bytes": 1491,
+      "sha256": "2653290ccedef8043639dc34205ba1f4495ad45fc5a3153e602f81dc0f8b1cf9"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/policy_runtime.json",
+      "bytes": 4224955,
+      "sha256": "c036d6127bf706ef0fe0446008d7427a0ac68543bb13bc8154c10675d94561c8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/preflight_calibration.json",
+      "bytes": 148,
+      "sha256": "6318715b237ec6e78030ac9aedb48055acc057bb6eaccb6efbd9d976071fd01a"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/protocol.json",
+      "bytes": 21304,
+      "sha256": "e5f1e30ed2bd7b73d1946a0e6613cfd84b0ba9c67fc737bb12a513dc72a6e3ec"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/curves.png",
+      "bytes": 252144,
+      "sha256": "2e9deacc3c67ae122e794d6d7db01aafcda3012967ff497726953c03e77fb693"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/flight.gif",
+      "bytes": 12734096,
+      "sha256": "18952a503ead9cc9fd0664fbd272eeb00bf924941d8c0e20c65b2571f8180241"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/flight.png",
+      "bytes": 241789,
+      "sha256": "12d3fa72ae30e3c6c1a2adeaac7707b16636fc1f22a476879cfc503e13f0abe9"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/manifest.json",
+      "bytes": 1004,
+      "sha256": "2b1848d6e11f972da4f818f1e6fb8873f12d1685f9630200f87012cba5f18283"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/result.json",
+      "bytes": 2598,
+      "sha256": "fa76b22f7e1b7dd369adf9d85d59c0ae315921918f8f0e7853adb34b7f509016"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/trajectory.npz",
+      "bytes": 456924,
+      "sha256": "3660c424f234e8a595cf68cb629fef0db688dcc80c7274c9a822c331f48696a1"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/wire_commands.json",
+      "bytes": 12540106,
+      "sha256": "dd28963ee60323ce42761d98cc74e5b966257a02e37bdcd5b1e8acbf6542387e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1.log",
+      "bytes": 16453,
+      "sha256": "a69853774340abc371b672ba082b5213b4ee21283ad444a720d5ff2474c167e0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/0_service.log",
+      "bytes": 990,
+      "sha256": "0d6940df60a3b530a8dcee9731bb4dbdd83e95ad5c79a499e395291e3404fc1b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/1_service.log",
+      "bytes": 20550,
+      "sha256": "7bc2a6c6171fcb1eda45a110d3fcd565b657998aad060ec0c20b269bd44b651e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/2_service.log",
+      "bytes": 968,
+      "sha256": "013943c4bf13a952075ae67a713e347bd2f7dc0a1ab98f8a9c0100fb45eb5d57"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/audit.json",
+      "bytes": 2494,
+      "sha256": "6522796616174f48d498835509b507ef0a9641ed67f9141c6dc1aa02cefff190"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/log/2026-11-16/03_10_01.ulg",
+      "bytes": 32315606,
+      "sha256": "68efeb21675b1aa1365817602fb8ec216a327bd35b14f1ad7ad8dd7cc11efbe0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/px4.log",
+      "bytes": 15362,
+      "sha256": "4850af04936e58c7adac8437a5e0debb677eec8b81eaf157a7d445c302a71d00"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/summary.json",
+      "bytes": 2279,
+      "sha256": "04aab1205fe0287a248d2de05dccbaac739e5a9dce7d5aebc16d49ed4c9f6c7d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/trace.npy",
+      "bytes": 18038672,
+      "sha256": "d184b514df23be386c049d72fc0653127931ba579dd3046085e3399942548b24"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/frozen_source.zip",
+      "bytes": 79420,
+      "sha256": "3d1c6a9e12a6dc18d22efa2e35bc78af961697ce69b635f0f8face5bfd49319f"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/interface.json",
+      "bytes": 1491,
+      "sha256": "55a651a2f74616edfef1582ac450b9845026f6e769f473ed6669529acd87bfc8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/policy_runtime.json",
+      "bytes": 4225104,
+      "sha256": "57c6f96d10765fbf394ea5748d9526c439987f61cbcdfa7e4f2ce23908235c9c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/preflight_calibration.json",
+      "bytes": 148,
+      "sha256": "54078d0e72161c3e288c24538c2596e1e5dde807b85bbd8fba3bd6380ae50f9c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/protocol.json",
+      "bytes": 21312,
+      "sha256": "0c308e229c55823abd633a67f0067cbe0dbcbbcc80069e67b1d40a723f421b07"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/curves.png",
+      "bytes": 209893,
+      "sha256": "bd3b531769ea2cade671ecc4da57a855212b9cccdfeae5640d604084f66c49f2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/flight.gif",
+      "bytes": 11909455,
+      "sha256": "171c456631cef7da91fdba766d5a7eff5ee5627cc01a21bdda7677cb793d61ab"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/flight.png",
+      "bytes": 226850,
+      "sha256": "701c9cfcd8a3f5e99b819f8363456aead8efbbc14f0ab2240ba41c1a2cc90d48"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/manifest.json",
+      "bytes": 1012,
+      "sha256": "07e04d385c85301e2838d2802ff6867e36599d7ce52539e341972cf04008d9ff"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/result.json",
+      "bytes": 2596,
+      "sha256": "7b7c3fa49f3939c3567f31f2f4626dc0cb330e95e3f0b87a80ba870ae90430bf"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/trajectory.npz",
+      "bytes": 460109,
+      "sha256": "df228a8fa3ff16b8d2aee5adf5022870e3a5f5a112402d7362a6a4656d3c6138"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/wire_commands.json",
+      "bytes": 12580016,
+      "sha256": "02db4d3bc8eb60938ae91cdec2cac677f97ca7aabddae1a973af427ad45f6d16"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5.log",
+      "bytes": 14599,
+      "sha256": "1cca50333784ad48e6f2951d42a10389accf3e3d8637020777ef41eb28ed9ac1"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/runtime_bundle_final.zip",
+      "bytes": 454700,
+      "sha256": "c026b3de9ec863cf6d9c24759b25bc36461131ea94af824df76faecefe3bc340"
+    },
+    {
+      "path": "px4_offboard/dual_report.py",
+      "bytes": 2171,
+      "sha256": "80aa85b58f4b1cfbe01fcf339126946ab360f7a7eadd8e014cf18b4b0c97fddd"
+    },
+    {
+      "path": "px4_offboard/p3_observer_report.py",
+      "bytes": 7806,
+      "sha256": "eec921d3bbd28b00601ad5bba0d6d009497c3d9c9ab6b569c7f096669797e1cf"
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/bounded_observer.json",
+      "sha256": "e091e31b308e7a6fc6a6634804f99f6a0516a7e8c44459d25dbde4dc1c17032d"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/deployment.json",
+      "sha256": "60bb6850be88a3482161d694c68c8b0d6c9aa4a41664203bf4cf86ee9cc28975"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/model.pt",
+      "sha256": "c922642e2b3fb4411f16aa5eae4a58df6479ce2518c1598381d7544b4f7221d0"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/training.json",
+      "sha256": "3c72213ea2a438d79dcd45fadde5143f678b1180eb2b66e368e29e8b1f7c75e6"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/bounded_observer.json",
+      "sha256": "e51ba4fc8b368f07f764eef05360c0c68ec7b8b81a0031777ea6411008f47cef"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/deployment.json",
+      "sha256": "ebef69f5064b8a0e8de80b5dd7670a106cf3c50ccb0503369f57366ea4f5153a"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/model.pt",
+      "sha256": "a719647ae0765312761e6c51fe7eca23e6b5b7a9b03faf8f617e1519eb111416"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/training.json",
+      "sha256": "dd9598654aeba944b773c561c155eb7c93eb09ff15a670588598625afa6d3509"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/bounded_observer.json",
+      "sha256": "2b477400956d10cec1ae362be94492b52e42632ba12403af8abcf1d7d48e5c18"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/deployment.json",
+      "sha256": "0c3786511c1fb00ee5f409a948330fc66fca5d0567398829ca5c3e4a0ade89b8"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/model.pt",
+      "sha256": "67fd5fc6d152a0ad4061fe7bb792b2cd9534ff0a655e80a27ec3e6e7140592d8"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/training.json",
+      "sha256": "1204b451fa92d3949f48bbfaccbe1c9d16019625bed8b9ab3c08d5bebd2ebdad"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/bounded_observer.json",
+      "sha256": "93496677fadfd73203c1c25c9a2f10455e96bd5278c038a24be50acdb6b04ccd"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/deployment.json",
+      "sha256": "536399b4c5d6f4d6950cbc800c399fbc1d97fa9d56dca9211edee46aa0b75faf"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/model.pt",
+      "sha256": "d1bf4b95de309fef43035ca0c45bcac52d5e03a8a0a1aa7a5435570a510378e5"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/training.json",
+      "sha256": "e431535a6aae921a1ab9e656c89d8e4e5cffbf85f3655f9e7ee7532abfe0c11a"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/regression_final.txt",
+      "sha256": "7cb979a3b8e7893a4a69ff907549795ca12a35622b39ec645395847bd7aec9a7"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/0_service.log",
+      "sha256": "95a484d107f01e23ad9de5754bc5c7cbb4b6acd8b425f2a01536d3cec5608aed"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/1_service.log",
+      "sha256": "c0626edb603a48d908e9eb177bff40d4c85ac9ccc1679e5f08b4c64beb16d04c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/2_service.log",
+      "sha256": "10fd5c9aa063aeb5465664979193f748ff45abe4868745675b8724701c451a21"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/audit.json",
+      "sha256": "34e59f6d98888dbad0bb86342da8ea161c8c9134ac27497ef328c3cb58eca975"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/log/2026-11-17/08_05_52.ulg",
+      "sha256": "dd1aeeb22c7ef0d863f1144df003e643ea13bea353edb40e23383eba572c1934"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/parameters.bson",
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/px4.log",
+      "sha256": "d4be609d37f22034aba7e53cf4dd04cae8c08b4e04afcce13ed4f4412d99c702"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/summary.json",
+      "sha256": "c8c2ab42c4eb4233be01648abdcb583c2e6b69685f3a9eea6e511538f3d642e6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/trace.npy",
+      "sha256": "c91170b73427c746f8746953f2410d479325b98335f9144df0234c343f9d6151"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/frozen_source.zip",
+      "sha256": "bc93c86ea4de14fc83cfe391744be9c615b568bd69558e72f33e3e4d92b59087"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/interface.json",
+      "sha256": "a301acc999cd2cc1da847161a9875b182165c871851ae68165590f6cf40d79d0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/mavros_commands.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/policy_runtime.json",
+      "sha256": "57b240e973a4cbaeba4f0adceba91c6a0358b767528debe563729748522b847b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/preflight_calibration.json",
+      "sha256": "6313d098428642f732291b71663e138706115afb6727fe1c9b79c67dce945ca4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/protocol.json",
+      "sha256": "ef413edc82caa3226678e77b3e4473be661729b55e796c81bd27feb7d99c6c89"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/curves.png",
+      "sha256": "74311184a9b712f6cf653fe45ee0bdb0161fcc7f3a02c0eb8b77a7154229c0db"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/flight.gif",
+      "sha256": "d7d43275317f49652a77b1b1528771a173df7b0b302f811c415550d74d6f2cfd"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/flight.png",
+      "sha256": "15414f3798a09b4999103c02e25e5d1c0594955a2f85ac09f0ae3b3144b56665"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/manifest.json",
+      "sha256": "af2a6258dd2230e2310b82f0ad79bccf2f42213273e13f80cf5ed3f4fddcbb0c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/result.json",
+      "sha256": "e4371f4802db83a6635134e1f66545a8b6f8576b28677bc16b5c01b50eb84204"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_home/roscore-11315.pid",
+      "sha256": "4485fad1291733bf8ba8de49b8eaf357d4e2ad8bdf6e8109158057a69e7d3983"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_home/rospack_cache_18019822870472497271",
+      "sha256": "788087e4d657ff02c819cf9018906ae6e3fcfffbb2c5e16c1e3aa4941235c4ca"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/master.log",
+      "sha256": "2d2d325dbf0d5793dc87ae4eb897cf2b06e6b3e285479b3de2ec5ffe414607c2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-29477.log",
+      "sha256": "fc7fe38c170df9e3898bfad540ff3c8df57c1dd9e523625e6fb1c971084f439c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-29493.log",
+      "sha256": "79904ac7db04fa51496025a617277972f2c5a7abe1797664bc866c3085e41528"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/rosout-1-stdout.log",
+      "sha256": "df57309fc354d3d5437bb8cdeff8447081309fdeef66f27814ea8d2c71dbb03e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/rosout.log",
+      "sha256": "c610f6e070c17fbf04aa13c1a1408167094113fcb900f0f2f402833b31b7df66"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/hover_acceleration_policy.log",
+      "sha256": "33ae01db9aae49c3c31229cf675c20654994a87731d933ed61c13c78b250de88"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/hover_dual_interface.log",
+      "sha256": "92bff8b2c48a96bd8f42acf2218383cca2eab6f3a9b0d86e31bf6146627e9cf6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/trajectory.npz",
+      "sha256": "03c1c5e6ddfc35347b95da2d2045288cc6dc763a728599717a2b7bf80ea3fc80"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/wire_commands.json",
+      "sha256": "2c951bdb44aac9e42d03be18eb53e53fceef51b6b2d9f2ee0153e8e7b5823ffc"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/0_service.log",
+      "sha256": "e7317c432e034f2eb24ad81e4f09a5cc7da2490aef2eef0c2e5aad4ffc592f3c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/1_service.log",
+      "sha256": "36baf49ffa9a7709e0e260f68709bcb2f90ca852134a37872a3fe41e968800eb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/2_service.log",
+      "sha256": "6711a9cec27b777931a2f46b631dc6d713ba90dceff075549e15a09ee39a06ee"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/audit.json",
+      "sha256": "d7eaf1917f5a45df5520c57512bb0a04acbb44348ea16d4a00d3fb5e2d34650e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/log/2026-11-17/08_09_25.ulg",
+      "sha256": "eaab11a45f3ec69c299813b57025dfc294cf0da94e7cf42be9590bf3b6a748ac"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/parameters.bson",
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/px4.log",
+      "sha256": "2cf8216c7ba6c8e9f92a1f9a06e9c2aa8bc0bb4179781267cc0304ae7b3446b4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/summary.json",
+      "sha256": "e9d400190071e3e8a6803fb237c9f4f6bfdd3d11bc009f9bc68907229c847691"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/trace.npy",
+      "sha256": "1108db65adcfed852b5902a53345c57b3ee74ad03d2cce960fda1d7ba7c980b6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/frozen_source.zip",
+      "sha256": "bc93c86ea4de14fc83cfe391744be9c615b568bd69558e72f33e3e4d92b59087"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/interface.json",
+      "sha256": "930ea551a416b55d762d99512f053aff511480ee55dc3cee217a5bd281a5d9e3"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/mavros_commands.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/policy_runtime.json",
+      "sha256": "88d2f060182e9ed5b336c91715a653840c916bc75fe1bef75957dbde4f00cd5d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/preflight_calibration.json",
+      "sha256": "41d01d480e1dd173a2a4f216d174ee6e23635ba699d535782161e0a4eaff4100"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/protocol.json",
+      "sha256": "2d3b57cd88ffad4dcf8fc029ae6f0622a45e3e761694c28c083e55ce34878bf2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/curves.png",
+      "sha256": "c10ab1171cd619b43a60471e5881eed1d562a4a22c6c20a482d7e8ef3cbb9a14"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/flight.gif",
+      "sha256": "ff5b8b850444b79c7d3938f89525c0490010a52389beb4c95553424863af0bfa"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/flight.png",
+      "sha256": "372d78fbe7e1ccac8e4024288af77d1c9accaf94bca7d313c952671324fc1870"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/manifest.json",
+      "sha256": "8b50c2abf0430a2886d0572ebda48c86ab0299d7daec341e20ad69595d654466"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/result.json",
+      "sha256": "44e90140a78f80b685318fa89b8f53e01c584ce247ad31398fb4dcd3730fc328"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_home/roscore-11315.pid",
+      "sha256": "11ab2fa58cde0d359797402001b08db2494b14a5f8a4a80c8b73ad6048f570f8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_home/rospack_cache_18019822870472497271",
+      "sha256": "788087e4d657ff02c819cf9018906ae6e3fcfffbb2c5e16c1e3aa4941235c4ca"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/master.log",
+      "sha256": "ea790eea019b1ed4987de6cdb5ecba27c757da8bae3a704aed208e5815ae3c8b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-30029.log",
+      "sha256": "afdc5babc0aa7ce974429cf3d50eb46e91ba4f8ea8bbdb0bc63f4e31e8b04676"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-30045.log",
+      "sha256": "00013ad04eb095c416505744bc3626546831a8c1afa4d247b019f0fd77799af8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/rosout-1-stdout.log",
+      "sha256": "d203fcaf272a3a5d79af4583d0c2e23e9fc770fcea12209dd41bbdd107e6db93"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/rosout.log",
+      "sha256": "b1516d7335fcfec0be49e1e121d0ff5de5d18fd0f7f880d111956a63f9b31921"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/hover_acceleration_policy.log",
+      "sha256": "57ef7c622843269f776aa3ee22a16d7cfbf25e58b965f0a215d6fbbac9571314"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/hover_dual_interface.log",
+      "sha256": "15a5575eebe2454103f27227c621e45bdede4bfba3f4f44b80d7535b05ecb9ac"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/trajectory.npz",
+      "sha256": "0b41fb2c5d78bc717f697ebecf3fc514d6ca5c50934499fa6569645e9d297425"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/wire_commands.json",
+      "sha256": "26e52d81794b1add4613ef33f786ecf80de4d3c5003aa9ed9563f599547de56b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/queue.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/strong.log",
+      "sha256": "9278934426a769dc66e4c34cd14ac909e948973f5090683561e3a3f88d153179"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/weak.log",
+      "sha256": "7458f9bb9940c4a917950725f0188dc674847c2c80c2012137f24a6b21b38d82"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/capture.json",
+      "sha256": "05a80d779cbf27158809450086ef1007f19c082239713cf2a4942998d57a4852"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/flight/log/2026-11-16/01_29_52.ulg",
+      "sha256": "59c682f6925154e3220a07f139c2cf5d42137717a4385d1d56ae46f3bad41c19"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/flight/parameters.bson",
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/flight/position_p3.npz",
+      "sha256": "a9fb4bf334765a86ad170c418d794b6abb6cc6bba5f9d23541df926d47a5fbc7"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/flight/px4.log",
+      "sha256": "c2be83a8957dd48633ca9645e781aee3e723fb3d84a2297499ff79267d59dab9"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/flight/summary.json",
+      "sha256": "36ca6330fef1e300ad86e3033e69e5cade58bd41d3b903a872fe3dbc0e77da86"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/flight/trace.npy",
+      "sha256": "24fdf44482c65686788bff9ab7492c00ecfc490ecdffa1f49ce4432bd5f519e9"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/frozen_source.zip",
+      "sha256": "938bec04643c01d4f06bb09edd56420f3c8ea6f0ee5081f4104bdadab5776a86"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/position.npz",
+      "sha256": "56acca53573a4c4033474a62f93755cdc2c3bdd67000f0eae26d060f20ed9fec"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/capture/raw_capture.npz",
+      "sha256": "2a51757b749fdf1d4eb25fd377d6d58ab4bdc7e3fb32db66fe534022232f7385"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/heading_witness.pt",
+      "sha256": "530ba0a7a70f85bb322b53782db7296d5e212a854f0f91758ed321ce262a7679"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_high/random_1/wind_trace.pt",
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/heading_witness.pt",
+      "sha256": "eac3a1a80fd9d7a750558d7878e795de0e167eb961e6af0303451e05609d03f4"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/heavy_low/random_1/wind_trace.pt",
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/heading_witness.pt",
+      "sha256": "5fc232cb658a29c85637b54b6599c165131e7655c7a9ab347aae2673c0f485c8"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_high/random_1/wind_trace.pt",
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/heading_witness.pt",
+      "sha256": "d91516f9c2d4d7a37f7654fa5a63e7b91d8dd4ae05e12417661ebddb14f9a491"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/light_low/random_1/wind_trace.pt",
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/heading_witness.pt",
+      "sha256": "d02c302ddc1e45742ee64e908e15a15f38515da3efbd09858b804faef0971f3d"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_steady/nominal/nominal/wind_trace.pt",
+      "sha256": "9173453bf2fcf15143dfccac4d13f8b8345a8d1b19ec2b107ebb5a6c3f212b41"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/heading_witness.pt",
+      "sha256": "cce1beb1171046d2913d886372e07f3a0dbfd5b05670245a630c7e873fbfa6e5"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_high/random_1/wind_trace.pt",
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/heading_witness.pt",
+      "sha256": "d47da001373e5a3bc13a2d4379608bea87ff6b7d2646dbd2be21484f3d5dea70"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/heavy_low/random_1/wind_trace.pt",
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/heading_witness.pt",
+      "sha256": "c8eb07e54387c66a3f7713b30403973fde0586837a840906e7ed6849c7bc2772"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_high/random_1/wind_trace.pt",
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/heading_witness.pt",
+      "sha256": "131b2857bf9c9709b88192fb06d7994aa637f5a87b060bd291e5a8cc510c9c2b"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/light_low/random_1/wind_trace.pt",
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/heading_witness.pt",
+      "sha256": "cc48bb329c4e26b0baba4d24d1f6cf0013af042cfaa6358ccfe4e36837075788"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/proposal01_varying/nominal/nominal/wind_trace.pt",
+      "sha256": "39a1986216dfd93ef623d09d04c5e1beb756a504101f7ca71f219aa8acee8c50"
+    },
+    {
+      "path": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+      "sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5"
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/latest.pt",
+      "sha256": "6d1473b7c35fdfb3e3e69ecb477722ff16ed176c0a2e2b1aba68987907cc9c57"
+    },
+    {
+      "path": "P2/results/flexible_continue30/step4/training_wind.pt",
+      "sha256": "194e34388ae9bc62bb0bd1f8e3a1a61e687bd95f7342aadbf8cef6f55f3616e4"
+    },
+    {
+      "path": "P2/results/px4_transfer/update2/candidate.pt",
+      "sha256": "d26d64cd2d4a25abb75c92f101e8701cde88f36dd788b856d523f6088a7470a3"
+    },
+    {
+      "path": "P2/results/px4_transfer/update3/candidate.pt",
+      "sha256": "d759fb67e5e376916cd50d05d14efe5dc401ee8d17f71c60f162634402def910"
+    },
+    {
+      "path": "P2/results/stationarity/baseline_cpu120/random_2/heading_witness.pt",
+      "sha256": "d3cefe1c4435fe491365043ca1bf6a1192dfa7bfd273e9c3b7686e7c1eee36c7"
+    },
+    {
+      "path": "P2/results/stationarity/baseline_cpu120/random_2/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_heavy120/random_1/heading_witness.pt",
+      "sha256": "49ea3e0f6ed9c2415bd6a1c3197592ad0d93759d13b4daf001e87e3701cdcc33"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_heavy120/random_1/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_light120/random_2/heading_witness.pt",
+      "sha256": "88775e3e56e50044c4d2dbd711b22a91d4c9fe8c3c5811c4ce367285fbdbf316"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_light120/random_2/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_nominal120/nominal/heading_witness.pt",
+      "sha256": "1334c9918cd61651b2bc988d63abe7187ca114f91b04d6d2955249b81ec78e04"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_nominal120/nominal/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_original_cuda120/random_2/heading_witness.pt",
+      "sha256": "3daac575e11bc6ef90f8dd59358fb81756328a23d48d860fbf4bbb04a12f2c72"
+    },
+    {
+      "path": "P2/results/stationarity/candidate10_original_cuda120/random_2/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/results/stationarity/selected37/latest.pt",
+      "sha256": "148e3a1ccb7f5a9b0f18668f089f4d5e9ffb161dd067fdbac3fe6669b5373ceb"
+    },
+    {
+      "path": "P2/results/stationarity/step10_position/training_witness.pt",
+      "sha256": "9c7704b344e016bd60a3bb8337ac17dff7f482dbd0521ceb49dfce7d1a513fd2"
+    },
+    {
+      "path": "P2/results/time_varying37/light_combined/random_2/heading_witness.pt",
+      "sha256": "01e68b6c15326655a6b48d2749f5956f34435eebd5efb69d349636ac180fe3d8"
+    },
+    {
+      "path": "P2/results/time_varying37/light_combined/random_2/wind_trace.pt",
+      "sha256": "8b30f0363d94440eaff71b5215d7de3afd741dcc65c835b130527d81e8e93854"
+    },
+    {
+      "path": "P2/results/time_varying37/light_varying/random_2/heading_witness.pt",
+      "sha256": "717dd75729790a7621174ceb1d59607971f6c217e8b3aeaa4cea11f858131717"
+    },
+    {
+      "path": "P2/results/time_varying37/light_varying/random_2/wind_trace.pt",
+      "sha256": "7c3b82a627cb982afd6e07e2a505a15b8c1f165ffcb579867d5d4cd278ed6509"
+    },
+    {
+      "path": "P2/results/time_varying37/nominal_combined/nominal/heading_witness.pt",
+      "sha256": "003435a971be37229fbea4ca5032c22c005db534bebde385590b8180423a19db"
+    },
+    {
+      "path": "P2/results/time_varying37/nominal_combined/nominal/wind_trace.pt",
+      "sha256": "18888fdd932bb99ef7671adc50a7e3ff7ebd1f406b2efb5e20f4d3759755189f"
+    },
+    {
+      "path": "P2/results/time_varying37/nominal_varying/nominal/heading_witness.pt",
+      "sha256": "2800322c409025a1f534bbda18d6b06f1c8dfa994a50332b8688f75067383ee9"
+    },
+    {
+      "path": "P2/results/time_varying37/nominal_varying/nominal/wind_trace.pt",
+      "sha256": "7c3b82a627cb982afd6e07e2a505a15b8c1f165ffcb579867d5d4cd278ed6509"
+    },
+    {
+      "path": "P2/tests/fixtures/baseline19.pt",
+      "sha256": "5dce91e9b4d27106a42af8c9250cd0e2f97de5a201c49e4025119ba18b0c0773"
+    },
+    {
+      "path": "P2/tests/fixtures/conditioned21.pt",
+      "sha256": "78320eea0fe02f9b58f8f9dfc6f1ef4e7be74cf31e016a054899597bcd4c623a"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/candidate9_velocity/candidate.pt",
+      "sha256": "812ec4d0f6975ddbebe7e0472619adb744d00fda5cb73e3f531549e713276b6f"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/candidate9_velocity16/candidate.pt",
+      "sha256": "35a0a6de5ad46b9374075da2757a799a8a56213ea59573ea66e4c38614cbdf56"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/step7_heavy120/random_1/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/step7_light120/random_2/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/step7_nominal120/nominal/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/step9_smallstep/proposal.pt",
+      "sha256": "cdaf90d02bd050a21c0ae36bbfa87a333eceb34732d0fa7b50c2dbec1415c9b3"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/velocity9_heavy120/random_1/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/velocity9_light120/random_2/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P2/tests/fixtures/stationarity_selection/velocity9_nominal120/nominal/wind_trace.pt",
+      "sha256": "49b9269ebce576b72069e4b391f44b850fc8f6bf228212b42504411403608c1e"
+    },
+    {
+      "path": "P3/results/actor37_5m/comparison_mujoco/with_compensation/compensation_trace.pt",
+      "sha256": "b0a10c48dc0cffe938acecb50dd620ba08babec4a1fd0687da4f088eafe545d2"
+    },
+    {
+      "path": "P3/results/actor37_5m/comparison_mujoco/with_compensation/heading_witness.pt",
+      "sha256": "5ec104652f7baeadd15978d293223097b2085b0b30bf62d32eff3484be460517"
+    },
+    {
+      "path": "P3/results/actor37_5m/comparison_mujoco/with_compensation/wind_trace.pt",
+      "sha256": "b34be7564a118851fc0e00dc253eef0a1558887ffe785872a832a3b9cd5a6042"
+    },
+    {
+      "path": "P3/results/actor37_5m/comparison_mujoco/without_compensation/heading_witness.pt",
+      "sha256": "640c2b1294d8baf83b5b645c8426859e78565b4fb7b5862e556354c2f4fb7b62"
+    },
+    {
+      "path": "P3/results/actor37_5m/comparison_mujoco/without_compensation/wind_trace.pt",
+      "sha256": "b34be7564a118851fc0e00dc253eef0a1558887ffe785872a832a3b9cd5a6042"
+    },
+    {
+      "path": "P3/results/actor37_5m/data/development/intermediate.pt",
+      "sha256": "a972b6aa0f6c0be641c51bb0f9a3762ebd6bcb54a0d3ab352c238e5c9b2be927"
+    },
+    {
+      "path": "P3/results/actor37_5m/data/test/new_combination.pt",
+      "sha256": "c8c914cd863a50ea6323cc55f78ec5c364c67a5e4dd44afa8da0f945fb118c84"
+    },
+    {
+      "path": "P3/results/actor37_5m/data/train/heavy_slow.pt",
+      "sha256": "3808ab2492325d6d573086f72c56915496c4aaa83023731e462a849f7aa501fe"
+    },
+    {
+      "path": "P3/results/actor37_5m/data/train/light_fast.pt",
+      "sha256": "65235abc50f47a1921db94d9144983512b32be2f6f2a2629086fdfe19d67f92f"
+    },
+    {
+      "path": "P3/results/actor37_5m/data/train/matched.pt",
+      "sha256": "7322f5819f12e81db7ea12e03082d8c26c9b298d317201ca4ad61b813f6f21fd"
+    },
+    {
+      "path": "P3/results/actor37_5m/residual/best.pt",
+      "sha256": "224789086fb5babc7ed15ebf1ff255d36c7ee1158745799c7390d5b2bbd7d117"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/calibration/calibration.pt",
+      "sha256": "646b74d1024dc8d173f5459cd269e3504ef700594cf565bd3cfc2a0eb3d0b710"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/heading_witness.pt",
+      "sha256": "356a7d7ad6332b39654805c41b7c23d82c96cb8a6449790528c7bbd90c6ec469"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_effective_observer_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/heading_witness.pt",
+      "sha256": "c319426c52c435c5fbf30b2abcc8069bf04eedc44344e8558ababa89211f740d"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/heavy_offset/flexible_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/calibration/calibration.pt",
+      "sha256": "e98139e8e806f100632f870b3ece4401fb19f8e451e5c7f92b98b019175dd34a"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/heading_witness.pt",
+      "sha256": "4d3829f8bca0162ad84eae03c95630c96123bbfb17ed7b55a2b7c6c319599b42"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_effective_observer_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/heading_witness.pt",
+      "sha256": "46bd3d8a496c0ba45ae13197caf70da3b67fedb7b25addfbc72f87a1be205ff9"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/light_offset/flexible_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/calibration/calibration.pt",
+      "sha256": "cb4a1c3e9d88b31ead9e25b11e230e0b44eadf4dfd59b44631cf9c95e68c1839"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/heading_witness.pt",
+      "sha256": "b404b53087bcbdb249ef5b7a2c1c065de21f61ecaa6acf68b411d7d655045621"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_effective_observer_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/heading_witness.pt",
+      "sha256": "52d29528728c20e5fd5890964af7556ea17b248559d4c2cdf893855e42c10e06"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/nominal_offset/flexible_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/heading_witness.pt",
+      "sha256": "7b81d6efce28bae185484c63d719606def511d184ea17508b3cbdb9a6e26fece"
+    },
+    {
+      "path": "P3/results/body_calibration_transport/references/heavy_offset/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/flexible26_structural/residual/best.pt",
+      "sha256": "4f7bb78680c70b307af841127541e71e2ddddb74e97f3bd5a9128536e0efdc80"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/calibration/calibration.pt",
+      "sha256": "abbd902da0f5ceb5e46b166bdf0ecd85c5da801e57b41e555d1b447ca733f723"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/heading_witness.pt",
+      "sha256": "4dba2ddf2560306859a154cf39bdd9c32888dea7666321593ea6139cf221997d"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/heading_witness.pt",
+      "sha256": "6d31c22095ccc25ddd38e2ff26e2e5713226b166e852a1b559a14e6a021b78d0"
+    },
+    {
+      "path": "P3/results/installation_20261115/heavy_install/flight_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/calibration/calibration.pt",
+      "sha256": "a9c9b43fc3374c6cbf41df99d9cbebc0cedb457cc67f19274f7edaab7e357309"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/heading_witness.pt",
+      "sha256": "3f7f0a24e68540b8f8514d9737137e767ae405131ce4593312378590d16d5e67"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/heading_witness.pt",
+      "sha256": "bbb4faa821014e682c0b705d4cf4718bd92c4c87d527f0c6318c6427fe6703cf"
+    },
+    {
+      "path": "P3/results/installation_20261115/light_install/flight_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/calibration/calibration.pt",
+      "sha256": "0d2579bad7afa1168b780fd40654670243db93bdd2dbd68e9a34317969cd6e7f"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/heading_witness.pt",
+      "sha256": "f8ff9064642c79fd0a092c2934e41205753157bd4cf60a156562ba19b6b90858"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_off/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/heading_witness.pt",
+      "sha256": "2e0bc6100f81654dfa969ecb26ad8bb30d65a63c62840bf4d9c7f5695a6edc36"
+    },
+    {
+      "path": "P3/results/installation_20261115/nominal_install/flight_on/wind_trace.pt",
+      "sha256": "9aa16280f7376696c2fbc9059ddb0b6302217eec7355e4c3a366b95f25f174dc"
+    },
+    {
+      "path": "P3/results/px4_position_20261116/calibration_aligned/calibration.pt",
+      "sha256": "c565414fd64e8803b15c7bdbb30b6b99ac9969ee1f76d16b71c01877fa177ae7"
+    },
+    {
+      "path": "P3/retest8/residual/best.pt",
+      "sha256": "bebe7839f8e434de09874bf411ee61c17e9c87d8bec4ca6d22d2f73950cd882b"
+    },
+    {
+      "path": "P3/tests/fixtures/residual21.pt",
+      "sha256": "766dae2be7b9ef9f4757e2365afb4fbc998a945da7a8cb483f0a602e4b873a6e"
+    },
+    {
+      "path": "track/drift8/step2/latest.pt",
+      "sha256": "d35be4abd876d5c195a8430d6d55738e494a76fc31ff10b39f272f278334fb92"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_hover_wind1/compensation_trace.pt",
+      "sha256": "7ea71a3be37769aafdb0ff41ffad66b6c1877f85dd65929d918783d9d98d6400"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_hover_wind1/wind_trace.pt",
+      "sha256": "676586aed43fcb51861497472798868640d8e02593a03bac179b9583e6b0fa79"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_hover_wind5/compensation_trace.pt",
+      "sha256": "679ab443585aa9b078e5b66814a8519b53f2f5b90b0a2874c5d1eaf47f0d3573"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_hover_wind5/wind_trace.pt",
+      "sha256": "6d69c878ae528657631610d5fb5870cb86f6fe15b585e2dc21fc4f84889ed420"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_track4_wind1/compensation_trace.pt",
+      "sha256": "972c6465e0ba12eee24c5af19f987aa303a1a7a7c239ff9a6710850cc8b14279"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm10_track4_wind1/wind_trace.pt",
+      "sha256": "676586aed43fcb51861497472798868640d8e02593a03bac179b9583e6b0fa79"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_hover_wind1/compensation_trace.pt",
+      "sha256": "757dc578ecef0a3e48c1ecceaf910d6e327a31a4c8160a3a8c3fa4581e358a04"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_hover_wind1/wind_trace.pt",
+      "sha256": "676586aed43fcb51861497472798868640d8e02593a03bac179b9583e6b0fa79"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_hover_wind5/compensation_trace.pt",
+      "sha256": "abf2697a98cf06372b83170a8bdaba92dd5513f19bad20e43f5e30dd1c5f1ba7"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_hover_wind5/wind_trace.pt",
+      "sha256": "6d69c878ae528657631610d5fb5870cb86f6fe15b585e2dc21fc4f84889ed420"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_track4_wind1/compensation_trace.pt",
+      "sha256": "c223e7b197a78e805a3e3a82d96979d47eee3cf71a538580afd66627f45532b9"
+    },
+    {
+      "path": "track/drift8/step2/mujoco/arm5_track4_wind1/wind_trace.pt",
+      "sha256": "676586aed43fcb51861497472798868640d8e02593a03bac179b9583e6b0fa79"
+    },
+    {
+      "path": "track/drift8/step2/training_wind.pt",
+      "sha256": "f45e8d4d94185a461992d018e955e89ee9748ec40708d60bf27ff6638b5d8089"
+    },
+    {
+      "path": "track/models/actor29.pt",
+      "sha256": "5f6b8c93d5fdd156b2679bd940cc8b513ca7d1254866c5f0d5d5b4833d64d1bc"
+    }
+  ],
+  "superseded_protected_files": [
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/audit.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/log/2026-11-16/01_43_23.ulg",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/interface.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/result.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind1.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/audit.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/log/2026-11-16/01_47_26.ulg",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/interface.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/result.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/acceleration_wind5.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/audit.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/log/2026-11-16/01_46_38.ulg",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/interface.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/result.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind1.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/audit.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/log/2026-11-16/01_50_29.ulg",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/interface.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/result.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_03_matched_px4/rate_thrust_wind5.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/audit.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/log/2026-11-16/02_58_36.ulg",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/interface.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/result.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind1.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/audit.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/log/2026-11-16/03_06_24.ulg",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/interface.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/result.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/acceleration_wind5.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/audit.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/log/2026-11-16/03_02_32.ulg",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/interface.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/result.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind1.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/0_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/1_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/2_service.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/audit.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/log/2026-11-16/03_10_01.ulg",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/parameters.bson",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/px4.log",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/summary.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/flight/trace.npy",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/frozen_source.zip",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/interface.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/mavros_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/policy_runtime.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/preflight_calibration.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/protocol.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/curves.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/flight.gif",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/flight.png",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/replay/manifest.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/result.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/trajectory.npz",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5/wire_commands.json",
+    "px4_offboard/acceleration_dual/results/full_05_p3_observer/rate_thrust_wind5.log"
+  ],
+  "previous_native_and_latest_protections_unchanged": true
+}

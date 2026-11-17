@@ -281,5 +281,19 @@
     "settled": 2,
     "accepted_for_flight": false,
     "explicit_torque_feedforward": false
+  },
+  "unified_residual_development": {
+    "date": "2026-11-17",
+    "training_running": false,
+    "validation_running": false,
+    "report": "P3/results/unified_20261117/README.md",
+    "P2_frozen": true,
+    "joint_models": 4,
+    "PX4_cases": 2,
+    "safe_completed": 2,
+    "settled": 2,
+    "rmse_passed": 1,
+    "accepted_for_flight": false,
+    "training_conditions": "Position,zero wind,zero tether force"
   }
 }

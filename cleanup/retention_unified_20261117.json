@@ -1,0 +1,769 @@
+{
+  "date": "2026-11-17",
+  "status": "complete",
+  "scope": "Retain final joint P3/Adam, bounded deployment and latest two complete PX4 runs; merge superseded development evidence",
+  "archive": "P3/results/unified_20261117/history/development.json",
+  "archive_sha256": "b54c29728a8c0a1a29eb848c844123994117928a868eeb39a6a0566ed64badda",
+  "removed_count": 79,
+  "removed_bytes": 172024939,
+  "removed_files": [
+    {
+      "path": "P3/results/unified_20261117/constrained/deployment.zip",
+      "bytes": 99194,
+      "sha256": "7a2f3efcdc977e0f602a20dfab3e348127f1529493523aab0bd232328b02dcb3"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/deployment_bounded.zip",
+      "bytes": 99370,
+      "sha256": "eae88affba8bc9933c96e0a030b6b7a9465ec3d5c6f16d258ff3deabeefb06f7"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/observer.json",
+      "bytes": 4168,
+      "sha256": "86cd46725d2c00cd34af0519a3a61632b1688d0128458d9bdd3d7dcf6bcc47b2"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/observer.json",
+      "bytes": 4147,
+      "sha256": "054552b981f51020673b8b1bd3533d89fdb225cac6705a4d8e2f301992505d1a"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/observer.json",
+      "bytes": 4170,
+      "sha256": "6321053c6e6e901261b7ae2ae0478cd2c61e070bb8a8144abe6bb71ce7fe33f9"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/observer.json",
+      "bytes": 4187,
+      "sha256": "624932b5489f3491311a5a0ca08d926e48e32a6e24c4532f6b2c90fa392dd27f"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/regression.txt",
+      "bytes": 13022,
+      "sha256": "f733669f4cf71387f0d235e70f6d0d9b7a2b7880ab2f10d05a47f25e15b89ed6"
+    },
+    {
+      "path": "P3/results/unified_20261117/deployment.zip",
+      "bytes": 99087,
+      "sha256": "f69ecf55b0f8e9fb161551b2afdc2ef22016b7754fa6289cedd9f6514f557485"
+    },
+    {
+      "path": "P3/results/unified_20261117/diagnostic_gainpreserved_transfer.zip",
+      "bytes": 31204858,
+      "sha256": "cb1656829974469b3bad872ed738cfea6f03cccae3b7de2d58c0060314a415d1"
+    },
+    {
+      "path": "P3/results/unified_20261117/final_transfer.zip",
+      "bytes": 50008024,
+      "sha256": "6332d577d7ddbd953854c03c84bb9f6e58d058d5de60da39878979b514f8f399"
+    },
+    {
+      "path": "P3/results/unified_20261117/heavy_install/frozen_source.zip",
+      "bytes": 21005,
+      "sha256": "19a64465d015eaf75cd9ebe32fecb55254f8b2294492cb3f2a7c970467238520"
+    },
+    {
+      "path": "P3/results/unified_20261117/heavy_install/model.pt",
+      "bytes": 12571,
+      "sha256": "03dd588bd3f9414206ad1614e37d9c979ed21d96c77448e24ad87ecc4b618fb1"
+    },
+    {
+      "path": "P3/results/unified_20261117/heavy_install/observer.json",
+      "bytes": 4150,
+      "sha256": "85d8dde9ac87500fff8bfb7df291f4b40b2440d88a394a5d491b06baf6fadbbc"
+    },
+    {
+      "path": "P3/results/unified_20261117/heavy_install/training.json",
+      "bytes": 3032,
+      "sha256": "3af839ade9c9e5fef8dd3df794abd5bd5ca6a66d2517d903fba860650a60a2b4"
+    },
+    {
+      "path": "P3/results/unified_20261117/light_install/frozen_source.zip",
+      "bytes": 21005,
+      "sha256": "19a64465d015eaf75cd9ebe32fecb55254f8b2294492cb3f2a7c970467238520"
+    },
+    {
+      "path": "P3/results/unified_20261117/light_install/model.pt",
+      "bytes": 12571,
+      "sha256": "664a978562af584b659b9e2ad06d6536e6ae0b5b86ec49d30306ea27f9cf6421"
+    },
+    {
+      "path": "P3/results/unified_20261117/light_install/observer.json",
+      "bytes": 4149,
+      "sha256": "aa715f7203c11b0cf8743bd43ef09048e4df4eb3fe33456dc79c24da39fbda9e"
+    },
+    {
+      "path": "P3/results/unified_20261117/light_install/training.json",
+      "bytes": 3049,
+      "sha256": "17ccb97dc5d90b00e27dc7b7f4fa0c1cea38f4549ded47ef6eb01f32616b23ea"
+    },
+    {
+      "path": "P3/results/unified_20261117/nominal_install/frozen_source.zip",
+      "bytes": 21005,
+      "sha256": "19a64465d015eaf75cd9ebe32fecb55254f8b2294492cb3f2a7c970467238520"
+    },
+    {
+      "path": "P3/results/unified_20261117/nominal_install/model.pt",
+      "bytes": 12571,
+      "sha256": "0a784f31badbaa87fe2d859f2c91b83aa92ebfc30e259b6979f4bff5ad6653e0"
+    },
+    {
+      "path": "P3/results/unified_20261117/nominal_install/observer.json",
+      "bytes": 4158,
+      "sha256": "92c8096e2501053fadd44dd2292107b144ed37b0076b96574b080e51e2fd0649"
+    },
+    {
+      "path": "P3/results/unified_20261117/nominal_install/training.json",
+      "bytes": 3046,
+      "sha256": "fc94147f0fcad164e2ce5c878afe675badfa72c48f8581e40257e5902c3f1898"
+    },
+    {
+      "path": "P3/results/unified_20261117/NOT_FOR_CONTROL.json",
+      "bytes": 238,
+      "sha256": "29a6bc3ebd0fe4f8bc33a446b9bcd49eb8b464e26ccb514b2e73ca9e4a8e45d9"
+    },
+    {
+      "path": "P3/results/unified_20261117/px4_position/frozen_source.zip",
+      "bytes": 21005,
+      "sha256": "19a64465d015eaf75cd9ebe32fecb55254f8b2294492cb3f2a7c970467238520"
+    },
+    {
+      "path": "P3/results/unified_20261117/px4_position/model.pt",
+      "bytes": 12571,
+      "sha256": "903c2ecfcf27f67065ea12d4d4ae056e5c80d53d593a00cc0a3c5c142c15dd0e"
+    },
+    {
+      "path": "P3/results/unified_20261117/px4_position/observer.json",
+      "bytes": 4174,
+      "sha256": "cb9a13dc1a409d2a0885fd54bd8b0bb6a2b31f906ed21fef5a3f4cba56399ece"
+    },
+    {
+      "path": "P3/results/unified_20261117/px4_position/training.json",
+      "bytes": 3086,
+      "sha256": "fb0679cd2f9f2ec52429637aaf29d71bcf3f505ee070901f3f2cb9ace191dd56"
+    },
+    {
+      "path": "P3/results/unified_20261117/regression.txt",
+      "bytes": 13019,
+      "sha256": "267e575a7557381233f1e3120cf1aaadec1894a0b52ca0fd55db4b4016ad54d8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/0_service.log",
+      "bytes": 1002,
+      "sha256": "622f1a02966d85d3ab13ba640bd8d0a385a695a764ad6bf83acc7fc4ecc84dc0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/1_service.log",
+      "bytes": 20367,
+      "sha256": "ad4ac3d614fe4b2dbd8aa1aeb16cff73adb4775d4fd40c18e18a8d8690bab372"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/2_service.log",
+      "bytes": 968,
+      "sha256": "45f5425f1cf9ca269066acc7c10603e589928f5cf7b016a06cad2a1568cfa0a5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/audit.json",
+      "bytes": 2488,
+      "sha256": "b7ea60b283b0fac0b91b7be7b29aa47f9f0b620672c78994e09e3969da6c7d6d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/flight/log/2026-11-17/07_44_44.ulg",
+      "bytes": 33961018,
+      "sha256": "2566bcf7c7fda41abc230c20cb9ae5cc68865983f48f7ef1a661dc34b5c2c379"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/flight/px4.log",
+      "bytes": 15518,
+      "sha256": "5a0aecbdfa274d6d2a7287e9c0941a2a825e0d453bd57697bece8e1974d7f4d5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/flight/summary.json",
+      "bytes": 2202,
+      "sha256": "7bb4f4608c6052f4f4bc65d98a4bfebbb8adc6240c5669b0c4d5de4234bee896"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/flight/trace.npy",
+      "bytes": 17916464,
+      "sha256": "82afb121eeb588d2781c86008d757f6fa4d599bf5b52263e8ab704a99a6e0069"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/frozen_source.zip",
+      "bytes": 82464,
+      "sha256": "b8fa9d584547a045c7cc5d799b091530895021a2da552452092c96b3d00bd567"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/interface.json",
+      "bytes": 1457,
+      "sha256": "ac3e0d7a1351634a82782640ee233ab31d5d511fa0a66f41804750c098e41baf"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/policy_runtime.json",
+      "bytes": 5945222,
+      "sha256": "55a57c8930d1a050fbea601477879a21fc4f8853006861b6396d5b39f9e3c44c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/preflight_calibration.json",
+      "bytes": 150,
+      "sha256": "4f5cd18cbd8e319820107b26ca06e0813c108c7cb1e55aa5cb9d493dc12eb16c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_home/roscore-11315.pid",
+      "bytes": 5,
+      "sha256": "aa7c2a577f1c62842125a2d9f191819aef78fb4a531d5859ef617b656f8d92bb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_home/rospack_cache_18019822870472497271",
+      "bytes": 7587,
+      "sha256": "788087e4d657ff02c819cf9018906ae6e3fcfffbb2c5e16c1e3aa4941235c4ca"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_logs/bf1fe22c-e25a-11f1-8cf9-7f62190611ed/master.log",
+      "bytes": 92595,
+      "sha256": "5cf8a4ddbb82b7eda4b6269219af87dc9b53be5a4a501105c3b4ecb05effab6c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_logs/bf1fe22c-e25a-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-28523.log",
+      "bytes": 12925,
+      "sha256": "e22d4afd95f0097fe3a53daeaf4765cb83f07ec3b704c436655b65dcca10fdc3"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_logs/bf1fe22c-e25a-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-28539.log",
+      "bytes": 11174,
+      "sha256": "564221a7fb6211d2a6478e4a09f430a42f90bb49a378c6ecd416429d187412e3"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_logs/bf1fe22c-e25a-11f1-8cf9-7f62190611ed/rosout-1-stdout.log",
+      "bytes": 247,
+      "sha256": "e060dc5ded22cc47b7c77d60ab09a03ade9423c6face6a91fab56ca20324daf2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_logs/bf1fe22c-e25a-11f1-8cf9-7f62190611ed/rosout.log",
+      "bytes": 247720,
+      "sha256": "18f1facf030f616445af3d58e665eea820d9bb2234a0db63cf302eceacff0419"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_logs/hover_acceleration_policy.log",
+      "bytes": 7489,
+      "sha256": "a4903154a587f11356674cf9a40dd4cbcdb8e71ec6cf226b0ba13dcdd0df8c55"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/ros_logs/hover_dual_interface.log",
+      "bytes": 5617,
+      "sha256": "62bbd76066f1dc5cd9938a9a8670dafdb2b145cb748e4d79ee2e05ac6e75e242"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind1/wire_commands.json",
+      "bytes": 13492932,
+      "sha256": "83b1129c33c73897f6319dda2eb18b5abc40533f98f063e00a5afc032103eaac"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/0_service.log",
+      "bytes": 1002,
+      "sha256": "6aaed7e43dd8e3c6ed949c1cb1e615ac3bb8af35bc10e552d82d610a370bbd2b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/1_service.log",
+      "bytes": 20250,
+      "sha256": "2ff94bccdf6cd301bf85354b62c6e4ca64e6c750077a5cc473de78ce3bbe3c5a"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/2_service.log",
+      "bytes": 968,
+      "sha256": "410b8df1fec3d56706e8d2568dd2c0941225af7dc1c719125781939419d6fbfa"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/audit.json",
+      "bytes": 2521,
+      "sha256": "c286045203a5b8d17e5667f7e108a71ae49347189a4452ef9d20ad1c9d86b391"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/flight/log/2026-11-17/07_48_38.ulg",
+      "bytes": 9913119,
+      "sha256": "2c62ccc0e931c24b7c9428f3435a25cd0175355087122d43b6ee0c5c9520e4a2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/flight/parameters.bson",
+      "bytes": 298,
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/flight/px4.log",
+      "bytes": 15283,
+      "sha256": "e46d565ef3e28647f799cbf4e9ffe17d9d6ae54a0c14d47e4ff33dae9d2db6fb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/flight/summary.json",
+      "bytes": 2349,
+      "sha256": "0c3b146acfdb2365307a061741dd271b9ad3af52f9920144588e4718efbd8bb8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/flight/trace.npy",
+      "bytes": 3330832,
+      "sha256": "9b40ad099453ab4ad90202ac8ccdf281c4b2a54ff42658435a55cdf4fafbeac4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/frozen_source.zip",
+      "bytes": 82464,
+      "sha256": "b8fa9d584547a045c7cc5d799b091530895021a2da552452092c96b3d00bd567"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/interface.json",
+      "bytes": 1457,
+      "sha256": "576337ffb0e7bf1670e962694ee728fa356fc59a0d599a0eece2bfe7782ec22e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/mavros_commands.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/policy_runtime.json",
+      "bytes": 1268917,
+      "sha256": "70c8cd04332a739ca87c6f6a992a838702911174c1057e0111968eb01e147b06"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/preflight_calibration.json",
+      "bytes": 149,
+      "sha256": "ac23655133531e090715c23a701d825604e9570db41c1766119de6b84a2af87d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_home/roscore-11315.pid",
+      "bytes": 5,
+      "sha256": "1ebcc2674db06ca71e71b94c14cb9c785d3e175740737c8154dd5d3bb4bbacb3"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_home/rospack_cache_18019822870472497271",
+      "bytes": 7587,
+      "sha256": "788087e4d657ff02c819cf9018906ae6e3fcfffbb2c5e16c1e3aa4941235c4ca"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_logs/4aa4ab2a-e25b-11f1-8cf9-7f62190611ed/master.log",
+      "bytes": 91895,
+      "sha256": "d34903d6536cf6f8878e6ad489541116d570490587bf75a2414315aafa4eb222"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_logs/4aa4ab2a-e25b-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-28992.log",
+      "bytes": 12925,
+      "sha256": "1b45834be377d6834e84962b0f866e180c2d423b6c2302b4937f3c1609c95ab6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_logs/4aa4ab2a-e25b-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-29012.log",
+      "bytes": 11174,
+      "sha256": "ed9c3ce3c13b924889a6f172609272a649714b6329289f96de3852e5f1c50a67"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_logs/4aa4ab2a-e25b-11f1-8cf9-7f62190611ed/rosout-1-stdout.log",
+      "bytes": 247,
+      "sha256": "fdd615796ef350d49f70258eb205d57543907562f5ff40101dfd7aa46048cbd5"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_logs/4aa4ab2a-e25b-11f1-8cf9-7f62190611ed/rosout.log",
+      "bytes": 242991,
+      "sha256": "b5f4b269de8f0a6664c04e185294bcd7c0fbc5f1ee418abf8a7928656049dcd2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_logs/hover_acceleration_policy.log",
+      "bytes": 7489,
+      "sha256": "c770c91b573bfc8feb5f6d4a718aab049eb79a3971116f14dcce4040b7669416"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/ros_logs/hover_dual_interface.log",
+      "bytes": 5617,
+      "sha256": "fa2f47c14f9f31f7aa60ee002901aa999efe7c9d48c78c0e2c287ee43dcd7c11"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/acceleration_wind5/wire_commands.json",
+      "bytes": 3439726,
+      "sha256": "ad991abce2f505cb897258a25daab5317ca85765fa19770a98deb76aa96d9561"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/queue.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/strong.log",
+      "bytes": 5791,
+      "sha256": "a2b275981403b1ad509c48bae161dfb2eb513a764ccbb4338bab622dd2168a06"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_gainpreserved_20261117/weak.log",
+      "bytes": 15336,
+      "sha256": "73d8a39535f15a5de91d72b61a05396da2ee4116a85980f725186200ef56f9ce"
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "P3/results/unified_20261117/constrained/regression_final.txt",
+      "sha256": "7cb979a3b8e7893a4a69ff907549795ca12a35622b39ec645395847bd7aec9a7"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/bounded_observer.json",
+      "sha256": "e091e31b308e7a6fc6a6634804f99f6a0516a7e8c44459d25dbde4dc1c17032d"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/deployment.json",
+      "sha256": "60bb6850be88a3482161d694c68c8b0d6c9aa4a41664203bf4cf86ee9cc28975"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/model.pt",
+      "sha256": "c922642e2b3fb4411f16aa5eae4a58df6479ce2518c1598381d7544b4f7221d0"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/heavy_install/training.json",
+      "sha256": "3c72213ea2a438d79dcd45fadde5143f678b1180eb2b66e368e29e8b1f7c75e6"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/bounded_observer.json",
+      "sha256": "e51ba4fc8b368f07f764eef05360c0c68ec7b8b81a0031777ea6411008f47cef"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/deployment.json",
+      "sha256": "ebef69f5064b8a0e8de80b5dd7670a106cf3c50ccb0503369f57366ea4f5153a"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/model.pt",
+      "sha256": "a719647ae0765312761e6c51fe7eca23e6b5b7a9b03faf8f617e1519eb111416"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/light_install/training.json",
+      "sha256": "dd9598654aeba944b773c561c155eb7c93eb09ff15a670588598625afa6d3509"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/bounded_observer.json",
+      "sha256": "2b477400956d10cec1ae362be94492b52e42632ba12403af8abcf1d7d48e5c18"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/deployment.json",
+      "sha256": "0c3786511c1fb00ee5f409a948330fc66fca5d0567398829ca5c3e4a0ade89b8"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/model.pt",
+      "sha256": "67fd5fc6d152a0ad4061fe7bb792b2cd9534ff0a655e80a27ec3e6e7140592d8"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/nominal_install/training.json",
+      "sha256": "1204b451fa92d3949f48bbfaccbe1c9d16019625bed8b9ab3c08d5bebd2ebdad"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/bounded_observer.json",
+      "sha256": "93496677fadfd73203c1c25c9a2f10455e96bd5278c038a24be50acdb6b04ccd"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/deployment.json",
+      "sha256": "536399b4c5d6f4d6950cbc800c399fbc1d97fa9d56dca9211edee46aa0b75faf"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/deployment_source.zip",
+      "sha256": "abe36c4ff650019c1cc4c12366229103d818a323444ba12f220581ab8bfce014"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/frozen_source.zip",
+      "sha256": "9d958a5c7160bd04ebc09ea1f58c42d9f63135f3d2166f967fde0568ea121a77"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/model.pt",
+      "sha256": "d1bf4b95de309fef43035ca0c45bcac52d5e03a8a0a1aa7a5435570a510378e5"
+    },
+    {
+      "path": "P3/results/unified_20261117/constrained/px4_position/training.json",
+      "sha256": "e431535a6aae921a1ab9e656c89d8e4e5cffbf85f3655f9e7ee7532abfe0c11a"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/queue.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/strong.log",
+      "sha256": "9278934426a769dc66e4c34cd14ac909e948973f5090683561e3a3f88d153179"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/weak.log",
+      "sha256": "7458f9bb9940c4a917950725f0188dc674847c2c80c2012137f24a6b21b38d82"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/0_service.log",
+      "sha256": "95a484d107f01e23ad9de5754bc5c7cbb4b6acd8b425f2a01536d3cec5608aed"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/1_service.log",
+      "sha256": "c0626edb603a48d908e9eb177bff40d4c85ac9ccc1679e5f08b4c64beb16d04c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/2_service.log",
+      "sha256": "10fd5c9aa063aeb5465664979193f748ff45abe4868745675b8724701c451a21"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/audit.json",
+      "sha256": "34e59f6d98888dbad0bb86342da8ea161c8c9134ac27497ef328c3cb58eca975"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/frozen_source.zip",
+      "sha256": "bc93c86ea4de14fc83cfe391744be9c615b568bd69558e72f33e3e4d92b59087"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/interface.json",
+      "sha256": "a301acc999cd2cc1da847161a9875b182165c871851ae68165590f6cf40d79d0"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/mavros_commands.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/policy_runtime.json",
+      "sha256": "57b240e973a4cbaeba4f0adceba91c6a0358b767528debe563729748522b847b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/preflight_calibration.json",
+      "sha256": "6313d098428642f732291b71663e138706115afb6727fe1c9b79c67dce945ca4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/protocol.json",
+      "sha256": "ef413edc82caa3226678e77b3e4473be661729b55e796c81bd27feb7d99c6c89"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/result.json",
+      "sha256": "e4371f4802db83a6635134e1f66545a8b6f8576b28677bc16b5c01b50eb84204"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/trajectory.npz",
+      "sha256": "03c1c5e6ddfc35347b95da2d2045288cc6dc763a728599717a2b7bf80ea3fc80"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/wire_commands.json",
+      "sha256": "2c951bdb44aac9e42d03be18eb53e53fceef51b6b2d9f2ee0153e8e7b5823ffc"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/parameters.bson",
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/px4.log",
+      "sha256": "d4be609d37f22034aba7e53cf4dd04cae8c08b4e04afcce13ed4f4412d99c702"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/summary.json",
+      "sha256": "c8c2ab42c4eb4233be01648abdcb583c2e6b69685f3a9eea6e511538f3d642e6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/trace.npy",
+      "sha256": "c91170b73427c746f8746953f2410d479325b98335f9144df0234c343f9d6151"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/flight/log/2026-11-17/08_05_52.ulg",
+      "sha256": "dd1aeeb22c7ef0d863f1144df003e643ea13bea353edb40e23383eba572c1934"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/curves.png",
+      "sha256": "74311184a9b712f6cf653fe45ee0bdb0161fcc7f3a02c0eb8b77a7154229c0db"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/flight.gif",
+      "sha256": "d7d43275317f49652a77b1b1528771a173df7b0b302f811c415550d74d6f2cfd"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/flight.png",
+      "sha256": "15414f3798a09b4999103c02e25e5d1c0594955a2f85ac09f0ae3b3144b56665"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/replay/manifest.json",
+      "sha256": "af2a6258dd2230e2310b82f0ad79bccf2f42213273e13f80cf5ed3f4fddcbb0c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_home/roscore-11315.pid",
+      "sha256": "4485fad1291733bf8ba8de49b8eaf357d4e2ad8bdf6e8109158057a69e7d3983"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_home/rospack_cache_18019822870472497271",
+      "sha256": "788087e4d657ff02c819cf9018906ae6e3fcfffbb2c5e16c1e3aa4941235c4ca"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/hover_acceleration_policy.log",
+      "sha256": "33ae01db9aae49c3c31229cf675c20654994a87731d933ed61c13c78b250de88"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/hover_dual_interface.log",
+      "sha256": "92bff8b2c48a96bd8f42acf2218383cca2eab6f3a9b0d86e31bf6146627e9cf6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/master.log",
+      "sha256": "2d2d325dbf0d5793dc87ae4eb897cf2b06e6b3e285479b3de2ec5ffe414607c2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-29477.log",
+      "sha256": "fc7fe38c170df9e3898bfad540ff3c8df57c1dd9e523625e6fb1c971084f439c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-29493.log",
+      "sha256": "79904ac7db04fa51496025a617277972f2c5a7abe1797664bc866c3085e41528"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/rosout-1-stdout.log",
+      "sha256": "df57309fc354d3d5437bb8cdeff8447081309fdeef66f27814ea8d2c71dbb03e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind1/ros_logs/b382594c-e25d-11f1-8cf9-7f62190611ed/rosout.log",
+      "sha256": "c610f6e070c17fbf04aa13c1a1408167094113fcb900f0f2f402833b31b7df66"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/0_service.log",
+      "sha256": "e7317c432e034f2eb24ad81e4f09a5cc7da2490aef2eef0c2e5aad4ffc592f3c"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/1_service.log",
+      "sha256": "36baf49ffa9a7709e0e260f68709bcb2f90ca852134a37872a3fe41e968800eb"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/2_service.log",
+      "sha256": "6711a9cec27b777931a2f46b631dc6d713ba90dceff075549e15a09ee39a06ee"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/audit.json",
+      "sha256": "d7eaf1917f5a45df5520c57512bb0a04acbb44348ea16d4a00d3fb5e2d34650e"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/frozen_source.zip",
+      "sha256": "bc93c86ea4de14fc83cfe391744be9c615b568bd69558e72f33e3e4d92b59087"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/interface.json",
+      "sha256": "930ea551a416b55d762d99512f053aff511480ee55dc3cee217a5bd281a5d9e3"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/mavros_commands.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/policy_runtime.json",
+      "sha256": "88d2f060182e9ed5b336c91715a653840c916bc75fe1bef75957dbde4f00cd5d"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/preflight_calibration.json",
+      "sha256": "41d01d480e1dd173a2a4f216d174ee6e23635ba699d535782161e0a4eaff4100"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/protocol.json",
+      "sha256": "2d3b57cd88ffad4dcf8fc029ae6f0622a45e3e761694c28c083e55ce34878bf2"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/result.json",
+      "sha256": "44e90140a78f80b685318fa89b8f53e01c584ce247ad31398fb4dcd3730fc328"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/trajectory.npz",
+      "sha256": "0b41fb2c5d78bc717f697ebecf3fc514d6ca5c50934499fa6569645e9d297425"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/wire_commands.json",
+      "sha256": "26e52d81794b1add4613ef33f786ecf80de4d3c5003aa9ed9563f599547de56b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/parameters.bson",
+      "sha256": "71e502369fd4c2eb9b322bc9e03188c352b31394115a8a60acbe19cce148d548"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/px4.log",
+      "sha256": "2cf8216c7ba6c8e9f92a1f9a06e9c2aa8bc0bb4179781267cc0304ae7b3446b4"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/summary.json",
+      "sha256": "e9d400190071e3e8a6803fb237c9f4f6bfdd3d11bc009f9bc68907229c847691"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/trace.npy",
+      "sha256": "1108db65adcfed852b5902a53345c57b3ee74ad03d2cce960fda1d7ba7c980b6"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/flight/log/2026-11-17/08_09_25.ulg",
+      "sha256": "eaab11a45f3ec69c299813b57025dfc294cf0da94e7cf42be9590bf3b6a748ac"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/curves.png",
+      "sha256": "c10ab1171cd619b43a60471e5881eed1d562a4a22c6c20a482d7e8ef3cbb9a14"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/flight.gif",
+      "sha256": "ff5b8b850444b79c7d3938f89525c0490010a52389beb4c95553424863af0bfa"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/flight.png",
+      "sha256": "372d78fbe7e1ccac8e4024288af77d1c9accaf94bca7d313c952671324fc1870"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/replay/manifest.json",
+      "sha256": "8b50c2abf0430a2886d0572ebda48c86ab0299d7daec341e20ad69595d654466"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_home/roscore-11315.pid",
+      "sha256": "11ab2fa58cde0d359797402001b08db2494b14a5f8a4a80c8b73ad6048f570f8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_home/rospack_cache_18019822870472497271",
+      "sha256": "788087e4d657ff02c819cf9018906ae6e3fcfffbb2c5e16c1e3aa4941235c4ca"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/hover_acceleration_policy.log",
+      "sha256": "57ef7c622843269f776aa3ee22a16d7cfbf25e58b965f0a215d6fbbac9571314"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/hover_dual_interface.log",
+      "sha256": "15a5575eebe2454103f27227c621e45bdede4bfba3f4f44b80d7535b05ecb9ac"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/master.log",
+      "sha256": "ea790eea019b1ed4987de6cdb5ecba27c757da8bae3a704aed208e5815ae3c8b"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-30029.log",
+      "sha256": "afdc5babc0aa7ce974429cf3d50eb46e91ba4f8ea8bbdb0bc63f4e31e8b04676"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/roslaunch-s-virtual-machine-30045.log",
+      "sha256": "00013ad04eb095c416505744bc3626546831a8c1afa4d247b019f0fd77799af8"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/rosout-1-stdout.log",
+      "sha256": "d203fcaf272a3a5d79af4583d0c2e23e9fc770fcea12209dd41bbdd107e6db93"
+    },
+    {
+      "path": "px4_offboard/acceleration_dual/results/unified_bounded_20261117/acceleration_wind5/ros_logs/319b9adc-e25e-11f1-8cf9-7f62190611ed/rosout.log",
+      "sha256": "b1516d7335fcfec0be49e1e121d0ff5de5d18fd0f7f880d111956a63f9b31921"
+    }
+  ],
+  "old_protected_unchanged": true
+}

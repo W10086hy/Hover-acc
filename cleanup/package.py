@@ -17,7 +17,7 @@ FINAL={
 
 
 def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
-def write(p,value):p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+def write(p,value):p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 def digest(p):
     h=hashlib.sha256()
     with p.open('rb') as f:
@@ -35,6 +35,9 @@ def files(folder):
 
 
 def manifest():
+    from .current_retention import verify as verify_current
+    current_retention=verify_current()
+    superseded=set(current_retention['superseded_protected_files'])
     retention=read(ROOT/'cleanup/retention_actor31.json');assert retention['status']=='complete'
     latest=read(ROOT/'cleanup/retention_20261109.json');assert latest['status']=='complete'
     px4=read(ROOT/'cleanup/retention_px4_narrow_20261109.json');assert px4['status']=='complete'
@@ -58,7 +61,17 @@ def manifest():
         assert sum(r['bytes'] for r in observer_retention['removed_files'])==observer_retention['removed_bytes']
         assert digest(ROOT/observer_retention['archive'])==observer_retention['archive_sha256']
         for row in observer_retention['removed_files']:assert not (ROOT/row['path']).exists()
-        for row in observer_retention['protected_files']:assert digest(ROOT/row['path'])==row['sha256']
+        for row in observer_retention['protected_files']:
+            if row['path'] not in superseded:assert digest(ROOT/row['path'])==row['sha256']
+    joint_path=ROOT/'cleanup/retention_unified_20261117.json'
+    joint=read(joint_path) if joint_path.exists() else None
+    if joint is not None:
+        assert joint['status']=='complete'
+        assert len(joint['removed_files'])==joint['removed_count']
+        assert sum(row['bytes'] for row in joint['removed_files'])==joint['removed_bytes']
+        assert digest(ROOT/joint['archive'])==joint['archive_sha256']
+        for row in joint['removed_files']:assert not (ROOT/row['path']).exists()
+        for row in joint['protected_files']:assert digest(ROOT/row['path'])==row['sha256']
     excluded={'cleanup/manifest.json','cleanup/verification.json','cleanup/package_summary.json'};rows=[]
     for p in sorted(files(ROOT)):
         name=p.relative_to(ROOT).as_posix()
@@ -69,7 +82,7 @@ def manifest():
         artifact=artifact or name.endswith('track_retention_20261102.json') or name in {'track/reports/height_speed_statistics.json','track/reports/development_statistics.json'}
         kind='fixture' if '/tests/fixtures/' in name else ('artifact' if artifact else 'source_or_configuration')
         rows.append(dict(path=name,bytes=p.stat().st_size,sha256=digest(p),kind=kind))
-    write(ROOT/'cleanup/manifest.json',dict(date=observer_retention['date'] if observer_retention else p3['date'] if p3 else acceleration['date'],
+    write(ROOT/'cleanup/manifest.json',dict(date=current_retention['date'],
         scope='Latest native installation/bias/CG P3, real PX4 Position calibration and frozen P2/P3 observer dual-interface development evidence; indexed historical models and accepted tracking/PX4 evidence',
         files=rows))
     summary=dict(date=acceleration['date'],this_cleanup_removed_files=acceleration['removed_count'],this_cleanup_removed_bytes=acceleration['removed_bytes'],
@@ -96,6 +109,16 @@ def manifest():
             latest_retention='cleanup/retention_px4_observer_20261116.json',
             latest_protected_files=len(observer_retention['protected_files']),
             previous_installation_removed_files=p3['removed_count'],previous_installation_removed_bytes=p3['removed_bytes'])
+    if joint is not None:
+        summary.update(date=joint['date'],this_cleanup_removed_files=joint['removed_count'],
+            this_cleanup_removed_bytes=joint['removed_bytes'],latest_retention='cleanup/retention_unified_20261117.json',
+            latest_protected_files=len(joint['protected_files']),latest_joint_P3_models=4,
+            latest_joint_P3_PX4_cases=2,latest_joint_P3_PX4_safe=2,latest_joint_P3_PX4_settled=2,
+            latest_joint_P3_report='P3/results/unified_20261117/README.md')
+    summary.update(date=current_retention['date'],this_cleanup_removed_files=current_retention['removed_count'],
+        this_cleanup_removed_bytes=current_retention['removed_bytes'],latest_retention='cleanup/retention_current_only_20261117.json',
+        latest_protected_files=len(current_retention['protected_files']),retired_scripts=current_retention['retired_script_count'],
+        archived_pre_unified_cases=8)
     for _ in range(3):
         write(ROOT/'cleanup/package_summary.json',summary);current=list(files(ROOT));summary.update(current_files=len(current),current_bytes=sum(p.stat().st_size for p in current))
     write(ROOT/'cleanup/package_summary.json',summary);print(json.dumps(summary,ensure_ascii=False))

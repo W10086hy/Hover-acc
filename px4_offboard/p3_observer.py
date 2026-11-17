@@ -50,6 +50,9 @@ class ObserverCalibration:
     @classmethod
     def load(cls,path):
         data=json.loads(Path(path).read_text())
+        if data.get('schema')=='P3_unified_residual_v1':
+            from .unified_p3 import UnifiedCalibration
+            return UnifiedCalibration(data)
         if data.get('schema')!='P3_observer_standardization_v1' or not data.get('quality_passed') or not data.get('alignment_audit_passed'):
             raise ValueError('Validated high-rate Position calibration required')
         return cls(data)

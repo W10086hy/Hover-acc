@@ -1,0 +1,101 @@
+{
+  "train": {
+    "samples": 19661,
+    "sensor_before_rmse": [
+      0.0009708837854607514,
+      0.0009219432936478207,
+      0.000750263601711318,
+      0.004729342010485336,
+      0.00483917502036964,
+      0.04975016868530172
+    ],
+    "gyro_rmse_radps": [
+      0.0009697624904265967,
+      0.0009216762521797678,
+      0.0007482531116802477
+    ],
+    "force_rmse_mps2": [
+      0.004717389847043385,
+      0.0048246917486281906,
+      0.0492943027192102
+    ],
+    "torque_before_rmse_nm": [
+      0.0003694230865655183,
+      0.0002354889402852635,
+      9.008644802567639e-05
+    ],
+    "torque_after_rmse_nm": [
+      0.0002601373154069674,
+      0.00016361555398138308,
+      6.789954733667297e-05
+    ],
+    "source_time_range_s": [
+      33.568,
+      112.608
+    ]
+  },
+  "holdout": {
+    "samples": 9634,
+    "sensor_before_rmse": [
+      0.0009272300276175636,
+      0.0009391541797245972,
+      0.0007481551384268289,
+      0.0049255123591539504,
+      0.0049187354356883435,
+      0.051905053220528206
+    ],
+    "gyro_rmse_radps": [
+      0.0009260304880632696,
+      0.0009388587708261898,
+      0.0007454419512708773
+    ],
+    "force_rmse_mps2": [
+      0.004910250587686536,
+      0.004927377472627226,
+      0.05145524174023276
+    ],
+    "torque_before_rmse_nm": [
+      0.0003479131021166517,
+      0.0002353711260882531,
+      9.125528306100849e-05
+    ],
+    "torque_after_rmse_nm": [
+      0.0002442553031623396,
+      0.00016661867197571346,
+      6.936559764110772e-05
+    ],
+    "source_time_range_s": [
+      112.616,
+      151.548
+    ]
+  },
+  "angular_limit_radps2": [
+    0.2580732251712858,
+    0.16985129978094704,
+    0.023226645058465153
+  ],
+  "torque_limit_nm": [
+    0.003251722637158201,
+    0.0009341821487952087,
+    0.00036698099192374945
+  ],
+  "limit_source": "Position training partition only",
+  "limit_rule": "1.25 times per-axis99.9percentile of training equivalent torque; floor0.0001Nm",
+  "capture_conditions": {
+    "mode": "PX4_Position",
+    "wind_mps": 0.0,
+    "tether_force_disabled": true,
+    "P2_used": false
+  },
+  "capture_metadata_sha256": "05a80d779cbf27158809450086ef1007f19c082239713cf2a4942998d57a4852",
+  "input_sha256": "56acca53573a4c4033474a62f93755cdc2c3bdd67000f0eae26d060f20ed9fec",
+  "split_time_s": 112.616,
+  "optimizer_updates": 0,
+  "quality_passed": true,
+  "bounded_output_sha256": "93496677fadfd73203c1c25c9a2f10455e96bd5278c038a24be50acdb6b04ccd",
+  "export_source_sha256": {
+    "P3/unified_export.py": "3dbbbff4135f6c6f39837546900cb1d556ddef8ec2a14fa67dab501d7f37eec4",
+    "P3/unified_train.py": "223ca4196d2a7d57f93c74f5fb7b6f27786b34c35f138e8db34a18618de19f59",
+    "px4_offboard/unified_p3.py": "9fce3c9c6fc8a12ca435d976742d66672b55e120b8beb80900fc66e99c9a3bed"
+  }
+}

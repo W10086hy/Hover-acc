@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-16",
-  "this_cleanup_removed_files": 250,
-  "this_cleanup_removed_bytes": 872819038,
+  "date": "2026-11-17",
+  "this_cleanup_removed_files": 213,
+  "this_cleanup_removed_bytes": 583696215,
   "stock_px4_removed_files": 148,
   "stock_px4_removed_bytes": 572385034,
   "prior_actor37_removed_files": 678,
@@ -30,10 +30,17 @@
   "latest_PX4_observer_safe": 4,
   "latest_PX4_observer_settled": 2,
   "latest_PX4_observer_formal_acceptance": false,
-  "latest_retention": "cleanup/retention_px4_observer_20261116.json",
-  "latest_protected_files": 316,
+  "latest_retention": "cleanup/retention_current_only_20261117.json",
+  "latest_protected_files": 218,
   "previous_installation_removed_files": 327,
   "previous_installation_removed_bytes": 70356393,
-  "current_files": 1527,
-  "current_bytes": 1459911157
+  "latest_joint_P3_models": 4,
+  "latest_joint_P3_PX4_cases": 2,
+  "latest_joint_P3_PX4_safe": 2,
+  "latest_joint_P3_PX4_settled": 2,
+  "latest_joint_P3_report": "P3/results/unified_20261117/README.md",
+  "retired_scripts": 11,
+  "archived_pre_unified_cases": 8,
+  "current_files": 1424,
+  "current_bytes": 1046670174
 }

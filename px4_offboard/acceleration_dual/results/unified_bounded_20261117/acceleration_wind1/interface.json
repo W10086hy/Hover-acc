@@ -1,0 +1,32 @@
+{
+  "interface": "acceleration",
+  "transport": "actual ROS Noetic MAVROS",
+  "pitch_rate_k": 0.1,
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  },
+  "policy_source": "mavros",
+  "asset_sha256": {
+    "config.json": "8da96a0d2ce6929265dfa22ca35806d864a2c8025b8c63fb3a7ba962356e09a6",
+    "weights.npz": "c16a96352a847a0bccdcec60d46583f3d7cb5507fdf06e91a53b3fd2c4c0f78b",
+    "initial.npz": "9b4aaf76a40fb6e555aab22ba859a0de8f0b76a422d5e6c10795e26380640107",
+    "model.xml": "829983b2e1657e2bf185469ef965f5fde879ca4ac7310d34e982d70d96896642"
+  },
+  "wind_ramp_s": 0.0,
+  "ROS_simulated_clock": true,
+  "P3_enabled": true,
+  "p3_config_sha256": "93496677fadfd73203c1c25c9a2f10455e96bd5278c038a24be50acdb6b04ccd",
+  "p3_checkpoint_sha256": "d1bf4b95de309fef43035ca0c45bcac52d5e03a8a0a1aa7a5435570a510378e5",
+  "P3_scope": "Joint sensor and bounded equivalent self-dynamics residual; existing35 P2 inputs",
+  "physical_torque_feedforward_sent": false,
+  "full_P3_preserved_in": "P3/results/installation_20261115",
+  "assets": "px4_offboard/acceleration_dual/assets",
+  "seed": 2026114501,
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "acceleration_filter_s": 0.065,
+  "rate_adapter": "same acceleration Actor with attitude PI rate reference and local vertical PID; not native torque equivalence",
+  "GPS_for_PX4_Position": true,
+  "GPS_policy_input": false,
+  "requested_duration_s": 120.0,
+  "wind_mps": 1.0
+}
