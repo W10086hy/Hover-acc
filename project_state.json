@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "training_running": false,
   "validation_running": false,
   "formal_final_acceptance": false,
@@ -624,5 +624,41 @@
     "duration_s": 120,
     "formal_final_acceptance": false,
     "real_px4_position_validated": false
+  },
+  "real_flight_log_20261117": {
+    "state": "analysis_and_development_validation_complete",
+    "report": "docs/flight_log_20261117.md",
+    "analysis": "docs/flight_log_20261117.json",
+    "SITL_comparison": "px4_offboard/acceleration_dual/results/flight_log_filter_20261118/summary.json",
+    "P2_updates": 0,
+    "P3_updates": 0,
+    "innovation_filter_candidate_s": 0.2,
+    "innovation_filter_default_s": 0,
+    "hardware_validated": false,
+    "formal_final_acceptance": false
+  },
+  "report_debug_20261117": {
+    "state": "development_validation_complete_perturbed_weak_wind_gap",
+    "P2_frozen": true,
+    "report": "docs/debug_20261117.md",
+    "candidate_models": "P3/results/aligned_20261117",
+    "VM_root": "/home/s/hover_bptt_px4/aligned_20261117",
+    "no_real_aircraft_changes": true,
+    "training_running": false,
+    "validation_running": false,
+    "summary": "px4_offboard/acceleration_dual/results/aligned_20261117/summary.json",
+    "formal_final_acceptance": false,
+    "remaining": "Perturbed weak-wind steady position offset with frozen P2"
+  },
+  "latest_cleanup_20261118": {
+    "date": "2026-11-18",
+    "status": "complete",
+    "retention": "cleanup/retention_flight_20261118.json",
+    "removed_files": 762,
+    "removed_bytes": 1550060218,
+    "publication_repository": "https://github.com/W10086hy/Hover-acc",
+    "publication_branch": "main",
+    "training_during_cleanup": false,
+    "new_simulation_during_cleanup": false
   }
 }

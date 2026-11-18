@@ -258,5 +258,57 @@
       "engineering_rmse_passed": 1
     },
     "status": "development_complete_weak_RMSE_gap"
+  },
+  "aligned_processing_candidates": {
+    "status": "candidate_only",
+    "P2_updates": 0,
+    "default_model_replaced": false,
+    "report": "docs/debug_20261117.md",
+    "models": [
+      {
+        "aircraft": "nominal_install",
+        "checkpoint": "P3/results/aligned_20261117/nominal_install/model.pt",
+        "sha256": "cbde2bb5c04d32b93547394534f78eb563d918ccdf510bb89c64335015c9f6d2",
+        "optimizer_embedded": true
+      },
+      {
+        "aircraft": "light_install",
+        "checkpoint": "P3/results/aligned_20261117/light_install/model.pt",
+        "sha256": "95a021f21effc434ae873e9558774d0d92177ea6812888700a159fba8d8df469",
+        "optimizer_embedded": true
+      },
+      {
+        "aircraft": "heavy_install",
+        "checkpoint": "P3/results/aligned_20261117/heavy_install/model.pt",
+        "sha256": "6cdadcdeaa0863f62a75b45120ae2f426e8170e132c3673dcb47857609889d56",
+        "optimizer_embedded": true
+      },
+      {
+        "aircraft": "px4_position",
+        "checkpoint": "P3/results/aligned_20261117/px4_position/model.pt",
+        "sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e",
+        "optimizer_embedded": true
+      },
+      {
+        "aircraft": "perturbed_px4_position",
+        "checkpoint": "P3/results/aligned_20261117/perturbed_px4_position/model.pt",
+        "sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "optimizer_embedded": true,
+        "deployment_candidates": {
+          "observation_consistent": {
+            "runtime": "P3/results/aligned_20261117/perturbed_px4_position/observer_consistent.json",
+            "sha256": "672fa018fd9070f2e3b67f30810d6166933bd31f8625c3b2ba8b1c9a33eb6379"
+          },
+          "standard_vehicle_equivalent": {
+            "runtime": "P3/results/aligned_20261117/perturbed_px4_position/observer_virtual.json",
+            "sha256": "4a61531676212cbef80656d47f5993489c964f0fe86370f0aec04b578c6b5719"
+          },
+          "acceleration_reference_consistent": {
+            "runtime": "P3/results/aligned_20261117/perturbed_px4_position/observer_accel_consistent.json",
+            "sha256": "f222072efbac7d75e2918375e0b0d145b07f56135468247047da736752ad0da4"
+          }
+        }
+      }
+    ]
   }
 }

@@ -1,0 +1,552 @@
+{
+  "source_hashes": {
+    "result.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "events.jsonl": "02fb16d44ab169ff05f05a91ce983f1cb3c17e0e8a85ca34640807ce0926e0cd",
+    "samples.jsonl": "5e9fef88e9523d51fd2c2fb6f3cab12556695b664e45bef9cf296bb321b2512a",
+    "protocol.json": "11b4dea4941e168eb6e919edd40c4c976c9dab8e5511eb116787fadf4646ce4f",
+    "px4_log_007.ulg": "b6982597a20048e42f2ca936c1a2763c001b1b0cfd5139819dd3ca4aca747d84",
+    "catalog.json": "0a2815ddd720e3b1fb1fad3d878d4a0e93d4a21413660df241241784d05997db",
+    "transfer.json": "36c2225eaa61d07e510e645721913282c75d70da43366b7a5a6bf096876c2602"
+  },
+  "logged_samples": 16033,
+  "malformed_final_lines": [
+    16034
+  ],
+  "result_json_bytes": 0,
+  "PX4_firmware": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "P2_checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "weights_sha256": "c16a96352a847a0bccdcec60d46583f3d7cb5507fdf06e91a53b3fd2c4c0f78b",
+  "reported_real_mass_kg": 2.07,
+  "mass_provenance": "2026-11-11; not reweighed by this program",
+  "FC_initial_parameters": {
+    "THR_MDL_FAC": 0.0,
+    "MC_PITCHRATE_K": 1.0,
+    "COM_LOW_BAT_ACT": 0,
+    "BAT1_CAPACITY": -1.0,
+    "BAT1_N_CELLS": 4
+  },
+  "logged_P3_scope": "aggregate force/gyro innovation feature compensation",
+  "logged_actuator_mapping": [
+    0,
+    3,
+    2,
+    1
+  ],
+  "physical_wiring_verified": false,
+  "mode_transitions": [
+    {
+      "time_s": 348.26203,
+      "state": 2,
+      "failsafe": false
+    },
+    {
+      "time_s": 366.287941,
+      "state": 14,
+      "failsafe": false
+    },
+    {
+      "time_s": 369.19307,
+      "state": 2,
+      "failsafe": false
+    },
+    {
+      "time_s": 385.037024,
+      "state": 14,
+      "failsafe": false
+    },
+    {
+      "time_s": 403.76199599999995,
+      "state": 2,
+      "failsafe": false
+    }
+  ],
+  "battery_warning_transitions": [
+    {
+      "time_s": 348.392246,
+      "warning": 0,
+      "voltage_v": 15.380912780761719,
+      "remaining": 0.6000330448150635
+    },
+    {
+      "time_s": 353.992228,
+      "warning": 1,
+      "voltage_v": 14.30727481842041,
+      "remaining": 0.13392373919487
+    },
+    {
+      "time_s": 354.592251,
+      "warning": 0,
+      "voltage_v": 14.97351360321045,
+      "remaining": 0.1759473979473114
+    },
+    {
+      "time_s": 355.39221299999997,
+      "warning": 1,
+      "voltage_v": 14.504138946533203,
+      "remaining": 0.14129850268363953
+    },
+    {
+      "time_s": 359.792213,
+      "warning": 2,
+      "voltage_v": 14.40114974975586,
+      "remaining": 0.06492063403129578
+    },
+    {
+      "time_s": 360.992275,
+      "warning": 1,
+      "voltage_v": 14.505961418151855,
+      "remaining": 0.07149526476860046
+    },
+    {
+      "time_s": 361.39221399999997,
+      "warning": 2,
+      "voltage_v": 14.577051162719727,
+      "remaining": 0.06900998950004578
+    },
+    {
+      "time_s": 361.79238899999996,
+      "warning": 1,
+      "voltage_v": 14.411174774169922,
+      "remaining": 0.07183763384819031
+    },
+    {
+      "time_s": 361.992215,
+      "warning": 2,
+      "voltage_v": 14.285400390625,
+      "remaining": 0.06907674670219421
+    },
+    {
+      "time_s": 364.59221399999996,
+      "warning": 1,
+      "voltage_v": 14.721964836120605,
+      "remaining": 0.07497140765190125
+    },
+    {
+      "time_s": 364.99222499999996,
+      "warning": 2,
+      "voltage_v": 14.499581336975098,
+      "remaining": 0.06426641345024109
+    },
+    {
+      "time_s": 365.59221399999996,
+      "warning": 3,
+      "voltage_v": 14.53603744506836,
+      "remaining": 0.04993078485131264
+    },
+    {
+      "time_s": 410.192215,
+      "warning": 1,
+      "voltage_v": 14.932499885559082,
+      "remaining": 0.08630773425102234
+    },
+    {
+      "time_s": 410.79242999999997,
+      "warning": 0,
+      "voltage_v": 14.92247486114502,
+      "remaining": 0.17324182391166687
+    }
+  ],
+  "manual_offboard_switches": [
+    {
+      "time_s": 348.254601,
+      "value": 3
+    },
+    {
+      "time_s": 366.27282099999996,
+      "value": 1
+    },
+    {
+      "time_s": 369.17907299999996,
+      "value": 3
+    },
+    {
+      "time_s": 385.01926199999997,
+      "value": 1
+    },
+    {
+      "time_s": 403.74319299999996,
+      "value": 3
+    }
+  ],
+  "intervals": [
+    {
+      "start_fc_s": 366.28677999999996,
+      "end_fc_s": 369.18793,
+      "duration_s": 2.9011500000000296,
+      "samples": 203,
+      "average_inference_hz": 69.6275614842383,
+      "largest_sample_gap_ms": 22.525000000030104,
+      "target_local_z_ned_m": -3.031599521636963,
+      "local_position_estimated_rmse_3d_h_xy_m": [
+        1.2217914081427228,
+        0.06967973766374284,
+        1.2198028440865514
+      ],
+      "local_position_max_xy_m": 2.6805951025802557,
+      "last_below_target_m": 0.06754088401794434,
+      "target_speed_to_rpm_effective_lag": [
+        {
+          "lag_s": 0.038,
+          "correlation": 0.8302124390129292
+        },
+        {
+          "lag_s": 0.024,
+          "correlation": 0.6653242377513384
+        },
+        {
+          "lag_s": 0.024,
+          "correlation": 0.7446243792026765
+        },
+        {
+          "lag_s": 0.038,
+          "correlation": 0.8423756348620282
+        }
+      ],
+      "battery_min_v": 14.246211051940918,
+      "battery_max_warning": 3,
+      "battery_estimated_remaining_range": [
+        0.01792452111840248,
+        0.03918001428246498
+      ],
+      "failsafe_flags_active": {
+        "offboard_control_signal_lost": false,
+        "local_position_invalid": false,
+        "local_altitude_invalid": false
+      },
+      "gyro_rms_radps": [
+        0.18204545974731445,
+        0.37775030732154846,
+        0.14675745368003845
+      ],
+      "gyro_peak_0p5_to_15_hz": [
+        3.460207612456747,
+        3.460207612456747,
+        0.6920415224913494
+      ],
+      "px4_rate_setpoint_to_gyro_effective_lag": [
+        {
+          "axis": "roll",
+          "lag_s": 0.055,
+          "correlation": 0.9657299414284074
+        },
+        {
+          "axis": "pitch",
+          "lag_s": 0.055,
+          "correlation": 0.9710563980353424
+        }
+      ],
+      "pre_takeover_fc_accel_std_mps2": [
+        9.56459903717041,
+        4.751527786254883,
+        5.029544353485107
+      ],
+      "legacy_model_innovation_rms_radps": [
+        0.15105528139798646,
+        0.7134550650116952,
+        0.08099469656290369
+      ],
+      "legacy_model_innovation_exceeds_clip_fraction": [
+        0.0,
+        0.4630541871921182,
+        0.0
+      ],
+      "actor_angular_fast_head_std": [
+        1.8778178691864014,
+        0.9130777716636658,
+        0.3053176999092102
+      ],
+      "logged_aggregate_angular_rms_radps": [
+        0.009642357703882562,
+        0.0047216864022103025,
+        0.008629494284878202
+      ],
+      "received_by_px4": {
+        "samples": 14,
+        "rmse_mps2": 0.11510333397565738,
+        "best_time_shift_s": 0.009999999999999967
+      },
+      "logged_command": {
+        "std_mps2": [
+          0.7947934553722472,
+          0.5115193231121521
+        ],
+        "mean_mps2": [
+          -0.8484190476377361,
+          -0.9935765169339834
+        ],
+        "peak_0p5_to_15_hz": [
+          3.436426116838488,
+          3.436426116838488
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.7082877483999278,
+          0.33188264976247117
+        ]
+      },
+      "recorded_actor_max_error_mps2": 1.8915288113596773e-07,
+      "fixed_no_P3": {
+        "std_mps2": [
+          0.9456188858186693,
+          0.4042528040025222
+        ],
+        "mean_mps2": [
+          -0.6911817038005008,
+          -1.1959806262834607
+        ],
+        "peak_0p5_to_15_hz": [
+          1.3745704467353952,
+          3.436426116838488
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.6814147938571994,
+          0.19201967772436826
+        ],
+        "policy_ticks": 291,
+        "emitted_updates": 199,
+        "innovation_filter_s": 0.0,
+        "pre_filter_innovation_rms_radps": [
+          0.07956859066564562,
+          0.3262730521413533,
+          0.04632462702362715
+        ],
+        "actor_innovation_rms_radps": [
+          0.07956859216680418,
+          0.27114225555000454,
+          0.04632462818548257
+        ],
+        "innovation_clip_fraction": [
+          0.0,
+          0.10309278350515463,
+          0.0
+        ]
+      },
+      "fixed_no_P3_with_innovation_filter": {
+        "std_mps2": [
+          1.0300820466091551,
+          0.4537697774951154
+        ],
+        "mean_mps2": [
+          -0.723559473953772,
+          -1.285558608889266
+        ],
+        "peak_0p5_to_15_hz": [
+          1.3745704467353952,
+          1.3745704467353952
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.40432879184371645,
+          0.05148347538523791
+        ],
+        "policy_ticks": 291,
+        "emitted_updates": 199,
+        "innovation_filter_s": 0.2,
+        "pre_filter_innovation_rms_radps": [
+          0.07956859066564562,
+          0.3262730521413533,
+          0.04632462702362715
+        ],
+        "actor_innovation_rms_radps": [
+          0.04465988264857279,
+          0.08783704809495889,
+          0.013809836119208316
+        ],
+        "innovation_clip_fraction": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "start_fc_s": 385.035754,
+      "end_fc_s": 403.757526,
+      "duration_s": 18.721771999999987,
+      "samples": 1872,
+      "average_inference_hz": 99.9371213365915,
+      "largest_sample_gap_ms": 22.52400000003263,
+      "target_local_z_ned_m": -4.245605945587158,
+      "local_position_estimated_rmse_3d_h_xy_m": [
+        1.8151604819545328,
+        0.2911475861666648,
+        1.791658633037784
+      ],
+      "local_position_max_xy_m": 2.8133212160074446,
+      "last_below_target_m": 0.5606720447540283,
+      "target_speed_to_rpm_effective_lag": [
+        {
+          "lag_s": 0.048,
+          "correlation": 0.9077960335811197
+        },
+        {
+          "lag_s": 0.042,
+          "correlation": 0.8979183288530785
+        },
+        {
+          "lag_s": 0.042,
+          "correlation": 0.9158294048736811
+        },
+        {
+          "lag_s": 0.052000000000000005,
+          "correlation": 0.9130083471972296
+        }
+      ],
+      "battery_min_v": 13.81875991821289,
+      "battery_max_warning": 3,
+      "battery_estimated_remaining_range": [
+        0.0,
+        0.0
+      ],
+      "failsafe_flags_active": {
+        "offboard_control_signal_lost": false,
+        "local_position_invalid": false,
+        "local_altitude_invalid": false
+      },
+      "gyro_rms_radps": [
+        0.6844695210456848,
+        0.6455300450325012,
+        0.05034679174423218
+      ],
+      "gyro_peak_0p5_to_15_hz": [
+        4.008551576696953,
+        3.4206306787814,
+        0.5879208979155531
+      ],
+      "px4_rate_setpoint_to_gyro_effective_lag": [
+        {
+          "axis": "roll",
+          "lag_s": 0.065,
+          "correlation": 0.9578154948717678
+        },
+        {
+          "axis": "pitch",
+          "lag_s": 0.07,
+          "correlation": 0.9385051754257834
+        }
+      ],
+      "pre_takeover_fc_accel_std_mps2": [
+        9.431168556213379,
+        4.847721576690674,
+        4.872862815856934
+      ],
+      "legacy_model_innovation_rms_radps": [
+        0.3750447012060103,
+        0.9259064295102092,
+        0.09268451680446507
+      ],
+      "legacy_model_innovation_exceeds_clip_fraction": [
+        0.15598290598290598,
+        0.5229700854700855,
+        0.0
+      ],
+      "actor_angular_fast_head_std": [
+        1.9754819869995117,
+        2.1199920177459717,
+        0.38193443417549133
+      ],
+      "logged_aggregate_angular_rms_radps": [
+        0.00597358711781048,
+        0.005842839382983278,
+        0.009079314056922737
+      ],
+      "received_by_px4": {
+        "samples": 93,
+        "rmse_mps2": 0.0848378979315904,
+        "best_time_shift_s": 0.014999999999999972
+      },
+      "logged_command": {
+        "std_mps2": [
+          1.0888318691890368,
+          1.278731555337098
+        ],
+        "mean_mps2": [
+          0.08642230313212028,
+          -0.199208176119204
+        ],
+        "peak_0p5_to_15_hz": [
+          3.4169781099839827,
+          4.004271222637479
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.9372787116295777,
+          1.1162059814876848
+        ]
+      },
+      "recorded_actor_max_error_mps2": 2.2329969984191678e-07,
+      "fixed_no_P3": {
+        "std_mps2": [
+          0.904404644882814,
+          0.5120977136300837
+        ],
+        "mean_mps2": [
+          -0.04724502935933857,
+          -0.2897944302338237
+        ],
+        "peak_0p5_to_15_hz": [
+          3.363587827015483,
+          4.004271222637479
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.6534326757479854,
+          0.28220256684800177
+        ],
+        "policy_ticks": 1873,
+        "emitted_updates": 1568,
+        "innovation_filter_s": 0.0,
+        "pre_filter_innovation_rms_radps": [
+          0.10769797986836835,
+          0.41648438267462257,
+          0.065359172148966
+        ],
+        "actor_innovation_rms_radps": [
+          0.10729413153667706,
+          0.3283622807707655,
+          0.06535917326405555
+        ],
+        "innovation_clip_fraction": [
+          0.0010678056593699946,
+          0.2210357714895889,
+          0.0
+        ]
+      },
+      "fixed_no_P3_with_innovation_filter": {
+        "std_mps2": [
+          0.8543883139451514,
+          0.42369712251387
+        ],
+        "mean_mps2": [
+          -0.16130949328736952,
+          -0.43998795986675104
+        ],
+        "peak_0p5_to_15_hz": [
+          0.800854244527496,
+          0.5339028296849972
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.3813290568524361,
+          0.11347602348493856
+        ],
+        "policy_ticks": 1873,
+        "emitted_updates": 1568,
+        "innovation_filter_s": 0.2,
+        "pre_filter_innovation_rms_radps": [
+          0.10769797986836835,
+          0.41648438267462257,
+          0.065359172148966
+        ],
+        "actor_innovation_rms_radps": [
+          0.026651942048483233,
+          0.0814388711660198,
+          0.025849488056402442
+        ],
+        "innovation_clip_fraction": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "replay_uses_reconstructed_sources": true,
+  "replay_replaces_logged_P3_with_no_P3": true,
+  "replay_closed_loop": false
+}

@@ -1,0 +1,100 @@
+{
+  "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+  "stock_rcS": true,
+  "stock_airframe": "10016_none_iris",
+  "simulation_motor_order": [
+    1,
+    4,
+    3,
+    2
+  ],
+  "GPS_for_PX4_position_reference": true,
+  "GPS_policy_input": false,
+  "parameters_overridden": true,
+  "policy_updates": 0,
+  "residual_updates": 0,
+  "simulated_motor_tau_s": 0.002,
+  "site_pressure_hpa": 1013.25,
+  "stock_thrust_conversion": false,
+  "sensor_seed": 2026114602,
+  "requested_post_duration_s": 30.0,
+  "wind_mps": 0.0,
+  "wind_ramp_s": 0.0,
+  "hold_position": true,
+  "residual_enabled": false,
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "residual_sha256": null,
+  "release_s": 19.056,
+  "stable_position_since_s": 26.532,
+  "prestream_s": 29.532,
+  "switch_heartbeat_s": 31.532,
+  "post_duration_s": 30.000000000000004,
+  "error": null,
+  "policy_ticks": [],
+  "observed_wire_messages": {
+    "COMMAND_LONG": 1,
+    "HEARTBEAT": 1,
+    "HIL_ACTUATOR_CONTROLS": 15122
+  },
+  "acks": [
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.396
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.404
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.412
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.42
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.428
+    },
+    {
+      "command": 511,
+      "result": 0,
+      "time_s": 2.436
+    },
+    {
+      "command": 400,
+      "result": 0,
+      "time_s": 15.008000000000001
+    }
+  ],
+  "events": [],
+  "last_received_times": {
+    "HIGHRES_IMU": 61.528,
+    "ATTITUDE_QUATERNION": 61.52,
+    "ALTITUDE": 61.5,
+    "EXTENDED_SYS_STATE": 61.4,
+    "HEARTBEAT": 61.388
+  },
+  "last_gyro_timestamp": null,
+  "takeoff_baro_zero_m": 0.00018739700317382812,
+  "takeoff_baro_locked_s": 3.452,
+  "policy_baro_heights_m": [],
+  "hold_target_height_m": null,
+  "hold_height_locked_s": null,
+  "p3_position_capture": {
+    "file": "position_p3.npz",
+    "count": 10618,
+    "source": "SITL injected IMU and simulated ESC telemetry in P2 motor order",
+    "odometry_samples": 2124,
+    "position_source": "PX4 estimator ODOMETRY"
+  },
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  }
+}

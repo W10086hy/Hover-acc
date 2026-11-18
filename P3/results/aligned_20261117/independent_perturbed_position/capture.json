@@ -1,0 +1,93 @@
+{
+  "real_PX4_Position": true,
+  "Actor_used": false,
+  "wind_mps": 0.0,
+  "tether_force_disabled": true,
+  "independent_body_pose_reference": "simulated independent body tracking, Position-only; not P2 input",
+  "IMU_source": "PX4 HIGHRES_IMU; not merely injected HIL samples",
+  "ESC_source": "simulated actual rotor speed and applied throttle",
+  "excitation_start_s": 33.564,
+  "truth_only_physical": {
+    "mass_kg": 2.3689999999999998,
+    "full_inertia_FRD": [
+      [
+        0.01411089844499999,
+        0.0016185837150000002,
+        -3.944690310549434e-18
+      ],
+      [
+        0.0016185837150000004,
+        0.007691036204999995,
+        -1.5782367352685335e-18
+      ],
+      [
+        -3.944690310549434e-18,
+        -1.5782367352685335e-18,
+        0.019455934649999992
+      ]
+    ]
+  },
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  },
+  "sensor_seed": 2026114702,
+  "planned_capture_s": 30.0,
+  "structural_fit_must_pass_holdout": true,
+  "simulation_self_disturbance": {
+    "gyro_bias_radps": [
+      0.008,
+      -0.006,
+      0.004
+    ],
+    "accel_bias_mps2": [
+      0.15,
+      -0.12,
+      0.2
+    ],
+    "true_cg_body_m": [
+      0.009,
+      -0.007,
+      0.0
+    ],
+    "true_full_inertia_FRD": [
+      [
+        0.014110898444999999,
+        0.0016185837149999994,
+        0.0
+      ],
+      [
+        0.0016185837149999994,
+        0.007691036204999999,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.01945593465
+      ]
+    ],
+    "actual_mass_kg": 2.3689999999999998,
+    "relocated_component_kg": 0.2,
+    "component_from_m": [
+      0,
+      0,
+      0
+    ],
+    "component_to_m": [
+      0.10660499999999998,
+      -0.08291499999999997,
+      0.0
+    ],
+    "sensor_installation_deg": [
+      0,
+      0,
+      0
+    ],
+    "motor_installation_deg": [
+      0,
+      0,
+      0
+    ],
+    "scope": "Synthetic additive sensor biases and real CG/inertia relocation; not controller inputs"
+  }
+}

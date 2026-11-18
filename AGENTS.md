@@ -1,5 +1,24 @@
 # 当前工程约定
 
+## 最新整理上传（2026-11-18，优先）
+
+- 用户授权清理并上传最新工程。按 cleanup/retention_flight_20261118.json 删除 762 个被替代中间文件，共 1,550,060,218 字节。23 个早期开发工况的统计、审计及源码身份归档于 px4_offboard/acceleration_dual/history/aligned_development_20261118.json，唯一源码在 cleanup/history_20261118/development_sources.zip。本节替代此前对这些中间轨迹的保留描述。
+- 保留五份最新对齐九维 P3 模型及 Adam、原始 Position 与独立验证、P2 Actor13／Adam、六条必要 120s 开发对照和两条低通候选完整结果／回放。244 份本轮保护文件核对，两个摘要索引的合法维护变更列于清单。原生与既有受保护成果不变。
+- 上传目标 W10086hy/Hover-acc/main，使用明确 URL 普通快进推送，旧 origin 为 Hover-BPTT。本轮整理不训练、不新增仿真。当前弱风稳态偏移尚未解决，候选仍为开发验证。
+
+## 实飞日志复现（2026-11-18）
+
+- 对 11 月 17 日六维 aggregate P3 直连 MAVLink 实飞日志做只读分析，源文件不入库。结果与纯离线复算入口见 docs/flight_log_20261117.md。保持当前九维 P3、Actor13 和 Adam 冻结。
+- 固定时序加速度入口新增可选 --innovation-filter-s，P3 扣除自身角速度创新后先滤波再裁剪，默认 0。200 ms 候选离线降低 3–4 Hz 指令；SITL 两条完整弱风开发验证均安全、稳态，受扰机体仍超标。首次受扰 Position 触发绳张力保护的证据单独保留。候选未在实机复飞，不能自动启用或判为正式验收。
+
+## 报告驱动调试（2026-11-18，用户最新授权）
+
+- 用户确认主要修复当前Hover-acc，保持九维P3基线，先时序/滤波/诊断，再P3训练复验；不修改相邻real_acc，不重新训练P2，不自动上传。旧停止/只整理限制被本次调试授权覆盖。
+- 新候选P3/results/aligned_20261117，源时间100Hz重采样、共享比力滤波、实测RPM区间矩、Position支持范围保护；仍9维统一残差，非GRU，候选不自动替换默认。全部基线参数/Adam/保护文件保留。
+- VM根/home/s/hover_bptt_px4/aligned_20261117。本批训练与仿真均已结束。逐例证据见px4_offboard/acceleration_dual/results/aligned_20261117/summary.json与docs/debug_20261117.md。禁止重启同批次。
+- 受扰资产通过HIL注入gyro/加计偏差，以真实质量重分布实现水平CG偏移；该组安装角为零。先从无风无绳力Position训练，再同机P2/P3对比。姿态参考补偿候选两例均安全且稳态；120s弱/强风三维1.050/1.328m，弱风仍未达标。标称资产2/45ms对照均安全、稳态，后者末段波动增大。结果属于开发验证，默认策略保持原选择。
+
+
 ## 最新工程清理（2026-11-17，优先）
 
 - 按用户本轮授权，依据cleanup/retention_current_only_20261117.json删除213个已替代文件（583696215字节），含11个一次性脚本、旧计划/日志和full_03/full_05八组原始轨迹及回放。统计、删除前完整核验及唯一源码归档px4_offboard/acceleration_dual/history/pre_unified_20261117.json，退役脚本合并cleanup/history_20261117/retired_sources.zip。不恢复这些目录。

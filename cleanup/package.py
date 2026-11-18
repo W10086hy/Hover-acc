@@ -37,6 +37,8 @@ def files(folder):
 def manifest():
     from .current_retention import verify as verify_current
     current_retention=verify_current()
+    from .flight_retention import verify as verify_flight_retention
+    flight_retention=verify_flight_retention()
     superseded=set(current_retention['superseded_protected_files'])
     retention=read(ROOT/'cleanup/retention_actor31.json');assert retention['status']=='complete'
     latest=read(ROOT/'cleanup/retention_20261109.json');assert latest['status']=='complete'
@@ -82,7 +84,7 @@ def manifest():
         artifact=artifact or name.endswith('track_retention_20261102.json') or name in {'track/reports/height_speed_statistics.json','track/reports/development_statistics.json'}
         kind='fixture' if '/tests/fixtures/' in name else ('artifact' if artifact else 'source_or_configuration')
         rows.append(dict(path=name,bytes=p.stat().st_size,sha256=digest(p),kind=kind))
-    write(ROOT/'cleanup/manifest.json',dict(date=current_retention['date'],
+    write(ROOT/'cleanup/manifest.json',dict(date=flight_retention['date'],
         scope='Latest native installation/bias/CG P3, real PX4 Position calibration and frozen P2/P3 observer dual-interface development evidence; indexed historical models and accepted tracking/PX4 evidence',
         files=rows))
     summary=dict(date=acceleration['date'],this_cleanup_removed_files=acceleration['removed_count'],this_cleanup_removed_bytes=acceleration['removed_bytes'],
@@ -119,6 +121,12 @@ def manifest():
         this_cleanup_removed_bytes=current_retention['removed_bytes'],latest_retention='cleanup/retention_current_only_20261117.json',
         latest_protected_files=len(current_retention['protected_files']),retired_scripts=current_retention['retired_script_count'],
         archived_pre_unified_cases=8)
+    summary.update(date=flight_retention['date'],this_cleanup_removed_files=flight_retention['removed_count'],
+        this_cleanup_removed_bytes=flight_retention['removed_bytes'],
+        latest_retention='cleanup/retention_flight_20261118.json',
+        latest_protected_files=len(flight_retention['protected_files']),
+        archived_aligned_cases=flight_retention['retired_cases'],latest_aligned_models=5,
+        latest_retained_aligned_120s_cases=6,latest_flight_filter_120s_cases=2)
     for _ in range(3):
         write(ROOT/'cleanup/package_summary.json',summary);current=list(files(ROOT));summary.update(current_files=len(current),current_bytes=sum(p.stat().st_size for p in current))
     write(ROOT/'cleanup/package_summary.json',summary);print(json.dumps(summary,ensure_ascii=False))

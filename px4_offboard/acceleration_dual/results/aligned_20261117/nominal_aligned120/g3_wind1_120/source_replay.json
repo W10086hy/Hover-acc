@@ -1,0 +1,12 @@
+{
+  "entries": 1,
+  "policy_ticks": 11994,
+  "source_events": 11994,
+  "max_time_error": 0.0,
+  "max_observation_error": 0.0,
+  "max_raw_action_error": 1.4901161193847656e-08,
+  "max_acceleration_error": 1.1394638010919778e-08,
+  "passed": true,
+  "P2_updates": 0,
+  "horizontal_navigation_truth_used": false
+}

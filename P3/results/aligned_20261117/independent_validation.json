@@ -1,0 +1,43 @@
+{
+  "independent_capture": true,
+  "quality_passed": true,
+  "complete_Position_s": 30.0,
+  "optimizer_updates": 0,
+  "P2_updates": 0,
+  "checkpoint_sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e",
+  "position_sha256": "34da45b11a3fc0bcc89b2a99367c4768a6609be01d7d53fa406cb6c65c49f7f5",
+  "summary_sha256": "025a8fda035f2b6fd20c1c87d9eb86f75f7c0857256892858618972b43f83401",
+  "score": {
+    "samples": 2757,
+    "gyro_rmse_radps": [
+      0.001125089297713554,
+      0.0009744250297240955,
+      0.0007563058281984429
+    ],
+    "force_rmse_mps2": [
+      0.005208952093947149,
+      0.005422931699579932,
+      0.04825021643921238
+    ],
+    "torque_before_rmse_nm": [
+      0.0007409953860144855,
+      0.0004951921250909861,
+      0.00024903596004572184
+    ],
+    "torque_after_rmse_nm": [
+      0.0006911958447583157,
+      0.00046103787623813497,
+      0.00017585489150908802
+    ],
+    "torque_improvement_fraction": [
+      0.06720627711870297,
+      0.0689717124370175,
+      0.29385743538081055
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      33.544000000000004,
+      61.524
+    ]
+  }
+}

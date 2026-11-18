@@ -1,0 +1,31 @@
+{
+  "start_s": 0,
+  "end_s": 120.0,
+  "target_height_m": 4.91549015045166,
+  "attachment_cm": 5.0,
+  "wind_profile": "ramp_to_steady",
+  "playback_speed": 12.0,
+  "frames": 101,
+  "frame_duration_ms": 100,
+  "equal_xyz_scale": true,
+  "xyz_span_m": 8.0,
+  "xyz_tick_step_m": 2.0,
+  "xyz_box_aspect": [
+    1,
+    1,
+    1
+  ],
+  "body_equal_xyz_scale": true,
+  "body_xyz_span_m": 0.7,
+  "body_tick_step_m": 0.2,
+  "XY_local_zoom": true,
+  "source_sha256": {
+    "trajectory.npz": "88407d226568a1ceabcf97758a62609101fdfe7fcbc9859272bf43fe07246c7f",
+    "result.json": "575025a08b8b10d7c575c2b0b35ba96abccb10d589ad4e8b669314c0040909a7",
+    "protocol.json": "554b3e95cbe3a5afc5266d3eb972d2e2ae1ea2d4e0caf193b2e656cca55d4280"
+  },
+  "render_source_sha256": "d23a4eaa7c6bae1aafa9120b295123389e3e7671ec598669878021b4e2fbb066",
+  "physics_steps": 0,
+  "world_trajectory_in_curves": true,
+  "GIF_sha256": "c98fca57becf32dfb7c6b30db7c33208de3b3b1a22c42eeba152c6635b5760a2"
+}

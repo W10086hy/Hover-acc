@@ -12,6 +12,9 @@ class AccelerationController:
         if self.settings['action_mode']!='launch_acceleration' or cfg['stage']['model'].get('action_dim')!=3:
             raise ValueError('A three-axis acceleration checkpoint is required')
         if calibration is None:self.observer=Observer(cfg,dt)
+        elif calibration.parameters.get('schema')=='P3_aligned_residual_v2':
+            from .aligned_p3 import AlignedObserver
+            self.observer=AlignedObserver(cfg,calibration,dt)
         elif calibration.parameters.get('schema')=='P3_unified_residual_v1':
             from .unified_p3 import UnifiedObserver
             self.observer=UnifiedObserver(cfg,calibration,dt)
@@ -24,6 +27,10 @@ class AccelerationController:
         self.accel_offset=np.zeros(3)
         self.command_filter_s=float(cfg.get('deployment',{}).get('acceleration_filter_s',0.))
         if not math.isfinite(self.command_filter_s) or self.command_filter_s<0:raise ValueError('Nonnegative command filter required')
+        self.innovation_filter_s=float(cfg.get('deployment',{}).get('innovation_filter_s',0.))
+        if not math.isfinite(self.innovation_filter_s) or self.innovation_filter_s<0:
+            raise ValueError('Nonnegative angular innovation filter required')
+        self.innovation_alpha=-math.expm1(-self.dt/self.innovation_filter_s) if self.innovation_filter_s else 1.
         self.reset()
 
     def reset(self):
@@ -31,6 +38,7 @@ class AccelerationController:
         self.integral=np.zeros(3);self.vertical_integral=0.;self.latest_acceleration=None
         self.last_observation=None;self.previous_wire=None
         self.filtered_acceleration=np.zeros(3)
+        self.filtered_innovation=np.zeros(3)
 
     def acceleration(self,packet,applied):
         arrays=(packet.attitude,packet.gyro,packet.specific_force,packet.motor_speed,applied)
@@ -39,8 +47,14 @@ class AccelerationController:
         packet=replace(packet,specific_force=packet.specific_force-self.accel_offset)
         self.last_packet=packet
         self.last_observation=self.observer.update(packet,applied)
+        if self.innovation_filter_s:
+            innovation=getattr(self.observer,'innovation_after',self.observer.nominal_innovation_radps)
+            self.filtered_innovation+=self.innovation_alpha*(innovation-self.filtered_innovation)
+            self.last_observation[23:26]=np.clip(self.filtered_innovation/.1,-5,5)
         if self.calibration is not None:self.last_packet=self.observer.last_standardized_packet
-        command=np.tanh(self.actor(self.last_observation,self.context))*self.limits
+        self.last_raw_action=self.actor(self.last_observation,self.context)
+        command=np.tanh(self.last_raw_action)*self.limits
+        self.last_unfiltered_acceleration=command.copy()
         if self.command_filter_s:
             self.filtered_acceleration+=(-math.expm1(-self.dt/self.command_filter_s))*(command-self.filtered_acceleration)
             command=self.filtered_acceleration

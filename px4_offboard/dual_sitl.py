@@ -28,9 +28,17 @@ def main():
     p.add_argument('--policy-source',choices=('mavlink','mavros'),default='mavros')
     p.add_argument('--pitch-rate-k',type=float,help='Explicit run-local MC_PITCHRATE_K, without changing frozen baselines')
     p.add_argument('--p3-calibration',type=Path)
-    p.add_argument('--acceleration-filter-s',type=float,default=.065);a=p.parse_args()
+    p.add_argument('--timing',choices=('auto','fixed','legacy'),default='auto')
+    p.add_argument('--motor-tau',type=float,help='Synthetic plant lag only; not an identified telemetry delay')
+    p.add_argument('--fixture-ready-extra-s',type=float,default=60.)
+    p.add_argument('--acceleration-filter-s',type=float,default=.065)
+    p.add_argument('--innovation-filter-s',type=float,default=0.);a=p.parse_args()
     if not np.isfinite(a.acceleration_filter_s) or a.acceleration_filter_s<0:p.error('Nonnegative finite command filter required')
+    if not np.isfinite(a.innovation_filter_s) or a.innovation_filter_s<0:p.error('Nonnegative finite innovation filter required')
+    if a.innovation_filter_s and (a.interface!='acceleration' or a.policy_source!='mavros' or a.timing=='legacy'):
+        p.error('Innovation filtering requires the fixed MAVROS acceleration interface')
     if a.pitch_rate_k is not None and not 0<a.pitch_rate_k<=1:p.error('Pitch rate gain scale must be in (0,1]')
+    if a.motor_tau is not None and not 0<a.motor_tau<1:p.error('Positive finite motor time constant below1s required')
     if a.p3_calibration and a.policy_source!='mavros':p.error('P3 standardization currently requires the MAVROS sensor node')
     p3_data=json.loads(a.p3_calibration.read_text()) if a.p3_calibration else None
     p3_hash=hashlib.sha256(a.p3_calibration.read_bytes()).hexdigest() if a.p3_calibration else None
@@ -79,11 +87,16 @@ def main():
         fixture_height=json.loads((a.assets/'config.json').read_text())['stage']['controller']['target_height_m']
         launch([sys.executable,'-u','-B','-m','px4_offboard.mavros_policy','--assets',str(a.assets.resolve()),
             '--interface',a.interface,'--reference-height-m',str(fixture_height),'--record',str(root/'policy_runtime.json'),
-            '--acceleration-filter-s',str(a.acceleration_filter_s)]+(['--p3-calibration',str(a.p3_calibration.resolve())] if a.p3_calibration else []))
+            '--acceleration-filter-s',str(a.acceleration_filter_s),'--innovation-filter-s',str(a.innovation_filter_s),
+            '--timing',a.timing]+(['--p3-calibration',str(a.p3_calibration.resolve())] if a.p3_calibration else []))
     from .stock_transfer import stock_check_hold as legacy
-    original_sensor=legacy.control_message
+    from .self_disturbance import wrap_sensor_sender,simulation_feedback
+    original_sensor=wrap_sensor_sender(legacy.control_message,json.loads((a.assets/'config.json').read_text()))
+    esc_rng=np.random.default_rng(a.seed+33931)
     def sensor_clock(conn,clock,*args,**kwargs):
-        if a.policy_source=='mavros':clock_pub.publish(Clock(clock=rospy.Time.from_sec(clock)))
+        if a.policy_source=='mavros':
+            clock_pub.publish(Clock(clock=rospy.Time.from_sec(clock)))
+            feedback_pub.publish(Float64MultiArray(data=simulation_feedback(args[0],clock,esc_rng.normal(0,1.,4)).tolist()))
         return original_sensor(conn,clock,*args,**kwargs)
     legacy.control_message=sensor_clock
 
@@ -123,7 +136,7 @@ def main():
             if sink.send(acc,rates,thrust,clock,active=self.is_offboard_armed()):self.commands+=1
         def update(self,rpm,applied,clock):
             if a.policy_source=='mavros':
-                feedback_pub.publish(Float64MultiArray(data=np.r_[rpm,applied].tolist()));return None
+                return None
             return super().update(rpm,applied,clock)
 
     def px4_popen(args,*rest,**kwargs):
@@ -144,7 +157,8 @@ def main():
     legacy.Offboard=Endpoint
     subprocess.Popen=px4_popen
     sys.argv=[str(legacy.__file__),str(root/'flight'),'--assets',str(a.assets.resolve()),'--seconds',str(a.seconds),
-        '--wind',str(a.wind),'--wind-ramp-s',str(a.wind_ramp_s),'--sensor-seed',str(a.seed),'--no-residual']
+        '--wind',str(a.wind),'--wind-ramp-s',str(a.wind_ramp_s),'--sensor-seed',str(a.seed),'--no-residual',
+        '--fixture-ready-extra-s',str(a.fixture_ready_extra_s)]+(['--motor-tau',str(a.motor_tau)] if a.motor_tau is not None else [])
     try:legacy.main()
     finally:
         subprocess.Popen=original_popen
@@ -163,14 +177,16 @@ def main():
                 complete=endpoint[0].calibration_complete,accel_offset=endpoint[0].controller.accel_offset.tolist()),indent=2)+'\n')
         (root/'interface.json').write_text(json.dumps(dict(interface=a.interface,transport='actual ROS Noetic MAVROS',
             pitch_rate_k=a.pitch_rate_k,px4_param_overrides={'MC_PITCHRATE_K':a.pitch_rate_k} if a.pitch_rate_k is not None else {},
-            policy_source=a.policy_source,
+            policy_source=a.policy_source,timing=a.timing,motor_tau_override_s=a.motor_tau,
             asset_sha256=asset_hashes,wind_ramp_s=a.wind_ramp_s,
             ROS_simulated_clock=a.policy_source=='mavros',
+            fixture_ready_extra_s=a.fixture_ready_extra_s,
+            simulation_self_disturbance=json.loads((a.assets/'config.json').read_text()).get('simulation_self_disturbance'),
             P3_enabled=p3_data is not None,p3_config_sha256=p3_hash,p3_checkpoint_sha256=p3_data['checkpoint_sha256'] if p3_data else None,
             P3_scope=p3_data['scope'] if p3_data else None,physical_torque_feedforward_sent=False,
             full_P3_preserved_in='P3/results/installation_20261115',assets=str(a.assets),seed=a.seed,
             controller_sha256=json.loads((a.assets/'config.json').read_text())['controller_sha256'],
-            acceleration_filter_s=a.acceleration_filter_s,
+            acceleration_filter_s=a.acceleration_filter_s,innovation_filter_s=a.innovation_filter_s,
             rate_adapter='same acceleration Actor with attitude PI rate reference and local vertical PID; not native torque equivalence',
             GPS_for_PX4_Position=True,GPS_policy_input=False,requested_duration_s=a.seconds,wind_mps=a.wind),indent=2)+'\n')
         rospy.signal_shutdown('run completed')

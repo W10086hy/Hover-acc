@@ -1,0 +1,15 @@
+{
+  "status": "candidate_only",
+  "closed_loop_validated": false,
+  "P2_updates": 0,
+  "P3_weight_updates": 0,
+  "checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+  "parent_sha256": "672fa018fd9070f2e3b67f30810d6166933bd31f8625c3b2ba8b1c9a33eb6379",
+  "observer_sha256": "4a61531676212cbef80656d47f5993489c964f0fe86370f0aec04b578c6b5719",
+  "source_sha256": {
+    "P3/actuation_export.py": "494b22de0eb439c55501ffcd8d5b7b5c8540f9f48f37d7122157a0a7ba61902b",
+    "px4_offboard/aligned_p3.py": "0542e218c8f09dc4796c1833a76f7acafd4c056ff866d5055e04bf4abbc7bc53",
+    "px4_offboard/policy_timing.py": "b5756c7c6d66bd0438f716f830546addc98896493a1c358049dd6be879882a23"
+  },
+  "semantics": "Only Actor RPM/throttle channels standardized using learned own angular residual; physical feedback and publication unchanged"
+}

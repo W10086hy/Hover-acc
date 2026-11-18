@@ -24,7 +24,8 @@ def prepare(root,assets):
     cfg['cumulative_physical_updates']=13;cfg['protocol']['wind_profile']='ramp_to_steady' if ramp else 'steady'
     label='MAVROS水平加速度＋PX4高度环' if score['interface']=='acceleration' else 'MAVROS角速度＋总推力适配器'
     if score['P3_enabled']:
-        label+='（P3统一残差）' if (score.get('P3_scope') or '').startswith('Joint sensor') else '（P3观测标准化）'
+        scope=score.get('P3_scope') or ''
+        label+='（九维P3；源时间对齐）' if scope.startswith('Nine joint') else ('（P3统一残差）' if scope.startswith('Joint sensor') else '（P3观测标准化）')
     write(root/'protocol.json',dict(config=cfg,real_PX4_process=True,stock_px4=True,replay_platform_label=label,
         replay_physics_note=f"EA 49 N；未拉伸绳长 4.90 m；估计起飞航向 {np.degrees(score['launch_heading_rad']):.2f}°；按锁存气压参考评分",
         residual_enabled=score['P3_enabled'],visualization_only=True,raw_trace_sha256=digest(root/'flight/trace.npy'),

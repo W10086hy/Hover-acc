@@ -1,5 +1,13 @@
 # 工程整理与完整性核验
 
+2026-11-18 按用户授权整理并上传 Hover-acc。删除 762 个被替代短测、调试日志、候选轨迹及重复回归输出，共 1,550,060,218 字节（约 1.44 GiB）。保留五份最新九维 P3 模型及 Adam、Position 原始标定／独立验证、P2 Actor13／Adam、六条必要 120 s 开发对照、两条创新低通 120 s 完整结果及最新回放。244 份本轮保护文件逐一核对，两个统计索引的归档路径调整单列为维护变更。
+
+[本轮删除和保护清单](retention_flight_20261118.json) · [删除前统计和审计](../px4_offboard/acceleration_dual/history/aligned_development_20261118.json) · [唯一源码包](history_20261118/development_sources.zip) · [最新修复与结果](../docs/debug_20261117.md)
+
+本节替代以下关于本轮已明确退役中间证据的保留描述，历史已接受成果及运行／测试依赖继续保留。
+
+## 2026-11-17 整理记录
+
 2026-11-17按用户要求清除已替代脚本和开发中间文件。本轮删除213个文件、583,696,215字节（556.7MiB），含11个一次性脚本和full_03/full_05八组旧开发试验的轨迹、日志与回放。删除前逐例核验，统计和唯一源码合并归档。
 
 [逐文件删除与保护清单](retention_current_only_20261117.json) · [历史统计与删除前核验](../px4_offboard/acceleration_dual/history/pre_unified_20261117.json) · [退役脚本及计划源码包](history_20261117/retired_sources.zip)

@@ -30,6 +30,7 @@ class Observer:
 
     def reset(self):
         self.valid=False;self.height=0.;self.vertical_speed=0.;self.rate=np.zeros(3);self.rpm=np.zeros(4)
+        self.nominal_innovation_radps=np.zeros(3)
         self.velocity=np.zeros(2);self.position=np.zeros(2)
     def throttle(self,rpm):
         d=np.clip(rpm,0,self.vmax)-self.poly[2]
@@ -60,6 +61,7 @@ class Observer:
         spin=mean[0]-mean[1]-mean[2]+mean[3];torque+=self.jm*np.array([spin*self.rate[1],-spin*self.rate[0],0])
         prediction=self.rate+elapsed*(torque-np.cross(self.rate,self.rate*self.J))/self.J
         innovation=p.gyro-prediction if self.valid else np.zeros(3)
+        self.nominal_innovation_radps=innovation
         o=np.clip(np.r_[p.attitude,p.gyro/4,p.specific_force/20,p.motor_speed/self.vmax,2*applied-1,
             (self.target_height_m-height)/2,self.vertical_speed/3,force/5,innovation/.1],-5,5)
         r=rotation(p.attitude);accel=r@p.specific_force+np.array([0.,0.,self.g])

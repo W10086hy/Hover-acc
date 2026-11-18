@@ -25,6 +25,16 @@ def heading_matches(actual,expected):
     return bool(np.isfinite([actual,expected]).all() and abs(np.arctan2(np.sin(actual-expected),np.cos(actual-expected)))<1e-5)
 
 
+def valid_acceleration_fields(message,heading):
+    if message['type_mask']!=2363 or message['coordinate_frame']!=1:return False
+    north,east=message['afx'],message['afy']
+    if not np.isfinite([north,east,heading]).all():return False
+    c,s=np.cos(heading),np.sin(heading)
+    # The Actor limits each launch-frame axis. Rotation to NED can legitimately
+    # produce one NED component larger than3 when both launch axes are saturated.
+    return bool(abs(c*north+s*east)<=3.00001 and abs(-s*north+c*east)<=3.00001)
+
+
 def reuse_expectations(arguments):
     expected={k:v for k,v in arguments.items() if k not in ('root','assets','p3_calibration') and v is not None}
     expected['pitch_rate_k']=arguments.get('pitch_rate_k')
@@ -69,7 +79,7 @@ def audit(root):
         assert msgid==(84 if kind=='SET_POSITION_TARGET_LOCAL_NED' else 82)
         assert m['target_system']==m['target_component']==1
         if kind=='SET_POSITION_TARGET_LOCAL_NED':
-            assert m['type_mask']==2363 and m['coordinate_frame']==1 and abs(m['afx'])<=3.00001 and abs(m['afy'])<=3.00001
+            assert valid_acceleration_fields(m,heading)
             assert all(m[k]==0 for k in ('x','y','vx','vy','vz','afz','yaw_rate')) and np.isfinite(m['yaw'])
             if s['switch_heartbeat_s'] is not None and m['time_boot_ms']>=s['switch_heartbeat_s']*1000:
                 assert heading_matches(m['yaw'],heading)

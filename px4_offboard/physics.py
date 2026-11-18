@@ -26,6 +26,7 @@ class Plant:
         self.rest=initial['rest'][0];self.arm=initial['arms'][0];self.free=len(self.node_mass)
         body=lambda name:mujoco.mj_name2id(self.model,mujoco.mjtObj.mjOBJ_BODY,name)
         self.body=body('vehicle0');self.nodes=np.array([body(f'node0_{i}') for i in range(self.free)])
+        self.last_applied_throttle=np.zeros(4)
         self.tendons=np.array([mujoco.mj_name2id(self.model,mujoco.mjtObj.mjOBJ_TENDON,f'segment0_{i}') for i in range(self.free+1)])
         j=mujoco.mj_name2id(self.model,mujoco.mjtObj.mjOBJ_JOINT,'cart_joint0')
         self.cart_q=self.model.jnt_qposadr[j];self.cart_v=self.model.jnt_dofadr[j]
@@ -76,6 +77,10 @@ class Plant:
         if self.u['include_gyro']:
             spin=mean[0]-mean[1]-mean[2]+mean[3]
             torque+=self.cfg['actual']['power']['rotor_inertia_kgm2']*np.array([spin*x[11],-spin*x[10],0.])
+        # Rotor/aerodynamic wrenches above are about the geometry origin.
+        # MuJoCo xfrc_applied is about the actual center of mass.
+        com=self.model.body_ipos[self.body]*S
+        torque-=np.cross(com,bf)
         self.data.xfrc_applied[:]=0.;self.data.xfrc_applied[self.body,:3]=(r@bf)*S
         self.data.xfrc_applied[self.body,3:]=(r@torque)*S
         length=self.data.ten_length[self.tendons];rate=self.data.ten_velocity[self.tendons]
@@ -108,6 +113,7 @@ class Plant:
             self.apply(wind,target**2+2*target*delta*f+delta**2*sf,target+delta*f)
             mujoco.mj_step(self.model,self.data);self.steps+=1;self.t+=self.dt;motor=target+delta*decay
         self._kinematics();self.x=self._state(motor);self.apply(wind);mujoco.mj_forward(self.model,self.data)
+        self.last_applied_throttle=throttle.copy()
         return throttle
 
     def specific_force(self):

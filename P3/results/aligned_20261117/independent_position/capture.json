@@ -1,0 +1,36 @@
+{
+  "real_PX4_Position": true,
+  "Actor_used": false,
+  "wind_mps": 0.0,
+  "tether_force_disabled": true,
+  "independent_body_pose_reference": "simulated independent body tracking, Position-only; not P2 input",
+  "IMU_source": "PX4 HIGHRES_IMU; not merely injected HIL samples",
+  "ESC_source": "simulated actual rotor speed and applied throttle",
+  "excitation_start_s": 33.532000000000004,
+  "truth_only_physical": {
+    "mass_kg": 2.3689999999999998,
+    "full_inertia_FRD": [
+      [
+        0.012852,
+        -0.0,
+        -0.0
+      ],
+      [
+        -0.0,
+        0.0056099999999999995,
+        0.0
+      ],
+      [
+        -0.0,
+        0.0,
+        0.016116000000000002
+      ]
+    ]
+  },
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  },
+  "sensor_seed": 2026114602,
+  "planned_capture_s": 30.0,
+  "structural_fit_must_pass_holdout": true
+}

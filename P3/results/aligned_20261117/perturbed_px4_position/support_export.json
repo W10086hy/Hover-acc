@@ -1,0 +1,82 @@
+{
+  "train": {
+    "samples": 7865,
+    "gyro_rmse_radps": [
+      0.0010132689609609854,
+      0.0010270440559224101,
+      0.0007956541333608324
+    ],
+    "force_rmse_mps2": [
+      0.006913181874550385,
+      0.007449976398341523,
+      0.05225071837867894
+    ],
+    "torque_before_rmse_nm": [
+      0.16254701899145596,
+      0.20898081359617107,
+      0.0004540050462095401
+    ],
+    "torque_after_rmse_nm": [
+      0.0013893869945269036,
+      0.001609462694992411,
+      0.000124882116328575
+    ],
+    "torque_improvement_fraction": [
+      0.9914523994155812,
+      0.9922985145511851,
+      0.7249323165651835
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      33.556,
+      112.596
+    ]
+  },
+  "holdout": {
+    "samples": 3853,
+    "gyro_rmse_radps": [
+      0.001067151078026873,
+      0.0009840075486801886,
+      0.0007977399180995506
+    ],
+    "force_rmse_mps2": [
+      0.010132277355149927,
+      0.011171043499566703,
+      0.050723103148780965
+    ],
+    "torque_before_rmse_nm": [
+      0.16242421080827465,
+      0.20886080099662363,
+      0.0005080018192174729
+    ],
+    "torque_after_rmse_nm": [
+      0.0006715997094382686,
+      0.00039182189555497684,
+      0.0001429200616904444
+    ],
+    "torque_improvement_fraction": [
+      0.9958651502377868,
+      0.9981240046304269,
+      0.7186623033937186
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      112.604,
+      151.534
+    ]
+  },
+  "quality_passed": true,
+  "optimizer_updates": 0,
+  "P2_updates": 0,
+  "checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+  "observer_sha256": "4261891bc98411162bed1e96eb49ce16baeac9c6a79199a13d3931d885cf85df",
+  "source_sha256": {
+    "P3/aligned_export.py": "bfec2e1a1f344f86722e252c0f619ad2a981607ce2858ad64d02a339b0b78c75",
+    "P3/aligned_train.py": "871b28af39eb99ffd204a6442f907e9524e98281dd97b0c9099e19efda4b7cd1",
+    "px4_offboard/aligned_p3.py": "ba6b7fb46dff004f7457bfd457225f432d8d2de3c98347de0d729d2aa5b82a8a",
+    "px4_offboard/policy_timing.py": "58bc6cbc298b64ea9053ac3c7d5d9d46a6ed866d7c5634843257230111ec7ae2"
+  },
+  "status": "candidate_only",
+  "flight_validated": false,
+  "independent_capture_validated": false
+}

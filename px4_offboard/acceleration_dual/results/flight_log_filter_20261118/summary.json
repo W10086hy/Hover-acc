@@ -1,0 +1,266 @@
+{
+  "date": "2026-11-18",
+  "experiment": "recorded-flight angular innovation low-pass candidate",
+  "report": "docs/flight_log_20261117.md",
+  "real_flight_analysis": "docs/flight_log_20261117.json",
+  "innovation_filter_s": 0.2,
+  "default_innovation_filter_s": 0.0,
+  "P2_updates": 0,
+  "P3_updates": 0,
+  "training_running": false,
+  "validation_running": false,
+  "formal_final_acceptance": false,
+  "hardware_validated": false,
+  "evaluation_duration_s": 120,
+  "wind": "constant 1 m/s along simulation +y",
+  "attachment_m": 0.05,
+  "tether_rest_length_m": 4.9,
+  "paired_comparisons": [
+    {
+      "case": "px4_offboard/acceleration_dual/results/flight_log_filter_20261118/nominal_motor45",
+      "baseline": "px4_offboard/acceleration_dual/results/aligned_20261117/nominal_motor45_120/g3_wind1_120",
+      "audit_sha256": "31bed0a6b0d8a41cc0d01f3de3acc7edeac1e96105129bfdffbfc9b8e2ac64ba",
+      "baseline_audit_sha256": "d71f23911bece72743ae26dab23a2ebfef07b7013f3bb94d783289212b5b6d16",
+      "baseline_rmse_3d_h_xy_m": [
+        0.49772884192348904,
+        0.007751346891933138,
+        0.49766848072171344
+      ],
+      "rmse_3d_h_xy_m": [
+        0.5135150379614682,
+        0.0029832242576373737,
+        0.5135063724878172
+      ],
+      "nominal_rmse_passed": false,
+      "engineering_weak_limit_m": 0.53,
+      "engineering_weak_passed": true,
+      "safe_completed": true,
+      "settled": true,
+      "tail": {
+        "complete": true,
+        "horizontal_std_m": 0.08543991978359676,
+        "speed_rms_mps": 0.017110708431542502,
+        "horizontal_drift_mps": 0.007822833632510384
+      },
+      "baseline_target_baro_m": 4.924880027770996,
+      "target_baro_m": 4.920185089111328,
+      "baseline_command_band_rms_mps2": [
+        0.015092909721812734,
+        0.017595380350592552
+      ],
+      "command_band_rms_mps2": [
+        0.00350038919031097,
+        0.002890966805732163
+      ],
+      "P2_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+      "P3_sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e",
+      "P3_runtime_sha256": "53fd702a21e09d47f77e77f8614d3860b18ca85473d95da93d5e1853d1b02344",
+      "source_replay": {
+        "entries": 1,
+        "policy_ticks": 12086,
+        "source_events": 12086,
+        "max_time_error": 0.0,
+        "max_observation_error": 0.0,
+        "max_raw_action_error": 1.4901161193847656e-08,
+        "max_acceleration_error": 1.3092738893050182e-08,
+        "max_wire_acceleration_error": 1.3092738893050182e-08,
+        "passed": true,
+        "P2_updates": 0,
+        "horizontal_navigation_truth_used": false
+      },
+      "interface": {
+        "interface": "acceleration",
+        "transport": "actual ROS Noetic MAVROS",
+        "pitch_rate_k": 0.1,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "policy_source": "mavros",
+        "timing": "fixed",
+        "motor_tau_override_s": 0.045,
+        "asset_sha256": {
+          "config.json": "8da96a0d2ce6929265dfa22ca35806d864a2c8025b8c63fb3a7ba962356e09a6",
+          "weights.npz": "c16a96352a847a0bccdcec60d46583f3d7cb5507fdf06e91a53b3fd2c4c0f78b",
+          "initial.npz": "9b4aaf76a40fb6e555aab22ba859a0de8f0b76a422d5e6c10795e26380640107",
+          "model.xml": "829983b2e1657e2bf185469ef965f5fde879ca4ac7310d34e982d70d96896642"
+        },
+        "wind_ramp_s": 0.0,
+        "ROS_simulated_clock": true,
+        "fixture_ready_extra_s": 60.0,
+        "simulation_self_disturbance": null,
+        "P3_enabled": true,
+        "p3_config_sha256": "53fd702a21e09d47f77e77f8614d3860b18ca85473d95da93d5e1853d1b02344",
+        "p3_checkpoint_sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e",
+        "P3_scope": "Nine joint observation residuals; matched100Hz/filter; measuredRPM moments; angular residual faded outside Position training support",
+        "physical_torque_feedforward_sent": false,
+        "full_P3_preserved_in": "P3/results/installation_20261115",
+        "assets": "px4_offboard/acceleration_dual/assets",
+        "seed": 2026114501,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "acceleration_filter_s": 0.065,
+        "innovation_filter_s": 0.2,
+        "rate_adapter": "same acceleration Actor with attitude PI rate reference and local vertical PID; not native torque equivalence",
+        "GPS_for_PX4_Position": true,
+        "GPS_policy_input": false,
+        "requested_duration_s": 120.0,
+        "wind_mps": 1.0
+      }
+    },
+    {
+      "case": "px4_offboard/acceleration_dual/results/flight_log_filter_20261118/perturbed_weak_retry",
+      "baseline": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_accel_consistent/g3_wind1_120",
+      "audit_sha256": "5dc4cf2ab0db0a8e4b5aa6d60692b4bfa0a2b0d0331d665076339c85cbd5b634",
+      "baseline_audit_sha256": "d78dc06b2c845a38ebd837e7ad6245bedd1ba3abc66834d0363aa29b47cfbcdc",
+      "baseline_rmse_3d_h_xy_m": [
+        1.0496254469082373,
+        0.014453878090311052,
+        1.0495259235509466
+      ],
+      "rmse_3d_h_xy_m": [
+        1.051304651945533,
+        0.007548719685118877,
+        1.05127755042778
+      ],
+      "nominal_rmse_passed": false,
+      "engineering_weak_limit_m": 0.53,
+      "engineering_weak_passed": false,
+      "safe_completed": true,
+      "settled": true,
+      "tail": {
+        "complete": true,
+        "horizontal_std_m": 0.05122309315922641,
+        "speed_rms_mps": 0.019465160360927446,
+        "horizontal_drift_mps": 0.002779913569443588
+      },
+      "baseline_target_baro_m": 4.929574966430664,
+      "target_baro_m": 4.910794734954834,
+      "baseline_command_band_rms_mps2": [
+        0.012721164988531158,
+        0.014907341347051824
+      ],
+      "command_band_rms_mps2": [
+        0.0031116388634734736,
+        0.002807730009256626
+      ],
+      "P2_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+      "P3_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+      "P3_runtime_sha256": "f222072efbac7d75e2918375e0b0d145b07f56135468247047da736752ad0da4",
+      "source_replay": {
+        "entries": 1,
+        "policy_ticks": 12036,
+        "source_events": 12036,
+        "max_time_error": 0.0,
+        "max_observation_error": 0.0,
+        "max_raw_action_error": 2.9802322387695312e-08,
+        "max_acceleration_error": 1.043990871529843e-08,
+        "max_wire_acceleration_error": 1.043990871529843e-08,
+        "passed": true,
+        "P2_updates": 0,
+        "horizontal_navigation_truth_used": false
+      },
+      "interface": {
+        "interface": "acceleration",
+        "transport": "actual ROS Noetic MAVROS",
+        "pitch_rate_k": 0.1,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "policy_source": "mavros",
+        "timing": "fixed",
+        "motor_tau_override_s": null,
+        "asset_sha256": {
+          "config.json": "223ce6274cc2c254efbbffabd43bed105b9fb44dcae07695471975d7b8f9052f",
+          "weights.npz": "c16a96352a847a0bccdcec60d46583f3d7cb5507fdf06e91a53b3fd2c4c0f78b",
+          "initial.npz": "9b4aaf76a40fb6e555aab22ba859a0de8f0b76a422d5e6c10795e26380640107",
+          "model.xml": "c711fec924ca99a9e7b07f78e5f82c7b024d540e128369df3851a86248c7953a"
+        },
+        "wind_ramp_s": 0.0,
+        "ROS_simulated_clock": true,
+        "fixture_ready_extra_s": 60.0,
+        "simulation_self_disturbance": {
+          "gyro_bias_radps": [
+            0.008,
+            -0.006,
+            0.004
+          ],
+          "accel_bias_mps2": [
+            0.15,
+            -0.12,
+            0.2
+          ],
+          "true_cg_body_m": [
+            0.009,
+            -0.007,
+            0.0
+          ],
+          "true_full_inertia_FRD": [
+            [
+              0.014110898444999999,
+              0.0016185837149999994,
+              0.0
+            ],
+            [
+              0.0016185837149999994,
+              0.007691036204999999,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.01945593465
+            ]
+          ],
+          "actual_mass_kg": 2.3689999999999998,
+          "relocated_component_kg": 0.2,
+          "component_from_m": [
+            0,
+            0,
+            0
+          ],
+          "component_to_m": [
+            0.10660499999999998,
+            -0.08291499999999997,
+            0.0
+          ],
+          "sensor_installation_deg": [
+            0,
+            0,
+            0
+          ],
+          "motor_installation_deg": [
+            0,
+            0,
+            0
+          ],
+          "scope": "Synthetic additive sensor biases and real CG/inertia relocation; not controller inputs"
+        },
+        "P3_enabled": true,
+        "p3_config_sha256": "f222072efbac7d75e2918375e0b0d145b07f56135468247047da736752ad0da4",
+        "p3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "P3_scope": "Nine joint observation residuals; matched100Hz/filter; measuredRPM moments; angular residual faded outside Position training support; Position-trained attitude tilt consistency; launch yaw retained; horizontal acceleration transformed to the PX4 reported attitude reference",
+        "physical_torque_feedforward_sent": false,
+        "full_P3_preserved_in": "P3/results/installation_20261115",
+        "assets": "px4_offboard/acceleration_dual/perturbed_assets_20261117",
+        "seed": 2026114501,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "acceleration_filter_s": 0.065,
+        "innovation_filter_s": 0.2,
+        "rate_adapter": "same acceleration Actor with attitude PI rate reference and local vertical PID; not native torque equivalence",
+        "GPS_for_PX4_Position": true,
+        "GPS_policy_input": false,
+        "requested_duration_s": 120.0,
+        "wind_mps": 1.0
+      }
+    }
+  ],
+  "retained_startup_failure": {
+    "policy_steps": 0,
+    "failure": "RuntimeError: Physical guard at t=39.600: tilt=5.60, height=4.631, tension=30.09",
+    "summary_sha256": "4ff96b96b444df2dcaf3180d765b4a11d54d59134896f777028284ed6c15ba14",
+    "original_case": "px4_offboard/acceleration_dual/results/flight_log_filter_20261118/perturbed_weak",
+    "raw_evidence_retired": true,
+    "archive": "px4_offboard/acceleration_dual/history/aligned_development_20261118.json"
+  },
+  "scope": "Matched simulator airframe and seed; entry states and latched heights vary. Neither simulation reproduces real aircraft calibration or inner-loop gains.",
+  "cleanup_retention": "cleanup/retention_flight_20261118.json"
+}

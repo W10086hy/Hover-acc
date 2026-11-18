@@ -1,0 +1,58 @@
+{
+  "safe_completed": true,
+  "rmse_3d_h_xy_m": [
+    0.5135150379614682,
+    0.0029832242576373737,
+    0.5135063724878172
+  ],
+  "evaluation_horizon_s": 120.0,
+  "actual_post_samples": 30000,
+  "physical_post_duration_s": 120.0,
+  "penalized_remaining_samples": 0,
+  "settled": true,
+  "tail": {
+    "complete": true,
+    "horizontal_std_m": 0.08543991978359676,
+    "speed_rms_mps": 0.017110708431542502,
+    "horizontal_drift_mps": 0.007822833632510384
+  },
+  "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+  "rmse_passed": false,
+  "rmse_limit_m": 0.5,
+  "interface": "acceleration",
+  "policy_source": "mavros",
+  "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+  "actual_wire_commands": 16261,
+  "wire_fields_passed": true,
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  },
+  "error": null,
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "P3_enabled": true,
+  "p3_checkpoint_sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e",
+  "p3_config_sha256": "53fd702a21e09d47f77e77f8614d3860b18ca85473d95da93d5e1853d1b02344",
+  "P3_scope": "Nine joint observation residuals; matched100Hz/filter; measuredRPM moments; angular residual faded outside Position training support",
+  "physical_torque_feedforward_sent": false,
+  "wind_mps": 1.0,
+  "sensor_seed": 2026114501,
+  "target_baro_height_m": 4.920185089111328,
+  "scoring_height_source": "MAVROS policy target",
+  "controller_target_logged": true,
+  "acceleration_filter_s": 0.065,
+  "wind_ramp_s": 0.0,
+  "launch_heading_rad": 0.05603353866024838,
+  "target_local_z_ned_m": 0.08137474209070206,
+  "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+  "true_position_used_for_scoring_only": true,
+  "formal_final_acceptance": false,
+  "artifact_sha256": {
+    "flight/trace.npy": "d4d90dbfe424a6e42abd63fdc5f0d25ba7b1ae51b76712c0fdb846cd45d531c6",
+    "flight/summary.json": "f4168a6bf0ab0af4b69048ea261371be01d4a8f2e417ee160b39d76c48c55eac",
+    "interface.json": "4d4749c2be44306f8f1ac4dcf051f919ce38e9ffd3f8ca3a3e26db7cce1e87fe",
+    "wire_commands.json": "840dbb07a2d9389309408bb2f98cc2f7660daff326de2d3349b957b84bcd7456",
+    "mavros_commands.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "preflight_calibration.json": "aa562c0d6c2b4b7469cfc909bec173aa5612b4b062dd7bc3310bad91ebb48ef9",
+    "frozen_source.zip": "7d9baddd7865ce524ff99230539eb9000cb6c5b1501bad5c03d3b78e65845735"
+  }
+}

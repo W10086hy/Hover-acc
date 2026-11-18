@@ -1,0 +1,8 @@
+{
+  "note": "Supplement after run; source bytes matched original deployment ZIP",
+  "source_sha256": {
+    "px4_offboard/self_disturbance.py": "9476cee36bd30759d7df53b86c08debced4de0be3ba6686b19c70cd68ef3083c",
+    "px4_offboard/readiness.py": "7495f467269bac75064ca6df526de57a1862bed7e0506d9e9337737c34637b77"
+  },
+  "launch_package_sha256": "253a4fefe767d173a9b67c21052ac622bc98e8ada8a9986514c72150f14707db"
+}

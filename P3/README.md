@@ -4,7 +4,7 @@
 
 P3 先修正 P2 原有35维机载观测及其历史创新，冻结 P2 Actor13 与 Adam，不新增输入维度、不叠加两者动作。当前实现是模型与因果历史，没有 GRU。接管后仅使用机载姿态、IMU、实测RPM和实际执行油门，位置只用于 Position 训练监督。
 
-[最新四模型、Adam、留出统计与两组120s闭环回放](results/unified_20261117/README.md) · [模型索引](models.json)
+[报告修复后模型、独立 Position 验证和受扰闭环回放](../docs/debug_20261117.md) · [上一版统一残差四模型及回放](results/unified_20261117/README.md) · [模型索引](models.json)
 
 ## Position 辨识入口
 

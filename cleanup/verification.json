@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "verified_files": 1421,
+  "verified_files": 1689,
   "source_snapshot_matches": true,
   "changed_sources": [],
   "actor31_safe_120s_cases": 9,
@@ -403,5 +403,11 @@
       "settled": 2,
       "formal_final_acceptance": false
     }
+  },
+  "flight_log_retention": {
+    "removed_files": 762,
+    "removed_bytes": 1550060218,
+    "protected_files": 244,
+    "archived_cases": 23
   }
 }

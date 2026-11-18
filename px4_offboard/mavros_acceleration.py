@@ -37,6 +37,7 @@ class MavrosSink:
     def __init__(self,*,interface='acceleration',namespace='/mavros',launch_heading_rad=0.):
         from .ros_compat import load_rospy
         rospy=load_rospy()
+        self.clock=(lambda:rospy.Time.now().to_sec()) if rospy.get_param('/use_sim_time',False) else time.monotonic
         from geometry_msgs.msg import PoseStamped
         from mavros_msgs.msg import PositionTarget,AttitudeTarget,State
         from std_msgs.msg import UInt32
@@ -51,8 +52,10 @@ class MavrosSink:
         rospy.Subscriber(namespace+'/state',State,self._state,queue_size=1)
         rospy.Subscriber('/hover/local_frame_reset_counter',UInt32,self._reset,queue_size=1)
 
+    def _now(self):return self.clock() if hasattr(self,'clock') else time.monotonic()
+
     def _pose(self,msg):
-        z=float(msg.pose.position.z);now=time.monotonic()
+        z=float(msg.pose.position.z);now=self._now()
         if not math.isfinite(z) or not self.pose_clock.update(msg.header.stamp.to_sec(),now):return
         if self.z is not None and 0<now-self.z_received<.1 and abs(z-self.z)>.5:self.pose_discontinuities+=1
         self.z=z;self.z_received=now
@@ -60,10 +63,10 @@ class MavrosSink:
     def _state(self,msg):
         if not msg.connected:
             self.state=msg;self.state_clock=SampleClock();self.latch.reset();return
-        if self.state_clock.update(msg.header.stamp.to_sec(),time.monotonic()):self.state=msg
+        if self.state_clock.update(msg.header.stamp.to_sec(),self._now()):self.state=msg
 
     @property
-    def state_valid(self):return bool(self.state and self.state.connected and self.state_clock.fresh(time.monotonic(),1.5))
+    def state_valid(self):return bool(self.state and self.state.connected and self.state_clock.fresh(self._now(),1.5))
 
     @property
     def active(self):return bool(self.state_valid and self.state.armed and self.state.mode=='OFFBOARD')
@@ -74,7 +77,7 @@ class MavrosSink:
         active=self.active if active is None else active
         if self.interface=='acceleration':
             if self.z is None:return False
-            fields=self.latch.command(time.monotonic(),active=active,local_z_enu=self.z,
+            fields=self.latch.command(self._now(),active=active,local_z_enu=self.z,
                 received_s=self.z_received,acceleration=np.asarray(acceleration)[:2],reset_counter=(self.frame_counter,self.pose_discontinuities))
             if fields is None:return False
             msg=self.PositionTarget();msg.header.stamp=self.rospy.Time.now();msg.coordinate_frame=1;msg.type_mask=fields['type_mask']

@@ -50,6 +50,9 @@ class ObserverCalibration:
     @classmethod
     def load(cls,path):
         data=json.loads(Path(path).read_text())
+        if data.get('schema')=='P3_aligned_residual_v2':
+            from .aligned_p3 import AlignedCalibration
+            return AlignedCalibration(data)
         if data.get('schema')=='P3_unified_residual_v1':
             from .unified_p3 import UnifiedCalibration
             return UnifiedCalibration(data)

@@ -4,6 +4,28 @@ import numpy as np
 from .network import rotation
 
 
+def fixture_limits(extra_s):
+    if not math.isfinite(extra_s) or not 0<=extra_s<=120:
+        raise ValueError('Finite fixture calibration wait extension in0..120s required')
+    return 48.+extra_s,80.+extra_s
+
+
+class ModeEntryGuard:
+    """Only fresh explicit mode exit clears an entry fault, never a stale state."""
+    def __init__(self):self.engaged=False;self.blocked=False;self.confirmed_exit=False
+    def update(self,*,valid,armed,mode):
+        self.confirmed_exit=bool(valid and (not armed or (mode and mode!='OFFBOARD' and not mode.startswith('UNKNOWN'))))
+        if self.confirmed_exit:
+            self.engaged=False;self.blocked=False
+            return False
+        if not valid or mode!='OFFBOARD':
+            if self.engaged:self.blocked=True
+            return False
+        if self.blocked:return False
+        self.engaged=True
+        return True
+
+
 class SampleClock:
     def __init__(self):self.stamp=None;self.received=None
     def update(self,stamp,received):
@@ -41,7 +63,9 @@ class StampedAcceleration:
 
 
 class PreflightCalibration:
-    def __init__(self,gravity,samples=2000):self.gravity=gravity;self.required=samples;self.forces=[];self.barometers=[]
+    def __init__(self,gravity,samples=2000):
+        self.gravity=gravity;self.required=samples;self.forces=[];self.barometers=[]
+        self.last_rejection=None;self.force_std=None
     def add(self,packet):
         if len(self.forces)>=self.required:return False
         q,w,f=np.asarray(packet.attitude),np.asarray(packet.gyro),np.asarray(packet.specific_force)
@@ -50,5 +74,11 @@ class PreflightCalibration:
         self.forces.append((f+self.gravity*rotation(q)[2]).copy());self.barometers.append(float(packet.baro_height));return True
     def result(self):
         if len(self.forces)<self.required:return None
+        self.force_std=np.std(self.forces,axis=0)
+        if (self.force_std>.35).any():
+            self.last_rejection='preflight force variance exceeds0.35mps2 RMS'
+            self.forces.clear();self.barometers.clear()
+            return None
         bias=np.mean(self.forces,axis=0);zero=float(np.median(self.barometers))
+        self.last_rejection=None
         return (bias,zero) if np.isfinite(bias).all() and math.isfinite(zero) else None

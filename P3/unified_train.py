@@ -98,9 +98,9 @@ def initial_sensor_weights(data):
     return sensor
 
 
-def fit_joint(data, steps, nominal):
+def fit_joint(data, steps, nominal, *, array_builder=None, rate_drag=None):
     sensor = initial_sensor_weights(data)
-    features, target, square, mean = runtime_arrays(data, sensor, nominal)
+    features, target, square, mean = (array_builder or runtime_arrays)(data, sensor, nominal)
     angular = ridge(features, target)
     model = torch.nn.ParameterDict(dict(sensor=torch.nn.Parameter(torch.tensor(sensor)),
         angular=torch.nn.Parameter(torch.tensor(angular))))
@@ -115,7 +115,7 @@ def fit_joint(data, steps, nominal):
     alpha_zero = torch.tensor(nominal_alpha(np.zeros_like(data['reference_alpha']), square, mean, nominal))
     reference_alpha = torch.tensor(data['reference_alpha'])
     inertia = torch.tensor(nominal['airframe']['inertia_body_kgm2'])
-    drag = torch.tensor(nominal['aero']['body_rate_drag'])
+    drag = torch.tensor(nominal['aero']['body_rate_drag'] if rate_drag is None else rate_drag)
     rotor_inertia = nominal['power']['rotor_inertia_kgm2'] if nominal['actuators']['include_gyro'] else 0.
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-5)
     for _ in range(steps):

@@ -1,6 +1,6 @@
 # 同一加速度 Actor 的两条 PX4 接口
 
-当前采用统一残差P3→冻结P2；[最新四模型、两组完整120s与两份回放](../../P3/results/unified_20261117/README.md)。早期接口与物理参数观测器开发对照按[归档](history/pre_unified_20261117.json)保留统计和源码，旧原始轨迹/回放已清理。保留角速度＋推力兼容入口及原有 offboard/control/stock_check_hold/launch.sh。
+当前采用统一残差 P3→冻结 P2。[最新报告修复、受扰对照与回放](../../docs/debug_20261117.md) 保留独立的源时序、观测补偿和加速度姿态参考候选。早期接口与物理参数观测器开发对照按[归档](history/pre_unified_20261117.json)保留统计和源码，旧原始轨迹/回放已清理。保留角速度＋推力兼容入口及原有 offboard/control/stock_check_hold/launch.sh。
 
 ## 指令与推理
 
@@ -16,6 +16,8 @@
 状态、位置或命令过期时停止发送；退出模式后清除锁存。可订阅 `/hover/local_frame_reset_counter` 提供估计器重置计数，变化后阻止本次加速度接管；另有本地高度突变检测。当前没有通用 PX4 EKF reset-counter 桥，突变检测也不覆盖所有参考系重置。
 
 当前P3通过 `--p3-calibration P3/results/unified_20261117/constrained/px4_position/bounded_observer.json` 启用。先校正机载观测再进入原有35维P2，不额外发送力矩；历史原生执行器前补偿与此路线分开记录。
+
+受扰仿真候选 `P3/results/aligned_20261117/perturbed_px4_position/observer_accel_consistent.json` 适用于同一受扰模型的加速度接口验证，源历史固定对齐到 100 Hz。它复用 Position 采集的姿态参考，在 P2 输出之后修正水平加速度发布值。其闭环成绩单独记录，默认参数仍按当前入口选择。
 
 ## 机载一键入口
 

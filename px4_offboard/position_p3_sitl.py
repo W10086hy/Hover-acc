@@ -75,7 +75,8 @@ def main():
     plants=[];endpoints=[];measurements=[];truth=[];gate=ExcitationGate()
     def factory(*args,**kwargs):
         plant=PositionPlant(*args,**kwargs);plants.append(plant);return plant
-    original_sensor=legacy.control_message
+    from .self_disturbance import wrap_sensor_sender
+    original_sensor=wrap_sensor_sender(legacy.control_message,json.loads((a.assets/'config.json').read_text()))
     def sensor(conn,clock,plant,fixture,rng,step,site_pressure_altitude,**kwargs):
         plant.clock=clock
         active=bool(endpoints and endpoints[0].last_heartbeat and endpoints[0].last_heartbeat.base_mode&128
@@ -105,7 +106,7 @@ def main():
                     measurements.append([stamp,msg.xacc,msg.yacc,msg.zacc,msg.xgyro,msg.ygyro,msg.zgyro])
     legacy.Plant=factory;legacy.Offboard=Endpoint;legacy.control_message=sensor
     with ZipFile(root/'frozen_source.zip','x',ZIP_DEFLATED) as z:
-        for name in ('position_p3_sitl.py','physics.py','offboard.py','control.py','network.py','motor_mapping.py','stock_transfer/stock_check_hold.py'):
+        for name in ('position_p3_sitl.py','physics.py','offboard.py','control.py','network.py','motor_mapping.py','self_disturbance.py','readiness.py','stock_transfer/stock_check_hold.py'):
             z.write(Path(__file__).parent/name,'px4_offboard/'+name)
     original_popen=subprocess.Popen
     def px4_popen(args,*rest,**kwargs):
@@ -130,6 +131,7 @@ def main():
                 excitation_start_s=gate.start,truth_only_physical=dict(mass_kg=plant.mass,full_inertia_FRD=(J*S[:,None]*S[None,:]).tolist()),
                 px4_param_overrides={'MC_PITCHRATE_K':a.pitch_rate_k} if a.pitch_rate_k is not None else {},
                 sensor_seed=a.seed,planned_capture_s=a.seconds,structural_fit_must_pass_holdout=True)
+            metadata['simulation_self_disturbance']=plant.cfg.get('simulation_self_disturbance')
             (root/'capture.json').write_text(json.dumps(metadata,indent=2)+'\n')
             summary_path=root/'flight/summary.json';summary=json.loads(summary_path.read_text())
             summary.update(parameters_overridden=bool(metadata['px4_param_overrides']),px4_param_overrides=metadata['px4_param_overrides'])

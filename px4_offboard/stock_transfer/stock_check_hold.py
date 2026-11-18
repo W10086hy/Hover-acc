@@ -77,12 +77,16 @@ def main():
     parser.add_argument('--motor-tau', type=float)
     parser.add_argument('--seconds', type=float, choices=(15., 30., 120.), default=15.)
     parser.add_argument('--sensor-seed', type=int, default=21683134)
+    parser.add_argument('--fixture-ready-extra-s',type=float,default=0.,
+                        help='Explicit extra calibration wait; default preserves historical fixture')
     parser.add_argument('--wind', type=float, default=0.)
     parser.add_argument('--wind-ramp-s', type=float, default=0.,
                         help='After Offboard entry, smoothly raise wind from 1 m/s to --wind over this duration')
     parser.add_argument('--site-pressure-hpa', type=float, default=1013.25,
                         help='Simulated barometer pressure at the takeoff plane')
     args = parser.parse_args()
+    from px4_offboard.readiness import fixture_limits
+    release_deadline,preflight_budget=fixture_limits(args.fixture_ready_extra_s)
     if not math.isfinite(args.wind) or args.wind < 0:
         parser.error('--wind must be finite and nonnegative')
     if not math.isfinite(args.wind_ramp_s) or not 0 <= args.wind_ramp_s < args.seconds:
@@ -156,7 +160,7 @@ def main():
         hold_position=args.keep_position, residual_enabled=use_residual,
         controller_sha256=cfg['controller_sha256'],residual_sha256=cfg['residual_sha256'])
     try:
-        for k in range(round((80 + args.seconds) / DT)):
+        for k in range(round((preflight_budget + args.seconds) / DT)):
             clock = 1+k*DT
             if proc.poll() is not None:
                 raise RuntimeError(f'PX4 exited {proc.returncode}')
@@ -276,7 +280,7 @@ def main():
                     raise RuntimeError(f'Physical guard at t={clock:.3f}: tilt={tilt:.2f}, height={-plant.x[2]:.3f}, tension={plant.peak:.2f}')
                 if switch is not None and not args.keep_position and (current!=6 or not armed):
                     raise RuntimeError(f'Offboard or armed lost at t={clock:.3f}')
-            if released is None and clock>48.:
+            if released is None and clock>release_deadline:
                 raise RuntimeError('stock Position did not reach support thrust for release')
             if released is not None and requested is None and clock-released>48.:
                 raise RuntimeError('stock Position did not achieve stable flight')

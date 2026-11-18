@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-17",
-  "this_cleanup_removed_files": 213,
-  "this_cleanup_removed_bytes": 583696215,
+  "date": "2026-11-18",
+  "this_cleanup_removed_files": 762,
+  "this_cleanup_removed_bytes": 1550060218,
   "stock_px4_removed_files": 148,
   "stock_px4_removed_bytes": 572385034,
   "prior_actor37_removed_files": 678,
@@ -30,8 +30,8 @@
   "latest_PX4_observer_safe": 4,
   "latest_PX4_observer_settled": 2,
   "latest_PX4_observer_formal_acceptance": false,
-  "latest_retention": "cleanup/retention_current_only_20261117.json",
-  "latest_protected_files": 218,
+  "latest_retention": "cleanup/retention_flight_20261118.json",
+  "latest_protected_files": 244,
   "previous_installation_removed_files": 327,
   "previous_installation_removed_bytes": 70356393,
   "latest_joint_P3_models": 4,
@@ -41,6 +41,10 @@
   "latest_joint_P3_report": "P3/results/unified_20261117/README.md",
   "retired_scripts": 11,
   "archived_pre_unified_cases": 8,
-  "current_files": 1424,
-  "current_bytes": 1046670174
+  "archived_aligned_cases": 23,
+  "latest_aligned_models": 5,
+  "latest_retained_aligned_120s_cases": 6,
+  "latest_flight_filter_120s_cases": 2,
+  "current_files": 1692,
+  "current_bytes": 2137987842
 }

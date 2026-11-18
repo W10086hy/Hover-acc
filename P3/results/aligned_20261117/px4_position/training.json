@@ -1,0 +1,112 @@
+{
+  "train": {
+    "samples": 7865,
+    "gyro_rmse_radps": [
+      0.0010362719928551879,
+      0.000980024344728623,
+      0.0007584235856687225
+    ],
+    "force_rmse_mps2": [
+      0.0050473473651195915,
+      0.00514411983376249,
+      0.04992178902990567
+    ],
+    "torque_before_rmse_nm": [
+      0.0007673483126401749,
+      0.0004910754291231362,
+      0.00023779704771864358
+    ],
+    "torque_after_rmse_nm": [
+      0.0006775490799716077,
+      0.00045826063996440877,
+      0.00013787177351632027
+    ],
+    "torque_improvement_fraction": [
+      0.11702538624161385,
+      0.06682229900469971,
+      0.4202124255156976
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      33.568,
+      112.608
+    ]
+  },
+  "holdout": {
+    "samples": 3853,
+    "gyro_rmse_radps": [
+      0.0009022269241040836,
+      0.0009281304209373028,
+      0.0007526155094293088
+    ],
+    "force_rmse_mps2": [
+      0.005209225018609497,
+      0.005237761797530372,
+      0.05427311950212656
+    ],
+    "torque_before_rmse_nm": [
+      0.0007201664426928879,
+      0.0004986031945812932,
+      0.00024056104088419772
+    ],
+    "torque_after_rmse_nm": [
+      0.0006341733756003989,
+      0.00046574224048697967,
+      0.00015184397917271782
+    ],
+    "torque_improvement_fraction": [
+      0.11940721199246496,
+      0.0659060239714444,
+      0.368792308951585
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      112.616,
+      151.546
+    ]
+  },
+  "processing": {
+    "policy_dt_s": 0.01,
+    "force_filter_alpha": 0.5,
+    "motor_moments": "measured_rpm_linear"
+  },
+  "input_sha256": "56acca53573a4c4033474a62f93755cdc2c3bdd67000f0eae26d060f20ed9fec",
+  "capture_metadata_sha256": "05a80d779cbf27158809450086ef1007f19c082239713cf2a4942998d57a4852",
+  "motor_timeline_sha256": "2a51757b749fdf1d4eb25fd377d6d58ab4bdc7e3fb32db66fe534022232f7385",
+  "split_time_s": 112.616,
+  "raw_time_holdout_independent": true,
+  "capture_conditions": {
+    "mode": "PX4_Position",
+    "wind_mps": 0.0,
+    "tether_force_disabled": true,
+    "P2_used": false
+  },
+  "joint_adam_steps": 400,
+  "P2_updates": 0,
+  "learned_output_dim": 9,
+  "fitted_physical_source_parameters": [],
+  "quality_passed": true,
+  "per_axis_quality_passed": [
+    true,
+    true,
+    true
+  ],
+  "status": "candidate_only",
+  "independent_capture_validated": false,
+  "closed_loop_validated": false,
+  "source_sha256": {
+    "P3/aligned_train.py": "2a135087c716f16079ae9c0906034d199bf94c568305f290f92639bb3e8aa3c7",
+    "P3/unified_train.py": "79138735378b11b76b405133ffed86ea48a558443ce6611f8e46dbb3586ee24a",
+    "P3/position_identification.py": "fa0ee0fc9d2ba47abceec627b5d41bfcb176abfaf8c385a4a3079f82db27aa54",
+    "P3/installation_calibration.py": "0f9251783eb4b516d02dbf3e7030b0cecdd2db63204fa73ac88b7679b136a291",
+    "P3/train_body_calibration.py": "75e9d9bbb1da35369995edb19f7d220ed6478d47031c847339e4cc51dbad0b78",
+    "P3/px4_position_train.py": "46446513de0c1b477b3cbc459d4d9e646515060bc10a3fb67b13991348b802b7",
+    "px4_offboard/aligned_p3.py": "b05e5a23304ca1ba02c5d703342e1352b7fe5746947898ebaf3e7f4a7faed445",
+    "px4_offboard/unified_p3.py": "9fce3c9c6fc8a12ca435d976742d66672b55e120b8beb80900fc66e99c9a3bed",
+    "px4_offboard/policy_timing.py": "58c106ea07323b944d281dd2c53637dfe7812da896800ac61b034758c453b289",
+    "px4_offboard/acceleration_runtime.py": "3aa13cc59bc4f1329b502ba5315af0e8dfce5607a7a0245413004fbd67cf02b5",
+    "px4_offboard/control.py": "b5653f189bedcb5bd9f2bfc1154eb7391adb892c76254ff4b6310aac3db76f94",
+    "px4_offboard/network.py": "3f42f20377fd8906b72e42af11a2294c632828616091e6785cc4c161f1c0f077"
+  },
+  "checkpoint_sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e"
+}

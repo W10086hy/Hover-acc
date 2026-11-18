@@ -1,0 +1,472 @@
+{
+  "date": "2026-11-18",
+  "platform": "PX4 SITL with MuJoCo plant and real MAVROS",
+  "P2_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+  "P2_updates": 0,
+  "P3_checkpoint": "P3/results/aligned_20261117/perturbed_px4_position/model.pt",
+  "P3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+  "P3_adaptation_weights_updated_in_comparison": false,
+  "deployment_candidates": {
+    "observation_consistent": {
+      "runtime": "P3/results/aligned_20261117/perturbed_px4_position/observer_consistent.json",
+      "sha256": "672fa018fd9070f2e3b67f30810d6166933bd31f8625c3b2ba8b1c9a33eb6379"
+    },
+    "standard_vehicle_equivalent": {
+      "runtime": "P3/results/aligned_20261117/perturbed_px4_position/observer_virtual.json",
+      "sha256": "4a61531676212cbef80656d47f5993489c964f0fe86370f0aec04b578c6b5719"
+    },
+    "acceleration_reference_consistent": {
+      "runtime": "P3/results/aligned_20261117/perturbed_px4_position/observer_accel_consistent.json",
+      "sha256": "f222072efbac7d75e2918375e0b0d145b07f56135468247047da736752ad0da4"
+    }
+  },
+  "independent_position_validation": "P3/results/aligned_20261117/independent_perturbed_validation.json",
+  "configuration": {
+    "evaluation_horizon_s": 120,
+    "tether_attachment_m": 0.05,
+    "tether_rest_length_m": 4.9,
+    "tether_axial_rigidity_n": 49.0,
+    "mass_kg": 2.369,
+    "perturbed_cg_frd_m": [
+      0.009,
+      -0.007,
+      0.0
+    ],
+    "perturbed_gyro_bias_radps": [
+      0.008,
+      -0.006,
+      0.004
+    ],
+    "perturbed_accel_bias_mps2": [
+      0.15,
+      -0.12,
+      0.2
+    ],
+    "installation_tilt_deg": 0.0
+  },
+  "training_motor_time_constant_s": {
+    "nominal": 0.002,
+    "randomization_bounds": [
+      0.0018,
+      0.0022
+    ],
+    "final_update_samples": [
+      0.002,
+      0.0019106695468293522,
+      0.0019533973569195316,
+      0.0018747216298813888,
+      0.0018912141963347995
+    ]
+  },
+  "nominal_vs_engineering_weak_limits_m": [
+    0.5,
+    0.53
+  ],
+  "strong_limit_m": 1.5,
+  "comparison": {
+    "perturbed_P2": [
+      {
+        "safe_completed": false,
+        "settled": false,
+        "rmse_3d_h_xy_m": [
+          7.114040567951537,
+          3.910555053900838,
+          5.942821920003226
+        ],
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "physical_post_duration_s": 5.356,
+        "penalized_remaining_samples": 28661,
+        "tail": {
+          "complete": false,
+          "horizontal_std_m": null,
+          "speed_rms_mps": null,
+          "horizontal_drift_mps": null
+        },
+        "error": "RuntimeError: Physical guard at t=45.828: tilt=36.05, height=4.898, tension=30.02",
+        "target_baro_height_m": 4.920185089111328,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": null,
+        "p3_config_sha256": null,
+        "wind_mps": 1.0,
+        "wind_ramp_s": 0.0,
+        "sensor_seed": 2026114501,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed120/g2_wind1_120/audit.json",
+        "audit_sha256": "58a5adfaaf6d7c66a737eb79fee14fcd0085d69056a19359117bff80f7b83b0d",
+        "engineering_limit_m": 0.53,
+        "engineering_passed": false,
+        "simulated_motor_tau_s": 0.002
+      },
+      {
+        "safe_completed": false,
+        "settled": false,
+        "rmse_3d_h_xy_m": [
+          7.1134201106874695,
+          3.9106335123576996,
+          5.942027533019164
+        ],
+        "rmse_passed": false,
+        "rmse_limit_m": 1.5,
+        "physical_post_duration_s": 5.348,
+        "penalized_remaining_samples": 28663,
+        "tail": {
+          "complete": false,
+          "horizontal_std_m": null,
+          "speed_rms_mps": null,
+          "horizontal_drift_mps": null
+        },
+        "error": "RuntimeError: Physical guard at t=44.764: tilt=36.07, height=4.880, tension=30.04",
+        "target_baro_height_m": 4.929574966430664,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": null,
+        "p3_config_sha256": null,
+        "wind_mps": 5.0,
+        "wind_ramp_s": 5.0,
+        "sensor_seed": 2026114503,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed120/g2_wind5_120/audit.json",
+        "audit_sha256": "9c99015272b44d7ffb88aad5b3bda5cf3fec197bc8a31a0542ec198cb947bc90",
+        "engineering_limit_m": 1.5,
+        "engineering_passed": false,
+        "simulated_motor_tau_s": 0.002
+      }
+    ],
+    "perturbed_observation": [
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          1.2527876527116655,
+          0.008288679243445942,
+          1.2527602326795035
+        ],
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.03459305020486943,
+          "speed_rms_mps": 0.017586529684851502,
+          "horizontal_drift_mps": 0.0025108816564971353
+        },
+        "error": null,
+        "target_baro_height_m": 4.906099796295166,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "p3_config_sha256": "672fa018fd9070f2e3b67f30810d6166933bd31f8625c3b2ba8b1c9a33eb6379",
+        "wind_mps": 1.0,
+        "wind_ramp_s": 0.0,
+        "sensor_seed": 2026114501,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit_sha256": "2a50d44fdf623bd9ca27dcfb56e0b5b71960a918e79964547348a2e743123b0c",
+        "engineering_limit_m": 0.53,
+        "engineering_passed": false,
+        "simulated_motor_tau_s": 0.002,
+        "original_audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed120/g3_wind1_120/audit.json",
+        "raw_evidence_retired": true,
+        "archive": "px4_offboard/acceleration_dual/history/aligned_development_20261118.json",
+        "archive_case": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed120/g3_wind1_120"
+      },
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          1.2073300383903853,
+          0.004867895685091939,
+          1.2073202247918025
+        ],
+        "rmse_passed": true,
+        "rmse_limit_m": 1.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.034386705365827844,
+          "speed_rms_mps": 0.01874173258607678,
+          "horizontal_drift_mps": 0.0019614268822319204
+        },
+        "error": null,
+        "target_baro_height_m": 4.920185089111328,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "p3_config_sha256": "672fa018fd9070f2e3b67f30810d6166933bd31f8625c3b2ba8b1c9a33eb6379",
+        "wind_mps": 5.0,
+        "wind_ramp_s": 5.0,
+        "sensor_seed": 2026114503,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit_sha256": "9d61c765fec4aeb5295873d0cbab09c3c625e98cf324cc84d8834468e58d716a",
+        "engineering_limit_m": 1.5,
+        "engineering_passed": true,
+        "simulated_motor_tau_s": 0.002,
+        "original_audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed120/g3_wind5_120/audit.json",
+        "raw_evidence_retired": true,
+        "archive": "px4_offboard/acceleration_dual/history/aligned_development_20261118.json",
+        "archive_case": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed120/g3_wind5_120"
+      }
+    ],
+    "perturbed_motor_observation": [
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          1.2385612853579615,
+          0.006342575100761918,
+          1.2385450453369298
+        ],
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.03013749458159627,
+          "speed_rms_mps": 0.018610693715030095,
+          "horizontal_drift_mps": 0.0019738254553592445
+        },
+        "error": null,
+        "target_baro_height_m": 4.920185089111328,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "p3_config_sha256": "4a61531676212cbef80656d47f5993489c964f0fe86370f0aec04b578c6b5719",
+        "wind_mps": 1.0,
+        "wind_ramp_s": 0.0,
+        "sensor_seed": 2026114501,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit_sha256": "52c10dc7deb49ed1facc68a35def6d0ab7d1a342ca2d218598d88653f07896e8",
+        "engineering_limit_m": 0.53,
+        "engineering_passed": false,
+        "simulated_motor_tau_s": 0.002,
+        "original_audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_virtual/g3_wind1_120/audit.json",
+        "raw_evidence_retired": true,
+        "archive": "px4_offboard/acceleration_dual/history/aligned_development_20261118.json",
+        "archive_case": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_virtual/g3_wind1_120"
+      },
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          1.2072550602765453,
+          0.0047601263048853626,
+          1.2072456758095622
+        ],
+        "rmse_passed": true,
+        "rmse_limit_m": 1.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.02804257974193513,
+          "speed_rms_mps": 0.02203125067054475,
+          "horizontal_drift_mps": 0.0018888700868491927
+        },
+        "error": null,
+        "target_baro_height_m": 4.91549015045166,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "p3_config_sha256": "4a61531676212cbef80656d47f5993489c964f0fe86370f0aec04b578c6b5719",
+        "wind_mps": 5.0,
+        "wind_ramp_s": 5.0,
+        "sensor_seed": 2026114503,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit_sha256": "d4ab173e50344b53a9303544290761215d1fd829bf6db348689a450ad240d73d",
+        "engineering_limit_m": 1.5,
+        "engineering_passed": true,
+        "simulated_motor_tau_s": 0.002,
+        "original_audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_virtual/g3_wind5_120/audit.json",
+        "raw_evidence_retired": true,
+        "archive": "px4_offboard/acceleration_dual/history/aligned_development_20261118.json",
+        "archive_case": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_virtual/g3_wind5_120"
+      }
+    ],
+    "perturbed_acceleration_reference": [
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          1.0496254469082373,
+          0.014453878090311052,
+          1.0495259235509466
+        ],
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.024019639679184995,
+          "speed_rms_mps": 0.014450173811665568,
+          "horizontal_drift_mps": 0.000689757959951149
+        },
+        "error": null,
+        "target_baro_height_m": 4.929574966430664,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "p3_config_sha256": "f222072efbac7d75e2918375e0b0d145b07f56135468247047da736752ad0da4",
+        "wind_mps": 1.0,
+        "wind_ramp_s": 0.0,
+        "sensor_seed": 2026114501,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_accel_consistent/g3_wind1_120/audit.json",
+        "audit_sha256": "d78dc06b2c845a38ebd837e7ad6245bedd1ba3abc66834d0363aa29b47cfbcdc",
+        "engineering_limit_m": 0.53,
+        "engineering_passed": false,
+        "simulated_motor_tau_s": 0.002,
+        "source_replay": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_accel_consistent/g3_wind1_120/source_replay.json",
+        "gif": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_accel_consistent/g3_wind1_120/replay/flight.gif"
+      },
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          1.3279062429403135,
+          0.005354081430976496,
+          1.3278954491419455
+        ],
+        "rmse_passed": true,
+        "rmse_limit_m": 1.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.024820058126848437,
+          "speed_rms_mps": 0.01901850288312174,
+          "horizontal_drift_mps": 0.001075644970289154
+        },
+        "error": null,
+        "target_baro_height_m": 4.91549015045166,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+        "p3_config_sha256": "f222072efbac7d75e2918375e0b0d145b07f56135468247047da736752ad0da4",
+        "wind_mps": 5.0,
+        "wind_ramp_s": 5.0,
+        "sensor_seed": 2026114503,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_accel_consistent/g3_wind5_120/audit.json",
+        "audit_sha256": "6c0cf246b883bc4ed437819d5f07e7c178058a5547d15a4747a4f4559fb1bcd4",
+        "engineering_limit_m": 1.5,
+        "engineering_passed": true,
+        "simulated_motor_tau_s": 0.002,
+        "source_replay": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_accel_consistent/g3_wind5_120/source_replay.json",
+        "gif": "px4_offboard/acceleration_dual/results/aligned_20261117/perturbed_accel_consistent/g3_wind5_120/replay/flight.gif"
+      }
+    ],
+    "nominal_motor_2ms": [
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          0.5051929242400764,
+          0.006813087994376632,
+          0.5051469811195752
+        ],
+        "rmse_passed": false,
+        "rmse_limit_m": 0.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.04148483238206763,
+          "speed_rms_mps": 0.017030986291158488,
+          "horizontal_drift_mps": 0.003294873240068819
+        },
+        "error": null,
+        "target_baro_height_m": 4.910794734954834,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e",
+        "p3_config_sha256": "53fd702a21e09d47f77e77f8614d3860b18ca85473d95da93d5e1853d1b02344",
+        "wind_mps": 1.0,
+        "wind_ramp_s": 0.0,
+        "sensor_seed": 2026114501,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit": "px4_offboard/acceleration_dual/results/aligned_20261117/nominal_aligned120/g3_wind1_120/audit.json",
+        "audit_sha256": "bfcfd55155e19b073a6ed85f04b8915109ca5324ea68789de374f216af6e0b1b",
+        "engineering_limit_m": 0.53,
+        "engineering_passed": true,
+        "simulated_motor_tau_s": 0.002,
+        "source_replay": "px4_offboard/acceleration_dual/results/aligned_20261117/nominal_aligned120/g3_wind1_120/source_replay.json"
+      }
+    ],
+    "nominal_motor_45ms": [
+      {
+        "safe_completed": true,
+        "settled": true,
+        "rmse_3d_h_xy_m": [
+          0.49772884192348904,
+          0.007751346891933138,
+          0.49766848072171344
+        ],
+        "rmse_passed": true,
+        "rmse_limit_m": 0.5,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.08656692084591375,
+          "speed_rms_mps": 0.01615394076516929,
+          "horizontal_drift_mps": 0.009630479746065592
+        },
+        "error": null,
+        "target_baro_height_m": 4.924880027770996,
+        "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+        "p3_checkpoint_sha256": "3c7a148a494dedc30f4a916a942fad1d5afe92ea7e01f3e7bb5a984841ebce7e",
+        "p3_config_sha256": "53fd702a21e09d47f77e77f8614d3860b18ca85473d95da93d5e1853d1b02344",
+        "wind_mps": 1.0,
+        "wind_ramp_s": 0.0,
+        "sensor_seed": 2026114501,
+        "acceleration_filter_s": 0.065,
+        "px4_param_overrides": {
+          "MC_PITCHRATE_K": 0.1
+        },
+        "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+        "audit": "px4_offboard/acceleration_dual/results/aligned_20261117/nominal_motor45_120/g3_wind1_120/audit.json",
+        "audit_sha256": "d71f23911bece72743ae26dab23a2ebfef07b7013f3bb94d783289212b5b6d16",
+        "engineering_limit_m": 0.53,
+        "engineering_passed": true,
+        "simulated_motor_tau_s": 0.045,
+        "source_replay": "px4_offboard/acceleration_dual/results/aligned_20261117/nominal_motor45_120/g3_wind1_120/source_replay.json"
+      }
+    ]
+  },
+  "run_complete": true,
+  "formal_final_acceptance": false,
+  "cleanup_retention": "cleanup/retention_flight_20261118.json",
+  "history": "px4_offboard/acceleration_dual/history/aligned_development_20261118.json"
+}

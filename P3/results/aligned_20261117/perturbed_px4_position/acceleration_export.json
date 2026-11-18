@@ -1,0 +1,16 @@
+{
+  "status": "candidate_only",
+  "closed_loop_validated": false,
+  "P2_updates": 0,
+  "P3_weight_updates": 0,
+  "checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+  "parent_sha256": "672fa018fd9070f2e3b67f30810d6166933bd31f8625c3b2ba8b1c9a33eb6379",
+  "observer_sha256": "f222072efbac7d75e2918375e0b0d145b07f56135468247047da736752ad0da4",
+  "source_sha256": {
+    "P3/actuation_export.py": "ddd2926cb2a0a14ad7ca3f9ae722b2f9362a13f9db55ccb21a7f3a818c5f6e81",
+    "px4_offboard/aligned_p3.py": "4c77299db105b73fc4e4d77b98b17c340a94bdfb31dc99be98b8fd12f3d4ae01",
+    "px4_offboard/policy_timing.py": "eb95f29e57da1aada7203cba8b9d17a61cad086d0b6b0ca0121e06c170374f69",
+    "px4_offboard/mavros_policy.py": "db9e389f51d14b0d6daf523d4269971e340114915a450cd7f74a50871df095f8"
+  },
+  "semantics": "Only the horizontal acceleration setpoint is adapted using the frozen Position tilt correction"
+}

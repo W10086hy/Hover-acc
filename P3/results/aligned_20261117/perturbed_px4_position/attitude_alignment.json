@@ -1,0 +1,59 @@
+{
+  "train": {
+    "samples": 3939,
+    "gravity_before_rmse_mps2": [
+      0.13905862382162287,
+      0.12087310692320337,
+      0.001884428144309241
+    ],
+    "gravity_after_rmse_mps2": [
+      0.005839679156036635,
+      0.008407218954227037,
+      4.427782448577331e-05
+    ],
+    "time_range_s": [
+      33.828,
+      112.588
+    ]
+  },
+  "holdout": {
+    "samples": 1935,
+    "gravity_before_rmse_mps2": [
+      0.13233657016236278,
+      0.11030594167148991,
+      0.0016341808499993865
+    ],
+    "gravity_after_rmse_mps2": [
+      0.008573347746815257,
+      0.011814246094063166,
+      5.6021169930609045e-05
+    ],
+    "time_range_s": [
+      112.604,
+      151.284
+    ]
+  },
+  "attitude_right_quaternion": [
+    0.9999559459191495,
+    -0.006152429835013806,
+    -0.007088993445070347,
+    0.0
+  ],
+  "P2_updates": 0,
+  "P3_weight_updates": 0,
+  "fit_method": "two-axis right-tilt Gauss Newton; yaw fixed",
+  "independent_reference_used_only_in_Position": true,
+  "raw_time_holdout_independent": true,
+  "input_sha256": {
+    "position.npz": "b0a328086e69bcc927fc78db47daee60317ebd0a3a48c05c2644bf96689f0f7a",
+    "raw_capture.npz": "67abb7533e8bda445dacae6cef4e341010c37ca3211358c3074a09fdee0875d4",
+    "flight/position_p3.npz": "cf5d0082e2e87138f166ea19a6a041c1846138204824d566ef71683f69702f16"
+  },
+  "observer_sha256": "672fa018fd9070f2e3b67f30810d6166933bd31f8625c3b2ba8b1c9a33eb6379",
+  "checkpoint_sha256": "d42374298bec3160cd66adb52dd9a1b041abfcd6ccbae6d03009956e231899de",
+  "source_sha256": {
+    "P3/attitude_alignment.py": "cbbe416ec4bbe4140988633c41af8b883f69ea3965f2ffc14e312b34bbeb313d",
+    "px4_offboard/aligned_p3.py": "73311a8324464d443a2bf67cdb6341dd078b974cb202a52b071d6e62809f2187"
+  },
+  "status": "candidate_only"
+}

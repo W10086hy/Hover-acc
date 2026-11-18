@@ -282,6 +282,17 @@
     "accepted_for_flight": false,
     "explicit_torque_feedforward": false
   },
+  "aligned_residual_development": {
+    "date": "2026-11-18",
+    "status": "development_validation_complete_perturbed_weak_wind_gap",
+    "report": "docs/debug_20261117.md",
+    "summary": "px4_offboard/acceleration_dual/results/aligned_20261117/summary.json",
+    "candidate_runtime": "P3/results/aligned_20261117/perturbed_px4_position/observer_accel_consistent.json",
+    "P2_updates": 0,
+    "training_running": false,
+    "validation_running": false,
+    "accepted_for_flight": false
+  },
   "unified_residual_development": {
     "date": "2026-11-17",
     "training_running": false,
