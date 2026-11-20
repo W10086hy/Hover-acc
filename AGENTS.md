@@ -1,5 +1,25 @@
 # 当前工程约定
 
+## 最新整理上传（2026-11-20，优先）
+
+- 用户新授权整理并上传，已按 cleanup/retention_repro_20261120.json 删除 724 个已替代中间文件及重复缓存，共 2,189,076,308 字节。20 个中间飞行的统计、审计、重放结论和源码身份归档 px4_offboard/acceleration_dual/history/flight_repro_development_20261120.json，唯一源码在 cleanup/history_20261120/development_sources.zip。此条替代此前对本轮全部 22 条原始轨迹及三份中间训练参数的保留描述。
+- 仅保留最新 increment_balanced/model.pt／Adam、force_blend05 配套参数、有效 Position 原始数据、最后两条 blend05r_120_* 完整结果和两份回放。77 份本轮保护文件核对，合法维护的索引／核验文件变化单列于清单；此前受保护历史不删，不改原始数值。
+- 两条最终飞行可重新逐样本重放；20 条已退役工况只核对整理前审计与归档身份，不声称重放已删除轨迹。本次不训练、不新增仿真，默认策略不替换。上传 W10086hy/Hover-acc/main，旧 origin 仍是 Hover-BPTT，使用明确 URL 普通快进推送。
+
+## 机制复现开发目标完成（2026-11-20，优先）
+
+- 本轮目标完成于当前受扰机体的工程容差：两条 120 s 弱／强风三维／高度／水平 RMSE 为 0.526528／0.008457／0.526460 m、1.335226／0.008254／1.335201 m，均安全且稳态。弱风未达 0.50 m 名义值，只通过 0.53 m 工程容差；不是正式独立种子、参数全域或实飞验收。默认未替换，不自动续跑或上传。
+- P2 Actor13／Adam 冻结。P3 仍九维统一残差，Position 无风／无绳；新角残差按在线同构增量监督、差分电机集体分量为零。比力参考显式融合，P3 自身模型恢复被扣除量以保持训练参考；不分别回归质量、CG、安装角或惯量，不给 P2 新增位置／速度输入。
+- 选中网络与 Adam 为 P3/results/flight_repro_20261120/increment_balanced/model.pt（7f931903…db919e）。当前配套 JSON 为 force_blend05/observer_deployment.json，飞行源为同目录 observer_position_force.json。两者数值相同，前者只增加明确 processing 契约，需配套当前代码；已按完整源事件重放核对，不能冒称导出字节已飞。
+- 22 条实际 Offboard 源重放、两条最终飞行评分／线缆／指令／参数身份及动图核对通过；314 项测试，313 通过、1 Linux 专用跳过。首轮 Position 触发高度保护、一次部署未就绪启动及其余必要消融均保留反证，未覆盖受保护历史原始成果。
+- 所有训练、仿真与 VM 队列已结束。报告 docs/flight_repro_20261120.md，模型索引 P3/models.json，本轮只读复核 P3/results/flight_repro_20261120/verify_delivery.py。未来接续须新授权与新输出目录，禁止重启本批。
+
+## 实飞机制复现目标（2026-11-20，用户最新授权）
+
+- 用户明确授权创建目标并持续推进 P3 超域归零与运动积分偏差的仿真复现及候选修改。该授权覆盖此前只整理／停止仿真的限制；P2 Actor13／Adam 仍冻结，已保护的历史成果不覆盖，不自动上传。
+- 设计和接续状态见 docs/flight_repro_20261120.md。实验配置 px4_offboard/acceleration_dual/experiments/flight_repro_20261120 使用匹配仿真机体自己的 Position 模型，不把实飞模型直接套到不同机体。
+- 新 --sim-observation-bias-mps2 仅用于模拟时钟下的残余测量故障，源事件及注入配置需完整重放。沿用 VM 单 CPU 顺序飞行，先检查当前队列与输出，禁止同批次重复启动。
+
 ## 最新整理上传（2026-11-18，优先）
 
 - 用户授权清理并上传最新工程。按 cleanup/retention_flight_20261118.json 删除 762 个被替代中间文件，共 1,550,060,218 字节。23 个早期开发工况的统计、审计及源码身份归档于 px4_offboard/acceleration_dual/history/aligned_development_20261118.json，唯一源码在 cleanup/history_20261118/development_sources.zip。本节替代此前对这些中间轨迹的保留描述。

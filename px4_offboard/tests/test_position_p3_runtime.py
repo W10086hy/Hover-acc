@@ -5,6 +5,15 @@ import mujoco
 
 
 class PositionP3RuntimeTests(unittest.TestCase):
+    def test_scaled_position_excitation_expands_each_axis_and_rejects_unsafe_scale(self):
+        from px4_offboard.position_p3_sitl import position_excitation
+        a=np.array([position_excitation(t,1.4) for t in np.arange(0,20,.01)])
+        np.testing.assert_array_equal(np.max(np.abs(a-[0,0,500,0]),axis=0),[224,224,140,252])
+        a=np.array([position_excitation(t,1.4,1.) for t in np.arange(0,20,.01)])
+        np.testing.assert_array_equal(np.max(np.abs(a-[0,0,500,0]),axis=0),[224,224,100,252])
+        for scale in [0.,float('nan'),2.]:
+            with self.assertRaises(ValueError):position_excitation(1.,scale)
+
     def test_position_excitation_exceeds_px4_manual_stick_deadzone(self):
         from px4_offboard.position_p3_sitl import position_excitation
         commands=np.array([position_excitation(t) for t in np.arange(0,20,.01)])

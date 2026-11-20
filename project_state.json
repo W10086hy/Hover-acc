@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "date": "2026-11-18",
+  "date": "2026-11-20",
   "training_running": false,
   "validation_running": false,
   "formal_final_acceptance": false,
@@ -23,7 +23,7 @@
     "per_case": true
   },
   "goal_achieved": false,
-  "active_goal_report": "P2/results/acceleration_hover/README.md",
+  "active_goal_report": "docs/flight_repro_20261120.md",
   "latest_hybrid_development_checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
   "final_acceptance_completed": false,
   "iterations_stopped_by_user": true,
@@ -93,13 +93,7 @@
   "height_speed_statistics": "track/reports/height_speed_statistics.json",
   "height_speed_training_provenance": "track/models/actor29_provenance/training_manifest.json",
   "track_previous_statistics": "track/reports/development_statistics.json",
-  "latest_cleanup": {
-    "date": "2026-11-17",
-    "retention": "cleanup/retention_current_only_20261117.json",
-    "status": "complete",
-    "new_training_during_cleanup": false,
-    "new_full_simulation_during_cleanup": false
-  },
+  "latest_cleanup": "cleanup/retention_repro_20261120.json",
   "latest_cleanup_removed_files": 213,
   "latest_cleanup_removed_bytes": 583696215,
   "retained_tracking_detail_groups": 1,
@@ -660,5 +654,131 @@
     "publication_branch": "main",
     "training_during_cleanup": false,
     "new_simulation_during_cleanup": false
+  },
+  "flight_repro_20261120": {
+    "state": "six_case_30s_diagnostic_running",
+    "report": "docs/flight_repro_20261120.md",
+    "VM_root": "/home/s/hover_bptt_px4/aligned_20261117",
+    "VM_queue_pid": 58129,
+    "VM_log": "flight_repro_20261120.log",
+    "result_root": "results/flight_repro_20261120",
+    "P2_updates": 0,
+    "P3_optimizer_updates": 0,
+    "seed": 2026117501,
+    "training_running": false,
+    "validation_running": true,
+    "default_model_replaced": false,
+    "formal_final_acceptance": false,
+    "status": "engineering_development_goal_verified",
+    "vm_pid": null,
+    "vm_log": "flight_repro_20261120_blend05r.log",
+    "current_capture": "px4_offboard/acceleration_dual/results/flight_repro_20261120/position_wide2",
+    "first_capture_failed": "Physical guard at t=88.520, height=7m; not used for training",
+    "response_candidate_rejected": true,
+    "current_model": "P3/results/flight_repro_20261120/position_wide",
+    "P3_training_steps": 400,
+    "P3_checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+    "P3_model": "P3/results/flight_repro_20261120/force_blend05/observer_deployment.json",
+    "wide30_rmse_3d_h_xy_m": [
+      0.9667649174793722,
+      0.006878348994773888,
+      0.9667404480955596
+    ],
+    "increment30_rmse_3d_h_xy_m": [
+      0.8916774236762546,
+      0.017696900820178985,
+      0.8914986058359428
+    ],
+    "balanced30_rmse_3d_h_xy_m": [
+      0.4610537392636561,
+      0.006488221598957041,
+      0.46100808395242077
+    ],
+    "queued_120s_log": "flight_repro_20261120_force_primary120.log",
+    "weak30_rmse_3d_h_xy_m": [
+      0.288625169611659,
+      0.008294025160717467,
+      0.2885059751200871
+    ],
+    "startup_failure_not_a_flight": "blend05_30: model package absent after interrupted transfer; original log retained; retry uses blend05r prefix",
+    "blend30_rmse_3d_h_xy_m": [
+      0.4593950051235796,
+      0.02184030013234857,
+      0.4588755517813328
+    ],
+    "current_goal_complete": true,
+    "vm_jobs_running": false,
+    "summary": "px4_offboard/acceleration_dual/results/flight_repro_20261120/summary.json",
+    "delivery_verification": "P3/results/flight_repro_20261120/delivery_verification.json",
+    "selected_120s": [
+      {
+        "case": "blend05r_120_weak",
+        "audit": "px4_offboard/acceleration_dual/results/flight_repro_20261120/blend05r_120_weak/audit.json",
+        "audit_sha256": "2357ab89d12821c25c85baaa559dbc5e33018bafb0d06e08a02b1063fd74d42e",
+        "safe_completed": true,
+        "rmse_3d_h_xy_m": [
+          0.5265282883375053,
+          0.008457224104546983,
+          0.5264603629714859
+        ],
+        "evaluation_horizon_s": 120.0,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "settled": true,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.08150391997990047,
+          "speed_rms_mps": 0.01795893194232679,
+          "horizontal_drift_mps": 0.007953213977547368
+        },
+        "wind_mps": 1.0,
+        "wind_ramp_s": 0.0,
+        "sensor_seed": 2026117501,
+        "error": null,
+        "p3_checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+        "p3_config_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+        "nominal_rmse_passed": false,
+        "engineering_limit_m": 0.53,
+        "engineering_rmse_passed": true
+      },
+      {
+        "case": "blend05r_120_strong",
+        "audit": "px4_offboard/acceleration_dual/results/flight_repro_20261120/blend05r_120_strong/audit.json",
+        "audit_sha256": "bba8833311a48637647924c17127ec2f0bea0bbd80e6816b5ea96a6b0dac95cd",
+        "safe_completed": true,
+        "rmse_3d_h_xy_m": [
+          1.3352260547999244,
+          0.008253889974460981,
+          1.3352005432581504
+        ],
+        "evaluation_horizon_s": 120.0,
+        "physical_post_duration_s": 120.0,
+        "penalized_remaining_samples": 0,
+        "settled": true,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.02663436510922129,
+          "speed_rms_mps": 0.01995625481702376,
+          "horizontal_drift_mps": 0.0008293706201895312
+        },
+        "wind_mps": 5.0,
+        "wind_ramp_s": 5.0,
+        "sensor_seed": 2026117503,
+        "error": null,
+        "p3_checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+        "p3_config_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+        "nominal_rmse_passed": true,
+        "engineering_limit_m": 1.5,
+        "engineering_rmse_passed": true
+      }
+    ],
+    "regression_total": 314,
+    "regression_skipped": 1,
+    "real_flight_validated": false,
+    "source_replays_verified_before_cleanup": 22,
+    "retained_source_replays": 2,
+    "archived_replay_reports": 20,
+    "history_archive": "px4_offboard/acceleration_dual/history/flight_repro_development_20261120.json",
+    "cleanup_retention": "cleanup/retention_repro_20261120.json"
   }
 }

@@ -26,6 +26,10 @@ def prepare(root,assets):
     if score['P3_enabled']:
         scope=score.get('P3_scope') or ''
         label+='（九维P3；源时间对齐）' if scope.startswith('Nine joint') else ('（P3统一残差）' if scope.startswith('Joint sensor') else '（P3观测标准化）')
+        if 'collective-free' in scope:
+            label='PX4加速度｜P3集体分量约束（开发验证）'
+            if 'angular response normalization' in scope:label='PX4加速度｜P3集体约束／角响应（开发验证）'
+            if 'residual force reference' in scope:label='PX4加速度｜P3集体约束／Position比力参考（开发验证）'
     write(root/'protocol.json',dict(config=cfg,real_PX4_process=True,stock_px4=True,replay_platform_label=label,
         replay_physics_note=f"EA 49 N；未拉伸绳长 4.90 m；估计起飞航向 {np.degrees(score['launch_heading_rad']):.2f}°；按锁存气压参考评分",
         residual_enabled=score['P3_enabled'],visualization_only=True,raw_trace_sha256=digest(root/'flight/trace.npy'),

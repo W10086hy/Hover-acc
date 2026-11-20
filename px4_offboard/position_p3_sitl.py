@@ -38,10 +38,13 @@ class ExcitationGate:
         if self.start is None and self.stable_completed is not None and clock-self.stable_completed>=4:self.start=clock
 
 
-def position_excitation(t):
+def position_excitation(t,scale=1.,vertical_scale=None):
     # PX4 applies manual-stick deadzones; tiny sinusoidal sticks are ineffective.
-    return (round(160*math.sin(.91*t)),round(160*math.sin(1.13*t+.3)),
-        500+round(100*math.sin(.73*t)),round(180*math.sin(1.47*t)))
+    if not math.isfinite(scale) or not .5<=scale<=1.5:raise ValueError('Position excitation scale must be in [0.5,1.5]')
+    vertical_scale=scale if vertical_scale is None else vertical_scale
+    if not math.isfinite(vertical_scale) or not .5<=vertical_scale<=1.5:raise ValueError('Vertical excitation scale must be in [0.5,1.5]')
+    return (round(scale*160*math.sin(.91*t)),round(scale*160*math.sin(1.13*t+.3)),
+        500+round(vertical_scale*100*math.sin(.73*t)),round(scale*180*math.sin(1.47*t)))
 
 
 def build_capture(measurements,truth,*,excitation_start):
@@ -67,7 +70,10 @@ def main():
     p.add_argument('--assets',type=Path,default=Path('px4_offboard/acceleration_dual/assets'))
     p.add_argument('--seconds',type=float,choices=(15.,30.,120.),default=120.)
     p.add_argument('--pitch-rate-k',type=float,help='Run-local MC_PITCHRATE_K override for inner-loop diagnosis')
+    p.add_argument('--excitation-scale',type=float,default=1.,help='Bounded Position stick excitation multiplier; [0.5,1.5]')
+    p.add_argument('--vertical-excitation-scale',type=float,help='Optional separate vertical multiplier to respect the height envelope')
     p.add_argument('--seed',type=int,default=2026114601);a=p.parse_args()
+    position_excitation(0.,a.excitation_scale,a.vertical_excitation_scale)
     if a.pitch_rate_k is not None and not 0<a.pitch_rate_k<=1:p.error('Pitch rate gain scale must be in (0,1]')
     root=a.output.resolve()
     if not root.is_relative_to(Path.cwd().resolve()) or root==Path.cwd().resolve():p.error('Use a new output subdirectory')
@@ -95,7 +101,7 @@ def main():
                 if gate.start is not None and plants[0].position_active:
                     t=plants[0].clock-gate.start
                     # Gentle Position velocity/yaw/vertical stick excitation.
-                    x,y,z,r=position_excitation(t)
+                    x,y,z,r=position_excitation(t,a.excitation_scale,a.vertical_excitation_scale)
                 return original(target,x,y,z,r,buttons,*extra)
             self.link.mav.manual_control_send=manual
         def ingest(self,msg,clock):
@@ -130,7 +136,9 @@ def main():
                 IMU_source='PX4 HIGHRES_IMU; not merely injected HIL samples',ESC_source='simulated actual rotor speed and applied throttle',
                 excitation_start_s=gate.start,truth_only_physical=dict(mass_kg=plant.mass,full_inertia_FRD=(J*S[:,None]*S[None,:]).tolist()),
                 px4_param_overrides={'MC_PITCHRATE_K':a.pitch_rate_k} if a.pitch_rate_k is not None else {},
-                sensor_seed=a.seed,planned_capture_s=a.seconds,structural_fit_must_pass_holdout=True)
+                sensor_seed=a.seed,planned_capture_s=a.seconds,excitation_scale=a.excitation_scale,
+                vertical_excitation_scale=a.excitation_scale if a.vertical_excitation_scale is None else a.vertical_excitation_scale,
+                structural_fit_must_pass_holdout=True)
             metadata['simulation_self_disturbance']=plant.cfg.get('simulation_self_disturbance')
             (root/'capture.json').write_text(json.dumps(metadata,indent=2)+'\n')
             summary_path=root/'flight/summary.json';summary=json.loads(summary_path.read_text())

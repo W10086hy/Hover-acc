@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "verified_files": 1689,
+  "verified_files": 1784,
   "source_snapshot_matches": true,
   "changed_sources": [],
   "actor31_safe_120s_cases": 9,
@@ -409,5 +409,94 @@
     "removed_bytes": 1550060218,
     "protected_files": 244,
     "archived_cases": 23
+  },
+  "latest_repro_retention": {
+    "removed_files": 724,
+    "removed_bytes": 2189076308,
+    "protected_files": 77,
+    "archived_cases": 20,
+    "retained_cases": [
+      "blend05r_120_strong",
+      "blend05r_120_weak"
+    ],
+    "retired_raw_data_replayed_again": false
+  },
+  "latest_repro_delivery": {
+    "passed": true,
+    "P2_and_Adam_frozen": true,
+    "P3_checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+    "selected_cases": [
+      {
+        "case": "blend05r_120_weak",
+        "rmse_3d_h_xy_m": [
+          0.5265282883375053,
+          0.008457224104546983,
+          0.5264603629714859
+        ],
+        "engineering_limit_m": 0.53,
+        "safe_completed": true,
+        "settled": true,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.08150391997990047,
+          "speed_rms_mps": 0.01795893194232679,
+          "horizontal_drift_mps": 0.007953213977547368
+        },
+        "deployment_export_replay": {
+          "entries": 1,
+          "policy_ticks": 12032,
+          "source_events": 12032,
+          "max_time_error": 0.0,
+          "max_observation_error": 0.0,
+          "max_raw_action_error": 1.4901161193847656e-08,
+          "max_acceleration_error": 1.579132147266904e-08,
+          "max_wire_acceleration_error": 1.579132147266904e-08,
+          "passed": true,
+          "P2_updates": 0,
+          "horizontal_navigation_truth_used": false
+        },
+        "flown_config_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+        "deployment_config_sha256": "f3176440e1bf8121d77f95f1064c5089f3c2aa337aac3cc83075f5fbc3156be8"
+      },
+      {
+        "case": "blend05r_120_strong",
+        "rmse_3d_h_xy_m": [
+          1.3352260547999244,
+          0.008253889974460981,
+          1.3352005432581504
+        ],
+        "engineering_limit_m": 1.5,
+        "safe_completed": true,
+        "settled": true,
+        "tail": {
+          "complete": true,
+          "horizontal_std_m": 0.02663436510922129,
+          "speed_rms_mps": 0.01995625481702376,
+          "horizontal_drift_mps": 0.0008293706201895312
+        },
+        "deployment_export_replay": {
+          "entries": 1,
+          "policy_ticks": 12044,
+          "source_events": 9787,
+          "max_time_error": 0.0,
+          "max_observation_error": 0.0,
+          "max_raw_action_error": 2.9802322387695312e-08,
+          "max_acceleration_error": 1.7284578213150326e-08,
+          "max_wire_acceleration_error": 1.7284578213150326e-08,
+          "passed": true,
+          "P2_updates": 0,
+          "horizontal_navigation_truth_used": false
+        },
+        "flown_config_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+        "deployment_config_sha256": "f3176440e1bf8121d77f95f1064c5089f3c2aa337aac3cc83075f5fbc3156be8"
+      }
+    ],
+    "retained_policy_replays": 2,
+    "archived_policy_replay_reports": 20,
+    "all_executed_policy_replays_verified_before_cleanup": 22,
+    "retired_raw_data_replayed_again": false,
+    "formal_final_acceptance": false,
+    "real_flight_validated": false,
+    "verifier_sha256": "d772199c609c9e414717423fa7fddbb17573a1a4b41d1ad8c7892ed85ad0a77f"
   }
 }

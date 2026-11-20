@@ -1,0 +1,67 @@
+{
+  "policy_ticks": 11999,
+  "physical_compared_duration_s": 119.97999999999999,
+  "support_mean": 1.0,
+  "support_zero_fraction": 0.0,
+  "support_partial_fraction": 0.0,
+  "angular_before_rms_radps": [
+    0.12885723572066218,
+    0.38039712302669965,
+    0.0007287994642122889
+  ],
+  "angular_after_rms_radps": [
+    0.003735450414380752,
+    0.004563050543621374,
+    0.0006357922545299191
+  ],
+  "angular_own_rms_radps2": [
+    12.902719031398943,
+    38.00370035867393,
+    0.011906530881100347
+  ],
+  "acceleration_integral_launch_mps": [
+    -0.013546730215029161,
+    0.08941350328549322
+  ],
+  "navigation_delta_launch_mps": [
+    -0.04138251965604269,
+    0.020539401966743955
+  ],
+  "mean_acceleration_disagreement_launch_mps2": [
+    0.00023200357927165806,
+    0.0005740465187427011
+  ],
+  "actual_comparison_only_not_failure_penalized": true,
+  "source_replay": {
+    "entries": 1,
+    "policy_ticks": 12032,
+    "source_events": 12032,
+    "max_time_error": 0.0,
+    "max_observation_error": 0.0,
+    "max_raw_action_error": 1.4901161193847656e-08,
+    "max_acceleration_error": 1.579132147266904e-08,
+    "max_wire_acceleration_error": 1.579132147266904e-08,
+    "passed": true,
+    "P2_updates": 0,
+    "horizontal_navigation_truth_used": false
+  },
+  "safe_completed": true,
+  "rmse_3d_h_xy_m": [
+    0.5265282883375053,
+    0.008457224104546983,
+    0.5264603629714859
+  ],
+  "evaluation_horizon_s": 120.0,
+  "settled": true,
+  "tail": {
+    "complete": true,
+    "horizontal_std_m": 0.08150391997990047,
+    "speed_rms_mps": 0.01795893194232679,
+    "horizontal_drift_mps": 0.007953213977547368
+  },
+  "diagnostic_source_sha256": "9c940c3d9274a5b54939a0feb7c6c149e9ccc700074336bb619f885c9571b72e",
+  "policy_log_sha256": "8ec76e0c7069e84caa736793729ea71ca3bf88faf6b0816e6c3d847d664904fa",
+  "model_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+  "navigation_used_only_in_offline_audit": true,
+  "formal_final_acceptance": false
+}

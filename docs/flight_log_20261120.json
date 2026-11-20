@@ -1,0 +1,888 @@
+{
+  "date": "2026-11-20",
+  "original_path": "E:\\Rfly\\01_Relateive_Works\\B9_RflyTower\u7a33\u5b9a\u63a7\u5236\\\u65e5\u5fd7\\\u52a0\u901f\u5ea6\u73af\\P2_P3_flight_logs_20261120\\P2_P3",
+  "source_hashes": {
+    "companion_manifest.json": "77f39f7d368a4f7d96d18105b274c2b73a804216857339e679a1ed4b4d2eab49",
+    "companion_summary.json": "1f2a48eb323a5440cce037da3fe4ca3908a6beb8207c4b5c5b8b45af8023b17d",
+    "context/nx_deploy/acceleration_runner.py": "3923ac42530f3d63fd3d879cdfaeb4194d543bdf1c1b96c34b83bbfba61a94ca",
+    "context/nx_deploy/control.py": "899bedb76848140da4d5f3ab1dc6a82bbe95802d5ce272d7a21429eacfb63e46",
+    "context/nx_deploy/hardware.json": "c794d19052adb598854016233d6fa222235ac791b4ce0a99b4843f996628e504",
+    "context/nx_deploy/p3_quality.json": "b8c779ec106ee8cd6e3c4d8c79f0bc327813d2b58dbb6dcfb83742c7f9ed12d9",
+    "context/nx_deploy/release_runner.py": "c71a3dbea79574d767ea099e01c03d37abd6e21564ebad2d8113e8006f1191a9",
+    "context/nx_deploy/telemetry.py": "c7b6aefe01abe614356454338e23161418895a81d42b12e1211d4a8d3d4be19c",
+    "context/nx_deploy/transport.py": "edcc6c16ee51777107fcdfe812c543e735704c2890320d1bee6014cec574b047",
+    "context/P3/results/aggregate.json": "3ab46cee210073c48513eaf44e15f6b048030500f6dee8ccddf0ead60ba6f985",
+    "FCU/download_manifest.json": "d87e5a83bbaaa3a008355b79eb4006e9d2f2cdff6fb493de14be0ed3f45bfe22",
+    "FCU/log_28_1795157846.ulg": "110428c936d4cd6baa8da7022a4669a125e320d129161d80f2545c83bbfe8606",
+    "FCU/log_29_1795158126.ulg": "4ecd91be0cec6e5a07ec1fe8b977cd1d5c725b87caa2e72a6010031e14c6738e",
+    "FCU/log_entries.json": "366ac00573f3ed6c15c4b25da0debeedce87b3c46d96ea8c264e82197d416442",
+    "fcu_read_summary.json": "7b36bc844074c7a7acf9cca109ffee5a79630560a8ea36f4e168cdf326243231",
+    "read_summary.json": "f2f686fcecd781862857acb10c40587225f4de5d5b0e477f5b77213856762182",
+    "runs/offboard_20261120_145753_379f0a/events.jsonl": "c62fadfc7344acb85bfff6ce3ec9ea96e96383db80c9d934bcf0d9da628ab7dd",
+    "runs/offboard_20261120_145753_379f0a/result.json": "0f696716a59bb31513ee05c875aa7aeb4c8418203a9feb90f754e44db44e4af3",
+    "runs/offboard_20261120_145753_379f0a/samples.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/offboard_20261120_145808_c29c87/events.jsonl": "46549fe1b713033437499dbfe1856aa36d1f0e21bfbae25482283cf167faa0c6",
+    "runs/offboard_20261120_145808_c29c87/protocol.json": "31f6dbbef01647052278194bccb1fbaa9a423e79977db48ac5d9cf81242112f7",
+    "runs/offboard_20261120_145808_c29c87/samples.jsonl": "2b4a146d32898cabc87e3e54073710fbd7b6879927a7fb5ede1071399ba3d457",
+    "\u8bfb\u53d6\u8bf4\u660e.txt": "9dff76cd1820f22fbb348144a90788b3a427a6a5ec2291fdde8c913e4724c4fa"
+  },
+  "valid_samples": 22423,
+  "truncated_lines": [
+    22424
+  ],
+  "runtime_protocol": {
+    "checkpoint": "P2/results/acceleration_hover/altitude_robust/low_frequency_round/training/proposal01_trial01.pt",
+    "checkpoint_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+    "action_mode": "launch_acceleration",
+    "execution_interface": "SET_POSITION_TARGET_LOCAL_NED horizontal acceleration + local z + yaw",
+    "nominal_curve_only_not_measured_thrust_calibration": true,
+    "simulation_inner_loop_replaced_by_native_PX4_attitude_rate": true,
+    "inference_always_on": true,
+    "execution_requires_actual_offboard": true,
+    "P3_enabled": true,
+    "P3_model": "/home/lrt/Desktop/Hover-acc/P3/results/aggregate.json",
+    "initialization_complete": true,
+    "startup_stage": "ready",
+    "height_source": "ALTITUDE.altitude_monotonic minus disarmed ground median",
+    "takeoff_zero_m": 12.447967529296875,
+    "launch_heading_rad": -1.3268708060500902,
+    "mode_source": "CURRENT_MODE.custom_mode actual, never intended_custom_mode",
+    "profile": {
+      "device": "/dev/serial/by-id/usb-Auterion_PX4_FMU_v6C.x_0-if00",
+      "baud": 115200,
+      "wiring_verified": false,
+      "rpm_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pwm_channels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "pwm_port": 1,
+      "output_protocol": "dshot",
+      "output_stream_device": "/dev/ttyACM0",
+      "pwm_min": [
+        109,
+        109,
+        109,
+        109
+      ],
+      "pwm_max": [
+        1999,
+        1999,
+        1999,
+        1999
+      ],
+      "rpm_scale_to_mechanical": 1.0,
+      "airframe_id": "lrt_fmuv6c"
+    },
+    "motor_mapping": {
+      "policy_order": [
+        "front_right",
+        "rear_right",
+        "front_left",
+        "rear_left"
+      ],
+      "policy_to_fc_motor_indices": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "policy_to_source_indices": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "source_pwm_channels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_esc_rpm_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "policy_pwm_channels": [
+        1,
+        4,
+        3,
+        2
+      ],
+      "policy_esc_rpm_indices": [
+        0,
+        3,
+        2,
+        1
+      ],
+      "policy_yaw_coefficient_signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "parameters": {
+        "CA_ROTOR_COUNT": 4,
+        "CA_ROTOR0_PX": 1.0,
+        "CA_ROTOR0_PY": 1.0,
+        "CA_ROTOR0_KM": 0.05000000074505806,
+        "CA_ROTOR1_PX": -1.0,
+        "CA_ROTOR1_PY": -1.0,
+        "CA_ROTOR1_KM": 0.05000000074505806,
+        "CA_ROTOR2_PX": 1.0,
+        "CA_ROTOR2_PY": -1.0,
+        "CA_ROTOR2_KM": -0.05000000074505806,
+        "CA_ROTOR3_PX": -1.0,
+        "CA_ROTOR3_PY": 1.0,
+        "CA_ROTOR3_KM": -0.05000000074505806,
+        "PWM_AUX_FUNC1": 101,
+        "PWM_AUX_FUNC2": 102,
+        "PWM_AUX_FUNC3": 103,
+        "PWM_AUX_FUNC4": 104
+      },
+      "basis": "live FC geometry and output functions; RPM-to-output association from shared profile",
+      "physical_wiring_verified": false
+    },
+    "parameters": {
+      "CA_ROTOR_COUNT": 4,
+      "CA_ROTOR0_PX": 1.0,
+      "CA_ROTOR0_PY": 1.0,
+      "CA_ROTOR0_KM": 0.05000000074505806,
+      "CA_ROTOR1_PX": -1.0,
+      "CA_ROTOR1_PY": -1.0,
+      "CA_ROTOR1_KM": 0.05000000074505806,
+      "CA_ROTOR2_PX": 1.0,
+      "CA_ROTOR2_PY": -1.0,
+      "CA_ROTOR2_KM": -0.05000000074505806,
+      "CA_ROTOR3_PX": -1.0,
+      "CA_ROTOR3_PY": 1.0,
+      "CA_ROTOR3_KM": -0.05000000074505806,
+      "PWM_AUX_FUNC1": 101,
+      "PWM_AUX_FUNC2": 102,
+      "PWM_AUX_FUNC3": 103,
+      "PWM_AUX_FUNC4": 104,
+      "THR_MDL_FAC": 0.0,
+      "SYS_HITL": 0,
+      "COM_OF_LOSS_T": 1.0,
+      "COM_OBL_RC_ACT": 0,
+      "DSHOT_MIN": 0.054999999701976776,
+      "MOT_POLE_COUNT": 14
+    },
+    "output_setup": {
+      "group": 1,
+      "method": "PX4_named_stream",
+      "command": "mavlink stream -d /dev/ttyACM0 -s SERVO_OUTPUT_RAW_1 -r 100",
+      "rate_hz": 100,
+      "advancing_timestamps": [
+        937380574,
+        937405311,
+        937422589
+      ],
+      "shell_reply": "mavlink stream -d /dev/ttyACM0 -s SERVO_OUTPUT_RAW_1 -r 100\nnsh> \u001b[K"
+    },
+    "warmup_required": 100,
+    "warmup_min_duration_s": 1.2,
+    "program_mode": "offboard",
+    "automatic_arm": false,
+    "automatic_mode_change": false,
+    "parameter_writes": false,
+    "message_id": 84,
+    "type_mask": 2363,
+    "companion_thrust_commands": false,
+    "companion_body_rate_commands": false,
+    "native_px4_altitude_control": true,
+    "source_commit": "0395f69f7e72f82f01b59398b4ddb90c7d6321bc",
+    "processing": "upstream FixedPolicyRunner 100Hz/source-clock/measuredRPM",
+    "P3_output_dim": 9,
+    "accel_offset_mps2": [
+      0.0999342110075791,
+      -0.11954303398320056,
+      -0.03150192171250111
+    ],
+    "calibration_samples": 2000,
+    "flight_validated": false,
+    "innovation_filter_s": 0.0,
+    "coordinate_frame": "LOCAL_NED",
+    "upstream_controller": "AccelerationController.acceleration only; no companion attitude/thrust PID",
+    "vertical_acceleration_used": false,
+    "altitude_target": "latch LOCAL_POSITION_NED.z at each airborne Offboard entry",
+    "local_frame_reset_detection": "timestamp rollback and >0.5m local-z jump in <0.1s; not a full EKF reset-counter bridge",
+    "pre_offboard_policy": "zero horizontal acceleration, follow current local z; >=100 sent frames and >=1.2s"
+  },
+  "P3_downloaded_snapshot_sha256": "3ab46cee210073c48513eaf44e15f6b048030500f6dee8ccddf0ead60ba6f985",
+  "P3_runtime_identity_verified": false,
+  "context_scope": "Download-time snapshot; no runtime P3 byte hash in protocol",
+  "P3_sensor_rotation_deg": 8.087246101173367,
+  "P3_sensor_force_bias_mps2": [
+    -0.011982100455898165,
+    -0.556945102997869,
+    -0.03693656929414225
+  ],
+  "P3_gate": {
+    "full_below": 4.0,
+    "zero_above": 8.0
+  },
+  "P3_gate_fallback": "zero",
+  "P3_quality_profile": {
+    "id": "real_flight_development_v1",
+    "scope": "real_flight_development_candidate_not_flight_acceptance",
+    "limits": {
+      "gyro_rmse_radps": 0.04,
+      "force_rmse_mps2": 3.1,
+      "torque_after_rmse_nm": 0.025
+    },
+    "basis": {
+      "method": "round_up_observed_three_window_maxima_with_at_least_10_percent_margin",
+      "source_runs": [
+        "position_20261119_142113_250052",
+        "position_20261119_142241_268263",
+        "position_20261119_142353_845518"
+      ],
+      "observed_maxima": {
+        "gyro_rmse_radps": 0.03596530265811769,
+        "force_rmse_mps2": 2.7520621188830265,
+        "torque_after_rmse_nm": 0.021615812371674696
+      },
+      "note": "Selected against existing flight data; independent future-flight validation remains required. Sensor errors use the recorded matched 2Hz scoring pipeline."
+    }
+  },
+  "intervals": [
+    {
+      "index": 1,
+      "start_fc_s": 990.764563,
+      "end_fc_s": 992.885271,
+      "sample_duration_s": 2.120708000000036,
+      "execution_samples": 153,
+      "target_local_z_ned_m": -5.872377395629883,
+      "estimated_position_origin_NED_m": [
+        -1.894585016326549,
+        -3.653880501640171,
+        -5.871253852431252
+      ],
+      "estimated_rmse_3d_h_xy_m": [
+        0.10597314881166696,
+        0.03322869863906542,
+        0.10062883212983187
+      ],
+      "max_estimated_horizontal_displacement_m": 0.2379801008175275,
+      "final_estimated_displacement_NED_m": [
+        0.04570854003870717,
+        0.23354926193985381,
+        -0.014165039475486196
+      ],
+      "final_height_error_up_m": 0.013041496276855469,
+      "max_horizontal_speed_mps": 0.5447431802749634,
+      "command": {
+        "std_mps2": [
+          0.730171897636574,
+          0.262208470204061
+        ],
+        "mean_mps2": [
+          -0.34331291349887194,
+          -0.25767255936119027
+        ],
+        "peak_0p5_to_15_hz": [
+          0.9389671361502347,
+          0.9389671361502347
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.41781903455538144,
+          0.09393783037152219
+        ]
+      },
+      "actual_gyro_peak_hz": [
+        0.9478672985781991,
+        0.9478672985781991,
+        0.9478672985781991
+      ],
+      "innovation_before_rms_radps": [
+        0.09022010275197276,
+        0.22526854436734944,
+        0.042827132923282975
+      ],
+      "innovation_after_rms_radps": [
+        0.08030696057254647,
+        0.20369909696511046,
+        0.039413191969194024
+      ],
+      "innovation_rms_reduction_fraction": [
+        0.10987730979068888,
+        0.09574993021247258,
+        0.0797144408476842
+      ],
+      "P3_confidence_mean": 0.7051892185086708,
+      "P3_zero_confidence_fraction": 0.1830065359477124,
+      "P3_full_confidence_fraction": 0.5359477124183006,
+      "P3_sensor_correction_mean": [
+        0.0009408882155504316,
+        0.0004202775113963758,
+        -0.023084216794229447,
+        0.12975698850013898,
+        -0.16650067154551568,
+        -0.007336875867976805
+      ],
+      "corrected_acceleration_mean_launch_mps2": [
+        0.34587168313568917,
+        -0.17954800386325395
+      ],
+      "fcu_velocity_change_launch_mps": [
+        -0.6390257176599213,
+        0.05301635038591609
+      ],
+      "integrated_corrected_acceleration_launch_mps": [
+        0.736912478730513,
+        -0.3825440792910448
+      ],
+      "acceleration_vs_velocity_change_bias_mps2": [
+        0.6457999743688404,
+        -0.2044313582247886
+      ],
+      "final_motion_velocity_proxy_mps": [
+        0.5708153396844864,
+        -0.30316009372472763
+      ],
+      "final_motion_position_proxy_m": [
+        0.9861229360103607,
+        -0.05103735253214836
+      ],
+      "actor_raw_std": [
+        1.784684084603209,
+        0.545664872630102
+      ],
+      "angular_fast_head_std": [
+        0.9722574353218079,
+        0.5197833776473999
+      ],
+      "recurrent_mlp_std": [
+        0.0046053397780158375,
+        0.0019794539394064987
+      ],
+      "receive_dt_quantile_s": [
+        0.009887000000048829,
+        0.02471749000000841,
+        0.024719999999888387
+      ],
+      "actual_wire_match": {
+        "samples": 10,
+        "rmse_mps2": 0.05198786436356701,
+        "best_time_shift_s": 0.014999999999999972
+      },
+      "battery_min_v": 14.665457725524902,
+      "battery_max_warning": 0,
+      "motor_high_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "failsafe_flags": {
+        "offboard_control_signal_lost": false,
+        "local_position_invalid": false,
+        "local_altitude_invalid": false,
+        "attitude_invalid": false
+      },
+      "reset_counters": {
+        "xy_reset_counter": [
+          7
+        ],
+        "z_reset_counter": [
+          4
+        ],
+        "heading_reset_counter": [
+          9
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start_fc_s": 1000.063056,
+      "end_fc_s": 1078.637157,
+      "sample_duration_s": 78.57410099999993,
+      "execution_samples": 7613,
+      "target_local_z_ned_m": -5.71160888671875,
+      "estimated_position_origin_NED_m": [
+        -1.696984261533803,
+        -3.052013406871325,
+        -5.711709241679768
+      ],
+      "estimated_rmse_3d_h_xy_m": [
+        1.9723106169960973,
+        0.10559452675264906,
+        1.9694819028961426
+      ],
+      "max_estimated_horizontal_displacement_m": 3.2738547074486455,
+      "final_estimated_displacement_NED_m": [
+        -1.3927862939624127,
+        0.16965557110167184,
+        -0.14045598048820107
+      ],
+      "final_height_error_up_m": 0.14055633544921875,
+      "max_horizontal_speed_mps": 2.0684714317321777,
+      "command": {
+        "std_mps2": [
+          0.7909232542590217,
+          0.5126185475277655
+        ],
+        "mean_mps2": [
+          0.048912269480940934,
+          -0.4484018249649495
+        ],
+        "peak_0p5_to_15_hz": [
+          0.750827182489183,
+          0.9544413336726902
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.24867656388640755,
+          0.08105988341012502
+        ]
+      },
+      "actual_gyro_peak_hz": [
+        0.9548058561425844,
+        0.7511139401654997,
+        0.5983450031826862
+      ],
+      "innovation_before_rms_radps": [
+        0.11928626302552998,
+        0.21815803280751497,
+        0.046739923842587815
+      ],
+      "innovation_after_rms_radps": [
+        0.11426509455893487,
+        0.20269781239264212,
+        0.04620243274058944
+      ],
+      "innovation_rms_reduction_fraction": [
+        0.04209343422486522,
+        0.07086706923376829,
+        0.011499614415473869
+      ],
+      "P3_confidence_mean": 0.3229882435167519,
+      "P3_zero_confidence_fraction": 0.4371469854196769,
+      "P3_full_confidence_fraction": 0.09247340076185472,
+      "P3_sensor_correction_mean": [
+        2.1676217939300152e-05,
+        -0.0014581543117638453,
+        -0.023308209296832676,
+        0.14992467347670876,
+        -0.11167501513100679,
+        -0.0030894588639054535
+      ],
+      "corrected_acceleration_mean_launch_mps2": [
+        -0.0028125210487241602,
+        0.05220814372171951
+      ],
+      "fcu_velocity_change_launch_mps": [
+        0.2634421494380009,
+        0.1573287930557769
+      ],
+      "integrated_corrected_acceleration_launch_mps": [
+        -0.22101912034268645,
+        4.102724139729874
+      ],
+      "acceleration_vs_velocity_change_bias_mps2": [
+        -0.006164885266203189,
+        0.05020609728630856
+      ],
+      "final_motion_velocity_proxy_mps": [
+        0.6119988709688187,
+        0.48232501745224
+      ],
+      "final_motion_position_proxy_m": [
+        -1.2407588958740234,
+        2.2486431896686554
+      ],
+      "actor_raw_std": [
+        1.5211334676385557,
+        0.7630980994361664
+      ],
+      "angular_fast_head_std": [
+        0.9507236480712891,
+        0.737816333770752
+      ],
+      "recurrent_mlp_std": [
+        0.006830404410106972,
+        0.0024396558636260585
+      ],
+      "receive_dt_quantile_s": [
+        0.009886999999935142,
+        0.01977399999998397,
+        0.0247190000000046
+      ],
+      "actual_wire_match": {
+        "samples": 392,
+        "rmse_mps2": 0.08107982107524413,
+        "best_time_shift_s": 0.009999999999999967
+      },
+      "battery_min_v": 13.832430839538574,
+      "battery_max_warning": 0,
+      "motor_high_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "failsafe_flags": {
+        "offboard_control_signal_lost": false,
+        "local_position_invalid": false,
+        "local_altitude_invalid": false,
+        "attitude_invalid": false
+      },
+      "reset_counters": {
+        "xy_reset_counter": [
+          7
+        ],
+        "z_reset_counter": [
+          4
+        ],
+        "heading_reset_counter": [
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start_fc_s": 1093.946275,
+      "end_fc_s": 1155.616435,
+      "sample_duration_s": 61.670159999999896,
+      "execution_samples": 6153,
+      "target_local_z_ned_m": -8.316173553466797,
+      "estimated_position_origin_NED_m": [
+        -1.165901515917656,
+        -2.4712096988828214,
+        -8.316208248631664
+      ],
+      "estimated_rmse_3d_h_xy_m": [
+        2.4110057174837247,
+        0.11137687927855996,
+        2.4084318052420293
+      ],
+      "max_estimated_horizontal_displacement_m": 4.695105293886431,
+      "final_estimated_displacement_NED_m": [
+        0.049109075503227295,
+        -4.6871584117739165,
+        0.0468305401966056
+      ],
+      "final_height_error_up_m": -0.04679584503173828,
+      "max_horizontal_speed_mps": 2.33009934425354,
+      "command": {
+        "std_mps2": [
+          0.7204307412196195,
+          0.4910735131863659
+        ],
+        "mean_mps2": [
+          0.4513875841341938,
+          -0.5128922555098197
+        ],
+        "peak_0p5_to_15_hz": [
+          2.302204928664073,
+          0.5350194552529184
+        ],
+        "band_2p5_to_4p5_hz_rms_mps2": [
+          0.19368598603085083,
+          0.0955288433594516
+        ]
+      },
+      "actual_gyro_peak_hz": [
+        0.5353666450356911,
+        2.3036988968202468,
+        0.5353666450356911
+      ],
+      "innovation_before_rms_radps": [
+        0.1535560692001557,
+        0.27367662996090175,
+        0.06535729475628776
+      ],
+      "innovation_after_rms_radps": [
+        0.15240641178436604,
+        0.2658443946708648,
+        0.06496976022905401
+      ],
+      "innovation_rms_reduction_fraction": [
+        0.0074868901097689955,
+        0.02861857547411295,
+        0.005929476253245136
+      ],
+      "P3_confidence_mean": 0.20076238615876094,
+      "P3_zero_confidence_fraction": 0.6411506582155047,
+      "P3_full_confidence_fraction": 0.05103201690232407,
+      "P3_sensor_correction_mean": [
+        0.000128873712309141,
+        -0.0016091143292597775,
+        -0.02326395630668778,
+        0.1596012842935479,
+        -0.05064481736707205,
+        -0.002753032628871249
+      ],
+      "corrected_acceleration_mean_launch_mps2": [
+        0.0029907615685612642,
+        0.1259885090231479
+      ],
+      "fcu_velocity_change_launch_mps": [
+        -0.3455191929313467,
+        -1.3488676912654651
+      ],
+      "integrated_corrected_acceleration_launch_mps": [
+        0.18447031112389078,
+        7.770977032019172
+      ],
+      "acceleration_vs_velocity_change_bias_mps2": [
+        0.0085925601296607,
+        0.1478572944528064
+      ],
+      "final_motion_velocity_proxy_mps": [
+        -1.8511666059494019,
+        -0.2045772448182106
+      ],
+      "final_motion_position_proxy_m": [
+        8.83619248867035,
+        4.775913059711456
+      ],
+      "actor_raw_std": [
+        1.7227622396025326,
+        1.0110630429659209
+      ],
+      "angular_fast_head_std": [
+        1.1416728496551514,
+        0.9951717257499695
+      ],
+      "recurrent_mlp_std": [
+        0.008554845462086959,
+        0.0030963572106102377
+      ],
+      "receive_dt_quantile_s": [
+        0.009886000000051354,
+        0.014830000000074506,
+        0.019772999999986496
+      ],
+      "actual_wire_match": {
+        "samples": 306,
+        "rmse_mps2": 0.06101407368023044,
+        "best_time_shift_s": 0.009999999999999967
+      },
+      "battery_min_v": 13.498856544494629,
+      "battery_max_warning": 1,
+      "motor_high_fraction": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "failsafe_flags": {
+        "offboard_control_signal_lost": false,
+        "local_position_invalid": false,
+        "local_altitude_invalid": false,
+        "attitude_invalid": false
+      },
+      "reset_counters": {
+        "xy_reset_counter": [
+          7
+        ],
+        "z_reset_counter": [
+          4
+        ],
+        "heading_reset_counter": [
+          10
+        ]
+      }
+    }
+  ],
+  "transitions": {
+    "nav_state": [
+      {
+        "fc_s": 979.3384739999999,
+        "value": 2
+      },
+      {
+        "fc_s": 990.76293,
+        "value": 14
+      },
+      {
+        "fc_s": 992.874971,
+        "value": 2
+      },
+      {
+        "fc_s": 1000.047883,
+        "value": 14
+      },
+      {
+        "fc_s": 1078.6488829999998,
+        "value": 2
+      },
+      {
+        "fc_s": 1093.942121,
+        "value": 14
+      },
+      {
+        "fc_s": 1155.624888,
+        "value": 2
+      }
+    ],
+    "offboard_switch": [
+      {
+        "fc_s": 979.3291959999999,
+        "value": 3
+      },
+      {
+        "fc_s": 990.7502179999999,
+        "value": 1
+      },
+      {
+        "fc_s": 992.858717,
+        "value": 3
+      },
+      {
+        "fc_s": 1000.0366789999999,
+        "value": 1
+      },
+      {
+        "fc_s": 1078.633372,
+        "value": 3
+      },
+      {
+        "fc_s": 1093.927017,
+        "value": 1
+      },
+      {
+        "fc_s": 1155.603918,
+        "value": 3
+      }
+    ],
+    "heading_reset_counter": [
+      {
+        "fc_s": 979.4154749999999,
+        "value": 9
+      },
+      {
+        "fc_s": 1004.715381,
+        "value": 10
+      }
+    ]
+  },
+  "PX4_firmware": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "PX4_parameters": {
+    "THR_MDL_FAC": 0.0,
+    "MC_PITCHRATE_K": 1.0,
+    "IMU_GYRO_CUTOFF": 40.0,
+    "IMU_ACCEL_CUTOFF": 30.0,
+    "COM_LOW_BAT_ACT": 0,
+    "BAT1_CAPACITY": -1.0
+  },
+  "PX4_dropouts": [
+    {
+      "fc_s": 1147.328354,
+      "duration_ms": 3
+    },
+    {
+      "fc_s": 1147.331909,
+      "duration_ms": 269
+    },
+    {
+      "fc_s": 1147.331909,
+      "duration_ms": 178
+    },
+    {
+      "fc_s": 1147.81587,
+      "duration_ms": 0
+    },
+    {
+      "fc_s": 1147.81587,
+      "duration_ms": 181
+    }
+  ],
+  "PX4_messages": [
+    {
+      "fc_s": 979.3384619999999,
+      "text": "[commander] Armed by RC switch\t"
+    },
+    {
+      "fc_s": 979.340287,
+      "text": "[logger] Start file log (type: full)"
+    },
+    {
+      "fc_s": 979.3414829999999,
+      "text": "[logger] [logger] /fs/microsd/log/2026-11-20/06_58_50.ulg\t"
+    },
+    {
+      "fc_s": 979.3431469999999,
+      "text": "[logger] Opened full log file: /fs/microsd/log/2026-11-20/06_58_50.ulg"
+    },
+    {
+      "fc_s": 981.640803,
+      "text": "[commander] Takeoff detected\t"
+    },
+    {
+      "fc_s": 1056.093868,
+      "text": "[commander] Connection to ground station lost\t"
+    },
+    {
+      "fc_s": 1132.839448,
+      "text": "[health_and_arming_checks] Low battery\t"
+    },
+    {
+      "fc_s": 1170.071863,
+      "text": "[commander] Kill engaged\t"
+    },
+    {
+      "fc_s": 1170.1384289999999,
+      "text": "[health_and_arming_checks] Preflight Fail: Flight termination active"
+    },
+    {
+      "fc_s": 1170.1385559999999,
+      "text": "[health_and_arming_checks] Low battery\t"
+    },
+    {
+      "fc_s": 1172.228359,
+      "text": "[health_and_arming_checks] Preflight Fail: Flight termination active"
+    },
+    {
+      "fc_s": 1172.22847,
+      "text": "[health_and_arming_checks] Low battery\t"
+    },
+    {
+      "fc_s": 1172.283803,
+      "text": "[commander] Landing detected\t"
+    },
+    {
+      "fc_s": 1174.287112,
+      "text": "[commander] Disarmed by landing\t"
+    },
+    {
+      "fc_s": 1174.287738,
+      "text": "[health_and_arming_checks] Preflight Fail: Kill switch engaged"
+    },
+    {
+      "fc_s": 1174.287955,
+      "text": "[health_and_arming_checks] Preflight Fail: Flight termination active"
+    },
+    {
+      "fc_s": 1174.291933,
+      "text": "[vehicle_imu] ACC 1 (2490378) offset committed: [-0.041 -0.108 -0.110]->[0.020 -0.087 -0.099])"
+    }
+  ],
+  "interpretation_limits": [
+    "Position/velocity from PX4 estimator, not independent truth",
+    "No paired P2-only flight",
+    "No recorded wind/tether ground truth",
+    "Last incomplete line and missing final summary do not establish termination cause"
+  ],
+  "P3_snapshot_prediction_crosscheck": {
+    "comparable_contiguous_ticks": 11634,
+    "own_alpha_max_error_radps2": [
+      7.70214328e-07,
+      1.45545892e-06,
+      2.26142942e-07
+    ],
+    "confidence_max_error": 8.890182767729016e-08,
+    "limitation": "Contiguous grid-step outputs only; not a runtime source identity guarantee."
+  }
+}

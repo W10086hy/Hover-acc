@@ -1,0 +1,36 @@
+{
+  "parent": "P3\\results\\flight_repro_20261120\\increment_balanced\\observer_accel_consistent.json",
+  "parent_sha256": "e6bb880e0500fbb80870bb65c703769a07840830df394dcbf32d0296b9894e8d",
+  "checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+  "neural_weights_and_Adam_remain_at_parent": true,
+  "P2_updates": 0,
+  "P3_optimizer_updates": 0,
+  "learned_residual_force_offset_mps2": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "fit_uses_raw_training_partition_only": true,
+  "primary_Position_force_calibration_retained": true,
+  "raw_training_residual_mps2": [
+    0.0015375445871326316,
+    0.0012522219841950622,
+    -0.0007042019980010984
+  ],
+  "static_residual_blend": 0.5,
+  "quality_passed": true,
+  "observer_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+  "source_sha256": {
+    "P3/force_consistency_export.py": "f6afb88973c351013727dcaeac997ba3c99bbea28130d6c981d9926ccc7e5498",
+    "P3/motion_consistency.py": "1c202e6d1235d3e18836ebb240509116ea7a5166fcccb4a6d2f68fc3bf30274f",
+    "px4_offboard/aligned_p3.py": "d95617a1c3e075abce6e0641465ebc5494ef6a953a8189ec81d1dc34ac4fedaf",
+    "px4_offboard/mavros_policy.py": "642c3e55eb553d0e816befcd1483a8e7746a74378167fd677366e266ed591f8d",
+    "px4_offboard/acceleration_runtime.py": "d3c1f8a68becef577276b0d4e7b50044daa55d628b8fec351b2d2aec46177e2e",
+    "px4_offboard/replay_policy.py": "2abe2673dbf43e6548283eabf7ec2d2a8b3612f3daf41cc51446d8fe10537e0a"
+  },
+  "train_proof_sha256": "4df548d8274d1f57a989d0fe9af6a9b2ed558734ec14a7b90236a74be514a7e1",
+  "holdout_proof_sha256": "e5d701a93fed30919582046c5fec41fbdd8c158ffd5d7dd1a413bcc6532eeac0",
+  "semantics": "Residual force is removed for P2, retained for the frozen own model reference; no Position input after takeover",
+  "status": "candidate_only",
+  "formal_final_acceptance": false
+}

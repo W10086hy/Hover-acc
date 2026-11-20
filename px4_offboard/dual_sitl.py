@@ -32,8 +32,12 @@ def main():
     p.add_argument('--motor-tau',type=float,help='Synthetic plant lag only; not an identified telemetry delay')
     p.add_argument('--fixture-ready-extra-s',type=float,default=60.)
     p.add_argument('--acceleration-filter-s',type=float,default=.065)
+    p.add_argument('--sim-observation-bias-mps2',type=float,nargs=3,default=[0.,0.,0.])
     p.add_argument('--innovation-filter-s',type=float,default=0.);a=p.parse_args()
     if not np.isfinite(a.acceleration_filter_s) or a.acceleration_filter_s<0:p.error('Nonnegative finite command filter required')
+    if not np.isfinite(a.sim_observation_bias_mps2).all():p.error('Finite simulation observation bias required')
+    if np.any(a.sim_observation_bias_mps2) and (a.interface!='acceleration' or a.policy_source!='mavros' or a.timing=='legacy'):
+        p.error('Simulation observation bias requires fixed MAVROS acceleration inference')
     if not np.isfinite(a.innovation_filter_s) or a.innovation_filter_s<0:p.error('Nonnegative finite innovation filter required')
     if a.innovation_filter_s and (a.interface!='acceleration' or a.policy_source!='mavros' or a.timing=='legacy'):
         p.error('Innovation filtering requires the fixed MAVROS acceleration interface')
@@ -88,6 +92,7 @@ def main():
         launch([sys.executable,'-u','-B','-m','px4_offboard.mavros_policy','--assets',str(a.assets.resolve()),
             '--interface',a.interface,'--reference-height-m',str(fixture_height),'--record',str(root/'policy_runtime.json'),
             '--acceleration-filter-s',str(a.acceleration_filter_s),'--innovation-filter-s',str(a.innovation_filter_s),
+            '--sim-observation-bias-mps2',*map(str,a.sim_observation_bias_mps2),
             '--timing',a.timing]+(['--p3-calibration',str(a.p3_calibration.resolve())] if a.p3_calibration else []))
     from .stock_transfer import stock_check_hold as legacy
     from .self_disturbance import wrap_sensor_sender,simulation_feedback
@@ -187,6 +192,7 @@ def main():
             full_P3_preserved_in='P3/results/installation_20261115',assets=str(a.assets),seed=a.seed,
             controller_sha256=json.loads((a.assets/'config.json').read_text())['controller_sha256'],
             acceleration_filter_s=a.acceleration_filter_s,innovation_filter_s=a.innovation_filter_s,
+            sim_observation_bias_mps2=a.sim_observation_bias_mps2,
             rate_adapter='same acceleration Actor with attitude PI rate reference and local vertical PID; not native torque equivalence',
             GPS_for_PX4_Position=True,GPS_policy_input=False,requested_duration_s=a.seconds,wind_mps=a.wind),indent=2)+'\n')
         rospy.signal_shutdown('run completed')

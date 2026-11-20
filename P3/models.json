@@ -310,5 +310,22 @@
         }
       }
     ]
+  },
+  "flight_reproduction_20261120": {
+    "status": "matched_airframe_development_passed_engineering_tolerance",
+    "report": "docs/flight_repro_20261120.md",
+    "summary": "px4_offboard/acceleration_dual/results/flight_repro_20261120/summary.json",
+    "checkpoint": "P3/results/flight_repro_20261120/increment_balanced/model.pt",
+    "sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+    "optimizer_embedded": true,
+    "flown_runtime": "P3/results/flight_repro_20261120/force_blend05/observer_position_force.json",
+    "deployment_runtime": "P3/results/flight_repro_20261120/force_blend05/observer_deployment.json",
+    "deployment_sha256": "f3176440e1bf8121d77f95f1064c5089f3c2aa337aac3cc83075f5fbc3156be8",
+    "versioned_export_replayed_against_flights": true,
+    "selected_for_real_flight": false,
+    "default_model_replaced": false,
+    "P2_updates": 0,
+    "output_dim": 9,
+    "cleanup_retention": "cleanup/retention_repro_20261120.json"
   }
 }

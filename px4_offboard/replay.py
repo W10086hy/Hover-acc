@@ -45,6 +45,7 @@ def main():
     duration=float(t[-1]);speed=result['cart_speed_mps']
     early_stop=stock and not result['safe_completed']
     span_label=f'保护终止，实录 {duration:.2f}s / 计划 {result["duration_s"]:g}s' if early_stop else f'完整评价{duration:g}s'
+    if 'settled' in result:span_label+='；末段稳态'+('通过' if result['settled'] else '未通过')
     anchor_height=float(protocol['config']['protocol'].get('cart_anchor_height_m',.15))
     anchor=np.stack((cart_position(t,speed),np.zeros_like(t),np.full_like(t,-anchor_height)),-1)
     residual_label='＋P3' if result.get('residual_enabled',True) else '（P2单独）'

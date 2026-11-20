@@ -1,0 +1,140 @@
+{
+  "train": {
+    "samples": 7865,
+    "gyro_rmse_radps": [
+      0.001086351536297444,
+      0.0010861691858390333,
+      0.001104994796864308
+    ],
+    "force_rmse_mps2": [
+      0.028059471195942206,
+      0.02744575976308641,
+      0.05286860639773203
+    ],
+    "torque_before_rmse_nm": [
+      0.16256587899555586,
+      0.2090051280674082,
+      0.0008289261208023843
+    ],
+    "torque_after_rmse_nm": [
+      0.0008760781655653367,
+      0.000701586055399241,
+      0.0001779434209382355
+    ],
+    "torque_improvement_fraction": [
+      0.9946109345271077,
+      0.9966432112843998,
+      0.7853325930108346
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      33.576,
+      112.61600000000001
+    ],
+    "measured_increment_torque_rmse_nm": [
+      0.0012196219990651253,
+      0.0006196113385181284,
+      0.0007168286760371723
+    ],
+    "measured_increment_torque_mean_error_nm": [
+      -4.42438762462078e-07,
+      -6.475228673837746e-07,
+      -1.3227984098033771e-07
+    ]
+  },
+  "holdout": {
+    "samples": 3852,
+    "gyro_rmse_radps": [
+      0.00105867868741733,
+      0.0011223118749740955,
+      0.0011065715395178705
+    ],
+    "force_rmse_mps2": [
+      0.04865429994960318,
+      0.04651134682621557,
+      0.05421533335368368
+    ],
+    "torque_before_rmse_nm": [
+      0.1624889219026032,
+      0.2088980000325786,
+      0.0008319650212524265
+    ],
+    "torque_after_rmse_nm": [
+      0.000854517092000782,
+      0.0007230278956145581,
+      0.00017695566894503412
+    ],
+    "torque_improvement_fraction": [
+      0.9947410747637738,
+      0.9965388472101131,
+      0.7873039557857276
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      112.636,
+      151.55599999999998
+    ],
+    "measured_increment_torque_rmse_nm": [
+      0.0012191742915508817,
+      0.0006298483718379414,
+      0.0007224942211607445
+    ],
+    "measured_increment_torque_mean_error_nm": [
+      -3.251800162329427e-05,
+      -1.1060310477289122e-05,
+      -7.2459503801949325e-06
+    ]
+  },
+  "parent_sha256": "7f6053426437ca048001fe683a96c484d0e173c06809962cefa7b2ec2e62694c",
+  "capture_sha256": {
+    "position.npz": "1f830e9512c33ff864f4ca95472215877d91f6a14c8d21f3201bdd153279c95d",
+    "raw_capture.npz": "0e2804312a781734b6fcfdfc9204de7d9655e4a16a81e79d5a9236f40e537f4c",
+    "capture.json": "90468f3d80d02a6ed85170246725a48026accc48173d7b33474bc368269d088e"
+  },
+  "source_sha256": {
+    "P3/impulse_train.py": "68cda763b648e1ce692377ba87b6e8a0b7500dc2dbddb59f0a7a2be58e33d506",
+    "P3/aligned_train.py": "82386bb6dbc64d3851db8226ea3d2a61e8bd695510df0c24c23817f7967608a3",
+    "P3/unified_train.py": "79138735378b11b76b405133ffed86ea48a558443ce6611f8e46dbb3586ee24a",
+    "P3/px4_position_train.py": "46446513de0c1b477b3cbc459d4d9e646515060bc10a3fb67b13991348b802b7",
+    "P3/position_identification.py": "fa0ee0fc9d2ba47abceec627b5d41bfcb176abfaf8c385a4a3079f82db27aa54",
+    "P3/installation_calibration.py": "0f9251783eb4b516d02dbf3e7030b0cecdd2db63204fa73ac88b7679b136a291",
+    "P3/train_body_calibration.py": "75e9d9bbb1da35369995edb19f7d220ed6478d47031c847339e4cc51dbad0b78",
+    "px4_offboard/aligned_p3.py": "0ec694e1bf99448ef2bab4f7433cd9524cf703f738c4217797b1099931d96b1d",
+    "px4_offboard/unified_p3.py": "9fce3c9c6fc8a12ca435d976742d66672b55e120b8beb80900fc66e99c9a3bed",
+    "px4_offboard/policy_timing.py": "b33099e25fc99dc8d61983709bd6171b8cb1df5c1ccc6487f7f73d94fb8ecc70"
+  },
+  "P2_updates": 0,
+  "sensor_optimizer_updates": 0,
+  "angular_adam_steps": 400,
+  "learned_output_dim": 9,
+  "angular_feature_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    25,
+    26,
+    27
+  ],
+  "collective_free_rpm": true,
+  "fitted_physical_source_parameters": [],
+  "raw_time_holdout_independent": true,
+  "quality_passed": true,
+  "angular_target": "corrected measured gyro increment / 10ms minus nominal angular acceleration",
+  "status": "candidate_only",
+  "formal_final_acceptance": false,
+  "checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e"
+}

@@ -45,7 +45,8 @@ def verify(folder,assets,model=None):
     cfg=json.loads((assets/'config.json').read_text())
     interface=json.loads((folder/'interface.json').read_text())
     cfg['deployment']=dict(acceleration_filter_s=interface['acceleration_filter_s'],
-        innovation_filter_s=interface.get('innovation_filter_s',0.))
+        innovation_filter_s=interface.get('innovation_filter_s',0.),
+        sim_observation_bias_mps2=interface.get('sim_observation_bias_mps2',[0.,0.,0.]))
     records=[json.loads(line) for line in (folder/'policy_runtime_samples.jsonl').open(encoding='utf-8')]
     calibration=ObserverCalibration.load(model) if model else None
     result=verify_records(records,cfg,dict(np.load(assets/'weights.npz')),calibration=calibration,

@@ -1,0 +1,63 @@
+{
+  "baseline": {
+    "windows": 19,
+    "window_s": 2.0,
+    "equivalent_body_acceleration_residual_mps2": [
+      -0.0018820139764407495,
+      -0.00189162187768493,
+      -0.0013884972542606842
+    ],
+    "world_window_error_rmse_mps2": [
+      0.008953897200871296,
+      0.008071055185674794,
+      0.0020878229283325346
+    ],
+    "design_condition_number": 1.001602084543424,
+    "development_bias_screen_passed": true,
+    "development_screen_limits_mps2": {
+      "body_xy_norm": 0.03,
+      "body_z": 0.1
+    },
+    "screen_limits_are_development_only_not_formal_acceptance": true
+  },
+  "injected_right015": {
+    "windows": 19,
+    "window_s": 2.0,
+    "equivalent_body_acceleration_residual_mps2": [
+      -0.0018820139764407977,
+      0.1481083781223151,
+      -0.0013884972542606983
+    ],
+    "world_window_error_rmse_mps2": [
+      0.02600595629915202,
+      0.1460218056300833,
+      0.003170997181347509
+    ],
+    "design_condition_number": 1.001602084543424,
+    "development_bias_screen_passed": false,
+    "development_screen_limits_mps2": {
+      "body_xy_norm": 0.03,
+      "body_z": 0.1
+    },
+    "screen_limits_are_development_only_not_formal_acceptance": true
+  },
+  "reference": "simulated independent body velocity; Position-only offline validation",
+  "raw_time_holdout_only": true,
+  "partition": "holdout",
+  "Actor_inputs_changed": false,
+  "optimizer_updates": 0,
+  "preflight_force_offset_mps2": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "model_sha256": "e6bb880e0500fbb80870bb65c703769a07840830df394dcbf32d0296b9894e8d",
+  "capture_sha256": {
+    "position.npz": "1f830e9512c33ff864f4ca95472215877d91f6a14c8d21f3201bdd153279c95d",
+    "raw_capture.npz": "0e2804312a781734b6fcfdfc9204de7d9655e4a16a81e79d5a9236f40e537f4c",
+    "flight/position_p3.npz": "598bd1752cee2e3fb74cd2f3fdc3663815e83bc7f1a202dc14b4291deb2187a6"
+  },
+  "source_sha256": "1c202e6d1235d3e18836ebb240509116ea7a5166fcccb4a6d2f68fc3bf30274f",
+  "formal_final_acceptance": false,
+  "interpretation": "Equivalent residual includes attitude, force, timing and reference errors; not a unique physical accelerometer bias"
+}

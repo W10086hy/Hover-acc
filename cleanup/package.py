@@ -27,7 +27,7 @@ def digest(p):
 
 def files(folder):
     for entry in os.scandir(folder):
-        if entry.name in {'.git','.codex','.agents','.aws'}:continue
+        if entry.name in {'.git','.codex','.agents','.aws','.test-tmp'}:continue
         stat=entry.stat(follow_symlinks=False)
         if entry.is_symlink() or getattr(stat,'st_file_attributes',0)&0x400:raise RuntimeError('Refuse linked entry: '+entry.path)
         if entry.is_dir(follow_symlinks=False):yield from files(Path(entry.path))
@@ -39,6 +39,8 @@ def manifest():
     current_retention=verify_current()
     from .flight_retention import verify as verify_flight_retention
     flight_retention=verify_flight_retention()
+    from .repro_retention import verify as verify_repro_retention
+    repro_retention=verify_repro_retention()
     superseded=set(current_retention['superseded_protected_files'])
     retention=read(ROOT/'cleanup/retention_actor31.json');assert retention['status']=='complete'
     latest=read(ROOT/'cleanup/retention_20261109.json');assert latest['status']=='complete'
@@ -84,7 +86,7 @@ def manifest():
         artifact=artifact or name.endswith('track_retention_20261102.json') or name in {'track/reports/height_speed_statistics.json','track/reports/development_statistics.json'}
         kind='fixture' if '/tests/fixtures/' in name else ('artifact' if artifact else 'source_or_configuration')
         rows.append(dict(path=name,bytes=p.stat().st_size,sha256=digest(p),kind=kind))
-    write(ROOT/'cleanup/manifest.json',dict(date=flight_retention['date'],
+    write(ROOT/'cleanup/manifest.json',dict(date='2026-11-20',
         scope='Latest native installation/bias/CG P3, real PX4 Position calibration and frozen P2/P3 observer dual-interface development evidence; indexed historical models and accepted tracking/PX4 evidence',
         files=rows))
     summary=dict(date=acceleration['date'],this_cleanup_removed_files=acceleration['removed_count'],this_cleanup_removed_bytes=acceleration['removed_bytes'],
@@ -127,6 +129,11 @@ def manifest():
         latest_protected_files=len(flight_retention['protected_files']),
         archived_aligned_cases=flight_retention['retired_cases'],latest_aligned_models=5,
         latest_retained_aligned_120s_cases=6,latest_flight_filter_120s_cases=2)
+    summary.update(date='2026-11-20',this_cleanup_removed_files=repro_retention['removed_files'],
+        this_cleanup_removed_bytes=repro_retention['removed_bytes'],
+        latest_retention='cleanup/retention_repro_20261120.json',
+        latest_protected_files=repro_retention['protected_files'],latest_repro_archived_cases=20,
+        latest_repro_retained_120s_cases=2,latest_repro_final_model='P3/results/flight_repro_20261120/increment_balanced/model.pt')
     for _ in range(3):
         write(ROOT/'cleanup/package_summary.json',summary);current=list(files(ROOT));summary.update(current_files=len(current),current_bytes=sum(p.stat().st_size for p in current))
     write(ROOT/'cleanup/package_summary.json',summary);print(json.dumps(summary,ensure_ascii=False))

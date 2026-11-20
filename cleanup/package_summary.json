@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-18",
-  "this_cleanup_removed_files": 762,
-  "this_cleanup_removed_bytes": 1550060218,
+  "date": "2026-11-20",
+  "this_cleanup_removed_files": 724,
+  "this_cleanup_removed_bytes": 2189076308,
   "stock_px4_removed_files": 148,
   "stock_px4_removed_bytes": 572385034,
   "prior_actor37_removed_files": 678,
@@ -30,8 +30,8 @@
   "latest_PX4_observer_safe": 4,
   "latest_PX4_observer_settled": 2,
   "latest_PX4_observer_formal_acceptance": false,
-  "latest_retention": "cleanup/retention_flight_20261118.json",
-  "latest_protected_files": 244,
+  "latest_retention": "cleanup/retention_repro_20261120.json",
+  "latest_protected_files": 77,
   "previous_installation_removed_files": 327,
   "previous_installation_removed_bytes": 70356393,
   "latest_joint_P3_models": 4,
@@ -45,6 +45,9 @@
   "latest_aligned_models": 5,
   "latest_retained_aligned_120s_cases": 6,
   "latest_flight_filter_120s_cases": 2,
-  "current_files": 1692,
-  "current_bytes": 2137987842
+  "latest_repro_archived_cases": 20,
+  "latest_repro_retained_120s_cases": 2,
+  "latest_repro_final_model": "P3/results/flight_repro_20261120/increment_balanced/model.pt",
+  "current_files": 1787,
+  "current_bytes": 2493569703
 }

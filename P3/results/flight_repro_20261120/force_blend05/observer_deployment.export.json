@@ -1,0 +1,18 @@
+{
+  "parent_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+  "observer_sha256": "f3176440e1bf8121d77f95f1064c5089f3c2aa337aac3cc83075f5fbc3156be8",
+  "numerical_parameters_unchanged": true,
+  "P2_updates": 0,
+  "P3_optimizer_updates": 0,
+  "old_exact_processing_contract_rejects_this_file": true,
+  "source_sha256": {
+    "P3/force_consistency_export.py": "4c0acfaad2b216d262d83884b1fba577f0ded9e3d1db288174239a97c607e086",
+    "px4_offboard/aligned_p3.py": "c7964238356a45d36f5132ffebd33d2ccf8a39480c827765bf03429f201a56bb",
+    "px4_offboard/acceleration_runtime.py": "d3c1f8a68becef577276b0d4e7b50044daa55d628b8fec351b2d2aec46177e2e",
+    "px4_offboard/mavros_policy.py": "642c3e55eb553d0e816befcd1483a8e7746a74378167fd677366e266ed591f8d",
+    "px4_offboard/policy_timing.py": "b33099e25fc99dc8d61983709bd6171b8cb1df5c1ccc6487f7f73d94fb8ecc70",
+    "px4_offboard/replay_policy.py": "2abe2673dbf43e6548283eabf7ec2d2a8b3612f3daf41cc51446d8fe10537e0a"
+  },
+  "purpose": "Explicit runtime contract; use matched code so force blending cannot be silently ignored",
+  "formal_final_acceptance": false
+}

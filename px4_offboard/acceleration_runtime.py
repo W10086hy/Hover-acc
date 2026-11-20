@@ -45,6 +45,8 @@ class AccelerationController:
         if not all(np.isfinite(v).all() for v in arrays) or not np.isfinite(packet.baro_height):
             raise ValueError('Finite fresh onboard sensor packet required')
         packet=replace(packet,specific_force=packet.specific_force-self.accel_offset)
+        if getattr(self.calibration,'force_mode',None)=='position_consistency':
+            self.observer.reference_force_offset=self.accel_offset.copy()
         self.last_packet=packet
         self.last_observation=self.observer.update(packet,applied)
         if self.innovation_filter_s:

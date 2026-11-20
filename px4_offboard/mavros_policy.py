@@ -52,17 +52,24 @@ def main():
     p.add_argument('--p3-calibration',type=Path,help='Validated Position P3 JSON; standardizes existing35 Actor inputs')
     p.add_argument('--reference-height-m',type=float,default=0.)
     p.add_argument('--acceleration-filter-s',type=float,default=.065)
+    p.add_argument('--sim-observation-bias-mps2',type=float,nargs=3,default=[0.,0.,0.],
+        help='SITL-only post-calibration residual force fault in reported body axes')
     p.add_argument('--innovation-filter-s',type=float,default=0.,
         help='Experimental low-pass on angular innovation after P3 and before clipping; fixed acceleration only')
     p.add_argument('--feedback-topic',default='/hover/esc_feedback',help='Optional 8-vector: P2-order four rad/s and four actual throttles')
     a=p.parse_args(rospy.myargv()[1:]);rospy.init_node('hover_acceleration_policy',anonymous=False)
     cfg=json.loads((a.assets/'config.json').read_text())
-    cfg['deployment']={'acceleration_filter_s':a.acceleration_filter_s,'innovation_filter_s':a.innovation_filter_s}
+    if np.any(a.sim_observation_bias_mps2) and (not rospy.get_param('/use_sim_time',False) or a.interface!='acceleration'):
+        p.error('Simulation observation bias requires simulated ROS time and acceleration mode')
+    cfg['deployment']={'acceleration_filter_s':a.acceleration_filter_s,'innovation_filter_s':a.innovation_filter_s,
+        'sim_observation_bias_mps2':a.sim_observation_bias_mps2}
     from .p3_observer import ObserverCalibration
     calibration_model=ObserverCalibration.load(a.p3_calibration) if a.p3_calibration else None
     controller=AccelerationController(cfg,np.load(a.assets/'weights.npz'),calibration=calibration_model)
     schema=calibration_model.parameters.get('schema') if calibration_model else None
     timing=('fixed' if schema in (None,'P3_aligned_residual_v2') else 'legacy') if a.timing=='auto' else a.timing
+    if np.any(a.sim_observation_bias_mps2) and timing!='fixed':
+        p.error('Simulation observation bias requires fixed timing')
     if schema=='P3_aligned_residual_v2' and timing!='fixed':raise ValueError('Aligned P3 requires fixed timing')
     if a.innovation_filter_s and (timing!='fixed' or a.interface!='acceleration'):
         p.error('Innovation filtering requires fixed timing and the acceleration interface')
@@ -107,6 +114,7 @@ def main():
         if a.record is not None:
             data=dict(controller_sha256=cfg['controller_sha256'],interface=a.interface,
                 timing=timing,policy_dt_s=controller.dt,error=run_error,innovation_filter_s=a.innovation_filter_s,
+                sim_observation_bias_mps2=a.sim_observation_bias_mps2,
                 freshness_clock='ROS_sim_time' if rospy.get_param('/use_sim_time',False) else 'host_monotonic',
                 input_source='MAVROS IMU/altitude/state; measured ESC RPM and executed throttle',policy_steps=steps,
                 calibration_samples=len(calibration.forces),accel_offset=controller.accel_offset.tolist(),
@@ -178,7 +186,9 @@ def main():
                     r=rotation(packet.attitude);heading=math.atan2(r[1,0],r[0,0])
                 calibration.add(packet);fit=calibration.result()
                 if fit is not None and zero is None:
-                    controller.accel_offset=fit[0];zero=fit[1]-a.reference_height_m
+                    controller.accel_offset=(calibration_model.select_preflight_offset(fit[0])
+                        if hasattr(calibration_model,'select_preflight_offset') else fit[0])
+                    zero=fit[1]-a.reference_height_m
                     rospy.loginfo('P2 preflight calibration ready; Actor %s',cfg['controller_sha256'])
                     ready_pub.publish(True)
                 rate.sleep();continue

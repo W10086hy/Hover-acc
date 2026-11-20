@@ -301,6 +301,10 @@ def main():
     report['flight_log_retention'] = dict(removed_files=retained['removed_count'],
         removed_bytes=retained['removed_bytes'],protected_files=len(retained['protected_files']),
         archived_cases=retained['retired_cases'])
+    from cleanup.repro_retention import verify as verify_repro_retention
+    report['latest_repro_retention'] = verify_repro_retention()
+    from P3.results.flight_repro_20261120.verify_delivery import verify as verify_repro_delivery
+    report['latest_repro_delivery'] = verify_repro_delivery()
     if args.write_report:
         from P2.hover_bptt.io import write
         write(ROOT / 'cleanup/verification.json', report)

@@ -10,6 +10,71 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 class AlignedResidualTests(unittest.TestCase):
+    def test_force_reference_contract_is_explicit_and_rejects_unknown_versions(self):
+        from px4_offboard.aligned_p3 import AlignedCalibration,PROCESSING
+        p=self.parameters();p.update(preflight_force_mode='position_consistency',position_force_offset_mps2=[0.,0.,0.])
+        p['processing']={**PROCESSING,'force_trim_contract':'position_static_blend_v1'}
+        AlignedCalibration(p)
+        self.assertNotEqual(p['processing'],PROCESSING)  # historical v2 loaders reject it
+        p['processing']['force_trim_contract']='unknown'
+        with self.assertRaises(ValueError):AlignedCalibration(p)
+
+    def test_blended_force_trim_restores_actual_offset_for_frozen_own_model(self):
+        from px4_offboard.aligned_p3 import AlignedCalibration
+        from px4_offboard.acceleration_runtime import AccelerationController
+        p=self.parameters();p['angular_weights'][0][10]=2.
+        parent=AlignedCalibration(p)
+        refined=copy.deepcopy(p);refined.update(preflight_force_mode='position_consistency',
+            position_force_offset_mps2=[0.,0.,0.],static_residual_blend=.5)
+        calibration=AlignedCalibration(refined)
+        offset=calibration.select_preflight_offset([.02,-.04,0.])
+        np.testing.assert_array_equal(offset,[.01,-.02,0.])
+        weights=dict(np.load(ROOT/'px4_offboard/acceleration_dual/assets/weights.npz'))
+        a=AccelerationController(copy.deepcopy(self.cfg),weights,calibration=parent)
+        b=AccelerationController(copy.deepcopy(self.cfg),weights,calibration=calibration);b.accel_offset=offset
+        packet=Sensors(np.array([1.,0,0,0]),np.zeros(3),np.array([.04,.05,-9.8]),np.full(4,530.),5.)
+        for _ in range(2):a.acceleration(packet,np.full(4,.54));b.acceleration(packet,np.full(4,.54))
+        np.testing.assert_array_equal(a.last_observation[23:26],b.last_observation[23:26])
+        np.testing.assert_allclose(b.observer.unified_compensation[3:6],-offset)
+
+    def test_position_force_refinement_preserves_own_model_reference(self):
+        from px4_offboard.aligned_p3 import AlignedCalibration,AlignedObserver
+        p=self.parameters();p['angular_weights'][0][10]=2.
+        baseline=AlignedObserver(copy.deepcopy(self.cfg),AlignedCalibration(p))
+        refined=copy.deepcopy(p);offset=np.array([.01,-.02,0.])
+        refined.update(preflight_force_mode='position_consistency',position_force_offset_mps2=offset.tolist())
+        calibration=AlignedCalibration(refined)
+        np.testing.assert_array_equal(calibration.select_preflight_offset([.1,.2,.3]),offset)
+        primary=copy.deepcopy(refined);primary['position_force_offset_mps2']=[0.,0.,0.]
+        np.testing.assert_array_equal(AlignedCalibration(primary).select_preflight_offset([.1,.2,.3]),np.zeros(3))
+        candidate=AlignedObserver(copy.deepcopy(self.cfg),calibration)
+        packet=Sensors(np.array([1.,0,0,0]),np.zeros(3),np.array([.04,.05,-9.8]),np.full(4,530.),5.)
+        for _ in range(2):
+            a=baseline.update(packet,np.full(4,.54))
+            b=candidate.update(replace(packet,specific_force=packet.specific_force-offset),np.full(4,.54))
+        np.testing.assert_array_equal(a[23:26],b[23:26])
+        np.testing.assert_allclose((a[7:10]-b[7:10])*20,offset,atol=1e-7)
+        np.testing.assert_allclose(candidate.unified_compensation[3:6],-offset)
+
+    def test_response_normalization_rejects_singular_or_excessive_gain(self):
+        from px4_offboard.aligned_p3 import AlignedCalibration
+        for matrix in (np.zeros((3,3)),np.eye(3)*10,np.diag([-1.,1.,1.]),[[1.,0.,0.]]):
+            p=self.parameters();p['angular_innovation_map']=np.asarray(matrix).tolist()
+            with self.assertRaises(ValueError):AlignedCalibration(p)
+
+    def test_response_normalization_preserves_standard_external_innovation(self):
+        from px4_offboard.aligned_p3 import AlignedCalibration,AlignedObserver
+        params=self.parameters()
+        params['angular_innovation_map']=[[2.,0.,0.],[0.,1.,0.],[0.,0.,1.]]
+        observer=AlignedObserver(copy.deepcopy(self.cfg),AlignedCalibration(params))
+        packet=Sensors(np.array([1.,0,0,0]),np.zeros(3),np.array([0.,0.,-9.8]),np.full(4,530.),5.)
+        observer.update(packet,np.full(4,.54))
+        # Own increment .8 plus actual-body external increment .01.
+        # The learned response is half the standard-body response on roll.
+        result=observer.update(replace(packet,gyro=np.array([.81,0,0])),np.full(4,.54))
+        self.assertAlmostEqual(result[23],.2,places=6)
+        np.testing.assert_allclose(observer.innovation_residual,[.01,0,0],atol=1e-10)
+
     def test_acceleration_adapter_cancels_reported_tilt_bias_in_launch_frame(self):
         from P3.attitude_alignment import tilt_quaternion
         from px4_offboard.aligned_p3 import AlignedCalibration

@@ -1,0 +1,62 @@
+{
+  "safe_completed": true,
+  "rmse_3d_h_xy_m": [
+    0.5265282883375053,
+    0.008457224104546983,
+    0.5264603629714859
+  ],
+  "evaluation_horizon_s": 120.0,
+  "actual_post_samples": 30000,
+  "physical_post_duration_s": 120.0,
+  "penalized_remaining_samples": 0,
+  "settled": true,
+  "tail": {
+    "complete": true,
+    "horizontal_std_m": 0.08150391997990047,
+    "speed_rms_mps": 0.01795893194232679,
+    "horizontal_drift_mps": 0.007953213977547368
+  },
+  "failure_aggregation": "actual first failure state; remaining xy6m/h4m",
+  "rmse_passed": false,
+  "rmse_limit_m": 0.5,
+  "interface": "acceleration",
+  "policy_source": "mavros",
+  "wire_kind": "SET_POSITION_TARGET_LOCAL_NED",
+  "actual_wire_commands": 16958,
+  "wire_fields_passed": true,
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  },
+  "error": null,
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "P3_enabled": true,
+  "p3_checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+  "p3_config_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+  "P3_scope": "Nine joint observation residuals; matched100Hz/filter; measuredRPM moments; angular residual faded outside Position training support; Position-trained attitude tilt consistency; launch yaw retained; horizontal acceleration transformed to the PX4 reported attitude reference; simulator ablation full_mean; frozen source weights except explicit ablation; Position measured-increment angular target; compact RPM basis; frozen sensor calibration; collective-free differential RPM basis; Position-trained residual force reference replaces static force trim; own model reference retained",
+  "physical_torque_feedforward_sent": false,
+  "wind_mps": 1.0,
+  "sensor_seed": 2026117501,
+  "target_baro_height_m": 4.924880027770996,
+  "scoring_height_source": "MAVROS policy target",
+  "controller_target_logged": true,
+  "acceleration_filter_s": 0.065,
+  "wind_ramp_s": 0.0,
+  "launch_heading_rad": 0.08177814497556751,
+  "target_local_z_ned_m": 0.08335889130830765,
+  "PX4_source_commit": "07a18b2d120e69e2434e81e631e02b5beda0144b",
+  "true_position_used_for_scoring_only": true,
+  "formal_final_acceptance": false,
+  "artifact_sha256": {
+    "flight/trace.npy": "474737afc45adbaf604b94c43bdf824e9c8ea2f7327b0b3fb86f156f379c77b8",
+    "flight/summary.json": "7075c5ab132c226ad2cd9044df7583bfc4f999689c45d1af6d81823dd04b3048",
+    "interface.json": "470c8518983424bf1c5c6a74cc6cb2e07b58c2e198c50e64985c4af948cde862",
+    "wire_commands.json": "cff49e44b55fe0214c6aa8a255580b2c084442e7c7a93d17f75e9f1785d67b0b",
+    "mavros_commands.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "preflight_calibration.json": "c57cc741fab5ce98d42ba5b2177bf55b93b51bf71c9abb236c7cc06a2f1760a6",
+    "frozen_source.zip": "babde728f4170b81e84617c34c415e4b35cae81962024d2bbceb754c225c9ae7"
+  },
+  "duration_s": 120.0,
+  "cart_speed_mps": 0,
+  "wind_peak_mps": 1.0,
+  "residual_enabled": true
+}

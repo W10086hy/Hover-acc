@@ -118,6 +118,9 @@ class FixedPolicyRunner:
     def __init__(self, controller, interface='acceleration'):
         self.controller=controller
         self.interface=interface
+        self.sim_observation_bias=np.asarray(controller.cfg.get('deployment',{}).get('sim_observation_bias_mps2',[0.,0.,0.]),float)
+        if self.sim_observation_bias.shape!=(3,) or not np.isfinite(self.sim_observation_bias).all():
+            raise ValueError('Finite three-axis simulation observation bias required')
         if controller.calibration is not None and controller.calibration.parameters.get('schema')!='P3_aligned_residual_v2':
             raise ValueError('Use a retrained aligned P3 with the fixed processing chain')
         if (controller.calibration is not None and controller.calibration.parameters.get('acceleration_actuation')
@@ -138,6 +141,9 @@ class FixedPolicyRunner:
             raise
         for tick,p,u in ticks:
             c=self.controller;v=c.observer
+            # Optional simulator-only residual measurement fault. It is applied
+            # after preflight calibration and never changes plant physics.
+            p=replace(p,specific_force=p.specific_force+self.sim_observation_bias)
             source_force=p.specific_force.copy()
             square,mean=measured_motor_moments(v.rpm,p.motor_speed)
             raw=p.gyro-(v.rate+c.dt*nominal_alpha(v.rate,square,mean,v.pc)) if v.valid else np.zeros(3)
@@ -155,6 +161,7 @@ class FixedPolicyRunner:
             diagnostic=dict(grid_stamp_s=float(tick),source_stamp_s=float(stamp),
                 interpolation_latency_s=float(max(0,stamp-tick)),
                 innovation_before_radps=np.asarray(getattr(v,'innovation_before',raw)).tolist(),
+                innovation_residual_radps=np.asarray(getattr(v,'innovation_residual',raw)).tolist(),
                 innovation_after_radps=np.asarray(getattr(v,'innovation_after',raw)).tolist(),
                 innovation_to_actor_radps=(c.last_observation[23:26]*.1).tolist(),
                 observation=c.last_observation.tolist(),actor_raw=c.last_raw_action.tolist(),

@@ -1,0 +1,61 @@
+{
+  "independent_capture": true,
+  "quality_passed": true,
+  "complete_Position_s": 30.0,
+  "optimizer_updates": 0,
+  "P2_updates": 0,
+  "checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+  "position_sha256": "8e21e3eef5296d9a27a250be0446ea3ddec16fde23c8b34a198a13f8ec3a1dc5",
+  "summary_sha256": "46fca5c8db1d67facfad3b55e691f4fee6a4de8243830814bc38fe291d056f1d",
+  "score": {
+    "samples": 2757,
+    "gyro_rmse_radps": [
+      0.0010222324089887902,
+      0.001068371740773965,
+      0.0008076108082592316
+    ],
+    "force_rmse_mps2": [
+      0.0071581284593067755,
+      0.00798746182336089,
+      0.05107078896031717
+    ],
+    "torque_before_rmse_nm": [
+      0.1626037409632306,
+      0.20907202586261522,
+      0.00048522645221546755
+    ],
+    "torque_after_rmse_nm": [
+      0.0008669620769183615,
+      0.000666028995804875,
+      0.00014606990992457026
+    ],
+    "torque_improvement_fraction": [
+      0.9946682525765849,
+      0.9968143562341404,
+      0.6989654845533708
+    ],
+    "feature_ood_sample_fraction": 0.0,
+    "source_time_range_s": [
+      33.572,
+      61.55200000000001
+    ]
+  },
+  "attitude_reference": {
+    "samples": 1399,
+    "gravity_before_rmse_mps2": [
+      0.14025362800728822,
+      0.12766361480999014,
+      0.001990457137928706
+    ],
+    "gravity_after_rmse_mps2": [
+      0.005704519749826299,
+      0.009776406561684745,
+      4.740791230578074e-05
+    ],
+    "time_range_s": [
+      33.576,
+      61.536
+    ]
+  },
+  "attitude_reference_passed": true
+}

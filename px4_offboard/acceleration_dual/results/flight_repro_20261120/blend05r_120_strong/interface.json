@@ -1,0 +1,98 @@
+{
+  "interface": "acceleration",
+  "transport": "actual ROS Noetic MAVROS",
+  "pitch_rate_k": 0.1,
+  "px4_param_overrides": {
+    "MC_PITCHRATE_K": 0.1
+  },
+  "policy_source": "mavros",
+  "timing": "fixed",
+  "motor_tau_override_s": null,
+  "asset_sha256": {
+    "config.json": "223ce6274cc2c254efbbffabd43bed105b9fb44dcae07695471975d7b8f9052f",
+    "weights.npz": "c16a96352a847a0bccdcec60d46583f3d7cb5507fdf06e91a53b3fd2c4c0f78b",
+    "initial.npz": "9b4aaf76a40fb6e555aab22ba859a0de8f0b76a422d5e6c10795e26380640107",
+    "model.xml": "c711fec924ca99a9e7b07f78e5f82c7b024d540e128369df3851a86248c7953a"
+  },
+  "wind_ramp_s": 5.0,
+  "ROS_simulated_clock": true,
+  "fixture_ready_extra_s": 60.0,
+  "simulation_self_disturbance": {
+    "gyro_bias_radps": [
+      0.008,
+      -0.006,
+      0.004
+    ],
+    "accel_bias_mps2": [
+      0.15,
+      -0.12,
+      0.2
+    ],
+    "true_cg_body_m": [
+      0.009,
+      -0.007,
+      0.0
+    ],
+    "true_full_inertia_FRD": [
+      [
+        0.014110898444999999,
+        0.0016185837149999994,
+        0.0
+      ],
+      [
+        0.0016185837149999994,
+        0.007691036204999999,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.01945593465
+      ]
+    ],
+    "actual_mass_kg": 2.3689999999999998,
+    "relocated_component_kg": 0.2,
+    "component_from_m": [
+      0,
+      0,
+      0
+    ],
+    "component_to_m": [
+      0.10660499999999998,
+      -0.08291499999999997,
+      0.0
+    ],
+    "sensor_installation_deg": [
+      0,
+      0,
+      0
+    ],
+    "motor_installation_deg": [
+      0,
+      0,
+      0
+    ],
+    "scope": "Synthetic additive sensor biases and real CG/inertia relocation; not controller inputs"
+  },
+  "P3_enabled": true,
+  "p3_config_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+  "p3_checkpoint_sha256": "7f9319032817015c7cb8e2e64e656531dba959a5b55c5d61a89223b9eddb919e",
+  "P3_scope": "Nine joint observation residuals; matched100Hz/filter; measuredRPM moments; angular residual faded outside Position training support; Position-trained attitude tilt consistency; launch yaw retained; horizontal acceleration transformed to the PX4 reported attitude reference; simulator ablation full_mean; frozen source weights except explicit ablation; Position measured-increment angular target; compact RPM basis; frozen sensor calibration; collective-free differential RPM basis; Position-trained residual force reference replaces static force trim; own model reference retained",
+  "physical_torque_feedforward_sent": false,
+  "full_P3_preserved_in": "P3/results/installation_20261115",
+  "assets": "px4_offboard/acceleration_dual/perturbed_assets_20261117",
+  "seed": 2026117503,
+  "controller_sha256": "4743e4e7d40f26c2e3baea8ad8a6ee94bc14c2710838c9fd94235211abdb1ab5",
+  "acceleration_filter_s": 0.065,
+  "innovation_filter_s": 0.0,
+  "sim_observation_bias_mps2": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rate_adapter": "same acceleration Actor with attitude PI rate reference and local vertical PID; not native torque equivalence",
+  "GPS_for_PX4_Position": true,
+  "GPS_policy_input": false,
+  "requested_duration_s": 120.0,
+  "wind_mps": 5.0
+}

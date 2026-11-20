@@ -1,5 +1,13 @@
 # 工程整理与完整性核验
 
+2026-11-20 按用户授权整理上传最新工程：删除 724 个被替代中间文件、调试输出及重复传输包，共 2,189,076,308 字节。只保留最后 P3 网络／Adam、配套校准参数、有效 Position 原始数据、最后两条 120 s 闭环与回放；较早已受保护成果不变。本次未训练或新增仿真。
+
+[本轮清单](retention_repro_20261120.json) · [20 组开发统计与审计](../px4_offboard/acceleration_dual/history/flight_repro_development_20261120.json) · [唯一源码归档](history_20261120/development_sources.zip) · [最新模型](../P3/results/flight_repro_20261120/README.md) · [最新结果](../docs/flight_repro_20261120.md)
+
+整理前 22 条源重放结论保留；整理后只对两条最终飞行重新重放，中间 20 条只核对归档身份。下文的旧保留描述以本轮清单为准，不恢复已删除的调试目录。上传目标为 Hover-acc/main，不能直接推送旧 origin。
+
+## 2026-11-18 整理记录
+
 2026-11-18 按用户授权整理并上传 Hover-acc。删除 762 个被替代短测、调试日志、候选轨迹及重复回归输出，共 1,550,060,218 字节（约 1.44 GiB）。保留五份最新九维 P3 模型及 Adam、Position 原始标定／独立验证、P2 Actor13／Adam、六条必要 120 s 开发对照、两条创新低通 120 s 完整结果及最新回放。244 份本轮保护文件逐一核对，两个统计索引的归档路径调整单列为维护变更。
 
 [本轮删除和保护清单](retention_flight_20261118.json) · [删除前统计和审计](../px4_offboard/acceleration_dual/history/aligned_development_20261118.json) · [唯一源码包](history_20261118/development_sources.zip) · [最新修复与结果](../docs/debug_20261117.md)

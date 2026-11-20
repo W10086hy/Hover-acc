@@ -1,0 +1,67 @@
+{
+  "policy_ticks": 11998,
+  "physical_compared_duration_s": 119.97,
+  "support_mean": 0.08811936853661496,
+  "support_zero_fraction": 0.3723120520086681,
+  "support_partial_fraction": 0.5935155859309885,
+  "angular_before_rms_radps": [
+    0.11474455044364948,
+    0.3784578901536398,
+    0.004948875889531325
+  ],
+  "angular_after_rms_radps": [
+    0.015457666332486216,
+    0.007627063148923569,
+    0.004868915486320595
+  ],
+  "angular_own_rms_radps2": [
+    12.896174100214699,
+    37.98559259833565,
+    0.019144051943153346
+  ],
+  "acceleration_integral_launch_mps": [
+    -0.18434886078259322,
+    0.11470640467108802
+  ],
+  "navigation_delta_launch_mps": [
+    -0.0019671469816631686,
+    0.005183942244552121
+  ],
+  "mean_acceleration_disagreement_launch_mps2": [
+    -0.001520227671925732,
+    0.0009129154157417346
+  ],
+  "actual_comparison_only_not_failure_penalized": true,
+  "source_replay": {
+    "entries": 1,
+    "policy_ticks": 12044,
+    "source_events": 9787,
+    "max_time_error": 0.0,
+    "max_observation_error": 0.0,
+    "max_raw_action_error": 2.9802322387695312e-08,
+    "max_acceleration_error": 1.7284578213150326e-08,
+    "max_wire_acceleration_error": 1.7284578213150326e-08,
+    "passed": true,
+    "P2_updates": 0,
+    "horizontal_navigation_truth_used": false
+  },
+  "safe_completed": true,
+  "rmse_3d_h_xy_m": [
+    1.3352260547999244,
+    0.008253889974460981,
+    1.3352005432581504
+  ],
+  "evaluation_horizon_s": 120.0,
+  "settled": true,
+  "tail": {
+    "complete": true,
+    "horizontal_std_m": 0.02663436510922129,
+    "speed_rms_mps": 0.01995625481702376,
+    "horizontal_drift_mps": 0.0008293706201895312
+  },
+  "diagnostic_source_sha256": "9c940c3d9274a5b54939a0feb7c6c149e9ccc700074336bb619f885c9571b72e",
+  "policy_log_sha256": "a4b6f547901ec1b54a443ba54085c09d29946c7ddbdbf61e2fa4dc004b251ad6",
+  "model_sha256": "ffe4f2f7758390f401e6db1e179c6496d93faf3b45ac8d7eb200bf35dfcac366",
+  "navigation_used_only_in_offline_audit": true,
+  "formal_final_acceptance": false
+}
